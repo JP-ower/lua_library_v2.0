@@ -1,0 +1,81 @@
+---@alias CameraMode 
+---|    `GameCamera.CameraMode.None`--默认模式
+---|    `GameCamera.CameraMode.LockLevel`--锁定关卡
+---|    `GameCamera.CameraMode.LockRect`--锁定区域
+---|    `GameCamera.CameraMode.LockTransform`--跟随单位
+
+---@alias CameraShader
+---|    `GameCamera.CameraShader.EarthQuake` -- 抖动
+---|    `GameCamera.CameraShader.Manga_Flash_Color` -- 漫画闪光
+---|    `GameCamera.CameraShader.Drunk` -- 眩晕
+---|    `GameCamera.CameraShader.TV` -- TV
+---|    `GameCamera.CameraShader.Pixel` -- 像素化
+---|    `GameCamera.CameraShader.Blurry` -- 模糊
+---|    `GameCamera.CameraShader.TV50` -- TV50
+---|    `GameCamera.CameraShader.TV80` -- TV80
+---|    `GameCamera.CameraShader.BluePrint` -- 蓝图
+---|    `GameCamera.CameraShader.Comics` -- 漫画
+---|    `GameCamera.CameraShader.CompressionFX` -- BUG
+---|    `GameCamera.CameraShader.NightVision2` -- 夜视
+---|    `GameCamera.CameraShader.Rain_Pro` -- 下雨
+---|    `GameCamera.CameraShader.Spot` -- 黑暗
+---|    `GameCamera.CameraShader.Grain` -- 颗粒
+---|    `GameCamera.CameraShader.Dream2` -- 晃动
+---|    `GameCamera.CameraShader.Wave_Horizontal` -- 水中
+---|    `GameCamera.CameraShader.Twist` -- 扭曲
+---|    `GameCamera.CameraShader.BigFace` -- 放大
+---|    `GameCamera.CameraShader.BleachBypass` -- 漂白
+---|    `GameCamera.CameraShader.GrayScale` -- 灰度
+---|    `GameCamera.CameraShader.Invert` -- 反色
+---|    `GameCamera.CameraShader.HSV` -- 颜色调整
+---|    `GameCamera.CameraShader.RGB` -- 颜色叠加
+
+---@alias PlaceLayer
+---|    `UnitData.PlaceLayer.Unit` -- 单位
+---|    `UnitData.PlaceLayer.Decoration` -- 装饰
+---|    `UnitData.PlaceLayer.Path` -- 路径
+---|    `UnitData.PlaceLayer.Rect` -- 区域
+---|    `UnitData.PlaceLayer.Custom` -- 其他
+---|    `UnitData.PlaceLayer.Custom2` -- 其他2
+---|    `UnitData.PlaceLayer.Custom3` -- 其他3
+---|    `UnitData.PlaceLayer.Custom4` -- 其他4
+---|    `UnitData.PlaceLayer.Custom5` -- 其他5
+---|    `UnitData.PlaceLayer.Player` -- 玩家
+---|    `UnitData.PlaceLayer.Monster` -- 怪物
+
+---@alias SyncRecInfoMode
+---|    `Multiplayer.SyncRecInfoMode.def` -- 默认
+---|    `Multiplayer.SyncRecInfoMode.mediumLatency` -- 中延迟
+---|    `Multiplayer.SyncRecInfoMode.lowLatency` -- 低延迟
+
+---@alias AudioClip UnityEngine.AudioClip
+---@alias Vector2 UnityEngine.Vector2
+---@alias Vector3 UnityEngine.Vector3
+---@alias Vector2Int UnityEngine.Vector2Int
+---@alias Vector3Int UnityEngine.Vector3Int
+---@alias Color UnityEngine.Color
+---@alias Sprite UnityEngine.Sprite
+---@alias GameObject UnityEngine.GameObject
+---@alias Material UnityEngine.Material
+---@alias Single number
+---@alias Int32 number
+---@alias Object nil|boolean|number|string|table|function|userdata|thread
+---@alias String string
+---@alias Boolean boolean
+---@alias System.Object Object
+---@alias System.Int32 Int32
+---@alias System.Single Single
+---@alias System.Boolean Boolean
+---@alias System.String String
+---@alias BindingFlags System.Reflection.BindingFlags
+
+
+
+
+System = {
+    Single = 0.0;
+    Int32 = 0;
+    Object = nil;
+    String = "abc";
+    Boolean = false;
+}

@@ -1,0 +1,122 @@
+---@meta
+---@class JFY_TransitionEffect.DF_Direct
+JFY_TransitionEffect.DF_Direct = {
+---函数名：Equals
+---@param p1 JFY_TransitionEffect.DF_Direct
+---@param p2 System.Object
+---返回值：Boolean
+---@return Boolean
+Equals = function(p1,p2) end,
+
+---函数名：GetHashCode
+---@param p1 JFY_TransitionEffect.DF_Direct
+---返回值：Int32
+---@return Int32
+GetHashCode = function(p1) end,
+
+---函数名：ToString
+---@param p1 JFY_TransitionEffect.DF_Direct
+---返回值：String
+---@return String
+ToString = function(p1) end,
+
+---函数名：ToString
+---@param p1 JFY_TransitionEffect.DF_Direct
+---@param p2 System.String
+---@param p3 System.IFormatProvider
+---返回值：String
+---@return String
+ToString = function(p1,p2,p3) end,
+
+---函数名：CompareTo
+---@param p1 JFY_TransitionEffect.DF_Direct
+---@param p2 System.Object
+---返回值：Int32
+---@return Int32
+CompareTo = function(p1,p2) end,
+
+---函数名：ToString
+---@param p1 JFY_TransitionEffect.DF_Direct
+---@param p2 System.String
+---返回值：String
+---@return String
+ToString = function(p1,p2) end,
+
+---函数名：ToString
+---@param p1 JFY_TransitionEffect.DF_Direct
+---@param p2 System.IFormatProvider
+---返回值：String
+---@return String
+ToString = function(p1,p2) end,
+
+---函数名：HasFlag
+---@param p1 JFY_TransitionEffect.DF_Direct
+---@param p2 System.Enum
+---返回值：Boolean
+---@return Boolean
+HasFlag = function(p1,p2) end,
+
+---函数名：GetTypeCode
+---@param p1 JFY_TransitionEffect.DF_Direct
+---返回值：TypeCode
+---@return TypeCode
+GetTypeCode = function(p1) end,
+
+---函数名：GetType
+---@param p1 JFY_TransitionEffect.DF_Direct
+---返回值：Type
+---@return Type
+GetType = function(p1) end,
+
+---函数名：value__
+---@param p1 JFY_TransitionEffect.DF_Direct
+---返回值：Int32
+---@return Int32
+value__ = function(p1) end,
+
+---函数名：Down
+---返回值：DF_Direct
+---@return DF_Direct
+Down = function() end,
+
+---函数名：Up
+---返回值：DF_Direct
+---@return DF_Direct
+Up = function() end,
+
+---函数名：Right
+---返回值：DF_Direct
+---@return DF_Direct
+Right = function() end,
+
+---函数名：Left
+---返回值：DF_Direct
+---@return DF_Direct
+Left = function() end,
+
+---函数名：RightDown
+---返回值：DF_Direct
+---@return DF_Direct
+RightDown = function() end,
+
+---函数名：LeftDown
+---返回值：DF_Direct
+---@return DF_Direct
+LeftDown = function() end,
+
+---函数名：RightUp
+---返回值：DF_Direct
+---@return DF_Direct
+RightUp = function() end,
+
+---函数名：LeftUp
+---返回值：DF_Direct
+---@return DF_Direct
+LeftUp = function() end,
+
+---函数名：Together
+---返回值：DF_Direct
+---@return DF_Direct
+Together = function() end,
+
+}
