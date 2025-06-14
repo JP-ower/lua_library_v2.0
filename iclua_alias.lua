@@ -3,7 +3,6 @@
 ---|    `GameCamera.CameraMode.LockLevel`--锁定关卡
 ---|    `GameCamera.CameraMode.LockRect`--锁定区域
 ---|    `GameCamera.CameraMode.LockTransform`--跟随单位
-
 ---@alias CameraShader
 ---|    `GameCamera.CameraShader.EarthQuake` -- 抖动
 ---|    `GameCamera.CameraShader.Manga_Flash_Color` -- 漫画闪光
@@ -29,7 +28,6 @@
 ---|    `GameCamera.CameraShader.Invert` -- 反色
 ---|    `GameCamera.CameraShader.HSV` -- 颜色调整
 ---|    `GameCamera.CameraShader.RGB` -- 颜色叠加
-
 ---@alias PlaceLayer
 ---|    `UnitData.PlaceLayer.Unit` -- 单位
 ---|    `UnitData.PlaceLayer.Decoration` -- 装饰
@@ -42,12 +40,10 @@
 ---|    `UnitData.PlaceLayer.Custom5` -- 其他5
 ---|    `UnitData.PlaceLayer.Player` -- 玩家
 ---|    `UnitData.PlaceLayer.Monster` -- 怪物
-
 ---@alias SyncRecInfoMode
 ---|    `Multiplayer.SyncRecInfoMode.def` -- 默认
 ---|    `Multiplayer.SyncRecInfoMode.mediumLatency` -- 中延迟
 ---|    `Multiplayer.SyncRecInfoMode.lowLatency` -- 低延迟
-
 ---@alias AudioClip UnityEngine.AudioClip
 ---@alias Vector2 UnityEngine.Vector2
 ---@alias Vector3 UnityEngine.Vector3
@@ -68,14 +64,4 @@
 ---@alias System.Boolean Boolean
 ---@alias System.String String
 ---@alias BindingFlags System.Reflection.BindingFlags
-
-
-
-
-System = {
-    Single = 0.0;
-    Int32 = 0;
-    Object = nil;
-    String = "abc";
-    Boolean = false;
-}
+---@alias ControlMode Unit.ControlMode
