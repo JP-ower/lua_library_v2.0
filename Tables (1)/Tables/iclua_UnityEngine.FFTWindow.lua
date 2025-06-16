@@ -2,7 +2,6 @@
 ---@class UnityEngine.FFTWindow
 UnityEngine.FFTWindow = {
 ---枚举值：value__
----@param p1 UnityEngine.FFTWindow
 ---@type System.Int32
 value__ = nil,
 

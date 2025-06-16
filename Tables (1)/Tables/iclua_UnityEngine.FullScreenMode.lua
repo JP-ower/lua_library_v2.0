@@ -2,7 +2,6 @@
 ---@class UnityEngine.FullScreenMode
 UnityEngine.FullScreenMode = {
 ---枚举值：value__
----@param p1 UnityEngine.FullScreenMode
 ---@type System.Int32
 value__ = nil,
 

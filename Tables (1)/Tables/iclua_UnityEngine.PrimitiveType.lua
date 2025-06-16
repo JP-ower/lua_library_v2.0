@@ -2,7 +2,6 @@
 ---@class UnityEngine.PrimitiveType
 UnityEngine.PrimitiveType = {
 ---枚举值：value__
----@param p1 UnityEngine.PrimitiveType
 ---@type System.Int32
 value__ = nil,
 

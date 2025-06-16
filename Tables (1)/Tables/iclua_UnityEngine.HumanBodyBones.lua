@@ -2,7 +2,6 @@
 ---@class UnityEngine.HumanBodyBones
 UnityEngine.HumanBodyBones = {
 ---枚举值：value__
----@param p1 UnityEngine.HumanBodyBones
 ---@type System.Int32
 value__ = nil,
 

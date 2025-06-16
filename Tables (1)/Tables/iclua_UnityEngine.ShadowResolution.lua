@@ -2,7 +2,6 @@
 ---@class UnityEngine.ShadowResolution
 UnityEngine.ShadowResolution = {
 ---枚举值：value__
----@param p1 UnityEngine.ShadowResolution
 ---@type System.Int32
 value__ = nil,
 

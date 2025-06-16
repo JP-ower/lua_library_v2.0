@@ -2,7 +2,6 @@
 ---@class TMPro.TMP_VertexDataUpdateFlags
 TMPro.TMP_VertexDataUpdateFlags = {
 ---枚举值：value__
----@param p1 TMPro.TMP_VertexDataUpdateFlags
 ---@type System.Int32
 value__ = nil,
 

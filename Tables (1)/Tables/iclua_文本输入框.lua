@@ -56,6 +56,7 @@ GetLineType = function(p1) end,
 ---@param p1 UI_TextInputBox
 ---@param p2 ConditionDataArray
 ---@param p3 System.String
+---@deprecated
 SetPassInputCondition = function(p1,p2,p3) end,
 
 }

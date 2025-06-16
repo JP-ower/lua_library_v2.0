@@ -2,7 +2,6 @@
 ---@class UnityEngine.Video.VideoSource
 UnityEngine.Video.VideoSource = {
 ---枚举值：value__
----@param p1 UnityEngine.Video.VideoSource
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.Space
 UnityEngine.Space = {
 ---枚举值：value__
----@param p1 UnityEngine.Space
 ---@type System.Int32
 value__ = nil,
 

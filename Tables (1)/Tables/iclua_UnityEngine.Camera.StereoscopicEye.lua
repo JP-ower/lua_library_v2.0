@@ -2,7 +2,6 @@
 ---@class UnityEngine.Camera.StereoscopicEye
 UnityEngine.Camera.StereoscopicEye = {
 ---枚举值：value__
----@param p1 UnityEngine.Camera.StereoscopicEye
 ---@type System.Int32
 value__ = nil,
 

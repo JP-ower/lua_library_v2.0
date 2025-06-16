@@ -2,7 +2,6 @@
 ---@class UnityEngine.EventSystems.PointerEventData.InputButton
 UnityEngine.EventSystems.PointerEventData.InputButton = {
 ---枚举值：value__
----@param p1 UnityEngine.EventSystems.PointerEventData.InputButton
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.Image.Type
 UnityEngine.UI.Image.Type = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.Image.Type
 ---@type System.Int32
 value__ = nil,
 

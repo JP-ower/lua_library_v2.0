@@ -2,7 +2,6 @@
 ---@class JFY_TransitionEffect.MWS_Direct
 JFY_TransitionEffect.MWS_Direct = {
 ---枚举值：value__
----@param p1 JFY_TransitionEffect.MWS_Direct
 ---@type System.Int32
 value__ = nil,
 

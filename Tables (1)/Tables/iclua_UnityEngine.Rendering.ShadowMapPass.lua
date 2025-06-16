@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.ShadowMapPass
 UnityEngine.Rendering.ShadowMapPass = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.ShadowMapPass
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.RectTransform.Axis
 UnityEngine.RectTransform.Axis = {
 ---枚举值：value__
----@param p1 UnityEngine.RectTransform.Axis
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.Camera.MonoOrStereoscopicEye
 UnityEngine.Camera.MonoOrStereoscopicEye = {
 ---枚举值：value__
----@param p1 UnityEngine.Camera.MonoOrStereoscopicEye
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.LineTextureMode
 UnityEngine.LineTextureMode = {
 ---枚举值：value__
----@param p1 UnityEngine.LineTextureMode
 ---@type System.Int32
 value__ = nil,
 

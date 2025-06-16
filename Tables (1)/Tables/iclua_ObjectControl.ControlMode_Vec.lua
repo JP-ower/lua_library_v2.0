@@ -2,7 +2,6 @@
 ---@class ObjectControl.ControlMode_Vec
 ObjectControl.ControlMode_Vec = {
 ---枚举值：value__
----@param p1 ObjectControl.ControlMode_Vec
 ---@type System.Int32
 value__ = nil,
 

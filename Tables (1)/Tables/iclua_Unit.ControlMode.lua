@@ -2,7 +2,6 @@
 ---@class Unit.ControlMode
 Unit.ControlMode = {
 ---枚举值：value__
----@param p1 Unit.ControlMode
 ---@type System.Int32
 value__ = nil,
 

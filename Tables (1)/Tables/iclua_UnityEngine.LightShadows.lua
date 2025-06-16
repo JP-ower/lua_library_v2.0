@@ -2,7 +2,6 @@
 ---@class UnityEngine.LightShadows
 UnityEngine.LightShadows = {
 ---枚举值：value__
----@param p1 UnityEngine.LightShadows
 ---@type System.Int32
 value__ = nil,
 

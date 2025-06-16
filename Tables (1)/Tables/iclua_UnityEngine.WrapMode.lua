@@ -2,7 +2,6 @@
 ---@class UnityEngine.WrapMode
 UnityEngine.WrapMode = {
 ---枚举值：value__
----@param p1 UnityEngine.WrapMode
 ---@type System.Int32
 value__ = nil,
 

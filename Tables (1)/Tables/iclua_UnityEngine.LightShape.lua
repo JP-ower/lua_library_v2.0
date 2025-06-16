@@ -2,7 +2,6 @@
 ---@class UnityEngine.LightShape
 UnityEngine.LightShape = {
 ---枚举值：value__
----@param p1 UnityEngine.LightShape
 ---@type System.Int32
 value__ = nil,
 

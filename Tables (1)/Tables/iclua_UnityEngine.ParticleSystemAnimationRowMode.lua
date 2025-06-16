@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemAnimationRowMode
 UnityEngine.ParticleSystemAnimationRowMode = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemAnimationRowMode
 ---@type System.Int32
 value__ = nil,
 

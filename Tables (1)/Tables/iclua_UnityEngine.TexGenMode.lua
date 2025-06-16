@@ -2,7 +2,6 @@
 ---@class UnityEngine.TexGenMode
 UnityEngine.TexGenMode = {
 ---枚举值：value__
----@param p1 UnityEngine.TexGenMode
 ---@type System.Int32
 value__ = nil,
 

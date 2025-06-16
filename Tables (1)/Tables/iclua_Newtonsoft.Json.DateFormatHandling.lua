@@ -2,7 +2,6 @@
 ---@class Newtonsoft.Json.DateFormatHandling
 Newtonsoft.Json.DateFormatHandling = {
 ---枚举值：value__
----@param p1 Newtonsoft.Json.DateFormatHandling
 ---@type System.Int32
 value__ = nil,
 

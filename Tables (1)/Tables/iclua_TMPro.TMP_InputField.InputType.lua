@@ -2,7 +2,6 @@
 ---@class TMPro.TMP_InputField.InputType
 TMPro.TMP_InputField.InputType = {
 ---枚举值：value__
----@param p1 TMPro.TMP_InputField.InputType
 ---@type System.Int32
 value__ = nil,
 

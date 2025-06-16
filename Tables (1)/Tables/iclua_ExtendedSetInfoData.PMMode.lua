@@ -2,7 +2,6 @@
 ---@class ExtendedSetInfoData.PMMode
 ExtendedSetInfoData.PMMode = {
 ---枚举值：value__
----@param p1 ExtendedSetInfoData.PMMode
 ---@type System.Int32
 value__ = nil,
 

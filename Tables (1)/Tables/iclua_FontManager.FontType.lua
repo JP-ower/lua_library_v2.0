@@ -2,7 +2,6 @@
 ---@class FontManager.FontType
 FontManager.FontType = {
 ---枚举值：value__
----@param p1 FontManager.FontType
 ---@type System.Int32
 value__ = nil,
 

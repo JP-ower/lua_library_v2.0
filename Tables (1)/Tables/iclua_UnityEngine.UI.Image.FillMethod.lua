@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.Image.FillMethod
 UnityEngine.UI.Image.FillMethod = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.Image.FillMethod
 ---@type System.Int32
 value__ = nil,
 

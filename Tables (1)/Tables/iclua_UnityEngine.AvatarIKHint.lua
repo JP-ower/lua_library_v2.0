@@ -2,7 +2,6 @@
 ---@class UnityEngine.AvatarIKHint
 UnityEngine.AvatarIKHint = {
 ---枚举值：value__
----@param p1 UnityEngine.AvatarIKHint
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemSortMode
 UnityEngine.ParticleSystemSortMode = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemSortMode
 ---@type System.Int32
 value__ = nil,
 

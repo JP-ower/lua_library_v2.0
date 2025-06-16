@@ -2,7 +2,6 @@
 ---@class System.StringComparison
 System.StringComparison = {
 ---枚举值：value__
----@param p1 System.StringComparison
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.UVChannelFlags
 UnityEngine.Rendering.UVChannelFlags = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.UVChannelFlags
 ---@type System.Int32
 value__ = nil,
 

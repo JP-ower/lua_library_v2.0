@@ -19,6 +19,7 @@ GetLastRegisterTrigger = function() end,
 ---@param p4 ActionDataArray
 ---返回值：TriggerData
 ---@return TriggerData
+---@deprecated
 RegisterTrigger_Disposable = function(p1,p2,p3,p4) end,
 
 ---函数名：注册触发器(使用指定事件销毁)
@@ -31,6 +32,7 @@ RegisterTrigger_Disposable = function(p1,p2,p3,p4) end,
 ---@param p6 ActionDataArray
 ---返回值：TriggerData
 ---@return TriggerData
+---@deprecated
 RegisterTrigger_EventDisposable = function(p1,p2,p3,p4,p5,p6) end,
 
 ---函数名：注册触发器
@@ -41,6 +43,7 @@ RegisterTrigger_EventDisposable = function(p1,p2,p3,p4,p5,p6) end,
 ---@param p4 ActionDataArray
 ---返回值：TriggerData
 ---@return TriggerData
+---@deprecated
 RegisterTrigger = function(p1,p2,p3,p4) end,
 
 ---函数名：运行触发器

@@ -2,7 +2,6 @@
 ---@class UnityEngine.SpriteMaskInteraction
 UnityEngine.SpriteMaskInteraction = {
 ---枚举值：value__
----@param p1 UnityEngine.SpriteMaskInteraction
 ---@type System.Int32
 value__ = nil,
 

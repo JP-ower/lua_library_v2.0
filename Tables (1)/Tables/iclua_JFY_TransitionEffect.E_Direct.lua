@@ -2,7 +2,6 @@
 ---@class JFY_TransitionEffect.E_Direct
 JFY_TransitionEffect.E_Direct = {
 ---枚举值：value__
----@param p1 JFY_TransitionEffect.E_Direct
 ---@type System.Int32
 value__ = nil,
 

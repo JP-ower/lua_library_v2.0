@@ -2,7 +2,6 @@
 ---@class UnityEngine.SkinQuality
 UnityEngine.SkinQuality = {
 ---枚举值：value__
----@param p1 UnityEngine.SkinQuality
 ---@type System.Int32
 value__ = nil,
 

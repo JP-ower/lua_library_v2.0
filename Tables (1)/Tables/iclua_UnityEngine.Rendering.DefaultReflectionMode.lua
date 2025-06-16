@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.DefaultReflectionMode
 UnityEngine.Rendering.DefaultReflectionMode = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.DefaultReflectionMode
 ---@type System.Int32
 value__ = nil,
 

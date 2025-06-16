@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.ScrollRect.ScrollbarVisibility
 UnityEngine.UI.ScrollRect.ScrollbarVisibility = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.ScrollRect.ScrollbarVisibility
 ---@type System.Int32
 value__ = nil,
 

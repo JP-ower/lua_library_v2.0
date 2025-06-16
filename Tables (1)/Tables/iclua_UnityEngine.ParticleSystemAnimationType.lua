@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemAnimationType
 UnityEngine.ParticleSystemAnimationType = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemAnimationType
 ---@type System.Int32
 value__ = nil,
 

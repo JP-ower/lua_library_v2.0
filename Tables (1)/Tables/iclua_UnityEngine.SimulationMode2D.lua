@@ -2,7 +2,6 @@
 ---@class UnityEngine.SimulationMode2D
 UnityEngine.SimulationMode2D = {
 ---枚举值：value__
----@param p1 UnityEngine.SimulationMode2D
 ---@type System.Int32
 value__ = nil,
 

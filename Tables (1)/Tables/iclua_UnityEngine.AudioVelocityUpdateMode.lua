@@ -2,7 +2,6 @@
 ---@class UnityEngine.AudioVelocityUpdateMode
 UnityEngine.AudioVelocityUpdateMode = {
 ---枚举值：value__
----@param p1 UnityEngine.AudioVelocityUpdateMode
 ---@type System.Int32
 value__ = nil,
 

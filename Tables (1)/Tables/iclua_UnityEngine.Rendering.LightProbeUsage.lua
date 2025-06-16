@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.LightProbeUsage
 UnityEngine.Rendering.LightProbeUsage = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.LightProbeUsage
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.InputField.ContentType
 UnityEngine.UI.InputField.ContentType = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.InputField.ContentType
 ---@type System.Int32
 value__ = nil,
 

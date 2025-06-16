@@ -2,7 +2,6 @@
 ---@class TMPro.FontWeight
 TMPro.FontWeight = {
 ---枚举值：value__
----@param p1 TMPro.FontWeight
 ---@type System.Int32
 value__ = nil,
 

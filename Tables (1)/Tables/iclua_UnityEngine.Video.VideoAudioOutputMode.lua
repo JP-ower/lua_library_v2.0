@@ -2,7 +2,6 @@
 ---@class UnityEngine.Video.VideoAudioOutputMode
 UnityEngine.Video.VideoAudioOutputMode = {
 ---枚举值：value__
----@param p1 UnityEngine.Video.VideoAudioOutputMode
 ---@type System.Int32
 value__ = nil,
 

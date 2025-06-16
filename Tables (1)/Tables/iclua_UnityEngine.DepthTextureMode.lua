@@ -2,7 +2,6 @@
 ---@class UnityEngine.DepthTextureMode
 UnityEngine.DepthTextureMode = {
 ---枚举值：value__
----@param p1 UnityEngine.DepthTextureMode
 ---@type System.Int32
 value__ = nil,
 

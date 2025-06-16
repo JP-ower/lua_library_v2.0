@@ -2,7 +2,6 @@
 ---@class UnityEngine.RigidbodyConstraints
 UnityEngine.RigidbodyConstraints = {
 ---枚举值：value__
----@param p1 UnityEngine.RigidbodyConstraints
 ---@type System.Int32
 value__ = nil,
 

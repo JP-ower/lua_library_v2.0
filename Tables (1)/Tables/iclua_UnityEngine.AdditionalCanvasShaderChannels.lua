@@ -2,7 +2,6 @@
 ---@class UnityEngine.AdditionalCanvasShaderChannels
 UnityEngine.AdditionalCanvasShaderChannels = {
 ---枚举值：value__
----@param p1 UnityEngine.AdditionalCanvasShaderChannels
 ---@type System.Int32
 value__ = nil,
 

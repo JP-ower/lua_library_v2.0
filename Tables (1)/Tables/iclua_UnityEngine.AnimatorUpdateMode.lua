@@ -2,7 +2,6 @@
 ---@class UnityEngine.AnimatorUpdateMode
 UnityEngine.AnimatorUpdateMode = {
 ---枚举值：value__
----@param p1 UnityEngine.AnimatorUpdateMode
 ---@type System.Int32
 value__ = nil,
 

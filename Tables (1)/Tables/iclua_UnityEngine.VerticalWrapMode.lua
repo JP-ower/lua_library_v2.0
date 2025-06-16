@@ -2,7 +2,6 @@
 ---@class UnityEngine.VerticalWrapMode
 UnityEngine.VerticalWrapMode = {
 ---枚举值：value__
----@param p1 UnityEngine.VerticalWrapMode
 ---@type System.Int32
 value__ = nil,
 

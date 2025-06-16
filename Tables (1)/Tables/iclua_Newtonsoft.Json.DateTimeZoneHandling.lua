@@ -2,7 +2,6 @@
 ---@class Newtonsoft.Json.DateTimeZoneHandling
 Newtonsoft.Json.DateTimeZoneHandling = {
 ---枚举值：value__
----@param p1 Newtonsoft.Json.DateTimeZoneHandling
 ---@type System.Int32
 value__ = nil,
 

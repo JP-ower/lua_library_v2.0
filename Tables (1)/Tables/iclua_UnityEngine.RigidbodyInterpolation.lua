@@ -2,7 +2,6 @@
 ---@class UnityEngine.RigidbodyInterpolation
 UnityEngine.RigidbodyInterpolation = {
 ---枚举值：value__
----@param p1 UnityEngine.RigidbodyInterpolation
 ---@type System.Int32
 value__ = nil,
 

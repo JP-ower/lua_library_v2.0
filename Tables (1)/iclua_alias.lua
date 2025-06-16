@@ -63,5 +63,6 @@
 ---@alias System.Single Single
 ---@alias System.Boolean Boolean
 ---@alias System.String String
+---@alias System.Type type
 ---@alias BindingFlags System.Reflection.BindingFlags
 ---@alias ControlMode Unit.ControlMode

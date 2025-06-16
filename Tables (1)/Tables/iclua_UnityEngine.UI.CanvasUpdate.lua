@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.CanvasUpdate
 UnityEngine.UI.CanvasUpdate = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.CanvasUpdate
 ---@type System.Int32
 value__ = nil,
 

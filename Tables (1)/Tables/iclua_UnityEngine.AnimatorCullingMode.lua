@@ -2,7 +2,6 @@
 ---@class UnityEngine.AnimatorCullingMode
 UnityEngine.AnimatorCullingMode = {
 ---枚举值：value__
----@param p1 UnityEngine.AnimatorCullingMode
 ---@type System.Int32
 value__ = nil,
 

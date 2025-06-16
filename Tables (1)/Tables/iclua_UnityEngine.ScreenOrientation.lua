@@ -2,7 +2,6 @@
 ---@class UnityEngine.ScreenOrientation
 UnityEngine.ScreenOrientation = {
 ---枚举值：value__
----@param p1 UnityEngine.ScreenOrientation
 ---@type System.Int32
 value__ = nil,
 

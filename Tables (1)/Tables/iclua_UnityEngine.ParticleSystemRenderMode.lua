@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemRenderMode
 UnityEngine.ParticleSystemRenderMode = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemRenderMode
 ---@type System.Int32
 value__ = nil,
 

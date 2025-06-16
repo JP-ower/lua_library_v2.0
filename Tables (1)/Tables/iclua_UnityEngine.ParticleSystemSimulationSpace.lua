@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemSimulationSpace
 UnityEngine.ParticleSystemSimulationSpace = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemSimulationSpace
 ---@type System.Int32
 value__ = nil,
 

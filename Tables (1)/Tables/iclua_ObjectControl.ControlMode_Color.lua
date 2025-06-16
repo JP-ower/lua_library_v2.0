@@ -2,7 +2,6 @@
 ---@class ObjectControl.ControlMode_Color
 ObjectControl.ControlMode_Color = {
 ---枚举值：value__
----@param p1 ObjectControl.ControlMode_Color
 ---@type System.Int32
 value__ = nil,
 

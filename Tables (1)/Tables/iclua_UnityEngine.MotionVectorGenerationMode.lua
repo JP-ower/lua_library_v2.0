@@ -2,7 +2,6 @@
 ---@class UnityEngine.MotionVectorGenerationMode
 UnityEngine.MotionVectorGenerationMode = {
 ---枚举值：value__
----@param p1 UnityEngine.MotionVectorGenerationMode
 ---@type System.Int32
 value__ = nil,
 

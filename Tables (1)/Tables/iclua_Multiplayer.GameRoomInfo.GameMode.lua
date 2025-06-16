@@ -2,7 +2,6 @@
 ---@class Multiplayer.GameRoomInfo.GameMode
 Multiplayer.GameRoomInfo.GameMode = {
 ---枚举值：value__
----@param p1 Multiplayer.GameRoomInfo.GameMode
 ---@type System.Int32
 value__ = nil,
 

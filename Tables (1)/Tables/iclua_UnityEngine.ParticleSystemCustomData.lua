@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemCustomData
 UnityEngine.ParticleSystemCustomData = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemCustomData
 ---@type System.Int32
 value__ = nil,
 

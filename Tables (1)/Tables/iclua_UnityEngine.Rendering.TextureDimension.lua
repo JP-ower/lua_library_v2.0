@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.TextureDimension
 UnityEngine.Rendering.TextureDimension = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.TextureDimension
 ---@type System.Int32
 value__ = nil,
 

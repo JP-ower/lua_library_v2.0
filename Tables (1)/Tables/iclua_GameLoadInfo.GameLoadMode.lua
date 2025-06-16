@@ -2,7 +2,6 @@
 ---@class GameLoadInfo.GameLoadMode
 GameLoadInfo.GameLoadMode = {
 ---枚举值：value__
----@param p1 GameLoadInfo.GameLoadMode
 ---@type System.Int32
 value__ = nil,
 

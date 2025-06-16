@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.Selectable.Transition
 UnityEngine.UI.Selectable.Transition = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.Selectable.Transition
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.LightShadowResolution
 UnityEngine.Rendering.LightShadowResolution = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.LightShadowResolution
 ---@type System.Int32
 value__ = nil,
 

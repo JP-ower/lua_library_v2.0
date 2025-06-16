@@ -2,7 +2,6 @@
 ---@class UI_UIEditor.RTAnchors
 UI_UIEditor.RTAnchors = {
 ---枚举值：value__
----@param p1 UI_UIEditor.RTAnchors
 ---@type System.Int32
 value__ = nil,
 

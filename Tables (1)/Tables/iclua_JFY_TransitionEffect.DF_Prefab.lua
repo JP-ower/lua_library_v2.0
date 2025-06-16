@@ -2,7 +2,6 @@
 ---@class JFY_TransitionEffect.DF_Prefab
 JFY_TransitionEffect.DF_Prefab = {
 ---枚举值：value__
----@param p1 JFY_TransitionEffect.DF_Prefab
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemStopAction
 UnityEngine.ParticleSystemStopAction = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemStopAction
 ---@type System.Int32
 value__ = nil,
 

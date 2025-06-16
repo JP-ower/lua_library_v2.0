@@ -2,7 +2,6 @@
 ---@class UnityEngine.AvatarTarget
 UnityEngine.AvatarTarget = {
 ---枚举值：value__
----@param p1 UnityEngine.AvatarTarget
 ---@type System.Int32
 value__ = nil,
 

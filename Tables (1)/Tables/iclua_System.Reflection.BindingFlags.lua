@@ -2,7 +2,6 @@
 ---@class System.Reflection.BindingFlags
 System.Reflection.BindingFlags = {
 ---枚举值：value__
----@param p1 System.Reflection.BindingFlags
 ---@type System.Int32
 value__ = nil,
 

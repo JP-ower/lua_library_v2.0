@@ -2,7 +2,6 @@
 ---@class UnitData.PlaceLayer
 UnitData.PlaceLayer = {
 ---枚举值：value__
----@param p1 UnitData.PlaceLayer
 ---@type System.Int32
 value__ = nil,
 

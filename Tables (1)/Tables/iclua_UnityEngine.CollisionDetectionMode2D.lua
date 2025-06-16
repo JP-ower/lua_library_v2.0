@@ -2,7 +2,6 @@
 ---@class UnityEngine.CollisionDetectionMode2D
 UnityEngine.CollisionDetectionMode2D = {
 ---枚举值：value__
----@param p1 UnityEngine.CollisionDetectionMode2D
 ---@type System.Int32
 value__ = nil,
 

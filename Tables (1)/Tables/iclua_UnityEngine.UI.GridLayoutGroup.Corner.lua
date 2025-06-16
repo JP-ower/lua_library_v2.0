@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.GridLayoutGroup.Corner
 UnityEngine.UI.GridLayoutGroup.Corner = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.GridLayoutGroup.Corner
 ---@type System.Int32
 value__ = nil,
 

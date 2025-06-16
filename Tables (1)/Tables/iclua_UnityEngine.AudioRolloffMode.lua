@@ -2,7 +2,6 @@
 ---@class UnityEngine.AudioRolloffMode
 UnityEngine.AudioRolloffMode = {
 ---枚举值：value__
----@param p1 UnityEngine.AudioRolloffMode
 ---@type System.Int32
 value__ = nil,
 

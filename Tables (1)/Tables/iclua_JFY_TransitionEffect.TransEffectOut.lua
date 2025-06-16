@@ -2,7 +2,6 @@
 ---@class JFY_TransitionEffect.TransEffectOut
 JFY_TransitionEffect.TransEffectOut = {
 ---枚举值：value__
----@param p1 JFY_TransitionEffect.TransEffectOut
 ---@type System.Int32
 value__ = nil,
 

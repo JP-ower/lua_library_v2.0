@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.CanvasScaler.ScaleMode
 UnityEngine.UI.CanvasScaler.ScaleMode = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.CanvasScaler.ScaleMode
 ---@type System.Int32
 value__ = nil,
 

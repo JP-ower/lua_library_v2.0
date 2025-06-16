@@ -2,7 +2,6 @@
 ---@class ObjectControl.SetMode
 ObjectControl.SetMode = {
 ---枚举值：value__
----@param p1 ObjectControl.SetMode
 ---@type System.Int32
 value__ = nil,
 

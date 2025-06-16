@@ -2,7 +2,6 @@
 ---@class UnityEngine.TextureWrapMode
 UnityEngine.TextureWrapMode = {
 ---枚举值：value__
----@param p1 UnityEngine.TextureWrapMode
 ---@type System.Int32
 value__ = nil,
 

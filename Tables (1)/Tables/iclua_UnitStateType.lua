@@ -2,7 +2,6 @@
 ---@class UnitStateType
 UnitStateType = {
 ---枚举值：value__
----@param p1 UnitStateType
 ---@type System.Int32
 value__ = nil,
 

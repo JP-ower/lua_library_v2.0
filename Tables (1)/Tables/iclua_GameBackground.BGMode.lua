@@ -2,7 +2,6 @@
 ---@class GameBackground.BGMode
 GameBackground.BGMode = {
 ---枚举值：value__
----@param p1 GameBackground.BGMode
 ---@type System.Int32
 value__ = nil,
 

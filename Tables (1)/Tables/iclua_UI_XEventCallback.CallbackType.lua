@@ -2,7 +2,6 @@
 ---@class UI_XEventCallback.CallbackType
 UI_XEventCallback.CallbackType = {
 ---枚举值：value__
----@param p1 UI_XEventCallback.CallbackType
 ---@type System.Int32
 value__ = nil,
 

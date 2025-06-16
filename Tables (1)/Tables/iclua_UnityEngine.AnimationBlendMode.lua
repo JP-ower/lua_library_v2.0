@@ -2,7 +2,6 @@
 ---@class UnityEngine.AnimationBlendMode
 UnityEngine.AnimationBlendMode = {
 ---枚举值：value__
----@param p1 UnityEngine.AnimationBlendMode
 ---@type System.Int32
 value__ = nil,
 

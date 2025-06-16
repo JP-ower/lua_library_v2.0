@@ -2,7 +2,6 @@
 ---@class UnityEngine.RectTransform.Edge
 UnityEngine.RectTransform.Edge = {
 ---枚举值：value__
----@param p1 UnityEngine.RectTransform.Edge
 ---@type System.Int32
 value__ = nil,
 

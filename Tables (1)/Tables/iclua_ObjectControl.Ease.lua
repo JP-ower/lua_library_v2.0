@@ -2,7 +2,6 @@
 ---@class ObjectControl.Ease
 ObjectControl.Ease = {
 ---枚举值：value__
----@param p1 ObjectControl.Ease
 ---@type System.Int32
 value__ = nil,
 

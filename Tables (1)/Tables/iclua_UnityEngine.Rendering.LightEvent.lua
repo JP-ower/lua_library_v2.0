@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.LightEvent
 UnityEngine.Rendering.LightEvent = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.LightEvent
 ---@type System.Int32
 value__ = nil,
 

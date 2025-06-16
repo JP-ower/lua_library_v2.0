@@ -2,7 +2,6 @@
 ---@class Level.CreateUnitMode
 Level.CreateUnitMode = {
 ---枚举值：value__
----@param p1 Level.CreateUnitMode
 ---@type System.Int32
 value__ = nil,
 

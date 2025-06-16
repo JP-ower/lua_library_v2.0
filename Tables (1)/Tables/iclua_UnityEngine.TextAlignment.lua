@@ -2,7 +2,6 @@
 ---@class UnityEngine.TextAlignment
 UnityEngine.TextAlignment = {
 ---枚举值：value__
----@param p1 UnityEngine.TextAlignment
 ---@type System.Int32
 value__ = nil,
 

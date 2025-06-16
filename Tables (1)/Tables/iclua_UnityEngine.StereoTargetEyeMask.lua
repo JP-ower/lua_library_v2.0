@@ -2,7 +2,6 @@
 ---@class UnityEngine.StereoTargetEyeMask
 UnityEngine.StereoTargetEyeMask = {
 ---枚举值：value__
----@param p1 UnityEngine.StereoTargetEyeMask
 ---@type System.Int32
 value__ = nil,
 

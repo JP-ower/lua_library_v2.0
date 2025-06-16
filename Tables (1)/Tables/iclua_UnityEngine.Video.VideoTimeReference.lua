@@ -2,7 +2,6 @@
 ---@class UnityEngine.Video.VideoTimeReference
 UnityEngine.Video.VideoTimeReference = {
 ---枚举值：value__
----@param p1 UnityEngine.Video.VideoTimeReference
 ---@type System.Int32
 value__ = nil,
 

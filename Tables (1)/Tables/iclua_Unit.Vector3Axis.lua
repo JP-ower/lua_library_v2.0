@@ -2,7 +2,6 @@
 ---@class Unit.Vector3Axis
 Unit.Vector3Axis = {
 ---枚举值：value__
----@param p1 Unit.Vector3Axis
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class Newtonsoft.Json.StringEscapeHandling
 Newtonsoft.Json.StringEscapeHandling = {
 ---枚举值：value__
----@param p1 Newtonsoft.Json.StringEscapeHandling
 ---@type System.Int32
 value__ = nil,
 

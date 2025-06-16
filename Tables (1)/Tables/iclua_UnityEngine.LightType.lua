@@ -2,7 +2,6 @@
 ---@class UnityEngine.LightType
 UnityEngine.LightType = {
 ---枚举值：value__
----@param p1 UnityEngine.LightType
 ---@type System.Int32
 value__ = nil,
 

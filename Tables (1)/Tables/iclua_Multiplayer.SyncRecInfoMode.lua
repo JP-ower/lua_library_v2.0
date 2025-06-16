@@ -2,7 +2,6 @@
 ---@class Multiplayer.SyncRecInfoMode
 Multiplayer.SyncRecInfoMode = {
 ---枚举值：value__
----@param p1 Multiplayer.SyncRecInfoMode
 ---@type System.Int32
 value__ = nil,
 

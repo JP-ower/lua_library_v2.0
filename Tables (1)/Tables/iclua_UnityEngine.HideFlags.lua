@@ -2,7 +2,6 @@
 ---@class UnityEngine.HideFlags
 UnityEngine.HideFlags = {
 ---枚举值：value__
----@param p1 UnityEngine.HideFlags
 ---@type System.Int32
 value__ = nil,
 

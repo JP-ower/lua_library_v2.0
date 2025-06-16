@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.GraphicRaycaster.BlockingObjects
 UnityEngine.UI.GraphicRaycaster.BlockingObjects = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.GraphicRaycaster.BlockingObjects
 ---@type System.Int32
 value__ = nil,
 

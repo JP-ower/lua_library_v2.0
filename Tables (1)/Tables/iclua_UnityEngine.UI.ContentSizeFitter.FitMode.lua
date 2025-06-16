@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.ContentSizeFitter.FitMode
 UnityEngine.UI.ContentSizeFitter.FitMode = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.ContentSizeFitter.FitMode
 ---@type System.Int32
 value__ = nil,
 

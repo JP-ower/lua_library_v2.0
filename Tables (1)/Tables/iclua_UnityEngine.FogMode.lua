@@ -2,7 +2,6 @@
 ---@class UnityEngine.FogMode
 UnityEngine.FogMode = {
 ---枚举值：value__
----@param p1 UnityEngine.FogMode
 ---@type System.Int32
 value__ = nil,
 

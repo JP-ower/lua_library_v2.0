@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.AspectRatioFitter.AspectMode
 UnityEngine.UI.AspectRatioFitter.AspectMode = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.AspectRatioFitter.AspectMode
 ---@type System.Int32
 value__ = nil,
 

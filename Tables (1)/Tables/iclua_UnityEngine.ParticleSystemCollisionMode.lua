@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemCollisionMode
 UnityEngine.ParticleSystemCollisionMode = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemCollisionMode
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class JFY_TransitionEffect.DOTweenEase
 JFY_TransitionEffect.DOTweenEase = {
 ---枚举值：value__
----@param p1 JFY_TransitionEffect.DOTweenEase
 ---@type System.Int32
 value__ = nil,
 

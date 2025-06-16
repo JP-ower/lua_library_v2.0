@@ -2,7 +2,6 @@
 ---@class UnityEngine.ParticleSystemRenderSpace
 UnityEngine.ParticleSystemRenderSpace = {
 ---枚举值：value__
----@param p1 UnityEngine.ParticleSystemRenderSpace
 ---@type System.Int32
 value__ = nil,
 

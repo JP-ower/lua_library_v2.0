@@ -2,7 +2,6 @@
 ---@class UnityEngine.Texture2D.EXRFlags
 UnityEngine.Texture2D.EXRFlags = {
 ---枚举值：value__
----@param p1 UnityEngine.Texture2D.EXRFlags
 ---@type System.Int32
 value__ = nil,
 

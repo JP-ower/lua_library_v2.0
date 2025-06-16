@@ -2,7 +2,6 @@
 ---@class Newtonsoft.Json.Serialization.DefaultContractResolver
 Newtonsoft.Json.Serialization.DefaultContractResolver = {
 ---函数名：get_DynamicCodeGeneration
----@param p1 Newtonsoft.Json.Serialization.DefaultContractResolver
 ---返回值：System.Boolean
 ---@return System.Boolean
 DynamicCodeGeneration = function(p1) end,

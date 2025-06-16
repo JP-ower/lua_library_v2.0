@@ -2,7 +2,6 @@
 ---@class JFY_CurvilinearMotion.ParabolaMode
 JFY_CurvilinearMotion.ParabolaMode = {
 ---枚举值：value__
----@param p1 JFY_CurvilinearMotion.ParabolaMode
 ---@type System.Int32
 value__ = nil,
 

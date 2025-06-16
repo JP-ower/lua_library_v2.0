@@ -2,7 +2,6 @@
 ---@class UnityEngine.EffectorForceMode2D
 UnityEngine.EffectorForceMode2D = {
 ---枚举值：value__
----@param p1 UnityEngine.EffectorForceMode2D
 ---@type System.Int32
 value__ = nil,
 

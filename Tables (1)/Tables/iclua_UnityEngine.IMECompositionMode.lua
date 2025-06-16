@@ -2,7 +2,6 @@
 ---@class UnityEngine.IMECompositionMode
 UnityEngine.IMECompositionMode = {
 ---枚举值：value__
----@param p1 UnityEngine.IMECompositionMode
 ---@type System.Int32
 value__ = nil,
 

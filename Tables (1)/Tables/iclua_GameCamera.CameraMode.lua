@@ -2,7 +2,6 @@
 ---@class GameCamera.CameraMode
 GameCamera.CameraMode = {
 ---枚举值：value__
----@param p1 GameCamera.CameraMode
 ---@type System.Int32
 value__ = nil,
 

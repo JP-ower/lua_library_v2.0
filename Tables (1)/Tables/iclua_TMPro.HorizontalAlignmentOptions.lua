@@ -2,7 +2,6 @@
 ---@class TMPro.HorizontalAlignmentOptions
 TMPro.HorizontalAlignmentOptions = {
 ---枚举值：value__
----@param p1 TMPro.HorizontalAlignmentOptions
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class TMPro.TMP_InputField.LineType
 TMPro.TMP_InputField.LineType = {
 ---枚举值：value__
----@param p1 TMPro.TMP_InputField.LineType
 ---@type System.Int32
 value__ = nil,
 

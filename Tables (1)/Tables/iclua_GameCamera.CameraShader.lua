@@ -2,7 +2,6 @@
 ---@class GameCamera.CameraShader
 GameCamera.CameraShader = {
 ---枚举值：value__
----@param p1 GameCamera.CameraShader
 ---@type System.Int32
 value__ = nil,
 

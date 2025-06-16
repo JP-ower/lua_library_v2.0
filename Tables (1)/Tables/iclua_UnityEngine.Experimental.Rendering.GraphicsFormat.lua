@@ -2,7 +2,6 @@
 ---@class UnityEngine.Experimental.Rendering.GraphicsFormat
 UnityEngine.Experimental.Rendering.GraphicsFormat = {
 ---枚举值：value__
----@param p1 UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@type System.Int32
 value__ = nil,
 

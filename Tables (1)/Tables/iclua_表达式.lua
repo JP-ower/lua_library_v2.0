@@ -7,6 +7,7 @@ ConditionFunction = {
 ---@param p1 ConditionDataArray
 ---返回值：System.Boolean
 ---@return System.Boolean
+---@deprecated
 CompleteAllConditions = function(p1) end,
 
 ---函数名：任意条件成立
@@ -15,6 +16,7 @@ CompleteAllConditions = function(p1) end,
 ---@param p1 ConditionDataArray
 ---返回值：System.Boolean
 ---@return System.Boolean
+---@deprecated
 CompleteAnyConditions = function(p1) end,
 
 ---函数名：布尔表达式

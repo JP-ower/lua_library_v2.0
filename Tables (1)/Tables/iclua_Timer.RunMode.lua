@@ -2,7 +2,6 @@
 ---@class Timer.RunMode
 Timer.RunMode = {
 ---枚举值：value__
----@param p1 Timer.RunMode
 ---@type System.Int32
 value__ = nil,
 

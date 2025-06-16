@@ -32,6 +32,7 @@ Add_Collision = function(p1,p2) end,
 ---@param p1 UnitGroup
 ---@param p2 Unit
 ---@param p3 ConditionDataArray
+---@deprecated
 Add_Collision_C = function(p1,p2,p3) end,
 
 ---函数名：添加关卡内所有单位
@@ -44,6 +45,7 @@ AddLevelAllUnit = function(p1) end,
 ---介绍：用选取单位来获取当前检测条件的目标
 ---@param p1 UnitGroup
 ---@param p2 ConditionDataArray
+---@deprecated
 AddLevelAllUnit_C = function(p1,p2) end,
 
 ---函数名：删除单位

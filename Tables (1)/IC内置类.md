@@ -79,6 +79,7 @@
 | 字符串               | CharacterString              |
 | 自定义函数           | CustomFunctionData           |
 | 自定义属性           | CAManager                    |
+| Lua工具              | LuaTool                      |
 | UI_图片              | UI_XImage                    |
 | UI_遮罩              | UI_XMask                     |
 | UI界面               | UI_XUI                       |

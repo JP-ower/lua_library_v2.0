@@ -2,7 +2,6 @@
 ---@class UnityEngine.Rendering.RenderTextureSubElement
 UnityEngine.Rendering.RenderTextureSubElement = {
 ---枚举值：value__
----@param p1 UnityEngine.Rendering.RenderTextureSubElement
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.Experimental.Rendering.RayTracingMode
 UnityEngine.Experimental.Rendering.RayTracingMode = {
 ---枚举值：value__
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
 ---@type System.Int32
 value__ = nil,
 

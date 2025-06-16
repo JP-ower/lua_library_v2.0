@@ -2,7 +2,6 @@
 ---@class Unit.ControlMode_Vec
 Unit.ControlMode_Vec = {
 ---枚举值：value__
----@param p1 Unit.ControlMode_Vec
 ---@type System.Int32
 value__ = nil,
 

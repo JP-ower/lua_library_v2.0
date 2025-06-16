@@ -2,7 +2,6 @@
 ---@class UnityEngine.AudioSourceCurveType
 UnityEngine.AudioSourceCurveType = {
 ---枚举值：value__
----@param p1 UnityEngine.AudioSourceCurveType
 ---@type System.Int32
 value__ = nil,
 

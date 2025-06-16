@@ -2,7 +2,6 @@
 ---@class TMPro.FontStyles
 TMPro.FontStyles = {
 ---枚举值：value__
----@param p1 TMPro.FontStyles
 ---@type System.Int32
 value__ = nil,
 

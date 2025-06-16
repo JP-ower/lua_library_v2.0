@@ -2,7 +2,6 @@
 ---@class TMPro.TMP_InputField.CharacterValidation
 TMPro.TMP_InputField.CharacterValidation = {
 ---枚举值：value__
----@param p1 TMPro.TMP_InputField.CharacterValidation
 ---@type System.Int32
 value__ = nil,
 

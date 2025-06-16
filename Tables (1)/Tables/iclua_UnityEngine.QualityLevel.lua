@@ -2,7 +2,6 @@
 ---@class UnityEngine.QualityLevel
 UnityEngine.QualityLevel = {
 ---枚举值：value__
----@param p1 UnityEngine.QualityLevel
 ---@type System.Int32
 value__ = nil,
 

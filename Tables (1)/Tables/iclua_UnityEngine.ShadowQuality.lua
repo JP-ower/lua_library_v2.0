@@ -2,7 +2,6 @@
 ---@class UnityEngine.ShadowQuality
 UnityEngine.ShadowQuality = {
 ---枚举值：value__
----@param p1 UnityEngine.ShadowQuality
 ---@type System.Int32
 value__ = nil,
 

@@ -2,7 +2,6 @@
 ---@class UnityEngine.Video.VideoRenderMode
 UnityEngine.Video.VideoRenderMode = {
 ---枚举值：value__
----@param p1 UnityEngine.Video.VideoRenderMode
 ---@type System.Int32
 value__ = nil,
 

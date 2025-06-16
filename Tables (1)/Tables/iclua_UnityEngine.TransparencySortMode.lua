@@ -2,7 +2,6 @@
 ---@class UnityEngine.TransparencySortMode
 UnityEngine.TransparencySortMode = {
 ---枚举值：value__
----@param p1 UnityEngine.TransparencySortMode
 ---@type System.Int32
 value__ = nil,
 

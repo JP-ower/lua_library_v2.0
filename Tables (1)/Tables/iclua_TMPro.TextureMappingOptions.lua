@@ -2,7 +2,6 @@
 ---@class TMPro.TextureMappingOptions
 TMPro.TextureMappingOptions = {
 ---枚举值：value__
----@param p1 TMPro.TextureMappingOptions
 ---@type System.Int32
 value__ = nil,
 

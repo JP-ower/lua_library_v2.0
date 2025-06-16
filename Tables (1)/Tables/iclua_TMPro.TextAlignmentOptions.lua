@@ -2,7 +2,6 @@
 ---@class TMPro.TextAlignmentOptions
 TMPro.TextAlignmentOptions = {
 ---枚举值：value__
----@param p1 TMPro.TextAlignmentOptions
 ---@type System.Int32
 value__ = nil,
 

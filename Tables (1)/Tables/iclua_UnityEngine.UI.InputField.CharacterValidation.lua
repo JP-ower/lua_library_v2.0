@@ -2,7 +2,6 @@
 ---@class UnityEngine.UI.InputField.CharacterValidation
 UnityEngine.UI.InputField.CharacterValidation = {
 ---枚举值：value__
----@param p1 UnityEngine.UI.InputField.CharacterValidation
 ---@type System.Int32
 value__ = nil,
 

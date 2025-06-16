@@ -2,7 +2,6 @@
 ---@class UnityEngine.Video.VideoAspectRatio
 UnityEngine.Video.VideoAspectRatio = {
 ---枚举值：value__
----@param p1 UnityEngine.Video.VideoAspectRatio
 ---@type System.Int32
 value__ = nil,
 
