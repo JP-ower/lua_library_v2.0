@@ -66,8 +66,8 @@ PrintMaxY = function(p1,p2,p3) end,
 ---@param p1 System.Single
 ---@param p2 System.Single
 ---@param p3 System.Single
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetMaxY = function(p1,p2,p3) end,
 
 ---函数名：设置对象跟随曲线旋转
@@ -88,8 +88,8 @@ SetSpeed = function(p1,p2,p3) end,
 ---函数名：获取曲线运动的X轴速度
 ---描述：·的X轴速度
 ---@param p1 JFY_CurvilinearMotion
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetSpeedX = function(p1) end,
 
 ---函数名：设置曲线运动的X轴速度
@@ -102,8 +102,8 @@ SetSpeedX = function(p1,p2) end,
 ---描述：·的Y轴速度
 ---介绍：获取的速度是当前0.02秒的平均速度
 ---@param p1 JFY_CurvilinearMotion
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetSpeedY = function(p1) end,
 
 ---函数名：设置曲线运动的Y轴速度
@@ -122,8 +122,8 @@ SetAcc = function(p1,p2,p3) end,
 ---函数名：获取曲线运动的X轴加速度
 ---描述：·的X轴加速度
 ---@param p1 JFY_CurvilinearMotion
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAccX = function(p1) end,
 
 ---函数名：设置曲线运动的X轴加速度
@@ -135,8 +135,8 @@ SetAccX = function(p1,p2) end,
 ---函数名：获取曲线运动的Y轴加速度
 ---描述：·的Y轴加速度
 ---@param p1 JFY_CurvilinearMotion
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetGravity = function(p1) end,
 
 ---函数名：设置曲线运动的Y轴加速度

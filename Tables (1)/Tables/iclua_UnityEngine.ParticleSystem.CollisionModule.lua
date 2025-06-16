@@ -3,14 +3,14 @@
 UnityEngine.ParticleSystem.CollisionModule = {
 ---函数名：get_maxPlaneCount
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 maxPlaneCount = function(p1) end,
 
 ---函数名：get_enabled
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enabled = function(p1) end,
 
 ---函数名：set_enabled
@@ -19,8 +19,8 @@ enabled = function(p1) end,
 
 ---函数名：get_type
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：ParticleSystemCollisionType
----@return ParticleSystemCollisionType
+---返回值：UnityEngine.ParticleSystemCollisionType
+---@return UnityEngine.ParticleSystemCollisionType
 type = function(p1) end,
 
 ---函数名：set_type
@@ -29,8 +29,8 @@ type = function(p1) end,
 
 ---函数名：get_mode
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：ParticleSystemCollisionMode
----@return ParticleSystemCollisionMode
+---返回值：UnityEngine.ParticleSystemCollisionMode
+---@return UnityEngine.ParticleSystemCollisionMode
 mode = function(p1) end,
 
 ---函数名：set_mode
@@ -39,8 +39,8 @@ mode = function(p1) end,
 
 ---函数名：get_dampen
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 dampen = function(p1) end,
 
 ---函数名：set_dampen
@@ -49,8 +49,8 @@ dampen = function(p1) end,
 
 ---函数名：get_dampenMultiplier
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 dampenMultiplier = function(p1) end,
 
 ---函数名：set_dampenMultiplier
@@ -59,8 +59,8 @@ dampenMultiplier = function(p1) end,
 
 ---函数名：get_bounce
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 bounce = function(p1) end,
 
 ---函数名：set_bounce
@@ -69,8 +69,8 @@ bounce = function(p1) end,
 
 ---函数名：get_bounceMultiplier
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 bounceMultiplier = function(p1) end,
 
 ---函数名：set_bounceMultiplier
@@ -79,8 +79,8 @@ bounceMultiplier = function(p1) end,
 
 ---函数名：get_lifetimeLoss
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 lifetimeLoss = function(p1) end,
 
 ---函数名：set_lifetimeLoss
@@ -89,8 +89,8 @@ lifetimeLoss = function(p1) end,
 
 ---函数名：get_lifetimeLossMultiplier
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 lifetimeLossMultiplier = function(p1) end,
 
 ---函数名：set_lifetimeLossMultiplier
@@ -99,8 +99,8 @@ lifetimeLossMultiplier = function(p1) end,
 
 ---函数名：get_minKillSpeed
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 minKillSpeed = function(p1) end,
 
 ---函数名：set_minKillSpeed
@@ -109,8 +109,8 @@ minKillSpeed = function(p1) end,
 
 ---函数名：get_maxKillSpeed
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 maxKillSpeed = function(p1) end,
 
 ---函数名：set_maxKillSpeed
@@ -119,8 +119,8 @@ maxKillSpeed = function(p1) end,
 
 ---函数名：get_collidesWith
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：LayerMask
----@return LayerMask
+---返回值：UnityEngine.LayerMask
+---@return UnityEngine.LayerMask
 collidesWith = function(p1) end,
 
 ---函数名：set_collidesWith
@@ -129,8 +129,8 @@ collidesWith = function(p1) end,
 
 ---函数名：get_enableDynamicColliders
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enableDynamicColliders = function(p1) end,
 
 ---函数名：set_enableDynamicColliders
@@ -139,8 +139,8 @@ enableDynamicColliders = function(p1) end,
 
 ---函数名：get_maxCollisionShapes
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 maxCollisionShapes = function(p1) end,
 
 ---函数名：set_maxCollisionShapes
@@ -149,8 +149,8 @@ maxCollisionShapes = function(p1) end,
 
 ---函数名：get_quality
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：ParticleSystemCollisionQuality
----@return ParticleSystemCollisionQuality
+---返回值：UnityEngine.ParticleSystemCollisionQuality
+---@return UnityEngine.ParticleSystemCollisionQuality
 quality = function(p1) end,
 
 ---函数名：set_quality
@@ -159,8 +159,8 @@ quality = function(p1) end,
 
 ---函数名：get_voxelSize
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 voxelSize = function(p1) end,
 
 ---函数名：set_voxelSize
@@ -169,8 +169,8 @@ voxelSize = function(p1) end,
 
 ---函数名：get_radiusScale
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 radiusScale = function(p1) end,
 
 ---函数名：set_radiusScale
@@ -179,8 +179,8 @@ radiusScale = function(p1) end,
 
 ---函数名：get_sendCollisionMessages
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 sendCollisionMessages = function(p1) end,
 
 ---函数名：set_sendCollisionMessages
@@ -189,8 +189,8 @@ sendCollisionMessages = function(p1) end,
 
 ---函数名：get_colliderForce
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 colliderForce = function(p1) end,
 
 ---函数名：set_colliderForce
@@ -199,8 +199,8 @@ colliderForce = function(p1) end,
 
 ---函数名：get_multiplyColliderForceByCollisionAngle
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 multiplyColliderForceByCollisionAngle = function(p1) end,
 
 ---函数名：set_multiplyColliderForceByCollisionAngle
@@ -209,8 +209,8 @@ multiplyColliderForceByCollisionAngle = function(p1) end,
 
 ---函数名：get_multiplyColliderForceByParticleSpeed
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 multiplyColliderForceByParticleSpeed = function(p1) end,
 
 ---函数名：set_multiplyColliderForceByParticleSpeed
@@ -219,8 +219,8 @@ multiplyColliderForceByParticleSpeed = function(p1) end,
 
 ---函数名：get_multiplyColliderForceByParticleSize
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 multiplyColliderForceByParticleSize = function(p1) end,
 
 ---函数名：set_multiplyColliderForceByParticleSize
@@ -251,20 +251,20 @@ SetPlane = function(p1,p2,p3) end,
 ---函数名：GetPlane
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
 ---@param p2 System.Int32
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 GetPlane = function(p1,p2) end,
 
 ---函数名：get_planeCount
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 planeCount = function(p1) end,
 
 ---函数名：get_enableInteriorCollisions
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enableInteriorCollisions = function(p1) end,
 
 ---函数名：set_enableInteriorCollisions
@@ -274,26 +274,26 @@ enableInteriorCollisions = function(p1) end,
 ---函数名：Equals
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.ParticleSystem.CollisionModule
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

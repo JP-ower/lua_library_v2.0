@@ -4,8 +4,8 @@ UI_FloatingText = {
 ---函数名：漂浮文字是触发创建的
 ---描述：·是触发器创建的
 ---@param p1 UI_FloatingText
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsTriggerCreate = function(p1) end,
 
 ---函数名：最后创建的漂浮文字
@@ -70,8 +70,8 @@ SetSiblingIndex = function(p1,p2) end,
 ---函数名：所在下标
 ---描述：·的所在下标
 ---@param p1 UI_FloatingText
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSiblingIndex = function(p1) end,
 
 ---函数名：设置层级深度
@@ -84,8 +84,8 @@ SetSortingOrder = function(p1,p2) end,
 ---函数名：层级深度
 ---描述：·的层级深度
 ---@param p1 UI_FloatingText
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSortingOrder = function(p1) end,
 
 ---函数名：设置大小
@@ -98,8 +98,8 @@ SetSize = function(p1,p2) end,
 ---函数名：大小
 ---描述：·的大小
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetSize = function(p1) end,
 
 ---函数名：设置缩放大小
@@ -111,8 +111,8 @@ SetScale = function(p1,p2) end,
 ---函数名：缩放大小
 ---描述：·的缩放大小
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetScale = function(p1) end,
 
 ---函数名：设置X缩放大小
@@ -124,8 +124,8 @@ SetXScale = function(p1,p2) end,
 ---函数名：X缩放大小
 ---描述：·的X缩放大小
 ---@param p1 UI_FloatingText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXScale = function(p1) end,
 
 ---函数名：设置Y缩放大小
@@ -137,8 +137,8 @@ SetYScale = function(p1,p2) end,
 ---函数名：Y缩放大小
 ---描述：·的Y缩放大小
 ---@param p1 UI_FloatingText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYScale = function(p1) end,
 
 ---函数名：设置字体大小
@@ -150,8 +150,8 @@ SetFontSize = function(p1,p2) end,
 ---函数名：字体大小
 ---描述：·的字体大小
 ---@param p1 UI_FloatingText
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetFontSize = function(p1) end,
 
 ---函数名：设置中心点
@@ -163,8 +163,8 @@ SetPivot = function(p1,p2) end,
 ---函数名：中心点
 ---描述：·的中心点
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPivot = function(p1) end,
 
 ---函数名：设置对其方式
@@ -176,8 +176,8 @@ SetAlignment = function(p1,p2) end,
 ---函数名：对其方式
 ---描述：·的对其方式
 ---@param p1 UI_FloatingText
----返回值：TextAnchor
----@return TextAnchor
+---返回值：UnityEngine.TextAnchor
+---@return UnityEngine.TextAnchor
 GetAlignment = function(p1) end,
 
 ---函数名：设置颜色
@@ -195,15 +195,15 @@ SetAlpha = function(p1,p2) end,
 ---函数名：透明度
 ---描述：·的透明度
 ---@param p1 UI_FloatingText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAlpha = function(p1) end,
 
 ---函数名：颜色
 ---描述：·的颜色
 ---@param p1 UI_FloatingText
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1) end,
 
 ---函数名：设置偏移
@@ -215,8 +215,8 @@ SetOffset = function(p1,p2) end,
 ---函数名：偏移
 ---描述：·的偏移
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetOffset = function(p1) end,
 
 ---函数名：设置文本
@@ -228,8 +228,8 @@ SetText = function(p1,p2) end,
 ---函数名：文本
 ---描述：·的文本
 ---@param p1 UI_FloatingText
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetText = function(p1) end,
 
 ---函数名：设置显示类型
@@ -241,8 +241,8 @@ SetFontStyle = function(p1,p2) end,
 ---函数名：显示类型
 ---描述：·的显示类型
 ---@param p1 UI_FloatingText
----返回值：FontStyle
----@return FontStyle
+---返回值：UnityEngine.FontStyle
+---@return UnityEngine.FontStyle
 GetFontStyle = function(p1) end,
 
 ---函数名：绑定单位
@@ -279,22 +279,22 @@ SetYPos = function(p1,p2) end,
 ---函数名：世界坐标
 ---描述：·的世界坐标
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPos = function(p1) end,
 
 ---函数名：X世界坐标
 ---描述：·的X世界坐标
 ---@param p1 UI_FloatingText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXPos = function(p1) end,
 
 ---函数名：Y世界坐标
 ---描述：·的Y世界坐标
 ---@param p1 UI_FloatingText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYPos = function(p1) end,
 
 ---函数名：锁定屏幕坐标
@@ -312,8 +312,8 @@ CancelScreenPos = function(p1) end,
 ---函数名：锁定的屏幕坐标
 ---描述：·锁定的屏幕坐标
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetScreenPos = function(p1) end,
 
 ---函数名：设置锁定显示状态
@@ -325,15 +325,15 @@ SetLockShowState = function(p1,p2) end,
 ---函数名：是锁定显示的
 ---描述：·是锁定显示的
 ---@param p1 UI_FloatingText
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsLockShow = function(p1) end,
 
 ---函数名：是显示的
 ---描述：·是显示的
 ---@param p1 UI_FloatingText
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetShowState = function(p1) end,
 
 ---函数名：设置关卡
@@ -358,8 +358,8 @@ SetOutlineEnable = function(p1,p2) end,
 ---函数名：描边启用状态
 ---描述：·的描边启用状态
 ---@param p1 UI_FloatingText
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetOutlineEnable = function(p1) end,
 
 ---函数名：设置描边颜色
@@ -371,8 +371,8 @@ SetOutlineColor = function(p1,p2) end,
 ---函数名：描边颜色
 ---描述：·的描边颜色
 ---@param p1 UI_FloatingText
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetOutlineColor = function(p1) end,
 
 ---函数名：设置描边大小
@@ -384,8 +384,8 @@ SetOutlineSize = function(p1,p2) end,
 ---函数名：描边大小
 ---描述：·的描边大小
 ---@param p1 UI_FloatingText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetOutlineSize = function(p1) end,
 
 ---函数名：设置字体类型
@@ -397,8 +397,8 @@ SetFontType = function(p1,p2) end,
 ---函数名：字体类型
 ---描述：·的字体类型
 ---@param p1 UI_FloatingText
----返回值：FontType
----@return FontType
+---返回值：FontManager.FontType
+---@return FontManager.FontType
 GetFontType = function(p1) end,
 
 ---函数名：从漂浮文字上获取UI文本组件

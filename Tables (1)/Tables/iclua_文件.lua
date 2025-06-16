@@ -15,31 +15,31 @@ DeleteStrFromGameFile = function(p1) end,
 ---函数名：从游戏文件中加载字符串
 ---描述：从游戏文件中加载字符串，文件名为·
 ---@param p1 System.String
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 LoadStrFromGameFile = function(p1) end,
 
 ---函数名：字符串文件是存在的
 ---描述：文件名为·的字符串文件是存在的
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GameStrFileIsExists = function(p1) end,
 
 ---函数名：游戏文件是否存在
 ---描述：ID为·的游戏文件是存在的
 ---介绍：可以判断玩家是否下载了指定ID的游戏关卡
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GameFileIsExists = function(p1) end,
 
 ---函数名：从游戏文件中加载字符串(跨关卡)
 ---描述：从游戏ID为·的文件中加载字符串，文件名为·
 ---@param p1 System.String
 ---@param p2 System.String
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 LoadStrFromOtherGameFile = function(p1,p2) end,
 
 }

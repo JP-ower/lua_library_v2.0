@@ -1,117 +1,41 @@
 ---@meta
 ---@class UI_XEventCallback.CallbackType
 UI_XEventCallback.CallbackType = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UI_XEventCallback.CallbackType
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UI_XEventCallback.CallbackType
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Click
+---@type UI_XEventCallback.CallbackType
+Click = nil,
 
----函数名：ToString
----@param p1 UI_XEventCallback.CallbackType
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：PointerDown
+---@type UI_XEventCallback.CallbackType
+PointerDown = nil,
 
----函数名：ToString
----@param p1 UI_XEventCallback.CallbackType
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：PointerUp
+---@type UI_XEventCallback.CallbackType
+PointerUp = nil,
 
----函数名：CompareTo
----@param p1 UI_XEventCallback.CallbackType
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Enter
+---@type UI_XEventCallback.CallbackType
+Enter = nil,
 
----函数名：ToString
----@param p1 UI_XEventCallback.CallbackType
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Exit
+---@type UI_XEventCallback.CallbackType
+Exit = nil,
 
----函数名：ToString
----@param p1 UI_XEventCallback.CallbackType
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：DragStart
+---@type UI_XEventCallback.CallbackType
+DragStart = nil,
 
----函数名：HasFlag
----@param p1 UI_XEventCallback.CallbackType
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：Drag
+---@type UI_XEventCallback.CallbackType
+Drag = nil,
 
----函数名：GetTypeCode
----@param p1 UI_XEventCallback.CallbackType
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 UI_XEventCallback.CallbackType
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 UI_XEventCallback.CallbackType
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Click
----返回值：CallbackType
----@return CallbackType
-Click = function() end,
-
----函数名：PointerDown
----返回值：CallbackType
----@return CallbackType
-PointerDown = function() end,
-
----函数名：PointerUp
----返回值：CallbackType
----@return CallbackType
-PointerUp = function() end,
-
----函数名：Enter
----返回值：CallbackType
----@return CallbackType
-Enter = function() end,
-
----函数名：Exit
----返回值：CallbackType
----@return CallbackType
-Exit = function() end,
-
----函数名：DragStart
----返回值：CallbackType
----@return CallbackType
-DragStart = function() end,
-
----函数名：Drag
----返回值：CallbackType
----@return CallbackType
-Drag = function() end,
-
----函数名：DragEnd
----返回值：CallbackType
----@return CallbackType
-DragEnd = function() end,
+---枚举值：DragEnd
+---@type UI_XEventCallback.CallbackType
+DragEnd = nil,
 
 }

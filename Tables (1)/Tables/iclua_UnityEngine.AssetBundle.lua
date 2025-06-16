@@ -3,8 +3,8 @@
 UnityEngine.AssetBundle = {
 ---函数名：get_mainAsset
 ---@param p1 UnityEngine.AssetBundle
----返回值：Object
----@return Object
+---返回值：UnityEngine.Object
+---@return UnityEngine.Object
 mainAsset = function(p1) end,
 
 ---函数名：UnloadAllAssetBundles
@@ -12,124 +12,124 @@ mainAsset = function(p1) end,
 UnloadAllAssetBundles = function(p1) end,
 
 ---函数名：GetAllLoadedAssetBundles
----返回值：IEnumerable`1
----@return IEnumerable`1
+---返回值：System.Collections.Generic.IEnumerable`1[[UnityEngine.AssetBundle, UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable`1[[UnityEngine.AssetBundle, UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
 GetAllLoadedAssetBundles = function() end,
 
 ---函数名：LoadFromFileAsync
 ---@param p1 System.String
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromFileAsync = function(p1) end,
 
 ---函数名：LoadFromFileAsync
 ---@param p1 System.String
 ---@param p2 System.UInt32
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromFileAsync = function(p1,p2) end,
 
 ---函数名：LoadFromFileAsync
 ---@param p1 System.String
 ---@param p2 System.UInt32
 ---@param p3 System.UInt64
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromFileAsync = function(p1,p2,p3) end,
 
 ---函数名：LoadFromFile
 ---@param p1 System.String
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromFile = function(p1) end,
 
 ---函数名：LoadFromFile
 ---@param p1 System.String
 ---@param p2 System.UInt32
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromFile = function(p1,p2) end,
 
 ---函数名：LoadFromFile
 ---@param p1 System.String
 ---@param p2 System.UInt32
 ---@param p3 System.UInt64
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromFile = function(p1,p2,p3) end,
 
 ---函数名：LoadFromMemoryAsync
 ---@param p1 System.Byte[]
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromMemoryAsync = function(p1) end,
 
 ---函数名：LoadFromMemoryAsync
 ---@param p1 System.Byte[]
 ---@param p2 System.UInt32
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromMemoryAsync = function(p1,p2) end,
 
 ---函数名：LoadFromMemory
 ---@param p1 System.Byte[]
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromMemory = function(p1) end,
 
 ---函数名：LoadFromMemory
 ---@param p1 System.Byte[]
 ---@param p2 System.UInt32
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromMemory = function(p1,p2) end,
 
 ---函数名：LoadFromStreamAsync
 ---@param p1 System.IO.Stream
 ---@param p2 System.UInt32
 ---@param p3 System.UInt32
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromStreamAsync = function(p1,p2,p3) end,
 
 ---函数名：LoadFromStreamAsync
 ---@param p1 System.IO.Stream
 ---@param p2 System.UInt32
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromStreamAsync = function(p1,p2) end,
 
 ---函数名：LoadFromStreamAsync
 ---@param p1 System.IO.Stream
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 LoadFromStreamAsync = function(p1) end,
 
 ---函数名：LoadFromStream
 ---@param p1 System.IO.Stream
 ---@param p2 System.UInt32
 ---@param p3 System.UInt32
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromStream = function(p1,p2,p3) end,
 
 ---函数名：LoadFromStream
 ---@param p1 System.IO.Stream
 ---@param p2 System.UInt32
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromStream = function(p1,p2) end,
 
 ---函数名：LoadFromStream
 ---@param p1 System.IO.Stream
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 LoadFromStream = function(p1) end,
 
 ---函数名：get_isStreamedSceneAssetBundle
 ---@param p1 UnityEngine.AssetBundle
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isStreamedSceneAssetBundle = function(p1) end,
 
 ---函数名：SetAssetBundleDecryptKey
@@ -139,28 +139,28 @@ SetAssetBundleDecryptKey = function(p1) end,
 ---函数名：Contains
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Contains = function(p1,p2) end,
 
 ---函数名：Load
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：Object
----@return Object
+---返回值：UnityEngine.Object
+---@return UnityEngine.Object
 Load = function(p1,p2) end,
 
 ---函数名：Load
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：Object
----@return Object
+---返回值：UnityEngine.Object
+---@return UnityEngine.Object
 Load = function(p1,p2) end,
 
 ---函数名：LoadAll
 ---@param p1 UnityEngine.AssetBundle
----返回值：Object[]
----@return Object[]
+---返回值：UnityEngine.Object[]
+---@return UnityEngine.Object[]
 LoadAll = function(p1) end,
 
 ---函数名：LoadAll
@@ -172,52 +172,52 @@ LoadAll = function(p1) end,
 ---函数名：LoadAsset
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：Object
----@return Object
+---返回值：UnityEngine.Object
+---@return UnityEngine.Object
 LoadAsset = function(p1,p2) end,
 
 ---函数名：LoadAsset
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：T
----@return T
+---返回值：
+---@return 
 LoadAsset = function(p1,p2) end,
 
 ---函数名：LoadAsset
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
 ---@param p3 System.Type
----返回值：Object
----@return Object
+---返回值：UnityEngine.Object
+---@return UnityEngine.Object
 LoadAsset = function(p1,p2,p3) end,
 
 ---函数名：LoadAssetAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAssetAsync = function(p1,p2) end,
 
 ---函数名：LoadAssetAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAssetAsync = function(p1,p2) end,
 
 ---函数名：LoadAssetAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
 ---@param p3 System.Type
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAssetAsync = function(p1,p2,p3) end,
 
 ---函数名：LoadAssetWithSubAssets
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：Object[]
----@return Object[]
+---返回值：UnityEngine.Object[]
+---@return UnityEngine.Object[]
 LoadAssetWithSubAssets = function(p1,p2) end,
 
 ---函数名：LoadAssetWithSubAssets
@@ -231,36 +231,36 @@ LoadAssetWithSubAssets = function(p1,p2) end,
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
 ---@param p3 System.Type
----返回值：Object[]
----@return Object[]
+---返回值：UnityEngine.Object[]
+---@return UnityEngine.Object[]
 LoadAssetWithSubAssets = function(p1,p2,p3) end,
 
 ---函数名：LoadAssetWithSubAssetsAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAssetWithSubAssetsAsync = function(p1,p2) end,
 
 ---函数名：LoadAssetWithSubAssetsAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAssetWithSubAssetsAsync = function(p1,p2) end,
 
 ---函数名：LoadAssetWithSubAssetsAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.String
 ---@param p3 System.Type
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAssetWithSubAssetsAsync = function(p1,p2,p3) end,
 
 ---函数名：LoadAllAssets
 ---@param p1 UnityEngine.AssetBundle
----返回值：Object[]
----@return Object[]
+---返回值：UnityEngine.Object[]
+---@return UnityEngine.Object[]
 LoadAllAssets = function(p1) end,
 
 ---函数名：LoadAllAssets
@@ -272,33 +272,33 @@ LoadAllAssets = function(p1) end,
 ---函数名：LoadAllAssets
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.Type
----返回值：Object[]
----@return Object[]
+---返回值：UnityEngine.Object[]
+---@return UnityEngine.Object[]
 LoadAllAssets = function(p1,p2) end,
 
 ---函数名：LoadAllAssetsAsync
 ---@param p1 UnityEngine.AssetBundle
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAllAssetsAsync = function(p1) end,
 
 ---函数名：LoadAllAssetsAsync
 ---@param p1 UnityEngine.AssetBundle
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAllAssetsAsync = function(p1) end,
 
 ---函数名：LoadAllAssetsAsync
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.Type
----返回值：AssetBundleRequest
----@return AssetBundleRequest
+---返回值：UnityEngine.AssetBundleRequest
+---@return UnityEngine.AssetBundleRequest
 LoadAllAssetsAsync = function(p1,p2) end,
 
 ---函数名：AllAssetNames
 ---@param p1 UnityEngine.AssetBundle
----返回值：String[]
----@return String[]
+---返回值：System.String[]
+---@return System.String[]
 AllAssetNames = function(p1) end,
 
 ---函数名：Unload
@@ -308,14 +308,14 @@ Unload = function(p1,p2) end,
 
 ---函数名：GetAllAssetNames
 ---@param p1 UnityEngine.AssetBundle
----返回值：String[]
----@return String[]
+---返回值：System.String[]
+---@return System.String[]
 GetAllAssetNames = function(p1) end,
 
 ---函数名：GetAllScenePaths
 ---@param p1 UnityEngine.AssetBundle
----返回值：String[]
----@return String[]
+---返回值：System.String[]
+---@return System.String[]
 GetAllScenePaths = function(p1) end,
 
 ---函数名：RecompressAssetBundleAsync
@@ -324,13 +324,13 @@ GetAllScenePaths = function(p1) end,
 ---@param p3 UnityEngine.BuildCompression
 ---@param p4 System.UInt32
 ---@param p5 UnityEngine.ThreadPriority
----返回值：AssetBundleRecompressOperation
----@return AssetBundleRecompressOperation
+---返回值：UnityEngine.AssetBundleRecompressOperation
+---@return UnityEngine.AssetBundleRecompressOperation
 RecompressAssetBundleAsync = function(p1,p2,p3,p4,p5) end,
 
 ---函数名：get_memoryBudgetKB
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 memoryBudgetKB = function() end,
 
 ---函数名：set_memoryBudgetKB
@@ -338,45 +338,45 @@ memoryBudgetKB = function() end,
 
 ---函数名：CreateFromFile
 ---@param p1 System.String
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 CreateFromFile = function(p1) end,
 
 ---函数名：CreateFromMemory
 ---@param p1 System.Byte[]
----返回值：AssetBundleCreateRequest
----@return AssetBundleCreateRequest
+---返回值：UnityEngine.AssetBundleCreateRequest
+---@return UnityEngine.AssetBundleCreateRequest
 CreateFromMemory = function(p1) end,
 
 ---函数名：CreateFromMemoryImmediate
 ---@param p1 System.Byte[]
----返回值：AssetBundle
----@return AssetBundle
+---返回值：UnityEngine.AssetBundle
+---@return UnityEngine.AssetBundle
 CreateFromMemoryImmediate = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.AssetBundle
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.AssetBundle
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.AssetBundle
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.AssetBundle
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -385,8 +385,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.AssetBundle
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -395,14 +395,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.AssetBundle
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.AssetBundle
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

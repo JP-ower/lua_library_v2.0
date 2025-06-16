@@ -3,8 +3,8 @@
 UnityEngine.Mesh = {
 ---函数名：get_uv1
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv1 = function(p1) end,
 
 ---函数名：set_uv1
@@ -13,8 +13,8 @@ uv1 = function(p1) end,
 
 ---函数名：get_indexFormat
 ---@param p1 UnityEngine.Mesh
----返回值：IndexFormat
----@return IndexFormat
+---返回值：UnityEngine.Rendering.IndexFormat
+---@return UnityEngine.Rendering.IndexFormat
 indexFormat = function(p1) end,
 
 ---函数名：set_indexFormat
@@ -30,54 +30,54 @@ SetIndexBufferParams = function(p1,p2,p3) end,
 ---函数名：GetVertexAttribute
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：VertexAttributeDescriptor
----@return VertexAttributeDescriptor
+---返回值：UnityEngine.Rendering.VertexAttributeDescriptor
+---@return UnityEngine.Rendering.VertexAttributeDescriptor
 GetVertexAttribute = function(p1,p2) end,
 
 ---函数名：HasVertexAttribute
 ---@param p1 UnityEngine.Mesh
 ---@param p2 UnityEngine.Rendering.VertexAttribute
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 HasVertexAttribute = function(p1,p2) end,
 
 ---函数名：GetVertexAttributeDimension
 ---@param p1 UnityEngine.Mesh
 ---@param p2 UnityEngine.Rendering.VertexAttribute
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetVertexAttributeDimension = function(p1,p2) end,
 
 ---函数名：GetVertexAttributeFormat
 ---@param p1 UnityEngine.Mesh
 ---@param p2 UnityEngine.Rendering.VertexAttribute
----返回值：VertexAttributeFormat
----@return VertexAttributeFormat
+---返回值：UnityEngine.Rendering.VertexAttributeFormat
+---@return UnityEngine.Rendering.VertexAttributeFormat
 GetVertexAttributeFormat = function(p1,p2) end,
 
 ---函数名：get_vertexBufferCount
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 vertexBufferCount = function(p1) end,
 
 ---函数名：GetNativeVertexBufferPtr
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：IntPtr
----@return IntPtr
+---返回值：System.IntPtr
+---@return System.IntPtr
 GetNativeVertexBufferPtr = function(p1,p2) end,
 
 ---函数名：GetNativeIndexBufferPtr
 ---@param p1 UnityEngine.Mesh
----返回值：IntPtr
----@return IntPtr
+---返回值：System.IntPtr
+---@return System.IntPtr
 GetNativeIndexBufferPtr = function(p1) end,
 
 ---函数名：get_blendShapeCount
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 blendShapeCount = function(p1) end,
 
 ---函数名：ClearBlendShapes
@@ -87,30 +87,30 @@ ClearBlendShapes = function(p1) end,
 ---函数名：GetBlendShapeName
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetBlendShapeName = function(p1,p2) end,
 
 ---函数名：GetBlendShapeIndex
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.String
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetBlendShapeIndex = function(p1,p2) end,
 
 ---函数名：GetBlendShapeFrameCount
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetBlendShapeFrameCount = function(p1,p2) end,
 
 ---函数名：GetBlendShapeFrameWeight
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
 ---@param p3 System.Int32
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetBlendShapeFrameWeight = function(p1,p2,p3) end,
 
 ---函数名：GetBlendShapeFrameVertices
@@ -139,20 +139,20 @@ SetBoneWeights = function(p1,p2,p3) end,
 
 ---函数名：GetAllBoneWeights
 ---@param p1 UnityEngine.Mesh
----返回值：NativeArray`1
----@return NativeArray`1
+---返回值：Unity.Collections.NativeArray`1[[UnityEngine.BoneWeight1, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return Unity.Collections.NativeArray`1[[UnityEngine.BoneWeight1, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
 GetAllBoneWeights = function(p1) end,
 
 ---函数名：GetBonesPerVertex
 ---@param p1 UnityEngine.Mesh
----返回值：NativeArray`1
----@return NativeArray`1
+---返回值：Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@return Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 GetBonesPerVertex = function(p1) end,
 
 ---函数名：get_bindposes
 ---@param p1 UnityEngine.Mesh
----返回值：Matrix4x4[]
----@return Matrix4x4[]
+---返回值：UnityEngine.Matrix4x4[]
+---@return UnityEngine.Matrix4x4[]
 bindposes = function(p1) end,
 
 ---函数名：set_bindposes
@@ -161,20 +161,20 @@ bindposes = function(p1) end,
 
 ---函数名：get_isReadable
 ---@param p1 UnityEngine.Mesh
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isReadable = function(p1) end,
 
 ---函数名：get_vertexCount
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 vertexCount = function(p1) end,
 
 ---函数名：get_subMeshCount
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 subMeshCount = function(p1) end,
 
 ---函数名：set_subMeshCount
@@ -191,14 +191,14 @@ SetSubMesh = function(p1,p2,p3,p4) end,
 ---函数名：GetSubMesh
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：SubMeshDescriptor
----@return SubMeshDescriptor
+---返回值：UnityEngine.Rendering.SubMeshDescriptor
+---@return UnityEngine.Rendering.SubMeshDescriptor
 GetSubMesh = function(p1,p2) end,
 
 ---函数名：get_bounds
 ---@param p1 UnityEngine.Mesh
----返回值：Bounds
----@return Bounds
+---返回值：UnityEngine.Bounds
+---@return UnityEngine.Bounds
 bounds = function(p1) end,
 
 ---函数名：set_bounds
@@ -212,14 +212,14 @@ MarkModified = function(p1) end,
 ---函数名：GetUVDistributionMetric
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetUVDistributionMetric = function(p1,p2) end,
 
 ---函数名：get_vertices
 ---@param p1 UnityEngine.Mesh
----返回值：Vector3[]
----@return Vector3[]
+---返回值：UnityEngine.Vector3[]
+---@return UnityEngine.Vector3[]
 vertices = function(p1) end,
 
 ---函数名：set_vertices
@@ -228,8 +228,8 @@ vertices = function(p1) end,
 
 ---函数名：get_normals
 ---@param p1 UnityEngine.Mesh
----返回值：Vector3[]
----@return Vector3[]
+---返回值：UnityEngine.Vector3[]
+---@return UnityEngine.Vector3[]
 normals = function(p1) end,
 
 ---函数名：set_normals
@@ -238,8 +238,8 @@ normals = function(p1) end,
 
 ---函数名：get_tangents
 ---@param p1 UnityEngine.Mesh
----返回值：Vector4[]
----@return Vector4[]
+---返回值：UnityEngine.Vector4[]
+---@return UnityEngine.Vector4[]
 tangents = function(p1) end,
 
 ---函数名：set_tangents
@@ -248,8 +248,8 @@ tangents = function(p1) end,
 
 ---函数名：get_uv
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv = function(p1) end,
 
 ---函数名：set_uv
@@ -258,8 +258,8 @@ uv = function(p1) end,
 
 ---函数名：get_uv2
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv2 = function(p1) end,
 
 ---函数名：set_uv2
@@ -268,8 +268,8 @@ uv2 = function(p1) end,
 
 ---函数名：get_uv3
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv3 = function(p1) end,
 
 ---函数名：set_uv3
@@ -278,8 +278,8 @@ uv3 = function(p1) end,
 
 ---函数名：get_uv4
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv4 = function(p1) end,
 
 ---函数名：set_uv4
@@ -288,8 +288,8 @@ uv4 = function(p1) end,
 
 ---函数名：get_uv5
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv5 = function(p1) end,
 
 ---函数名：set_uv5
@@ -298,8 +298,8 @@ uv5 = function(p1) end,
 
 ---函数名：get_uv6
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv6 = function(p1) end,
 
 ---函数名：set_uv6
@@ -308,8 +308,8 @@ uv6 = function(p1) end,
 
 ---函数名：get_uv7
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv7 = function(p1) end,
 
 ---函数名：set_uv7
@@ -318,8 +318,8 @@ uv7 = function(p1) end,
 
 ---函数名：get_uv8
 ---@param p1 UnityEngine.Mesh
----返回值：Vector2[]
----@return Vector2[]
+---返回值：UnityEngine.Vector2[]
+---@return UnityEngine.Vector2[]
 uv8 = function(p1) end,
 
 ---函数名：set_uv8
@@ -328,8 +328,8 @@ uv8 = function(p1) end,
 
 ---函数名：get_colors
 ---@param p1 UnityEngine.Mesh
----返回值：Color[]
----@return Color[]
+---返回值：UnityEngine.Color[]
+---@return UnityEngine.Color[]
 colors = function(p1) end,
 
 ---函数名：set_colors
@@ -338,8 +338,8 @@ colors = function(p1) end,
 
 ---函数名：get_colors32
 ---@param p1 UnityEngine.Mesh
----返回值：Color32[]
----@return Color32[]
+---返回值：UnityEngine.Color32[]
+---@return UnityEngine.Color32[]
 colors32 = function(p1) end,
 
 ---函数名：set_colors32
@@ -817,28 +817,28 @@ GetUVs = function(p1,p2,p3) end,
 
 ---函数名：get_vertexAttributeCount
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 vertexAttributeCount = function(p1) end,
 
 ---函数名：GetVertexAttributes
 ---@param p1 UnityEngine.Mesh
----返回值：VertexAttributeDescriptor[]
----@return VertexAttributeDescriptor[]
+---返回值：UnityEngine.Rendering.VertexAttributeDescriptor[]
+---@return UnityEngine.Rendering.VertexAttributeDescriptor[]
 GetVertexAttributes = function(p1) end,
 
 ---函数名：GetVertexAttributes
 ---@param p1 UnityEngine.Mesh
 ---@param p2 UnityEngine.Rendering.VertexAttributeDescriptor[]
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetVertexAttributes = function(p1,p2) end,
 
 ---函数名：GetVertexAttributes
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Collections.Generic.List`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetVertexAttributes = function(p1,p2) end,
 
 ---函数名：SetVertexBufferParams
@@ -883,26 +883,26 @@ SetVertexBufferData = function(p1,p2,p3,p4,p5,p6) end,
 
 ---函数名：AcquireReadOnlyMeshData
 ---@param p1 UnityEngine.Mesh
----返回值：MeshDataArray
----@return MeshDataArray
+---返回值：UnityEngine.Mesh.MeshDataArray
+---@return UnityEngine.Mesh.MeshDataArray
 AcquireReadOnlyMeshData = function(p1) end,
 
 ---函数名：AcquireReadOnlyMeshData
 ---@param p1 UnityEngine.Mesh[]
----返回值：MeshDataArray
----@return MeshDataArray
+---返回值：UnityEngine.Mesh.MeshDataArray
+---@return UnityEngine.Mesh.MeshDataArray
 AcquireReadOnlyMeshData = function(p1) end,
 
 ---函数名：AcquireReadOnlyMeshData
 ---@param p1 System.Collections.Generic.List`1[[UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
----返回值：MeshDataArray
----@return MeshDataArray
+---返回值：UnityEngine.Mesh.MeshDataArray
+---@return UnityEngine.Mesh.MeshDataArray
 AcquireReadOnlyMeshData = function(p1) end,
 
 ---函数名：AllocateWritableMeshData
 ---@param p1 System.Int32
----返回值：MeshDataArray
----@return MeshDataArray
+---返回值：UnityEngine.Mesh.MeshDataArray
+---@return UnityEngine.Mesh.MeshDataArray
 AllocateWritableMeshData = function(p1) end,
 
 ---函数名：ApplyAndDisposeWritableMeshData
@@ -925,8 +925,8 @@ ApplyAndDisposeWritableMeshData = function(p1,p2,p3) end,
 
 ---函数名：get_triangles
 ---@param p1 UnityEngine.Mesh
----返回值：Int32[]
----@return Int32[]
+---返回值：System.Int32[]
+---@return System.Int32[]
 triangles = function(p1) end,
 
 ---函数名：set_triangles
@@ -936,16 +936,16 @@ triangles = function(p1) end,
 ---函数名：GetTriangles
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：Int32[]
----@return Int32[]
+---返回值：System.Int32[]
+---@return System.Int32[]
 GetTriangles = function(p1,p2) end,
 
 ---函数名：GetTriangles
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
 ---@param p3 System.Boolean
----返回值：Int32[]
----@return Int32[]
+---返回值：System.Int32[]
+---@return System.Int32[]
 GetTriangles = function(p1,p2,p3) end,
 
 ---函数名：GetTriangles
@@ -971,16 +971,16 @@ GetTriangles = function(p1,p2,p3,p4) end,
 ---函数名：GetIndices
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：Int32[]
----@return Int32[]
+---返回值：System.Int32[]
+---@return System.Int32[]
 GetIndices = function(p1,p2) end,
 
 ---函数名：GetIndices
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
 ---@param p3 System.Boolean
----返回值：Int32[]
----@return Int32[]
+---返回值：System.Int32[]
+---@return System.Int32[]
 GetIndices = function(p1,p2,p3) end,
 
 ---函数名：GetIndices
@@ -1031,22 +1031,22 @@ SetIndexBufferData = function(p1,p2,p3,p4,p5) end,
 ---函数名：GetIndexStart
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 GetIndexStart = function(p1,p2) end,
 
 ---函数名：GetIndexCount
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 GetIndexCount = function(p1,p2) end,
 
 ---函数名：GetBaseVertex
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 GetBaseVertex = function(p1,p2) end,
 
 ---函数名：SetTriangles
@@ -1312,8 +1312,8 @@ GetBoneWeights = function(p1,p2) end,
 
 ---函数名：get_boneWeights
 ---@param p1 UnityEngine.Mesh
----返回值：BoneWeight[]
----@return BoneWeight[]
+---返回值：UnityEngine.BoneWeight[]
+---@return UnityEngine.BoneWeight[]
 boneWeights = function(p1) end,
 
 ---函数名：set_boneWeights
@@ -1391,8 +1391,8 @@ OptimizeReorderVertexBuffer = function(p1) end,
 ---函数名：GetTopology
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Int32
----返回值：MeshTopology
----@return MeshTopology
+---返回值：UnityEngine.MeshTopology
+---@return UnityEngine.MeshTopology
 GetTopology = function(p1,p2) end,
 
 ---函数名：CombineMeshes
@@ -1423,27 +1423,27 @@ CombineMeshes = function(p1,p2) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.Mesh
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.Mesh
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.Mesh
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -1452,8 +1452,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.Mesh
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -1462,14 +1462,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.Mesh
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.Mesh
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

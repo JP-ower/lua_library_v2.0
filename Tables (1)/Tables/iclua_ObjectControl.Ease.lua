@@ -1,267 +1,161 @@
 ---@meta
 ---@class ObjectControl.Ease
 ObjectControl.Ease = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 ObjectControl.Ease
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 ObjectControl.Ease
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Unset
+---@type ObjectControl.Ease
+Unset = nil,
 
----函数名：ToString
----@param p1 ObjectControl.Ease
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Linear
+---@type ObjectControl.Ease
+Linear = nil,
 
----函数名：ToString
----@param p1 ObjectControl.Ease
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：InSine
+---@type ObjectControl.Ease
+InSine = nil,
 
----函数名：CompareTo
----@param p1 ObjectControl.Ease
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：OutSine
+---@type ObjectControl.Ease
+OutSine = nil,
 
----函数名：ToString
----@param p1 ObjectControl.Ease
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：InOutSine
+---@type ObjectControl.Ease
+InOutSine = nil,
 
----函数名：ToString
----@param p1 ObjectControl.Ease
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：InQuad
+---@type ObjectControl.Ease
+InQuad = nil,
 
----函数名：HasFlag
----@param p1 ObjectControl.Ease
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：OutQuad
+---@type ObjectControl.Ease
+OutQuad = nil,
 
----函数名：GetTypeCode
----@param p1 ObjectControl.Ease
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：InOutQuad
+---@type ObjectControl.Ease
+InOutQuad = nil,
 
----函数名：GetType
----@param p1 ObjectControl.Ease
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：InCubic
+---@type ObjectControl.Ease
+InCubic = nil,
 
----函数名：value__
----@param p1 ObjectControl.Ease
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：OutCubic
+---@type ObjectControl.Ease
+OutCubic = nil,
 
----函数名：Unset
----返回值：Ease
----@return Ease
-Unset = function() end,
+---枚举值：InOutCubic
+---@type ObjectControl.Ease
+InOutCubic = nil,
 
----函数名：Linear
----返回值：Ease
----@return Ease
-Linear = function() end,
+---枚举值：InQuart
+---@type ObjectControl.Ease
+InQuart = nil,
 
----函数名：InSine
----返回值：Ease
----@return Ease
-InSine = function() end,
+---枚举值：OutQuart
+---@type ObjectControl.Ease
+OutQuart = nil,
 
----函数名：OutSine
----返回值：Ease
----@return Ease
-OutSine = function() end,
+---枚举值：InOutQuart
+---@type ObjectControl.Ease
+InOutQuart = nil,
 
----函数名：InOutSine
----返回值：Ease
----@return Ease
-InOutSine = function() end,
+---枚举值：InQuint
+---@type ObjectControl.Ease
+InQuint = nil,
 
----函数名：InQuad
----返回值：Ease
----@return Ease
-InQuad = function() end,
+---枚举值：OutQuint
+---@type ObjectControl.Ease
+OutQuint = nil,
 
----函数名：OutQuad
----返回值：Ease
----@return Ease
-OutQuad = function() end,
+---枚举值：InOutQuint
+---@type ObjectControl.Ease
+InOutQuint = nil,
 
----函数名：InOutQuad
----返回值：Ease
----@return Ease
-InOutQuad = function() end,
+---枚举值：InExpo
+---@type ObjectControl.Ease
+InExpo = nil,
 
----函数名：InCubic
----返回值：Ease
----@return Ease
-InCubic = function() end,
+---枚举值：OutExpo
+---@type ObjectControl.Ease
+OutExpo = nil,
 
----函数名：OutCubic
----返回值：Ease
----@return Ease
-OutCubic = function() end,
+---枚举值：InOutExpo
+---@type ObjectControl.Ease
+InOutExpo = nil,
 
----函数名：InOutCubic
----返回值：Ease
----@return Ease
-InOutCubic = function() end,
+---枚举值：InCirc
+---@type ObjectControl.Ease
+InCirc = nil,
 
----函数名：InQuart
----返回值：Ease
----@return Ease
-InQuart = function() end,
+---枚举值：OutCirc
+---@type ObjectControl.Ease
+OutCirc = nil,
 
----函数名：OutQuart
----返回值：Ease
----@return Ease
-OutQuart = function() end,
+---枚举值：InOutCirc
+---@type ObjectControl.Ease
+InOutCirc = nil,
 
----函数名：InOutQuart
----返回值：Ease
----@return Ease
-InOutQuart = function() end,
+---枚举值：InElastic
+---@type ObjectControl.Ease
+InElastic = nil,
 
----函数名：InQuint
----返回值：Ease
----@return Ease
-InQuint = function() end,
+---枚举值：OutElastic
+---@type ObjectControl.Ease
+OutElastic = nil,
 
----函数名：OutQuint
----返回值：Ease
----@return Ease
-OutQuint = function() end,
+---枚举值：InOutElastic
+---@type ObjectControl.Ease
+InOutElastic = nil,
 
----函数名：InOutQuint
----返回值：Ease
----@return Ease
-InOutQuint = function() end,
+---枚举值：InBack
+---@type ObjectControl.Ease
+InBack = nil,
 
----函数名：InExpo
----返回值：Ease
----@return Ease
-InExpo = function() end,
+---枚举值：OutBack
+---@type ObjectControl.Ease
+OutBack = nil,
 
----函数名：OutExpo
----返回值：Ease
----@return Ease
-OutExpo = function() end,
+---枚举值：InOutBack
+---@type ObjectControl.Ease
+InOutBack = nil,
 
----函数名：InOutExpo
----返回值：Ease
----@return Ease
-InOutExpo = function() end,
+---枚举值：InBounce
+---@type ObjectControl.Ease
+InBounce = nil,
 
----函数名：InCirc
----返回值：Ease
----@return Ease
-InCirc = function() end,
+---枚举值：OutBounce
+---@type ObjectControl.Ease
+OutBounce = nil,
 
----函数名：OutCirc
----返回值：Ease
----@return Ease
-OutCirc = function() end,
+---枚举值：InOutBounce
+---@type ObjectControl.Ease
+InOutBounce = nil,
 
----函数名：InOutCirc
----返回值：Ease
----@return Ease
-InOutCirc = function() end,
+---枚举值：Flash
+---@type ObjectControl.Ease
+Flash = nil,
 
----函数名：InElastic
----返回值：Ease
----@return Ease
-InElastic = function() end,
+---枚举值：InFlash
+---@type ObjectControl.Ease
+InFlash = nil,
 
----函数名：OutElastic
----返回值：Ease
----@return Ease
-OutElastic = function() end,
+---枚举值：OutFlash
+---@type ObjectControl.Ease
+OutFlash = nil,
 
----函数名：InOutElastic
----返回值：Ease
----@return Ease
-InOutElastic = function() end,
+---枚举值：InOutFlash
+---@type ObjectControl.Ease
+InOutFlash = nil,
 
----函数名：InBack
----返回值：Ease
----@return Ease
-InBack = function() end,
+---枚举值：INTERNAL_Zero
+---@type ObjectControl.Ease
+INTERNAL_Zero = nil,
 
----函数名：OutBack
----返回值：Ease
----@return Ease
-OutBack = function() end,
-
----函数名：InOutBack
----返回值：Ease
----@return Ease
-InOutBack = function() end,
-
----函数名：InBounce
----返回值：Ease
----@return Ease
-InBounce = function() end,
-
----函数名：OutBounce
----返回值：Ease
----@return Ease
-OutBounce = function() end,
-
----函数名：InOutBounce
----返回值：Ease
----@return Ease
-InOutBounce = function() end,
-
----函数名：Flash
----返回值：Ease
----@return Ease
-Flash = function() end,
-
----函数名：InFlash
----返回值：Ease
----@return Ease
-InFlash = function() end,
-
----函数名：OutFlash
----返回值：Ease
----@return Ease
-OutFlash = function() end,
-
----函数名：InOutFlash
----返回值：Ease
----@return Ease
-InOutFlash = function() end,
-
----函数名：INTERNAL_Zero
----返回值：Ease
----@return Ease
-INTERNAL_Zero = function() end,
-
----函数名：INTERNAL_Custom
----返回值：Ease
----@return Ease
-INTERNAL_Custom = function() end,
+---枚举值：INTERNAL_Custom
+---@type ObjectControl.Ease
+INTERNAL_Custom = nil,
 
 }

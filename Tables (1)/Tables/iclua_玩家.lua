@@ -4,8 +4,8 @@ Player = {
 ---函数名：是主玩家
 ---描述：·是主玩家
 ---@param p1 Player
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsMainPlayer = function(p1) end,
 
 ---函数名：主玩家
@@ -24,8 +24,8 @@ GetPlayer = function(p1) end,
 ---函数名：玩家名字
 ---描述：·的名字
 ---@param p1 Player
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetPlayerName = function(p1) end,
 
 ---函数名：设置玩家名字
@@ -37,8 +37,8 @@ SetPlayerName = function(p1,p2) end,
 ---函数名：玩家ID
 ---描述：·的ID
 ---@param p1 Player
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetGUID = function(p1) end,
 
 ---函数名：设置玩家颜色
@@ -49,8 +49,8 @@ SetPlayerColor = function(p1,p2) end,
 
 ---函数名：玩家颜色
 ---@param p1 Player
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetPlayerColor = function(p1) end,
 
 ---函数名：设置重生关卡
@@ -75,8 +75,8 @@ SetSpawnPoint = function(p1,p2) end,
 ---函数名：重生点
 ---描述：·的重生点
 ---@param p1 Player
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetSpawnPoint = function(p1) end,
 
 ---函数名：设置重生点为当前
@@ -87,8 +87,8 @@ SetSPDToCurrent = function(p1) end,
 ---函数名：玩家下标
 ---描述：·的下标
 ---@param p1 Player
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetPlayerIndex = function(p1) end,
 
 ---函数名：设置单位控制状态
@@ -100,8 +100,8 @@ SetUnitControlState = function(p1,p2) end,
 ---函数名：单位是可控制的
 ---描述：·的单位是可控制的
 ---@param p1 Player
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetUnitControlState = function(p1) end,
 
 ---函数名：触发玩家

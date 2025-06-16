@@ -1,267 +1,161 @@
 ---@meta
 ---@class JFY_TransitionEffect.DOTweenEase
 JFY_TransitionEffect.DOTweenEase = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 JFY_TransitionEffect.DOTweenEase
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 JFY_TransitionEffect.DOTweenEase
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Unset
+---@type JFY_TransitionEffect.DOTweenEase
+Unset = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.DOTweenEase
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Linear
+---@type JFY_TransitionEffect.DOTweenEase
+Linear = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.DOTweenEase
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：InSine
+---@type JFY_TransitionEffect.DOTweenEase
+InSine = nil,
 
----函数名：CompareTo
----@param p1 JFY_TransitionEffect.DOTweenEase
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：OutSine
+---@type JFY_TransitionEffect.DOTweenEase
+OutSine = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.DOTweenEase
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：InOutSine
+---@type JFY_TransitionEffect.DOTweenEase
+InOutSine = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.DOTweenEase
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：InQuad
+---@type JFY_TransitionEffect.DOTweenEase
+InQuad = nil,
 
----函数名：HasFlag
----@param p1 JFY_TransitionEffect.DOTweenEase
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：OutQuad
+---@type JFY_TransitionEffect.DOTweenEase
+OutQuad = nil,
 
----函数名：GetTypeCode
----@param p1 JFY_TransitionEffect.DOTweenEase
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：InOutQuad
+---@type JFY_TransitionEffect.DOTweenEase
+InOutQuad = nil,
 
----函数名：GetType
----@param p1 JFY_TransitionEffect.DOTweenEase
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：InCubic
+---@type JFY_TransitionEffect.DOTweenEase
+InCubic = nil,
 
----函数名：value__
----@param p1 JFY_TransitionEffect.DOTweenEase
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：OutCubic
+---@type JFY_TransitionEffect.DOTweenEase
+OutCubic = nil,
 
----函数名：Unset
----返回值：DOTweenEase
----@return DOTweenEase
-Unset = function() end,
+---枚举值：InOutCubic
+---@type JFY_TransitionEffect.DOTweenEase
+InOutCubic = nil,
 
----函数名：Linear
----返回值：DOTweenEase
----@return DOTweenEase
-Linear = function() end,
+---枚举值：InQuart
+---@type JFY_TransitionEffect.DOTweenEase
+InQuart = nil,
 
----函数名：InSine
----返回值：DOTweenEase
----@return DOTweenEase
-InSine = function() end,
+---枚举值：OutQuart
+---@type JFY_TransitionEffect.DOTweenEase
+OutQuart = nil,
 
----函数名：OutSine
----返回值：DOTweenEase
----@return DOTweenEase
-OutSine = function() end,
+---枚举值：InOutQuart
+---@type JFY_TransitionEffect.DOTweenEase
+InOutQuart = nil,
 
----函数名：InOutSine
----返回值：DOTweenEase
----@return DOTweenEase
-InOutSine = function() end,
+---枚举值：InQuint
+---@type JFY_TransitionEffect.DOTweenEase
+InQuint = nil,
 
----函数名：InQuad
----返回值：DOTweenEase
----@return DOTweenEase
-InQuad = function() end,
+---枚举值：OutQuint
+---@type JFY_TransitionEffect.DOTweenEase
+OutQuint = nil,
 
----函数名：OutQuad
----返回值：DOTweenEase
----@return DOTweenEase
-OutQuad = function() end,
+---枚举值：InOutQuint
+---@type JFY_TransitionEffect.DOTweenEase
+InOutQuint = nil,
 
----函数名：InOutQuad
----返回值：DOTweenEase
----@return DOTweenEase
-InOutQuad = function() end,
+---枚举值：InExpo
+---@type JFY_TransitionEffect.DOTweenEase
+InExpo = nil,
 
----函数名：InCubic
----返回值：DOTweenEase
----@return DOTweenEase
-InCubic = function() end,
+---枚举值：OutExpo
+---@type JFY_TransitionEffect.DOTweenEase
+OutExpo = nil,
 
----函数名：OutCubic
----返回值：DOTweenEase
----@return DOTweenEase
-OutCubic = function() end,
+---枚举值：InOutExpo
+---@type JFY_TransitionEffect.DOTweenEase
+InOutExpo = nil,
 
----函数名：InOutCubic
----返回值：DOTweenEase
----@return DOTweenEase
-InOutCubic = function() end,
+---枚举值：InCirc
+---@type JFY_TransitionEffect.DOTweenEase
+InCirc = nil,
 
----函数名：InQuart
----返回值：DOTweenEase
----@return DOTweenEase
-InQuart = function() end,
+---枚举值：OutCirc
+---@type JFY_TransitionEffect.DOTweenEase
+OutCirc = nil,
 
----函数名：OutQuart
----返回值：DOTweenEase
----@return DOTweenEase
-OutQuart = function() end,
+---枚举值：InOutCirc
+---@type JFY_TransitionEffect.DOTweenEase
+InOutCirc = nil,
 
----函数名：InOutQuart
----返回值：DOTweenEase
----@return DOTweenEase
-InOutQuart = function() end,
+---枚举值：InElastic
+---@type JFY_TransitionEffect.DOTweenEase
+InElastic = nil,
 
----函数名：InQuint
----返回值：DOTweenEase
----@return DOTweenEase
-InQuint = function() end,
+---枚举值：OutElastic
+---@type JFY_TransitionEffect.DOTweenEase
+OutElastic = nil,
 
----函数名：OutQuint
----返回值：DOTweenEase
----@return DOTweenEase
-OutQuint = function() end,
+---枚举值：InOutElastic
+---@type JFY_TransitionEffect.DOTweenEase
+InOutElastic = nil,
 
----函数名：InOutQuint
----返回值：DOTweenEase
----@return DOTweenEase
-InOutQuint = function() end,
+---枚举值：InBack
+---@type JFY_TransitionEffect.DOTweenEase
+InBack = nil,
 
----函数名：InExpo
----返回值：DOTweenEase
----@return DOTweenEase
-InExpo = function() end,
+---枚举值：OutBack
+---@type JFY_TransitionEffect.DOTweenEase
+OutBack = nil,
 
----函数名：OutExpo
----返回值：DOTweenEase
----@return DOTweenEase
-OutExpo = function() end,
+---枚举值：InOutBack
+---@type JFY_TransitionEffect.DOTweenEase
+InOutBack = nil,
 
----函数名：InOutExpo
----返回值：DOTweenEase
----@return DOTweenEase
-InOutExpo = function() end,
+---枚举值：InBounce
+---@type JFY_TransitionEffect.DOTweenEase
+InBounce = nil,
 
----函数名：InCirc
----返回值：DOTweenEase
----@return DOTweenEase
-InCirc = function() end,
+---枚举值：OutBounce
+---@type JFY_TransitionEffect.DOTweenEase
+OutBounce = nil,
 
----函数名：OutCirc
----返回值：DOTweenEase
----@return DOTweenEase
-OutCirc = function() end,
+---枚举值：InOutBounce
+---@type JFY_TransitionEffect.DOTweenEase
+InOutBounce = nil,
 
----函数名：InOutCirc
----返回值：DOTweenEase
----@return DOTweenEase
-InOutCirc = function() end,
+---枚举值：Flash
+---@type JFY_TransitionEffect.DOTweenEase
+Flash = nil,
 
----函数名：InElastic
----返回值：DOTweenEase
----@return DOTweenEase
-InElastic = function() end,
+---枚举值：InFlash
+---@type JFY_TransitionEffect.DOTweenEase
+InFlash = nil,
 
----函数名：OutElastic
----返回值：DOTweenEase
----@return DOTweenEase
-OutElastic = function() end,
+---枚举值：OutFlash
+---@type JFY_TransitionEffect.DOTweenEase
+OutFlash = nil,
 
----函数名：InOutElastic
----返回值：DOTweenEase
----@return DOTweenEase
-InOutElastic = function() end,
+---枚举值：InOutFlash
+---@type JFY_TransitionEffect.DOTweenEase
+InOutFlash = nil,
 
----函数名：InBack
----返回值：DOTweenEase
----@return DOTweenEase
-InBack = function() end,
+---枚举值：INTERNAL_Zero
+---@type JFY_TransitionEffect.DOTweenEase
+INTERNAL_Zero = nil,
 
----函数名：OutBack
----返回值：DOTweenEase
----@return DOTweenEase
-OutBack = function() end,
-
----函数名：InOutBack
----返回值：DOTweenEase
----@return DOTweenEase
-InOutBack = function() end,
-
----函数名：InBounce
----返回值：DOTweenEase
----@return DOTweenEase
-InBounce = function() end,
-
----函数名：OutBounce
----返回值：DOTweenEase
----@return DOTweenEase
-OutBounce = function() end,
-
----函数名：InOutBounce
----返回值：DOTweenEase
----@return DOTweenEase
-InOutBounce = function() end,
-
----函数名：Flash
----返回值：DOTweenEase
----@return DOTweenEase
-Flash = function() end,
-
----函数名：InFlash
----返回值：DOTweenEase
----@return DOTweenEase
-InFlash = function() end,
-
----函数名：OutFlash
----返回值：DOTweenEase
----@return DOTweenEase
-OutFlash = function() end,
-
----函数名：InOutFlash
----返回值：DOTweenEase
----@return DOTweenEase
-InOutFlash = function() end,
-
----函数名：INTERNAL_Zero
----返回值：DOTweenEase
----@return DOTweenEase
-INTERNAL_Zero = function() end,
-
----函数名：INTERNAL_Custom
----返回值：DOTweenEase
----@return DOTweenEase
-INTERNAL_Custom = function() end,
+---枚举值：INTERNAL_Custom
+---@type JFY_TransitionEffect.DOTweenEase
+INTERNAL_Custom = nil,
 
 }

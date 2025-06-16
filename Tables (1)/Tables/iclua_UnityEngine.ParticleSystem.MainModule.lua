@@ -3,8 +3,8 @@
 UnityEngine.ParticleSystem.MainModule = {
 ---函数名：get_randomizeRotationDirection
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 randomizeRotationDirection = function(p1) end,
 
 ---函数名：set_randomizeRotationDirection
@@ -13,8 +13,8 @@ randomizeRotationDirection = function(p1) end,
 
 ---函数名：get_duration
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 duration = function(p1) end,
 
 ---函数名：set_duration
@@ -23,8 +23,8 @@ duration = function(p1) end,
 
 ---函数名：get_loop
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 loop = function(p1) end,
 
 ---函数名：set_loop
@@ -33,8 +33,8 @@ loop = function(p1) end,
 
 ---函数名：get_prewarm
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 prewarm = function(p1) end,
 
 ---函数名：set_prewarm
@@ -43,8 +43,8 @@ prewarm = function(p1) end,
 
 ---函数名：get_startDelay
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startDelay = function(p1) end,
 
 ---函数名：set_startDelay
@@ -53,8 +53,8 @@ startDelay = function(p1) end,
 
 ---函数名：get_startDelayMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startDelayMultiplier = function(p1) end,
 
 ---函数名：set_startDelayMultiplier
@@ -63,8 +63,8 @@ startDelayMultiplier = function(p1) end,
 
 ---函数名：get_startLifetime
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startLifetime = function(p1) end,
 
 ---函数名：set_startLifetime
@@ -73,8 +73,8 @@ startLifetime = function(p1) end,
 
 ---函数名：get_startLifetimeMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startLifetimeMultiplier = function(p1) end,
 
 ---函数名：set_startLifetimeMultiplier
@@ -83,8 +83,8 @@ startLifetimeMultiplier = function(p1) end,
 
 ---函数名：get_startSpeed
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startSpeed = function(p1) end,
 
 ---函数名：set_startSpeed
@@ -93,8 +93,8 @@ startSpeed = function(p1) end,
 
 ---函数名：get_startSpeedMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSpeedMultiplier = function(p1) end,
 
 ---函数名：set_startSpeedMultiplier
@@ -103,8 +103,8 @@ startSpeedMultiplier = function(p1) end,
 
 ---函数名：get_startSize3D
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 startSize3D = function(p1) end,
 
 ---函数名：set_startSize3D
@@ -113,8 +113,8 @@ startSize3D = function(p1) end,
 
 ---函数名：get_startSize
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startSize = function(p1) end,
 
 ---函数名：set_startSize
@@ -123,8 +123,8 @@ startSize = function(p1) end,
 
 ---函数名：get_startSizeMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSizeMultiplier = function(p1) end,
 
 ---函数名：set_startSizeMultiplier
@@ -133,8 +133,8 @@ startSizeMultiplier = function(p1) end,
 
 ---函数名：get_startSizeX
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startSizeX = function(p1) end,
 
 ---函数名：set_startSizeX
@@ -143,8 +143,8 @@ startSizeX = function(p1) end,
 
 ---函数名：get_startSizeXMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSizeXMultiplier = function(p1) end,
 
 ---函数名：set_startSizeXMultiplier
@@ -153,8 +153,8 @@ startSizeXMultiplier = function(p1) end,
 
 ---函数名：get_startSizeY
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startSizeY = function(p1) end,
 
 ---函数名：set_startSizeY
@@ -163,8 +163,8 @@ startSizeY = function(p1) end,
 
 ---函数名：get_startSizeYMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSizeYMultiplier = function(p1) end,
 
 ---函数名：set_startSizeYMultiplier
@@ -173,8 +173,8 @@ startSizeYMultiplier = function(p1) end,
 
 ---函数名：get_startSizeZ
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startSizeZ = function(p1) end,
 
 ---函数名：set_startSizeZ
@@ -183,8 +183,8 @@ startSizeZ = function(p1) end,
 
 ---函数名：get_startSizeZMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSizeZMultiplier = function(p1) end,
 
 ---函数名：set_startSizeZMultiplier
@@ -193,8 +193,8 @@ startSizeZMultiplier = function(p1) end,
 
 ---函数名：get_startRotation3D
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 startRotation3D = function(p1) end,
 
 ---函数名：set_startRotation3D
@@ -203,8 +203,8 @@ startRotation3D = function(p1) end,
 
 ---函数名：get_startRotation
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startRotation = function(p1) end,
 
 ---函数名：set_startRotation
@@ -213,8 +213,8 @@ startRotation = function(p1) end,
 
 ---函数名：get_startRotationMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startRotationMultiplier = function(p1) end,
 
 ---函数名：set_startRotationMultiplier
@@ -223,8 +223,8 @@ startRotationMultiplier = function(p1) end,
 
 ---函数名：get_startRotationX
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startRotationX = function(p1) end,
 
 ---函数名：set_startRotationX
@@ -233,8 +233,8 @@ startRotationX = function(p1) end,
 
 ---函数名：get_startRotationXMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startRotationXMultiplier = function(p1) end,
 
 ---函数名：set_startRotationXMultiplier
@@ -243,8 +243,8 @@ startRotationXMultiplier = function(p1) end,
 
 ---函数名：get_startRotationY
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startRotationY = function(p1) end,
 
 ---函数名：set_startRotationY
@@ -253,8 +253,8 @@ startRotationY = function(p1) end,
 
 ---函数名：get_startRotationYMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startRotationYMultiplier = function(p1) end,
 
 ---函数名：set_startRotationYMultiplier
@@ -263,8 +263,8 @@ startRotationYMultiplier = function(p1) end,
 
 ---函数名：get_startRotationZ
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 startRotationZ = function(p1) end,
 
 ---函数名：set_startRotationZ
@@ -273,8 +273,8 @@ startRotationZ = function(p1) end,
 
 ---函数名：get_startRotationZMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startRotationZMultiplier = function(p1) end,
 
 ---函数名：set_startRotationZMultiplier
@@ -283,8 +283,8 @@ startRotationZMultiplier = function(p1) end,
 
 ---函数名：get_flipRotation
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 flipRotation = function(p1) end,
 
 ---函数名：set_flipRotation
@@ -293,8 +293,8 @@ flipRotation = function(p1) end,
 
 ---函数名：get_startColor
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxGradient
----@return MinMaxGradient
+---返回值：UnityEngine.ParticleSystem.MinMaxGradient
+---@return UnityEngine.ParticleSystem.MinMaxGradient
 startColor = function(p1) end,
 
 ---函数名：set_startColor
@@ -303,8 +303,8 @@ startColor = function(p1) end,
 
 ---函数名：get_gravityModifier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：MinMaxCurve
----@return MinMaxCurve
+---返回值：UnityEngine.ParticleSystem.MinMaxCurve
+---@return UnityEngine.ParticleSystem.MinMaxCurve
 gravityModifier = function(p1) end,
 
 ---函数名：set_gravityModifier
@@ -313,8 +313,8 @@ gravityModifier = function(p1) end,
 
 ---函数名：get_gravityModifierMultiplier
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 gravityModifierMultiplier = function(p1) end,
 
 ---函数名：set_gravityModifierMultiplier
@@ -323,8 +323,8 @@ gravityModifierMultiplier = function(p1) end,
 
 ---函数名：get_simulationSpace
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：ParticleSystemSimulationSpace
----@return ParticleSystemSimulationSpace
+---返回值：UnityEngine.ParticleSystemSimulationSpace
+---@return UnityEngine.ParticleSystemSimulationSpace
 simulationSpace = function(p1) end,
 
 ---函数名：set_simulationSpace
@@ -333,8 +333,8 @@ simulationSpace = function(p1) end,
 
 ---函数名：get_customSimulationSpace
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 customSimulationSpace = function(p1) end,
 
 ---函数名：set_customSimulationSpace
@@ -343,8 +343,8 @@ customSimulationSpace = function(p1) end,
 
 ---函数名：get_simulationSpeed
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 simulationSpeed = function(p1) end,
 
 ---函数名：set_simulationSpeed
@@ -353,8 +353,8 @@ simulationSpeed = function(p1) end,
 
 ---函数名：get_useUnscaledTime
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useUnscaledTime = function(p1) end,
 
 ---函数名：set_useUnscaledTime
@@ -363,8 +363,8 @@ useUnscaledTime = function(p1) end,
 
 ---函数名：get_scalingMode
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：ParticleSystemScalingMode
----@return ParticleSystemScalingMode
+---返回值：UnityEngine.ParticleSystemScalingMode
+---@return UnityEngine.ParticleSystemScalingMode
 scalingMode = function(p1) end,
 
 ---函数名：set_scalingMode
@@ -373,8 +373,8 @@ scalingMode = function(p1) end,
 
 ---函数名：get_playOnAwake
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 playOnAwake = function(p1) end,
 
 ---函数名：set_playOnAwake
@@ -383,8 +383,8 @@ playOnAwake = function(p1) end,
 
 ---函数名：get_maxParticles
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 maxParticles = function(p1) end,
 
 ---函数名：set_maxParticles
@@ -393,8 +393,8 @@ maxParticles = function(p1) end,
 
 ---函数名：get_emitterVelocityMode
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：ParticleSystemEmitterVelocityMode
----@return ParticleSystemEmitterVelocityMode
+---返回值：UnityEngine.ParticleSystemEmitterVelocityMode
+---@return UnityEngine.ParticleSystemEmitterVelocityMode
 emitterVelocityMode = function(p1) end,
 
 ---函数名：set_emitterVelocityMode
@@ -403,8 +403,8 @@ emitterVelocityMode = function(p1) end,
 
 ---函数名：get_stopAction
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：ParticleSystemStopAction
----@return ParticleSystemStopAction
+---返回值：UnityEngine.ParticleSystemStopAction
+---@return UnityEngine.ParticleSystemStopAction
 stopAction = function(p1) end,
 
 ---函数名：set_stopAction
@@ -413,8 +413,8 @@ stopAction = function(p1) end,
 
 ---函数名：get_ringBufferMode
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：ParticleSystemRingBufferMode
----@return ParticleSystemRingBufferMode
+---返回值：UnityEngine.ParticleSystemRingBufferMode
+---@return UnityEngine.ParticleSystemRingBufferMode
 ringBufferMode = function(p1) end,
 
 ---函数名：set_ringBufferMode
@@ -423,8 +423,8 @@ ringBufferMode = function(p1) end,
 
 ---函数名：get_ringBufferLoopRange
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 ringBufferLoopRange = function(p1) end,
 
 ---函数名：set_ringBufferLoopRange
@@ -433,8 +433,8 @@ ringBufferLoopRange = function(p1) end,
 
 ---函数名：get_cullingMode
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：ParticleSystemCullingMode
----@return ParticleSystemCullingMode
+---返回值：UnityEngine.ParticleSystemCullingMode
+---@return UnityEngine.ParticleSystemCullingMode
 cullingMode = function(p1) end,
 
 ---函数名：set_cullingMode
@@ -444,26 +444,26 @@ cullingMode = function(p1) end,
 ---函数名：Equals
 ---@param p1 UnityEngine.ParticleSystem.MainModule
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.ParticleSystem.MainModule
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

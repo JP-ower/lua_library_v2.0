@@ -68,8 +68,8 @@ GetCurrentTrigger = function() end,
 ---函数名：条件成立
 ---描述：·的条件成立
 ---@param p1 TriggerData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ConditionDetection = function(p1) end,
 
 ---函数名：开启触发器
@@ -80,8 +80,8 @@ Open = function(p1) end,
 ---函数名：触发器是开启的
 ---描述：·是开启的
 ---@param p1 TriggerData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsOpen = function(p1) end,
 
 ---函数名：关闭触发器
@@ -92,8 +92,8 @@ Close = function(p1) end,
 ---函数名：触发器名字
 ---描述：·的名字
 ---@param p1 TriggerData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetName = function(p1) end,
 
 ---函数名：运行时间轴

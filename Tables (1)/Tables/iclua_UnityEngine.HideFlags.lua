@@ -1,122 +1,45 @@
 ---@meta
 ---@class UnityEngine.HideFlags
 UnityEngine.HideFlags = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnityEngine.HideFlags
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnityEngine.HideFlags
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：None
+---@type UnityEngine.HideFlags
+None = nil,
 
----函数名：ToString
----@param p1 UnityEngine.HideFlags
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：HideInHierarchy
+---@type UnityEngine.HideFlags
+HideInHierarchy = nil,
 
----函数名：ToString
----@param p1 UnityEngine.HideFlags
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：HideInInspector
+---@type UnityEngine.HideFlags
+HideInInspector = nil,
 
----函数名：CompareTo
----@param p1 UnityEngine.HideFlags
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：DontSaveInEditor
+---@type UnityEngine.HideFlags
+DontSaveInEditor = nil,
 
----函数名：ToString
----@param p1 UnityEngine.HideFlags
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：NotEditable
+---@type UnityEngine.HideFlags
+NotEditable = nil,
 
----函数名：ToString
----@param p1 UnityEngine.HideFlags
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：DontSaveInBuild
+---@type UnityEngine.HideFlags
+DontSaveInBuild = nil,
 
----函数名：HasFlag
----@param p1 UnityEngine.HideFlags
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：DontUnloadUnusedAsset
+---@type UnityEngine.HideFlags
+DontUnloadUnusedAsset = nil,
 
----函数名：GetTypeCode
----@param p1 UnityEngine.HideFlags
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：DontSave
+---@type UnityEngine.HideFlags
+DontSave = nil,
 
----函数名：GetType
----@param p1 UnityEngine.HideFlags
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 UnityEngine.HideFlags
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：None
----返回值：HideFlags
----@return HideFlags
-None = function() end,
-
----函数名：HideInHierarchy
----返回值：HideFlags
----@return HideFlags
-HideInHierarchy = function() end,
-
----函数名：HideInInspector
----返回值：HideFlags
----@return HideFlags
-HideInInspector = function() end,
-
----函数名：DontSaveInEditor
----返回值：HideFlags
----@return HideFlags
-DontSaveInEditor = function() end,
-
----函数名：NotEditable
----返回值：HideFlags
----@return HideFlags
-NotEditable = function() end,
-
----函数名：DontSaveInBuild
----返回值：HideFlags
----@return HideFlags
-DontSaveInBuild = function() end,
-
----函数名：DontUnloadUnusedAsset
----返回值：HideFlags
----@return HideFlags
-DontUnloadUnusedAsset = function() end,
-
----函数名：DontSave
----返回值：HideFlags
----@return HideFlags
-DontSave = function() end,
-
----函数名：HideAndDontSave
----返回值：HideFlags
----@return HideFlags
-HideAndDontSave = function() end,
+---枚举值：HideAndDontSave
+---@type UnityEngine.HideFlags
+HideAndDontSave = nil,
 
 }

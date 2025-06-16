@@ -19,8 +19,8 @@ SetSprite = function(p1,p2) end,
 ---函数名：精灵
 ---描述：·的精灵图片
 ---@param p1 EntitySprite
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 GetSprite = function(p1) end,
 
 ---函数名：设置动画
@@ -38,8 +38,8 @@ SetPlayTimeScale = function(p1,p2) end,
 ---函数名：动画播放速率
 ---描述：·的动画播放速率
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPlayTimeScale = function(p1) end,
 
 ---函数名：设置动画帧数
@@ -51,15 +51,15 @@ SetPlayFrame = function(p1,p2) end,
 ---函数名：当前动画帧数
 ---描述：·的当前动画帧数
 ---@param p1 EntitySprite
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCurrentPlayFrame = function(p1) end,
 
 ---函数名：当前动画总帧数
 ---描述：·的当前动画总帧数
 ---@param p1 EntitySprite
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCurrentAnimationLength = function(p1) end,
 
 ---函数名：添加播放动作
@@ -98,8 +98,8 @@ EndPlayCurrent_Force = function(p1) end,
 ---函数名：当前播放动作
 ---描述：·播放的动作
 ---@param p1 EntitySprite
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetCurrentPlay = function(p1) end,
 
 ---函数名：动画
@@ -112,8 +112,8 @@ GetAnimation = function(p1) end,
 ---函数名：动画名字
 ---描述：·的动画名字
 ---@param p1 EntitySprite
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetAnimationName = function(p1) end,
 
 ---函数名：设置颜色
@@ -131,8 +131,8 @@ SetColor_NCA = function(p1,p2) end,
 ---函数名：颜色
 ---描述：·的颜色
 ---@param p1 EntitySprite
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1) end,
 
 ---函数名：设置透明度
@@ -144,8 +144,8 @@ SetAlpha = function(p1,p2) end,
 ---函数名：透明度
 ---描述：·的透明度
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAlpha = function(p1) end,
 
 ---函数名：设置层级深度
@@ -157,8 +157,8 @@ SetSortingOrder = function(p1,p2) end,
 ---函数名：层级深度
 ---描述：·的层级深度
 ---@param p1 EntitySprite
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSortingOrder = function(p1) end,
 
 ---函数名：设置显示模式
@@ -170,8 +170,8 @@ SetDrawMode = function(p1,p2) end,
 ---函数名：显示模式
 ---描述：·的显示模式
 ---@param p1 EntitySprite
----返回值：SpriteDrawMode
----@return SpriteDrawMode
+---返回值：UnityEngine.SpriteDrawMode
+---@return UnityEngine.SpriteDrawMode
 GetDrawMode = function(p1) end,
 
 ---函数名：设置中心点
@@ -184,8 +184,8 @@ SetPivot = function(p1,p2) end,
 ---函数名：中心点
 ---描述：·的中心点
 ---@param p1 EntitySprite
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPivot = function(p1) end,
 
 ---函数名：设置大小
@@ -197,8 +197,8 @@ SetSize = function(p1,p2) end,
 ---函数名：大小
 ---描述：·的大小
 ---@param p1 EntitySprite
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetSize = function(p1) end,
 
 ---函数名：设置受遮罩影响模式
@@ -210,8 +210,8 @@ SetSpriteMaskInteraction = function(p1,p2) end,
 ---函数名：受遮罩影响模式
 ---描述：·的受遮罩影响模式
 ---@param p1 EntitySprite
----返回值：SpriteMaskInteraction
----@return SpriteMaskInteraction
+---返回值：UnityEngine.SpriteMaskInteraction
+---@return UnityEngine.SpriteMaskInteraction
 GetSpriteMaskInteraction = function(p1) end,
 
 ---函数名：设置坐标
@@ -302,50 +302,50 @@ SetZPosOffset = function(p1,p2) end,
 ---函数名：坐标
 ---描述：·的坐标
 ---@param p1 EntitySprite
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPos = function(p1) end,
 
 ---函数名：X坐标
 ---描述：·的X坐标
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXPos = function(p1) end,
 
 ---函数名：Y坐标
 ---描述：·的Y坐标
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYPos = function(p1) end,
 
 ---函数名：局部坐标
 ---描述：·的局部坐标
 ---@param p1 EntitySprite
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetLocalPos = function(p1) end,
 
 ---函数名：X局部坐标
 ---描述：·的X局部坐标
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXLocalPos = function(p1) end,
 
 ---函数名：Y局部坐标
 ---描述：·的Y局部坐标
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYLocalPos = function(p1) end,
 
 ---函数名：深度
 ---描述：·的深度
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetZPos = function(p1) end,
 
 ---函数名：设置缩放
@@ -387,22 +387,22 @@ SetYScaleOffset = function(p1,p2) end,
 ---函数名：缩放
 ---描述：·的缩放
 ---@param p1 EntitySprite
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetScale = function(p1) end,
 
 ---函数名：X缩放
 ---描述：·的X缩放
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXScale = function(p1) end,
 
 ---函数名：Y缩放
 ---描述：·的Y缩放
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYScale = function(p1) end,
 
 ---函数名：设置X旋转
@@ -449,22 +449,22 @@ ReEulerAngles = function(p1) end,
 ---函数名：X旋转
 ---描述：·的X旋转
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXEulerAngles = function(p1) end,
 
 ---函数名：Y旋转
 ---描述：·的Y旋转
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYEulerAngles = function(p1) end,
 
 ---函数名：Z旋转
 ---描述：·的Z旋转
 ---@param p1 EntitySprite
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetZEulerAngles = function(p1) end,
 
 ---函数名：设置显示状态
@@ -476,8 +476,8 @@ SetActiveSelf = function(p1,p2) end,
 ---函数名：是显示的
 ---描述：·是显示的
 ---@param p1 EntitySprite
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetActiveSelf = function(p1) end,
 
 ---函数名：设置所在关卡

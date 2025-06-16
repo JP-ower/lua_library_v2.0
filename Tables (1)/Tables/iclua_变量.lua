@@ -5,8 +5,8 @@ VarManager = {
 ---描述：获取变量名为·下标为·的数组名字
 ---@param p1 System.String
 ---@param p2 System.Int32
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetVarArrayKey = function(p1,p2) end,
 
 ---函数名：获取二维变量数组名字
@@ -14,16 +14,16 @@ GetVarArrayKey = function(p1,p2) end,
 ---@param p1 System.String
 ---@param p2 System.Int32
 ---@param p3 System.Int32
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetVarDyadicArrayKey = function(p1,p2,p3) end,
 
 ---函数名：获取单位变量名字
 ---描述：获取单位为·变量名为·的单位变量名字
 ---@param p1 Unit
 ---@param p2 System.String
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetUnitVarKey = function(p1,p2) end,
 
 ---函数名：将字符串转为变量名
@@ -120,39 +120,39 @@ SetUnitVariable_DyadicArray = function(p1,p2,p3,p4,p5,p6) end,
 ---函数名：从变量中获取
 ---描述：变量:·
 ---@param p1 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetVariableValue = function(p1) end,
 
 ---函数名：从局部变量中获取
 ---描述：局部变量:·
 ---@param p1 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetLocalVariableValue = function(p1) end,
 
 ---函数名：从单位变量中获取
 ---描述：单位·中变量:·
 ---@param p1 Unit
 ---@param p2 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetUnitVariableValue = function(p1,p2) end,
 
 ---函数名：从变量中获取(数组)
 ---描述：变量:·下标·
 ---@param p1 System.String
 ---@param p2 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetVariableValue_Array = function(p1,p2) end,
 
 ---函数名：从局部变量中获取(数组)
 ---描述：局部变量:·下标·
 ---@param p1 System.String
 ---@param p2 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetLocalVariableValue_Array = function(p1,p2) end,
 
 ---函数名：从单位变量中获取(数组)
@@ -160,8 +160,8 @@ GetLocalVariableValue_Array = function(p1,p2) end,
 ---@param p1 Unit
 ---@param p2 System.String
 ---@param p3 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetUnitVariableValue_Array = function(p1,p2,p3) end,
 
 ---函数名：从变量中获取(二维数组)
@@ -169,8 +169,8 @@ GetUnitVariableValue_Array = function(p1,p2,p3) end,
 ---@param p1 System.String
 ---@param p2 System.Int32
 ---@param p3 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetVariableValue_DyadicArray = function(p1,p2,p3) end,
 
 ---函数名：从局部变量中获取(二维数组)
@@ -178,8 +178,8 @@ GetVariableValue_DyadicArray = function(p1,p2,p3) end,
 ---@param p1 System.String
 ---@param p2 System.Int32
 ---@param p3 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetLocalVariableValue_DyadicArray = function(p1,p2,p3) end,
 
 ---函数名：从单位变量中获取(二维数组)
@@ -188,24 +188,24 @@ GetLocalVariableValue_DyadicArray = function(p1,p2,p3) end,
 ---@param p2 System.String
 ---@param p3 System.Int32
 ---@param p4 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetUnitVariableValue_DyadicArray = function(p1,p2,p3,p4) end,
 
 ---函数名：变量是否存在
 ---描述：变量··存在的
 ---@param p1 System.String
 ---@param p2 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsVariable = function(p1,p2) end,
 
 ---函数名：局部变量是否存在
 ---描述：局部变量··存在的
 ---@param p1 System.String
 ---@param p2 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsLocalVariable = function(p1,p2) end,
 
 ---函数名：单位变量是否存在
@@ -213,8 +213,8 @@ ContainsLocalVariable = function(p1,p2) end,
 ---@param p1 Unit
 ---@param p2 System.String
 ---@param p3 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsUnitVariable = function(p1,p2,p3) end,
 
 ---函数名：变量是否存在(数组)
@@ -222,8 +222,8 @@ ContainsUnitVariable = function(p1,p2,p3) end,
 ---@param p1 System.String
 ---@param p2 System.Int32
 ---@param p3 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsVariable_Array = function(p1,p2,p3) end,
 
 ---函数名：局部变量是否存在(数组)
@@ -231,8 +231,8 @@ ContainsVariable_Array = function(p1,p2,p3) end,
 ---@param p1 System.String
 ---@param p2 System.Int32
 ---@param p3 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsLocalVariable_Array = function(p1,p2,p3) end,
 
 ---函数名：单位变量是否存在(数组)
@@ -241,8 +241,8 @@ ContainsLocalVariable_Array = function(p1,p2,p3) end,
 ---@param p2 System.String
 ---@param p3 System.Int32
 ---@param p4 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsUnitVariable_Array = function(p1,p2,p3,p4) end,
 
 ---函数名：变量是否存在(二维数组)
@@ -251,8 +251,8 @@ ContainsUnitVariable_Array = function(p1,p2,p3,p4) end,
 ---@param p2 System.Int32
 ---@param p3 System.Int32
 ---@param p4 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsVariable_DyadicArray = function(p1,p2,p3,p4) end,
 
 ---函数名：局部变量是否存在(二维数组)
@@ -261,8 +261,8 @@ ContainsVariable_DyadicArray = function(p1,p2,p3,p4) end,
 ---@param p2 System.Int32
 ---@param p3 System.Int32
 ---@param p4 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsLocalVariable_DyadicArray = function(p1,p2,p3,p4) end,
 
 ---函数名：单位变量是否存在(二维数组)
@@ -272,8 +272,8 @@ ContainsLocalVariable_DyadicArray = function(p1,p2,p3,p4) end,
 ---@param p3 System.Int32
 ---@param p4 System.Int32
 ---@param p5 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsUnitVariable_DyadicArray = function(p1,p2,p3,p4,p5) end,
 
 ---函数名：变量自身运算 - [整数]
@@ -448,8 +448,8 @@ DeleteUnitVar_DyadicArray = function(p1,p2,p3,p4) end,
 ---函数名：数组长度
 ---描述：变量·数组的长度
 ---@param p1 VariableName
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetVarArrayLength = function(p1) end,
 
 ---函数名：清空全局变量

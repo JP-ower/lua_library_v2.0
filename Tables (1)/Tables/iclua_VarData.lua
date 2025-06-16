@@ -13,8 +13,8 @@ Value = function(p1) end,
 
 ---函数名：get_Value
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 Value = function(p1) end,
 
 ---函数名：set_obj
@@ -23,8 +23,8 @@ obj = function(p1) end,
 
 ---函数名：get_obj
 ---@param p1 VarData
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 obj = function(p1) end,
 
 ---函数名：SetCallback
@@ -44,72 +44,72 @@ SetCallback_FunctionData = function(p1,p2) end,
 
 ---函数名：GetNameText
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetNameText = function(p1) end,
 
 ---函数名：GetTypeText
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTypeText = function(p1) end,
 
 ---函数名：GetValueText_UsePrefixAndSuffix
 ---@param p1 VarData
 ---@param p2 System.Boolean
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetValueText_UsePrefixAndSuffix = function(p1,p2) end,
 
 ---函数名：GetValueText
 ---@param p1 VarData
 ---@param p2 System.Boolean
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetValueText = function(p1,p2) end,
 
 ---函数名：GetText
 ---@param p1 VarData
 ---@param p2 System.Boolean
 ---@param p3 System.Boolean
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetText = function(p1,p2,p3) end,
 
 ---函数名：IsNullValue
 ---@param p1 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsNullValue = function(p1) end,
 
 ---函数名：IsFunctionData
 ---@param p1 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsFunctionData = function(p1) end,
 
 ---函数名：IsFunctionDataArray
 ---@param p1 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsFunctionDataArray = function(p1) end,
 
 ---函数名：GetJsonType
 ---@param p1 VarData
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetJsonType = function(p1) end,
 
 ---函数名：GetSetType
 ---@param p1 VarData
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetSetType = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 VarData
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 ---函数名：ObjectToValue
@@ -128,8 +128,8 @@ SetToNull = function(p1) end,
 ---函数名：ValueComparison
 ---@param p1 VarData
 ---@param p2 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ValueComparison = function(p1,p2) end,
 
 ---函数名：Copy
@@ -162,8 +162,8 @@ SetUseVariableType = function(p1,p2) end,
 
 ---函数名：GetUseVariableType
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetUseVariableType = function(p1) end,
 
 ---函数名：Set
@@ -184,22 +184,22 @@ GetFunctionData = function(p1) end,
 ---函数名：GetValue
 ---@param p1 VarData
 ---@param p2 System.Type
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetValue = function(p1,p2) end,
 
 ---函数名：Get
 ---@param p1 VarData
 ---@param p2 System.Type
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 Get = function(p1,p2) end,
 
 ---函数名：Get
 ---@param p1 VarData
 ---@param p2 System.Boolean
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 Get = function(p1,p2) end,
 
 ---函数名：OnSetArrayEnd
@@ -210,8 +210,8 @@ OnSetArrayEnd = function(p1,p2) end,
 ---函数名：IsCusArray
 ---@param p1 VarData
 ---@param p2 System.Type
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsCusArray = function(p1,p2) end,
 
 ---函数名：OnSetArrayEnd
@@ -253,44 +253,44 @@ SetEnd = function(p1,p2) end,
 ---函数名：Equals
 ---@param p1 VarData
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：GetHashCode
 ---@param p1 VarData
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 VarData
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：name
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：type
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 type = function(p1) end,
 
 ---函数名：value
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 value = function(p1) end,
 
 ---函数名：fd
@@ -325,49 +325,49 @@ sads = function(p1) end,
 
 ---函数名：isConst
 ---@param p1 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isConst = function(p1) end,
 
 ---函数名：isNewFunctionSet
 ---@param p1 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isNewFunctionSet = function(p1) end,
 
 ---函数名：isObjectTypeSet
 ---@param p1 VarData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isObjectTypeSet = function(p1) end,
 
 ---函数名：setType
 ---@param p1 VarData
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 setType = function(p1) end,
 
 ---函数名：setInitValue
 ---@param p1 VarData
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 setInitValue = function(p1) end,
 
 ---函数名：valueTextPrefix
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 valueTextPrefix = function(p1) end,
 
 ---函数名：valueTextSuffix
 ---@param p1 VarData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 valueTextSuffix = function(p1) end,
 
 ---函数名：openAutoSetValueText
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 openAutoSetValueText = function() end,
 
 }

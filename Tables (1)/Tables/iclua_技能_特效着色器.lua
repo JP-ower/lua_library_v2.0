@@ -10,8 +10,8 @@ SetScrollEnable = function(p1,p2) end,
 ---函数名：滚动效果激活状态
 ---描述：·的滚动效果激活状态
 ---@param p1 SK_Shader_UVEffect
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetScrollEnable = function(p1) end,
 
 ---函数名：设置X滚动速度
@@ -23,8 +23,8 @@ SetScrollX = function(p1,p2) end,
 ---函数名：X滚动速度
 ---描述：·的X滚动速度
 ---@param p1 SK_Shader_UVEffect
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetScrollX = function(p1) end,
 
 ---函数名：设置Y滚动速度
@@ -36,8 +36,8 @@ SetScrollY = function(p1,p2) end,
 ---函数名：Y滚动速度
 ---描述：·的Y滚动速度
 ---@param p1 SK_Shader_UVEffect
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetScrollY = function(p1) end,
 
 ---函数名：设置实数
@@ -51,8 +51,8 @@ SetFloat = function(p1,p2,p3) end,
 ---描述：·着色器的·属性的值
 ---@param p1 SK_Shader_UVEffect
 ---@param p2 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFloat = function(p1,p2) end,
 
 ---函数名：设置整数
@@ -66,8 +66,8 @@ SetInt = function(p1,p2,p3) end,
 ---描述：·着色器的·属性的值
 ---@param p1 SK_Shader_UVEffect
 ---@param p2 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetInt = function(p1,p2) end,
 
 ---函数名：设置布尔
@@ -81,8 +81,8 @@ SetBoolean = function(p1,p2,p3) end,
 ---描述：·着色器的·属性的值
 ---@param p1 SK_Shader_UVEffect
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetBoolean = function(p1,p2) end,
 
 ---函数名：设置颜色
@@ -96,15 +96,15 @@ SetColor = function(p1,p2,p3) end,
 ---描述：·着色器的·属性的值
 ---@param p1 SK_Shader_UVEffect
 ---@param p2 System.String
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1,p2) end,
 
 ---函数名：技能激活状态
 ---描述：·的激活状态
 ---@param p1 SK_Shader_UVEffect
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetEnabled = function(p1) end,
 
 }

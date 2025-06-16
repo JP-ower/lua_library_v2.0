@@ -3,14 +3,14 @@
 UnityEngine.Material = {
 ---函数名：Create
 ---@param p1 System.String
----返回值：Material
----@return Material
+---返回值：UnityEngine.Material
+---@return UnityEngine.Material
 Create = function(p1) end,
 
 ---函数名：get_shader
 ---@param p1 UnityEngine.Material
----返回值：Shader
----@return Shader
+---返回值：UnityEngine.Shader
+---@return UnityEngine.Shader
 shader = function(p1) end,
 
 ---函数名：set_shader
@@ -19,8 +19,8 @@ shader = function(p1) end,
 
 ---函数名：get_color
 ---@param p1 UnityEngine.Material
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 color = function(p1) end,
 
 ---函数名：set_color
@@ -29,8 +29,8 @@ color = function(p1) end,
 
 ---函数名：get_mainTexture
 ---@param p1 UnityEngine.Material
----返回值：Texture
----@return Texture
+---返回值：UnityEngine.Texture
+---@return UnityEngine.Texture
 mainTexture = function(p1) end,
 
 ---函数名：set_mainTexture
@@ -39,8 +39,8 @@ mainTexture = function(p1) end,
 
 ---函数名：get_mainTextureOffset
 ---@param p1 UnityEngine.Material
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 mainTextureOffset = function(p1) end,
 
 ---函数名：set_mainTextureOffset
@@ -49,8 +49,8 @@ mainTextureOffset = function(p1) end,
 
 ---函数名：get_mainTextureScale
 ---@param p1 UnityEngine.Material
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 mainTextureScale = function(p1) end,
 
 ---函数名：set_mainTextureScale
@@ -60,21 +60,21 @@ mainTextureScale = function(p1) end,
 ---函数名：HasProperty
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 HasProperty = function(p1,p2) end,
 
 ---函数名：HasProperty
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 HasProperty = function(p1,p2) end,
 
 ---函数名：get_renderQueue
 ---@param p1 UnityEngine.Material
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 renderQueue = function(p1) end,
 
 ---函数名：set_renderQueue
@@ -94,14 +94,14 @@ DisableKeyword = function(p1,p2) end,
 ---函数名：IsKeywordEnabled
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsKeywordEnabled = function(p1,p2) end,
 
 ---函数名：get_globalIlluminationFlags
 ---@param p1 UnityEngine.Material
----返回值：MaterialGlobalIlluminationFlags
----@return MaterialGlobalIlluminationFlags
+---返回值：UnityEngine.MaterialGlobalIlluminationFlags
+---@return UnityEngine.MaterialGlobalIlluminationFlags
 globalIlluminationFlags = function(p1) end,
 
 ---函数名：set_globalIlluminationFlags
@@ -110,8 +110,8 @@ globalIlluminationFlags = function(p1) end,
 
 ---函数名：get_doubleSidedGI
 ---@param p1 UnityEngine.Material
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 doubleSidedGI = function(p1) end,
 
 ---函数名：set_doubleSidedGI
@@ -120,8 +120,8 @@ doubleSidedGI = function(p1) end,
 
 ---函数名：get_enableInstancing
 ---@param p1 UnityEngine.Material
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enableInstancing = function(p1) end,
 
 ---函数名：set_enableInstancing
@@ -130,8 +130,8 @@ enableInstancing = function(p1) end,
 
 ---函数名：get_passCount
 ---@param p1 UnityEngine.Material
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 passCount = function(p1) end,
 
 ---函数名：SetShaderPassEnabled
@@ -143,22 +143,22 @@ SetShaderPassEnabled = function(p1,p2,p3) end,
 ---函数名：GetShaderPassEnabled
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetShaderPassEnabled = function(p1,p2) end,
 
 ---函数名：GetPassName
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetPassName = function(p1,p2) end,
 
 ---函数名：FindPass
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 FindPass = function(p1,p2) end,
 
 ---函数名：SetOverrideTag
@@ -172,16 +172,16 @@ SetOverrideTag = function(p1,p2,p3) end,
 ---@param p2 System.String
 ---@param p3 System.Boolean
 ---@param p4 System.String
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTag = function(p1,p2,p3,p4) end,
 
 ---函数名：GetTag
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
 ---@param p3 System.Boolean
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTag = function(p1,p2,p3) end,
 
 ---函数名：Lerp
@@ -194,8 +194,8 @@ Lerp = function(p1,p2,p3,p4) end,
 ---函数名：SetPass
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 SetPass = function(p1,p2) end,
 
 ---函数名：CopyPropertiesFromMaterial
@@ -205,8 +205,8 @@ CopyPropertiesFromMaterial = function(p1,p2) end,
 
 ---函数名：get_shaderKeywords
 ---@param p1 UnityEngine.Material
----返回值：String[]
----@return String[]
+---返回值：System.String[]
+---@return System.String[]
 shaderKeywords = function(p1) end,
 
 ---函数名：set_shaderKeywords
@@ -215,20 +215,20 @@ shaderKeywords = function(p1) end,
 
 ---函数名：ComputeCRC
 ---@param p1 UnityEngine.Material
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 ComputeCRC = function(p1) end,
 
 ---函数名：GetTexturePropertyNames
 ---@param p1 UnityEngine.Material
----返回值：String[]
----@return String[]
+---返回值：System.String[]
+---@return System.String[]
 GetTexturePropertyNames = function(p1) end,
 
 ---函数名：GetTexturePropertyNameIDs
 ---@param p1 UnityEngine.Material
----返回值：Int32[]
----@return Int32[]
+---返回值：System.Int32[]
+---@return System.Int32[]
 GetTexturePropertyNameIDs = function(p1) end,
 
 ---函数名：GetTexturePropertyNames
@@ -482,141 +482,141 @@ SetMatrixArray = function(p1,p2,p3) end,
 ---函数名：GetFloat
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFloat = function(p1,p2) end,
 
 ---函数名：GetFloat
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFloat = function(p1,p2) end,
 
 ---函数名：GetInt
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInt = function(p1,p2) end,
 
 ---函数名：GetInt
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInt = function(p1,p2) end,
 
 ---函数名：GetColor
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1,p2) end,
 
 ---函数名：GetColor
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1,p2) end,
 
 ---函数名：GetVector
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Vector4
----@return Vector4
+---返回值：UnityEngine.Vector4
+---@return UnityEngine.Vector4
 GetVector = function(p1,p2) end,
 
 ---函数名：GetVector
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Vector4
----@return Vector4
+---返回值：UnityEngine.Vector4
+---@return UnityEngine.Vector4
 GetVector = function(p1,p2) end,
 
 ---函数名：GetMatrix
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 GetMatrix = function(p1,p2) end,
 
 ---函数名：GetMatrix
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 GetMatrix = function(p1,p2) end,
 
 ---函数名：GetTexture
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Texture
----@return Texture
+---返回值：UnityEngine.Texture
+---@return UnityEngine.Texture
 GetTexture = function(p1,p2) end,
 
 ---函数名：GetTexture
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Texture
----@return Texture
+---返回值：UnityEngine.Texture
+---@return UnityEngine.Texture
 GetTexture = function(p1,p2) end,
 
 ---函数名：GetFloatArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Single[]
----@return Single[]
+---返回值：System.Single[]
+---@return System.Single[]
 GetFloatArray = function(p1,p2) end,
 
 ---函数名：GetFloatArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Single[]
----@return Single[]
+---返回值：System.Single[]
+---@return System.Single[]
 GetFloatArray = function(p1,p2) end,
 
 ---函数名：GetColorArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Color[]
----@return Color[]
+---返回值：UnityEngine.Color[]
+---@return UnityEngine.Color[]
 GetColorArray = function(p1,p2) end,
 
 ---函数名：GetColorArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Color[]
----@return Color[]
+---返回值：UnityEngine.Color[]
+---@return UnityEngine.Color[]
 GetColorArray = function(p1,p2) end,
 
 ---函数名：GetVectorArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Vector4[]
----@return Vector4[]
+---返回值：UnityEngine.Vector4[]
+---@return UnityEngine.Vector4[]
 GetVectorArray = function(p1,p2) end,
 
 ---函数名：GetVectorArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Vector4[]
----@return Vector4[]
+---返回值：UnityEngine.Vector4[]
+---@return UnityEngine.Vector4[]
 GetVectorArray = function(p1,p2) end,
 
 ---函数名：GetMatrixArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Matrix4x4[]
----@return Matrix4x4[]
+---返回值：UnityEngine.Matrix4x4[]
+---@return UnityEngine.Matrix4x4[]
 GetMatrixArray = function(p1,p2) end,
 
 ---函数名：GetMatrixArray
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Matrix4x4[]
----@return Matrix4x4[]
+---返回值：UnityEngine.Matrix4x4[]
+---@return UnityEngine.Matrix4x4[]
 GetMatrixArray = function(p1,p2) end,
 
 ---函数名：GetFloatArray
@@ -694,54 +694,54 @@ SetTextureScale = function(p1,p2,p3) end,
 ---函数名：GetTextureOffset
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetTextureOffset = function(p1,p2) end,
 
 ---函数名：GetTextureOffset
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetTextureOffset = function(p1,p2) end,
 
 ---函数名：GetTextureScale
 ---@param p1 UnityEngine.Material
 ---@param p2 System.String
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetTextureScale = function(p1,p2) end,
 
 ---函数名：GetTextureScale
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Int32
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetTextureScale = function(p1,p2) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.Material
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.Material
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.Material
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.Material
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -750,8 +750,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.Material
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -760,14 +760,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.Material
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.Material
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

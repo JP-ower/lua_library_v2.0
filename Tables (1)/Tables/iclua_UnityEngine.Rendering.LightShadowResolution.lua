@@ -1,102 +1,29 @@
 ---@meta
 ---@class UnityEngine.Rendering.LightShadowResolution
 UnityEngine.Rendering.LightShadowResolution = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnityEngine.Rendering.LightShadowResolution
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnityEngine.Rendering.LightShadowResolution
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：FromQualitySettings
+---@type UnityEngine.Rendering.LightShadowResolution
+FromQualitySettings = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Rendering.LightShadowResolution
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Low
+---@type UnityEngine.Rendering.LightShadowResolution
+Low = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Rendering.LightShadowResolution
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Medium
+---@type UnityEngine.Rendering.LightShadowResolution
+Medium = nil,
 
----函数名：CompareTo
----@param p1 UnityEngine.Rendering.LightShadowResolution
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：High
+---@type UnityEngine.Rendering.LightShadowResolution
+High = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Rendering.LightShadowResolution
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：ToString
----@param p1 UnityEngine.Rendering.LightShadowResolution
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：HasFlag
----@param p1 UnityEngine.Rendering.LightShadowResolution
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 UnityEngine.Rendering.LightShadowResolution
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 UnityEngine.Rendering.LightShadowResolution
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 UnityEngine.Rendering.LightShadowResolution
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：FromQualitySettings
----返回值：LightShadowResolution
----@return LightShadowResolution
-FromQualitySettings = function() end,
-
----函数名：Low
----返回值：LightShadowResolution
----@return LightShadowResolution
-Low = function() end,
-
----函数名：Medium
----返回值：LightShadowResolution
----@return LightShadowResolution
-Medium = function() end,
-
----函数名：High
----返回值：LightShadowResolution
----@return LightShadowResolution
-High = function() end,
-
----函数名：VeryHigh
----返回值：LightShadowResolution
----@return LightShadowResolution
-VeryHigh = function() end,
+---枚举值：VeryHigh
+---@type UnityEngine.Rendering.LightShadowResolution
+VeryHigh = nil,
 
 }

@@ -1,217 +1,121 @@
 ---@meta
 ---@class UnityEngine.RenderTextureFormat
 UnityEngine.RenderTextureFormat = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnityEngine.RenderTextureFormat
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnityEngine.RenderTextureFormat
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：ARGB32
+---@type UnityEngine.RenderTextureFormat
+ARGB32 = nil,
 
----函数名：ToString
----@param p1 UnityEngine.RenderTextureFormat
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Depth
+---@type UnityEngine.RenderTextureFormat
+Depth = nil,
 
----函数名：ToString
----@param p1 UnityEngine.RenderTextureFormat
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：ARGBHalf
+---@type UnityEngine.RenderTextureFormat
+ARGBHalf = nil,
 
----函数名：CompareTo
----@param p1 UnityEngine.RenderTextureFormat
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Shadowmap
+---@type UnityEngine.RenderTextureFormat
+Shadowmap = nil,
 
----函数名：ToString
----@param p1 UnityEngine.RenderTextureFormat
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：RGB565
+---@type UnityEngine.RenderTextureFormat
+RGB565 = nil,
 
----函数名：ToString
----@param p1 UnityEngine.RenderTextureFormat
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：ARGB4444
+---@type UnityEngine.RenderTextureFormat
+ARGB4444 = nil,
 
----函数名：HasFlag
----@param p1 UnityEngine.RenderTextureFormat
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：ARGB1555
+---@type UnityEngine.RenderTextureFormat
+ARGB1555 = nil,
 
----函数名：GetTypeCode
----@param p1 UnityEngine.RenderTextureFormat
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：Default
+---@type UnityEngine.RenderTextureFormat
+Default = nil,
 
----函数名：GetType
----@param p1 UnityEngine.RenderTextureFormat
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：ARGB2101010
+---@type UnityEngine.RenderTextureFormat
+ARGB2101010 = nil,
 
----函数名：value__
----@param p1 UnityEngine.RenderTextureFormat
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：DefaultHDR
+---@type UnityEngine.RenderTextureFormat
+DefaultHDR = nil,
 
----函数名：ARGB32
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGB32 = function() end,
+---枚举值：ARGB64
+---@type UnityEngine.RenderTextureFormat
+ARGB64 = nil,
 
----函数名：Depth
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-Depth = function() end,
+---枚举值：ARGBFloat
+---@type UnityEngine.RenderTextureFormat
+ARGBFloat = nil,
 
----函数名：ARGBHalf
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGBHalf = function() end,
+---枚举值：RGFloat
+---@type UnityEngine.RenderTextureFormat
+RGFloat = nil,
 
----函数名：Shadowmap
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-Shadowmap = function() end,
+---枚举值：RGHalf
+---@type UnityEngine.RenderTextureFormat
+RGHalf = nil,
 
----函数名：RGB565
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RGB565 = function() end,
+---枚举值：RFloat
+---@type UnityEngine.RenderTextureFormat
+RFloat = nil,
 
----函数名：ARGB4444
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGB4444 = function() end,
+---枚举值：RHalf
+---@type UnityEngine.RenderTextureFormat
+RHalf = nil,
 
----函数名：ARGB1555
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGB1555 = function() end,
+---枚举值：R8
+---@type UnityEngine.RenderTextureFormat
+R8 = nil,
 
----函数名：Default
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-Default = function() end,
+---枚举值：ARGBInt
+---@type UnityEngine.RenderTextureFormat
+ARGBInt = nil,
 
----函数名：ARGB2101010
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGB2101010 = function() end,
+---枚举值：RGInt
+---@type UnityEngine.RenderTextureFormat
+RGInt = nil,
 
----函数名：DefaultHDR
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-DefaultHDR = function() end,
+---枚举值：RInt
+---@type UnityEngine.RenderTextureFormat
+RInt = nil,
 
----函数名：ARGB64
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGB64 = function() end,
+---枚举值：BGRA32
+---@type UnityEngine.RenderTextureFormat
+BGRA32 = nil,
 
----函数名：ARGBFloat
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGBFloat = function() end,
+---枚举值：RGB111110Float
+---@type UnityEngine.RenderTextureFormat
+RGB111110Float = nil,
 
----函数名：RGFloat
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RGFloat = function() end,
+---枚举值：RG32
+---@type UnityEngine.RenderTextureFormat
+RG32 = nil,
 
----函数名：RGHalf
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RGHalf = function() end,
+---枚举值：RGBAUShort
+---@type UnityEngine.RenderTextureFormat
+RGBAUShort = nil,
 
----函数名：RFloat
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RFloat = function() end,
+---枚举值：RG16
+---@type UnityEngine.RenderTextureFormat
+RG16 = nil,
 
----函数名：RHalf
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RHalf = function() end,
+---枚举值：BGRA10101010_XR
+---@type UnityEngine.RenderTextureFormat
+BGRA10101010_XR = nil,
 
----函数名：R8
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-R8 = function() end,
+---枚举值：BGR101010_XR
+---@type UnityEngine.RenderTextureFormat
+BGR101010_XR = nil,
 
----函数名：ARGBInt
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-ARGBInt = function() end,
-
----函数名：RGInt
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RGInt = function() end,
-
----函数名：RInt
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RInt = function() end,
-
----函数名：BGRA32
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-BGRA32 = function() end,
-
----函数名：RGB111110Float
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RGB111110Float = function() end,
-
----函数名：RG32
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RG32 = function() end,
-
----函数名：RGBAUShort
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RGBAUShort = function() end,
-
----函数名：RG16
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-RG16 = function() end,
-
----函数名：BGRA10101010_XR
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-BGRA10101010_XR = function() end,
-
----函数名：BGR101010_XR
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-BGR101010_XR = function() end,
-
----函数名：R16
----返回值：RenderTextureFormat
----@return RenderTextureFormat
-R16 = function() end,
+---枚举值：R16
+---@type UnityEngine.RenderTextureFormat
+R16 = nil,
 
 }

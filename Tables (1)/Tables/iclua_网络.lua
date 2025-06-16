@@ -9,8 +9,8 @@ LoadNetworkTime = function(p1) end,
 
 ---函数名：服务器返回了错误的信息
 ---介绍：可以用在服务器回调动作中
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ServerCallbackIsError = function() end,
 
 ---函数名：保存数据到服务器
@@ -47,26 +47,26 @@ LoadCusLevelDataInfoFromServer_T = function(p1,p2) end,
 
 ---函数名：最后获取的网络时间
 ---描述：最后从服务器上获取的网络时间
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 LastLoadedNetworkTime = function() end,
 
 ---函数名：服务器返回的错误信息
 ---介绍：可以用在服务器回调动作中
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 serverCallbackErrorInfo = function() end,
 
 ---函数名：服务器返回的信息
 ---介绍：可以用在服务器回调动作中
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 serverCallbackInfo = function() end,
 
 ---函数名：服务器加载的对象
 ---介绍：可以用在服务器回调动作中
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 serverCallbackOBJ = function() end,
 
 }

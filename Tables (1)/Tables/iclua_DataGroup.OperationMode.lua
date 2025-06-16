@@ -1,112 +1,37 @@
 ---@meta
 ---@class DataGroup.OperationMode
 DataGroup.OperationMode = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 DataGroup.OperationMode
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 DataGroup.OperationMode
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Sum
+---@type DataGroup.OperationMode
+Sum = nil,
 
----函数名：ToString
----@param p1 DataGroup.OperationMode
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Mean
+---@type DataGroup.OperationMode
+Mean = nil,
 
----函数名：ToString
----@param p1 DataGroup.OperationMode
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Min
+---@type DataGroup.OperationMode
+Min = nil,
 
----函数名：CompareTo
----@param p1 DataGroup.OperationMode
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Max
+---@type DataGroup.OperationMode
+Max = nil,
 
----函数名：ToString
----@param p1 DataGroup.OperationMode
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Random
+---@type DataGroup.OperationMode
+Random = nil,
 
----函数名：ToString
----@param p1 DataGroup.OperationMode
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：First
+---@type DataGroup.OperationMode
+First = nil,
 
----函数名：HasFlag
----@param p1 DataGroup.OperationMode
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 DataGroup.OperationMode
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 DataGroup.OperationMode
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 DataGroup.OperationMode
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Sum
----返回值：OperationMode
----@return OperationMode
-Sum = function() end,
-
----函数名：Mean
----返回值：OperationMode
----@return OperationMode
-Mean = function() end,
-
----函数名：Min
----返回值：OperationMode
----@return OperationMode
-Min = function() end,
-
----函数名：Max
----返回值：OperationMode
----@return OperationMode
-Max = function() end,
-
----函数名：Random
----返回值：OperationMode
----@return OperationMode
-Random = function() end,
-
----函数名：First
----返回值：OperationMode
----@return OperationMode
-First = function() end,
-
----函数名：Last
----返回值：OperationMode
----@return OperationMode
-Last = function() end,
+---枚举值：Last
+---@type DataGroup.OperationMode
+Last = nil,
 
 }

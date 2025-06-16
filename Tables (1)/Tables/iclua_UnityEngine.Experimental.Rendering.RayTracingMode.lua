@@ -1,97 +1,25 @@
 ---@meta
 ---@class UnityEngine.Experimental.Rendering.RayTracingMode
 UnityEngine.Experimental.Rendering.RayTracingMode = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Off
+---@type UnityEngine.Experimental.Rendering.RayTracingMode
+Off = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Static
+---@type UnityEngine.Experimental.Rendering.RayTracingMode
+Static = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：DynamicTransform
+---@type UnityEngine.Experimental.Rendering.RayTracingMode
+DynamicTransform = nil,
 
----函数名：CompareTo
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
-
----函数名：ToString
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：ToString
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：HasFlag
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 UnityEngine.Experimental.Rendering.RayTracingMode
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Off
----返回值：RayTracingMode
----@return RayTracingMode
-Off = function() end,
-
----函数名：Static
----返回值：RayTracingMode
----@return RayTracingMode
-Static = function() end,
-
----函数名：DynamicTransform
----返回值：RayTracingMode
----@return RayTracingMode
-DynamicTransform = function() end,
-
----函数名：DynamicGeometry
----返回值：RayTracingMode
----@return RayTracingMode
-DynamicGeometry = function() end,
+---枚举值：DynamicGeometry
+---@type UnityEngine.Experimental.Rendering.RayTracingMode
+DynamicGeometry = nil,
 
 }

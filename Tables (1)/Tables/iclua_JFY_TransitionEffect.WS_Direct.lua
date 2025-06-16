@@ -1,107 +1,33 @@
 ---@meta
 ---@class JFY_TransitionEffect.WS_Direct
 JFY_TransitionEffect.WS_Direct = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 JFY_TransitionEffect.WS_Direct
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 JFY_TransitionEffect.WS_Direct
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Down
+---@type JFY_TransitionEffect.WS_Direct
+Down = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.WS_Direct
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Up
+---@type JFY_TransitionEffect.WS_Direct
+Up = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.WS_Direct
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Right
+---@type JFY_TransitionEffect.WS_Direct
+Right = nil,
 
----函数名：CompareTo
----@param p1 JFY_TransitionEffect.WS_Direct
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Left
+---@type JFY_TransitionEffect.WS_Direct
+Left = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.WS_Direct
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：TogetherHorizontal
+---@type JFY_TransitionEffect.WS_Direct
+TogetherHorizontal = nil,
 
----函数名：ToString
----@param p1 JFY_TransitionEffect.WS_Direct
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：HasFlag
----@param p1 JFY_TransitionEffect.WS_Direct
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 JFY_TransitionEffect.WS_Direct
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 JFY_TransitionEffect.WS_Direct
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 JFY_TransitionEffect.WS_Direct
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Down
----返回值：WS_Direct
----@return WS_Direct
-Down = function() end,
-
----函数名：Up
----返回值：WS_Direct
----@return WS_Direct
-Up = function() end,
-
----函数名：Right
----返回值：WS_Direct
----@return WS_Direct
-Right = function() end,
-
----函数名：Left
----返回值：WS_Direct
----@return WS_Direct
-Left = function() end,
-
----函数名：TogetherHorizontal
----返回值：WS_Direct
----@return WS_Direct
-TogetherHorizontal = function() end,
-
----函数名：TogetherVertical
----返回值：WS_Direct
----@return WS_Direct
-TogetherVertical = function() end,
+---枚举值：TogetherVertical
+---@type JFY_TransitionEffect.WS_Direct
+TogetherVertical = nil,
 
 }

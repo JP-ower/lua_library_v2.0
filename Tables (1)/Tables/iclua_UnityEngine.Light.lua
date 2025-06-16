@@ -3,8 +3,8 @@
 UnityEngine.Light = {
 ---函数名：get_type
 ---@param p1 UnityEngine.Light
----返回值：LightType
----@return LightType
+---返回值：UnityEngine.LightType
+---@return UnityEngine.LightType
 type = function(p1) end,
 
 ---函数名：set_type
@@ -13,8 +13,8 @@ type = function(p1) end,
 
 ---函数名：get_shape
 ---@param p1 UnityEngine.Light
----返回值：LightShape
----@return LightShape
+---返回值：UnityEngine.LightShape
+---@return UnityEngine.LightShape
 shape = function(p1) end,
 
 ---函数名：set_shape
@@ -23,8 +23,8 @@ shape = function(p1) end,
 
 ---函数名：get_spotAngle
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 spotAngle = function(p1) end,
 
 ---函数名：set_spotAngle
@@ -33,8 +33,8 @@ spotAngle = function(p1) end,
 
 ---函数名：get_innerSpotAngle
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 innerSpotAngle = function(p1) end,
 
 ---函数名：set_innerSpotAngle
@@ -43,8 +43,8 @@ innerSpotAngle = function(p1) end,
 
 ---函数名：get_color
 ---@param p1 UnityEngine.Light
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 color = function(p1) end,
 
 ---函数名：set_color
@@ -53,8 +53,8 @@ color = function(p1) end,
 
 ---函数名：get_colorTemperature
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 colorTemperature = function(p1) end,
 
 ---函数名：set_colorTemperature
@@ -63,8 +63,8 @@ colorTemperature = function(p1) end,
 
 ---函数名：get_useColorTemperature
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useColorTemperature = function(p1) end,
 
 ---函数名：set_useColorTemperature
@@ -73,8 +73,8 @@ useColorTemperature = function(p1) end,
 
 ---函数名：get_intensity
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 intensity = function(p1) end,
 
 ---函数名：set_intensity
@@ -83,8 +83,8 @@ intensity = function(p1) end,
 
 ---函数名：get_bounceIntensity
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 bounceIntensity = function(p1) end,
 
 ---函数名：set_bounceIntensity
@@ -93,8 +93,8 @@ bounceIntensity = function(p1) end,
 
 ---函数名：get_useBoundingSphereOverride
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useBoundingSphereOverride = function(p1) end,
 
 ---函数名：set_useBoundingSphereOverride
@@ -103,8 +103,8 @@ useBoundingSphereOverride = function(p1) end,
 
 ---函数名：get_boundingSphereOverride
 ---@param p1 UnityEngine.Light
----返回值：Vector4
----@return Vector4
+---返回值：UnityEngine.Vector4
+---@return UnityEngine.Vector4
 boundingSphereOverride = function(p1) end,
 
 ---函数名：set_boundingSphereOverride
@@ -113,8 +113,8 @@ boundingSphereOverride = function(p1) end,
 
 ---函数名：get_useViewFrustumForShadowCasterCull
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useViewFrustumForShadowCasterCull = function(p1) end,
 
 ---函数名：set_useViewFrustumForShadowCasterCull
@@ -123,8 +123,8 @@ useViewFrustumForShadowCasterCull = function(p1) end,
 
 ---函数名：get_shadowCustomResolution
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 shadowCustomResolution = function(p1) end,
 
 ---函数名：set_shadowCustomResolution
@@ -133,8 +133,8 @@ shadowCustomResolution = function(p1) end,
 
 ---函数名：get_shadowBias
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowBias = function(p1) end,
 
 ---函数名：set_shadowBias
@@ -143,8 +143,8 @@ shadowBias = function(p1) end,
 
 ---函数名：get_shadowNormalBias
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowNormalBias = function(p1) end,
 
 ---函数名：set_shadowNormalBias
@@ -153,8 +153,8 @@ shadowNormalBias = function(p1) end,
 
 ---函数名：get_shadowNearPlane
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowNearPlane = function(p1) end,
 
 ---函数名：set_shadowNearPlane
@@ -163,8 +163,8 @@ shadowNearPlane = function(p1) end,
 
 ---函数名：get_useShadowMatrixOverride
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useShadowMatrixOverride = function(p1) end,
 
 ---函数名：set_useShadowMatrixOverride
@@ -173,8 +173,8 @@ useShadowMatrixOverride = function(p1) end,
 
 ---函数名：get_shadowMatrixOverride
 ---@param p1 UnityEngine.Light
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 shadowMatrixOverride = function(p1) end,
 
 ---函数名：set_shadowMatrixOverride
@@ -183,8 +183,8 @@ shadowMatrixOverride = function(p1) end,
 
 ---函数名：get_range
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 range = function(p1) end,
 
 ---函数名：set_range
@@ -193,8 +193,8 @@ range = function(p1) end,
 
 ---函数名：get_flare
 ---@param p1 UnityEngine.Light
----返回值：Flare
----@return Flare
+---返回值：UnityEngine.Flare
+---@return UnityEngine.Flare
 flare = function(p1) end,
 
 ---函数名：set_flare
@@ -203,8 +203,8 @@ flare = function(p1) end,
 
 ---函数名：get_bakingOutput
 ---@param p1 UnityEngine.Light
----返回值：LightBakingOutput
----@return LightBakingOutput
+---返回值：UnityEngine.LightBakingOutput
+---@return UnityEngine.LightBakingOutput
 bakingOutput = function(p1) end,
 
 ---函数名：set_bakingOutput
@@ -213,8 +213,8 @@ bakingOutput = function(p1) end,
 
 ---函数名：get_cullingMask
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 cullingMask = function(p1) end,
 
 ---函数名：set_cullingMask
@@ -223,8 +223,8 @@ cullingMask = function(p1) end,
 
 ---函数名：get_renderingLayerMask
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 renderingLayerMask = function(p1) end,
 
 ---函数名：set_renderingLayerMask
@@ -233,8 +233,8 @@ renderingLayerMask = function(p1) end,
 
 ---函数名：get_lightShadowCasterMode
 ---@param p1 UnityEngine.Light
----返回值：LightShadowCasterMode
----@return LightShadowCasterMode
+---返回值：UnityEngine.LightShadowCasterMode
+---@return UnityEngine.LightShadowCasterMode
 lightShadowCasterMode = function(p1) end,
 
 ---函数名：set_lightShadowCasterMode
@@ -243,8 +243,8 @@ lightShadowCasterMode = function(p1) end,
 
 ---函数名：get_shadowRadius
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowRadius = function(p1) end,
 
 ---函数名：set_shadowRadius
@@ -253,8 +253,8 @@ shadowRadius = function(p1) end,
 
 ---函数名：get_shadowAngle
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowAngle = function(p1) end,
 
 ---函数名：set_shadowAngle
@@ -267,8 +267,8 @@ Reset = function(p1) end,
 
 ---函数名：get_shadows
 ---@param p1 UnityEngine.Light
----返回值：LightShadows
----@return LightShadows
+---返回值：UnityEngine.LightShadows
+---@return UnityEngine.LightShadows
 shadows = function(p1) end,
 
 ---函数名：set_shadows
@@ -277,8 +277,8 @@ shadows = function(p1) end,
 
 ---函数名：get_shadowStrength
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowStrength = function(p1) end,
 
 ---函数名：set_shadowStrength
@@ -287,8 +287,8 @@ shadowStrength = function(p1) end,
 
 ---函数名：get_shadowResolution
 ---@param p1 UnityEngine.Light
----返回值：LightShadowResolution
----@return LightShadowResolution
+---返回值：UnityEngine.Rendering.LightShadowResolution
+---@return UnityEngine.Rendering.LightShadowResolution
 shadowResolution = function(p1) end,
 
 ---函数名：set_shadowResolution
@@ -297,8 +297,8 @@ shadowResolution = function(p1) end,
 
 ---函数名：get_shadowSoftness
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowSoftness = function(p1) end,
 
 ---函数名：set_shadowSoftness
@@ -307,8 +307,8 @@ shadowSoftness = function(p1) end,
 
 ---函数名：get_shadowSoftnessFade
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowSoftnessFade = function(p1) end,
 
 ---函数名：set_shadowSoftnessFade
@@ -317,8 +317,8 @@ shadowSoftnessFade = function(p1) end,
 
 ---函数名：get_layerShadowCullDistances
 ---@param p1 UnityEngine.Light
----返回值：Single[]
----@return Single[]
+---返回值：System.Single[]
+---@return System.Single[]
 layerShadowCullDistances = function(p1) end,
 
 ---函数名：set_layerShadowCullDistances
@@ -327,8 +327,8 @@ layerShadowCullDistances = function(p1) end,
 
 ---函数名：get_cookieSize
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 cookieSize = function(p1) end,
 
 ---函数名：set_cookieSize
@@ -337,8 +337,8 @@ cookieSize = function(p1) end,
 
 ---函数名：get_cookie
 ---@param p1 UnityEngine.Light
----返回值：Texture
----@return Texture
+---返回值：UnityEngine.Texture
+---@return UnityEngine.Texture
 cookie = function(p1) end,
 
 ---函数名：set_cookie
@@ -347,8 +347,8 @@ cookie = function(p1) end,
 
 ---函数名：get_renderMode
 ---@param p1 UnityEngine.Light
----返回值：LightRenderMode
----@return LightRenderMode
+---返回值：UnityEngine.LightRenderMode
+---@return UnityEngine.LightRenderMode
 renderMode = function(p1) end,
 
 ---函数名：set_renderMode
@@ -357,8 +357,8 @@ renderMode = function(p1) end,
 
 ---函数名：get_bakedIndex
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 bakedIndex = function(p1) end,
 
 ---函数名：set_bakedIndex
@@ -367,8 +367,8 @@ bakedIndex = function(p1) end,
 
 ---函数名：get_areaSize
 ---@param p1 UnityEngine.Light
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 areaSize = function(p1) end,
 
 ---函数名：set_areaSize
@@ -377,8 +377,8 @@ areaSize = function(p1) end,
 
 ---函数名：get_lightmapBakeType
 ---@param p1 UnityEngine.Light
----返回值：LightmapBakeType
----@return LightmapBakeType
+---返回值：UnityEngine.LightmapBakeType
+---@return UnityEngine.LightmapBakeType
 lightmapBakeType = function(p1) end,
 
 ---函数名：set_lightmapBakeType
@@ -435,19 +435,19 @@ RemoveAllCommandBuffers = function(p1) end,
 ---函数名：GetCommandBuffers
 ---@param p1 UnityEngine.Light
 ---@param p2 UnityEngine.Rendering.LightEvent
----返回值：CommandBuffer[]
----@return CommandBuffer[]
+---返回值：UnityEngine.Rendering.CommandBuffer[]
+---@return UnityEngine.Rendering.CommandBuffer[]
 GetCommandBuffers = function(p1,p2) end,
 
 ---函数名：get_commandBufferCount
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 commandBufferCount = function(p1) end,
 
 ---函数名：get_pixelLightCount
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 pixelLightCount = function() end,
 
 ---函数名：set_pixelLightCount
@@ -456,14 +456,14 @@ pixelLightCount = function() end,
 ---函数名：GetLights
 ---@param p1 UnityEngine.LightType
 ---@param p2 System.Int32
----返回值：Light[]
----@return Light[]
+---返回值：UnityEngine.Light[]
+---@return UnityEngine.Light[]
 GetLights = function(p1,p2) end,
 
 ---函数名：get_shadowConstantBias
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowConstantBias = function(p1) end,
 
 ---函数名：set_shadowConstantBias
@@ -472,8 +472,8 @@ shadowConstantBias = function(p1) end,
 
 ---函数名：get_shadowObjectSizeBias
 ---@param p1 UnityEngine.Light
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 shadowObjectSizeBias = function(p1) end,
 
 ---函数名：set_shadowObjectSizeBias
@@ -482,8 +482,8 @@ shadowObjectSizeBias = function(p1) end,
 
 ---函数名：get_attenuate
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 attenuate = function(p1) end,
 
 ---函数名：set_attenuate
@@ -492,8 +492,8 @@ attenuate = function(p1) end,
 
 ---函数名：get_lightmappingMode
 ---@param p1 UnityEngine.Light
----返回值：LightmappingMode
----@return LightmappingMode
+---返回值：UnityEngine.LightmappingMode
+---@return UnityEngine.LightmappingMode
 lightmappingMode = function(p1) end,
 
 ---函数名：set_lightmappingMode
@@ -502,14 +502,14 @@ lightmappingMode = function(p1) end,
 
 ---函数名：get_isBaked
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isBaked = function(p1) end,
 
 ---函数名：get_alreadyLightmapped
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 alreadyLightmapped = function(p1) end,
 
 ---函数名：set_alreadyLightmapped
@@ -518,8 +518,8 @@ alreadyLightmapped = function(p1) end,
 
 ---函数名：get_enabled
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enabled = function(p1) end,
 
 ---函数名：set_enabled
@@ -528,97 +528,97 @@ enabled = function(p1) end,
 
 ---函数名：get_isActiveAndEnabled
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isActiveAndEnabled = function(p1) end,
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.Light
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 UnityEngine.Light
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Light
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.Light
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Light
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -647,43 +647,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Light
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -707,8 +707,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -723,8 +723,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 UnityEngine.Light
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -740,8 +740,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 UnityEngine.Light
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -818,105 +818,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 UnityEngine.Light
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.Light
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.Light
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.Light
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -925,8 +925,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.Light
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -935,14 +935,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.Light
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.Light
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

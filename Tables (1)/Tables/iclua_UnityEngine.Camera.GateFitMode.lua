@@ -1,102 +1,29 @@
 ---@meta
 ---@class UnityEngine.Camera.GateFitMode
 UnityEngine.Camera.GateFitMode = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnityEngine.Camera.GateFitMode
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnityEngine.Camera.GateFitMode
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Vertical
+---@type UnityEngine.Camera.GateFitMode
+Vertical = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Camera.GateFitMode
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Horizontal
+---@type UnityEngine.Camera.GateFitMode
+Horizontal = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Camera.GateFitMode
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Fill
+---@type UnityEngine.Camera.GateFitMode
+Fill = nil,
 
----函数名：CompareTo
----@param p1 UnityEngine.Camera.GateFitMode
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Overscan
+---@type UnityEngine.Camera.GateFitMode
+Overscan = nil,
 
----函数名：ToString
----@param p1 UnityEngine.Camera.GateFitMode
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：ToString
----@param p1 UnityEngine.Camera.GateFitMode
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：HasFlag
----@param p1 UnityEngine.Camera.GateFitMode
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 UnityEngine.Camera.GateFitMode
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 UnityEngine.Camera.GateFitMode
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 UnityEngine.Camera.GateFitMode
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Vertical
----返回值：GateFitMode
----@return GateFitMode
-Vertical = function() end,
-
----函数名：Horizontal
----返回值：GateFitMode
----@return GateFitMode
-Horizontal = function() end,
-
----函数名：Fill
----返回值：GateFitMode
----@return GateFitMode
-Fill = function() end,
-
----函数名：Overscan
----返回值：GateFitMode
----@return GateFitMode
-Overscan = function() end,
-
----函数名：None
----返回值：GateFitMode
----@return GateFitMode
-None = function() end,
+---枚举值：None
+---@type UnityEngine.Camera.GateFitMode
+None = nil,
 
 }

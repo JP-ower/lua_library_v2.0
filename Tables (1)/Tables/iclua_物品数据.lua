@@ -10,8 +10,8 @@ SetName = function(p1,p2) end,
 ---函数名：名字
 ---描述：·的名字
 ---@param p1 ItemData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetName = function(p1) end,
 
 ---函数名：设置可用次数
@@ -23,8 +23,8 @@ SetCanUseCount = function(p1,p2) end,
 ---函数名：可用次数
 ---描述：·的可用次数
 ---@param p1 ItemData
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCanUseCount = function(p1) end,
 
 ---函数名：设置文本
@@ -36,8 +36,8 @@ SetText = function(p1,p2) end,
 ---函数名：文本
 ---描述：·的文本
 ---@param p1 ItemData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetText = function(p1) end,
 
 ---函数名：设置图标
@@ -49,8 +49,8 @@ SetSprite = function(p1,p2) end,
 ---函数名：图标
 ---描述：·的图标
 ---@param p1 ItemData
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 GetSprite = function(p1) end,
 
 ---函数名：设置动画
@@ -75,8 +75,8 @@ SetCanUse = function(p1,p2) end,
 ---函数名：可使用
 ---描述：·是可以使用的
 ---@param p1 ItemData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CanUse = function(p1) end,
 
 ---函数名：设置冷却时间
@@ -88,15 +88,15 @@ SetCD = function(p1,p2) end,
 ---函数名：冷却时间
 ---描述：·的冷却时间
 ---@param p1 ItemData
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetCD = function(p1) end,
 
 ---函数名：使用条件满足
 ---描述：·的使用条件满足
 ---@param p1 ItemData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CheckUseCondition = function(p1) end,
 
 ---函数名：物品数据类型比较
@@ -104,8 +104,8 @@ CheckUseCondition = function(p1) end,
 ---@param p1 ItemData
 ---@param p2 ComparisonOperator2
 ---@param p3 ItemData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ItemDataTypeC = function(p1,p2,p3) end,
 
 ---函数名：通过ID获取物品数据

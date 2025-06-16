@@ -10,8 +10,8 @@ SetDeathAC = function(p1,p2) end,
 ---函数名：死亡音效
 ---描述：·的死亡音效
 ---@param p1 SK_PlayerRevive
----返回值：AudioClip
----@return AudioClip
+---返回值：UnityEngine.AudioClip
+---@return UnityEngine.AudioClip
 GetDeathAC = function(p1) end,
 
 ---函数名：设置死亡标记开关
@@ -23,8 +23,8 @@ SetDeathSignEnable = function(p1,p2) end,
 ---函数名：死亡标记是开启的
 ---描述：·的死亡标记是开启的
 ---@param p1 SK_PlayerRevive
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetDeathSignEnable = function(p1) end,
 
 ---函数名：设置死亡特效开关
@@ -36,8 +36,8 @@ SetDeathEffectEnable = function(p1,p2) end,
 ---函数名：死亡特效是开启的
 ---描述：·的死亡特效是开启的
 ---@param p1 SK_PlayerRevive
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetDeathEffectEnable = function(p1) end,
 
 ---函数名：设置可否重生
@@ -49,8 +49,8 @@ SetReviveEnable = function(p1,p2) end,
 ---函数名：是可重生的
 ---描述：·是可重生的
 ---@param p1 SK_PlayerRevive
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetReviveEnable = function(p1) end,
 
 ---函数名：设置自定义死亡文本
@@ -62,8 +62,8 @@ SetDeathText = function(p1,p2) end,
 ---函数名：自定义死亡文本
 ---描述：·的自定义死亡文本
 ---@param p1 SK_PlayerRevive
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetDeathText = function(p1) end,
 
 ---函数名：死亡标记漂浮文字
@@ -76,8 +76,8 @@ GetDeathFT = function(p1) end,
 ---函数名：技能激活状态
 ---描述：·的激活状态
 ---@param p1 SK_PlayerRevive
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetEnabled = function(p1) end,
 
 }

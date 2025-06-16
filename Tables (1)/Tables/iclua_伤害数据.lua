@@ -15,8 +15,8 @@ SetDamageValue = function(p1,p2) end,
 ---函数名：伤害值
 ---描述：·的伤害值
 ---@param p1 DamageData
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDamageValue = function(p1) end,
 
 }

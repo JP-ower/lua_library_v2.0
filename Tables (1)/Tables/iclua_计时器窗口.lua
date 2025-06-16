@@ -17,8 +17,8 @@ SetLabel = function(p1,p2) end,
 ---函数名：计时器窗口标题
 ---描述：·的标题
 ---@param p1 UI_TimerWindow
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLabel = function(p1) end,
 
 ---函数名：设置计时器窗口宽度
@@ -30,8 +30,8 @@ SetWidth = function(p1,p2) end,
 ---函数名：计时器窗口宽度
 ---描述：·的宽度
 ---@param p1 UI_TimerWindow
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetWidth = function(p1) end,
 
 ---函数名：绑定计时器

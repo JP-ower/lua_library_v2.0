@@ -17,8 +17,8 @@ SetLabel = function(p1,p2) end,
 ---函数名：标题
 ---描述：·的标题
 ---@param p1 UI_SelectBoxPanel
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLabel = function(p1) end,
 
 ---函数名：添加
@@ -33,8 +33,8 @@ Add = function(p1,p2) end,
 ---描述：·的选择框数量
 ---介绍：不包括特殊选择框，比如确定、取消、上一页、下一页
 ---@param p1 UI_SelectBoxPanel
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetListCount = function(p1) end,
 
 ---函数名：添加(点击后执行动作)

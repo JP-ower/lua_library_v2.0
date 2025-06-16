@@ -3,8 +3,8 @@
 UnityEngine.ColliderDistance2D = {
 ---函数名：get_pointA
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 pointA = function(p1) end,
 
 ---函数名：set_pointA
@@ -13,8 +13,8 @@ pointA = function(p1) end,
 
 ---函数名：get_pointB
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 pointB = function(p1) end,
 
 ---函数名：set_pointB
@@ -23,14 +23,14 @@ pointB = function(p1) end,
 
 ---函数名：get_normal
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 normal = function(p1) end,
 
 ---函数名：get_distance
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 distance = function(p1) end,
 
 ---函数名：set_distance
@@ -39,14 +39,14 @@ distance = function(p1) end,
 
 ---函数名：get_isOverlapped
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isOverlapped = function(p1) end,
 
 ---函数名：get_isValid
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isValid = function(p1) end,
 
 ---函数名：set_isValid
@@ -56,26 +56,26 @@ isValid = function(p1) end,
 ---函数名：Equals
 ---@param p1 UnityEngine.ColliderDistance2D
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.ColliderDistance2D
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

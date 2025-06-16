@@ -1,237 +1,137 @@
 ---@meta
 ---@class UnitEvent
 UnitEvent = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnitEvent
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnitEvent
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Init
+---@type UnitEvent
+Init = nil,
 
----函数名：ToString
----@param p1 UnitEvent
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：CollisionStart
+---@type UnitEvent
+CollisionStart = nil,
 
----函数名：ToString
----@param p1 UnitEvent
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：CollisionStay
+---@type UnitEvent
+CollisionStay = nil,
 
----函数名：CompareTo
----@param p1 UnitEvent
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：CollisionEnd
+---@type UnitEvent
+CollisionEnd = nil,
 
----函数名：ToString
----@param p1 UnitEvent
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Death
+---@type UnitEvent
+Death = nil,
 
----函数名：ToString
----@param p1 UnitEvent
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Damage
+---@type UnitEvent
+Damage = nil,
 
----函数名：HasFlag
----@param p1 UnitEvent
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：DamageEnd
+---@type UnitEvent
+DamageEnd = nil,
 
----函数名：GetTypeCode
----@param p1 UnitEvent
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：Revive
+---@type UnitEvent
+Revive = nil,
 
----函数名：GetType
----@param p1 UnitEvent
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：Delete
+---@type UnitEvent
+Delete = nil,
 
----函数名：value__
----@param p1 UnitEvent
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：DeathOrDelete
+---@type UnitEvent
+DeathOrDelete = nil,
 
----函数名：Init
----返回值：UnitEvent
----@return UnitEvent
-Init = function() end,
+---枚举值：Interaction
+---@type UnitEvent
+Interaction = nil,
 
----函数名：CollisionStart
----返回值：UnitEvent
----@return UnitEvent
-CollisionStart = function() end,
+---枚举值：ControlKeyInputStart
+---@type UnitEvent
+ControlKeyInputStart = nil,
 
----函数名：CollisionStay
----返回值：UnitEvent
----@return UnitEvent
-CollisionStay = function() end,
+---枚举值：ControlKeyInput
+---@type UnitEvent
+ControlKeyInput = nil,
 
----函数名：CollisionEnd
----返回值：UnitEvent
----@return UnitEvent
-CollisionEnd = function() end,
+---枚举值：ControlKeyInputEnd
+---@type UnitEvent
+ControlKeyInputEnd = nil,
 
----函数名：Death
----返回值：UnitEvent
----@return UnitEvent
-Death = function() end,
+---枚举值：TouchStart
+---@type UnitEvent
+TouchStart = nil,
 
----函数名：Damage
----返回值：UnitEvent
----@return UnitEvent
-Damage = function() end,
+---枚举值：AddState
+---@type UnitEvent
+AddState = nil,
 
----函数名：DamageEnd
----返回值：UnitEvent
----@return UnitEvent
-DamageEnd = function() end,
+---枚举值：RemoveState
+---@type UnitEvent
+RemoveState = nil,
 
----函数名：Revive
----返回值：UnitEvent
----@return UnitEvent
-Revive = function() end,
+---枚举值：UseSkillStart
+---@type UnitEvent
+UseSkillStart = nil,
 
----函数名：Delete
----返回值：UnitEvent
----@return UnitEvent
-Delete = function() end,
+---枚举值：UseSkill
+---@type UnitEvent
+UseSkill = nil,
 
----函数名：DeathOrDelete
----返回值：UnitEvent
----@return UnitEvent
-DeathOrDelete = function() end,
+---枚举值：UseSkillEnd
+---@type UnitEvent
+UseSkillEnd = nil,
 
----函数名：Interaction
----返回值：UnitEvent
----@return UnitEvent
-Interaction = function() end,
+---枚举值：MoveStart
+---@type UnitEvent
+MoveStart = nil,
 
----函数名：ControlKeyInputStart
----返回值：UnitEvent
----@return UnitEvent
-ControlKeyInputStart = function() end,
+---枚举值：MoveEnd
+---@type UnitEvent
+MoveEnd = nil,
 
----函数名：ControlKeyInput
----返回值：UnitEvent
----@return UnitEvent
-ControlKeyInput = function() end,
+---枚举值：ScaleStart
+---@type UnitEvent
+ScaleStart = nil,
 
----函数名：ControlKeyInputEnd
----返回值：UnitEvent
----@return UnitEvent
-ControlKeyInputEnd = function() end,
+---枚举值：ScaleEnd
+---@type UnitEvent
+ScaleEnd = nil,
 
----函数名：TouchStart
----返回值：UnitEvent
----@return UnitEvent
-TouchStart = function() end,
+---枚举值：RotateStart
+---@type UnitEvent
+RotateStart = nil,
 
----函数名：AddState
----返回值：UnitEvent
----@return UnitEvent
-AddState = function() end,
+---枚举值：RotateEnd
+---@type UnitEvent
+RotateEnd = nil,
 
----函数名：RemoveState
----返回值：UnitEvent
----@return UnitEvent
-RemoveState = function() end,
+---枚举值：AddOrAccItem
+---@type UnitEvent
+AddOrAccItem = nil,
 
----函数名：UseSkillStart
----返回值：UnitEvent
----@return UnitEvent
-UseSkillStart = function() end,
+---枚举值：AddItem
+---@type UnitEvent
+AddItem = nil,
 
----函数名：UseSkill
----返回值：UnitEvent
----@return UnitEvent
-UseSkill = function() end,
+---枚举值：AccItem
+---@type UnitEvent
+AccItem = nil,
 
----函数名：UseSkillEnd
----返回值：UnitEvent
----@return UnitEvent
-UseSkillEnd = function() end,
+---枚举值：SelectItem
+---@type UnitEvent
+SelectItem = nil,
 
----函数名：MoveStart
----返回值：UnitEvent
----@return UnitEvent
-MoveStart = function() end,
+---枚举值：UseItem
+---@type UnitEvent
+UseItem = nil,
 
----函数名：MoveEnd
----返回值：UnitEvent
----@return UnitEvent
-MoveEnd = function() end,
-
----函数名：ScaleStart
----返回值：UnitEvent
----@return UnitEvent
-ScaleStart = function() end,
-
----函数名：ScaleEnd
----返回值：UnitEvent
----@return UnitEvent
-ScaleEnd = function() end,
-
----函数名：RotateStart
----返回值：UnitEvent
----@return UnitEvent
-RotateStart = function() end,
-
----函数名：RotateEnd
----返回值：UnitEvent
----@return UnitEvent
-RotateEnd = function() end,
-
----函数名：AddOrAccItem
----返回值：UnitEvent
----@return UnitEvent
-AddOrAccItem = function() end,
-
----函数名：AddItem
----返回值：UnitEvent
----@return UnitEvent
-AddItem = function() end,
-
----函数名：AccItem
----返回值：UnitEvent
----@return UnitEvent
-AccItem = function() end,
-
----函数名：SelectItem
----返回值：UnitEvent
----@return UnitEvent
-SelectItem = function() end,
-
----函数名：UseItem
----返回值：UnitEvent
----@return UnitEvent
-UseItem = function() end,
-
----函数名：RunMoveBehavior
----返回值：UnitEvent
----@return UnitEvent
-RunMoveBehavior = function() end,
+---枚举值：RunMoveBehavior
+---@type UnitEvent
+RunMoveBehavior = nil,
 
 }

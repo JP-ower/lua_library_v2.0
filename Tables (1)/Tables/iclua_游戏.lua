@@ -38,67 +38,67 @@ AddGameEnterData = function(p1,p2,p3) end,
 SetSGGameResourceAddState = function(p1) end,
 
 ---函数名：切换游戏时资源的叠加状态
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetSGGameResourceAddState = function() end,
 
 ---函数名：获取游戏返回数据
 ---描述：获取名字为·的返回数据
 ---介绍：请在当游戏返回事件下使用
 ---@param p1 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetGameReturnData = function(p1) end,
 
 ---函数名：获取出口返回信息
 ---描述：获取通关时出口的返回信息
 ---介绍：请在当游戏返回事件下使用
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetGameReturnData_SK_Win = function() end,
 
 ---函数名：获取游戏进入数据
 ---描述：获取名字为·的进入数据
 ---介绍：请在当游戏进入事件下使用
 ---@param p1 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetGameEnterData = function(p1) end,
 
 ---函数名：获取游戏返回数据(关卡ID)
 ---描述：获取上一个关卡的ID
 ---介绍：请在当游戏返回事件下使用
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetGameReturnData_ID = function() end,
 
 ---函数名：获取游戏返回数据(关卡名字)
 ---描述：获取上一个关卡的名字
 ---介绍：请在当游戏返回事件下使用
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetGameReturnData_Name = function() end,
 
 ---函数名：获取游戏返回数据(作者名字)
 ---描述：获取上一个关卡的作者
 ---介绍：请在当游戏返回事件下使用
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetGameReturnData_Author = function() end,
 
 ---函数名：获取游戏返回数据(资源)
 ---描述：获取上一个关卡的·资源数量
 ---介绍：请在当游戏返回事件下使用
 ---@param p1 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetGameReturnData_ResourceData = function(p1) end,
 
 ---函数名：获取游戏返回数据(是否通关)
 ---描述：获取上一个关卡的通关状态
 ---介绍：请在当游戏返回事件下使用
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetGameReturnData_IsClear = function() end,
 
 ---函数名：指定切换游戏时存档下标
@@ -108,8 +108,8 @@ SetSwitchGameArchiveIndex = function(p1) end,
 
 ---函数名：切换游戏时指定的存档下标
 ---描述：切换游戏时指定的存档下标
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSwitchGameArchiveIndex = function() end,
 
 ---函数名：打开或关闭游戏菜单
@@ -119,8 +119,8 @@ OpenOrCloseGameMenu = function() end,
 
 ---函数名：游戏菜单是开启的
 ---描述：游戏菜单是开启的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GameMenuIsOpen = function() end,
 
 ---函数名：设置游戏菜单禁用状态
@@ -129,8 +129,8 @@ GameMenuIsOpen = function() end,
 SetUnGameMenuState = function(p1) end,
 
 ---函数名：游戏菜单是禁用的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetUnGameMenuState = function() end,
 
 ---函数名：设置Tab键禁用状态
@@ -140,8 +140,8 @@ GetUnGameMenuState = function() end,
 SetTabState = function(p1) end,
 
 ---函数名：Tab键是禁用的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetTabState = function() end,
 
 ---函数名：重新开始游戏
@@ -193,14 +193,14 @@ AddGameTime = function(p1) end,
 
 ---函数名：游戏时间
 ---描述：游戏时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetGameTime = function() end,
 
 ---函数名：实际游戏时间
 ---描述：实际游戏时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetActualTime = function() end,
 
 ---函数名：设置世界重力
@@ -210,8 +210,8 @@ SetGravity = function(p1) end,
 
 ---函数名：世界重力
 ---描述：世界重力
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetGravity = function() end,
 
 ---函数名：停止计时
@@ -221,8 +221,8 @@ StopTiming = function() end,
 StartTiming = function() end,
 
 ---函数名：计时是停止的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TimingIsStop = function() end,
 
 ---函数名：设置游戏暂停功能开放状态
@@ -232,8 +232,8 @@ TimingIsStop = function() end,
 SetPauseFunctionState = function(p1) end,
 
 ---函数名：游戏暂停功能是开放的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetPauseFunctionState = function() end,
 
 ---函数名：暂停
@@ -246,8 +246,8 @@ Recovery = function() end,
 
 ---函数名：是暂停的
 ---介绍：游戏是暂停的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsPause = function() end,
 
 ---函数名：设置游戏速度
@@ -257,8 +257,8 @@ SetGameSpeed = function(p1) end,
 
 ---函数名：游戏速度
 ---描述：游戏速度
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetGameSpeed = function() end,
 
 ---函数名：设置暂停时游戏速度
@@ -268,32 +268,32 @@ SetPauseGameSpeed = function(p1) end,
 
 ---函数名：暂停时游戏速度
 ---描述：暂停时游戏速度
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPauseGameSpeed = function() end,
 
 ---函数名：游戏帧数间隔时间
 ---描述：游戏帧数间隔时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDeltaTime = function() end,
 
 ---函数名：游戏帧数间隔时间(无视暂停)
 ---描述：游戏帧数间隔时间(无视暂停)
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetUnscaledDeltaTime = function() end,
 
 ---函数名：物理帧数间隔时间
 ---描述：物理帧数间隔时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFixedDeltaTime = function() end,
 
 ---函数名：物理帧数间隔时间(无视暂停)
 ---描述：物理帧数间隔时间(无视暂停)
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFixedUnscaledTime = function() end,
 
 ---函数名：设置是否作弊(废弃的)
@@ -311,8 +311,8 @@ SetClearanceTag = function(p1) end,
 ---函数名：通关标签
 ---描述：获取通关标签
 ---介绍：用于排行榜筛选，比如当玩家通过隐藏关后可以设置个标签来使玩家能进入到特定的排行榜
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetClearanceTag = function() end,
 
 ---函数名：添加通关标签
@@ -341,8 +341,8 @@ SetClearanceTitle = function(p1) end,
 ---函数名：通关头衔
 ---描述：获取通关头衔
 ---介绍：设置了通关头衔后，排行榜上的玩家名字前面会有额外标记
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetClearanceTitle = function() end,
 
 ---函数名：添加通关头衔
@@ -387,8 +387,8 @@ SetUnHDHelp = function(p1) end,
 
 ---函数名：禁止回档提示文本
 ---描述：设置禁止回档提示文本为·
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetUnHDHelp = function() end,
 
 ---函数名：失败
@@ -402,20 +402,20 @@ SetLockMaxFPS = function(p1) end,
 
 ---函数名：锁定的最大游戏帧数
 ---描述：当前锁定的最大游戏帧数
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetLockMaxFPS = function() end,
 
 ---函数名：当前的游戏帧数
 ---描述：当前的游戏帧数
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFPS = function() end,
 
 ---函数名：是测试模式
 ---描述：当前游戏处于测试模式(从编辑器中进入)
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsTestMode = function() end,
 
 ---函数名：设置存档保存状态
@@ -425,18 +425,18 @@ IsTestMode = function() end,
 SetSaveArchiveEnable = function(p1) end,
 
 ---函数名：存档是保存的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetSaveArchiveEnable = function() end,
 
 ---函数名：全部玩家死亡
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isAllPlayerDeath = function() end,
 
 ---函数名：死亡玩家数量
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 deathPlayerCount = function() end,
 
 }

@@ -23,8 +23,8 @@ SetSprite = function(p1,p2) end,
 ---描述：·的遮罩图片
 ---@param p1 UI_XMask
 ---@param p2 UnityEngine.Sprite
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 GetSprite = function(p1,p2) end,
 
 ---函数名：设置是否显示遮罩图形
@@ -36,8 +36,8 @@ SetShowMaskGraphic = function(p1,p2) end,
 ---函数名：遮罩图形是显示的
 ---描述：·的遮罩图形是显示的
 ---@param p1 UI_XMask
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsShowMaskGraphic = function(p1) end,
 
 ---函数名：设置锚点类型
@@ -61,8 +61,8 @@ SetAnchorMax = function(p1,p2) end,
 ---函数名：锚点(最大)
 ---描述：·的锚点最大值
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetAnchorMax = function(p1) end,
 
 ---函数名：设置锚点(最小)
@@ -74,8 +74,8 @@ SetAnchorMin = function(p1,p2) end,
 ---函数名：锚点(最小)
 ---描述：·的锚点最小值
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetAnchorMin = function(p1) end,
 
 ---函数名：设置上偏移
@@ -105,29 +105,29 @@ SetRightOffset = function(p1,p2) end,
 ---函数名：上偏移
 ---描述：·的上偏移
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetUpOffset = function(p1) end,
 
 ---函数名：下偏移
 ---描述：·的下偏移
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDownOffset = function(p1) end,
 
 ---函数名：左偏移
 ---描述：·的左偏移
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetLeftOffset = function(p1) end,
 
 ---函数名：右偏移
 ---描述：·的右偏移
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetRightOffset = function(p1) end,
 
 ---函数名：设置偏移
@@ -146,8 +146,8 @@ SetOffsetMax = function(p1,p2) end,
 ---函数名：偏移(最大)
 ---描述：·的偏移最大值
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetOffsetMax = function(p1) end,
 
 ---函数名：设置偏移(最小)
@@ -159,8 +159,8 @@ SetOffsetMin = function(p1,p2) end,
 ---函数名：偏移(最小)
 ---描述：·的偏移最小值
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetOffsetMin = function(p1) end,
 
 ---函数名：设置锚点坐标
@@ -256,22 +256,22 @@ SetYWorldPos = function(p1,p2) end,
 ---函数名：世界坐标
 ---描述：·的世界坐标
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetWorldPos = function(p1) end,
 
 ---函数名：世界坐标X
 ---描述：·的世界坐标X
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetWorldPosX = function(p1) end,
 
 ---函数名：世界坐标Y
 ---描述：·的世界坐标Y
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetWorldPosY = function(p1) end,
 
 ---函数名：使用世界坐标设置本地坐标
@@ -295,15 +295,15 @@ SetLockWorldPosState = function(p1,p2) end,
 ---函数名：是锁定到世界坐标的
 ---描述：·是锁定世界坐标的
 ---@param p1 UI_XMask
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetLockWorldPosState = function(p1) end,
 
 ---函数名：锁定的世界坐标
 ---描述：·锁定的世界坐标
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetLockWorldPos = function(p1) end,
 
 ---函数名：使用屏幕坐标设置本地坐标
@@ -321,8 +321,8 @@ SetSizeDelta = function(p1,p2) end,
 ---函数名：大小
 ---描述：·的大小
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetSizeDelta = function(p1) end,
 
 ---函数名：设置X大小
@@ -334,8 +334,8 @@ SetXSizeDelta = function(p1,p2) end,
 ---函数名：X大小
 ---描述：·的X大小
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXSizeDelta = function(p1) end,
 
 ---函数名：设置Y大小
@@ -347,8 +347,8 @@ SetYSizeDelta = function(p1,p2) end,
 ---函数名：Y大小
 ---描述：·的Y大小
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYSizeDelta = function(p1) end,
 
 ---函数名：设置节点下标
@@ -373,15 +373,15 @@ SetAsLastSibling = function(p1) end,
 ---函数名：节点下标
 ---描述：·的节点下标
 ---@param p1 UI_XMask
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSiblingIndex = function(p1) end,
 
 ---函数名：子节点数量
 ---描述：·的子节点
 ---@param p1 UI_XMask
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetChildCount = function(p1) end,
 
 ---函数名：设置中心点
@@ -393,8 +393,8 @@ SetPivot = function(p1,p2) end,
 ---函数名：中心点
 ---描述：·的中心点
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPivot = function(p1) end,
 
 ---函数名：设置图层
@@ -406,8 +406,8 @@ SetSortingLayer = function(p1,p2) end,
 ---函数名：图层
 ---描述：·的图层
 ---@param p1 UI_XMask
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetSortingLayer = function(p1) end,
 
 ---函数名：设置层级深度
@@ -426,50 +426,50 @@ SetSortingOrderOffset = function(p1,p2) end,
 ---函数名：锚点坐标
 ---描述：·的锚点坐标
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetAnchoredPosition = function(p1) end,
 
 ---函数名：X锚点坐标
 ---描述：·的X锚点坐标
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXAnchoredPosition = function(p1) end,
 
 ---函数名：Y锚点坐标
 ---描述：·的Y锚点坐标
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYAnchoredPosition = function(p1) end,
 
 ---函数名：局部坐标
 ---描述：·的局部坐标
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetLocalPos = function(p1) end,
 
 ---函数名：X局部坐标
 ---描述：·的X局部坐标
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXLocalPos = function(p1) end,
 
 ---函数名：Y局部坐标
 ---描述：·的Y局部坐标
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYLocalPos = function(p1) end,
 
 ---函数名：层级深度
 ---描述：·的层级深度
 ---@param p1 UI_XMask
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSortingOrder = function(p1) end,
 
 ---函数名：设置缩放
@@ -511,22 +511,22 @@ SetYScaleOffset = function(p1,p2) end,
 ---函数名：缩放
 ---描述：·的缩放
 ---@param p1 UI_XMask
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetScale = function(p1) end,
 
 ---函数名：X缩放
 ---描述：·的X缩放
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXScale = function(p1) end,
 
 ---函数名：Y缩放
 ---描述：·的Y缩放
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYScale = function(p1) end,
 
 ---函数名：设置X旋转
@@ -573,22 +573,22 @@ ReEulerAngles = function(p1) end,
 ---函数名：X旋转
 ---描述：·的X旋转
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXEulerAngles = function(p1) end,
 
 ---函数名：Y旋转
 ---描述：·的Y旋转
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYEulerAngles = function(p1) end,
 
 ---函数名：Z旋转
 ---描述：·的Z旋转
 ---@param p1 UI_XMask
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetZEulerAngles = function(p1) end,
 
 ---函数名：设置显示状态
@@ -600,8 +600,8 @@ SetActiveSelf = function(p1,p2) end,
 ---函数名：是显示的
 ---描述：·是显示的
 ---@param p1 UI_XMask
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetActiveSelf = function(p1) end,
 
 ---函数名：设置父组件
@@ -626,8 +626,8 @@ SetRaycastTarget = function(p1,p2) end,
 ---函数名：是可点击交互的
 ---描述：·是可点击交互的
 ---@param p1 UI_XMask
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetRaycastTarget = function(p1) end,
 
 ---函数名：设置是否受遮罩影响
@@ -639,8 +639,8 @@ SetMaskable = function(p1,p2) end,
 ---函数名：是受遮罩影响的
 ---描述：·是受遮罩影响的
 ---@param p1 UI_XMask
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetMaskable = function(p1) end,
 
 ---函数名：设置名字
@@ -652,32 +652,32 @@ SetName = function(p1,p2) end,
 ---函数名：名字
 ---描述：·的名字
 ---@param p1 UI_XMask
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetName = function(p1) end,
 
 ---函数名：屏幕坐标转本地坐标
 ---描述：使用·将屏幕坐标·转为本地坐标
 ---@param p1 UI_XMask
 ---@param p2 UnityEngine.Vector2
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 SPToLPInRectangle = function(p1,p2) end,
 
 ---函数名：世界坐标转本地坐标
 ---描述：使用·将世界坐标·转为本地坐标
 ---@param p1 UI_XMask
 ---@param p2 UnityEngine.Vector2
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 WPToLPInRectangle = function(p1,p2) end,
 
 ---函数名：屏幕坐标转世界坐标
 ---描述：使用·将屏幕坐标·转为世界坐标
 ---@param p1 UI_XMask
 ---@param p2 UnityEngine.Vector2
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 SPToWPInRectangle = function(p1,p2) end,
 
 ---函数名：UI组件

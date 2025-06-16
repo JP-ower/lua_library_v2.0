@@ -67,23 +67,23 @@ Clear = function(p1) end,
 ---描述：·包含·
 ---@param p1 UnitGroup
 ---@param p2 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Contains = function(p1,p2) end,
 
 ---函数名：单位组中单位数量
 ---描述：·中单位数量
 ---@param p1 UnitGroup
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetUnitCount = function(p1) end,
 
 ---函数名：获取单位组中单位下标
 ---描述：从·中获取单位·的下标
 ---@param p1 UnitGroup
 ---@param p2 Unit
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetUnitIndex = function(p1,p2) end,
 
 ---函数名：获取单位(指定下标)

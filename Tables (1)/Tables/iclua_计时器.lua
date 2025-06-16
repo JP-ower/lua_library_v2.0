@@ -5,8 +5,8 @@ Timer = {
 ---描述：·的运行次数
 ---介绍：计时器运行的次数
 ---@param p1 Timer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetRunCount = function(p1) end,
 
 ---函数名：创建计时器
@@ -44,8 +44,8 @@ SetRemainingTime = function(p1,p2) end,
 ---函数名：剩余时间
 ---描述：·的剩余时间
 ---@param p1 Timer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetRemainingTime = function(p1) end,
 
 ---函数名：设置剩余运行次数
@@ -57,8 +57,8 @@ SetRunNumber = function(p1,p2) end,
 ---函数名：剩余运行次数
 ---描述：·的剩余运行次数
 ---@param p1 Timer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetRunNumber = function(p1) end,
 
 ---函数名：设置时间
@@ -70,8 +70,8 @@ SetTime = function(p1,p2) end,
 ---函数名：时间
 ---描述：·的时间
 ---@param p1 Timer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTime = function(p1) end,
 
 ---函数名：设置时间速率
@@ -83,8 +83,8 @@ SetTimeScale = function(p1,p2) end,
 ---函数名：时间速率
 ---描述：·的时间速率
 ---@param p1 Timer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTimeScale = function(p1) end,
 
 ---函数名：重置剩余时间
@@ -115,8 +115,8 @@ UnPause = function(p1) end,
 ---函数名：是否暂停
 ---描述：·是暂停的
 ---@param p1 Timer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsPause = function(p1) end,
 
 ---函数名：设置标题
@@ -128,8 +128,8 @@ SetLabel = function(p1,p2) end,
 ---函数名：标题
 ---描述：·的标题
 ---@param p1 Timer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLabel = function(p1) end,
 
 ---函数名：设置标签
@@ -141,8 +141,8 @@ SetTag = function(p1,p2) end,
 ---函数名：标签
 ---描述：·的标签
 ---@param p1 Timer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTag = function(p1) end,
 
 ---函数名：设置循环状态
@@ -154,8 +154,8 @@ SetLoop = function(p1,p2) end,
 ---函数名：是循环的
 ---描述：·是循环的
 ---@param p1 Timer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetLoop = function(p1) end,
 
 ---函数名：计时器比较
@@ -163,8 +163,8 @@ GetLoop = function(p1) end,
 ---@param p1 Timer
 ---@param p2 ComparisonOperator2
 ---@param p3 Timer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TimerComparison = function(p1,p2,p3) end,
 
 ---函数名：玩家重生后删除
@@ -196,8 +196,8 @@ SetInitDelayFrame = function(p1,p2) end,
 ---函数名：初始帧数
 ---描述：·的初始帧数
 ---@param p1 Timer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInitDelayFrame = function(p1) end,
 
 ---函数名：设置剩余帧数
@@ -209,8 +209,8 @@ SetDelayFrame = function(p1,p2) end,
 ---函数名：剩余帧数
 ---描述：·的剩余帧数
 ---@param p1 Timer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetDelayFrame = function(p1) end,
 
 ---函数名：设置是否自动删除
@@ -223,8 +223,8 @@ SetExternalFDADeleteState = function(p1,p2) end,
 ---函数名：自动删除状态
 ---描述：·的自动删除状态
 ---@param p1 Timer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetExternalFDADeleteState = function(p1) end,
 
 ---函数名：运行计时器到期动作
@@ -241,8 +241,8 @@ SetUnscaled = function(p1,p2) end,
 
 ---函数名：计时器是不受暂停影响的
 ---@param p1 Timer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetUnscaled = function(p1) end,
 
 ---函数名：到期的计时器

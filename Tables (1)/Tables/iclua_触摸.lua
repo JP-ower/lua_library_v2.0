@@ -8,8 +8,8 @@ XTouch = {
 GetTouchInfoDataGroup = function() end,
 
 ---函数名：触摸数量
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetTouchCount = function() end,
 
 }

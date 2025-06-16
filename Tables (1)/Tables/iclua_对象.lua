@@ -5,8 +5,8 @@ ObjectFunction = {
 ---描述：··空的
 ---@param p1 System.Object
 ---@param p2 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 NullCheck = function(p1,p2) end,
 
 ---函数名：对象比较
@@ -14,8 +14,8 @@ NullCheck = function(p1,p2) end,
 ---@param p1 System.Object
 ---@param p2 ComparisonOperator2
 ---@param p3 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ObjectComparison = function(p1,p2,p3) end,
 
 }

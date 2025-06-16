@@ -3,8 +3,8 @@
 UnityEngine.ParticleSystem = {
 ---函数名：get_safeCollisionEventSize
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 safeCollisionEventSize = function(p1) end,
 
 ---函数名：Emit
@@ -23,8 +23,8 @@ Emit = function(p1,p2) end,
 
 ---函数名：get_startDelay
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startDelay = function(p1) end,
 
 ---函数名：set_startDelay
@@ -33,8 +33,8 @@ startDelay = function(p1) end,
 
 ---函数名：get_loop
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 loop = function(p1) end,
 
 ---函数名：set_loop
@@ -43,8 +43,8 @@ loop = function(p1) end,
 
 ---函数名：get_playOnAwake
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 playOnAwake = function(p1) end,
 
 ---函数名：set_playOnAwake
@@ -53,14 +53,14 @@ playOnAwake = function(p1) end,
 
 ---函数名：get_duration
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 duration = function(p1) end,
 
 ---函数名：get_playbackSpeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 playbackSpeed = function(p1) end,
 
 ---函数名：set_playbackSpeed
@@ -69,8 +69,8 @@ playbackSpeed = function(p1) end,
 
 ---函数名：get_enableEmission
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enableEmission = function(p1) end,
 
 ---函数名：set_enableEmission
@@ -79,8 +79,8 @@ enableEmission = function(p1) end,
 
 ---函数名：get_emissionRate
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 emissionRate = function(p1) end,
 
 ---函数名：set_emissionRate
@@ -89,8 +89,8 @@ emissionRate = function(p1) end,
 
 ---函数名：get_startSpeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSpeed = function(p1) end,
 
 ---函数名：set_startSpeed
@@ -99,8 +99,8 @@ startSpeed = function(p1) end,
 
 ---函数名：get_startSize
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startSize = function(p1) end,
 
 ---函数名：set_startSize
@@ -109,8 +109,8 @@ startSize = function(p1) end,
 
 ---函数名：get_startColor
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 startColor = function(p1) end,
 
 ---函数名：set_startColor
@@ -119,8 +119,8 @@ startColor = function(p1) end,
 
 ---函数名：get_startRotation
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startRotation = function(p1) end,
 
 ---函数名：set_startRotation
@@ -129,8 +129,8 @@ startRotation = function(p1) end,
 
 ---函数名：get_startRotation3D
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 startRotation3D = function(p1) end,
 
 ---函数名：set_startRotation3D
@@ -139,8 +139,8 @@ startRotation3D = function(p1) end,
 
 ---函数名：get_startLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 startLifetime = function(p1) end,
 
 ---函数名：set_startLifetime
@@ -149,8 +149,8 @@ startLifetime = function(p1) end,
 
 ---函数名：get_gravityModifier
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 gravityModifier = function(p1) end,
 
 ---函数名：set_gravityModifier
@@ -159,8 +159,8 @@ gravityModifier = function(p1) end,
 
 ---函数名：get_maxParticles
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 maxParticles = function(p1) end,
 
 ---函数名：set_maxParticles
@@ -169,8 +169,8 @@ maxParticles = function(p1) end,
 
 ---函数名：get_simulationSpace
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ParticleSystemSimulationSpace
----@return ParticleSystemSimulationSpace
+---返回值：UnityEngine.ParticleSystemSimulationSpace
+---@return UnityEngine.ParticleSystemSimulationSpace
 simulationSpace = function(p1) end,
 
 ---函数名：set_simulationSpace
@@ -179,8 +179,8 @@ simulationSpace = function(p1) end,
 
 ---函数名：get_scalingMode
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ParticleSystemScalingMode
----@return ParticleSystemScalingMode
+---返回值：UnityEngine.ParticleSystemScalingMode
+---@return UnityEngine.ParticleSystemScalingMode
 scalingMode = function(p1) end,
 
 ---函数名：set_scalingMode
@@ -189,44 +189,44 @@ scalingMode = function(p1) end,
 
 ---函数名：get_automaticCullingEnabled
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 automaticCullingEnabled = function(p1) end,
 
 ---函数名：get_isPlaying
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPlaying = function(p1) end,
 
 ---函数名：get_isEmitting
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isEmitting = function(p1) end,
 
 ---函数名：get_isStopped
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isStopped = function(p1) end,
 
 ---函数名：get_isPaused
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPaused = function(p1) end,
 
 ---函数名：get_particleCount
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 particleCount = function(p1) end,
 
 ---函数名：get_time
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 time = function(p1) end,
 
 ---函数名：set_time
@@ -235,8 +235,8 @@ time = function(p1) end,
 
 ---函数名：get_randomSeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 randomSeed = function(p1) end,
 
 ---函数名：set_randomSeed
@@ -245,8 +245,8 @@ randomSeed = function(p1) end,
 
 ---函数名：get_useAutoRandomSeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useAutoRandomSeed = function(p1) end,
 
 ---函数名：set_useAutoRandomSeed
@@ -255,8 +255,8 @@ useAutoRandomSeed = function(p1) end,
 
 ---函数名：get_proceduralSimulationSupported
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 proceduralSimulationSupported = function(p1) end,
 
 ---函数名：SetParticles
@@ -300,23 +300,23 @@ SetParticles = function(p1,p2) end,
 ---@param p2 UnityEngine.ParticleSystem.Particle[]
 ---@param p3 System.Int32
 ---@param p4 System.Int32
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetParticles = function(p1,p2,p3,p4) end,
 
 ---函数名：GetParticles
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 UnityEngine.ParticleSystem.Particle[]
 ---@param p3 System.Int32
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetParticles = function(p1,p2,p3) end,
 
 ---函数名：GetParticles
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 UnityEngine.ParticleSystem.Particle[]
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetParticles = function(p1,p2) end,
 
 ---函数名：GetParticles
@@ -324,23 +324,23 @@ GetParticles = function(p1,p2) end,
 ---@param p2 Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
 ---@param p3 System.Int32
 ---@param p4 System.Int32
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetParticles = function(p1,p2,p3,p4) end,
 
 ---函数名：GetParticles
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
 ---@param p3 System.Int32
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetParticles = function(p1,p2,p3) end,
 
 ---函数名：GetParticles
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetParticles = function(p1,p2) end,
 
 ---函数名：SetCustomParticleData
@@ -353,14 +353,14 @@ SetCustomParticleData = function(p1,p2,p3) end,
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
 ---@param p3 UnityEngine.ParticleSystemCustomData
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCustomParticleData = function(p1,p2,p3) end,
 
 ---函数名：GetPlaybackState
 ---@param p1 UnityEngine.ParticleSystem
----返回值：PlaybackState
----@return PlaybackState
+---返回值：UnityEngine.ParticleSystem.PlaybackState
+---@return UnityEngine.ParticleSystem.PlaybackState
 GetPlaybackState = function(p1) end,
 
 ---函数名：SetPlaybackState
@@ -370,15 +370,15 @@ SetPlaybackState = function(p1,p2) end,
 
 ---函数名：GetTrails
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Trails
----@return Trails
+---返回值：UnityEngine.ParticleSystem.Trails
+---@return UnityEngine.ParticleSystem.Trails
 GetTrails = function(p1) end,
 
 ---函数名：GetTrails
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 UnityEngine.ParticleSystem.Trails&
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetTrails = function(p1,p2) end,
 
 ---函数名：SetTrails
@@ -457,14 +457,14 @@ Clear = function(p1) end,
 ---函数名：IsAlive
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Boolean
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsAlive = function(p1,p2) end,
 
 ---函数名：IsAlive
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsAlive = function(p1) end,
 
 ---函数名：Emit
@@ -518,229 +518,229 @@ AllocateCustomDataAttribute = function(p1,p2) end,
 
 ---函数名：get_main
 ---@param p1 UnityEngine.ParticleSystem
----返回值：MainModule
----@return MainModule
+---返回值：UnityEngine.ParticleSystem.MainModule
+---@return UnityEngine.ParticleSystem.MainModule
 main = function(p1) end,
 
 ---函数名：get_emission
 ---@param p1 UnityEngine.ParticleSystem
----返回值：EmissionModule
----@return EmissionModule
+---返回值：UnityEngine.ParticleSystem.EmissionModule
+---@return UnityEngine.ParticleSystem.EmissionModule
 emission = function(p1) end,
 
 ---函数名：get_shape
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ShapeModule
----@return ShapeModule
+---返回值：UnityEngine.ParticleSystem.ShapeModule
+---@return UnityEngine.ParticleSystem.ShapeModule
 shape = function(p1) end,
 
 ---函数名：get_velocityOverLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：VelocityOverLifetimeModule
----@return VelocityOverLifetimeModule
+---返回值：UnityEngine.ParticleSystem.VelocityOverLifetimeModule
+---@return UnityEngine.ParticleSystem.VelocityOverLifetimeModule
 velocityOverLifetime = function(p1) end,
 
 ---函数名：get_limitVelocityOverLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：LimitVelocityOverLifetimeModule
----@return LimitVelocityOverLifetimeModule
+---返回值：UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule
+---@return UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule
 limitVelocityOverLifetime = function(p1) end,
 
 ---函数名：get_inheritVelocity
 ---@param p1 UnityEngine.ParticleSystem
----返回值：InheritVelocityModule
----@return InheritVelocityModule
+---返回值：UnityEngine.ParticleSystem.InheritVelocityModule
+---@return UnityEngine.ParticleSystem.InheritVelocityModule
 inheritVelocity = function(p1) end,
 
 ---函数名：get_lifetimeByEmitterSpeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：LifetimeByEmitterSpeedModule
----@return LifetimeByEmitterSpeedModule
+---返回值：UnityEngine.ParticleSystem.LifetimeByEmitterSpeedModule
+---@return UnityEngine.ParticleSystem.LifetimeByEmitterSpeedModule
 lifetimeByEmitterSpeed = function(p1) end,
 
 ---函数名：get_forceOverLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ForceOverLifetimeModule
----@return ForceOverLifetimeModule
+---返回值：UnityEngine.ParticleSystem.ForceOverLifetimeModule
+---@return UnityEngine.ParticleSystem.ForceOverLifetimeModule
 forceOverLifetime = function(p1) end,
 
 ---函数名：get_colorOverLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ColorOverLifetimeModule
----@return ColorOverLifetimeModule
+---返回值：UnityEngine.ParticleSystem.ColorOverLifetimeModule
+---@return UnityEngine.ParticleSystem.ColorOverLifetimeModule
 colorOverLifetime = function(p1) end,
 
 ---函数名：get_colorBySpeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ColorBySpeedModule
----@return ColorBySpeedModule
+---返回值：UnityEngine.ParticleSystem.ColorBySpeedModule
+---@return UnityEngine.ParticleSystem.ColorBySpeedModule
 colorBySpeed = function(p1) end,
 
 ---函数名：get_sizeOverLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：SizeOverLifetimeModule
----@return SizeOverLifetimeModule
+---返回值：UnityEngine.ParticleSystem.SizeOverLifetimeModule
+---@return UnityEngine.ParticleSystem.SizeOverLifetimeModule
 sizeOverLifetime = function(p1) end,
 
 ---函数名：get_sizeBySpeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：SizeBySpeedModule
----@return SizeBySpeedModule
+---返回值：UnityEngine.ParticleSystem.SizeBySpeedModule
+---@return UnityEngine.ParticleSystem.SizeBySpeedModule
 sizeBySpeed = function(p1) end,
 
 ---函数名：get_rotationOverLifetime
 ---@param p1 UnityEngine.ParticleSystem
----返回值：RotationOverLifetimeModule
----@return RotationOverLifetimeModule
+---返回值：UnityEngine.ParticleSystem.RotationOverLifetimeModule
+---@return UnityEngine.ParticleSystem.RotationOverLifetimeModule
 rotationOverLifetime = function(p1) end,
 
 ---函数名：get_rotationBySpeed
 ---@param p1 UnityEngine.ParticleSystem
----返回值：RotationBySpeedModule
----@return RotationBySpeedModule
+---返回值：UnityEngine.ParticleSystem.RotationBySpeedModule
+---@return UnityEngine.ParticleSystem.RotationBySpeedModule
 rotationBySpeed = function(p1) end,
 
 ---函数名：get_externalForces
 ---@param p1 UnityEngine.ParticleSystem
----返回值：ExternalForcesModule
----@return ExternalForcesModule
+---返回值：UnityEngine.ParticleSystem.ExternalForcesModule
+---@return UnityEngine.ParticleSystem.ExternalForcesModule
 externalForces = function(p1) end,
 
 ---函数名：get_noise
 ---@param p1 UnityEngine.ParticleSystem
----返回值：NoiseModule
----@return NoiseModule
+---返回值：UnityEngine.ParticleSystem.NoiseModule
+---@return UnityEngine.ParticleSystem.NoiseModule
 noise = function(p1) end,
 
 ---函数名：get_collision
 ---@param p1 UnityEngine.ParticleSystem
----返回值：CollisionModule
----@return CollisionModule
+---返回值：UnityEngine.ParticleSystem.CollisionModule
+---@return UnityEngine.ParticleSystem.CollisionModule
 collision = function(p1) end,
 
 ---函数名：get_trigger
 ---@param p1 UnityEngine.ParticleSystem
----返回值：TriggerModule
----@return TriggerModule
+---返回值：UnityEngine.ParticleSystem.TriggerModule
+---@return UnityEngine.ParticleSystem.TriggerModule
 trigger = function(p1) end,
 
 ---函数名：get_subEmitters
 ---@param p1 UnityEngine.ParticleSystem
----返回值：SubEmittersModule
----@return SubEmittersModule
+---返回值：UnityEngine.ParticleSystem.SubEmittersModule
+---@return UnityEngine.ParticleSystem.SubEmittersModule
 subEmitters = function(p1) end,
 
 ---函数名：get_textureSheetAnimation
 ---@param p1 UnityEngine.ParticleSystem
----返回值：TextureSheetAnimationModule
----@return TextureSheetAnimationModule
+---返回值：UnityEngine.ParticleSystem.TextureSheetAnimationModule
+---@return UnityEngine.ParticleSystem.TextureSheetAnimationModule
 textureSheetAnimation = function(p1) end,
 
 ---函数名：get_lights
 ---@param p1 UnityEngine.ParticleSystem
----返回值：LightsModule
----@return LightsModule
+---返回值：UnityEngine.ParticleSystem.LightsModule
+---@return UnityEngine.ParticleSystem.LightsModule
 lights = function(p1) end,
 
 ---函数名：get_trails
 ---@param p1 UnityEngine.ParticleSystem
----返回值：TrailModule
----@return TrailModule
+---返回值：UnityEngine.ParticleSystem.TrailModule
+---@return UnityEngine.ParticleSystem.TrailModule
 trails = function(p1) end,
 
 ---函数名：get_customData
 ---@param p1 UnityEngine.ParticleSystem
----返回值：CustomDataModule
----@return CustomDataModule
+---返回值：UnityEngine.ParticleSystem.CustomDataModule
+---@return UnityEngine.ParticleSystem.CustomDataModule
 customData = function(p1) end,
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 UnityEngine.ParticleSystem
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.ParticleSystem
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.ParticleSystem
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -769,43 +769,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.ParticleSystem
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -829,8 +829,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -845,8 +845,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 UnityEngine.ParticleSystem
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -862,8 +862,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -940,105 +940,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.ParticleSystem
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.ParticleSystem
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -1047,8 +1047,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.ParticleSystem
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -1057,14 +1057,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.ParticleSystem
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.ParticleSystem
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

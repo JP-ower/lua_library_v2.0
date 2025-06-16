@@ -8,8 +8,8 @@ S_SetKeyOpenEnable = function(p1) end,
 
 ---函数名：可以通过按键打开
 ---描述：聊天输入框是可以通过按键打开的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 S_GetKeyOpenEnable = function() end,
 
 ---函数名：禁用当前系统输入
@@ -17,8 +17,8 @@ S_GetKeyOpenEnable = function() end,
 DisableCurrentSystemInput = function() end,
 
 ---函数名：输入的聊天信息
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 inputInfo = function() end,
 
 }

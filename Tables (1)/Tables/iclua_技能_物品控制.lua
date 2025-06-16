@@ -19,8 +19,8 @@ AddAndUse = function(p1,p2) end,
 ---描述：·持有·
 ---@param p1 SK_ItemControl
 ---@param p2 ItemData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 HoldItem = function(p1,p2) end,
 
 ---函数名：获取当前选择的物品
@@ -53,8 +53,8 @@ Remove = function(p1,p2) end,
 ---函数名：物品面板是打开的
 ---描述：·的物品面板是打开的
 ---@param p1 SK_ItemControl
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsOpenItemPanel = function(p1) end,
 
 ---函数名：打开物品面板
@@ -81,8 +81,8 @@ UseItem = function(p1,p2) end,
 ---函数名：技能激活状态
 ---描述：·的激活状态
 ---@param p1 SK_ItemControl
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetEnabled = function(p1) end,
 
 }

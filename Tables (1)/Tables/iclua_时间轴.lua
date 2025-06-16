@@ -11,8 +11,8 @@ SetTimeScale = function(p1,p2) end,
 ---函数名：时间速率
 ---描述：·的时间速率
 ---@param p1 TimeLineData
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTimeScale = function(p1) end,
 
 ---函数名：设置时间轴时间
@@ -34,8 +34,8 @@ GoToLastTime = function(p1) end,
 ---函数名：时间轴时间
 ---描述：·的时间
 ---@param p1 TimeLineData
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTime = function(p1) end,
 
 ---函数名：设置时间轴循环状态
@@ -47,8 +47,8 @@ SetLoop = function(p1,p2) end,
 ---函数名：时间轴循环状态
 ---描述：·的循环状态
 ---@param p1 TimeLineData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetLoop = function(p1) end,
 
 ---函数名：停止运行
@@ -66,8 +66,8 @@ SetNodeTime = function(p1,p2,p3) end,
 ---函数名：节点时间
 ---描述：·的时间
 ---@param p1 TimeLineNodeData
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetNodeTime = function(p1) end,
 
 ---函数名：设置标签
@@ -79,8 +79,8 @@ SetNodeTag = function(p1,p2) end,
 ---函数名：标签
 ---描述：·的标签
 ---@param p1 TimeLineNodeData
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetNodeTag = function(p1) end,
 
 ---函数名：获取时间轴节点(指定下标)

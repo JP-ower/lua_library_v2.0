@@ -1,157 +1,73 @@
 ---@meta
 ---@class UnityEngine.ParticleSystemVertexStreams
 UnityEngine.ParticleSystemVertexStreams = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnityEngine.ParticleSystemVertexStreams
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnityEngine.ParticleSystemVertexStreams
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Position
+---@type UnityEngine.ParticleSystemVertexStreams
+Position = nil,
 
----函数名：ToString
----@param p1 UnityEngine.ParticleSystemVertexStreams
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Normal
+---@type UnityEngine.ParticleSystemVertexStreams
+Normal = nil,
 
----函数名：ToString
----@param p1 UnityEngine.ParticleSystemVertexStreams
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Tangent
+---@type UnityEngine.ParticleSystemVertexStreams
+Tangent = nil,
 
----函数名：CompareTo
----@param p1 UnityEngine.ParticleSystemVertexStreams
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Color
+---@type UnityEngine.ParticleSystemVertexStreams
+Color = nil,
 
----函数名：ToString
----@param p1 UnityEngine.ParticleSystemVertexStreams
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：UV
+---@type UnityEngine.ParticleSystemVertexStreams
+UV = nil,
 
----函数名：ToString
----@param p1 UnityEngine.ParticleSystemVertexStreams
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：UV2BlendAndFrame
+---@type UnityEngine.ParticleSystemVertexStreams
+UV2BlendAndFrame = nil,
 
----函数名：HasFlag
----@param p1 UnityEngine.ParticleSystemVertexStreams
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：CenterAndVertexID
+---@type UnityEngine.ParticleSystemVertexStreams
+CenterAndVertexID = nil,
 
----函数名：GetTypeCode
----@param p1 UnityEngine.ParticleSystemVertexStreams
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：Size
+---@type UnityEngine.ParticleSystemVertexStreams
+Size = nil,
 
----函数名：GetType
----@param p1 UnityEngine.ParticleSystemVertexStreams
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：Rotation
+---@type UnityEngine.ParticleSystemVertexStreams
+Rotation = nil,
 
----函数名：value__
----@param p1 UnityEngine.ParticleSystemVertexStreams
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：Velocity
+---@type UnityEngine.ParticleSystemVertexStreams
+Velocity = nil,
 
----函数名：Position
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Position = function() end,
+---枚举值：Lifetime
+---@type UnityEngine.ParticleSystemVertexStreams
+Lifetime = nil,
 
----函数名：Normal
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Normal = function() end,
+---枚举值：Custom1
+---@type UnityEngine.ParticleSystemVertexStreams
+Custom1 = nil,
 
----函数名：Tangent
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Tangent = function() end,
+---枚举值：Custom2
+---@type UnityEngine.ParticleSystemVertexStreams
+Custom2 = nil,
 
----函数名：Color
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Color = function() end,
+---枚举值：Random
+---@type UnityEngine.ParticleSystemVertexStreams
+Random = nil,
 
----函数名：UV
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-UV = function() end,
+---枚举值：None
+---@type UnityEngine.ParticleSystemVertexStreams
+None = nil,
 
----函数名：UV2BlendAndFrame
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-UV2BlendAndFrame = function() end,
-
----函数名：CenterAndVertexID
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-CenterAndVertexID = function() end,
-
----函数名：Size
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Size = function() end,
-
----函数名：Rotation
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Rotation = function() end,
-
----函数名：Velocity
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Velocity = function() end,
-
----函数名：Lifetime
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Lifetime = function() end,
-
----函数名：Custom1
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Custom1 = function() end,
-
----函数名：Custom2
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Custom2 = function() end,
-
----函数名：Random
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-Random = function() end,
-
----函数名：None
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-None = function() end,
-
----函数名：All
----返回值：ParticleSystemVertexStreams
----@return ParticleSystemVertexStreams
-All = function() end,
+---枚举值：All
+---@type UnityEngine.ParticleSystemVertexStreams
+All = nil,
 
 }

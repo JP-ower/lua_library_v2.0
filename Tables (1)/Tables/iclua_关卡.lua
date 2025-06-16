@@ -6,8 +6,8 @@ Level = {
 ---@param p1 Level
 ---@param p2 ComparisonOperator2
 ---@param p3 Level
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 LevelComparison = function(p1,p2,p3) end,
 
 ---函数名：选择关卡
@@ -29,15 +29,15 @@ SetLevelName = function(p1,p2) end,
 ---函数名：关卡名字
 ---描述：·的名字
 ---@param p1 Level
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLevelName = function(p1) end,
 
 ---函数名：关卡分类名字
 ---描述：·的分类名字
 ---@param p1 Level
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLevelClassify = function(p1) end,
 
 ---函数名：通过名字获取关卡
@@ -89,43 +89,43 @@ SetLevelDownSize = function(p1,p2) end,
 ---函数名：关卡大小(左)
 ---描述：·的左大小
 ---@param p1 Level
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetLevelLeftSize = function(p1) end,
 
 ---函数名：关卡大小(右)
 ---描述：·的右大小
 ---@param p1 Level
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetLevelRightSize = function(p1) end,
 
 ---函数名：关卡大小(上)
 ---描述：·的上大小
 ---@param p1 Level
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetLevelUpSize = function(p1) end,
 
 ---函数名：关卡大小(下)
 ---描述：·的下大小
 ---@param p1 Level
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetLevelDownSize = function(p1) end,
 
 ---函数名：关卡大小
 ---描述：·的大小
 ---@param p1 Level
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetLevelSize = function(p1) end,
 
 ---函数名：关卡中心
 ---描述：·的中心
 ---@param p1 Level
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetLevelCenter = function(p1) end,
 
 ---函数名：设置关卡偏移

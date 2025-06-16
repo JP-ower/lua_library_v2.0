@@ -19,8 +19,8 @@ SetText = function(p1,p2) end,
 ---函数名：文本
 ---描述：·的文本
 ---@param p1 EntityText
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetText = function(p1) end,
 
 ---函数名：设置文本颜色
@@ -32,8 +32,8 @@ SetColor = function(p1,p2) end,
 ---函数名：文本颜色
 ---描述：·的文本颜色
 ---@param p1 EntityText
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1) end,
 
 ---函数名：设置透明度
@@ -45,8 +45,8 @@ SetAlpha = function(p1,p2) end,
 ---函数名：透明度
 ---描述：·的透明度
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAlpha = function(p1) end,
 
 ---函数名：设置字体类型
@@ -58,8 +58,8 @@ SetFontType = function(p1,p2) end,
 ---函数名：字体类型
 ---描述：·的字体类型
 ---@param p1 EntityText
----返回值：Font
----@return Font
+---返回值：UnityEngine.Font
+---@return UnityEngine.Font
 GetFontType = function(p1) end,
 
 ---函数名：设置字体大小
@@ -71,8 +71,8 @@ SetFontSize = function(p1,p2) end,
 ---函数名：字体大小
 ---描述：·的字体大小
 ---@param p1 EntityText
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetFontSize = function(p1) end,
 
 ---函数名：设置字体样式(废弃的)
@@ -85,8 +85,8 @@ SetFontStyle = function(p1,p2) end,
 ---函数名：字体样式
 ---描述：·的字体样式
 ---@param p1 EntityText
----返回值：FontStyle
----@return FontStyle
+---返回值：UnityEngine.FontStyle
+---@return UnityEngine.FontStyle
 GetFontStyle = function(p1) end,
 
 ---函数名：设置锚点
@@ -98,8 +98,8 @@ SetAnchor = function(p1,p2) end,
 ---函数名：锚点
 ---描述：·的锚点
 ---@param p1 EntityText
----返回值：TextAnchor
----@return TextAnchor
+---返回值：UnityEngine.TextAnchor
+---@return UnityEngine.TextAnchor
 GetAnchor = function(p1) end,
 
 ---函数名：设置对其模式
@@ -111,8 +111,8 @@ SetAlignment = function(p1,p2) end,
 ---函数名：对其模式
 ---描述：·的对其模式
 ---@param p1 EntityText
----返回值：TextAlignment
----@return TextAlignment
+---返回值：UnityEngine.TextAlignment
+---@return UnityEngine.TextAlignment
 GetAlignment = function(p1) end,
 
 ---函数名：设置层级深度
@@ -124,8 +124,8 @@ SetSortingOrder = function(p1,p2) end,
 ---函数名：层级深度
 ---描述：·的层级深度
 ---@param p1 EntityText
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSortingOrder = function(p1) end,
 
 ---函数名：设置坐标
@@ -216,50 +216,50 @@ SetZPosOffset = function(p1,p2) end,
 ---函数名：坐标
 ---描述：·的坐标
 ---@param p1 EntityText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPos = function(p1) end,
 
 ---函数名：X坐标
 ---描述：·的X坐标
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXPos = function(p1) end,
 
 ---函数名：Y坐标
 ---描述：·的Y坐标
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYPos = function(p1) end,
 
 ---函数名：局部坐标
 ---描述：·的局部坐标
 ---@param p1 EntityText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetLocalPos = function(p1) end,
 
 ---函数名：X局部坐标
 ---描述：·的X局部坐标
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXLocalPos = function(p1) end,
 
 ---函数名：Y局部坐标
 ---描述：·的Y局部坐标
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYLocalPos = function(p1) end,
 
 ---函数名：深度
 ---描述：·的深度
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetZPos = function(p1) end,
 
 ---函数名：设置缩放
@@ -301,22 +301,22 @@ SetYScaleOffset = function(p1,p2) end,
 ---函数名：缩放
 ---描述：·的缩放
 ---@param p1 EntityText
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetScale = function(p1) end,
 
 ---函数名：X缩放
 ---描述：·的X缩放
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXScale = function(p1) end,
 
 ---函数名：Y缩放
 ---描述：·的Y缩放
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYScale = function(p1) end,
 
 ---函数名：设置X旋转
@@ -363,22 +363,22 @@ ReEulerAngles = function(p1) end,
 ---函数名：X旋转
 ---描述：·的X旋转
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXEulerAngles = function(p1) end,
 
 ---函数名：Y旋转
 ---描述：·的Y旋转
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYEulerAngles = function(p1) end,
 
 ---函数名：Z旋转
 ---描述：·的Z旋转
 ---@param p1 EntityText
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetZEulerAngles = function(p1) end,
 
 ---函数名：设置显示状态
@@ -390,8 +390,8 @@ SetActiveSelf = function(p1,p2) end,
 ---函数名：是显示的
 ---描述：·是显示的
 ---@param p1 EntityText
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetActiveSelf = function(p1) end,
 
 ---函数名：设置所在关卡

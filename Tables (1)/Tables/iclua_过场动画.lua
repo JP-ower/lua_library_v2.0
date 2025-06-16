@@ -101,14 +101,14 @@ TE_Tag = function(p1) end,
 
 ---函数名：随机选择过渡效果
 ---描述：随机过渡效果
----返回值：TransEffectIn
----@return TransEffectIn
+---返回值：JFY_TransitionEffect.TransEffectIn
+---@return JFY_TransitionEffect.TransEffectIn
 RandomEffectIn = function() end,
 
 ---函数名：随机选择过渡效果
 ---描述：随机过渡效果
----返回值：TransEffectOut
----@return TransEffectOut
+---返回值：JFY_TransitionEffect.TransEffectOut
+---@return JFY_TransitionEffect.TransEffectOut
 RandomEffectOut = function() end,
 
 ---函数名：重置随机范围为全部效果
@@ -130,14 +130,14 @@ DeleteRandomRange = function(p1) end,
 
 ---函数名：(擦除)随机选择过渡方向
 ---描述：(擦除)随机过渡方向
----返回值：E_Direct
----@return E_Direct
+---返回值：JFY_TransitionEffect.E_Direct
+---@return JFY_TransitionEffect.E_Direct
 RandomEraseDirect = function() end,
 
 ---函数名：(密集图形缩放)随机选择过渡方向
 ---描述：(密集图形缩放)随机过渡方向
----返回值：DF_Direct
----@return DF_Direct
+---返回值：JFY_TransitionEffect.DF_Direct
+---@return JFY_TransitionEffect.DF_Direct
 RandomFigureDirect = function() end,
 
 ---函数名：###########   黑幕设置   ###########

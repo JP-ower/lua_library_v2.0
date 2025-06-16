@@ -5,11 +5,11 @@ ActionDataArray = {
 ---@param p1 ActionDataArray
 Set = function(p1) end,
 
----函数名：CreateActionCallback
+---函数名：Create
 ---@param p1 Data.D_Void
 ---返回值：ActionDataArray
 ---@return ActionDataArray
-CreateActionCallback = function(p1) end,
+Create = function(p1) end,
 
 ---函数名：SetCallback
 ---@param p1 ActionDataArray
@@ -32,8 +32,8 @@ ClearCallback = function(p1) end,
 
 ---函数名：UseNewBreakMode
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UseNewBreakMode = function(p1) end,
 
 ---函数名：当玩家死亡后中断运行
@@ -68,14 +68,14 @@ ToActionDataArray = function(p1) end,
 
 ---函数名：GetValueText
 ---@param p1 ActionDataArray
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetValueText = function(p1) end,
 
 ---函数名：CheckingCondition
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CheckingCondition = function(p1) end,
 
 ---函数名：DeleteAllWaitTimerFromParent
@@ -140,8 +140,8 @@ GetRootFDA = function(p1) end,
 
 ---函数名：get_VarDataDic
 ---@param p1 ActionDataArray
----返回值：Dictionary`2
----@return Dictionary`2
+---返回值：System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@return System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 VarDataDic = function(p1) end,
 
 ---函数名：SetInitRunFDA
@@ -239,38 +239,38 @@ GetParameterDataArray = function(p1) end,
 ---函数名：Equals
 ---@param p1 ActionDataArray
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：GetHashCode
 ---@param p1 ActionDataArray
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 ActionDataArray
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 ActionDataArray
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：name
 ---@param p1 ActionDataArray
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：type
 ---@param p1 ActionDataArray
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 type = function(p1) end,
 
 ---函数名：fdArray
@@ -281,26 +281,26 @@ fdArray = function(p1) end,
 
 ---函数名：playerDeathDelete
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 playerDeathDelete = function(p1) end,
 
 ---函数名：PlayerReviveDelete
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 PlayerReviveDelete = function(p1) end,
 
 ---函数名：De_OnInit
 ---@param p1 ActionDataArray
----返回值：D_Void
----@return D_Void
+---返回值：Data.D_Void
+---@return Data.D_Void
 De_OnInit = function(p1) end,
 
 ---函数名：De_OnDeleteTimer
 ---@param p1 ActionDataArray
----返回值：D_Void
----@return D_Void
+---返回值：Data.D_Void
+---@return Data.D_Void
 De_OnDeleteTimer = function(p1) end,
 
 ---函数名：thisUnit
@@ -329,20 +329,20 @@ lastFDA = function(p1) end,
 
 ---函数名：autoClearVarDataDic
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 autoClearVarDataDic = function(p1) end,
 
 ---函数名：isNestedFDA
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isNestedFDA = function(p1) end,
 
 ---函数名：isBreak
 ---@param p1 ActionDataArray
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isBreak = function(p1) end,
 
 }

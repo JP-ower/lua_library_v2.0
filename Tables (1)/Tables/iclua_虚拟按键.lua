@@ -29,8 +29,8 @@ TShow = function(p1) end,
 SetDKState = function(p1) end,
 
 ---函数名：十字按键是开启的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetDKState = function() end,
 
 ---函数名：隐藏移动控制键

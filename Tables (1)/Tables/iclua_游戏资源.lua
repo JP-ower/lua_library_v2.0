@@ -22,8 +22,8 @@ TSetResource = function(p1,p2) end,
 ---函数名：资源数量
 ---描述：·的数量
 ---@param p1 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetResource = function(p1) end,
 
 ---函数名：设置资源图标
@@ -35,8 +35,8 @@ TSetResourceIcon = function(p1,p2) end,
 ---函数名：资源图标
 ---描述：获取·的图标
 ---@param p1 System.String
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 TGetResourceIcon = function(p1) end,
 
 ---函数名：设置资源动画
@@ -61,8 +61,8 @@ SetResourceIconShowState = function(p1,p2) end,
 ---函数名：资源图标显示状态
 ---描述：·的图标显示状态
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetResourceIconShowState = function(p1) end,
 
 ---函数名：设置资源显示状态
@@ -74,8 +74,8 @@ SetResourceShowState = function(p1,p2) end,
 ---函数名：资源显示状态
 ---描述：·的显示状态
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetResourceShowState = function(p1) end,
 
 ---函数名：设置资源自动隐藏状态
@@ -88,8 +88,8 @@ SetResourceAutoHideState = function(p1,p2) end,
 ---函数名：资源自动隐藏状态
 ---描述：·的自动隐藏状态
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetResourceAutoHideState = function(p1) end,
 
 ---函数名：设置资源文本格式
@@ -102,8 +102,8 @@ SetResourceTextFormat = function(p1,p2) end,
 ---函数名：资源文本格式
 ---描述：·的文本格式
 ---@param p1 System.String
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetResourceTextFormat = function(p1) end,
 
 ---函数名：设置资源文本
@@ -115,8 +115,8 @@ SetResourceValueText = function(p1,p2) end,
 ---函数名：资源文本
 ---描述：·的文本
 ---@param p1 System.String
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetResourceValueText = function(p1) end,
 
 ---函数名：设置资源基础值
@@ -128,8 +128,8 @@ TSetResourceBase = function(p1,p2) end,
 ---函数名：资源基础值
 ---描述：·资源的基础数量·
 ---@param p1 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetResourceBase = function(p1) end,
 
 ---函数名：设置资源最大值
@@ -141,8 +141,8 @@ TSetResourceMax = function(p1,p2) end,
 ---函数名：资源最大值
 ---描述：·资源的最大数量
 ---@param p1 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetResourceMax = function(p1) end,
 
 ---函数名：添加资源数据
@@ -161,8 +161,8 @@ TDeleteResourceData = function(p1) end,
 ClearResourceData = function() end,
 
 ---函数名：触发资源的名字
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 triggerResourceName = function() end,
 
 }

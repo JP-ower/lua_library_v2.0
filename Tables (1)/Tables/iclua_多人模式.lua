@@ -21,13 +21,13 @@ KillTargetPlayer = function(p1,p2) end,
 ---函数名：最后接收的类型比较
 ---描述：最后接收的类型为·
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 LastReadTypeEquals = function(p1) end,
 
 ---函数名：处于多人模式
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 SIsConnecting = function() end,
 
 ---函数名：房主比较
@@ -35,8 +35,8 @@ SIsConnecting = function() end,
 ---介绍：玩家填*代表自己、填#代表触发玩家
 ---@param p1 System.String
 ---@param p2 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 MainPlayerCompare = function(p1,p2) end,
 
 ---函数名：自身比较
@@ -44,89 +44,89 @@ MainPlayerCompare = function(p1,p2) end,
 ---介绍：玩家填*代表自己、填#代表触发玩家
 ---@param p1 System.String
 ---@param p2 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 LocalPlayerCompare = function(p1,p2) end,
 
 ---函数名：玩家是房主
 ---描述：·是房主
 ---介绍：玩家填*代表自己、填#代表触发玩家
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsMainPlayer = function(p1) end,
 
 ---函数名：玩家是自己
 ---描述：·是自己
 ---介绍：玩家填*代表自己、填#代表触发玩家
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsLocalPlayer = function(p1) end,
 
 ---函数名：玩家人数
 ---描述：玩家人数
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 SGetPlayerCount = function() end,
 
 ---函数名：玩家的下标
 ---描述：·的下标
 ---介绍：玩家填*代表自己、填#代表触发玩家，第一位玩家下标是0、后面每加入一个玩家下标+1注意：即使玩家离开和重进下标也不会发生变化
 ---@param p1 System.String
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetPlayerIndex = function(p1) end,
 
 ---函数名：玩家的当前下标
 ---描述：·的当前下标
 ---介绍：玩家填*代表自己、填#代表触发玩家，这里为右上角的玩家下标，第一个是0
 ---@param p1 System.String
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetPlayerCIndex = function(p1) end,
 
 ---函数名：触发玩家的ID
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTriggerPlayerID = function() end,
 
 ---函数名：触发玩家的名字
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTriggerPlayerName = function() end,
 
 ---函数名：自己的玩家ID
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLocalPlayerID = function() end,
 
 ---函数名：自己的玩家名字
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLocalPlayerName = function() end,
 
 ---函数名：最后接收的数据
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetLastReadData = function() end,
 
 ---函数名：最后接收的数据(指定下标)
 ---描述：最后接收的数据,指定下标·
 ---@param p1 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetLastReadData_Array = function(p1) end,
 
 ---函数名：最后接收的数据数量
 ---描述：最后接收的数据数量
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetLastReadDataCount = function() end,
 
 ---函数名：最后接收的类型
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLastReadType = function() end,
 
 ---函数名：发送数据(自定义)
@@ -166,8 +166,8 @@ SetMCURState = function(p1) end,
 
 ---函数名：多人玩家影像是开启的
 ---描述：多人玩家影像是开启的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetMCURState = function() end,
 
 ---函数名：设置多人玩家影像同步模式

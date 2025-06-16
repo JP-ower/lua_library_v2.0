@@ -1,112 +1,37 @@
 ---@meta
 ---@class UnitControl.ControlMode
 UnitControl.ControlMode = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UnitControl.ControlMode
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UnitControl.ControlMode
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：PosX
+---@type UnitControl.ControlMode
+PosX = nil,
 
----函数名：ToString
----@param p1 UnitControl.ControlMode
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：PosY
+---@type UnitControl.ControlMode
+PosY = nil,
 
----函数名：ToString
----@param p1 UnitControl.ControlMode
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：ScaleX
+---@type UnitControl.ControlMode
+ScaleX = nil,
 
----函数名：CompareTo
----@param p1 UnitControl.ControlMode
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：ScaleY
+---@type UnitControl.ControlMode
+ScaleY = nil,
 
----函数名：ToString
----@param p1 UnitControl.ControlMode
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Rotate
+---@type UnitControl.ControlMode
+Rotate = nil,
 
----函数名：ToString
----@param p1 UnitControl.ControlMode
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Alpha
+---@type UnitControl.ControlMode
+Alpha = nil,
 
----函数名：HasFlag
----@param p1 UnitControl.ControlMode
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 UnitControl.ControlMode
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 UnitControl.ControlMode
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 UnitControl.ControlMode
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：PosX
----返回值：ControlMode
----@return ControlMode
-PosX = function() end,
-
----函数名：PosY
----返回值：ControlMode
----@return ControlMode
-PosY = function() end,
-
----函数名：ScaleX
----返回值：ControlMode
----@return ControlMode
-ScaleX = function() end,
-
----函数名：ScaleY
----返回值：ControlMode
----@return ControlMode
-ScaleY = function() end,
-
----函数名：Rotate
----返回值：ControlMode
----@return ControlMode
-Rotate = function() end,
-
----函数名：Alpha
----返回值：ControlMode
----@return ControlMode
-Alpha = function() end,
-
----函数名：None
----返回值：ControlMode
----@return ControlMode
-None = function() end,
+---枚举值：None
+---@type UnitControl.ControlMode
+None = nil,
 
 }

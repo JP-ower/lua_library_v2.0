@@ -44,8 +44,8 @@ SetShowTime_ = function(p1) end,
 
 ---函数名：文字显示完成时间
 ---描述：文字显示完成时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetShowTime_ = function() end,
 
 ---函数名：设置文字单个显示时间
@@ -55,8 +55,8 @@ SetShowSpeed_ = function(p1) end,
 
 ---函数名：文字单个显示时间
 ---描述：文字单个显示时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetShowSpeed_ = function() end,
 
 ---函数名：设置底部图片
@@ -66,8 +66,8 @@ TSetImageBottomIcon = function(p1) end,
 
 ---函数名：底部图片
 ---描述：对话框的底部图片
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 TGetImageBottomIcon = function() end,
 
 ---函数名：设置底部图片颜色
@@ -77,8 +77,8 @@ TSetImageBottomColor = function(p1) end,
 
 ---函数名：底部图片颜色
 ---描述：对话框的底部图片颜色
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 TGetImageBottomColor = function() end,
 
 ---函数名：设置内部底图
@@ -88,8 +88,8 @@ TSetImageInnerBottomIcon = function(p1) end,
 
 ---函数名：内部底图
 ---描述：对话框的内部底图
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 TGetImageInnerBottomIcon = function() end,
 
 ---函数名：设置内部底图颜色
@@ -99,8 +99,8 @@ TSetImageInnerBottomColor = function(p1) end,
 
 ---函数名：内部底图颜色
 ---描述：对话框的内部底图颜色
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 TGetImageInnerBottomColor = function() end,
 
 ---函数名：设置图片
@@ -110,8 +110,8 @@ TSetIcon = function(p1) end,
 
 ---函数名：图片
 ---描述：对话框的图片
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 TGetIcon = function() end,
 
 ---函数名：设置图片颜色
@@ -121,8 +121,8 @@ TSetIconColor = function(p1) end,
 
 ---函数名：图片颜色
 ---描述：对话框的图片颜色
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 TGetIconColor = function() end,
 
 ---函数名：设置宽度偏移
@@ -143,20 +143,20 @@ TSetWidthOffset_Right = function(p1) end,
 
 ---函数名：宽度偏移
 ---描述：宽度偏移
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 TGetWidthOffset = function() end,
 
 ---函数名：宽度偏移(左)
 ---描述：左宽度偏移
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetWidthOffset_Left = function() end,
 
 ---函数名：宽度偏移(右)
 ---描述：右宽度偏移
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetWidthOffset_Right = function() end,
 
 ---函数名：设置高度
@@ -166,8 +166,8 @@ TSetHeight = function(p1) end,
 
 ---函数名：高度
 ---描述：高度
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetHeight = function() end,
 
 ---函数名：设置Y坐标
@@ -176,14 +176,14 @@ TGetHeight = function() end,
 TSetYPos = function(p1) end,
 
 ---函数名：Y坐标
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 TGetYPos = function() end,
 
 ---函数名：对话框是存在的
 ---描述：对话框是存在的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TGetActiveSelf = function() end,
 
 ---函数名：设置图片激活状态
@@ -193,8 +193,8 @@ TSetIconActive = function(p1) end,
 
 ---函数名：使用了图片
 ---描述：使用了图片
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TGetIconActive = function() end,
 
 ---函数名：设置面板颜色
@@ -204,8 +204,8 @@ TSetBottomColor = function(p1) end,
 
 ---函数名：面板颜色
 ---描述：对话框的面板颜色
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 TGetBottomColor = function() end,
 
 ---函数名：设置继续文本颜色
@@ -215,8 +215,8 @@ TSetContinueTextColor = function(p1) end,
 
 ---函数名：继续文本颜色
 ---描述：对话框的继续文本颜色
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 TGetContinueTextColor = function() end,
 
 ---函数名：设置名字
@@ -226,8 +226,8 @@ TSetTextName = function(p1) end,
 
 ---函数名：名字
 ---描述：对话框的名字
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 TGetTextName = function() end,
 
 ---函数名：设置内容
@@ -237,8 +237,8 @@ TSetTextContent = function(p1) end,
 
 ---函数名：内容
 ---描述：对话框的内容
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 TGetTextContent = function() end,
 
 ---函数名：设置分割符号
@@ -248,8 +248,8 @@ SetSplitSymbol = function(p1) end,
 
 ---函数名：分割符号
 ---描述：对话框的分割符号
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetSplitSymbol = function() end,
 
 ---函数名：设置继续文本内容
@@ -259,8 +259,8 @@ TSetContinueTextContent = function(p1) end,
 
 ---函数名：内容
 ---描述：对话框的继续文本内容
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 TGetContinueTextContent = function() end,
 
 ---函数名：设置当前文本
@@ -270,8 +270,8 @@ TSetText = function(p1) end,
 
 ---函数名：当前文本
 ---描述：对话框的当前文本
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 TGetText = function() end,
 
 ---函数名：追加文本
@@ -287,8 +287,8 @@ TSetTextColor = function(p1) end,
 
 ---函数名：文本颜色
 ---描述：对话框的文本颜色
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 TGetTextColor = function() end,
 
 ---函数名：设置文本字体大小
@@ -298,8 +298,8 @@ TSetTextFontSize = function(p1) end,
 
 ---函数名：文本字体大小
 ---描述：对话框的文本字体大小
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 TGetTextFontSize = function() end,
 
 ---函数名：设置文本排列模式
@@ -309,8 +309,8 @@ TSetTextAnchor = function(p1) end,
 
 ---函数名：文本排列模式
 ---描述：对话框的文本排列模式
----返回值：TextAnchor
----@return TextAnchor
+---返回值：UnityEngine.TextAnchor
+---@return UnityEngine.TextAnchor
 TGetTextAnchor = function() end,
 
 ---函数名：设置是否可以使用按键进入下一阶段
@@ -332,14 +332,14 @@ TSetCurrentTextContentIndex = function(p1) end,
 
 ---函数名：当前阶段
 ---描述：对话框的当前阶段
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 TGetCurrentTextContentIndex = function() end,
 
 ---函数名：总阶段
 ---描述：对话框的总阶段
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 TGetTextContentArrayLength = function() end,
 
 ---函数名：设置阶段文本内容
@@ -351,8 +351,8 @@ TSetTextContent_Index = function(p1,p2) end,
 ---函数名：阶段文本内容
 ---描述：对话框的·阶段文本内容
 ---@param p1 System.Int32
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 TGetTextContent_Index = function(p1) end,
 
 ---函数名：关闭对话框
@@ -360,8 +360,8 @@ Close = function() end,
 
 ---函数名：显示文本结束
 ---描述：对话框显示文本结束
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TIsShowTextEnd = function() end,
 
 ---函数名：设置可否跳跃文本显示
@@ -371,8 +371,8 @@ TSetSkipTextShowState = function(p1) end,
 
 ---函数名：可跳跃文本显示
 ---描述：对话框可以跳跃文本显示
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TGetSkipTextShowState = function() end,
 
 ---函数名：从对话框上获取UI文本组件

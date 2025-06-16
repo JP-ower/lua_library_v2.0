@@ -5,8 +5,8 @@ UnitState = {
 ---描述：·的类型是·
 ---@param p1 UnitState
 ---@param p2 UnitStateType
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TypeComparison = function(p1,p2) end,
 
 ---函数名：类型

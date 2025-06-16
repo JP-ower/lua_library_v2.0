@@ -25,8 +25,8 @@ SetFOMode = function(p1,p2) end,
 ---函数名：浮动精灵模式
 ---描述：·的浮动精灵模式
 ---@param p1 GameBackground
----返回值：FOMode
----@return FOMode
+---返回值：GameBackground.FOMode
+---@return GameBackground.FOMode
 GetFOMode = function(p1) end,
 
 ---函数名：设置浮动精灵直线移动角度
@@ -38,8 +38,8 @@ SetFOTranslationAngle = function(p1,p2) end,
 ---函数名：浮动精灵直线移动角度
 ---描述：·的浮动精灵直线移动角度
 ---@param p1 GameBackground
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFOTranslationAngle = function(p1) end,
 
 ---函数名：设置浮动精灵大小比例
@@ -65,8 +65,8 @@ SetFOAlphaAnimationSpeed = function(p1,p2) end,
 ---函数名：浮动精灵大小比例
 ---描述：·的浮动精灵比例(最小，最大)
 ---@param p1 GameBackground
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetFOSizeRandom = function(p1) end,
 
 ---函数名：设置浮动精灵创建数量
@@ -78,8 +78,8 @@ SetFOCreateCount = function(p1,p2) end,
 ---函数名：浮动精灵创建数量
 ---描述：·的浮动精灵创建数量
 ---@param p1 GameBackground
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetFOCreateCount = function(p1) end,
 
 ---函数名：设置浮动精灵最小高度
@@ -121,8 +121,8 @@ SetFOColor = function(p1,p2) end,
 ---函数名：浮动精灵
 ---描述：·的浮动精灵
 ---@param p1 GameBackground
----返回值：Sprite[]
----@return Sprite[]
+---返回值：UnityEngine.Sprite[]
+---@return UnityEngine.Sprite[]
 GetFOSprite = function(p1) end,
 
 ---函数名：设置浮动精灵显示状态
@@ -134,8 +134,8 @@ SetFoActive = function(p1,p2) end,
 ---函数名：浮动精灵显示状态
 ---描述：·浮动精灵的显示状态
 ---@param p1 GameBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetFoActive = function(p1) end,
 
 ---函数名：设置底部装饰创建数量
@@ -147,8 +147,8 @@ SetOrnamentCreateCount = function(p1,p2) end,
 ---函数名：底部装饰创建数量
 ---描述：·的底部装饰创建数量
 ---@param p1 GameBackground
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetOrnamentCreateCount = function(p1) end,
 
 ---函数名：设置底部装饰
@@ -166,8 +166,8 @@ SetOrnamentColor = function(p1,p2) end,
 ---函数名：底部装饰
 ---描述：·的底部装饰
 ---@param p1 GameBackground
----返回值：Sprite[]
----@return Sprite[]
+---返回值：UnityEngine.Sprite[]
+---@return UnityEngine.Sprite[]
 GetOrnamentSprtie = function(p1) end,
 
 ---函数名：设置底部装饰显示状态
@@ -179,8 +179,8 @@ SetOrnamentActive = function(p1,p2) end,
 ---函数名：底部装饰显示状态
 ---描述：·底部装饰的显示状态
 ---@param p1 GameBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetOrnamentActive = function(p1) end,
 
 ---函数名：设置背景图片
@@ -211,8 +211,8 @@ SetBGAnimationEnabled = function(p1,p2) end,
 ---函数名：背景动画是激活状态
 ---描述：·的背景动画是激活状态
 ---@param p1 GameBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetBGAnimationEnabled = function(p1) end,
 
 ---函数名：设置背景颜色
@@ -230,8 +230,8 @@ SetPCBGColor = function(p1,p2) end,
 ---函数名：背景图片
 ---描述：·的背景图片
 ---@param p1 GameBackground
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 GetBGSprite = function(p1) end,
 
 ---函数名：设置背景锁定摄像机
@@ -249,8 +249,8 @@ SetBGMode = function(p1,p2) end,
 ---函数名：背景模式
 ---描述：·的背景模式
 ---@param p1 GameBackground
----返回值：BGMode
----@return BGMode
+---返回值：GameBackground.BGMode
+---@return GameBackground.BGMode
 GetBGMode = function(p1) end,
 
 ---函数名：设置背景图片显示状态
@@ -262,8 +262,8 @@ SetBGActive = function(p1,p2) end,
 ---函数名：背景图片显示状态
 ---描述：·背景图片的显示状态
 ---@param p1 GameBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetBGActive = function(p1) end,
 
 ---函数名：设置底部图片
@@ -281,8 +281,8 @@ SetBottomColor = function(p1,p2) end,
 ---函数名：底部图片
 ---描述：·的底部图片
 ---@param p1 GameBackground
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 GetBottomSprite = function(p1) end,
 
 ---函数名：设置底部图片显示状态
@@ -294,8 +294,8 @@ SetBottomActive = function(p1,p2) end,
 ---函数名：底部图片显示状态
 ---描述：·底部图片的显示状态
 ---@param p1 GameBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetBottomActive = function(p1) end,
 
 ---函数名：设置背景显示状态
@@ -307,8 +307,8 @@ SetActive = function(p1,p2) end,
 ---函数名：背景显示状态
 ---描述：·的显示状态
 ---@param p1 GameBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetActive = function(p1) end,
 
 ---函数名：设置背景(使用关卡)
@@ -325,8 +325,8 @@ SetBGXMoveSpeed = function(p1,p2) end,
 
 ---函数名：背景X轴移动速度
 ---@param p1 GameBackground
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetBGXMoveSpeed = function(p1) end,
 
 ---函数名：设置背景Y轴移动速度
@@ -337,8 +337,8 @@ SetBGYMoveSpeed = function(p1,p2) end,
 
 ---函数名：背景Y轴移动速度
 ---@param p1 GameBackground
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetBGYMoveSpeed = function(p1) end,
 
 ---函数名：背景实体图片

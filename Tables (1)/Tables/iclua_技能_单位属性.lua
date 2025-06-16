@@ -16,15 +16,15 @@ SetHP_Int = function(p1,p2) end,
 ---函数名：血量
 ---描述：·的血量
 ---@param p1 SK_UnitAttribute
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetHP = function(p1) end,
 
 ---函数名：血量(整数)
 ---描述：·的整数血量
 ---@param p1 SK_UnitAttribute
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHP_Int = function(p1) end,
 
 ---函数名：设置最大血量
@@ -42,15 +42,15 @@ SetMaxHP_Int = function(p1,p2) end,
 ---函数名：最大血量
 ---描述：·的最大血量
 ---@param p1 SK_UnitAttribute
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetMaxHP = function(p1) end,
 
 ---函数名：最大血量(整数)
 ---描述：·的最大整数血量
 ---@param p1 SK_UnitAttribute
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetMaxHP_Int = function(p1) end,
 
 ---函数名：设置无敌状态
@@ -62,8 +62,8 @@ SetInvincible = function(p1,p2) end,
 ---函数名：是无敌的
 ---描述：·是无敌的
 ---@param p1 SK_UnitAttribute
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInvincible = function(p1) end,
 
 ---函数名：设置受伤无敌时间
@@ -75,15 +75,15 @@ SetInvTime = function(p1,p2) end,
 ---函数名：受伤无敌时间
 ---描述：·的受伤无敌时间
 ---@param p1 SK_UnitAttribute
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetInvTime = function(p1) end,
 
 ---函数名：技能激活状态
 ---描述：·的激活状态
 ---@param p1 SK_UnitAttribute
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetEnabled = function(p1) end,
 
 }

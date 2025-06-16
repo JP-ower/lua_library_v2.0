@@ -31,8 +31,8 @@ Clear = function(p1) end,
 ---函数名：玩家组中玩家数量
 ---描述：·中玩家数量
 ---@param p1 PlayerGroup
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetPlayerCount = function(p1) end,
 
 ---函数名：获取玩家(下标)

@@ -4,78 +4,78 @@ UI_XEventCallback = {
 ---函数名：点击次数
 ---描述：·的点击次数
 ---@param p1 UI_XEventCallback
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 ClickCount = function(p1) end,
 
 ---函数名：点击时间
 ---描述：·的点击时间
 ---@param p1 UI_XEventCallback
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 ClickTime = function(p1) end,
 
 ---函数名：位移
 ---描述：·的位移
 ---@param p1 UI_XEventCallback
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 Delta = function(p1) end,
 
 ---函数名：是拖拽的
 ---描述：·是拖拽的
 ---@param p1 UI_XEventCallback
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsDragging = function(p1) end,
 
 ---函数名：在移动
 ---描述：·是在移动的
 ---@param p1 UI_XEventCallback
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsPointerMoving = function(p1) end,
 
 ---函数名：指针ID
 ---描述：·的指针ID
 ---@param p1 UI_XEventCallback
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 PointerId = function(p1) end,
 
 ---函数名：坐标
 ---描述：·的坐标
 ---@param p1 UI_XEventCallback
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 Position = function(p1) end,
 
 ---函数名：点击坐标
 ---描述：·的点击坐标
 ---@param p1 UI_XEventCallback
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 PressPosition = function(p1) end,
 
 ---函数名：世界坐标
 ---描述：·的世界坐标
 ---@param p1 UI_XEventCallback
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 WorldPosition = function(p1) end,
 
 ---函数名：屏幕坐标
 ---描述：·的屏幕坐标
 ---@param p1 UI_XEventCallback
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 ScreenPosition = function(p1) end,
 
 ---函数名：UI本地坐标
 ---描述：·的UI本地坐标
 ---@param p1 UI_XEventCallback
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 AnchoredPosition = function(p1) end,
 
 ---函数名：创建UI事件响应器

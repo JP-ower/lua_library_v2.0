@@ -3,8 +3,8 @@
 UnityEngine.Camera = {
 ---函数名：get_nearClipPlane
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 nearClipPlane = function(p1) end,
 
 ---函数名：set_nearClipPlane
@@ -13,8 +13,8 @@ nearClipPlane = function(p1) end,
 
 ---函数名：get_farClipPlane
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 farClipPlane = function(p1) end,
 
 ---函数名：set_farClipPlane
@@ -23,8 +23,8 @@ farClipPlane = function(p1) end,
 
 ---函数名：get_fieldOfView
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 fieldOfView = function(p1) end,
 
 ---函数名：set_fieldOfView
@@ -33,8 +33,8 @@ fieldOfView = function(p1) end,
 
 ---函数名：get_renderingPath
 ---@param p1 UnityEngine.Camera
----返回值：RenderingPath
----@return RenderingPath
+---返回值：UnityEngine.RenderingPath
+---@return UnityEngine.RenderingPath
 renderingPath = function(p1) end,
 
 ---函数名：set_renderingPath
@@ -43,8 +43,8 @@ renderingPath = function(p1) end,
 
 ---函数名：get_actualRenderingPath
 ---@param p1 UnityEngine.Camera
----返回值：RenderingPath
----@return RenderingPath
+---返回值：UnityEngine.RenderingPath
+---@return UnityEngine.RenderingPath
 actualRenderingPath = function(p1) end,
 
 ---函数名：Reset
@@ -53,8 +53,8 @@ Reset = function(p1) end,
 
 ---函数名：get_allowHDR
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 allowHDR = function(p1) end,
 
 ---函数名：set_allowHDR
@@ -63,8 +63,8 @@ allowHDR = function(p1) end,
 
 ---函数名：get_allowMSAA
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 allowMSAA = function(p1) end,
 
 ---函数名：set_allowMSAA
@@ -73,8 +73,8 @@ allowMSAA = function(p1) end,
 
 ---函数名：get_allowDynamicResolution
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 allowDynamicResolution = function(p1) end,
 
 ---函数名：set_allowDynamicResolution
@@ -83,8 +83,8 @@ allowDynamicResolution = function(p1) end,
 
 ---函数名：get_forceIntoRenderTexture
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 forceIntoRenderTexture = function(p1) end,
 
 ---函数名：set_forceIntoRenderTexture
@@ -93,8 +93,8 @@ forceIntoRenderTexture = function(p1) end,
 
 ---函数名：get_orthographicSize
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 orthographicSize = function(p1) end,
 
 ---函数名：set_orthographicSize
@@ -103,8 +103,8 @@ orthographicSize = function(p1) end,
 
 ---函数名：get_orthographic
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 orthographic = function(p1) end,
 
 ---函数名：set_orthographic
@@ -113,8 +113,8 @@ orthographic = function(p1) end,
 
 ---函数名：get_opaqueSortMode
 ---@param p1 UnityEngine.Camera
----返回值：OpaqueSortMode
----@return OpaqueSortMode
+---返回值：UnityEngine.Rendering.OpaqueSortMode
+---@return UnityEngine.Rendering.OpaqueSortMode
 opaqueSortMode = function(p1) end,
 
 ---函数名：set_opaqueSortMode
@@ -123,8 +123,8 @@ opaqueSortMode = function(p1) end,
 
 ---函数名：get_transparencySortMode
 ---@param p1 UnityEngine.Camera
----返回值：TransparencySortMode
----@return TransparencySortMode
+---返回值：UnityEngine.TransparencySortMode
+---@return UnityEngine.TransparencySortMode
 transparencySortMode = function(p1) end,
 
 ---函数名：set_transparencySortMode
@@ -133,8 +133,8 @@ transparencySortMode = function(p1) end,
 
 ---函数名：get_transparencySortAxis
 ---@param p1 UnityEngine.Camera
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 transparencySortAxis = function(p1) end,
 
 ---函数名：set_transparencySortAxis
@@ -147,8 +147,8 @@ ResetTransparencySortSettings = function(p1) end,
 
 ---函数名：get_depth
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 depth = function(p1) end,
 
 ---函数名：set_depth
@@ -157,8 +157,8 @@ depth = function(p1) end,
 
 ---函数名：get_aspect
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 aspect = function(p1) end,
 
 ---函数名：set_aspect
@@ -171,14 +171,14 @@ ResetAspect = function(p1) end,
 
 ---函数名：get_velocity
 ---@param p1 UnityEngine.Camera
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 velocity = function(p1) end,
 
 ---函数名：get_cullingMask
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 cullingMask = function(p1) end,
 
 ---函数名：set_cullingMask
@@ -187,8 +187,8 @@ cullingMask = function(p1) end,
 
 ---函数名：get_eventMask
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 eventMask = function(p1) end,
 
 ---函数名：set_eventMask
@@ -197,8 +197,8 @@ eventMask = function(p1) end,
 
 ---函数名：get_layerCullSpherical
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 layerCullSpherical = function(p1) end,
 
 ---函数名：set_layerCullSpherical
@@ -207,8 +207,8 @@ layerCullSpherical = function(p1) end,
 
 ---函数名：get_cameraType
 ---@param p1 UnityEngine.Camera
----返回值：CameraType
----@return CameraType
+---返回值：UnityEngine.CameraType
+---@return UnityEngine.CameraType
 cameraType = function(p1) end,
 
 ---函数名：set_cameraType
@@ -217,8 +217,8 @@ cameraType = function(p1) end,
 
 ---函数名：get_overrideSceneCullingMask
 ---@param p1 UnityEngine.Camera
----返回值：UInt64
----@return UInt64
+---返回值：System.UInt64
+---@return System.UInt64
 overrideSceneCullingMask = function(p1) end,
 
 ---函数名：set_overrideSceneCullingMask
@@ -227,8 +227,8 @@ overrideSceneCullingMask = function(p1) end,
 
 ---函数名：get_layerCullDistances
 ---@param p1 UnityEngine.Camera
----返回值：Single[]
----@return Single[]
+---返回值：System.Single[]
+---@return System.Single[]
 layerCullDistances = function(p1) end,
 
 ---函数名：set_layerCullDistances
@@ -237,8 +237,8 @@ layerCullDistances = function(p1) end,
 
 ---函数名：get_useOcclusionCulling
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useOcclusionCulling = function(p1) end,
 
 ---函数名：set_useOcclusionCulling
@@ -247,8 +247,8 @@ useOcclusionCulling = function(p1) end,
 
 ---函数名：get_cullingMatrix
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 cullingMatrix = function(p1) end,
 
 ---函数名：set_cullingMatrix
@@ -261,8 +261,8 @@ ResetCullingMatrix = function(p1) end,
 
 ---函数名：get_backgroundColor
 ---@param p1 UnityEngine.Camera
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 backgroundColor = function(p1) end,
 
 ---函数名：set_backgroundColor
@@ -271,8 +271,8 @@ backgroundColor = function(p1) end,
 
 ---函数名：get_clearFlags
 ---@param p1 UnityEngine.Camera
----返回值：CameraClearFlags
----@return CameraClearFlags
+---返回值：UnityEngine.CameraClearFlags
+---@return UnityEngine.CameraClearFlags
 clearFlags = function(p1) end,
 
 ---函数名：set_clearFlags
@@ -281,8 +281,8 @@ clearFlags = function(p1) end,
 
 ---函数名：get_depthTextureMode
 ---@param p1 UnityEngine.Camera
----返回值：DepthTextureMode
----@return DepthTextureMode
+---返回值：UnityEngine.DepthTextureMode
+---@return UnityEngine.DepthTextureMode
 depthTextureMode = function(p1) end,
 
 ---函数名：set_depthTextureMode
@@ -291,8 +291,8 @@ depthTextureMode = function(p1) end,
 
 ---函数名：get_clearStencilAfterLightingPass
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 clearStencilAfterLightingPass = function(p1) end,
 
 ---函数名：set_clearStencilAfterLightingPass
@@ -311,8 +311,8 @@ ResetReplacementShader = function(p1) end,
 
 ---函数名：get_usePhysicalProperties
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 usePhysicalProperties = function(p1) end,
 
 ---函数名：set_usePhysicalProperties
@@ -321,8 +321,8 @@ usePhysicalProperties = function(p1) end,
 
 ---函数名：get_sensorSize
 ---@param p1 UnityEngine.Camera
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 sensorSize = function(p1) end,
 
 ---函数名：set_sensorSize
@@ -331,8 +331,8 @@ sensorSize = function(p1) end,
 
 ---函数名：get_lensShift
 ---@param p1 UnityEngine.Camera
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 lensShift = function(p1) end,
 
 ---函数名：set_lensShift
@@ -341,8 +341,8 @@ lensShift = function(p1) end,
 
 ---函数名：get_focalLength
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 focalLength = function(p1) end,
 
 ---函数名：set_focalLength
@@ -351,8 +351,8 @@ focalLength = function(p1) end,
 
 ---函数名：get_gateFit
 ---@param p1 UnityEngine.Camera
----返回值：GateFitMode
----@return GateFitMode
+---返回值：UnityEngine.Camera.GateFitMode
+---@return UnityEngine.Camera.GateFitMode
 gateFit = function(p1) end,
 
 ---函数名：set_gateFit
@@ -361,20 +361,20 @@ gateFit = function(p1) end,
 
 ---函数名：GetGateFittedFieldOfView
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetGateFittedFieldOfView = function(p1) end,
 
 ---函数名：GetGateFittedLensShift
 ---@param p1 UnityEngine.Camera
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetGateFittedLensShift = function(p1) end,
 
 ---函数名：get_rect
 ---@param p1 UnityEngine.Camera
----返回值：Rect
----@return Rect
+---返回值：UnityEngine.Rect
+---@return UnityEngine.Rect
 rect = function(p1) end,
 
 ---函数名：set_rect
@@ -383,8 +383,8 @@ rect = function(p1) end,
 
 ---函数名：get_pixelRect
 ---@param p1 UnityEngine.Camera
----返回值：Rect
----@return Rect
+---返回值：UnityEngine.Rect
+---@return UnityEngine.Rect
 pixelRect = function(p1) end,
 
 ---函数名：set_pixelRect
@@ -393,32 +393,32 @@ pixelRect = function(p1) end,
 
 ---函数名：get_pixelWidth
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 pixelWidth = function(p1) end,
 
 ---函数名：get_pixelHeight
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 pixelHeight = function(p1) end,
 
 ---函数名：get_scaledPixelWidth
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 scaledPixelWidth = function(p1) end,
 
 ---函数名：get_scaledPixelHeight
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 scaledPixelHeight = function(p1) end,
 
 ---函数名：get_targetTexture
 ---@param p1 UnityEngine.Camera
----返回值：RenderTexture
----@return RenderTexture
+---返回值：UnityEngine.RenderTexture
+---@return UnityEngine.RenderTexture
 targetTexture = function(p1) end,
 
 ---函数名：set_targetTexture
@@ -427,14 +427,14 @@ targetTexture = function(p1) end,
 
 ---函数名：get_activeTexture
 ---@param p1 UnityEngine.Camera
----返回值：RenderTexture
----@return RenderTexture
+---返回值：UnityEngine.RenderTexture
+---@return UnityEngine.RenderTexture
 activeTexture = function(p1) end,
 
 ---函数名：get_targetDisplay
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 targetDisplay = function(p1) end,
 
 ---函数名：set_targetDisplay
@@ -455,14 +455,14 @@ SetTargetBuffers = function(p1,p2,p3) end,
 
 ---函数名：get_cameraToWorldMatrix
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 cameraToWorldMatrix = function(p1) end,
 
 ---函数名：get_worldToCameraMatrix
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 worldToCameraMatrix = function(p1) end,
 
 ---函数名：set_worldToCameraMatrix
@@ -471,8 +471,8 @@ worldToCameraMatrix = function(p1) end,
 
 ---函数名：get_projectionMatrix
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 projectionMatrix = function(p1) end,
 
 ---函数名：set_projectionMatrix
@@ -481,8 +481,8 @@ projectionMatrix = function(p1) end,
 
 ---函数名：get_nonJitteredProjectionMatrix
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 nonJitteredProjectionMatrix = function(p1) end,
 
 ---函数名：set_nonJitteredProjectionMatrix
@@ -491,8 +491,8 @@ nonJitteredProjectionMatrix = function(p1) end,
 
 ---函数名：get_useJitteredProjectionMatrixForTransparentRendering
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useJitteredProjectionMatrixForTransparentRendering = function(p1) end,
 
 ---函数名：set_useJitteredProjectionMatrixForTransparentRendering
@@ -501,8 +501,8 @@ useJitteredProjectionMatrixForTransparentRendering = function(p1) end,
 
 ---函数名：get_previousViewProjectionMatrix
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 previousViewProjectionMatrix = function(p1) end,
 
 ---函数名：ResetWorldToCameraMatrix
@@ -516,112 +516,112 @@ ResetProjectionMatrix = function(p1) end,
 ---函数名：CalculateObliqueMatrix
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector4
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 CalculateObliqueMatrix = function(p1,p2) end,
 
 ---函数名：WorldToScreenPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
 ---@param p3 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 WorldToScreenPoint = function(p1,p2,p3) end,
 
 ---函数名：WorldToViewportPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
 ---@param p3 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 WorldToViewportPoint = function(p1,p2,p3) end,
 
 ---函数名：ViewportToWorldPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
 ---@param p3 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 ViewportToWorldPoint = function(p1,p2,p3) end,
 
 ---函数名：ScreenToWorldPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
 ---@param p3 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 ScreenToWorldPoint = function(p1,p2,p3) end,
 
 ---函数名：WorldToScreenPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 WorldToScreenPoint = function(p1,p2) end,
 
 ---函数名：WorldToViewportPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 WorldToViewportPoint = function(p1,p2) end,
 
 ---函数名：ViewportToWorldPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 ViewportToWorldPoint = function(p1,p2) end,
 
 ---函数名：ScreenToWorldPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 ScreenToWorldPoint = function(p1,p2) end,
 
 ---函数名：ScreenToViewportPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 ScreenToViewportPoint = function(p1,p2) end,
 
 ---函数名：ViewportToScreenPoint
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Vector3
----@return Vector3
+---返回值：UnityEngine.Vector3
+---@return UnityEngine.Vector3
 ViewportToScreenPoint = function(p1,p2) end,
 
 ---函数名：ViewportPointToRay
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
 ---@param p3 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Ray
----@return Ray
+---返回值：UnityEngine.Ray
+---@return UnityEngine.Ray
 ViewportPointToRay = function(p1,p2,p3) end,
 
 ---函数名：ViewportPointToRay
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Ray
----@return Ray
+---返回值：UnityEngine.Ray
+---@return UnityEngine.Ray
 ViewportPointToRay = function(p1,p2) end,
 
 ---函数名：ScreenPointToRay
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
 ---@param p3 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Ray
----@return Ray
+---返回值：UnityEngine.Ray
+---@return UnityEngine.Ray
 ScreenPointToRay = function(p1,p2,p3) end,
 
 ---函数名：ScreenPointToRay
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Vector3
----返回值：Ray
----@return Ray
+---返回值：UnityEngine.Ray
+---@return UnityEngine.Ray
 ScreenPointToRay = function(p1,p2) end,
 
 ---函数名：CalculateFrustumCorners
@@ -645,45 +645,45 @@ CalculateProjectionMatrixFromPhysicalProperties = function(p1,p2,p3,p4,p5,p6,p7)
 ---函数名：FocalLengthToFieldOfView
 ---@param p1 System.Single
 ---@param p2 System.Single
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 FocalLengthToFieldOfView = function(p1,p2) end,
 
 ---函数名：FieldOfViewToFocalLength
 ---@param p1 System.Single
 ---@param p2 System.Single
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 FieldOfViewToFocalLength = function(p1,p2) end,
 
 ---函数名：HorizontalToVerticalFieldOfView
 ---@param p1 System.Single
 ---@param p2 System.Single
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 HorizontalToVerticalFieldOfView = function(p1,p2) end,
 
 ---函数名：VerticalToHorizontalFieldOfView
 ---@param p1 System.Single
 ---@param p2 System.Single
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 VerticalToHorizontalFieldOfView = function(p1,p2) end,
 
 ---函数名：get_main
----返回值：Camera
----@return Camera
+---返回值：UnityEngine.Camera
+---@return UnityEngine.Camera
 main = function() end,
 
 ---函数名：get_current
----返回值：Camera
----@return Camera
+---返回值：UnityEngine.Camera
+---@return UnityEngine.Camera
 current = function() end,
 
 ---函数名：get_scene
 ---@param p1 UnityEngine.Camera
----返回值：Scene
----@return Scene
+---返回值：UnityEngine.SceneManagement.Scene
+---@return UnityEngine.SceneManagement.Scene
 scene = function(p1) end,
 
 ---函数名：set_scene
@@ -692,14 +692,14 @@ scene = function(p1) end,
 
 ---函数名：get_stereoEnabled
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 stereoEnabled = function(p1) end,
 
 ---函数名：get_stereoSeparation
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 stereoSeparation = function(p1) end,
 
 ---函数名：set_stereoSeparation
@@ -708,8 +708,8 @@ stereoSeparation = function(p1) end,
 
 ---函数名：get_stereoConvergence
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 stereoConvergence = function(p1) end,
 
 ---函数名：set_stereoConvergence
@@ -718,14 +718,14 @@ stereoConvergence = function(p1) end,
 
 ---函数名：get_areVRStereoViewMatricesWithinSingleCullTolerance
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 areVRStereoViewMatricesWithinSingleCullTolerance = function(p1) end,
 
 ---函数名：get_stereoTargetEye
 ---@param p1 UnityEngine.Camera
----返回值：StereoTargetEyeMask
----@return StereoTargetEyeMask
+---返回值：UnityEngine.StereoTargetEyeMask
+---@return UnityEngine.StereoTargetEyeMask
 stereoTargetEye = function(p1) end,
 
 ---函数名：set_stereoTargetEye
@@ -734,22 +734,22 @@ stereoTargetEye = function(p1) end,
 
 ---函数名：get_stereoActiveEye
 ---@param p1 UnityEngine.Camera
----返回值：MonoOrStereoscopicEye
----@return MonoOrStereoscopicEye
+---返回值：UnityEngine.Camera.MonoOrStereoscopicEye
+---@return UnityEngine.Camera.MonoOrStereoscopicEye
 stereoActiveEye = function(p1) end,
 
 ---函数名：GetStereoNonJitteredProjectionMatrix
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Camera.StereoscopicEye
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 GetStereoNonJitteredProjectionMatrix = function(p1,p2) end,
 
 ---函数名：GetStereoViewMatrix
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Camera.StereoscopicEye
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 GetStereoViewMatrix = function(p1,p2) end,
 
 ---函数名：CopyStereoDeviceProjectionMatrixToNonJittered
@@ -760,8 +760,8 @@ CopyStereoDeviceProjectionMatrixToNonJittered = function(p1,p2) end,
 ---函数名：GetStereoProjectionMatrix
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Camera.StereoscopicEye
----返回值：Matrix4x4
----@return Matrix4x4
+---返回值：UnityEngine.Matrix4x4
+---@return UnityEngine.Matrix4x4
 GetStereoProjectionMatrix = function(p1,p2) end,
 
 ---函数名：SetStereoProjectionMatrix
@@ -785,49 +785,49 @@ SetStereoViewMatrix = function(p1,p2,p3) end,
 ResetStereoViewMatrices = function(p1) end,
 
 ---函数名：get_allCamerasCount
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 allCamerasCount = function() end,
 
 ---函数名：get_allCameras
----返回值：Camera[]
----@return Camera[]
+---返回值：UnityEngine.Camera[]
+---@return UnityEngine.Camera[]
 allCameras = function() end,
 
 ---函数名：GetAllCameras
 ---@param p1 UnityEngine.Camera[]
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetAllCameras = function(p1) end,
 
 ---函数名：RenderToCubemap
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Cubemap
 ---@param p3 System.Int32
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 RenderToCubemap = function(p1,p2,p3) end,
 
 ---函数名：RenderToCubemap
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Cubemap
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 RenderToCubemap = function(p1,p2) end,
 
 ---函数名：RenderToCubemap
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.RenderTexture
 ---@param p3 System.Int32
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 RenderToCubemap = function(p1,p2,p3) end,
 
 ---函数名：RenderToCubemap
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.RenderTexture
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 RenderToCubemap = function(p1,p2) end,
 
 ---函数名：RenderToCubemap
@@ -835,8 +835,8 @@ RenderToCubemap = function(p1,p2) end,
 ---@param p2 UnityEngine.RenderTexture
 ---@param p3 System.Int32
 ---@param p4 UnityEngine.Camera.MonoOrStereoscopicEye
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 RenderToCubemap = function(p1,p2,p3,p4) end,
 
 ---函数名：Render
@@ -869,8 +869,8 @@ CopyFrom = function(p1,p2) end,
 
 ---函数名：get_commandBufferCount
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 commandBufferCount = function(p1) end,
 
 ---函数名：RemoveCommandBuffers
@@ -904,29 +904,29 @@ RemoveCommandBuffer = function(p1,p2,p3) end,
 ---函数名：GetCommandBuffers
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Rendering.CameraEvent
----返回值：CommandBuffer[]
----@return CommandBuffer[]
+---返回值：UnityEngine.Rendering.CommandBuffer[]
+---@return UnityEngine.Rendering.CommandBuffer[]
 GetCommandBuffers = function(p1,p2) end,
 
 ---函数名：TryGetCullingParameters
 ---@param p1 UnityEngine.Camera
 ---@param p2 UnityEngine.Rendering.ScriptableCullingParameters&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetCullingParameters = function(p1,p2) end,
 
 ---函数名：TryGetCullingParameters
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Boolean
 ---@param p3 UnityEngine.Rendering.ScriptableCullingParameters&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetCullingParameters = function(p1,p2,p3) end,
 
 ---函数名：get_isOrthoGraphic
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isOrthoGraphic = function(p1) end,
 
 ---函数名：set_isOrthoGraphic
@@ -935,19 +935,19 @@ isOrthoGraphic = function(p1) end,
 
 ---函数名：GetScreenWidth
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetScreenWidth = function(p1) end,
 
 ---函数名：GetScreenHeight
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetScreenHeight = function(p1) end,
 
 ---函数名：get_mainCamera
----返回值：Camera
----@return Camera
+---返回值：UnityEngine.Camera
+---@return UnityEngine.Camera
 mainCamera = function() end,
 
 ---函数名：DoClear
@@ -956,8 +956,8 @@ DoClear = function(p1) end,
 
 ---函数名：get_near
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 near = function(p1) end,
 
 ---函数名：set_near
@@ -966,8 +966,8 @@ near = function(p1) end,
 
 ---函数名：get_far
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 far = function(p1) end,
 
 ---函数名：set_far
@@ -976,8 +976,8 @@ far = function(p1) end,
 
 ---函数名：get_fov
 ---@param p1 UnityEngine.Camera
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 fov = function(p1) end,
 
 ---函数名：set_fov
@@ -990,8 +990,8 @@ ResetFieldOfView = function(p1) end,
 
 ---函数名：get_hdr
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 hdr = function(p1) end,
 
 ---函数名：set_hdr
@@ -1000,8 +1000,8 @@ hdr = function(p1) end,
 
 ---函数名：get_stereoMirrorMode
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 stereoMirrorMode = function(p1) end,
 
 ---函数名：set_stereoMirrorMode
@@ -1022,20 +1022,20 @@ SetStereoProjectionMatrices = function(p1,p2,p3) end,
 
 ---函数名：GetStereoViewMatrices
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4[]
----@return Matrix4x4[]
+---返回值：UnityEngine.Matrix4x4[]
+---@return UnityEngine.Matrix4x4[]
 GetStereoViewMatrices = function(p1) end,
 
 ---函数名：GetStereoProjectionMatrices
 ---@param p1 UnityEngine.Camera
----返回值：Matrix4x4[]
----@return Matrix4x4[]
+---返回值：UnityEngine.Matrix4x4[]
+---@return UnityEngine.Matrix4x4[]
 GetStereoProjectionMatrices = function(p1) end,
 
 ---函数名：get_enabled
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enabled = function(p1) end,
 
 ---函数名：set_enabled
@@ -1044,97 +1044,97 @@ enabled = function(p1) end,
 
 ---函数名：get_isActiveAndEnabled
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isActiveAndEnabled = function(p1) end,
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.Camera
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 UnityEngine.Camera
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Camera
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.Camera
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Camera
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -1163,43 +1163,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Camera
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -1223,8 +1223,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -1239,8 +1239,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 UnityEngine.Camera
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -1256,8 +1256,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -1334,105 +1334,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 UnityEngine.Camera
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.Camera
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.Camera
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.Camera
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -1441,8 +1441,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.Camera
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -1451,29 +1451,29 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.Camera
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.Camera
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 ---函数名：onPreCull
----返回值：CameraCallback
----@return CameraCallback
+---返回值：UnityEngine.Camera.CameraCallback
+---@return UnityEngine.Camera.CameraCallback
 onPreCull = function() end,
 
 ---函数名：onPreRender
----返回值：CameraCallback
----@return CameraCallback
+---返回值：UnityEngine.Camera.CameraCallback
+---@return UnityEngine.Camera.CameraCallback
 onPreRender = function() end,
 
 ---函数名：onPostRender
----返回值：CameraCallback
----@return CameraCallback
+---返回值：UnityEngine.Camera.CameraCallback
+---@return UnityEngine.Camera.CameraCallback
 onPostRender = function() end,
 
 }

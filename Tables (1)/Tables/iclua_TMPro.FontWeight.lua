@@ -1,122 +1,45 @@
 ---@meta
 ---@class TMPro.FontWeight
 TMPro.FontWeight = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 TMPro.FontWeight
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 TMPro.FontWeight
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Thin
+---@type TMPro.FontWeight
+Thin = nil,
 
----函数名：ToString
----@param p1 TMPro.FontWeight
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：ExtraLight
+---@type TMPro.FontWeight
+ExtraLight = nil,
 
----函数名：ToString
----@param p1 TMPro.FontWeight
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Light
+---@type TMPro.FontWeight
+Light = nil,
 
----函数名：CompareTo
----@param p1 TMPro.FontWeight
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Regular
+---@type TMPro.FontWeight
+Regular = nil,
 
----函数名：ToString
----@param p1 TMPro.FontWeight
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Medium
+---@type TMPro.FontWeight
+Medium = nil,
 
----函数名：ToString
----@param p1 TMPro.FontWeight
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：SemiBold
+---@type TMPro.FontWeight
+SemiBold = nil,
 
----函数名：HasFlag
----@param p1 TMPro.FontWeight
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：Bold
+---@type TMPro.FontWeight
+Bold = nil,
 
----函数名：GetTypeCode
----@param p1 TMPro.FontWeight
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：Heavy
+---@type TMPro.FontWeight
+Heavy = nil,
 
----函数名：GetType
----@param p1 TMPro.FontWeight
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 TMPro.FontWeight
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Thin
----返回值：FontWeight
----@return FontWeight
-Thin = function() end,
-
----函数名：ExtraLight
----返回值：FontWeight
----@return FontWeight
-ExtraLight = function() end,
-
----函数名：Light
----返回值：FontWeight
----@return FontWeight
-Light = function() end,
-
----函数名：Regular
----返回值：FontWeight
----@return FontWeight
-Regular = function() end,
-
----函数名：Medium
----返回值：FontWeight
----@return FontWeight
-Medium = function() end,
-
----函数名：SemiBold
----返回值：FontWeight
----@return FontWeight
-SemiBold = function() end,
-
----函数名：Bold
----返回值：FontWeight
----@return FontWeight
-Bold = function() end,
-
----函数名：Heavy
----返回值：FontWeight
----@return FontWeight
-Heavy = function() end,
-
----函数名：Black
----返回值：FontWeight
----@return FontWeight
-Black = function() end,
+---枚举值：Black
+---@type TMPro.FontWeight
+Black = nil,
 
 }

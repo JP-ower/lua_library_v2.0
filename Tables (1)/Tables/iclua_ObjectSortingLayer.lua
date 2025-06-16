@@ -1,137 +1,57 @@
 ---@meta
 ---@class ObjectSortingLayer
 ObjectSortingLayer = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 ObjectSortingLayer
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 ObjectSortingLayer
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：None
+---@type ObjectSortingLayer
+None = nil,
 
----函数名：ToString
----@param p1 ObjectSortingLayer
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：CustomDown5
+---@type ObjectSortingLayer
+CustomDown5 = nil,
 
----函数名：ToString
----@param p1 ObjectSortingLayer
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：CustomDown4
+---@type ObjectSortingLayer
+CustomDown4 = nil,
 
----函数名：CompareTo
----@param p1 ObjectSortingLayer
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：CustomDown3
+---@type ObjectSortingLayer
+CustomDown3 = nil,
 
----函数名：ToString
----@param p1 ObjectSortingLayer
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：CustomDown2
+---@type ObjectSortingLayer
+CustomDown2 = nil,
 
----函数名：ToString
----@param p1 ObjectSortingLayer
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：CustomDown1
+---@type ObjectSortingLayer
+CustomDown1 = nil,
 
----函数名：HasFlag
----@param p1 ObjectSortingLayer
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：Default
+---@type ObjectSortingLayer
+Default = nil,
 
----函数名：GetTypeCode
----@param p1 ObjectSortingLayer
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：CustomUp1
+---@type ObjectSortingLayer
+CustomUp1 = nil,
 
----函数名：GetType
----@param p1 ObjectSortingLayer
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：CustomUp2
+---@type ObjectSortingLayer
+CustomUp2 = nil,
 
----函数名：value__
----@param p1 ObjectSortingLayer
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：CustomUp3
+---@type ObjectSortingLayer
+CustomUp3 = nil,
 
----函数名：None
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-None = function() end,
+---枚举值：CustomUp4
+---@type ObjectSortingLayer
+CustomUp4 = nil,
 
----函数名：CustomDown5
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomDown5 = function() end,
-
----函数名：CustomDown4
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomDown4 = function() end,
-
----函数名：CustomDown3
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomDown3 = function() end,
-
----函数名：CustomDown2
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomDown2 = function() end,
-
----函数名：CustomDown1
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomDown1 = function() end,
-
----函数名：Default
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-Default = function() end,
-
----函数名：CustomUp1
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomUp1 = function() end,
-
----函数名：CustomUp2
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomUp2 = function() end,
-
----函数名：CustomUp3
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomUp3 = function() end,
-
----函数名：CustomUp4
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomUp4 = function() end,
-
----函数名：CustomUp5
----返回值：ObjectSortingLayer
----@return ObjectSortingLayer
-CustomUp5 = function() end,
+---枚举值：CustomUp5
+---@type ObjectSortingLayer
+CustomUp5 = nil,
 
 }

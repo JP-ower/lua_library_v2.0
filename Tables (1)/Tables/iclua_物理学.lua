@@ -12,8 +12,8 @@ SetFixedDeltaTime = function(p1) end,
 
 ---函数名：获取物理刷新率
 ---描述：物理刷新率
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFixedDeltaTime = function() end,
 
 ---函数名：射线检测(角度)
@@ -23,8 +23,8 @@ GetFixedDeltaTime = function() end,
 ---@param p2 System.Single
 ---@param p3 System.Single
 ---@param p4 System.Single
----返回值：RaycastHitInfo
----@return RaycastHitInfo
+---返回值：GamePhysics.RaycastHitInfo
+---@return GamePhysics.RaycastHitInfo
 RaycastAll_Angle = function(p1,p2,p3,p4) end,
 
 ---函数名：射线检测(目标点)
@@ -34,8 +34,8 @@ RaycastAll_Angle = function(p1,p2,p3,p4) end,
 ---@param p2 UnityEngine.Vector2
 ---@param p3 System.Single
 ---@param p4 System.Single
----返回值：RaycastHitInfo
----@return RaycastHitInfo
+---返回值：GamePhysics.RaycastHitInfo
+---@return GamePhysics.RaycastHitInfo
 RaycastAll_TargetPos = function(p1,p2,p3,p4) end,
 
 ---函数名：射线检测(方向)
@@ -45,8 +45,8 @@ RaycastAll_TargetPos = function(p1,p2,p3,p4) end,
 ---@param p2 UnityEngine.Vector2
 ---@param p3 System.Single
 ---@param p4 System.Single
----返回值：RaycastHitInfo
----@return RaycastHitInfo
+---返回值：GamePhysics.RaycastHitInfo
+---@return GamePhysics.RaycastHitInfo
 RaycastAll = function(p1,p2,p3,p4) end,
 
 ---函数名：设置层级碰撞

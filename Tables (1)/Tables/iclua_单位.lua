@@ -58,15 +58,15 @@ FindUnit = function(p1) end,
 ---函数名：是玩家单位
 ---描述：·是玩家单位
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TIsPlayerUnit = function(p1) end,
 
 ---函数名：是边界墙
 ---描述：·是边界墙
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TIsLevelWall = function(p1) end,
 
 ---函数名：单位数据
@@ -81,8 +81,8 @@ GetUnitData = function(p1) end,
 ---@param p1 Unit
 ---@param p2 ComparisonOperator2
 ---@param p3 UnitData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UnitDataComparison = function(p1,p2,p3) end,
 
 ---函数名：单位目标类型比较
@@ -90,8 +90,8 @@ UnitDataComparison = function(p1,p2,p3) end,
 ---@param p1 Unit
 ---@param p2 ComparisonOperator2
 ---@param p3 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UnitTypeComparison = function(p1,p2,p3) end,
 
 ---函数名：精灵图片显示类型比较
@@ -99,8 +99,8 @@ UnitTypeComparison = function(p1,p2,p3) end,
 ---@param p1 Unit
 ---@param p2 ComparisonOperator2
 ---@param p3 UnityEngine.SpriteDrawMode
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 SpriteDrawModeComparison = function(p1,p2,p3) end,
 
 ---函数名：单位比较
@@ -108,16 +108,16 @@ SpriteDrawModeComparison = function(p1,p2,p3) end,
 ---@param p1 Unit
 ---@param p2 ComparisonOperator2
 ---@param p3 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UnitComparison = function(p1,p2,p3) end,
 
 ---函数名：单位为空
 ---描述：··空的
 ---@param p1 Unit
 ---@param p2 ComparisonOperator2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UnitIsNull = function(p1,p2) end,
 
 ---函数名：创建
@@ -148,15 +148,15 @@ SetName = function(p1,p2) end,
 ---函数名：单位名字
 ---描述：·的名字
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetName = function(p1) end,
 
 ---函数名：单位ID
 ---描述：·的ID
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetID = function(p1) end,
 
 ---函数名：通过ID获取单位
@@ -181,8 +181,8 @@ AddTargetType = function(p1,p2) end,
 ---函数名：目标类型
 ---描述：·的目标类型
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetTargetType = function(p1) end,
 
 ---函数名：删除目标类型
@@ -201,8 +201,8 @@ SetActive = function(p1,p2) end,
 ---函数名：是显示的
 ---描述：·是显示的
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetActive = function(p1) end,
 
 ---函数名：设置精灵图片
@@ -223,8 +223,8 @@ SetSprite_ID = function(p1,p2,p3) end,
 ---函数名：精灵图片
 ---描述：·的精灵图片
 ---@param p1 Unit
----返回值：Sprite
----@return Sprite
+---返回值：UnityEngine.Sprite
+---@return UnityEngine.Sprite
 GetSprite = function(p1) end,
 
 ---函数名：设置精灵图片显示类型
@@ -236,8 +236,8 @@ SetSpriteDrawMode = function(p1,p2) end,
 ---函数名：精灵图片显示类型
 ---描述：·的精灵图片显示类型
 ---@param p1 Unit
----返回值：SpriteDrawMode
----@return SpriteDrawMode
+---返回值：UnityEngine.SpriteDrawMode
+---@return UnityEngine.SpriteDrawMode
 GetSpriteDrawMode = function(p1) end,
 
 ---函数名：设置受遮罩影响模式
@@ -249,8 +249,8 @@ SetSpriteMaskInteraction = function(p1,p2) end,
 ---函数名：受遮罩影响模式
 ---描述：·的受遮罩影响模式
 ---@param p1 Unit
----返回值：SpriteMaskInteraction
----@return SpriteMaskInteraction
+---返回值：UnityEngine.SpriteMaskInteraction
+---@return UnityEngine.SpriteMaskInteraction
 GetSpriteMaskInteraction = function(p1) end,
 
 ---函数名：设置所在关卡
@@ -271,24 +271,24 @@ GetLevel = function(p1) end,
 ---介绍：游戏中大部分情况下0度代表朝上
 ---@param p1 Unit
 ---@param p2 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTargetUnitIncludedAngle_DefUp = function(p1,p2) end,
 
 ---函数名：单位之间角度(0度为右)
 ---描述：·与·之间的角度(0度为右)
 ---@param p1 Unit
 ---@param p2 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTargetUnitIncludedAngle = function(p1,p2) end,
 
 ---函数名：单位之间距离
 ---描述：·与·之间的距离
 ---@param p1 Unit
 ---@param p2 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTargetUnitDistance = function(p1,p2) end,
 
 ---函数名：面向单位
@@ -423,8 +423,8 @@ SetMaxMoveDis = function(p1,p2) end,
 ---函数名：最大移动距离
 ---描述：·的最大移动距离
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetMaxMoveDis = function(p1) end,
 
 ---函数名：设置移动速度
@@ -436,8 +436,8 @@ SetMoveSpeed = function(p1,p2) end,
 ---函数名：移动速度
 ---描述：·的移动速度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetMoveSpeed = function(p1) end,
 
 ---函数名：停止移动
@@ -453,8 +453,8 @@ StartMove = function(p1) end,
 ---函数名：在移动中
 ---描述：·在移动中
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TIsMove = function(p1) end,
 
 ---函数名：缩放(立即、固定大小)
@@ -512,8 +512,8 @@ StartScale = function(p1) end,
 ---函数名：在缩放中
 ---描述：·在缩放中
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TIsScale = function(p1) end,
 
 ---函数名：旋转(立即、固定角度)
@@ -569,8 +569,8 @@ StartRotate = function(p1) end,
 ---函数名：在旋转中
 ---描述：·在旋转中
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TIsRotate = function(p1) end,
 
 ---函数名：设置默认方向角度
@@ -582,15 +582,15 @@ SetDefDirectionAngle = function(p1,p2) end,
 ---函数名：默认方向角度
 ---描述：·的默认方向角度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDefDirectionAngle = function(p1) end,
 
 ---函数名：单位方向
 ---描述：·的方向
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetDirection = function(p1) end,
 
 ---函数名：设置游戏中图层
@@ -602,8 +602,8 @@ SetSortingLayer_Enum = function(p1,p2) end,
 ---函数名：游戏中图层
 ---描述：·的游戏中图层
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetSortingLayer = function(p1) end,
 
 ---函数名：设置材质
@@ -629,8 +629,8 @@ SetColor_NCA = function(p1,p2,p3) end,
 ---函数名：获取颜色
 ---描述：·的颜色
 ---@param p1 Unit
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1) end,
 
 ---函数名：设置透明度
@@ -643,8 +643,8 @@ SetAlpha = function(p1,p2,p3) end,
 ---函数名：获取透明度
 ---描述：获取·的透明度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAlpha = function(p1) end,
 
 ---函数名：设置单位层级深度
@@ -657,8 +657,8 @@ SetSortingOrder = function(p1,p2) end,
 ---函数名：单位层级深度
 ---描述：·的层级深度
 ---@param p1 Unit
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetSortingOrder = function(p1) end,
 
 ---函数名：设置单位深度
@@ -672,8 +672,8 @@ SetDepth = function(p1,p2) end,
 ---描述：·的深度(Z坐标)
 ---介绍：其实就是Z轴坐标
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDepth = function(p1) end,
 
 ---函数名：设置单位动画
@@ -691,8 +691,8 @@ SetPlayTimeScale = function(p1,p2) end,
 ---函数名：动画播放速率
 ---描述：·的动画播放速率
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPlayTimeScale = function(p1) end,
 
 ---函数名：设置动画帧数
@@ -704,15 +704,15 @@ SetPlayFrame = function(p1,p2) end,
 ---函数名：当前动画帧数
 ---描述：·的当前动画帧数
 ---@param p1 Unit
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCurrentPlayFrame = function(p1) end,
 
 ---函数名：当前动画总帧数
 ---描述：·的当前动画总帧数
 ---@param p1 Unit
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCurrentAnimationLength = function(p1) end,
 
 ---函数名：添加播放动作
@@ -751,8 +751,8 @@ EndPlayCurrent_Force = function(p1) end,
 ---函数名：当前播放动作
 ---描述：·播放的动作
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetCurrentPlay = function(p1) end,
 
 ---函数名：单位动画
@@ -765,15 +765,15 @@ GetUnitAnimation = function(p1) end,
 ---函数名：单位动画名字
 ---描述：·的动画名字
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetUnitAnimationName = function(p1) end,
 
 ---函数名：碰撞模式是触发器
 ---描述：·的碰撞模式是触发器
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsTrigger = function(p1) end,
 
 ---函数名：设置碰撞器状态
@@ -786,8 +786,8 @@ SetCollisionEnabled = function(p1,p2) end,
 ---函数名：碰撞器状态
 ---描述：·的碰撞器是激活的
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetCollisionEnabled = function(p1) end,
 
 ---函数名：设置碰撞器大小
@@ -840,8 +840,8 @@ GetCollisionPoints = function(p1) end,
 ---描述：·的碰撞器碰撞点(Json格式)
 ---介绍：只对Polygon类型的碰撞生效
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetCollisionPoints_Json = function(p1) end,
 
 ---函数名：设置像素碰撞透明度截止频率
@@ -855,8 +855,8 @@ SetPixelColliderAlphaCutoff = function(p1,p2) end,
 ---描述：获取·的像素碰撞透明度截止频率
 ---介绍：只对Pixel类型的碰撞生效
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPixelColliderAlphaCutoff = function(p1) end,
 
 ---函数名：碰撞器类型比较
@@ -864,36 +864,36 @@ GetPixelColliderAlphaCutoff = function(p1) end,
 ---@param p1 Unit
 ---@param p2 ComparisonOperator2
 ---@param p3 ColliderData.ColliderType
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ColliderTypeCompare = function(p1,p2,p3) end,
 
 ---函数名：碰撞器类型
 ---描述：·的碰撞器类型
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetColliderType = function(p1) end,
 
 ---函数名：碰撞器大小
 ---描述：·的碰撞器大小
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetCollisionSize = function(p1) end,
 
 ---函数名：碰撞器偏移
 ---描述：·的碰撞器偏移
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetCollisionOffset = function(p1) end,
 
 ---函数名：碰撞器半径
 ---描述：·的碰撞器半径
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetCollisionRadius = function(p1) end,
 
 ---函数名：忽视与指定单位的碰撞
@@ -912,8 +912,8 @@ SetColliderIsTrigger = function(p1,p2) end,
 ---函数名：碰撞器是触发器
 ---描述：·的碰撞器是触发器
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ColliderIsTrigger = function(p1) end,
 
 ---函数名：设置刚体类型
@@ -925,8 +925,8 @@ SetRigidbodyType = function(p1,p2) end,
 ---函数名：碰撞模式
 ---描述：·的碰撞模式
 ---@param p1 Unit
----返回值：RigidbodyType2D
----@return RigidbodyType2D
+---返回值：UnityEngine.RigidbodyType2D
+---@return UnityEngine.RigidbodyType2D
 GetRigidbodyType = function(p1) end,
 
 ---函数名：设置碰撞层级
@@ -939,15 +939,15 @@ SetCollisionLayer = function(p1,p2) end,
 ---函数名：碰撞层级
 ---描述：·的碰撞层级
 ---@param p1 Unit
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetCollisionLayer = function(p1) end,
 
 ---函数名：碰撞数量
 ---描述：·碰撞到的单位数量
 ---@param p1 Unit
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetCollisionCount = function(p1) end,
 
 ---函数名：设置中心点
@@ -961,8 +961,8 @@ SetPivot = function(p1,p2,p3) end,
 ---函数名：中心点
 ---描述：·的中心点
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPivot = function(p1) end,
 
 ---函数名：设置坐标
@@ -990,8 +990,8 @@ LockToScreenPos = function(p1,p2) end,
 ---函数名：锁定屏幕坐标
 ---描述：·的锁定屏幕坐标
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 LockScreenPos = function(p1) end,
 
 ---函数名：取消锁定到屏幕坐标
@@ -1061,24 +1061,24 @@ SetPosOffset_Pivot = function(p1,p2,p3,p4) end,
 ---描述：·的坐标，使用模式·
 ---@param p1 Unit
 ---@param p2 System.Int32
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPos = function(p1,p2) end,
 
 ---函数名：单位X坐标
 ---描述：·的X坐标，使用模式·
 ---@param p1 Unit
 ---@param p2 System.Int32
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXPos = function(p1,p2) end,
 
 ---函数名：单位Y坐标
 ---描述：·的Y坐标，使用模式·
 ---@param p1 Unit
 ---@param p2 System.Int32
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYPos = function(p1,p2) end,
 
 ---函数名：单位坐标(指定中心点)
@@ -1087,8 +1087,8 @@ GetYPos = function(p1,p2) end,
 ---@param p2 UnityEngine.Vector2
 ---@param p3 System.Boolean
 ---@param p4 System.Int32
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetPos_Pivot = function(p1,p2,p3,p4) end,
 
 ---函数名：设置大小
@@ -1146,24 +1146,24 @@ SetSizeOffset_Pivot = function(p1,p2,p3) end,
 ---描述：·的大小,是否计算旋转·
 ---@param p1 Unit
 ---@param p2 System.Boolean
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetSize = function(p1,p2) end,
 
 ---函数名：单位X大小
 ---描述：·的X大小,是否计算旋转·
 ---@param p1 Unit
 ---@param p2 System.Boolean
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXSize = function(p1,p2) end,
 
 ---函数名：单位Y大小
 ---描述：·的Y大小,是否计算旋转·
 ---@param p1 Unit
 ---@param p2 System.Boolean
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYSize = function(p1,p2) end,
 
 ---函数名：向量在单位内
@@ -1171,8 +1171,8 @@ GetYSize = function(p1,p2) end,
 ---介绍：一般用来判断一个点是否在单位里面
 ---@param p1 Unit
 ---@param p2 UnityEngine.Vector2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsVector = function(p1,p2) end,
 
 ---函数名：向量在碰撞内
@@ -1180,8 +1180,8 @@ ContainsVector = function(p1,p2) end,
 ---介绍：一般用来判断一个点是否在单位碰撞里面
 ---@param p1 Unit
 ---@param p2 UnityEngine.Vector2
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ColliderContainsVector = function(p1,p2) end,
 
 ---函数名：单位在单位内
@@ -1189,32 +1189,32 @@ ColliderContainsVector = function(p1,p2) end,
 ---介绍：一般用来判断两个单位是否接触
 ---@param p1 Unit
 ---@param p2 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsUnit = function(p1,p2) end,
 
 ---函数名：两个单位处于碰撞状态
 ---描述：·与·处于碰撞状态
 ---@param p1 Unit
 ---@param p2 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CollisionUnit = function(p1,p2) end,
 
 ---函数名：与指定单位类型处于碰撞状态
 ---描述：·与·处于碰撞状态
 ---@param p1 Unit
 ---@param p2 UnitData
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CollisionUnitData = function(p1,p2) end,
 
 ---函数名：与指定目标类型处于碰撞状态
 ---描述：·与·处于碰撞状态
 ---@param p1 Unit
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CollisionTargetType = function(p1,p2) end,
 
 ---函数名：获取所有碰撞单位
@@ -1227,8 +1227,8 @@ GetAllCollisionUnit = function(p1) end,
 ---函数名：单位内随机点
 ---描述：·内的随机点
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetRandomPointInUnit = function(p1) end,
 
 ---函数名：单位大小(比例)
@@ -1236,8 +1236,8 @@ GetRandomPointInUnit = function(p1) end,
 ---@param p1 Unit
 ---@param p2 UnityEngine.Vector2
 ---@param p3 System.Boolean
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetSize_Scale = function(p1,p2,p3) end,
 
 ---函数名：设置缩放倍率
@@ -1280,36 +1280,36 @@ SetYScaleOffset = function(p1,p2) end,
 ---函数名：缩放
 ---描述：·的缩放
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetScale = function(p1) end,
 
 ---函数名：X缩放
 ---描述：·的X缩放
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXScale = function(p1) end,
 
 ---函数名：Y缩放
 ---描述：·的Y缩放
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYScale = function(p1) end,
 
 ---函数名：X轴方向
 ---描述：·的X轴方向
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXDir = function(p1) end,
 
 ---函数名：Y轴方向
 ---描述：·的Y轴方向
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYDir = function(p1) end,
 
 ---函数名：设置旋转
@@ -1342,29 +1342,29 @@ SetRotateOffset_Pivot = function(p1,p2,p3) end,
 ---函数名：旋转角度
 ---描述：·的旋转角度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetRotate = function(p1) end,
 
 ---函数名：旋转角度(X)
 ---描述：·的X旋转角度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetXRotate = function(p1) end,
 
 ---函数名：旋转角度(Y)
 ---描述：·的Y旋转角度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetYRotate = function(p1) end,
 
 ---函数名：旋转角度(计算方向)
 ---描述：·的旋转角度
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetRotate_Direction = function(p1) end,
 
 ---函数名：设置旋转(新)
@@ -1385,8 +1385,8 @@ SetFlipX = function(p1,p2) end,
 ---函数名：是水平反转的
 ---描述：·是水平反转的
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsFlipX = function(p1) end,
 
 ---函数名：设置垂直反转
@@ -1398,8 +1398,8 @@ SetFlipY = function(p1,p2) end,
 ---函数名：是垂直反转的
 ---描述：·是垂直反转的
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsFlipY = function(p1) end,
 
 ---函数名：设置父单位
@@ -1439,8 +1439,8 @@ SetInvincible = function(p1,p2) end,
 ---函数名：是无敌状态
 ---描述：·是无敌状态
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInvincible = function(p1) end,
 
 ---函数名：造成伤害
@@ -1458,8 +1458,8 @@ SetAutoDelete = function(p1,p2) end,
 ---函数名：死亡后自动删除
 ---描述：·死亡后自动删除
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetAutoDelete = function(p1) end,
 
 ---函数名：杀死
@@ -1476,8 +1476,8 @@ Kill_I = function(p1,p2) end,
 ---函数名：是死亡的
 ---描述：·是死亡的
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsDeath = function(p1) end,
 
 ---函数名：复活
@@ -1498,36 +1498,36 @@ UnPause = function(p1) end,
 ---函数名：是暂停的
 ---描述：·是暂停的
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsPause = function(p1) end,
 
 ---函数名：碰撞上方
 ---描述：·碰撞到上方
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsCollisionUp = function(p1) end,
 
 ---函数名：碰撞下方
 ---描述：·碰撞到下方
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsCollisionDown = function(p1) end,
 
 ---函数名：碰撞左方
 ---描述：·碰撞到左方
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsCollisionLeft = function(p1) end,
 
 ---函数名：碰撞右方
 ---描述：·碰撞到右方
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsCollisionRight = function(p1) end,
 
 ---函数名：设置玩家
@@ -1569,8 +1569,8 @@ TGetSkill = function(p1,p2) end,
 ---描述：最后按下的控制键··
 ---@param p1 ComparisonOperator2
 ---@param p2 ControlKey
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ControlKeyComparison_L = function(p1,p2) end,
 
 ---函数名：控制键比较
@@ -1578,8 +1578,8 @@ ControlKeyComparison_L = function(p1,p2) end,
 ---@param p1 ControlKey
 ---@param p2 ComparisonOperator2
 ---@param p3 ControlKey
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ControlKeyComparison = function(p1,p2,p3) end,
 
 ---函数名：设置刚体激活状态
@@ -1592,8 +1592,8 @@ SetSimulated = function(p1,p2) end,
 ---函数名：刚体激活状态
 ---描述：·的刚体激活状态
 ---@param p1 Unit
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetSimulated = function(p1) end,
 
 ---函数名：设置重力缩放
@@ -1607,8 +1607,8 @@ SetGravityScale = function(p1,p2) end,
 ---描述：·的重力缩放
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetGravityScale = function(p1) end,
 
 ---函数名：添加力
@@ -1660,22 +1660,22 @@ SetVelocity_Y = function(p1,p2) end,
 ---函数名：速率
 ---描述：·的运动速率
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 GetVelocity = function(p1) end,
 
 ---函数名：速率(x轴)
 ---描述：·的X轴运动速率
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetVelocity_X = function(p1) end,
 
 ---函数名：速率(y轴)
 ---描述：·的Y轴运动速率
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetVelocity_Y = function(p1) end,
 
 ---函数名：清除力
@@ -1712,8 +1712,8 @@ ClearAngularVelocity = function(p1) end,
 ---函数名：角速率
 ---描述：·的角速率
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAngularVelocity = function(p1) end,
 
 ---函数名：设置锁定轴
@@ -1726,8 +1726,8 @@ SetRC = function(p1,p2) end,
 ---函数名：锁定轴
 ---描述：·的锁定轴
 ---@param p1 Unit
----返回值：RigidbodyConstraints2D
----@return RigidbodyConstraints2D
+---返回值：UnityEngine.RigidbodyConstraints2D
+---@return UnityEngine.RigidbodyConstraints2D
 GetRC = function(p1) end,
 
 ---函数名：设置刚体碰撞检测模式
@@ -1741,8 +1741,8 @@ SetCollisionDetectionMode = function(p1,p2) end,
 ---描述：·的刚体碰撞检测模式
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效
 ---@param p1 Unit
----返回值：CollisionDetectionMode2D
----@return CollisionDetectionMode2D
+---返回值：UnityEngine.CollisionDetectionMode2D
+---@return UnityEngine.CollisionDetectionMode2D
 GetCollisionDetectionMode = function(p1) end,
 
 ---函数名：设置刚体类型
@@ -1755,8 +1755,8 @@ SetBodyType = function(p1,p2) end,
 ---函数名：刚体类型
 ---描述：·的刚体类型
 ---@param p1 Unit
----返回值：RigidbodyType2D
----@return RigidbodyType2D
+---返回值：UnityEngine.RigidbodyType2D
+---@return UnityEngine.RigidbodyType2D
 GetBodyType = function(p1) end,
 
 ---函数名：设置质量
@@ -1769,8 +1769,8 @@ SetMass = function(p1,p2) end,
 ---函数名：质量
 ---描述：·的质量
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetMass = function(p1) end,
 
 ---函数名：设置阻力
@@ -1783,8 +1783,8 @@ SetDrag = function(p1,p2) end,
 ---函数名：阻力
 ---描述：·的阻力
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDrag = function(p1) end,
 
 ---函数名：设置角阻力
@@ -1797,8 +1797,8 @@ SetAngularDrag = function(p1,p2) end,
 ---函数名：角阻力
 ---描述：·的角阻力
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAngularDrag = function(p1) end,
 
 ---函数名：设置摩擦力
@@ -1811,8 +1811,8 @@ SetFriction = function(p1,p2) end,
 ---函数名：摩擦力
 ---描述：·的摩擦力
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetFriction = function(p1) end,
 
 ---函数名：设置反弹力
@@ -1825,40 +1825,40 @@ SetBounciness = function(p1,p2) end,
 ---函数名：反弹力
 ---描述：·的反弹力
 ---@param p1 Unit
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetBounciness = function(p1) end,
 
 ---函数名：从单位身上获取游戏对象
 ---描述：·的游戏对象
 ---@param p1 Unit
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 GetGameObject = function(p1) end,
 
 ---函数名：最后移动的坐标
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 lastMovePos = function() end,
 
 ---函数名：最后设置的坐标
 ---描述：·最后设置的坐标
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 lastPos = function(p1) end,
 
 ---函数名：偏移的坐标
 ---描述：·偏移的坐标
 ---@param p1 Unit
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 offsetPos = function(p1) end,
 
 ---函数名：最后造成的伤害值
 ---描述：最后造成的伤害值
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 lastDamageValue = function() end,
 
 ---函数名：最后按下的控制键

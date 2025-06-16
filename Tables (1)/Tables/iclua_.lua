@@ -1,177 +1,88 @@
 ---@meta
 ---@class System.Reflection.BindingFlags
 System.Reflection.BindingFlags = {
----函数名：Equals
----@param p1 System.Reflection.BindingFlags
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---枚举值：value__
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 System.Reflection.BindingFlags
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Default
+---@type System.Reflection.BindingFlags
+Default = nil,
 
----函数名：ToString
----@param p1 System.Reflection.BindingFlags
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：IgnoreCase
+---@type System.Reflection.BindingFlags
+IgnoreCase = nil,
 
----函数名：ToString
----@param p1 System.Reflection.BindingFlags
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：DeclaredOnly
+---@type System.Reflection.BindingFlags
+DeclaredOnly = nil,
 
----函数名：CompareTo
----@param p1 System.Reflection.BindingFlags
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Instance
+---@type System.Reflection.BindingFlags
+Instance = nil,
 
----函数名：ToString
----@param p1 System.Reflection.BindingFlags
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Static
+---@type System.Reflection.BindingFlags
+Static = nil,
 
----函数名：ToString
----@param p1 System.Reflection.BindingFlags
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Public
+---@type System.Reflection.BindingFlags
+Public = nil,
 
----函数名：HasFlag
----@param p1 System.Reflection.BindingFlags
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：NonPublic
+---@type System.Reflection.BindingFlags
+NonPublic = nil,
 
----函数名：GetTypeCode
----@param p1 System.Reflection.BindingFlags
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：FlattenHierarchy
+---@type System.Reflection.BindingFlags
+FlattenHierarchy = nil,
 
----函数名：GetType
----@param p1 System.Reflection.BindingFlags
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：InvokeMethod
+---@type System.Reflection.BindingFlags
+InvokeMethod = nil,
 
----函数名：value__
----@param p1 System.Reflection.BindingFlags
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：CreateInstance
+---@type System.Reflection.BindingFlags
+CreateInstance = nil,
 
----函数名：Default
----返回值：BindingFlags
----@return BindingFlags
-Default = function() end,
+---枚举值：GetField
+---@type System.Reflection.BindingFlags
+GetField = nil,
 
----函数名：IgnoreCase
----返回值：BindingFlags
----@return BindingFlags
-IgnoreCase = function() end,
+---枚举值：SetField
+---@type System.Reflection.BindingFlags
+SetField = nil,
 
----函数名：DeclaredOnly
----返回值：BindingFlags
----@return BindingFlags
-DeclaredOnly = function() end,
+---枚举值：GetProperty
+---@type System.Reflection.BindingFlags
+GetProperty = nil,
 
----函数名：Instance
----返回值：BindingFlags
----@return BindingFlags
-Instance = function() end,
+---枚举值：SetProperty
+---@type System.Reflection.BindingFlags
+SetProperty = nil,
 
----函数名：Static
----返回值：BindingFlags
----@return BindingFlags
-Static = function() end,
+---枚举值：PutDispProperty
+---@type System.Reflection.BindingFlags
+PutDispProperty = nil,
 
----函数名：Public
----返回值：BindingFlags
----@return BindingFlags
-Public = function() end,
+---枚举值：PutRefDispProperty
+---@type System.Reflection.BindingFlags
+PutRefDispProperty = nil,
 
----函数名：NonPublic
----返回值：BindingFlags
----@return BindingFlags
-NonPublic = function() end,
+---枚举值：ExactBinding
+---@type System.Reflection.BindingFlags
+ExactBinding = nil,
 
----函数名：FlattenHierarchy
----返回值：BindingFlags
----@return BindingFlags
-FlattenHierarchy = function() end,
+---枚举值：SuppressChangeType
+---@type System.Reflection.BindingFlags
+SuppressChangeType = nil,
 
----函数名：InvokeMethod
----返回值：BindingFlags
----@return BindingFlags
-InvokeMethod = function() end,
+---枚举值：OptionalParamBinding
+---@type System.Reflection.BindingFlags
+OptionalParamBinding = nil,
 
----函数名：CreateInstance
----返回值：BindingFlags
----@return BindingFlags
-CreateInstance = function() end,
-
----函数名：GetField
----返回值：BindingFlags
----@return BindingFlags
-GetField = function() end,
-
----函数名：SetField
----返回值：BindingFlags
----@return BindingFlags
-SetField = function() end,
-
----函数名：GetProperty
----返回值：BindingFlags
----@return BindingFlags
-GetProperty = function() end,
-
----函数名：SetProperty
----返回值：BindingFlags
----@return BindingFlags
-SetProperty = function() end,
-
----函数名：PutDispProperty
----返回值：BindingFlags
----@return BindingFlags
-PutDispProperty = function() end,
-
----函数名：PutRefDispProperty
----返回值：BindingFlags
----@return BindingFlags
-PutRefDispProperty = function() end,
-
----函数名：ExactBinding
----返回值：BindingFlags
----@return BindingFlags
-ExactBinding = function() end,
-
----函数名：SuppressChangeType
----返回值：BindingFlags
----@return BindingFlags
-SuppressChangeType = function() end,
-
----函数名：OptionalParamBinding
----返回值：BindingFlags
----@return BindingFlags
-OptionalParamBinding = function() end,
-
----函数名：IgnoreReturn
----返回值：BindingFlags
----@return BindingFlags
-IgnoreReturn = function() end,
+---枚举值：IgnoreReturn
+---@type System.Reflection.BindingFlags
+IgnoreReturn = nil,
 
 }

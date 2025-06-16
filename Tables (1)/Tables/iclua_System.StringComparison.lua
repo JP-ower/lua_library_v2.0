@@ -1,107 +1,33 @@
 ---@meta
 ---@class System.StringComparison
 System.StringComparison = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 System.StringComparison
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 System.StringComparison
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：CurrentCulture
+---@type System.StringComparison
+CurrentCulture = nil,
 
----函数名：ToString
----@param p1 System.StringComparison
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：CurrentCultureIgnoreCase
+---@type System.StringComparison
+CurrentCultureIgnoreCase = nil,
 
----函数名：ToString
----@param p1 System.StringComparison
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：InvariantCulture
+---@type System.StringComparison
+InvariantCulture = nil,
 
----函数名：CompareTo
----@param p1 System.StringComparison
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：InvariantCultureIgnoreCase
+---@type System.StringComparison
+InvariantCultureIgnoreCase = nil,
 
----函数名：ToString
----@param p1 System.StringComparison
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Ordinal
+---@type System.StringComparison
+Ordinal = nil,
 
----函数名：ToString
----@param p1 System.StringComparison
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
-
----函数名：HasFlag
----@param p1 System.StringComparison
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 System.StringComparison
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 System.StringComparison
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 System.StringComparison
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：CurrentCulture
----返回值：StringComparison
----@return StringComparison
-CurrentCulture = function() end,
-
----函数名：CurrentCultureIgnoreCase
----返回值：StringComparison
----@return StringComparison
-CurrentCultureIgnoreCase = function() end,
-
----函数名：InvariantCulture
----返回值：StringComparison
----@return StringComparison
-InvariantCulture = function() end,
-
----函数名：InvariantCultureIgnoreCase
----返回值：StringComparison
----@return StringComparison
-InvariantCultureIgnoreCase = function() end,
-
----函数名：Ordinal
----返回值：StringComparison
----@return StringComparison
-Ordinal = function() end,
-
----函数名：OrdinalIgnoreCase
----返回值：StringComparison
----@return StringComparison
-OrdinalIgnoreCase = function() end,
+---枚举值：OrdinalIgnoreCase
+---@type System.StringComparison
+OrdinalIgnoreCase = nil,
 
 }

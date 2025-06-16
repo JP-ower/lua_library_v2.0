@@ -46,8 +46,8 @@ DeleteCustomAttribute_All = function(p1,p2) end,
 ---@param p1 VariableType
 ---@param p2 VarData
 ---@param p3 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ContainsCustomAttribute = function(p1,p2,p3) end,
 
 ---函数名：获取自定义属性
@@ -55,8 +55,8 @@ ContainsCustomAttribute = function(p1,p2,p3) end,
 ---@param p1 VariableType
 ---@param p2 VarData
 ---@param p3 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetCustomAttribute = function(p1,p2,p3) end,
 
 }

@@ -45,8 +45,8 @@ SetLabel = function(p1,p2) end,
 
 ---函数名：获取标题
 ---@param p1 UI_InfoBox
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetLabel = function(p1) end,
 
 ---函数名：设置内容
@@ -57,8 +57,8 @@ SetContent = function(p1,p2) end,
 
 ---函数名：获取内容
 ---@param p1 UI_InfoBox
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetContent = function(p1) end,
 
 ---函数名：关闭

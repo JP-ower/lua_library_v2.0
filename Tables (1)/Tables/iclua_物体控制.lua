@@ -247,8 +247,8 @@ SetAutoDelete = function(p1,p2) end,
 ---函数名：是自动删除的
 ---描述：·是运行结束后自动删除
 ---@param p1 ObjectControl
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsAutoDelete = function(p1) end,
 
 ---函数名：清空
@@ -275,8 +275,8 @@ SetLoop = function(p1,p2) end,
 ---函数名：循环
 ---描述：·是循环的
 ---@param p1 ObjectControl
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsLoop = function(p1) end,
 
 ---函数名：[控制] - 设置持续性
@@ -289,8 +289,8 @@ SetContinuous = function(p1,p2) end,
 ---函数名：[控制] - 持续性
 ---描述：·是持续的
 ---@param p1 ObjectControl
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsContinuous = function(p1) end,
 
 ---函数名：[控制] - 设置速度
@@ -302,8 +302,8 @@ SetSpeed = function(p1,p2) end,
 ---函数名：[控制] - 速度
 ---描述：·的速度
 ---@param p1 ObjectControl
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetSpeed = function(p1) end,
 
 ---函数名：[控制] - 设置时间
@@ -315,8 +315,8 @@ SetTime = function(p1,p2) end,
 ---函数名：[控制] - 时间
 ---描述：·的时间
 ---@param p1 ObjectControl
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTime = function(p1) end,
 
 ---函数名：[控制] - 设置值
@@ -339,42 +339,42 @@ SetValue_Color = function(p1,p2) end,
 
 ---函数名：[变化] - 最后应用的物体控制自定义值
 ---描述：最后应用的物体控制自定义值
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetCOCDTCusValue = function() end,
 
 ---函数名：[变化] - 最后应用的物体控制时间
 ---描述：最后应用的物体控制时间
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetCOCDTPosition = function() end,
 
 ---函数名：[变化] - 自定义值
 ---描述：·的自定义值
 ---@param p1 ObjectControl
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDTCusValue = function(p1) end,
 
 ---函数名：[变化] - 时间
 ---描述：·的时间
 ---@param p1 ObjectControl
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDTPosition = function(p1) end,
 
 ---函数名：[变化] - 持续时间
 ---描述：·的持续时间
 ---@param p1 ObjectControl
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDTDuration = function(p1) end,
 
 ---函数名：对象控制是空的
 ---描述：·是空的
 ---@param p1 ObjectControl
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 ObjectControlIsNull = function(p1) end,
 
 ---函数名：最后创建的物体控制
@@ -413,8 +413,8 @@ es = function(p1) end,
 ---函数名：物体控制关联的声音
 ---描述：·关联的声音
 ---@param p1 ObjectControl
----返回值：AudioSource
----@return AudioSource
+---返回值：UnityEngine.AudioSource
+---@return UnityEngine.AudioSource
 audioSource = function(p1) end,
 
 ---函数名：最后应用的物体控制

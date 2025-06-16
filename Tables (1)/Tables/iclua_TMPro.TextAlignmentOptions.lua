@@ -1,262 +1,157 @@
 ---@meta
 ---@class TMPro.TextAlignmentOptions
 TMPro.TextAlignmentOptions = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 TMPro.TextAlignmentOptions
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 TMPro.TextAlignmentOptions
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：TopLeft
+---@type TMPro.TextAlignmentOptions
+TopLeft = nil,
 
----函数名：ToString
----@param p1 TMPro.TextAlignmentOptions
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Top
+---@type TMPro.TextAlignmentOptions
+Top = nil,
 
----函数名：ToString
----@param p1 TMPro.TextAlignmentOptions
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：TopRight
+---@type TMPro.TextAlignmentOptions
+TopRight = nil,
 
----函数名：CompareTo
----@param p1 TMPro.TextAlignmentOptions
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：TopJustified
+---@type TMPro.TextAlignmentOptions
+TopJustified = nil,
 
----函数名：ToString
----@param p1 TMPro.TextAlignmentOptions
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：TopFlush
+---@type TMPro.TextAlignmentOptions
+TopFlush = nil,
 
----函数名：ToString
----@param p1 TMPro.TextAlignmentOptions
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：TopGeoAligned
+---@type TMPro.TextAlignmentOptions
+TopGeoAligned = nil,
 
----函数名：HasFlag
----@param p1 TMPro.TextAlignmentOptions
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：Left
+---@type TMPro.TextAlignmentOptions
+Left = nil,
 
----函数名：GetTypeCode
----@param p1 TMPro.TextAlignmentOptions
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：Center
+---@type TMPro.TextAlignmentOptions
+Center = nil,
 
----函数名：GetType
----@param p1 TMPro.TextAlignmentOptions
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：Right
+---@type TMPro.TextAlignmentOptions
+Right = nil,
 
----函数名：value__
----@param p1 TMPro.TextAlignmentOptions
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：Justified
+---@type TMPro.TextAlignmentOptions
+Justified = nil,
 
----函数名：TopLeft
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-TopLeft = function() end,
+---枚举值：Flush
+---@type TMPro.TextAlignmentOptions
+Flush = nil,
 
----函数名：Top
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Top = function() end,
+---枚举值：CenterGeoAligned
+---@type TMPro.TextAlignmentOptions
+CenterGeoAligned = nil,
 
----函数名：TopRight
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-TopRight = function() end,
+---枚举值：BottomLeft
+---@type TMPro.TextAlignmentOptions
+BottomLeft = nil,
 
----函数名：TopJustified
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-TopJustified = function() end,
+---枚举值：Bottom
+---@type TMPro.TextAlignmentOptions
+Bottom = nil,
 
----函数名：TopFlush
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-TopFlush = function() end,
+---枚举值：BottomRight
+---@type TMPro.TextAlignmentOptions
+BottomRight = nil,
 
----函数名：TopGeoAligned
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-TopGeoAligned = function() end,
+---枚举值：BottomJustified
+---@type TMPro.TextAlignmentOptions
+BottomJustified = nil,
 
----函数名：Left
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Left = function() end,
+---枚举值：BottomFlush
+---@type TMPro.TextAlignmentOptions
+BottomFlush = nil,
 
----函数名：Center
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Center = function() end,
+---枚举值：BottomGeoAligned
+---@type TMPro.TextAlignmentOptions
+BottomGeoAligned = nil,
 
----函数名：Right
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Right = function() end,
+---枚举值：BaselineLeft
+---@type TMPro.TextAlignmentOptions
+BaselineLeft = nil,
 
----函数名：Justified
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Justified = function() end,
+---枚举值：Baseline
+---@type TMPro.TextAlignmentOptions
+Baseline = nil,
 
----函数名：Flush
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Flush = function() end,
+---枚举值：BaselineRight
+---@type TMPro.TextAlignmentOptions
+BaselineRight = nil,
 
----函数名：CenterGeoAligned
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-CenterGeoAligned = function() end,
+---枚举值：BaselineJustified
+---@type TMPro.TextAlignmentOptions
+BaselineJustified = nil,
 
----函数名：BottomLeft
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BottomLeft = function() end,
+---枚举值：BaselineFlush
+---@type TMPro.TextAlignmentOptions
+BaselineFlush = nil,
 
----函数名：Bottom
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Bottom = function() end,
+---枚举值：BaselineGeoAligned
+---@type TMPro.TextAlignmentOptions
+BaselineGeoAligned = nil,
 
----函数名：BottomRight
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BottomRight = function() end,
+---枚举值：MidlineLeft
+---@type TMPro.TextAlignmentOptions
+MidlineLeft = nil,
 
----函数名：BottomJustified
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BottomJustified = function() end,
+---枚举值：Midline
+---@type TMPro.TextAlignmentOptions
+Midline = nil,
 
----函数名：BottomFlush
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BottomFlush = function() end,
+---枚举值：MidlineRight
+---@type TMPro.TextAlignmentOptions
+MidlineRight = nil,
 
----函数名：BottomGeoAligned
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BottomGeoAligned = function() end,
+---枚举值：MidlineJustified
+---@type TMPro.TextAlignmentOptions
+MidlineJustified = nil,
 
----函数名：BaselineLeft
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BaselineLeft = function() end,
+---枚举值：MidlineFlush
+---@type TMPro.TextAlignmentOptions
+MidlineFlush = nil,
 
----函数名：Baseline
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Baseline = function() end,
+---枚举值：MidlineGeoAligned
+---@type TMPro.TextAlignmentOptions
+MidlineGeoAligned = nil,
 
----函数名：BaselineRight
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BaselineRight = function() end,
+---枚举值：CaplineLeft
+---@type TMPro.TextAlignmentOptions
+CaplineLeft = nil,
 
----函数名：BaselineJustified
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BaselineJustified = function() end,
+---枚举值：Capline
+---@type TMPro.TextAlignmentOptions
+Capline = nil,
 
----函数名：BaselineFlush
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BaselineFlush = function() end,
+---枚举值：CaplineRight
+---@type TMPro.TextAlignmentOptions
+CaplineRight = nil,
 
----函数名：BaselineGeoAligned
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-BaselineGeoAligned = function() end,
+---枚举值：CaplineJustified
+---@type TMPro.TextAlignmentOptions
+CaplineJustified = nil,
 
----函数名：MidlineLeft
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-MidlineLeft = function() end,
+---枚举值：CaplineFlush
+---@type TMPro.TextAlignmentOptions
+CaplineFlush = nil,
 
----函数名：Midline
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Midline = function() end,
+---枚举值：CaplineGeoAligned
+---@type TMPro.TextAlignmentOptions
+CaplineGeoAligned = nil,
 
----函数名：MidlineRight
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-MidlineRight = function() end,
-
----函数名：MidlineJustified
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-MidlineJustified = function() end,
-
----函数名：MidlineFlush
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-MidlineFlush = function() end,
-
----函数名：MidlineGeoAligned
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-MidlineGeoAligned = function() end,
-
----函数名：CaplineLeft
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-CaplineLeft = function() end,
-
----函数名：Capline
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Capline = function() end,
-
----函数名：CaplineRight
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-CaplineRight = function() end,
-
----函数名：CaplineJustified
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-CaplineJustified = function() end,
-
----函数名：CaplineFlush
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-CaplineFlush = function() end,
-
----函数名：CaplineGeoAligned
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-CaplineGeoAligned = function() end,
-
----函数名：Converted
----返回值：TextAlignmentOptions
----@return TextAlignmentOptions
-Converted = function() end,
+---枚举值：Converted
+---@type TMPro.TextAlignmentOptions
+Converted = nil,
 
 }

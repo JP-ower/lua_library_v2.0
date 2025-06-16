@@ -9,8 +9,8 @@ None = function() end,
 ---描述：——————·——————
 ---介绍：你可以输入一段文本用于注释,不会执行任何操作
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Comment_Condition = function(p1) end,
 
 ---函数名：注释

@@ -17,8 +17,8 @@ SetText = function(p1,p2) end,
 ---函数名：文本信息
 ---描述：·的文本信息
 ---@param p1 UI_InfoPanel.UI_TextInfo
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetText = function(p1) end,
 
 ---函数名：设置显示时间
@@ -30,8 +30,8 @@ SetTime = function(p1,p2) end,
 ---函数名：显示时间
 ---描述：·的显示时间
 ---@param p1 UI_InfoPanel.UI_TextInfo
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetTime = function(p1) end,
 
 ---函数名：删除
@@ -41,8 +41,8 @@ GetTime = function(p1) end,
 Remove = function(p1,p2) end,
 
 ---函数名：最后创建的文本信息
----返回值：UI_TextInfo
----@return UI_TextInfo
+---返回值：UI_InfoPanel.UI_TextInfo
+---@return UI_InfoPanel.UI_TextInfo
 lastCreatedTextInfo = function() end,
 
 }

@@ -1,157 +1,73 @@
 ---@meta
 ---@class UI_UIEditor.RTAnchors
 UI_UIEditor.RTAnchors = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 UI_UIEditor.RTAnchors
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 UI_UIEditor.RTAnchors
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：LeftUp
+---@type UI_UIEditor.RTAnchors
+LeftUp = nil,
 
----函数名：ToString
----@param p1 UI_UIEditor.RTAnchors
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Up
+---@type UI_UIEditor.RTAnchors
+Up = nil,
 
----函数名：ToString
----@param p1 UI_UIEditor.RTAnchors
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：RightUp
+---@type UI_UIEditor.RTAnchors
+RightUp = nil,
 
----函数名：CompareTo
----@param p1 UI_UIEditor.RTAnchors
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Left
+---@type UI_UIEditor.RTAnchors
+Left = nil,
 
----函数名：ToString
----@param p1 UI_UIEditor.RTAnchors
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Center
+---@type UI_UIEditor.RTAnchors
+Center = nil,
 
----函数名：ToString
----@param p1 UI_UIEditor.RTAnchors
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Right
+---@type UI_UIEditor.RTAnchors
+Right = nil,
 
----函数名：HasFlag
----@param p1 UI_UIEditor.RTAnchors
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：LeftDown
+---@type UI_UIEditor.RTAnchors
+LeftDown = nil,
 
----函数名：GetTypeCode
----@param p1 UI_UIEditor.RTAnchors
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：Down
+---@type UI_UIEditor.RTAnchors
+Down = nil,
 
----函数名：GetType
----@param p1 UI_UIEditor.RTAnchors
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：RightDown
+---@type UI_UIEditor.RTAnchors
+RightDown = nil,
 
----函数名：value__
----@param p1 UI_UIEditor.RTAnchors
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：UpAdapt
+---@type UI_UIEditor.RTAnchors
+UpAdapt = nil,
 
----函数名：LeftUp
----返回值：RTAnchors
----@return RTAnchors
-LeftUp = function() end,
+---枚举值：CenterAdapt_LR
+---@type UI_UIEditor.RTAnchors
+CenterAdapt_LR = nil,
 
----函数名：Up
----返回值：RTAnchors
----@return RTAnchors
-Up = function() end,
+---枚举值：DownAdapt
+---@type UI_UIEditor.RTAnchors
+DownAdapt = nil,
 
----函数名：RightUp
----返回值：RTAnchors
----@return RTAnchors
-RightUp = function() end,
+---枚举值：LeftAdapt
+---@type UI_UIEditor.RTAnchors
+LeftAdapt = nil,
 
----函数名：Left
----返回值：RTAnchors
----@return RTAnchors
-Left = function() end,
+---枚举值：CenterAdapt_UD
+---@type UI_UIEditor.RTAnchors
+CenterAdapt_UD = nil,
 
----函数名：Center
----返回值：RTAnchors
----@return RTAnchors
-Center = function() end,
+---枚举值：RightAdapt
+---@type UI_UIEditor.RTAnchors
+RightAdapt = nil,
 
----函数名：Right
----返回值：RTAnchors
----@return RTAnchors
-Right = function() end,
-
----函数名：LeftDown
----返回值：RTAnchors
----@return RTAnchors
-LeftDown = function() end,
-
----函数名：Down
----返回值：RTAnchors
----@return RTAnchors
-Down = function() end,
-
----函数名：RightDown
----返回值：RTAnchors
----@return RTAnchors
-RightDown = function() end,
-
----函数名：UpAdapt
----返回值：RTAnchors
----@return RTAnchors
-UpAdapt = function() end,
-
----函数名：CenterAdapt_LR
----返回值：RTAnchors
----@return RTAnchors
-CenterAdapt_LR = function() end,
-
----函数名：DownAdapt
----返回值：RTAnchors
----@return RTAnchors
-DownAdapt = function() end,
-
----函数名：LeftAdapt
----返回值：RTAnchors
----@return RTAnchors
-LeftAdapt = function() end,
-
----函数名：CenterAdapt_UD
----返回值：RTAnchors
----@return RTAnchors
-CenterAdapt_UD = function() end,
-
----函数名：RightAdapt
----返回值：RTAnchors
----@return RTAnchors
-RightAdapt = function() end,
-
----函数名：AllAdapt
----返回值：RTAnchors
----@return RTAnchors
-AllAdapt = function() end,
+---枚举值：AllAdapt
+---@type UI_UIEditor.RTAnchors
+AllAdapt = nil,
 
 }

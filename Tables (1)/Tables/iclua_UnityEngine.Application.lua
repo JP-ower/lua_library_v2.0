@@ -15,63 +15,63 @@ CancelQuit = function() end,
 Unload = function() end,
 
 ---函数名：get_isLoadingLevel
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isLoadingLevel = function() end,
 
 ---函数名：GetStreamProgressForLevel
 ---@param p1 System.Int32
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetStreamProgressForLevel = function(p1) end,
 
 ---函数名：GetStreamProgressForLevel
 ---@param p1 System.String
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetStreamProgressForLevel = function(p1) end,
 
 ---函数名：get_streamedBytes
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 streamedBytes = function() end,
 
 ---函数名：get_webSecurityEnabled
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 webSecurityEnabled = function() end,
 
 ---函数名：CanStreamedLevelBeLoaded
 ---@param p1 System.Int32
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CanStreamedLevelBeLoaded = function(p1) end,
 
 ---函数名：CanStreamedLevelBeLoaded
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CanStreamedLevelBeLoaded = function(p1) end,
 
 ---函数名：get_isPlaying
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPlaying = function() end,
 
 ---函数名：IsPlaying
 ---@param p1 UnityEngine.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsPlaying = function(p1) end,
 
 ---函数名：get_isFocused
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isFocused = function() end,
 
 ---函数名：GetBuildTags
----返回值：String[]
----@return String[]
+---返回值：System.String[]
+---@return System.String[]
 GetBuildTags = function() end,
 
 ---函数名：SetBuildTags
@@ -79,51 +79,51 @@ GetBuildTags = function() end,
 SetBuildTags = function(p1) end,
 
 ---函数名：get_buildGUID
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 buildGUID = function() end,
 
 ---函数名：get_runInBackground
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 runInBackground = function() end,
 
 ---函数名：set_runInBackground
 runInBackground = function() end,
 
 ---函数名：HasProLicense
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 HasProLicense = function() end,
 
 ---函数名：get_isBatchMode
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isBatchMode = function() end,
 
 ---函数名：get_dataPath
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 dataPath = function() end,
 
 ---函数名：get_streamingAssetsPath
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 streamingAssetsPath = function() end,
 
 ---函数名：get_persistentDataPath
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 persistentDataPath = function() end,
 
 ---函数名：get_temporaryCachePath
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 temporaryCachePath = function() end,
 
 ---函数名：get_absoluteURL
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 absoluteURL = function() end,
 
 ---函数名：ExternalEval
@@ -131,54 +131,54 @@ absoluteURL = function() end,
 ExternalEval = function(p1) end,
 
 ---函数名：get_unityVersion
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 unityVersion = function() end,
 
 ---函数名：get_version
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 version = function() end,
 
 ---函数名：get_installerName
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 installerName = function() end,
 
 ---函数名：get_identifier
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 identifier = function() end,
 
 ---函数名：get_installMode
----返回值：ApplicationInstallMode
----@return ApplicationInstallMode
+---返回值：UnityEngine.ApplicationInstallMode
+---@return UnityEngine.ApplicationInstallMode
 installMode = function() end,
 
 ---函数名：get_sandboxType
----返回值：ApplicationSandboxType
----@return ApplicationSandboxType
+---返回值：UnityEngine.ApplicationSandboxType
+---@return UnityEngine.ApplicationSandboxType
 sandboxType = function() end,
 
 ---函数名：get_productName
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 productName = function() end,
 
 ---函数名：get_companyName
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 companyName = function() end,
 
 ---函数名：get_cloudProjectId
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 cloudProjectId = function() end,
 
 ---函数名：RequestAdvertisingIdentifierAsync
 ---@param p1 UnityEngine.Application.AdvertisingIdentifierCallback
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 RequestAdvertisingIdentifierAsync = function(p1) end,
 
 ---函数名：OpenURL
@@ -190,16 +190,16 @@ OpenURL = function(p1) end,
 ForceCrash = function(p1) end,
 
 ---函数名：get_targetFrameRate
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 targetFrameRate = function() end,
 
 ---函数名：set_targetFrameRate
 targetFrameRate = function() end,
 
 ---函数名：get_stackTraceLogType
----返回值：StackTraceLogType
----@return StackTraceLogType
+---返回值：UnityEngine.StackTraceLogType
+---@return UnityEngine.StackTraceLogType
 stackTraceLogType = function() end,
 
 ---函数名：set_stackTraceLogType
@@ -207,8 +207,8 @@ stackTraceLogType = function() end,
 
 ---函数名：GetStackTraceLogType
 ---@param p1 UnityEngine.LogType
----返回值：StackTraceLogType
----@return StackTraceLogType
+---返回值：UnityEngine.StackTraceLogType
+---@return UnityEngine.StackTraceLogType
 GetStackTraceLogType = function(p1) end,
 
 ---函数名：SetStackTraceLogType
@@ -217,68 +217,68 @@ GetStackTraceLogType = function(p1) end,
 SetStackTraceLogType = function(p1,p2) end,
 
 ---函数名：get_consoleLogPath
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 consoleLogPath = function() end,
 
 ---函数名：get_backgroundLoadingPriority
----返回值：ThreadPriority
----@return ThreadPriority
+---返回值：UnityEngine.ThreadPriority
+---@return UnityEngine.ThreadPriority
 backgroundLoadingPriority = function() end,
 
 ---函数名：set_backgroundLoadingPriority
 backgroundLoadingPriority = function() end,
 
 ---函数名：get_genuine
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 genuine = function() end,
 
 ---函数名：get_genuineCheckAvailable
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 genuineCheckAvailable = function() end,
 
 ---函数名：RequestUserAuthorization
 ---@param p1 UnityEngine.UserAuthorization
----返回值：AsyncOperation
----@return AsyncOperation
+---返回值：UnityEngine.AsyncOperation
+---@return UnityEngine.AsyncOperation
 RequestUserAuthorization = function(p1) end,
 
 ---函数名：HasUserAuthorization
 ---@param p1 UnityEngine.UserAuthorization
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 HasUserAuthorization = function(p1) end,
 
 ---函数名：get_isShowingSplashScreen
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isShowingSplashScreen = function() end,
 
 ---函数名：get_platform
----返回值：RuntimePlatform
----@return RuntimePlatform
+---返回值：UnityEngine.RuntimePlatform
+---@return UnityEngine.RuntimePlatform
 platform = function() end,
 
 ---函数名：get_isMobilePlatform
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isMobilePlatform = function() end,
 
 ---函数名：get_isConsolePlatform
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isConsolePlatform = function() end,
 
 ---函数名：get_systemLanguage
----返回值：SystemLanguage
----@return SystemLanguage
+---返回值：UnityEngine.SystemLanguage
+---@return UnityEngine.SystemLanguage
 systemLanguage = function() end,
 
 ---函数名：get_internetReachability
----返回值：NetworkReachability
----@return NetworkReachability
+---返回值：UnityEngine.NetworkReachability
+---@return UnityEngine.NetworkReachability
 internetReachability = function() end,
 
 ---函数名：add_lowMemory
@@ -305,8 +305,8 @@ remove_logMessageReceivedThreaded = function() end,
 ExternalCall = function(p1,p2) end,
 
 ---函数名：get_isPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPlayer = function() end,
 
 ---函数名：DontDestroyOnLoad
@@ -367,18 +367,18 @@ RegisterLogCallback = function(p1) end,
 RegisterLogCallbackThreaded = function(p1) end,
 
 ---函数名：get_levelCount
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 levelCount = function() end,
 
 ---函数名：get_loadedLevel
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 loadedLevel = function() end,
 
 ---函数名：get_loadedLevelName
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 loadedLevelName = function() end,
 
 ---函数名：LoadLevel
@@ -399,68 +399,68 @@ LoadLevelAdditive = function(p1) end,
 
 ---函数名：LoadLevelAsync
 ---@param p1 System.Int32
----返回值：AsyncOperation
----@return AsyncOperation
+---返回值：UnityEngine.AsyncOperation
+---@return UnityEngine.AsyncOperation
 LoadLevelAsync = function(p1) end,
 
 ---函数名：LoadLevelAsync
 ---@param p1 System.String
----返回值：AsyncOperation
----@return AsyncOperation
+---返回值：UnityEngine.AsyncOperation
+---@return UnityEngine.AsyncOperation
 LoadLevelAsync = function(p1) end,
 
 ---函数名：LoadLevelAdditiveAsync
 ---@param p1 System.Int32
----返回值：AsyncOperation
----@return AsyncOperation
+---返回值：UnityEngine.AsyncOperation
+---@return UnityEngine.AsyncOperation
 LoadLevelAdditiveAsync = function(p1) end,
 
 ---函数名：LoadLevelAdditiveAsync
 ---@param p1 System.String
----返回值：AsyncOperation
----@return AsyncOperation
+---返回值：UnityEngine.AsyncOperation
+---@return UnityEngine.AsyncOperation
 LoadLevelAdditiveAsync = function(p1) end,
 
 ---函数名：UnloadLevel
 ---@param p1 System.Int32
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UnloadLevel = function(p1) end,
 
 ---函数名：UnloadLevel
 ---@param p1 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 UnloadLevel = function(p1) end,
 
 ---函数名：get_isEditor
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isEditor = function() end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.Application
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.Application
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.Application
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.Application
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 }

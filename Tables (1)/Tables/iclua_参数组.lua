@@ -28,32 +28,32 @@ SetValue = function(p1,p2,p3) end,
 ---描述：·参数值
 ---介绍：一般直接填写参数的名字即可
 ---@param p1 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetValueFromLastAssPDA = function(p1) end,
 
 ---函数名：获取参数值_使用下标(关联)
 ---描述：下标为·的参数值
 ---介绍：一般直接填写参数的下标即可
 ---@param p1 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetValueFromLastAssPDA_Index = function(p1) end,
 
 ---函数名：获取参数值
 ---描述：从·中获取名字为·的参数值
 ---@param p1 ParameterDataArray
 ---@param p2 System.String
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetValue = function(p1,p2) end,
 
 ---函数名：获取参数值_下标
 ---描述：从·中获取下标为·的参数值
 ---@param p1 ParameterDataArray
 ---@param p2 System.Int32
----返回值：Object
----@return Object
+---返回值：System.Object
+---@return System.Object
 GetValue_Index = function(p1,p2) end,
 
 ---函数名：最后关联的参数组

@@ -3,19 +3,19 @@
 MusicManager = {
 ---函数名：玩家设置中的音乐音量
 ---介绍：玩家设置中的音乐音量，取值为0-1
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetMusicVolume = function() end,
 
 ---函数名：玩家设置中的音效音量
 ---介绍：玩家设置中的音效音量，取值为0-1
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetSoundVolume = function() end,
 
 ---函数名：最后创建的声音
----返回值：AudioSource
----@return AudioSource
+---返回值：UnityEngine.AudioSource
+---@return UnityEngine.AudioSource
 LastCreatedAudioSource = function() end,
 
 ---函数名：播放音乐
@@ -58,8 +58,8 @@ RemoveBGMusic_All = function() end,
 
 ---函数名：当前背景音乐
 ---描述：当前的背景音乐
----返回值：AudioSource
----@return AudioSource
+---返回值：UnityEngine.AudioSource
+---@return UnityEngine.AudioSource
 GetCurrentBGMusic = function() end,
 
 ---函数名：删除声音
@@ -90,29 +90,29 @@ StartPlaying = function(p1) end,
 ---@param p1 UnityEngine.AudioSource
 ---@param p2 ComparisonOperator2
 ---@param p3 UnityEngine.AudioClip
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TACComparison = function(p1,p2,p3) end,
 
 ---函数名：声音名字
 ---描述：·的名字
 ---@param p1 UnityEngine.AudioSource
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetACName = function(p1) end,
 
 ---函数名：声音长度
 ---描述：·的长度
 ---@param p1 UnityEngine.AudioSource
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetACLength = function(p1) end,
 
 ---函数名：播放是停止的
 ---描述：·的播放是停止的
 ---@param p1 UnityEngine.AudioSource
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 PlayingIsStop = function(p1) end,
 
 ---函数名：设置循环状态
@@ -124,8 +124,8 @@ SetLoopState = function(p1,p2) end,
 ---函数名：循环状态
 ---描述：·的循环状态
 ---@param p1 UnityEngine.AudioSource
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetLoopState = function(p1) end,
 
 ---函数名：设置播放进度
@@ -137,8 +137,8 @@ SetPlaybackProgress = function(p1,p2) end,
 ---函数名：播放进度
 ---描述：·的播放进度
 ---@param p1 UnityEngine.AudioSource
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPlaybackProgress = function(p1) end,
 
 ---函数名：设置播放速度
@@ -150,8 +150,8 @@ SetPlaySpeed = function(p1,p2) end,
 ---函数名：播放速度
 ---描述：·的播放速度
 ---@param p1 UnityEngine.AudioSource
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPlaySpeed = function(p1) end,
 
 ---函数名：设置播放音量
@@ -163,8 +163,8 @@ SetPlayVolume = function(p1,p2) end,
 ---函数名：播放音量
 ---描述：·的播放音量
 ---@param p1 UnityEngine.AudioSource
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPlayVolume = function(p1) end,
 
 ---函数名：设置左右声道平衡
@@ -177,8 +177,8 @@ SetPanStereo = function(p1,p2) end,
 ---函数名：左右声道平衡
 ---描述：·的左右声道平衡
 ---@param p1 UnityEngine.AudioSource
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetPanStereo = function(p1) end,
 
 ---函数名：设置状态
@@ -194,8 +194,8 @@ SetPlayerReviveAutoDeleteAudio = function(p1) end,
 
 ---函数名：所有音效在玩家重生后是自动删除的
 ---描述：所有音效在玩家重生后是自动删除的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetPlayerReviveAutoDeleteAudio = function() end,
 
 }

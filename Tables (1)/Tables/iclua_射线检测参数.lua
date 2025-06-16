@@ -21,8 +21,8 @@ SetHinderCDA = function(p1,p2) end,
 rpu = function() end,
 
 ---函数名：默认的射线检测参数
----返回值：RaycastParameter
----@return RaycastParameter
+---返回值：GamePhysics.RaycastParameter
+---@return GamePhysics.RaycastParameter
 defRP = function() end,
 
 }

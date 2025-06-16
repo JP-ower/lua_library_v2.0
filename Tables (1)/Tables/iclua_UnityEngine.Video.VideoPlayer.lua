@@ -3,8 +3,8 @@
 UnityEngine.Video.VideoPlayer = {
 ---函数名：get_source
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoSource
----@return VideoSource
+---返回值：UnityEngine.Video.VideoSource
+---@return UnityEngine.Video.VideoSource
 source = function(p1) end,
 
 ---函数名：set_source
@@ -13,8 +13,8 @@ source = function(p1) end,
 
 ---函数名：get_url
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 url = function(p1) end,
 
 ---函数名：set_url
@@ -23,8 +23,8 @@ url = function(p1) end,
 
 ---函数名：get_clip
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoClip
----@return VideoClip
+---返回值：UnityEngine.Video.VideoClip
+---@return UnityEngine.Video.VideoClip
 clip = function(p1) end,
 
 ---函数名：set_clip
@@ -33,8 +33,8 @@ clip = function(p1) end,
 
 ---函数名：get_renderMode
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoRenderMode
----@return VideoRenderMode
+---返回值：UnityEngine.Video.VideoRenderMode
+---@return UnityEngine.Video.VideoRenderMode
 renderMode = function(p1) end,
 
 ---函数名：set_renderMode
@@ -43,8 +43,8 @@ renderMode = function(p1) end,
 
 ---函数名：get_targetCamera
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Camera
----@return Camera
+---返回值：UnityEngine.Camera
+---@return UnityEngine.Camera
 targetCamera = function(p1) end,
 
 ---函数名：set_targetCamera
@@ -53,8 +53,8 @@ targetCamera = function(p1) end,
 
 ---函数名：get_targetTexture
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：RenderTexture
----@return RenderTexture
+---返回值：UnityEngine.RenderTexture
+---@return UnityEngine.RenderTexture
 targetTexture = function(p1) end,
 
 ---函数名：set_targetTexture
@@ -63,8 +63,8 @@ targetTexture = function(p1) end,
 
 ---函数名：get_targetMaterialRenderer
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Renderer
----@return Renderer
+---返回值：UnityEngine.Renderer
+---@return UnityEngine.Renderer
 targetMaterialRenderer = function(p1) end,
 
 ---函数名：set_targetMaterialRenderer
@@ -73,8 +73,8 @@ targetMaterialRenderer = function(p1) end,
 
 ---函数名：get_targetMaterialProperty
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 targetMaterialProperty = function(p1) end,
 
 ---函数名：set_targetMaterialProperty
@@ -83,8 +83,8 @@ targetMaterialProperty = function(p1) end,
 
 ---函数名：get_aspectRatio
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoAspectRatio
----@return VideoAspectRatio
+---返回值：UnityEngine.Video.VideoAspectRatio
+---@return UnityEngine.Video.VideoAspectRatio
 aspectRatio = function(p1) end,
 
 ---函数名：set_aspectRatio
@@ -93,8 +93,8 @@ aspectRatio = function(p1) end,
 
 ---函数名：get_targetCameraAlpha
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 targetCameraAlpha = function(p1) end,
 
 ---函数名：set_targetCameraAlpha
@@ -103,8 +103,8 @@ targetCameraAlpha = function(p1) end,
 
 ---函数名：get_targetCamera3DLayout
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Video3DLayout
----@return Video3DLayout
+---返回值：UnityEngine.Video.Video3DLayout
+---@return UnityEngine.Video.Video3DLayout
 targetCamera3DLayout = function(p1) end,
 
 ---函数名：set_targetCamera3DLayout
@@ -113,8 +113,8 @@ targetCamera3DLayout = function(p1) end,
 
 ---函数名：get_texture
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Texture
----@return Texture
+---返回值：UnityEngine.Texture
+---@return UnityEngine.Texture
 texture = function(p1) end,
 
 ---函数名：Prepare
@@ -123,14 +123,14 @@ Prepare = function(p1) end,
 
 ---函数名：get_isPrepared
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPrepared = function(p1) end,
 
 ---函数名：get_waitForFirstFrame
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 waitForFirstFrame = function(p1) end,
 
 ---函数名：set_waitForFirstFrame
@@ -139,8 +139,8 @@ waitForFirstFrame = function(p1) end,
 
 ---函数名：get_playOnAwake
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 playOnAwake = function(p1) end,
 
 ---函数名：set_playOnAwake
@@ -161,26 +161,26 @@ Stop = function(p1) end,
 
 ---函数名：get_isPlaying
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPlaying = function(p1) end,
 
 ---函数名：get_isPaused
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isPaused = function(p1) end,
 
 ---函数名：get_canSetTime
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 canSetTime = function(p1) end,
 
 ---函数名：get_time
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Double
----@return Double
+---返回值：System.Double
+---@return System.Double
 time = function(p1) end,
 
 ---函数名：set_time
@@ -189,8 +189,8 @@ time = function(p1) end,
 
 ---函数名：get_frame
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Int64
----@return Int64
+---返回值：System.Int64
+---@return System.Int64
 frame = function(p1) end,
 
 ---函数名：set_frame
@@ -199,14 +199,14 @@ frame = function(p1) end,
 
 ---函数名：get_clockTime
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Double
----@return Double
+---返回值：System.Double
+---@return System.Double
 clockTime = function(p1) end,
 
 ---函数名：get_canStep
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 canStep = function(p1) end,
 
 ---函数名：StepForward
@@ -215,14 +215,14 @@ StepForward = function(p1) end,
 
 ---函数名：get_canSetPlaybackSpeed
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 canSetPlaybackSpeed = function(p1) end,
 
 ---函数名：get_playbackSpeed
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 playbackSpeed = function(p1) end,
 
 ---函数名：set_playbackSpeed
@@ -231,8 +231,8 @@ playbackSpeed = function(p1) end,
 
 ---函数名：get_isLooping
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isLooping = function(p1) end,
 
 ---函数名：set_isLooping
@@ -241,14 +241,14 @@ isLooping = function(p1) end,
 
 ---函数名：get_canSetTimeSource
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 canSetTimeSource = function(p1) end,
 
 ---函数名：get_timeSource
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoTimeSource
----@return VideoTimeSource
+---返回值：UnityEngine.Video.VideoTimeSource
+---@return UnityEngine.Video.VideoTimeSource
 timeSource = function(p1) end,
 
 ---函数名：set_timeSource
@@ -257,8 +257,8 @@ timeSource = function(p1) end,
 
 ---函数名：get_timeReference
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoTimeReference
----@return VideoTimeReference
+---返回值：UnityEngine.Video.VideoTimeReference
+---@return UnityEngine.Video.VideoTimeReference
 timeReference = function(p1) end,
 
 ---函数名：set_timeReference
@@ -267,8 +267,8 @@ timeReference = function(p1) end,
 
 ---函数名：get_externalReferenceTime
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Double
----@return Double
+---返回值：System.Double
+---@return System.Double
 externalReferenceTime = function(p1) end,
 
 ---函数名：set_externalReferenceTime
@@ -277,14 +277,14 @@ externalReferenceTime = function(p1) end,
 
 ---函数名：get_canSetSkipOnDrop
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 canSetSkipOnDrop = function(p1) end,
 
 ---函数名：get_skipOnDrop
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 skipOnDrop = function(p1) end,
 
 ---函数名：set_skipOnDrop
@@ -293,82 +293,82 @@ skipOnDrop = function(p1) end,
 
 ---函数名：get_frameCount
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt64
----@return UInt64
+---返回值：System.UInt64
+---@return System.UInt64
 frameCount = function(p1) end,
 
 ---函数名：get_frameRate
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 frameRate = function(p1) end,
 
 ---函数名：get_length
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Double
----@return Double
+---返回值：System.Double
+---@return System.Double
 length = function(p1) end,
 
 ---函数名：get_width
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 width = function(p1) end,
 
 ---函数名：get_height
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 height = function(p1) end,
 
 ---函数名：get_pixelAspectRatioNumerator
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 pixelAspectRatioNumerator = function(p1) end,
 
 ---函数名：get_pixelAspectRatioDenominator
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 pixelAspectRatioDenominator = function(p1) end,
 
 ---函数名：get_audioTrackCount
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt16
----@return UInt16
+---返回值：System.UInt16
+---@return System.UInt16
 audioTrackCount = function(p1) end,
 
 ---函数名：GetAudioLanguageCode
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 GetAudioLanguageCode = function(p1,p2) end,
 
 ---函数名：GetAudioChannelCount
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：UInt16
----@return UInt16
+---返回值：System.UInt16
+---@return System.UInt16
 GetAudioChannelCount = function(p1,p2) end,
 
 ---函数名：GetAudioSampleRate
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：UInt32
----@return UInt32
+---返回值：System.UInt32
+---@return System.UInt32
 GetAudioSampleRate = function(p1,p2) end,
 
 ---函数名：get_controlledAudioTrackMaxCount
----返回值：UInt16
----@return UInt16
+---返回值：System.UInt16
+---@return System.UInt16
 controlledAudioTrackMaxCount = function() end,
 
 ---函数名：get_controlledAudioTrackCount
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：UInt16
----@return UInt16
+---返回值：System.UInt16
+---@return System.UInt16
 controlledAudioTrackCount = function(p1) end,
 
 ---函数名：set_controlledAudioTrackCount
@@ -384,14 +384,14 @@ EnableAudioTrack = function(p1,p2,p3) end,
 ---函数名：IsAudioTrackEnabled
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsAudioTrackEnabled = function(p1,p2) end,
 
 ---函数名：get_audioOutputMode
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：VideoAudioOutputMode
----@return VideoAudioOutputMode
+---返回值：UnityEngine.Video.VideoAudioOutputMode
+---@return UnityEngine.Video.VideoAudioOutputMode
 audioOutputMode = function(p1) end,
 
 ---函数名：set_audioOutputMode
@@ -400,15 +400,15 @@ audioOutputMode = function(p1) end,
 
 ---函数名：get_canSetDirectAudioVolume
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 canSetDirectAudioVolume = function(p1) end,
 
 ---函数名：GetDirectAudioVolume
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetDirectAudioVolume = function(p1,p2) end,
 
 ---函数名：SetDirectAudioVolume
@@ -420,8 +420,8 @@ SetDirectAudioVolume = function(p1,p2,p3) end,
 ---函数名：GetDirectAudioMute
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetDirectAudioMute = function(p1,p2) end,
 
 ---函数名：SetDirectAudioMute
@@ -433,8 +433,8 @@ SetDirectAudioMute = function(p1,p2,p3) end,
 ---函数名：GetTargetAudioSource
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.UInt16
----返回值：AudioSource
----@return AudioSource
+---返回值：UnityEngine.AudioSource
+---@return UnityEngine.AudioSource
 GetTargetAudioSource = function(p1,p2) end,
 
 ---函数名：SetTargetAudioSource
@@ -501,8 +501,8 @@ remove_clockResyncOccurred = function(p1) end,
 
 ---函数名：get_sendFrameReadyEvents
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 sendFrameReadyEvents = function(p1) end,
 
 ---函数名：set_sendFrameReadyEvents
@@ -519,8 +519,8 @@ remove_frameReady = function(p1) end,
 
 ---函数名：get_enabled
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enabled = function(p1) end,
 
 ---函数名：set_enabled
@@ -529,97 +529,97 @@ enabled = function(p1) end,
 
 ---函数名：get_isActiveAndEnabled
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isActiveAndEnabled = function(p1) end,
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -648,43 +648,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -708,8 +708,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -724,8 +724,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -741,8 +741,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -819,105 +819,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.Video.VideoPlayer
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -926,8 +926,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -936,14 +936,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.Video.VideoPlayer
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

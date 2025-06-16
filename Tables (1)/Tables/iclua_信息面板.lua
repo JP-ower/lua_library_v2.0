@@ -2,8 +2,8 @@
 ---@class UI_InfoPanel
 UI_InfoPanel = {
 ---函数名：获取信息面板显示类型
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 S_GetSFType = function() end,
 
 ---函数名：添加信息
@@ -11,8 +11,8 @@ S_GetSFType = function() end,
 ---介绍：显示时间 = 0 表示永久， < 0 表示自动
 ---@param p1 System.String
 ---@param p2 System.Single
----返回值：UI_TextInfo
----@return UI_TextInfo
+---返回值：UI_InfoPanel.UI_TextInfo
+---@return UI_InfoPanel.UI_TextInfo
 AddInfo = function(p1,p2) end,
 
 ---函数名：清空并添加信息
@@ -20,8 +20,8 @@ AddInfo = function(p1,p2) end,
 ---介绍：显示时间 =0 表示永久， <0 表示自动
 ---@param p1 System.String
 ---@param p2 System.Single
----返回值：UI_TextInfo
----@return UI_TextInfo
+---返回值：UI_InfoPanel.UI_TextInfo
+---@return UI_InfoPanel.UI_TextInfo
 ClearAndAddInfo = function(p1,p2) end,
 
 ---函数名：清空信息
@@ -34,8 +34,8 @@ SetTypeSFActive = function(p1) end,
 
 ---函数名：消息类型按钮是显示的
 ---描述：消息类型按钮是显示的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetTypeSFActive = function() end,
 
 ---函数名：设置详细信息按钮显示状态
@@ -45,8 +45,8 @@ SetDetailSFActive = function(p1) end,
 
 ---函数名：详细信息按钮是显示的
 ---描述：详细信息按钮是显示的
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 GetDetailSFActive = function() end,
 
 }

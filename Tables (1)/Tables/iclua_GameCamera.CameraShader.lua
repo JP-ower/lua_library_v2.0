@@ -1,197 +1,105 @@
 ---@meta
 ---@class GameCamera.CameraShader
 GameCamera.CameraShader = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 GameCamera.CameraShader
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 GameCamera.CameraShader
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：EarthQuake
+---@type GameCamera.CameraShader
+EarthQuake = nil,
 
----函数名：ToString
----@param p1 GameCamera.CameraShader
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Manga_Flash_Color
+---@type GameCamera.CameraShader
+Manga_Flash_Color = nil,
 
----函数名：ToString
----@param p1 GameCamera.CameraShader
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Drunk
+---@type GameCamera.CameraShader
+Drunk = nil,
 
----函数名：CompareTo
----@param p1 GameCamera.CameraShader
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：TV
+---@type GameCamera.CameraShader
+TV = nil,
 
----函数名：ToString
----@param p1 GameCamera.CameraShader
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Pixel
+---@type GameCamera.CameraShader
+Pixel = nil,
 
----函数名：ToString
----@param p1 GameCamera.CameraShader
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Blurry
+---@type GameCamera.CameraShader
+Blurry = nil,
 
----函数名：HasFlag
----@param p1 GameCamera.CameraShader
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
+---枚举值：TV50
+---@type GameCamera.CameraShader
+TV50 = nil,
 
----函数名：GetTypeCode
----@param p1 GameCamera.CameraShader
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
+---枚举值：TV80
+---@type GameCamera.CameraShader
+TV80 = nil,
 
----函数名：GetType
----@param p1 GameCamera.CameraShader
----返回值：Type
----@return Type
-GetType = function(p1) end,
+---枚举值：BluePrint
+---@type GameCamera.CameraShader
+BluePrint = nil,
 
----函数名：value__
----@param p1 GameCamera.CameraShader
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
+---枚举值：Comics
+---@type GameCamera.CameraShader
+Comics = nil,
 
----函数名：EarthQuake
----返回值：CameraShader
----@return CameraShader
-EarthQuake = function() end,
+---枚举值：CompressionFX
+---@type GameCamera.CameraShader
+CompressionFX = nil,
 
----函数名：Manga_Flash_Color
----返回值：CameraShader
----@return CameraShader
-Manga_Flash_Color = function() end,
+---枚举值：NightVision2
+---@type GameCamera.CameraShader
+NightVision2 = nil,
 
----函数名：Drunk
----返回值：CameraShader
----@return CameraShader
-Drunk = function() end,
+---枚举值：Rain_Pro
+---@type GameCamera.CameraShader
+Rain_Pro = nil,
 
----函数名：TV
----返回值：CameraShader
----@return CameraShader
-TV = function() end,
+---枚举值：Spot
+---@type GameCamera.CameraShader
+Spot = nil,
 
----函数名：Pixel
----返回值：CameraShader
----@return CameraShader
-Pixel = function() end,
+---枚举值：Grain
+---@type GameCamera.CameraShader
+Grain = nil,
 
----函数名：Blurry
----返回值：CameraShader
----@return CameraShader
-Blurry = function() end,
+---枚举值：Dream2
+---@type GameCamera.CameraShader
+Dream2 = nil,
 
----函数名：TV50
----返回值：CameraShader
----@return CameraShader
-TV50 = function() end,
+---枚举值：Wave_Horizontal
+---@type GameCamera.CameraShader
+Wave_Horizontal = nil,
 
----函数名：TV80
----返回值：CameraShader
----@return CameraShader
-TV80 = function() end,
+---枚举值：Twist
+---@type GameCamera.CameraShader
+Twist = nil,
 
----函数名：BluePrint
----返回值：CameraShader
----@return CameraShader
-BluePrint = function() end,
+---枚举值：BigFace
+---@type GameCamera.CameraShader
+BigFace = nil,
 
----函数名：Comics
----返回值：CameraShader
----@return CameraShader
-Comics = function() end,
+---枚举值：BleachBypass
+---@type GameCamera.CameraShader
+BleachBypass = nil,
 
----函数名：CompressionFX
----返回值：CameraShader
----@return CameraShader
-CompressionFX = function() end,
+---枚举值：GrayScale
+---@type GameCamera.CameraShader
+GrayScale = nil,
 
----函数名：NightVision2
----返回值：CameraShader
----@return CameraShader
-NightVision2 = function() end,
+---枚举值：Invert
+---@type GameCamera.CameraShader
+Invert = nil,
 
----函数名：Rain_Pro
----返回值：CameraShader
----@return CameraShader
-Rain_Pro = function() end,
+---枚举值：HSV
+---@type GameCamera.CameraShader
+HSV = nil,
 
----函数名：Spot
----返回值：CameraShader
----@return CameraShader
-Spot = function() end,
-
----函数名：Grain
----返回值：CameraShader
----@return CameraShader
-Grain = function() end,
-
----函数名：Dream2
----返回值：CameraShader
----@return CameraShader
-Dream2 = function() end,
-
----函数名：Wave_Horizontal
----返回值：CameraShader
----@return CameraShader
-Wave_Horizontal = function() end,
-
----函数名：Twist
----返回值：CameraShader
----@return CameraShader
-Twist = function() end,
-
----函数名：BigFace
----返回值：CameraShader
----@return CameraShader
-BigFace = function() end,
-
----函数名：BleachBypass
----返回值：CameraShader
----@return CameraShader
-BleachBypass = function() end,
-
----函数名：GrayScale
----返回值：CameraShader
----@return CameraShader
-GrayScale = function() end,
-
----函数名：Invert
----返回值：CameraShader
----@return CameraShader
-Invert = function() end,
-
----函数名：HSV
----返回值：CameraShader
----@return CameraShader
-HSV = function() end,
-
----函数名：RGB
----返回值：CameraShader
----@return CameraShader
-RGB = function() end,
+---枚举值：RGB
+---@type GameCamera.CameraShader
+RGB = nil,
 
 }

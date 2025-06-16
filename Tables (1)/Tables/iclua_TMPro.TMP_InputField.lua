@@ -3,8 +3,8 @@
 TMPro.TMP_InputField = {
 ---函数名：get_shouldHideMobileInput
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 shouldHideMobileInput = function(p1) end,
 
 ---函数名：set_shouldHideMobileInput
@@ -13,8 +13,8 @@ shouldHideMobileInput = function(p1) end,
 
 ---函数名：get_shouldHideSoftKeyboard
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 shouldHideSoftKeyboard = function(p1) end,
 
 ---函数名：set_shouldHideSoftKeyboard
@@ -23,8 +23,8 @@ shouldHideSoftKeyboard = function(p1) end,
 
 ---函数名：get_text
 ---@param p1 TMPro.TMP_InputField
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 text = function(p1) end,
 
 ---函数名：set_text
@@ -38,14 +38,14 @@ SetTextWithoutNotify = function(p1,p2) end,
 
 ---函数名：get_isFocused
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isFocused = function(p1) end,
 
 ---函数名：get_caretBlinkRate
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 caretBlinkRate = function(p1) end,
 
 ---函数名：set_caretBlinkRate
@@ -54,8 +54,8 @@ caretBlinkRate = function(p1) end,
 
 ---函数名：get_caretWidth
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 caretWidth = function(p1) end,
 
 ---函数名：set_caretWidth
@@ -64,8 +64,8 @@ caretWidth = function(p1) end,
 
 ---函数名：get_textViewport
 ---@param p1 TMPro.TMP_InputField
----返回值：RectTransform
----@return RectTransform
+---返回值：UnityEngine.RectTransform
+---@return UnityEngine.RectTransform
 textViewport = function(p1) end,
 
 ---函数名：set_textViewport
@@ -74,8 +74,8 @@ textViewport = function(p1) end,
 
 ---函数名：get_textComponent
 ---@param p1 TMPro.TMP_InputField
----返回值：TMP_Text
----@return TMP_Text
+---返回值：TMPro.TMP_Text
+---@return TMPro.TMP_Text
 textComponent = function(p1) end,
 
 ---函数名：set_textComponent
@@ -84,8 +84,8 @@ textComponent = function(p1) end,
 
 ---函数名：get_placeholder
 ---@param p1 TMPro.TMP_InputField
----返回值：Graphic
----@return Graphic
+---返回值：UnityEngine.UI.Graphic
+---@return UnityEngine.UI.Graphic
 placeholder = function(p1) end,
 
 ---函数名：set_placeholder
@@ -94,8 +94,8 @@ placeholder = function(p1) end,
 
 ---函数名：get_verticalScrollbar
 ---@param p1 TMPro.TMP_InputField
----返回值：Scrollbar
----@return Scrollbar
+---返回值：UnityEngine.UI.Scrollbar
+---@return UnityEngine.UI.Scrollbar
 verticalScrollbar = function(p1) end,
 
 ---函数名：set_verticalScrollbar
@@ -104,8 +104,8 @@ verticalScrollbar = function(p1) end,
 
 ---函数名：get_scrollSensitivity
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 scrollSensitivity = function(p1) end,
 
 ---函数名：set_scrollSensitivity
@@ -114,8 +114,8 @@ scrollSensitivity = function(p1) end,
 
 ---函数名：get_caretColor
 ---@param p1 TMPro.TMP_InputField
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 caretColor = function(p1) end,
 
 ---函数名：set_caretColor
@@ -124,8 +124,8 @@ caretColor = function(p1) end,
 
 ---函数名：get_customCaretColor
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 customCaretColor = function(p1) end,
 
 ---函数名：set_customCaretColor
@@ -134,8 +134,8 @@ customCaretColor = function(p1) end,
 
 ---函数名：get_selectionColor
 ---@param p1 TMPro.TMP_InputField
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 selectionColor = function(p1) end,
 
 ---函数名：set_selectionColor
@@ -144,8 +144,8 @@ selectionColor = function(p1) end,
 
 ---函数名：get_onEndEdit
 ---@param p1 TMPro.TMP_InputField
----返回值：SubmitEvent
----@return SubmitEvent
+---返回值：TMPro.TMP_InputField.SubmitEvent
+---@return TMPro.TMP_InputField.SubmitEvent
 onEndEdit = function(p1) end,
 
 ---函数名：set_onEndEdit
@@ -154,8 +154,8 @@ onEndEdit = function(p1) end,
 
 ---函数名：get_onSubmit
 ---@param p1 TMPro.TMP_InputField
----返回值：SubmitEvent
----@return SubmitEvent
+---返回值：TMPro.TMP_InputField.SubmitEvent
+---@return TMPro.TMP_InputField.SubmitEvent
 onSubmit = function(p1) end,
 
 ---函数名：set_onSubmit
@@ -164,8 +164,8 @@ onSubmit = function(p1) end,
 
 ---函数名：get_onSelect
 ---@param p1 TMPro.TMP_InputField
----返回值：SelectionEvent
----@return SelectionEvent
+---返回值：TMPro.TMP_InputField.SelectionEvent
+---@return TMPro.TMP_InputField.SelectionEvent
 onSelect = function(p1) end,
 
 ---函数名：set_onSelect
@@ -174,8 +174,8 @@ onSelect = function(p1) end,
 
 ---函数名：get_onDeselect
 ---@param p1 TMPro.TMP_InputField
----返回值：SelectionEvent
----@return SelectionEvent
+---返回值：TMPro.TMP_InputField.SelectionEvent
+---@return TMPro.TMP_InputField.SelectionEvent
 onDeselect = function(p1) end,
 
 ---函数名：set_onDeselect
@@ -184,8 +184,8 @@ onDeselect = function(p1) end,
 
 ---函数名：get_onTextSelection
 ---@param p1 TMPro.TMP_InputField
----返回值：TextSelectionEvent
----@return TextSelectionEvent
+---返回值：TMPro.TMP_InputField.TextSelectionEvent
+---@return TMPro.TMP_InputField.TextSelectionEvent
 onTextSelection = function(p1) end,
 
 ---函数名：set_onTextSelection
@@ -194,8 +194,8 @@ onTextSelection = function(p1) end,
 
 ---函数名：get_onEndTextSelection
 ---@param p1 TMPro.TMP_InputField
----返回值：TextSelectionEvent
----@return TextSelectionEvent
+---返回值：TMPro.TMP_InputField.TextSelectionEvent
+---@return TMPro.TMP_InputField.TextSelectionEvent
 onEndTextSelection = function(p1) end,
 
 ---函数名：set_onEndTextSelection
@@ -204,8 +204,8 @@ onEndTextSelection = function(p1) end,
 
 ---函数名：get_onValueChanged
 ---@param p1 TMPro.TMP_InputField
----返回值：OnChangeEvent
----@return OnChangeEvent
+---返回值：TMPro.TMP_InputField.OnChangeEvent
+---@return TMPro.TMP_InputField.OnChangeEvent
 onValueChanged = function(p1) end,
 
 ---函数名：set_onValueChanged
@@ -214,8 +214,8 @@ onValueChanged = function(p1) end,
 
 ---函数名：get_onTouchScreenKeyboardStatusChanged
 ---@param p1 TMPro.TMP_InputField
----返回值：TouchScreenKeyboardEvent
----@return TouchScreenKeyboardEvent
+---返回值：TMPro.TMP_InputField.TouchScreenKeyboardEvent
+---@return TMPro.TMP_InputField.TouchScreenKeyboardEvent
 onTouchScreenKeyboardStatusChanged = function(p1) end,
 
 ---函数名：set_onTouchScreenKeyboardStatusChanged
@@ -224,8 +224,8 @@ onTouchScreenKeyboardStatusChanged = function(p1) end,
 
 ---函数名：get_onValidateInput
 ---@param p1 TMPro.TMP_InputField
----返回值：OnValidateInput
----@return OnValidateInput
+---返回值：TMPro.TMP_InputField.OnValidateInput
+---@return TMPro.TMP_InputField.OnValidateInput
 onValidateInput = function(p1) end,
 
 ---函数名：set_onValidateInput
@@ -234,8 +234,8 @@ onValidateInput = function(p1) end,
 
 ---函数名：get_characterLimit
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 characterLimit = function(p1) end,
 
 ---函数名：set_characterLimit
@@ -244,8 +244,8 @@ characterLimit = function(p1) end,
 
 ---函数名：get_pointSize
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 pointSize = function(p1) end,
 
 ---函数名：set_pointSize
@@ -254,8 +254,8 @@ pointSize = function(p1) end,
 
 ---函数名：get_fontAsset
 ---@param p1 TMPro.TMP_InputField
----返回值：TMP_FontAsset
----@return TMP_FontAsset
+---返回值：TMPro.TMP_FontAsset
+---@return TMPro.TMP_FontAsset
 fontAsset = function(p1) end,
 
 ---函数名：set_fontAsset
@@ -264,8 +264,8 @@ fontAsset = function(p1) end,
 
 ---函数名：get_onFocusSelectAll
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 onFocusSelectAll = function(p1) end,
 
 ---函数名：set_onFocusSelectAll
@@ -274,8 +274,8 @@ onFocusSelectAll = function(p1) end,
 
 ---函数名：get_resetOnDeActivation
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 resetOnDeActivation = function(p1) end,
 
 ---函数名：set_resetOnDeActivation
@@ -284,8 +284,8 @@ resetOnDeActivation = function(p1) end,
 
 ---函数名：get_restoreOriginalTextOnEscape
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 restoreOriginalTextOnEscape = function(p1) end,
 
 ---函数名：set_restoreOriginalTextOnEscape
@@ -294,8 +294,8 @@ restoreOriginalTextOnEscape = function(p1) end,
 
 ---函数名：get_isRichTextEditingAllowed
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isRichTextEditingAllowed = function(p1) end,
 
 ---函数名：set_isRichTextEditingAllowed
@@ -304,8 +304,8 @@ isRichTextEditingAllowed = function(p1) end,
 
 ---函数名：get_contentType
 ---@param p1 TMPro.TMP_InputField
----返回值：ContentType
----@return ContentType
+---返回值：TMPro.TMP_InputField.ContentType
+---@return TMPro.TMP_InputField.ContentType
 contentType = function(p1) end,
 
 ---函数名：set_contentType
@@ -314,8 +314,8 @@ contentType = function(p1) end,
 
 ---函数名：get_lineType
 ---@param p1 TMPro.TMP_InputField
----返回值：LineType
----@return LineType
+---返回值：TMPro.TMP_InputField.LineType
+---@return TMPro.TMP_InputField.LineType
 lineType = function(p1) end,
 
 ---函数名：set_lineType
@@ -324,8 +324,8 @@ lineType = function(p1) end,
 
 ---函数名：get_lineLimit
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 lineLimit = function(p1) end,
 
 ---函数名：set_lineLimit
@@ -334,8 +334,8 @@ lineLimit = function(p1) end,
 
 ---函数名：get_inputType
 ---@param p1 TMPro.TMP_InputField
----返回值：InputType
----@return InputType
+---返回值：TMPro.TMP_InputField.InputType
+---@return TMPro.TMP_InputField.InputType
 inputType = function(p1) end,
 
 ---函数名：set_inputType
@@ -344,8 +344,8 @@ inputType = function(p1) end,
 
 ---函数名：get_keyboardType
 ---@param p1 TMPro.TMP_InputField
----返回值：TouchScreenKeyboardType
----@return TouchScreenKeyboardType
+---返回值：UnityEngine.TouchScreenKeyboardType
+---@return UnityEngine.TouchScreenKeyboardType
 keyboardType = function(p1) end,
 
 ---函数名：set_keyboardType
@@ -354,8 +354,8 @@ keyboardType = function(p1) end,
 
 ---函数名：get_characterValidation
 ---@param p1 TMPro.TMP_InputField
----返回值：CharacterValidation
----@return CharacterValidation
+---返回值：TMPro.TMP_InputField.CharacterValidation
+---@return TMPro.TMP_InputField.CharacterValidation
 characterValidation = function(p1) end,
 
 ---函数名：set_characterValidation
@@ -364,8 +364,8 @@ characterValidation = function(p1) end,
 
 ---函数名：get_inputValidator
 ---@param p1 TMPro.TMP_InputField
----返回值：TMP_InputValidator
----@return TMP_InputValidator
+---返回值：TMPro.TMP_InputValidator
+---@return TMPro.TMP_InputValidator
 inputValidator = function(p1) end,
 
 ---函数名：set_inputValidator
@@ -374,8 +374,8 @@ inputValidator = function(p1) end,
 
 ---函数名：get_readOnly
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 readOnly = function(p1) end,
 
 ---函数名：set_readOnly
@@ -384,8 +384,8 @@ readOnly = function(p1) end,
 
 ---函数名：get_richText
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 richText = function(p1) end,
 
 ---函数名：set_richText
@@ -394,14 +394,14 @@ richText = function(p1) end,
 
 ---函数名：get_multiLine
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 multiLine = function(p1) end,
 
 ---函数名：get_asteriskChar
 ---@param p1 TMPro.TMP_InputField
----返回值：Char
----@return Char
+---返回值：System.Char
+---@return System.Char
 asteriskChar = function(p1) end,
 
 ---函数名：set_asteriskChar
@@ -410,14 +410,14 @@ asteriskChar = function(p1) end,
 
 ---函数名：get_wasCanceled
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 wasCanceled = function(p1) end,
 
 ---函数名：get_caretPosition
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 caretPosition = function(p1) end,
 
 ---函数名：set_caretPosition
@@ -426,8 +426,8 @@ caretPosition = function(p1) end,
 
 ---函数名：get_selectionAnchorPosition
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 selectionAnchorPosition = function(p1) end,
 
 ---函数名：set_selectionAnchorPosition
@@ -436,8 +436,8 @@ selectionAnchorPosition = function(p1) end,
 
 ---函数名：get_selectionFocusPosition
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 selectionFocusPosition = function(p1) end,
 
 ---函数名：set_selectionFocusPosition
@@ -446,8 +446,8 @@ selectionFocusPosition = function(p1) end,
 
 ---函数名：get_stringPosition
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 stringPosition = function(p1) end,
 
 ---函数名：set_stringPosition
@@ -456,8 +456,8 @@ stringPosition = function(p1) end,
 
 ---函数名：get_selectionStringAnchorPosition
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 selectionStringAnchorPosition = function(p1) end,
 
 ---函数名：set_selectionStringAnchorPosition
@@ -466,8 +466,8 @@ selectionStringAnchorPosition = function(p1) end,
 
 ---函数名：get_selectionStringFocusPosition
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 selectionStringFocusPosition = function(p1) end,
 
 ---函数名：set_selectionStringFocusPosition
@@ -595,44 +595,44 @@ CalculateLayoutInputVertical = function(p1) end,
 
 ---函数名：get_minWidth
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 minWidth = function(p1) end,
 
 ---函数名：get_preferredWidth
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 preferredWidth = function(p1) end,
 
 ---函数名：get_flexibleWidth
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 flexibleWidth = function(p1) end,
 
 ---函数名：get_minHeight
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 minHeight = function(p1) end,
 
 ---函数名：get_preferredHeight
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 preferredHeight = function(p1) end,
 
 ---函数名：get_flexibleHeight
 ---@param p1 TMPro.TMP_InputField
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 flexibleHeight = function(p1) end,
 
 ---函数名：get_layoutPriority
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 layoutPriority = function(p1) end,
 
 ---函数名：SetGlobalPointSize
@@ -647,8 +647,8 @@ SetGlobalFontAsset = function(p1,p2) end,
 
 ---函数名：get_navigation
 ---@param p1 TMPro.TMP_InputField
----返回值：Navigation
----@return Navigation
+---返回值：UnityEngine.UI.Navigation
+---@return UnityEngine.UI.Navigation
 navigation = function(p1) end,
 
 ---函数名：set_navigation
@@ -657,8 +657,8 @@ navigation = function(p1) end,
 
 ---函数名：get_transition
 ---@param p1 TMPro.TMP_InputField
----返回值：Transition
----@return Transition
+---返回值：UnityEngine.UI.Selectable.Transition
+---@return UnityEngine.UI.Selectable.Transition
 transition = function(p1) end,
 
 ---函数名：set_transition
@@ -667,8 +667,8 @@ transition = function(p1) end,
 
 ---函数名：get_colors
 ---@param p1 TMPro.TMP_InputField
----返回值：ColorBlock
----@return ColorBlock
+---返回值：UnityEngine.UI.ColorBlock
+---@return UnityEngine.UI.ColorBlock
 colors = function(p1) end,
 
 ---函数名：set_colors
@@ -677,8 +677,8 @@ colors = function(p1) end,
 
 ---函数名：get_spriteState
 ---@param p1 TMPro.TMP_InputField
----返回值：SpriteState
----@return SpriteState
+---返回值：UnityEngine.UI.SpriteState
+---@return UnityEngine.UI.SpriteState
 spriteState = function(p1) end,
 
 ---函数名：set_spriteState
@@ -687,8 +687,8 @@ spriteState = function(p1) end,
 
 ---函数名：get_animationTriggers
 ---@param p1 TMPro.TMP_InputField
----返回值：AnimationTriggers
----@return AnimationTriggers
+---返回值：UnityEngine.UI.AnimationTriggers
+---@return UnityEngine.UI.AnimationTriggers
 animationTriggers = function(p1) end,
 
 ---函数名：set_animationTriggers
@@ -697,8 +697,8 @@ animationTriggers = function(p1) end,
 
 ---函数名：get_targetGraphic
 ---@param p1 TMPro.TMP_InputField
----返回值：Graphic
----@return Graphic
+---返回值：UnityEngine.UI.Graphic
+---@return UnityEngine.UI.Graphic
 targetGraphic = function(p1) end,
 
 ---函数名：set_targetGraphic
@@ -707,8 +707,8 @@ targetGraphic = function(p1) end,
 
 ---函数名：get_interactable
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 interactable = function(p1) end,
 
 ---函数名：set_interactable
@@ -717,8 +717,8 @@ interactable = function(p1) end,
 
 ---函数名：get_image
 ---@param p1 TMPro.TMP_InputField
----返回值：Image
----@return Image
+---返回值：UnityEngine.UI.Image
+---@return UnityEngine.UI.Image
 image = function(p1) end,
 
 ---函数名：set_image
@@ -727,45 +727,45 @@ image = function(p1) end,
 
 ---函数名：get_animator
 ---@param p1 TMPro.TMP_InputField
----返回值：Animator
----@return Animator
+---返回值：UnityEngine.Animator
+---@return UnityEngine.Animator
 animator = function(p1) end,
 
 ---函数名：IsInteractable
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInteractable = function(p1) end,
 
 ---函数名：FindSelectable
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 UnityEngine.Vector3
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectable = function(p1,p2) end,
 
 ---函数名：FindSelectableOnLeft
 ---@param p1 TMPro.TMP_InputField
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnLeft = function(p1) end,
 
 ---函数名：FindSelectableOnRight
 ---@param p1 TMPro.TMP_InputField
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnRight = function(p1) end,
 
 ---函数名：FindSelectableOnUp
 ---@param p1 TMPro.TMP_InputField
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnUp = function(p1) end,
 
 ---函数名：FindSelectableOnDown
 ---@param p1 TMPro.TMP_InputField
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnDown = function(p1) end,
 
 ---函数名：OnMove
@@ -794,20 +794,20 @@ Select = function(p1) end,
 
 ---函数名：IsActive
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsActive = function(p1) end,
 
 ---函数名：IsDestroyed
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsDestroyed = function(p1) end,
 
 ---函数名：IsInvoking
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInvoking = function(p1) end,
 
 ---函数名：CancelInvoke
@@ -835,37 +835,37 @@ CancelInvoke = function(p1,p2) end,
 ---函数名：IsInvoking
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInvoking = function(p1,p2) end,
 
 ---函数名：StartCoroutine
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.String
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine = function(p1,p2) end,
 
 ---函数名：StartCoroutine
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.String
 ---@param p3 System.Object
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine = function(p1,p2,p3) end,
 
 ---函数名：StartCoroutine
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Collections.IEnumerator
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine = function(p1,p2) end,
 
 ---函数名：StartCoroutine_Auto
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Collections.IEnumerator
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine_Auto = function(p1,p2) end,
 
 ---函数名：StopCoroutine
@@ -889,8 +889,8 @@ StopAllCoroutines = function(p1) end,
 
 ---函数名：get_useGUILayout
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useGUILayout = function(p1) end,
 
 ---函数名：set_useGUILayout
@@ -899,8 +899,8 @@ useGUILayout = function(p1) end,
 
 ---函数名：get_runInEditMode
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 runInEditMode = function(p1) end,
 
 ---函数名：set_runInEditMode
@@ -909,8 +909,8 @@ runInEditMode = function(p1) end,
 
 ---函数名：get_enabled
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enabled = function(p1) end,
 
 ---函数名：set_enabled
@@ -919,97 +919,97 @@ enabled = function(p1) end,
 
 ---函数名：get_isActiveAndEnabled
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isActiveAndEnabled = function(p1) end,
 
 ---函数名：get_transform
 ---@param p1 TMPro.TMP_InputField
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 TMPro.TMP_InputField
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 TMPro.TMP_InputField
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 TMPro.TMP_InputField
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 TMPro.TMP_InputField
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -1038,43 +1038,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 TMPro.TMP_InputField
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -1098,8 +1098,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -1114,8 +1114,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 TMPro.TMP_InputField
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -1131,8 +1131,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -1209,105 +1209,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 TMPro.TMP_InputField
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 TMPro.TMP_InputField
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 TMPro.TMP_InputField
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 TMPro.TMP_InputField
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -1316,8 +1316,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 TMPro.TMP_InputField
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -1326,14 +1326,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 TMPro.TMP_InputField
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 TMPro.TMP_InputField
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

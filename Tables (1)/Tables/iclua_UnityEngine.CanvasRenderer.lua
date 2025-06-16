@@ -3,8 +3,8 @@
 UnityEngine.CanvasRenderer = {
 ---函数名：get_hasPopInstruction
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 hasPopInstruction = function(p1) end,
 
 ---函数名：set_hasPopInstruction
@@ -13,8 +13,8 @@ hasPopInstruction = function(p1) end,
 
 ---函数名：get_materialCount
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 materialCount = function(p1) end,
 
 ---函数名：set_materialCount
@@ -23,8 +23,8 @@ materialCount = function(p1) end,
 
 ---函数名：get_popMaterialCount
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 popMaterialCount = function(p1) end,
 
 ---函数名：set_popMaterialCount
@@ -33,20 +33,20 @@ popMaterialCount = function(p1) end,
 
 ---函数名：get_absoluteDepth
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 absoluteDepth = function(p1) end,
 
 ---函数名：get_hasMoved
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 hasMoved = function(p1) end,
 
 ---函数名：get_cullTransparentMesh
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 cullTransparentMesh = function(p1) end,
 
 ---函数名：set_cullTransparentMesh
@@ -55,20 +55,20 @@ cullTransparentMesh = function(p1) end,
 
 ---函数名：get_hasRectClipping
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 hasRectClipping = function(p1) end,
 
 ---函数名：get_relativeDepth
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 relativeDepth = function(p1) end,
 
 ---函数名：get_cull
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 cull = function(p1) end,
 
 ---函数名：set_cull
@@ -77,8 +77,8 @@ cull = function(p1) end,
 
 ---函数名：get_isMask
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isMask = function(p1) end,
 
 ---函数名：set_isMask
@@ -92,8 +92,8 @@ SetColor = function(p1,p2) end,
 
 ---函数名：GetColor
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Color
----@return Color
+---返回值：UnityEngine.Color
+---@return UnityEngine.Color
 GetColor = function(p1) end,
 
 ---函数名：EnableRectClipping
@@ -103,8 +103,8 @@ EnableRectClipping = function(p1,p2) end,
 
 ---函数名：get_clippingSoftness
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Vector2
----@return Vector2
+---返回值：UnityEngine.Vector2
+---@return UnityEngine.Vector2
 clippingSoftness = function(p1) end,
 
 ---函数名：set_clippingSoftness
@@ -124,8 +124,8 @@ SetMaterial = function(p1,p2,p3) end,
 ---函数名：GetMaterial
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Int32
----返回值：Material
----@return Material
+---返回值：UnityEngine.Material
+---@return UnityEngine.Material
 GetMaterial = function(p1,p2) end,
 
 ---函数名：SetPopMaterial
@@ -137,8 +137,8 @@ SetPopMaterial = function(p1,p2,p3) end,
 ---函数名：GetPopMaterial
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Int32
----返回值：Material
----@return Material
+---返回值：UnityEngine.Material
+---@return UnityEngine.Material
 GetPopMaterial = function(p1,p2) end,
 
 ---函数名：SetTexture
@@ -162,8 +162,8 @@ Clear = function(p1) end,
 
 ---函数名：GetAlpha
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetAlpha = function(p1) end,
 
 ---函数名：SetAlpha
@@ -173,8 +173,8 @@ SetAlpha = function(p1,p2) end,
 
 ---函数名：GetInheritedAlpha
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 GetInheritedAlpha = function(p1) end,
 
 ---函数名：SetMaterial
@@ -185,8 +185,8 @@ SetMaterial = function(p1,p2,p3) end,
 
 ---函数名：GetMaterial
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Material
----@return Material
+---返回值：UnityEngine.Material
+---@return UnityEngine.Material
 GetMaterial = function(p1) end,
 
 ---函数名：SplitUIVertexStreams
@@ -278,91 +278,91 @@ remove_onRequestRebuild = function() end,
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -391,43 +391,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -451,8 +451,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -467,8 +467,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -484,8 +484,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -562,105 +562,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.CanvasRenderer
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -669,8 +669,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -679,14 +679,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.CanvasRenderer
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

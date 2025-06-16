@@ -3,8 +3,8 @@
 UnityEngine.UI.Slider = {
 ---函数名：get_fillRect
 ---@param p1 UnityEngine.UI.Slider
----返回值：RectTransform
----@return RectTransform
+---返回值：UnityEngine.RectTransform
+---@return UnityEngine.RectTransform
 fillRect = function(p1) end,
 
 ---函数名：set_fillRect
@@ -13,8 +13,8 @@ fillRect = function(p1) end,
 
 ---函数名：get_handleRect
 ---@param p1 UnityEngine.UI.Slider
----返回值：RectTransform
----@return RectTransform
+---返回值：UnityEngine.RectTransform
+---@return UnityEngine.RectTransform
 handleRect = function(p1) end,
 
 ---函数名：set_handleRect
@@ -23,8 +23,8 @@ handleRect = function(p1) end,
 
 ---函数名：get_direction
 ---@param p1 UnityEngine.UI.Slider
----返回值：Direction
----@return Direction
+---返回值：UnityEngine.UI.Slider.Direction
+---@return UnityEngine.UI.Slider.Direction
 direction = function(p1) end,
 
 ---函数名：set_direction
@@ -33,8 +33,8 @@ direction = function(p1) end,
 
 ---函数名：get_minValue
 ---@param p1 UnityEngine.UI.Slider
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 minValue = function(p1) end,
 
 ---函数名：set_minValue
@@ -43,8 +43,8 @@ minValue = function(p1) end,
 
 ---函数名：get_maxValue
 ---@param p1 UnityEngine.UI.Slider
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 maxValue = function(p1) end,
 
 ---函数名：set_maxValue
@@ -53,8 +53,8 @@ maxValue = function(p1) end,
 
 ---函数名：get_wholeNumbers
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 wholeNumbers = function(p1) end,
 
 ---函数名：set_wholeNumbers
@@ -63,8 +63,8 @@ wholeNumbers = function(p1) end,
 
 ---函数名：get_value
 ---@param p1 UnityEngine.UI.Slider
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 value = function(p1) end,
 
 ---函数名：set_value
@@ -78,8 +78,8 @@ SetValueWithoutNotify = function(p1,p2) end,
 
 ---函数名：get_normalizedValue
 ---@param p1 UnityEngine.UI.Slider
----返回值：Single
----@return Single
+---返回值：System.Single
+---@return System.Single
 normalizedValue = function(p1) end,
 
 ---函数名：set_normalizedValue
@@ -88,8 +88,8 @@ normalizedValue = function(p1) end,
 
 ---函数名：get_onValueChanged
 ---@param p1 UnityEngine.UI.Slider
----返回值：SliderEvent
----@return SliderEvent
+---返回值：UnityEngine.UI.Slider.SliderEvent
+---@return UnityEngine.UI.Slider.SliderEvent
 onValueChanged = function(p1) end,
 
 ---函数名：set_onValueChanged
@@ -126,26 +126,26 @@ OnMove = function(p1,p2) end,
 
 ---函数名：FindSelectableOnLeft
 ---@param p1 UnityEngine.UI.Slider
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnLeft = function(p1) end,
 
 ---函数名：FindSelectableOnRight
 ---@param p1 UnityEngine.UI.Slider
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnRight = function(p1) end,
 
 ---函数名：FindSelectableOnUp
 ---@param p1 UnityEngine.UI.Slider
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnUp = function(p1) end,
 
 ---函数名：FindSelectableOnDown
 ---@param p1 UnityEngine.UI.Slider
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectableOnDown = function(p1) end,
 
 ---函数名：OnInitializePotentialDrag
@@ -161,8 +161,8 @@ SetDirection = function(p1,p2,p3) end,
 
 ---函数名：get_navigation
 ---@param p1 UnityEngine.UI.Slider
----返回值：Navigation
----@return Navigation
+---返回值：UnityEngine.UI.Navigation
+---@return UnityEngine.UI.Navigation
 navigation = function(p1) end,
 
 ---函数名：set_navigation
@@ -171,8 +171,8 @@ navigation = function(p1) end,
 
 ---函数名：get_transition
 ---@param p1 UnityEngine.UI.Slider
----返回值：Transition
----@return Transition
+---返回值：UnityEngine.UI.Selectable.Transition
+---@return UnityEngine.UI.Selectable.Transition
 transition = function(p1) end,
 
 ---函数名：set_transition
@@ -181,8 +181,8 @@ transition = function(p1) end,
 
 ---函数名：get_colors
 ---@param p1 UnityEngine.UI.Slider
----返回值：ColorBlock
----@return ColorBlock
+---返回值：UnityEngine.UI.ColorBlock
+---@return UnityEngine.UI.ColorBlock
 colors = function(p1) end,
 
 ---函数名：set_colors
@@ -191,8 +191,8 @@ colors = function(p1) end,
 
 ---函数名：get_spriteState
 ---@param p1 UnityEngine.UI.Slider
----返回值：SpriteState
----@return SpriteState
+---返回值：UnityEngine.UI.SpriteState
+---@return UnityEngine.UI.SpriteState
 spriteState = function(p1) end,
 
 ---函数名：set_spriteState
@@ -201,8 +201,8 @@ spriteState = function(p1) end,
 
 ---函数名：get_animationTriggers
 ---@param p1 UnityEngine.UI.Slider
----返回值：AnimationTriggers
----@return AnimationTriggers
+---返回值：UnityEngine.UI.AnimationTriggers
+---@return UnityEngine.UI.AnimationTriggers
 animationTriggers = function(p1) end,
 
 ---函数名：set_animationTriggers
@@ -211,8 +211,8 @@ animationTriggers = function(p1) end,
 
 ---函数名：get_targetGraphic
 ---@param p1 UnityEngine.UI.Slider
----返回值：Graphic
----@return Graphic
+---返回值：UnityEngine.UI.Graphic
+---@return UnityEngine.UI.Graphic
 targetGraphic = function(p1) end,
 
 ---函数名：set_targetGraphic
@@ -221,8 +221,8 @@ targetGraphic = function(p1) end,
 
 ---函数名：get_interactable
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 interactable = function(p1) end,
 
 ---函数名：set_interactable
@@ -231,8 +231,8 @@ interactable = function(p1) end,
 
 ---函数名：get_image
 ---@param p1 UnityEngine.UI.Slider
----返回值：Image
----@return Image
+---返回值：UnityEngine.UI.Image
+---@return UnityEngine.UI.Image
 image = function(p1) end,
 
 ---函数名：set_image
@@ -241,21 +241,21 @@ image = function(p1) end,
 
 ---函数名：get_animator
 ---@param p1 UnityEngine.UI.Slider
----返回值：Animator
----@return Animator
+---返回值：UnityEngine.Animator
+---@return UnityEngine.Animator
 animator = function(p1) end,
 
 ---函数名：IsInteractable
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInteractable = function(p1) end,
 
 ---函数名：FindSelectable
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 UnityEngine.Vector3
----返回值：Selectable
----@return Selectable
+---返回值：UnityEngine.UI.Selectable
+---@return UnityEngine.UI.Selectable
 FindSelectable = function(p1,p2) end,
 
 ---函数名：OnPointerUp
@@ -289,20 +289,20 @@ Select = function(p1) end,
 
 ---函数名：IsActive
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsActive = function(p1) end,
 
 ---函数名：IsDestroyed
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsDestroyed = function(p1) end,
 
 ---函数名：IsInvoking
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInvoking = function(p1) end,
 
 ---函数名：CancelInvoke
@@ -330,37 +330,37 @@ CancelInvoke = function(p1,p2) end,
 ---函数名：IsInvoking
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 IsInvoking = function(p1,p2) end,
 
 ---函数名：StartCoroutine
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.String
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine = function(p1,p2) end,
 
 ---函数名：StartCoroutine
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.String
 ---@param p3 System.Object
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine = function(p1,p2,p3) end,
 
 ---函数名：StartCoroutine
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Collections.IEnumerator
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine = function(p1,p2) end,
 
 ---函数名：StartCoroutine_Auto
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Collections.IEnumerator
----返回值：Coroutine
----@return Coroutine
+---返回值：UnityEngine.Coroutine
+---@return UnityEngine.Coroutine
 StartCoroutine_Auto = function(p1,p2) end,
 
 ---函数名：StopCoroutine
@@ -384,8 +384,8 @@ StopAllCoroutines = function(p1) end,
 
 ---函数名：get_useGUILayout
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 useGUILayout = function(p1) end,
 
 ---函数名：set_useGUILayout
@@ -394,8 +394,8 @@ useGUILayout = function(p1) end,
 
 ---函数名：get_runInEditMode
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 runInEditMode = function(p1) end,
 
 ---函数名：set_runInEditMode
@@ -404,8 +404,8 @@ runInEditMode = function(p1) end,
 
 ---函数名：get_enabled
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 enabled = function(p1) end,
 
 ---函数名：set_enabled
@@ -414,97 +414,97 @@ enabled = function(p1) end,
 
 ---函数名：get_isActiveAndEnabled
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 isActiveAndEnabled = function(p1) end,
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.UI.Slider
----返回值：Transform
----@return Transform
+---返回值：UnityEngine.Transform
+---@return UnityEngine.Transform
 transform = function(p1) end,
 
 ---函数名：get_gameObject
 ---@param p1 UnityEngine.UI.Slider
----返回值：GameObject
----@return GameObject
+---返回值：UnityEngine.GameObject
+---@return UnityEngine.GameObject
 gameObject = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.UI.Slider
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponent = function(p1) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
 ---@param p3 UnityEngine.Component&
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1,p2,p3) end,
 
 ---函数名：TryGetComponent
 ---@param p1 UnityEngine.UI.Slider
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 TryGetComponent = function(p1) end,
 
 ---函数名：GetComponent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.String
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentInChildren
 ---@param p1 UnityEngine.UI.Slider
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInChildren = function(p1) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInChildren
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInChildren = function(p1,p2) end,
 
 ---函数名：GetComponentsInChildren
@@ -533,43 +533,43 @@ GetComponentsInChildren = function(p1) end,
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Boolean
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1,p2) end,
 
 ---函数名：GetComponentInParent
 ---@param p1 UnityEngine.UI.Slider
----返回值：T
----@return T
+---返回值：
+---@return 
 GetComponentInParent = function(p1) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
 ---@param p3 System.Boolean
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2,p3) end,
 
 ---函数名：GetComponentsInParent
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponentsInParent = function(p1,p2) end,
 
 ---函数名：GetComponentsInParent
@@ -593,8 +593,8 @@ GetComponentsInParent = function(p1) end,
 ---函数名：GetComponents
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Type
----返回值：Component[]
----@return Component[]
+---返回值：UnityEngine.Component[]
+---@return UnityEngine.Component[]
 GetComponents = function(p1,p2) end,
 
 ---函数名：GetComponents
@@ -609,8 +609,8 @@ GetComponents = function(p1) end,
 
 ---函数名：get_tag
 ---@param p1 UnityEngine.UI.Slider
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 tag = function(p1) end,
 
 ---函数名：set_tag
@@ -626,8 +626,8 @@ GetComponents = function(p1) end,
 ---函数名：CompareTag
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.String
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 CompareTag = function(p1,p2) end,
 
 ---函数名：SendMessageUpwards
@@ -704,105 +704,105 @@ BroadcastMessage = function(p1,p2,p3) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody = function(p1) end,
 
 ---函数名：get_rigidbody2D
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 rigidbody2D = function(p1) end,
 
 ---函数名：get_camera
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 camera = function(p1) end,
 
 ---函数名：get_light
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 light = function(p1) end,
 
 ---函数名：get_animation
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 animation = function(p1) end,
 
 ---函数名：get_constantForce
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 constantForce = function(p1) end,
 
 ---函数名：get_renderer
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 renderer = function(p1) end,
 
 ---函数名：get_audio
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 audio = function(p1) end,
 
 ---函数名：get_networkView
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 networkView = function(p1) end,
 
 ---函数名：get_collider
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider = function(p1) end,
 
 ---函数名：get_collider2D
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 collider2D = function(p1) end,
 
 ---函数名：get_hingeJoint
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 hingeJoint = function(p1) end,
 
 ---函数名：get_particleSystem
 ---@param p1 UnityEngine.UI.Slider
----返回值：Component
----@return Component
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
 particleSystem = function(p1) end,
 
 ---函数名：GetInstanceID
 ---@param p1 UnityEngine.UI.Slider
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetInstanceID = function(p1) end,
 
 ---函数名：GetHashCode
 ---@param p1 UnityEngine.UI.Slider
----返回值：Int32
----@return Int32
+---返回值：System.Int32
+---@return System.Int32
 GetHashCode = function(p1) end,
 
 ---函数名：Equals
 ---@param p1 UnityEngine.UI.Slider
 ---@param p2 System.Object
----返回值：Boolean
----@return Boolean
+---返回值：System.Boolean
+---@return System.Boolean
 Equals = function(p1,p2) end,
 
 ---函数名：get_name
 ---@param p1 UnityEngine.UI.Slider
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 name = function(p1) end,
 
 ---函数名：set_name
@@ -811,8 +811,8 @@ name = function(p1) end,
 
 ---函数名：get_hideFlags
 ---@param p1 UnityEngine.UI.Slider
----返回值：HideFlags
----@return HideFlags
+---返回值：UnityEngine.HideFlags
+---@return UnityEngine.HideFlags
 hideFlags = function(p1) end,
 
 ---函数名：set_hideFlags
@@ -821,14 +821,14 @@ hideFlags = function(p1) end,
 
 ---函数名：ToString
 ---@param p1 UnityEngine.UI.Slider
----返回值：String
----@return String
+---返回值：System.String
+---@return System.String
 ToString = function(p1) end,
 
 ---函数名：GetType
 ---@param p1 UnityEngine.UI.Slider
----返回值：Type
----@return Type
+---返回值：System.Type
+---@return System.Type
 GetType = function(p1) end,
 
 }

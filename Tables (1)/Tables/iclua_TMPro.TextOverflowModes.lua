@@ -1,112 +1,37 @@
 ---@meta
 ---@class TMPro.TextOverflowModes
 TMPro.TextOverflowModes = {
----函数名：Equals
+---枚举值：value__
 ---@param p1 TMPro.TextOverflowModes
----@param p2 System.Object
----返回值：Boolean
----@return Boolean
-Equals = function(p1,p2) end,
+---@type System.Int32
+value__ = nil,
 
----函数名：GetHashCode
----@param p1 TMPro.TextOverflowModes
----返回值：Int32
----@return Int32
-GetHashCode = function(p1) end,
+---枚举值：Overflow
+---@type TMPro.TextOverflowModes
+Overflow = nil,
 
----函数名：ToString
----@param p1 TMPro.TextOverflowModes
----返回值：String
----@return String
-ToString = function(p1) end,
+---枚举值：Ellipsis
+---@type TMPro.TextOverflowModes
+Ellipsis = nil,
 
----函数名：ToString
----@param p1 TMPro.TextOverflowModes
----@param p2 System.String
----@param p3 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2,p3) end,
+---枚举值：Masking
+---@type TMPro.TextOverflowModes
+Masking = nil,
 
----函数名：CompareTo
----@param p1 TMPro.TextOverflowModes
----@param p2 System.Object
----返回值：Int32
----@return Int32
-CompareTo = function(p1,p2) end,
+---枚举值：Truncate
+---@type TMPro.TextOverflowModes
+Truncate = nil,
 
----函数名：ToString
----@param p1 TMPro.TextOverflowModes
----@param p2 System.String
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：ScrollRect
+---@type TMPro.TextOverflowModes
+ScrollRect = nil,
 
----函数名：ToString
----@param p1 TMPro.TextOverflowModes
----@param p2 System.IFormatProvider
----返回值：String
----@return String
-ToString = function(p1,p2) end,
+---枚举值：Page
+---@type TMPro.TextOverflowModes
+Page = nil,
 
----函数名：HasFlag
----@param p1 TMPro.TextOverflowModes
----@param p2 System.Enum
----返回值：Boolean
----@return Boolean
-HasFlag = function(p1,p2) end,
-
----函数名：GetTypeCode
----@param p1 TMPro.TextOverflowModes
----返回值：TypeCode
----@return TypeCode
-GetTypeCode = function(p1) end,
-
----函数名：GetType
----@param p1 TMPro.TextOverflowModes
----返回值：Type
----@return Type
-GetType = function(p1) end,
-
----函数名：value__
----@param p1 TMPro.TextOverflowModes
----返回值：Int32
----@return Int32
-value__ = function(p1) end,
-
----函数名：Overflow
----返回值：TextOverflowModes
----@return TextOverflowModes
-Overflow = function() end,
-
----函数名：Ellipsis
----返回值：TextOverflowModes
----@return TextOverflowModes
-Ellipsis = function() end,
-
----函数名：Masking
----返回值：TextOverflowModes
----@return TextOverflowModes
-Masking = function() end,
-
----函数名：Truncate
----返回值：TextOverflowModes
----@return TextOverflowModes
-Truncate = function() end,
-
----函数名：ScrollRect
----返回值：TextOverflowModes
----@return TextOverflowModes
-ScrollRect = function() end,
-
----函数名：Page
----返回值：TextOverflowModes
----@return TextOverflowModes
-Page = function() end,
-
----函数名：Linked
----返回值：TextOverflowModes
----@return TextOverflowModes
-Linked = function() end,
+---枚举值：Linked
+---@type TMPro.TextOverflowModes
+Linked = nil,
 
 }
