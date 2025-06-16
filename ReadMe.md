@@ -1,5 +1,5 @@
 # IWBTC Lua_Library_v2.0
-这个是新版本仓库，包括了 IC 内置所有函数和 UnityEngine 允许使用的全部函数。用于在 vscode 等 IDE 中显示函数提示。可以代替文本iwbtc内置的文本编辑器。
+这个是新版本仓库，包括了 IC 内置所有函数和 UnityEngine 允许使用的全部(?)函数。用于在 vscode 等 IDE 中显示函数提示。可以代替文本iwbtc内置的文本编辑器。
 
 ## 如何使用
 1. 点击绿色按钮 Code ，选择 Download Zip.
@@ -13,4 +13,6 @@
 1. 如果希望借助AI的自动补全功能，可以下载MarsCode/Trae 等 AI 插件。（事实上，如果是写和这个库强相关的代码，还是不用AI好了）
 
 ## 其他
-IC Lua函数库缺少使用者和测试员。如果使用时出了一些 bug,请反馈到 github 的 issues 栏目。如果想要分享一些有趣或常用的代码，也可以分享到 issues, 或者建一个 Pull requests 修改函数库的代码，加一些常用提示或者使用说明。
+1. IC Lua函数库缺少使用者和测试员。如果使用时出了一些 bug,请反馈到 github 的 issues 栏目。如果想要分享一些有趣或常用的代码，也可以分享到 issues, 或者建一个 Pull requests 修改函数库的代码，加一些常用提示或者使用说明。
+2. 看到函数参数提示类型中存在nil的，说明不支持，无法使用函数。
+3. 有关ToLua的UnityEngine组件下的一些成员变量还不全面，官方没有EmmyLua注解，会提示不存在不一定代表不能用。

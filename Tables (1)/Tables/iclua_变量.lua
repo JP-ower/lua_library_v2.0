@@ -34,8 +34,13 @@ GetUnitVarKey = function(p1,p2) end,
 StringToVariableName = function(p1) end,
 
 ---函数名：设置全局变量
----描述：设置·· = ·
----介绍：如果有同名变量，则会覆盖掉前面的。你可以在所有函数中使用
+---描述：设置·· = ·<br>
+---介绍：如果有同名变量，则会覆盖掉前面的。你可以在所有函数中使用<br>
+---难道你还离不开IC的变量？使用例：
+---```lua
+---local x = "abc"
+---VarManager.SetVariable( VariableType.Create( "字符串" ) , VariableName.Create( "var" ) , VarData.Create(x) )
+---```
 ---@param p1 VariableType
 ---@param p2 VariableName
 ---@param p3 VarData
