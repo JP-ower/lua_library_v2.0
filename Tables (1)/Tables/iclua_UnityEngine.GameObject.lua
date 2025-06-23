@@ -1,16 +1,21 @@
 ---@meta
 ---@class UnityEngine.GameObject
+---@field transform UnityEngine.Transform
 UnityEngine.GameObject = {
+---初始化
+---@param name string
+---@return UnityEngine.GameObject
+New = function(name) end,
 ---函数名：CreatePrimitive
 ---@param p1 UnityEngine.PrimitiveType
 ---返回值：UnityEngine.GameObject
 ---@return UnityEngine.GameObject
 CreatePrimitive = function(p1) end,
-
+--[[
 ---函数名：GetComponent
 ---@param p1 UnityEngine.GameObject
 ---返回值：
----@return 
+---@return UnityEngine.Component
 GetComponent = function(p1) end,
 
 ---函数名：GetComponent
@@ -23,6 +28,14 @@ GetComponent = function(p1,p2) end,
 ---函数名：GetComponent
 ---@param p1 UnityEngine.GameObject
 ---@param p2 System.String
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
+GetComponent = function(p1,p2) end,
+]]--
+
+---函数名：GetComponent
+---@param p1 UnityEngine.GameObject
+---@param p2? System.String | System.Type
 ---返回值：UnityEngine.Component
 ---@return UnityEngine.Component
 GetComponent = function(p1,p2) end,
@@ -214,6 +227,13 @@ SendMessage = function(p1,p2,p3) end,
 ---@param p3 UnityEngine.SendMessageOptions
 BroadcastMessage = function(p1,p2,p3) end,
 
+--[[
+---函数名：AddComponent
+---@param p1 UnityEngine.GameObject
+---返回值：
+---@return 
+AddComponent = function(p1) end,
+
 ---函数名：AddComponent
 ---@param p1 UnityEngine.GameObject
 ---@param p2 System.Type
@@ -223,9 +243,20 @@ AddComponent = function(p1,p2) end,
 
 ---函数名：AddComponent
 ---@param p1 UnityEngine.GameObject
----返回值：
----@return 
-AddComponent = function(p1) end,
+---@param p2 System.String
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
+AddComponent = function(p1,p2) end,
+
+]]--
+
+---函数名：AddComponent
+---@param p1 UnityEngine.GameObject
+---@param p2? System.Type | System.String
+---返回值：UnityEngine.Component
+---@return UnityEngine.Component
+AddComponent = function(p1,p2) end,
+
 
 ---函数名：get_transform
 ---@param p1 UnityEngine.GameObject
@@ -397,13 +428,6 @@ gameObject = function(p1) end,
 ---@param p2 UnityEngine.Object
 ---@param p3 System.Single
 SampleAnimation = function(p1,p2,p3) end,
-
----函数名：AddComponent
----@param p1 UnityEngine.GameObject
----@param p2 System.String
----返回值：UnityEngine.Component
----@return UnityEngine.Component
-AddComponent = function(p1,p2) end,
 
 ---函数名：get_rigidbody
 ---@param p1 UnityEngine.GameObject
