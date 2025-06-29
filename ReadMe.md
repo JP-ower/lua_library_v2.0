@@ -15,4 +15,5 @@
 ## 其他
 1. IC Lua函数库缺少使用者和测试员。如果使用时出了一些 bug,请反馈到 github 的 issues 栏目。如果想要分享一些有趣或常用的代码，也可以分享到 issues, 或者建一个 Pull requests 修改函数库的代码，加一些常用提示或者使用说明。
 2. 看到函数参数提示类型中存在nil的，说明不支持，无法使用函数。
-3. 有关ToLua的UnityEngine组件下的一些成员变量还不全面，官方没有EmmyLua注解，会提示不存在不一定代表不能用。
+3. 有关ToLua的UnityEngine组件下的一些成员变量还不全面，官方没有EmmyLua注解，会提示不存在该成员，但不一定代表不能用。
+4. 确认出现不应该警告的情况，请在lua diagnostics disable禁用对应诊断

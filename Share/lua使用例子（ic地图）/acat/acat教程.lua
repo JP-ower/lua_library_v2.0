@@ -75,7 +75,7 @@ else
 end
 local test2=[[test 当前在代码块调用的变量是在当前脚本定义的 所以可以被调用
 test 114514]]
-if true==ture then
+if true then
     print(test2,-1)
 end 
 test3=1
