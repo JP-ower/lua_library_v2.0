@@ -17,3 +17,10 @@
 2. 看到函数参数提示类型中存在nil的，说明不支持，无法使用函数。
 3. 有关ToLua的UnityEngine组件下的一些成员变量还不全面，官方没有EmmyLua注解，会提示不存在该成员，但不一定代表不能用。
 4. 确认出现不应该警告的情况，请在lua diagnostics disable禁用对应诊断
+
+## 已知问题
+1. 涉及调用最后创建的XX的成员变量，不是函数，不能写后面的括号
+```lua
+local a = UI_XUI.GetXRT(UI_XUI.lastCreatedXUI)
+```
+这里写`lastCreatedXUI`是正确用法，不要写`lastCreatedXUI()`。
