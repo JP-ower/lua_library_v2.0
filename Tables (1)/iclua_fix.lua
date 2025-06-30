@@ -26,6 +26,8 @@ TMPro = {}
 UIData = {}
 ---@class SpriteDisplayData
 SpriteDisplayData = {}
+---@class UI_UIEditor
+UI_UIEditor = {}
 
 function UnityEngine.Vector2:__call(x,y) end
 function UnityEngine.Vector3:__call(x,y,z) end
