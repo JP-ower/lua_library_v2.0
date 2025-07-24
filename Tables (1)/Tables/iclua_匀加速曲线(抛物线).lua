@@ -4,19 +4,27 @@ JFY_CurvilinearMotion = {
 ---函数名：创建曲线运动
 ---描述：为·创建曲线运动
 ---介绍：曲线运动原理:每0.02秒刷新对象的持续移动状态
----@param p1 UnityEngine.GameObject
 ---返回值：JFY_CurvilinearMotion
+---
+---GameObject处填什么？怎么填？示例：
+---```lua
+---local u = Unit.TCreate( UnitData.GetUnitData( "Wall1" ) , UnityEngine.Vector2(2,2) )
+---local a = JFY_CurvilinearMotion.CreateParabola( u:GetGameObject() )
+---```
+---这个a就是获取到的曲线运动对象
+---@param p1 UnityEngine.GameObject
 ---@return JFY_CurvilinearMotion
 CreateParabola = function(p1) end,
 
----函数名：设置曲线运动所有属性
----描述：为·设置初始X轴速度·，X轴加速度·，初始Y轴速度·，Y轴加速度·
----介绍：抛物线就是将X轴加速度为0的曲线
+---设置曲线运动的速度
+---（这是一个重载函数，参数数量不同代表的意义不同）
+---5个参数：为·设置初始X轴速度·，X轴加速度·，初始Y轴速度·，Y轴加速度·
+---3个参数：设置·的X轴速度·，Y轴速度·
 ---@param p1 JFY_CurvilinearMotion
 ---@param p2 System.Single
 ---@param p3 System.Single
----@param p4 System.Single
----@param p5 System.Single
+---@param p4? System.Single
+---@param p5? System.Single
 SetSpeed = function(p1,p2,p3,p4,p5) end,
 
 ---函数名：设置为抛物线并使其经过目标点
@@ -77,13 +85,6 @@ GetMaxY = function(p1,p2,p3) end,
 ---@param p2 System.Boolean
 ---@param p3 System.Single
 SetFollowDirect = function(p1,p2,p3) end,
-
----函数名：设置曲线运动的速度
----描述：设置·的X轴速度为·，Y轴速度为·
----@param p1 JFY_CurvilinearMotion
----@param p2 System.Single
----@param p3 System.Single
-SetSpeed = function(p1,p2,p3) end,
 
 ---函数名：获取曲线运动的X轴速度
 ---描述：·的X轴速度

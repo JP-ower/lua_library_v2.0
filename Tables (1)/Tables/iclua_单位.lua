@@ -122,9 +122,15 @@ UnitIsNull = function(p1,p2) end,
 
 ---函数名：创建
 ---描述：创建一个·在·
+---返回值：Unit
+---Tips：如何创建单位？
+---示例：
+---```lua
+---local u = Unit.TCreate( UnitData.GetUnitData( "Wall1" ) , UnityEngine.Vector2(2,2) )
+---```
+---```Wall1```这里可以填入任意单位的id，只需要右键单位，然后复制id即可！
 ---@param p1 UnitData
 ---@param p2 UnityEngine.Vector2
----返回值：Unit
 ---@return Unit
 TCreate = function(p1,p2) end,
 
