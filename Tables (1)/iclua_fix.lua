@@ -6,6 +6,8 @@
 ---@alias VectorData nil
 ---单条弹幕(没有param)
 ---@alias UI_Barrage nil
+---Lua数据
+---@alias LuaData nil
 ---反射（可能是绕过ic的IO限制的唯一方法）
 ---有机会一定要研究一下。
 ---@class System.Reflection

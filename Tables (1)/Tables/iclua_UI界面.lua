@@ -50,4 +50,29 @@ lastCreatedXUI = function() end,
 ---@return UI_XRT
 lastCreatedRootXRT = function() end,
 
+---函数名：查找UI组件（标签）（2.7597更新）
+---@param p1 UI_XUI
+---@param p2 System.String
+---返回值：UI_XRT
+---@return UI_XRT
+FindXRT_Tag = function(p1,p2) end,
+
+---函数名：查找UI文本（标签）（2.7597更新）
+---@param p1 UI_XUI
+---@param p2 System.String
+---返回值：UI_XText
+---@return UI_XText
+FindXText_Tag = function(p1,p2) end,
+
+---函数名：查找UI图片（标签）（2.7597更新）
+---@param p1 UI_XUI
+---@param p2 System.String
+---返回值：UI_XImage
+---@return UI_XImage
+FindXImage_Tag = function(p1,p2) end,
+
+---函数名：最后事件响应的UI（2.7597更新）
+---@return UI_XUI
+GetLastEventCallbackUI = function() end,
+
 }

@@ -439,4 +439,37 @@ isAllPlayerDeath = function() end,
 ---@return System.Int32
 deathPlayerCount = function() end,
 
+---最后发生的错误信息（2.7595更新）
+---@type System.String
+lastErrorInfo = nil,
+
+---函数名：是禁止回档的（2.7595更新）
+---返回值：Boolean
+---@return System.Boolean
+GetUnHDState = function() end,
+
+---函数名：设置是否禁止回档（2.7595更新）
+---@param p1 System.Boolean
+SetUnHDState = function(p1) end,
+
+---函数名：设置胜利后是否退出游戏（2.7599更新）
+---@param p1 System.Boolean
+SetWinQuitGame = function(p1) end,
+
+---函数名：胜利后退出游戏（2.7599更新）
+---@return System.Boolean
+GetWinQuitGame = function() end,
+
+---函数名：游戏名字（2.7599更新）
+---@return System.String
+GetGameName = function() end,
+
+---函数名：游戏作者名（2.7599更新）
+---@return System.String
+GetGameAuthor = function() end,
+
+---函数名：游戏简介（2.7599更新）
+---@return System.String
+GetGameDescribe = function() end,
+
 }

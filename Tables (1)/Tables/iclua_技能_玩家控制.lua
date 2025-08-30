@@ -358,4 +358,14 @@ IsOpenFollowMove = function(p1) end,
 ---@return System.Boolean
 GetEnabled = function(p1) end,
 
+---函数名：设置当前跳跃次数锁定状态（2.7599更新）
+---@param p1 Unit 玩家
+---@param p2 System.Boolean 锁定状态
+SetCurrentJumpCountLockState = function(p1,p2) end,
+
+---函数名：当前跳跃次数锁定状态（2.7599更新）
+---@param p1 Unit 玩家
+---@return System.Boolean
+GetCurrentJumpCountLockState = function(p1) end,
+
 }

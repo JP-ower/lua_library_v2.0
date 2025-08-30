@@ -198,4 +198,24 @@ SetPlayerReviveAutoDeleteAudio = function(p1) end,
 ---@return System.Boolean
 GetPlayerReviveAutoDeleteAudio = function() end,
 
+---函数名：删除所有声音（2.7596更新）
+---@param p1 System.Boolean 删除所有音乐？
+---@param p2 System.Boolean 删除所有音效？
+DeleteAllAudio = function(p1,p2) end,
+
+---函数名：重置所有声音（2.7596更新）
+---@param p1 System.Boolean 重置所有音乐？
+---@param p2 System.Boolean 重置所有音效？
+ReAllAudio = function(p1,p2) end,
+
+---函数名：播放时间（2.7598更新）
+---@param p1 UnityEngine.AudioSource
+---@return System.Single
+GetPlaybackTime = function(p1) end,
+
+---函数名：设置播放时间（2.7598更新）
+---@param p1 UnityEngine.AudioSource
+---@param p2 System.Single
+SetPlaybackTime = function(p1,p2) end,
+
 }

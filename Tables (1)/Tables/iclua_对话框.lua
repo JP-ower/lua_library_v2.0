@@ -381,4 +381,8 @@ TGetSkipTextShowState = function() end,
 ---@return UI_XText
 GetXText = function() end,
 
+---函数名：从对话框上获取UI组件（2.7597更新）
+---@return UI_XText
+GetXRT = function() end,
+
 }

@@ -200,4 +200,7 @@ RunLuaFunction_P5_Return = function(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11) end,
 ---@return System.Object
 RunLuaFunction_DG_Return = function(p1,p2) end,
 
+---函数名：运行一个Lua数据（2.7595更新）
+---@param p1 LuaData
+RunLuaData = function(p1) end,
 }

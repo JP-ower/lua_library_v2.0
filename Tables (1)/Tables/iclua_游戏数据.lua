@@ -61,4 +61,12 @@ GetLevelGameVer = function() end,
 ---@return System.Single
 GetLevelVer = function() end,
 
+---函数名：当前游戏文件夹路径（2.7597更新）
+---@return System.StringComparison
+GetCurrentGameFileFullPath = function() end,
+
+---函数名：当前游戏文件夹路径（指定文件夹）（2.7597更新）
+---@param p1 System.String 文件夹名称
+---@return System.StringComparison
+GetCurrentGameFileFullPath_Dir = function(p1) end,
 }

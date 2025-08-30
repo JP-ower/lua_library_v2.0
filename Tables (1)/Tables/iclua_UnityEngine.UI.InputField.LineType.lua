@@ -1,5 +1,6 @@
 ---@meta
 ---@class UnityEngine.UI.InputField.LineType
+---换行模式
 UnityEngine.UI.InputField.LineType = {
 ---枚举值：value__
 ---@type System.Int32

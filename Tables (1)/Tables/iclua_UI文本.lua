@@ -835,4 +835,10 @@ Delete_Time = function(p1,p2) end,
 ---@return UI_XText
 lastCreatedXText = function() end,
 
+---函数名：从UI组件上查找UI文本（标签）（2.7597更新）
+---@param p1 UI_XRT
+---@param p2 System.String
+---@return UI_XText
+FindXText_Tag = function(p1,p2) end,
+
 }

@@ -689,4 +689,14 @@ prevCreatedXRT = function() end,
 ---@return UI_XRT
 lastCreatedXRT = function() end,
 
+---函数名：查找UI组件（标签）（2.7597更新）
+---@param p1 UI_XRT 在组件上查找
+---@param p2 System.String 标签名称
+---@return UI_XRT
+FindXRT_Tag = function(p1,p2) end,
+
+---函数名：最后事件响应的UI组件（2.7597更新）
+---@return UI_XRT
+GetLastEventCallbackUI = function() end,
+
 }
