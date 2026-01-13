@@ -63,9 +63,9 @@ SetWidth = function(p1,p2) end,
 ---@param p1 UI_SelectBoxPanel
 Close = function(p1) end,
 
----函数名：最后创建的选择框面板
----返回值：UI_SelectBoxPanel
----@return UI_SelectBoxPanel
-lastCreatedSelectBoxPanel = function() end,
+---最后创建的选择框面板
+---类型：UI_SelectBoxPanel
+---@type UI_SelectBoxPanel
+lastCreatedSelectBoxPanel = nil,
 
 }

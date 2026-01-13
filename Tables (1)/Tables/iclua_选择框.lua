@@ -30,14 +30,14 @@ GetText = function(p1) end,
 ---@return System.Int32
 index = function(p1) end,
 
----函数名：最后创建的选择框
----返回值：UI_SelectBox
----@return UI_SelectBox
-lastCreatedSelectBox = function() end,
+---最后创建的选择框
+---类型：UI_SelectBox
+---@type UI_SelectBox
+lastCreatedSelectBox = nil,
 
----函数名：最后点击的选择框
----返回值：UI_SelectBox
----@return UI_SelectBox
-lastClickSelectBox = function() end,
+---最后点击的选择框
+---类型：UI_SelectBox
+---@type UI_SelectBox
+lastClickSelectBox = nil,
 
 }

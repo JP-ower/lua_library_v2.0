@@ -160,9 +160,9 @@ TDeleteResourceData = function(p1) end,
 ---描述：删除所有资源数据
 ClearResourceData = function() end,
 
----函数名：触发资源的名字
----返回值：System.String
----@return System.String
-triggerResourceName = function() end,
+---触发资源的名字
+---类型：System.String
+---@type System.String
+triggerResourceName = nil,
 
 }

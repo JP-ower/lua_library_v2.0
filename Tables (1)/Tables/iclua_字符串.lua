@@ -3,6 +3,7 @@
 CharacterString = {
 ---函数名：空字符串
 ---返回值：System.String
+---（和空字符串是不一样的！空字符串NullString是null，空白字符串EmptyString是""）
 ---@return System.String
 NullString = function() end,
 
@@ -325,4 +326,26 @@ Regex_Match = function(p1,p2) end,
 ---@return DataGroup
 Regex_Matches = function(p1,p2) end,
 
+---函数名：空白字符串（2.761更新）
+---描述：空白字符串
+---（和空字符串是不一样的！空字符串NullString是null，空白字符串EmptyString是""）
+---@return String
+EmptyString = function() end,
+
+---函数名：字符串是否为空或者空白（2.761更新）
+---描述：··空或者空白
+---@param p1 System.String
+---@param p2 ComparisonOperator2
+---返回值：System.Boolean
+---@return System.Boolean
+StringNullOrEmptyComparison = function(p1,p2) end,
+
+
+---函数名：字符串是否为空或者空白区域（2.761更新）
+---描述：··空或者空白区域
+---@param p1 System.String
+---@param p2 ComparisonOperator2
+---返回值：System.Boolean
+---@return System.Boolean
+StringNullOrWhiteSpaceComparison = function(p1,p2) end,
 }

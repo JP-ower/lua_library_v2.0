@@ -830,10 +830,10 @@ Delete = function(p1) end,
 ---@param p2 System.Single
 Delete_Time = function(p1,p2) end,
 
----函数名：最后创建的UI文本
----返回值：UI_XText
----@return UI_XText
-lastCreatedXText = function() end,
+---最后创建的UI文本
+---类型：UI_XText
+---@type UI_XText
+lastCreatedXText = nil,
 
 ---函数名：从UI组件上查找UI文本（标签）（2.7597更新）
 ---@param p1 UI_XRT
@@ -841,4 +841,11 @@ lastCreatedXText = function() end,
 ---@return UI_XText
 FindXText_Tag = function(p1,p2) end,
 
+---函数名：通过下标获取子节点UI组件（2.762更新）
+---描述：·中下标·的子节点UI组件
+---@param p1 UI_XText
+---@param p2 Int32
+---返回值：UI_XRT
+---@return UI_XRT
+GetChildXRT = function(p1,p2) end,
 }

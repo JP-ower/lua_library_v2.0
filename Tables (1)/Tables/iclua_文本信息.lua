@@ -40,9 +40,13 @@ GetTime = function(p1) end,
 ---@param p2 System.Boolean
 Remove = function(p1,p2) end,
 
----函数名：最后创建的文本信息
----返回值：UI_InfoPanel.UI_TextInfo
----@return UI_InfoPanel.UI_TextInfo
-lastCreatedTextInfo = function() end,
+---最后创建的文本信息
+---类型：UI_InfoPanel.UI_TextInfo
+---@type UI_InfoPanel.UI_TextInfo
+lastCreatedTextInfo = nil,
 
+---最后触发的文本信息（2.761更新）
+---类型：UI_InfoPanel.UI_TextInfo
+---@type UI_InfoPanel.UI_TextInfo
+lastTriggerTextInfo = nil,
 }

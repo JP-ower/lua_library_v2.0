@@ -670,15 +670,15 @@ HorizontalToVerticalFieldOfView = function(p1,p2) end,
 ---@return System.Single
 VerticalToHorizontalFieldOfView = function(p1,p2) end,
 
----函数名：get_main
----返回值：UnityEngine.Camera
----@return UnityEngine.Camera
-main = function() end,
+---主相机
+---类型：UnityEngine.Camera
+---@type UnityEngine.Camera
+main = nil,
 
----函数名：get_current
----返回值：UnityEngine.Camera
----@return UnityEngine.Camera
-current = function() end,
+---当前相机
+---类型：UnityEngine.Camera
+---@type UnityEngine.Camera
+current = nil,
 
 ---函数名：get_scene
 ---@param p1 UnityEngine.Camera

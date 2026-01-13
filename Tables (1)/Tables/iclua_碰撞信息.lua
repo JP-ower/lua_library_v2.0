@@ -17,10 +17,10 @@ CollisionDirectionComparison = function(p1,p2,p3) end,
 ---@return UnityEngine.Vector2
 GetRelativeVelocity = function(p1) end,
 
----函数名：最后创建的碰撞信息
----返回值：UnitCollider.CollisionInfo
----@return UnitCollider.CollisionInfo
-lastCreatedCollisionInfo = function() end,
+---最后创建的碰撞信息
+---类型：UnitCollider.CollisionInfo
+---@type UnitCollider.CollisionInfo
+lastCreatedCollisionInfo = nil,
 
 ---函数名：碰撞单位
 ---描述：·的碰撞单位

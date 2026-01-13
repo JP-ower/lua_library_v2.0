@@ -71,9 +71,9 @@ Add_Vec = function(p1,p2,p3,p4,p5,p6) end,
 ---@param p6 System.Single
 Add_Value = function(p1,p2,p3,p4,p5,p6) end,
 
----函数名：最后创建的单位控制
----返回值：UnitControl
----@return UnitControl
-lastCreatedUnitControl = function() end,
+---最后创建的单位控制
+---类型：UnitControl
+---@type UnitControl
+lastCreatedUnitControl = nil,
 
 }

@@ -49,4 +49,13 @@ SetDetailSFActive = function(p1) end,
 ---@return System.Boolean
 GetDetailSFActive = function() end,
 
+---函数名：添加信息（整数）（2.7599更新）
+---@param p1 Int32 被显示的数字
+---@param p2 System.Single 显示时间
+AddInfo_Int = function(p1,p2) end,
+
+---函数名：添加信息（浮点数）（2.7599更新）
+---@param p1 System.Single 被显示的数字
+---@param p2 System.Single 显示时间
+AddInfo_Float = function(p1,p2) end,
 }

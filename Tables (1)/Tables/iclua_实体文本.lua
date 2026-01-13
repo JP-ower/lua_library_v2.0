@@ -431,9 +431,9 @@ Delete = function(p1) end,
 ---@param p2 System.Single
 Delete_Time = function(p1,p2) end,
 
----函数名：最后创建的实体文本
----返回值：EntityText
----@return EntityText
-lastCreatedEntityText = function() end,
+---最后创建的实体文本
+---类型：EntityText
+---@type EntityText
+lastCreatedEntityText = nil,
 
 }

@@ -13,10 +13,10 @@ GetMusicVolume = function() end,
 ---@return System.Single
 GetSoundVolume = function() end,
 
----函数名：最后创建的声音
----返回值：UnityEngine.AudioSource
----@return UnityEngine.AudioSource
-LastCreatedAudioSource = function() end,
+---最后创建的声音
+---类型：UnityEngine.AudioSource
+---@type UnityEngine.AudioSource
+LastCreatedAudioSource = nil,
 
 ---函数名：播放音乐
 ---描述：播放·音乐，是否循环·

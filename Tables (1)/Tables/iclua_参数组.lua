@@ -56,10 +56,9 @@ GetValue = function(p1,p2) end,
 ---@return System.Object
 GetValue_Index = function(p1,p2) end,
 
----函数名：最后关联的参数组
----描述：最后关联的参数组
----返回值：ParameterDataArray
----@return ParameterDataArray
-lastAssPDA = function() end,
+---最后关联的参数组
+---类型：ParameterDataArray
+---@type ParameterDataArray
+lastAssPDA = nil,
 
 }

@@ -222,10 +222,10 @@ DataGroupToVecDataArray = function(p1) end,
 ---@param p2 DataGroup
 AddDataGroup = function(p1,p2) end,
 
----函数名：最后创建的数据组
----返回值：DataGroup
----@return DataGroup
-lastCreatedDataGroup = function() end,
+---最后创建的数据组
+---类型：DataGroup
+---@type DataGroup
+lastCreatedDataGroup = nil,
 
 ---函数名：选取数据
 ---介绍：请在 [选取数据组内所有数据做动作] 中使用，用来表示当前被选取的数据

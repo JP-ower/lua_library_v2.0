@@ -377,10 +377,10 @@ GetDTDuration = function(p1) end,
 ---@return System.Boolean
 ObjectControlIsNull = function(p1) end,
 
----函数名：最后创建的物体控制
----返回值：ObjectControl
----@return ObjectControl
-lastCreatedObjectControl = function() end,
+---最后创建的物体控制
+---类型：ObjectControl
+---@type ObjectControl
+lastCreatedObjectControl = nil,
 
 ---函数名：物体控制关联的单位
 ---描述：·关联的单位

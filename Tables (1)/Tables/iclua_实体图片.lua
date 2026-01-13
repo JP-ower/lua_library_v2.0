@@ -517,9 +517,9 @@ Delete = function(p1) end,
 ---@param p2 System.Single
 Delete_Time = function(p1,p2) end,
 
----函数名：最后创建的实体图片
----返回值：EntitySprite
----@return EntitySprite
-lastCreatedEntitySprite = function() end,
+---最后创建的实体图片
+---类型：EntitySprite
+---@type EntitySprite
+lastCreatedEntitySprite = nil,
 
 }

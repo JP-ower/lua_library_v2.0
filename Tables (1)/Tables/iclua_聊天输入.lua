@@ -16,9 +16,9 @@ S_GetKeyOpenEnable = function() end,
 ---介绍：结合当聊天信息输入关闭事件可实现禁止部分系统指令输入
 DisableCurrentSystemInput = function() end,
 
----函数名：输入的聊天信息
----返回值：System.String
----@return System.String
-inputInfo = function() end,
+---输入的聊天信息
+---类型：System.String
+---@type System.String
+inputInfo = nil,
 
 }

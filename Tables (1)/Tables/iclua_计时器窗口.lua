@@ -45,9 +45,9 @@ SetTimer = function(p1,p2) end,
 ---@param p1 UI_TimerWindow
 Delete = function(p1) end,
 
----函数名：最后创建的计时器窗口
----返回值：UI_TimerWindow
----@return UI_TimerWindow
-lastCreatedTimerWindow = function() end,
+---最后创建的计时器窗口
+---类型：UI_TimerWindow
+---@type UI_TimerWindow
+lastCreatedTimerWindow = nil,
 
 }

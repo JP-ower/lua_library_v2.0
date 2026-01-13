@@ -115,9 +115,9 @@ ItemDataTypeC = function(p1,p2,p3) end,
 ---@return ItemData
 GetItemData = function(p1) end,
 
----函数名：触发的物品
----返回值：ItemData
----@return ItemData
-triggerItemData = function() end,
+---触发的物品
+---类型：ItemData
+---@type ItemData
+triggerItemData = nil,
 
 }

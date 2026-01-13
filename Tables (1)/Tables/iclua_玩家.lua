@@ -104,9 +104,9 @@ SetUnitControlState = function(p1,p2) end,
 ---@return System.Boolean
 GetUnitControlState = function(p1) end,
 
----函数名：触发玩家
----返回值：Player
----@return Player
-triggerPlayer = function() end,
+---触发玩家
+---类型：Player
+---@type Player
+triggerPlayer = nil,
 
 }

@@ -8,10 +8,10 @@ UI_FloatingText = {
 ---@return System.Boolean
 IsTriggerCreate = function(p1) end,
 
----函数名：最后创建的漂浮文字
----返回值：UI_FloatingText
----@return UI_FloatingText
-LastCreatedFloatingText = function() end,
+---最后创建的漂浮文字
+---类型：UI_FloatingText
+---@type UI_FloatingText
+LastCreatedFloatingText = nil,
 
 ---函数名：创建漂浮文字
 ---描述：创建一个内容为·，大小为·的漂浮文字，在·，覆盖同位置同内容的漂浮文字·

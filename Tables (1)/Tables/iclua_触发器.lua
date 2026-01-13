@@ -116,4 +116,25 @@ RunLuaData = function(p1) end,
 ---@return TriggerData
 GetTriggerData = function(p1) end,
 
+---函数名：全局玩家死亡后的函数中断模式（2.7623更新）
+---描述：全局玩家死亡后的函数中断模式
+---@return FunctionBreakMode
+---@return System.Boolean
+GetPlayerDeathFunctionBreakMode = function() end,
+
+---函数名：设置全局玩家死亡后的函数中断模式（2.7623更新）
+---描述：设置全局玩家死亡后的函数中断模式
+---@param p1 FunctionBreakMode
+SetPlayerDeathFunctionBreakMode = function(p1) end,
+
+---函数名：全局玩家重生后的函数中断模式（2.7623更新）
+---描述：全局玩家重生后的函数中断模式
+---@return FunctionBreakMode
+---@return System.Boolean
+GetPlayerReviveFunctionBreakMode = function() end,
+
+---函数名：设置全局玩家重生后的函数中断模式（2.7623更新）
+---描述：设置全局玩家重生后的函数中断模式
+---@param p1 FunctionBreakMode
+SetPlayerReviveFunctionBreakMode = function(p1) end,
 }

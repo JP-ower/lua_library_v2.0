@@ -163,9 +163,9 @@ GetCursorVisible = function() end,
 ---@return System.Boolean
 GetCapsLockStatus = function() end,
 
----函数名：玩家控制输入关闭次数
----返回值：System.Int32
----@return System.Int32
-controlInputIndex = function() end,
+---玩家控制输入关闭次数
+---类型：System.Int32
+---@type System.Int32
+controlInputIndex = nil,
 
 }

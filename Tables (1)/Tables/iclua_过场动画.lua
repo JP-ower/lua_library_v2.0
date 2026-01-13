@@ -436,10 +436,10 @@ SetDF_Density = function(p1,p2) end,
 ---@param p2 System.String
 TE_Debug = function(p1,p2) end,
 
----函数名：最后创建的过场动画
----返回值：JFY_TransitionEffect
----@return JFY_TransitionEffect
-lastCreateTE = function() end,
+---最后创建的过场动画
+---类型：JFY_TransitionEffect
+---@type JFY_TransitionEffect
+lastCreateTE = nil,
 
 ---函数名：触发的过场动画
 ---介绍：回调中也可以使用

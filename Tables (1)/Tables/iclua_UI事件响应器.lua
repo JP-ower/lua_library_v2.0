@@ -114,20 +114,19 @@ Delete = function(p1) end,
 ---@param p4 ActionDataArray
 SetCallback = function(p1,p2,p3,p4) end,
 
----函数名：最后事件响应的UI
----返回值：UI_XRT
----@return UI_XRT
-lastEventCallbackUI = function() end,
+---最后事件响应的UI
+---类型：UI_XRT
+---@type UI_XRT
+lastEventCallbackUI = nil,
 
----函数名：最后创建的UI事件响应器
----返回值：UI_XEventCallback
----@return UI_XEventCallback
-lastCreatedEC = function() end,
+---最后创建的UI事件响应器
+---类型：UI_XEventCallback
+---@type UI_XEventCallback
+lastCreatedEC = nil,
 
----函数名：触发的UI事件响应器
----介绍：可在触发事件时获取，也可以当最后创建的UI事件响应器来使用
----返回值：UI_XEventCallback
----@return UI_XEventCallback
-triggeredEC = function() end,
+---触发的UI事件响应器
+---类型：UI_XEventCallback
+---@type UI_XEventCallback
+triggeredEC = nil,
 
 }

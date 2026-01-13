@@ -1,10 +1,10 @@
 ---@meta
 ---@class GamePhysics.RaycastHitInfo
 GamePhysics.RaycastHitInfo = {
----函数名：最后的射线检测信息
----返回值：GamePhysics.RaycastHitInfo
----@return GamePhysics.RaycastHitInfo
-lastRHI = function() end,
+---最后的射线检测信息
+---类型：GamePhysics.RaycastHitInfo
+---@type GamePhysics.RaycastHitInfo
+lastRHI = nil,
 
 ---函数名：宽度
 ---描述：·的宽度

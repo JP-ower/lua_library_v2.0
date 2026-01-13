@@ -16,14 +16,14 @@ TypeComparison = function(p1,p2) end,
 ---@return UnitStateType
 GetUnitStateType = function(p1) end,
 
----函数名：最后添加的状态
----返回值：UnitState
----@return UnitState
-lastAddState = function() end,
+---最后添加的状态
+---类型：UnitState
+---@type UnitState
+lastAddState = nil,
 
----函数名：最后删除的状态
----返回值：UnitState
----@return UnitState
-lastRemoveState = function() end,
+---最后删除的状态
+---类型：UnitState
+---@type UnitState
+lastRemoveState = nil,
 
 }

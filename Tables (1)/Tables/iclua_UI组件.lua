@@ -679,15 +679,15 @@ Delete = function(p1) end,
 ---@param p2 System.Single
 Delete_Time = function(p1,p2) end,
 
----函数名：上一个创建的UI组件
----返回值：UI_XRT
----@return UI_XRT
-prevCreatedXRT = function() end,
+---上一个创建的UI组件
+---类型：UI_XRT
+---@type UI_XRT
+prevCreatedXRT = nil,
 
----函数名：最后创建的UI组件
----返回值：UI_XRT
----@return UI_XRT
-lastCreatedXRT = function() end,
+---最后创建的UI组件
+---类型：UI_XRT
+---@type UI_XRT
+lastCreatedXRT = nil,
 
 ---函数名：查找UI组件（标签）（2.7597更新）
 ---@param p1 UI_XRT 在组件上查找
@@ -699,4 +699,11 @@ FindXRT_Tag = function(p1,p2) end,
 ---@return UI_XRT
 GetLastEventCallbackUI = function() end,
 
+---函数名：通过下标获取子节点UI组件（2.762更新）
+---描述：·中下标·的子节点UI组件
+---@param p1 UI_XRT
+---@param p2 Int32
+---返回值：UI_XRT
+---@return UI_XRT
+GetChildXRT = function(p1,p2) end,
 }

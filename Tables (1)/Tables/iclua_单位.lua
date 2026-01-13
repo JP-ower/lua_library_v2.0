@@ -1842,10 +1842,10 @@ GetBounciness = function(p1) end,
 ---@return UnityEngine.GameObject
 GetGameObject = function(p1) end,
 
----函数名：最后移动的坐标
----返回值：UnityEngine.Vector2
----@return UnityEngine.Vector2
-lastMovePos = function() end,
+---最后移动的坐标
+---类型：UnityEngine.Vector2
+---@type UnityEngine.Vector2
+lastMovePos = nil,
 
 ---函数名：最后设置的坐标
 ---描述：·最后设置的坐标
@@ -1861,15 +1861,14 @@ lastPos = function(p1) end,
 ---@return UnityEngine.Vector2
 offsetPos = function(p1) end,
 
----函数名：最后造成的伤害值
----描述：最后造成的伤害值
----返回值：System.Single
----@return System.Single
-lastDamageValue = function() end,
+---最后造成的伤害值
+---类型：System.Single
+---@type System.Single
+lastDamageValue = nil,
 
----函数名：最后按下的控制键
----返回值：ControlKey
----@return ControlKey
-lastInputControlKey = function() end,
+---最后按下的控制键
+---类型：ControlKey
+---@type ControlKey
+lastInputControlKey = nil,
 
 }

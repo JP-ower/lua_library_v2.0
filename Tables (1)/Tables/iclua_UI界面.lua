@@ -40,15 +40,15 @@ FindXText = function(p1,p2) end,
 ---@return UI_XImage
 FindXImage = function(p1,p2) end,
 
----函数名：最后创建的UI
----返回值：UI_XUI
----@return UI_XUI
-lastCreatedXUI = function() end,
+---最后创建的UI
+---类型：UI_XUI
+---@type UI_XUI
+lastCreatedXUI = nil,
 
----函数名：最后创建的UI的顶部组件
----返回值：UI_XRT
----@return UI_XRT
-lastCreatedRootXRT = function() end,
+---最后创建的UI的顶部组件
+---类型：UI_XRT
+---@type UI_XRT
+lastCreatedRootXRT = nil,
 
 ---函数名：查找UI组件（标签）（2.7597更新）
 ---@param p1 UI_XUI

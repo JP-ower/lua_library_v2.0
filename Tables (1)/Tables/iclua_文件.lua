@@ -42,4 +42,16 @@ GameFileIsExists = function(p1) end,
 ---@return System.String
 LoadStrFromOtherGameFile = function(p1,p2) end,
 
+---函数名：获取文件 MD5 值（2.7599更新，王炸功能！）
+---<br/>这个函数能够保护你的游戏地图不被篡改。(主要防止 Lua 文件被篡改)
+---<br/>文件路径示例：
+---防止 Test.lua 文件被篡改
+---```lua
+---local md5 = FileManager.GetMD5HashFromFile(Data.GetCurrentGameFileFullPath_Dir("Lua").."/Test.lua")
+---
+---```
+---@param p1 System.String 文件路径
+---@return System.String
+GetMD5HashFromFile = function(p1) end,
+
 }

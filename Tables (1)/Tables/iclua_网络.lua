@@ -51,22 +51,22 @@ LoadCusLevelDataInfoFromServer_T = function(p1,p2) end,
 ---@return System.String
 LastLoadedNetworkTime = function() end,
 
----函数名：服务器返回的错误信息
+---服务器返回的错误信息
 ---介绍：可以用在服务器回调动作中
----返回值：System.String
----@return System.String
-serverCallbackErrorInfo = function() end,
+---类型：System.String
+---@type System.String
+serverCallbackErrorInfo = nil,
 
----函数名：服务器返回的信息
+---服务器返回的信息
 ---介绍：可以用在服务器回调动作中
----返回值：System.String
----@return System.String
-serverCallbackInfo = function() end,
+---类型：System.String
+---@type System.String
+serverCallbackInfo = nil,
 
----函数名：服务器加载的对象
+---服务器加载的对象
 ---介绍：可以用在服务器回调动作中
----返回值：System.Object
----@return System.Object
-serverCallbackOBJ = function() end,
+---类型：System.Object
+---@type System.Object
+serverCallbackOBJ = nil,
 
 }

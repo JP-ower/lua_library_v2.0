@@ -30,10 +30,10 @@ TouchUnitCount = function(p1) end,
 ---@return UnitGroup
 GetTouchUnitGround = function(p1) end,
 
----函数名：最后触摸信息
----返回值：TouchInfo
----@return TouchInfo
-lastTouchInfo = function() end,
+---最后触摸信息
+---类型：TouchInfo
+---@type TouchInfo
+lastTouchInfo = nil,
 
 ---函数名：触摸ID
 ---描述：·触摸的ID

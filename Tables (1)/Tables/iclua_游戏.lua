@@ -429,15 +429,15 @@ SetSaveArchiveEnable = function(p1) end,
 ---@return System.Boolean
 GetSaveArchiveEnable = function() end,
 
----函数名：全部玩家死亡
----返回值：System.Boolean
----@return System.Boolean
-isAllPlayerDeath = function() end,
+---全部玩家死亡
+---类型：System.Boolean
+---@type System.Boolean
+isAllPlayerDeath = nil,
 
----函数名：死亡玩家数量
----返回值：System.Int32
----@return System.Int32
-deathPlayerCount = function() end,
+---死亡玩家数量
+---类型：System.Int32
+---@type System.Int32
+deathPlayerCount = nil,
 
 ---最后发生的错误信息（2.7595更新）
 ---@type System.String

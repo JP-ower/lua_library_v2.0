@@ -227,14 +227,14 @@ ReLevel_UnitRect = function(p1,p2,p3) end,
 ---@return DataGroup
 SaveAllLevelToDataGroup = function(p1) end,
 
----函数名：触发的关卡
----返回值：Level
----@return Level
-triggerLevel = function() end,
+---触发的关卡
+---类型：Level
+---@type Level
+triggerLevel = nil,
 
----函数名：最后创建的关卡
----返回值：Level
----@return Level
-LastCreatedLevel = function() end,
+---最后创建的关卡
+---类型：Level
+---@type Level
+LastCreatedLevel = nil,
 
 }

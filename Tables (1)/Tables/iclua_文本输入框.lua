@@ -59,4 +59,14 @@ GetLineType = function(p1) end,
 ---@deprecated
 SetPassInputCondition = function(p1,p2,p3) end,
 
+---函数名：清空输入时的提示文本（2.7595更新）
+---@param p1 UI_TextInputBox
+---@return System.String
+GetClearInputText = function(p1) end,
+
+---函数名：设置清空输入时的提示文本（2.7595更新）
+---@param p1 UI_TextInputBox
+---@param p2 System.String
+SetClearInputText = function(p1,p2) end,
+
 }

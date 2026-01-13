@@ -136,10 +136,10 @@ RunGroupAction_R = function(p1,p2) end,
 ---函数名：终止选取单位组内所有单位做动作
 StopGroupAction = function() end,
 
----函数名：最后创建的单位组
----返回值：UnitGroup
----@return UnitGroup
-lastCreatedUnitGroup = function() end,
+---最后创建的单位组
+---类型：UnitGroup
+---@type UnitGroup
+lastCreatedUnitGroup = nil,
 
 ---函数名：选取单位
 ---返回值：Unit

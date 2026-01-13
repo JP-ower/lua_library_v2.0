@@ -245,14 +245,29 @@ SetUnscaled = function(p1,p2) end,
 ---@return System.Boolean
 GetUnscaled = function(p1) end,
 
----函数名：到期的计时器
----返回值：Timer
----@return Timer
-expiredTimer = function() end,
+---到期的计时器
+---类型：Timer
+---@type Timer
+expiredTimer = nil,
 
----函数名：最后创建的计时器
----返回值：Timer
----@return Timer
-lastCreatedTimer = function() end,
+---最后创建的计时器
+---类型：Timer
+---@type Timer
+lastCreatedTimer = nil,
 
+---创建计时器并运行（设置模式和动作）（2.773更新）
+---介绍：运行次数为负数时代表无限
+---@param p1 System.Int32
+---@param p2 Timer.RunMode
+---@param p3 System.Int32
+---@param p4 System.Int32
+---@param p5 ActionDataArray
+---@param p6 ActionDataArray
+TCreate_SetModeAndFDA_InitRun = function(p1,p2,p3,p4,p5,p6) end,
+
+---函数名：运行计时器（2.773更新）
+---描述：运行·
+---介绍：直接运行一次计时器
+---@param p1 Timer
+RunTimer = function(p1) end,
 }

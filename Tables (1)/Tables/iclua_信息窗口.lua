@@ -139,9 +139,9 @@ GetConfirmButtonXText = function(p1) end,
 ---@return UI_InfoBox
 TInfoBox = function() end,
 
----函数名：最后创建的信息框
----返回值：UI_InfoBox
----@return UI_InfoBox
-lastCreatedInfoBox = function() end,
+---最后创建的信息框
+---类型：UI_InfoBox
+---@type UI_InfoBox
+lastCreatedInfoBox = nil,
 
 }

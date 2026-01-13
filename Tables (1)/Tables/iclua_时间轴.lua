@@ -111,9 +111,9 @@ FirstPlayerReviveStop = function(p1) end,
 ---@param p1 TimeLineData
 AllPlayerDeathStop = function(p1) end,
 
----函数名：最后运行的时间轴
----返回值：TimeLineData
----@return TimeLineData
-lastRunTimeLineData = function() end,
+---最后运行的时间轴
+---类型：TimeLineData
+---@type TimeLineData
+lastRunTimeLineData = nil,
 
 }

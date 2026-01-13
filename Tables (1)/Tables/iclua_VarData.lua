@@ -365,9 +365,9 @@ valueTextPrefix = function(p1) end,
 ---@return System.String
 valueTextSuffix = function(p1) end,
 
----函数名：openAutoSetValueText
----返回值：System.Boolean
----@return System.Boolean
-openAutoSetValueText = function() end,
+---openAutoSetValueText
+---类型：System.Boolean
+---@type System.Boolean
+openAutoSetValueText = nil,
 
 }

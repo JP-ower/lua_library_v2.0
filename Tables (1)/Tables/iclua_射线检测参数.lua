@@ -17,14 +17,14 @@ SetTargetCDA = function(p1,p2) end,
 ---@deprecated
 SetHinderCDA = function(p1,p2) end,
 
----函数名：射线参数单位
----返回值：Unit
----@return Unit
-rpu = function() end,
+---射线参数单位
+---类型：Unit
+---@type Unit
+rpu = nil,
 
----函数名：默认的射线检测参数
----返回值：GamePhysics.RaycastParameter
----@return GamePhysics.RaycastParameter
-defRP = function() end,
+---默认的射线检测参数
+---类型：GamePhysics.RaycastParameter
+---@type GamePhysics.RaycastParameter
+defRP = nil,
 
 }

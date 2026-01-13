@@ -852,10 +852,10 @@ Delete = function(p1) end,
 ---@param p2 System.Single
 Delete_Time = function(p1,p2) end,
 
----函数名：最后创建的UI图片
----返回值：UI_XImage
----@return UI_XImage
-lastCreatedXImage = function() end,
+---最后创建的UI图片
+---类型：UI_XImage
+---@type UI_XImage
+lastCreatedXImage = nil,
 
 ---函数名：从UI组件上查找UI图片（标签）（2.7597更新）
 ---@param p1 UI_XRT
@@ -863,4 +863,11 @@ lastCreatedXImage = function() end,
 ---@return UI_XImage
 FindXImage_Tag = function(p1,p2) end,
 
+---函数名：通过下标获取子节点UI组件（2.762更新）
+---描述：·中下标·的子节点UI组件
+---@param p1 UI_XImage
+---@param p2 Int32
+---返回值：UI_XRT
+---@return UI_XRT
+GetChildXRT = function(p1,p2) end,
 }
