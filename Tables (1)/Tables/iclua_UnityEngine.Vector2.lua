@@ -326,17 +326,15 @@ negativeInfinity = function() end,
 ---@return System.Type
 GetType = function(p1) end,
 
----函数名：x
----@param p1 UnityEngine.Vector2
----返回值：System.Single
----@return System.Single
-x = function(p1) end,
+---二维向量的x值
+---类型：System.Single
+---@type System.Single
+x = nil,
 
----函数名：y
----@param p1 UnityEngine.Vector2
----返回值：System.Single
----@return System.Single
-y = function(p1) end,
+---二维向量的y值
+---类型：System.Single
+---@type System.Single
+y = nil,
 
 ---函数名：kEpsilon
 ---返回值：System.Single
