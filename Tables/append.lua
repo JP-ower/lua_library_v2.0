@@ -14,3 +14,6 @@
 ---@alias TimeLineNodeData nil x-x
 ---@alias LuaData nil x-x
 ---@alias UIData nil x-x
+
+---2.Other
+---@alias Data.D_Void function
