@@ -1,0 +1,619 @@
+---@meta
+---@class UnityEngine.UI.Slider
+UnityEngine.UI.Slider = {
+---字段名：get_fillRect<p>
+---@type UnityEngine.RectTransform
+fillRect = nil,
+
+---字段名：get_handleRect<p>
+---@type UnityEngine.RectTransform
+handleRect = nil,
+
+---字段名：get_direction<p>
+---@type UnityEngine.UI.Slider.Direction
+direction = nil,
+
+---字段名：get_minValue<p>
+---@type System.Single
+minValue = nil,
+
+---字段名：get_maxValue<p>
+---@type System.Single
+maxValue = nil,
+
+---字段名：get_wholeNumbers<p>
+---@type System.Boolean
+wholeNumbers = nil,
+
+---字段名：get_value<p>
+---@type System.Single
+value = nil,
+
+---函数名：SetValueWithoutNotify<p>
+---@param self UnityEngine.UI.Slider
+---@param input System.Single
+SetValueWithoutNotify = function(self,input) end,
+
+---字段名：get_normalizedValue<p>
+---@type System.Single
+normalizedValue = nil,
+
+---字段名：get_onValueChanged<p>
+---@type UnityEngine.UI.Slider.SliderEvent
+onValueChanged = nil,
+
+---函数名：Rebuild<p>
+---@param self UnityEngine.UI.Slider
+---@param executing UnityEngine.UI.CanvasUpdate
+Rebuild = function(self,executing) end,
+
+---函数名：LayoutComplete<p>
+---@param self UnityEngine.UI.Slider
+LayoutComplete = function(self) end,
+
+---函数名：GraphicUpdateComplete<p>
+---@param self UnityEngine.UI.Slider
+GraphicUpdateComplete = function(self) end,
+
+---函数名：OnPointerDown<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerDown = function(self,eventData) end,
+
+---函数名：OnDrag<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnDrag = function(self,eventData) end,
+
+---函数名：OnMove<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.AxisEventData
+OnMove = function(self,eventData) end,
+
+---函数名：FindSelectableOnLeft<p>
+---@param self UnityEngine.UI.Slider
+---@return UnityEngine.UI.Selectable
+FindSelectableOnLeft = function(self) end,
+
+---函数名：FindSelectableOnRight<p>
+---@param self UnityEngine.UI.Slider
+---@return UnityEngine.UI.Selectable
+FindSelectableOnRight = function(self) end,
+
+---函数名：FindSelectableOnUp<p>
+---@param self UnityEngine.UI.Slider
+---@return UnityEngine.UI.Selectable
+FindSelectableOnUp = function(self) end,
+
+---函数名：FindSelectableOnDown<p>
+---@param self UnityEngine.UI.Slider
+---@return UnityEngine.UI.Selectable
+FindSelectableOnDown = function(self) end,
+
+---函数名：OnInitializePotentialDrag<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnInitializePotentialDrag = function(self,eventData) end,
+
+---函数名：SetDirection<p>
+---@param self UnityEngine.UI.Slider
+---@param direction UnityEngine.UI.Slider.Direction
+---@param includeRectLayouts System.Boolean
+SetDirection = function(self,direction,includeRectLayouts) end,
+
+---字段名：get_navigation<p>
+---@type UnityEngine.UI.Navigation
+navigation = nil,
+
+---字段名：get_transition<p>
+---@type UnityEngine.UI.Selectable.Transition
+transition = nil,
+
+---字段名：get_colors<p>
+---@type UnityEngine.UI.ColorBlock
+colors = nil,
+
+---字段名：get_spriteState<p>
+---@type UnityEngine.UI.SpriteState
+spriteState = nil,
+
+---字段名：get_animationTriggers<p>
+---@type UnityEngine.UI.AnimationTriggers
+animationTriggers = nil,
+
+---字段名：get_targetGraphic<p>
+---@type UnityEngine.UI.Graphic
+targetGraphic = nil,
+
+---字段名：get_interactable<p>
+---@type System.Boolean
+interactable = nil,
+
+---字段名：get_image<p>
+---@type UnityEngine.UI.Image
+image = nil,
+
+---字段名：get_animator<p>
+---@type UnityEngine.Animator
+animator = nil,
+
+---函数名：IsInteractable<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Boolean
+IsInteractable = function(self) end,
+
+---函数名：FindSelectable<p>
+---@param self UnityEngine.UI.Slider
+---@param dir UnityEngine.Vector3
+---@return UnityEngine.UI.Selectable
+FindSelectable = function(self,dir) end,
+
+---函数名：OnPointerUp<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerUp = function(self,eventData) end,
+
+---函数名：OnPointerEnter<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerEnter = function(self,eventData) end,
+
+---函数名：OnPointerExit<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerExit = function(self,eventData) end,
+
+---函数名：OnSelect<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnSelect = function(self,eventData) end,
+
+---函数名：OnDeselect<p>
+---@param self UnityEngine.UI.Slider
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnDeselect = function(self,eventData) end,
+
+---函数名：Select<p>
+---@param self UnityEngine.UI.Slider
+Select = function(self) end,
+
+---函数名：IsActive<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Boolean
+IsActive = function(self) end,
+
+---函数名：IsDestroyed<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Boolean
+IsDestroyed = function(self) end,
+
+---函数名：IsInvoking<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Boolean
+IsInvoking = function(self) end,
+
+---函数名：CancelInvoke<p>
+---@param self UnityEngine.UI.Slider
+CancelInvoke = function(self) end,
+
+---函数名：Invoke<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param time System.Single
+Invoke = function(self,methodName,time) end,
+
+---函数名：InvokeRepeating<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param time System.Single
+---@param repeatRate System.Single
+InvokeRepeating = function(self,methodName,time,repeatRate) end,
+
+---函数名：CancelInvoke<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+CancelInvoke = function(self,methodName) end,
+
+---函数名：IsInvoking<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@return System.Boolean
+IsInvoking = function(self,methodName) end,
+
+---函数名：StartCoroutine<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@return UnityEngine.Coroutine
+StartCoroutine = function(self,methodName) end,
+
+---函数名：StartCoroutine<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param value System.Object
+---@return UnityEngine.Coroutine
+StartCoroutine = function(self,methodName,value) end,
+
+---函数名：StartCoroutine<p>
+---@param self UnityEngine.UI.Slider
+---@param routine System.Collections.IEnumerator
+---@return UnityEngine.Coroutine
+StartCoroutine = function(self,routine) end,
+
+---函数名：StartCoroutine_Auto<p>
+---@param self UnityEngine.UI.Slider
+---@param routine System.Collections.IEnumerator
+---@return UnityEngine.Coroutine
+StartCoroutine_Auto = function(self,routine) end,
+
+---函数名：StopCoroutine<p>
+---@param self UnityEngine.UI.Slider
+---@param routine System.Collections.IEnumerator
+StopCoroutine = function(self,routine) end,
+
+---函数名：StopCoroutine<p>
+---@param self UnityEngine.UI.Slider
+---@param routine UnityEngine.Coroutine
+StopCoroutine = function(self,routine) end,
+
+---函数名：StopCoroutine<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+StopCoroutine = function(self,methodName) end,
+
+---函数名：StopAllCoroutines<p>
+---@param self UnityEngine.UI.Slider
+StopAllCoroutines = function(self) end,
+
+---字段名：get_useGUILayout<p>
+---@type System.Boolean
+useGUILayout = nil,
+
+---字段名：get_runInEditMode<p>
+---@type System.Boolean
+runInEditMode = nil,
+
+---字段名：get_enabled<p>
+---@type System.Boolean
+enabled = nil,
+
+---字段名：get_isActiveAndEnabled<p>
+---@type System.Boolean
+isActiveAndEnabled = nil,
+
+---字段名：get_transform<p>
+---@type UnityEngine.Transform
+transform = nil,
+
+---字段名：get_gameObject<p>
+---@type UnityEngine.GameObject
+gameObject = nil,
+
+---函数名：GetComponent<p>
+---@param self UnityEngine.UI.Slider
+---@param type System.Type
+---@return UnityEngine.Component
+GetComponent = function(self,type) end,
+
+---函数名：GetComponent<p>
+---@param self UnityEngine.UI.Slider
+---@return 
+GetComponent = function(self) end,
+
+---函数名：TryGetComponent<p>
+---@param self UnityEngine.UI.Slider
+---@param type System.Type
+---@param component UnityEngine.Component&
+---@return System.Boolean
+TryGetComponent = function(self,type,component) end,
+
+---函数名：TryGetComponent<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Boolean
+TryGetComponent = function(self) end,
+
+---函数名：GetComponent<p>
+---@param self UnityEngine.UI.Slider
+---@param type System.String
+---@return UnityEngine.Component
+GetComponent = function(self,type) end,
+
+---函数名：GetComponentInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@param includeInactive System.Boolean
+---@return UnityEngine.Component
+GetComponentInChildren = function(self,t,includeInactive) end,
+
+---函数名：GetComponentInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@return UnityEngine.Component
+GetComponentInChildren = function(self,t) end,
+
+---函数名：GetComponentInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param includeInactive System.Boolean
+---@return 
+GetComponentInChildren = function(self,includeInactive) end,
+
+---函数名：GetComponentInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@return 
+GetComponentInChildren = function(self) end,
+
+---函数名：GetComponentsInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@param includeInactive System.Boolean
+---@return UnityEngine.Component[]
+GetComponentsInChildren = function(self,t,includeInactive) end,
+
+---函数名：GetComponentsInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@return UnityEngine.Component[]
+GetComponentsInChildren = function(self,t) end,
+
+---函数名：GetComponentsInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param includeInactive System.Boolean
+---@return T[]
+GetComponentsInChildren = function(self,includeInactive) end,
+
+---函数名：GetComponentsInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@param includeInactive System.Boolean
+GetComponentsInChildren = function(self,includeInactive) end,
+
+---函数名：GetComponentsInChildren<p>
+---@param self UnityEngine.UI.Slider
+---@return T[]
+GetComponentsInChildren = function(self) end,
+
+---函数名：GetComponentsInChildren<p>
+---@param self UnityEngine.UI.Slider
+GetComponentsInChildren = function(self) end,
+
+---函数名：GetComponentInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@param includeInactive System.Boolean
+---@return UnityEngine.Component
+GetComponentInParent = function(self,t,includeInactive) end,
+
+---函数名：GetComponentInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@return UnityEngine.Component
+GetComponentInParent = function(self,t) end,
+
+---函数名：GetComponentInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param includeInactive System.Boolean
+---@return 
+GetComponentInParent = function(self,includeInactive) end,
+
+---函数名：GetComponentInParent<p>
+---@param self UnityEngine.UI.Slider
+---@return 
+GetComponentInParent = function(self) end,
+
+---函数名：GetComponentsInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@param includeInactive System.Boolean
+---@return UnityEngine.Component[]
+GetComponentsInParent = function(self,t,includeInactive) end,
+
+---函数名：GetComponentsInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param t System.Type
+---@return UnityEngine.Component[]
+GetComponentsInParent = function(self,t) end,
+
+---函数名：GetComponentsInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param includeInactive System.Boolean
+---@return T[]
+GetComponentsInParent = function(self,includeInactive) end,
+
+---函数名：GetComponentsInParent<p>
+---@param self UnityEngine.UI.Slider
+---@param includeInactive System.Boolean
+GetComponentsInParent = function(self,includeInactive) end,
+
+---函数名：GetComponentsInParent<p>
+---@param self UnityEngine.UI.Slider
+---@return T[]
+GetComponentsInParent = function(self) end,
+
+---函数名：GetComponents<p>
+---@param self UnityEngine.UI.Slider
+---@param type System.Type
+---@return UnityEngine.Component[]
+GetComponents = function(self,type) end,
+
+---函数名：GetComponents<p>
+---@param self UnityEngine.UI.Slider
+---@param type System.Type
+---@param results System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+GetComponents = function(self,type,results) end,
+
+---函数名：GetComponents<p>
+---@param self UnityEngine.UI.Slider
+GetComponents = function(self) end,
+
+---字段名：get_tag<p>
+---@type System.String
+tag = nil,
+
+---函数名：GetComponents<p>
+---@param self UnityEngine.UI.Slider
+---@return T[]
+GetComponents = function(self) end,
+
+---函数名：CompareTag<p>
+---@param self UnityEngine.UI.Slider
+---@param tag System.String
+---@return System.Boolean
+CompareTag = function(self,tag) end,
+
+---函数名：SendMessageUpwards<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param value System.Object
+---@param options UnityEngine.SendMessageOptions
+SendMessageUpwards = function(self,methodName,value,options) end,
+
+---函数名：SendMessageUpwards<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param value System.Object
+SendMessageUpwards = function(self,methodName,value) end,
+
+---函数名：SendMessageUpwards<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+SendMessageUpwards = function(self,methodName) end,
+
+---函数名：SendMessageUpwards<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param options UnityEngine.SendMessageOptions
+SendMessageUpwards = function(self,methodName,options) end,
+
+---函数名：SendMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param value System.Object
+SendMessage = function(self,methodName,value) end,
+
+---函数名：SendMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+SendMessage = function(self,methodName) end,
+
+---函数名：SendMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param value System.Object
+---@param options UnityEngine.SendMessageOptions
+SendMessage = function(self,methodName,value,options) end,
+
+---函数名：SendMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param options UnityEngine.SendMessageOptions
+SendMessage = function(self,methodName,options) end,
+
+---函数名：BroadcastMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param parameter System.Object
+---@param options UnityEngine.SendMessageOptions
+BroadcastMessage = function(self,methodName,parameter,options) end,
+
+---函数名：BroadcastMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param parameter System.Object
+BroadcastMessage = function(self,methodName,parameter) end,
+
+---函数名：BroadcastMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+BroadcastMessage = function(self,methodName) end,
+
+---函数名：BroadcastMessage<p>
+---@param self UnityEngine.UI.Slider
+---@param methodName System.String
+---@param options UnityEngine.SendMessageOptions
+BroadcastMessage = function(self,methodName,options) end,
+
+---字段名：get_rigidbody<p>
+---@type UnityEngine.Component
+rigidbody = nil,
+
+---字段名：get_rigidbody2D<p>
+---@type UnityEngine.Component
+rigidbody2D = nil,
+
+---字段名：get_camera<p>
+---@type UnityEngine.Component
+camera = nil,
+
+---字段名：get_light<p>
+---@type UnityEngine.Component
+light = nil,
+
+---字段名：get_animation<p>
+---@type UnityEngine.Component
+animation = nil,
+
+---字段名：get_constantForce<p>
+---@type UnityEngine.Component
+constantForce = nil,
+
+---字段名：get_renderer<p>
+---@type UnityEngine.Component
+renderer = nil,
+
+---字段名：get_audio<p>
+---@type UnityEngine.Component
+audio = nil,
+
+---字段名：get_networkView<p>
+---@type UnityEngine.Component
+networkView = nil,
+
+---字段名：get_collider<p>
+---@type UnityEngine.Component
+collider = nil,
+
+---字段名：get_collider2D<p>
+---@type UnityEngine.Component
+collider2D = nil,
+
+---字段名：get_hingeJoint<p>
+---@type UnityEngine.Component
+hingeJoint = nil,
+
+---字段名：get_particleSystem<p>
+---@type UnityEngine.Component
+particleSystem = nil,
+
+---函数名：GetInstanceID<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Int32
+GetInstanceID = function(self) end,
+
+---函数名：GetHashCode<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Int32
+GetHashCode = function(self) end,
+
+---函数名：Equals<p>
+---@param self UnityEngine.UI.Slider
+---@param other System.Object
+---@return System.Boolean
+Equals = function(self,other) end,
+
+---字段名：get_name<p>
+---@type System.String
+name = nil,
+
+---字段名：get_hideFlags<p>
+---@type UnityEngine.HideFlags
+hideFlags = nil,
+
+---函数名：ToString<p>
+---@param self UnityEngine.UI.Slider
+---@return System.String
+ToString = function(self) end,
+
+---函数名：GetType<p>
+---@param self UnityEngine.UI.Slider
+---@return System.Type
+GetType = function(self) end,
+
+}
