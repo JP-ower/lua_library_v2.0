@@ -1,0 +1,16 @@
+---1.Important
+---@alias System.Int32 number
+---@alias System.Single number
+---@alias System.String string
+---@alias System.Object any
+---@alias System.Boolean boolean
+---@alias EventDataArray nil x-x
+---@alias FunctionBreakMode nil x-x
+---@alias SpriteDisplayData nil x-x
+---@alias VectorData nil x-x
+---@alias Unit.TransformType nil x-x
+---@alias UI_Barrage nil x-x
+---@alias UnityEngine.AudioSource nil x-x
+---@alias TimeLineNodeData nil x-x
+---@alias LuaData nil x-x
+---@alias UIData nil x-x
