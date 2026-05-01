@@ -1,168 +1,150 @@
 ---@meta
 ---@class UnityEngine.Renderer
 UnityEngine.Renderer = {
----字段名：get_lightmapTilingOffset<p>
----@type UnityEngine.Vector4
-lightmapTilingOffset = nil,
 
----字段名：get_lightProbeAnchor<p>
----@type UnityEngine.Transform
-lightProbeAnchor = nil,
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, parameter: System.Object, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, parameter: System.Object)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, options: UnityEngine.SendMessageOptions)
+BroadcastMessage = function(...) end,
 
----字段名：get_castShadows<p>
----@type System.Boolean
-castShadows = nil,
+---函数名：GetComponent<p>
+---函数名：GetComponent<p>
+---函数名：GetComponent<p>
+---@overload fun(self: UnityEngine.Renderer, type: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.Renderer):any
+---@overload fun(self: UnityEngine.Renderer, type: System.String):UnityEngine.Component
+GetComponent = function(...) end,
 
----字段名：get_motionVectors<p>
----@type System.Boolean
-motionVectors = nil,
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---@overload fun(self: UnityEngine.Renderer, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component
+---@overload fun(self: UnityEngine.Renderer, t: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.Renderer, includeInactive: System.Boolean):any
+---@overload fun(self: UnityEngine.Renderer):any
+GetComponentInChildren = function(...) end,
 
----字段名：get_useLightProbes<p>
----@type System.Boolean
-useLightProbes = nil,
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---@overload fun(self: UnityEngine.Renderer, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component
+---@overload fun(self: UnityEngine.Renderer):any
+---@overload fun(self: UnityEngine.Renderer, includeInactive: System.Boolean):any
+---@overload fun(self: UnityEngine.Renderer, t: System.Type):UnityEngine.Component
+GetComponentInParent = function(...) end,
 
----字段名：get_bounds<p>
----@type UnityEngine.Bounds
-bounds = nil,
+---函数名：GetComponents<p>
+----@return any
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+---@overload fun(self: UnityEngine.Renderer)
+---@overload fun(self: UnityEngine.Renderer)
+---@overload fun(self: UnityEngine.Renderer, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Renderer, type: System.Type):UnityEngine.Component[]
+GetComponents = function(...) end,
 
----函数名：HasPropertyBlock<p>
+---函数名：GetComponentsInChildren<p>
+----@return any
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+----@return any
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+---@overload fun(self: UnityEngine.Renderer, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.Renderer, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.Renderer)
+---@overload fun(self: UnityEngine.Renderer)
+---@overload fun(self: UnityEngine.Renderer, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.Renderer, t: System.Type):UnityEngine.Component[]
+GetComponentsInChildren = function(...) end,
+
+---函数名：GetComponentsInParent<p>
+----@return any
+---函数名：GetComponentsInParent<p>
+----@return any
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+---@overload fun(self: UnityEngine.Renderer, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.Renderer)
+---@overload fun(self: UnityEngine.Renderer, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.Renderer, t: System.Type):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.Renderer, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component[]
+GetComponentsInParent = function(...) end,
+
+---函数名：GetPropertyBlock<p>
+---函数名：GetPropertyBlock<p>
+---@overload fun(self: UnityEngine.Renderer, properties: UnityEngine.MaterialPropertyBlock, materialIndex: System.Int32)
+---@overload fun(self: UnityEngine.Renderer, properties: UnityEngine.MaterialPropertyBlock)
+GetPropertyBlock = function(...) end,
+
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, value: System.Object)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, value: System.Object, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, options: UnityEngine.SendMessageOptions)
+SendMessage = function(...) end,
+
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, value: System.Object)
+---@overload fun(self: UnityEngine.Renderer, methodName: System.String, value: System.Object, options: UnityEngine.SendMessageOptions)
+SendMessageUpwards = function(...) end,
+
+---函数名：SetPropertyBlock<p>
+---函数名：SetPropertyBlock<p>
+---@overload fun(self: UnityEngine.Renderer, properties: UnityEngine.MaterialPropertyBlock, materialIndex: System.Int32)
+---@overload fun(self: UnityEngine.Renderer, properties: UnityEngine.MaterialPropertyBlock)
+SetPropertyBlock = function(...) end,
+
+---函数名：TryGetComponent<p>
+---函数名：TryGetComponent<p>
+---@overload fun(self: UnityEngine.Renderer):System.Boolean
+---@overload fun(self: UnityEngine.Renderer, type: System.Type, component: UnityEngine.Component&):System.Boolean
+TryGetComponent = function(...) end,
+
+---函数名：CompareTag<p>
 ---@param self UnityEngine.Renderer
+---@param tag System.String
 ---@return System.Boolean
-HasPropertyBlock = function(self) end,
+CompareTag = function(self,tag) end,
 
----函数名：SetPropertyBlock<p>
+---函数名：Equals<p>
 ---@param self UnityEngine.Renderer
----@param properties UnityEngine.MaterialPropertyBlock
-SetPropertyBlock = function(self,properties) end,
+---@param other System.Object
+---@return System.Boolean
+Equals = function(self,other) end,
 
----函数名：SetPropertyBlock<p>
+---函数名：GetClosestReflectionProbes<p>
 ---@param self UnityEngine.Renderer
----@param properties UnityEngine.MaterialPropertyBlock
----@param materialIndex System.Int32
-SetPropertyBlock = function(self,properties,materialIndex) end,
+---@param result System.Collections.Generic.List`1[[UnityEngine.Rendering.ReflectionProbeBlendInfo, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+GetClosestReflectionProbes = function(self,result) end,
 
----函数名：GetPropertyBlock<p>
+---函数名：GetHashCode<p>
 ---@param self UnityEngine.Renderer
----@param properties UnityEngine.MaterialPropertyBlock
-GetPropertyBlock = function(self,properties) end,
+---@return System.Int32
+GetHashCode = function(self) end,
 
----函数名：GetPropertyBlock<p>
+---函数名：GetInstanceID<p>
 ---@param self UnityEngine.Renderer
----@param properties UnityEngine.MaterialPropertyBlock
----@param materialIndex System.Int32
-GetPropertyBlock = function(self,properties,materialIndex) end,
-
----字段名：get_enabled<p>
----@type System.Boolean
-enabled = nil,
-
----字段名：get_isVisible<p>
----@type System.Boolean
-isVisible = nil,
-
----字段名：get_shadowCastingMode<p>
----@type UnityEngine.Rendering.ShadowCastingMode
-shadowCastingMode = nil,
-
----字段名：get_receiveShadows<p>
----@type System.Boolean
-receiveShadows = nil,
-
----字段名：get_forceRenderingOff<p>
----@type System.Boolean
-forceRenderingOff = nil,
-
----字段名：get_motionVectorGenerationMode<p>
----@type UnityEngine.MotionVectorGenerationMode
-motionVectorGenerationMode = nil,
-
----字段名：get_lightProbeUsage<p>
----@type UnityEngine.Rendering.LightProbeUsage
-lightProbeUsage = nil,
-
----字段名：get_reflectionProbeUsage<p>
----@type UnityEngine.Rendering.ReflectionProbeUsage
-reflectionProbeUsage = nil,
-
----字段名：get_renderingLayerMask<p>
----@type System.UInt32
-renderingLayerMask = nil,
-
----字段名：get_rendererPriority<p>
----@type System.Int32
-rendererPriority = nil,
-
----字段名：get_rayTracingMode<p>
----@type UnityEngine.Experimental.Rendering.RayTracingMode
-rayTracingMode = nil,
-
----字段名：get_sortingLayerName<p>
----@type System.String
-sortingLayerName = nil,
-
----字段名：get_sortingLayerID<p>
----@type System.Int32
-sortingLayerID = nil,
-
----字段名：get_sortingOrder<p>
----@type System.Int32
-sortingOrder = nil,
-
----字段名：get_allowOcclusionWhenDynamic<p>
----@type System.Boolean
-allowOcclusionWhenDynamic = nil,
-
----字段名：get_isPartOfStaticBatch<p>
----@type System.Boolean
-isPartOfStaticBatch = nil,
-
----字段名：get_worldToLocalMatrix<p>
----@type UnityEngine.Matrix4x4
-worldToLocalMatrix = nil,
-
----字段名：get_localToWorldMatrix<p>
----@type UnityEngine.Matrix4x4
-localToWorldMatrix = nil,
-
----字段名：get_lightProbeProxyVolumeOverride<p>
----@type UnityEngine.GameObject
-lightProbeProxyVolumeOverride = nil,
-
----字段名：get_probeAnchor<p>
----@type UnityEngine.Transform
-probeAnchor = nil,
-
----字段名：get_lightmapIndex<p>
----@type System.Int32
-lightmapIndex = nil,
-
----字段名：get_realtimeLightmapIndex<p>
----@type System.Int32
-realtimeLightmapIndex = nil,
-
----字段名：get_lightmapScaleOffset<p>
----@type UnityEngine.Vector4
-lightmapScaleOffset = nil,
-
----字段名：get_realtimeLightmapScaleOffset<p>
----@type UnityEngine.Vector4
-realtimeLightmapScaleOffset = nil,
-
----字段名：get_materials<p>
----@type UnityEngine.Material[]
-materials = nil,
-
----字段名：get_material<p>
----@type UnityEngine.Material
-material = nil,
-
----字段名：get_sharedMaterial<p>
----@type UnityEngine.Material
-sharedMaterial = nil,
-
----字段名：get_sharedMaterials<p>
----@type UnityEngine.Material[]
-sharedMaterials = nil,
+---@return System.Int32
+GetInstanceID = function(self) end,
 
 ---函数名：GetMaterials<p>
 ---@param self UnityEngine.Renderer
@@ -174,296 +156,44 @@ GetMaterials = function(self,m) end,
 ---@param m System.Collections.Generic.List`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
 GetSharedMaterials = function(self,m) end,
 
----函数名：GetClosestReflectionProbes<p>
+---函数名：GetType<p>
 ---@param self UnityEngine.Renderer
----@param result System.Collections.Generic.List`1[[UnityEngine.Rendering.ReflectionProbeBlendInfo, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
-GetClosestReflectionProbes = function(self,result) end,
+---@return System.Type
+GetType = function(self) end,
 
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
-
----字段名：get_gameObject<p>
----@type UnityEngine.GameObject
-gameObject = nil,
-
----函数名：GetComponent<p>
----@param self UnityEngine.Renderer
----@param type System.Type
----@return UnityEngine.Component
-GetComponent = function(self,type) end,
-
----函数名：GetComponent<p>
----@param self UnityEngine.Renderer
----@return 
-GetComponent = function(self) end,
-
----函数名：TryGetComponent<p>
----@param self UnityEngine.Renderer
----@param type System.Type
----@param component UnityEngine.Component&
----@return System.Boolean
-TryGetComponent = function(self,type,component) end,
-
----函数名：TryGetComponent<p>
+---函数名：HasPropertyBlock<p>
 ---@param self UnityEngine.Renderer
 ---@return System.Boolean
-TryGetComponent = function(self) end,
+HasPropertyBlock = function(self) end,
 
----函数名：GetComponent<p>
+---函数名：ToString<p>
 ---@param self UnityEngine.Renderer
----@param type System.String
----@return UnityEngine.Component
-GetComponent = function(self,type) end,
+---@return System.String
+ToString = function(self) end,
 
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component
-GetComponentInChildren = function(self,t,includeInactive) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@return UnityEngine.Component
-GetComponentInChildren = function(self,t) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.Renderer
----@param includeInactive System.Boolean
----@return 
-GetComponentInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.Renderer
----@return 
-GetComponentInChildren = function(self) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component[]
-GetComponentsInChildren = function(self,t,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@return UnityEngine.Component[]
-GetComponentsInChildren = function(self,t) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.Renderer
----@param includeInactive System.Boolean
----@return T[]
-GetComponentsInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.Renderer
----@param includeInactive System.Boolean
-GetComponentsInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.Renderer
----@return T[]
-GetComponentsInChildren = function(self) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.Renderer
-GetComponentsInChildren = function(self) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component
-GetComponentInParent = function(self,t,includeInactive) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@return UnityEngine.Component
-GetComponentInParent = function(self,t) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.Renderer
----@param includeInactive System.Boolean
----@return 
-GetComponentInParent = function(self,includeInactive) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.Renderer
----@return 
-GetComponentInParent = function(self) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component[]
-GetComponentsInParent = function(self,t,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.Renderer
----@param t System.Type
----@return UnityEngine.Component[]
-GetComponentsInParent = function(self,t) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.Renderer
----@param includeInactive System.Boolean
----@return T[]
-GetComponentsInParent = function(self,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.Renderer
----@param includeInactive System.Boolean
-GetComponentsInParent = function(self,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.Renderer
----@return T[]
-GetComponentsInParent = function(self) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.Renderer
----@param type System.Type
----@return UnityEngine.Component[]
-GetComponents = function(self,type) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.Renderer
----@param type System.Type
----@param results System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
-GetComponents = function(self,type,results) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.Renderer
-GetComponents = function(self) end,
-
----字段名：get_tag<p>
----@type System.String
-tag = nil,
-
----函数名：GetComponents<p>
----@param self UnityEngine.Renderer
----@return T[]
-GetComponents = function(self) end,
-
----函数名：CompareTag<p>
----@param self UnityEngine.Renderer
----@param tag System.String
----@return System.Boolean
-CompareTag = function(self,tag) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param value System.Object
----@param options UnityEngine.SendMessageOptions
-SendMessageUpwards = function(self,methodName,value,options) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param value System.Object
-SendMessageUpwards = function(self,methodName,value) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
-SendMessageUpwards = function(self,methodName) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-SendMessageUpwards = function(self,methodName,options) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param value System.Object
-SendMessage = function(self,methodName,value) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
-SendMessage = function(self,methodName) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param value System.Object
----@param options UnityEngine.SendMessageOptions
-SendMessage = function(self,methodName,value,options) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-SendMessage = function(self,methodName,options) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param parameter System.Object
----@param options UnityEngine.SendMessageOptions
-BroadcastMessage = function(self,methodName,parameter,options) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param parameter System.Object
-BroadcastMessage = function(self,methodName,parameter) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
-BroadcastMessage = function(self,methodName) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.Renderer
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-BroadcastMessage = function(self,methodName,options) end,
-
----字段名：get_rigidbody<p>
----@type UnityEngine.Component
-rigidbody = nil,
-
----字段名：get_rigidbody2D<p>
----@type UnityEngine.Component
-rigidbody2D = nil,
-
----字段名：get_camera<p>
----@type UnityEngine.Component
-camera = nil,
-
----字段名：get_light<p>
----@type UnityEngine.Component
-light = nil,
+---字段名：get_allowOcclusionWhenDynamic<p>
+---@type System.Boolean
+allowOcclusionWhenDynamic = nil,
 
 ---字段名：get_animation<p>
 ---@type UnityEngine.Component
 animation = nil,
 
----字段名：get_constantForce<p>
----@type UnityEngine.Component
-constantForce = nil,
-
----字段名：get_renderer<p>
----@type UnityEngine.Component
-renderer = nil,
-
 ---字段名：get_audio<p>
 ---@type UnityEngine.Component
 audio = nil,
 
----字段名：get_networkView<p>
+---字段名：get_bounds<p>
+---@type UnityEngine.Bounds
+bounds = nil,
+
+---字段名：get_camera<p>
 ---@type UnityEngine.Component
-networkView = nil,
+camera = nil,
+
+---字段名：get_castShadows<p>
+---@type System.Boolean
+castShadows = nil,
 
 ---字段名：get_collider<p>
 ---@type UnityEngine.Component
@@ -473,46 +203,180 @@ collider = nil,
 ---@type UnityEngine.Component
 collider2D = nil,
 
----字段名：get_hingeJoint<p>
+---字段名：get_constantForce<p>
 ---@type UnityEngine.Component
-hingeJoint = nil,
+constantForce = nil,
 
----字段名：get_particleSystem<p>
----@type UnityEngine.Component
-particleSystem = nil,
+---字段名：get_enabled<p>
+---@type System.Boolean
+enabled = nil,
 
----函数名：GetInstanceID<p>
----@param self UnityEngine.Renderer
----@return System.Int32
-GetInstanceID = function(self) end,
+---字段名：get_forceRenderingOff<p>
+---@type System.Boolean
+forceRenderingOff = nil,
 
----函数名：GetHashCode<p>
----@param self UnityEngine.Renderer
----@return System.Int32
-GetHashCode = function(self) end,
-
----函数名：Equals<p>
----@param self UnityEngine.Renderer
----@param other System.Object
----@return System.Boolean
-Equals = function(self,other) end,
-
----字段名：get_name<p>
----@type System.String
-name = nil,
+---字段名：get_gameObject<p>
+---@type UnityEngine.GameObject
+gameObject = nil,
 
 ---字段名：get_hideFlags<p>
 ---@type UnityEngine.HideFlags
 hideFlags = nil,
 
----函数名：ToString<p>
----@param self UnityEngine.Renderer
----@return System.String
-ToString = function(self) end,
+---字段名：get_hingeJoint<p>
+---@type UnityEngine.Component
+hingeJoint = nil,
 
----函数名：GetType<p>
----@param self UnityEngine.Renderer
----@return System.Type
-GetType = function(self) end,
+---字段名：get_isPartOfStaticBatch<p>
+---@type System.Boolean
+isPartOfStaticBatch = nil,
+
+---字段名：get_isVisible<p>
+---@type System.Boolean
+isVisible = nil,
+
+---字段名：get_light<p>
+---@type UnityEngine.Component
+light = nil,
+
+---字段名：get_lightProbeAnchor<p>
+---@type UnityEngine.Transform
+lightProbeAnchor = nil,
+
+---字段名：get_lightProbeProxyVolumeOverride<p>
+---@type UnityEngine.GameObject
+lightProbeProxyVolumeOverride = nil,
+
+---字段名：get_lightProbeUsage<p>
+---@type UnityEngine.Rendering.LightProbeUsage
+lightProbeUsage = nil,
+
+---字段名：get_lightmapIndex<p>
+---@type System.Int32
+lightmapIndex = nil,
+
+---字段名：get_lightmapScaleOffset<p>
+---@type UnityEngine.Vector4
+lightmapScaleOffset = nil,
+
+---字段名：get_lightmapTilingOffset<p>
+---@type UnityEngine.Vector4
+lightmapTilingOffset = nil,
+
+---字段名：get_localToWorldMatrix<p>
+---@type UnityEngine.Matrix4x4
+localToWorldMatrix = nil,
+
+---字段名：get_material<p>
+---@type UnityEngine.Material
+material = nil,
+
+---字段名：get_materials<p>
+---@type UnityEngine.Material[]
+materials = nil,
+
+---字段名：get_motionVectorGenerationMode<p>
+---@type UnityEngine.MotionVectorGenerationMode
+motionVectorGenerationMode = nil,
+
+---字段名：get_motionVectors<p>
+---@type System.Boolean
+motionVectors = nil,
+
+---字段名：get_name<p>
+---@type System.String
+name = nil,
+
+---字段名：get_networkView<p>
+---@type UnityEngine.Component
+networkView = nil,
+
+---字段名：get_particleSystem<p>
+---@type UnityEngine.Component
+particleSystem = nil,
+
+---字段名：get_probeAnchor<p>
+---@type UnityEngine.Transform
+probeAnchor = nil,
+
+---字段名：get_rayTracingMode<p>
+---@type UnityEngine.Experimental.Rendering.RayTracingMode
+rayTracingMode = nil,
+
+---字段名：get_realtimeLightmapIndex<p>
+---@type System.Int32
+realtimeLightmapIndex = nil,
+
+---字段名：get_realtimeLightmapScaleOffset<p>
+---@type UnityEngine.Vector4
+realtimeLightmapScaleOffset = nil,
+
+---字段名：get_receiveShadows<p>
+---@type System.Boolean
+receiveShadows = nil,
+
+---字段名：get_reflectionProbeUsage<p>
+---@type UnityEngine.Rendering.ReflectionProbeUsage
+reflectionProbeUsage = nil,
+
+---字段名：get_renderer<p>
+---@type UnityEngine.Component
+renderer = nil,
+
+---字段名：get_rendererPriority<p>
+---@type System.Int32
+rendererPriority = nil,
+
+---字段名：get_renderingLayerMask<p>
+---@type System.UInt32
+renderingLayerMask = nil,
+
+---字段名：get_rigidbody<p>
+---@type UnityEngine.Component
+rigidbody = nil,
+
+---字段名：get_rigidbody2D<p>
+---@type UnityEngine.Component
+rigidbody2D = nil,
+
+---字段名：get_shadowCastingMode<p>
+---@type UnityEngine.Rendering.ShadowCastingMode
+shadowCastingMode = nil,
+
+---字段名：get_sharedMaterial<p>
+---@type UnityEngine.Material
+sharedMaterial = nil,
+
+---字段名：get_sharedMaterials<p>
+---@type UnityEngine.Material[]
+sharedMaterials = nil,
+
+---字段名：get_sortingLayerID<p>
+---@type System.Int32
+sortingLayerID = nil,
+
+---字段名：get_sortingLayerName<p>
+---@type System.String
+sortingLayerName = nil,
+
+---字段名：get_sortingOrder<p>
+---@type System.Int32
+sortingOrder = nil,
+
+---字段名：get_tag<p>
+---@type System.String
+tag = nil,
+
+---字段名：get_transform<p>
+---@type UnityEngine.Transform
+transform = nil,
+
+---字段名：get_useLightProbes<p>
+---@type System.Boolean
+useLightProbes = nil,
+
+---字段名：get_worldToLocalMatrix<p>
+---@type UnityEngine.Matrix4x4
+worldToLocalMatrix = nil,
 
 }

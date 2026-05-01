@@ -1,17 +1,12 @@
 ---@meta
 ---@class TMPro.TMP_Math
 TMPro.TMP_Math = {
+
 ---函数名：Approximately<p>
 ---@param a System.Single
 ---@param b System.Single
 ---@return System.Boolean
 Approximately = function(a,b) end,
-
----函数名：Mod<p>
----@param a System.Int32
----@param b System.Int32
----@return System.Int32
-Mod = function(a,b) end,
 
 ---函数名：Equals<p>
 ---@param self TMPro.TMP_Math
@@ -29,6 +24,12 @@ GetHashCode = function(self) end,
 ---@return System.Type
 GetType = function(self) end,
 
+---函数名：Mod<p>
+---@param a System.Int32
+---@param b System.Int32
+---@return System.Int32
+Mod = function(a,b) end,
+
 ---函数名：ToString<p>
 ---@param self TMPro.TMP_Math
 ---@return System.String
@@ -42,6 +43,10 @@ FLOAT_MAX = nil,
 ---@type System.Single
 FLOAT_MIN = nil,
 
+---字段名：FLOAT_UNSET<p>
+---@type System.Single
+FLOAT_UNSET = nil,
+
 ---字段名：INT_MAX<p>
 ---@type System.Int32
 INT_MAX = nil,
@@ -49,10 +54,6 @@ INT_MAX = nil,
 ---字段名：INT_MIN<p>
 ---@type System.Int32
 INT_MIN = nil,
-
----字段名：FLOAT_UNSET<p>
----@type System.Single
-FLOAT_UNSET = nil,
 
 ---字段名：INT_UNSET<p>
 ---@type System.Int32

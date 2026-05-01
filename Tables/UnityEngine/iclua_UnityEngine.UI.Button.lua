@@ -1,66 +1,162 @@
 ---@meta
 ---@class UnityEngine.UI.Button
 UnityEngine.UI.Button = {
----字段名：get_onClick<p>
----@type UnityEngine.UI.Button.ButtonClickedEvent
-onClick = nil,
 
----函数名：OnPointerClick<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, parameter: System.Object)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, parameter: System.Object, options: UnityEngine.SendMessageOptions)
+BroadcastMessage = function(...) end,
+
+---函数名：CancelInvoke<p>
+---函数名：CancelInvoke<p>
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String)
+---@overload fun(self: UnityEngine.UI.Button)
+CancelInvoke = function(...) end,
+
+---函数名：GetComponent<p>
+---函数名：GetComponent<p>
+---函数名：GetComponent<p>
+---@overload fun(self: UnityEngine.UI.Button, type: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.UI.Button):any
+---@overload fun(self: UnityEngine.UI.Button, type: System.String):UnityEngine.Component
+GetComponent = function(...) end,
+
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component
+---@overload fun(self: UnityEngine.UI.Button, includeInactive: System.Boolean):any
+---@overload fun(self: UnityEngine.UI.Button):any
+GetComponentInChildren = function(...) end,
+
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---@overload fun(self: UnityEngine.UI.Button):any
+---@overload fun(self: UnityEngine.UI.Button, includeInactive: System.Boolean):any
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component
+GetComponentInParent = function(...) end,
+
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+----@return any
+---@overload fun(self: UnityEngine.UI.Button, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.UI.Button, type: System.Type):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.UI.Button)
+---@overload fun(self: UnityEngine.UI.Button)
+GetComponents = function(...) end,
+
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+----@return any
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+----@return any
+---函数名：GetComponentsInChildren<p>
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.UI.Button, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.UI.Button, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.UI.Button)
+---@overload fun(self: UnityEngine.UI.Button)
+GetComponentsInChildren = function(...) end,
+
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+----@return any
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+----@return any
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.UI.Button, t: System.Type):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.UI.Button, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.UI.Button, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.UI.Button)
+GetComponentsInParent = function(...) end,
+
+---函数名：IsInvoking<p>
+---函数名：IsInvoking<p>
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String):System.Boolean
+---@overload fun(self: UnityEngine.UI.Button):System.Boolean
+IsInvoking = function(...) end,
+
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, value: System.Object, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, value: System.Object)
+SendMessage = function(...) end,
+
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, value: System.Object)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, value: System.Object, options: UnityEngine.SendMessageOptions)
+SendMessageUpwards = function(...) end,
+
+---函数名：StartCoroutine<p>
+---函数名：StartCoroutine<p>
+---函数名：StartCoroutine<p>
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String):UnityEngine.Coroutine
+---@overload fun(self: UnityEngine.UI.Button, routine: System.Collections.IEnumerator):UnityEngine.Coroutine
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String, value: System.Object):UnityEngine.Coroutine
+StartCoroutine = function(...) end,
+
+---函数名：StopCoroutine<p>
+---函数名：StopCoroutine<p>
+---函数名：StopCoroutine<p>
+---@overload fun(self: UnityEngine.UI.Button, routine: System.Collections.IEnumerator)
+---@overload fun(self: UnityEngine.UI.Button, routine: UnityEngine.Coroutine)
+---@overload fun(self: UnityEngine.UI.Button, methodName: System.String)
+StopCoroutine = function(...) end,
+
+---函数名：TryGetComponent<p>
+---函数名：TryGetComponent<p>
+---@overload fun(self: UnityEngine.UI.Button):System.Boolean
+---@overload fun(self: UnityEngine.UI.Button, type: System.Type, component: UnityEngine.Component&):System.Boolean
+TryGetComponent = function(...) end,
+
+---函数名：CompareTag<p>
 ---@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerClick = function(self,eventData) end,
-
----函数名：OnSubmit<p>
----@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnSubmit = function(self,eventData) end,
-
----字段名：get_navigation<p>
----@type UnityEngine.UI.Navigation
-navigation = nil,
-
----字段名：get_transition<p>
----@type UnityEngine.UI.Selectable.Transition
-transition = nil,
-
----字段名：get_colors<p>
----@type UnityEngine.UI.ColorBlock
-colors = nil,
-
----字段名：get_spriteState<p>
----@type UnityEngine.UI.SpriteState
-spriteState = nil,
-
----字段名：get_animationTriggers<p>
----@type UnityEngine.UI.AnimationTriggers
-animationTriggers = nil,
-
----字段名：get_targetGraphic<p>
----@type UnityEngine.UI.Graphic
-targetGraphic = nil,
-
----字段名：get_interactable<p>
----@type System.Boolean
-interactable = nil,
-
----字段名：get_image<p>
----@type UnityEngine.UI.Image
-image = nil,
-
----字段名：get_animator<p>
----@type UnityEngine.Animator
-animator = nil,
-
----函数名：IsInteractable<p>
----@param self UnityEngine.UI.Button
+---@param tag System.String
 ---@return System.Boolean
-IsInteractable = function(self) end,
+CompareTag = function(self,tag) end,
+
+---函数名：Equals<p>
+---@param self UnityEngine.UI.Button
+---@param other System.Object
+---@return System.Boolean
+Equals = function(self,other) end,
 
 ---函数名：FindSelectable<p>
 ---@param self UnityEngine.UI.Button
 ---@param dir UnityEngine.Vector3
 ---@return UnityEngine.UI.Selectable
 FindSelectable = function(self,dir) end,
+
+---函数名：FindSelectableOnDown<p>
+---@param self UnityEngine.UI.Button
+---@return UnityEngine.UI.Selectable
+FindSelectableOnDown = function(self) end,
 
 ---函数名：FindSelectableOnLeft<p>
 ---@param self UnityEngine.UI.Button
@@ -77,68 +173,20 @@ FindSelectableOnRight = function(self) end,
 ---@return UnityEngine.UI.Selectable
 FindSelectableOnUp = function(self) end,
 
----函数名：FindSelectableOnDown<p>
+---函数名：GetHashCode<p>
 ---@param self UnityEngine.UI.Button
----@return UnityEngine.UI.Selectable
-FindSelectableOnDown = function(self) end,
+---@return System.Int32
+GetHashCode = function(self) end,
 
----函数名：OnMove<p>
+---函数名：GetInstanceID<p>
 ---@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.AxisEventData
-OnMove = function(self,eventData) end,
+---@return System.Int32
+GetInstanceID = function(self) end,
 
----函数名：OnPointerDown<p>
+---函数名：GetType<p>
 ---@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerDown = function(self,eventData) end,
-
----函数名：OnPointerUp<p>
----@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerUp = function(self,eventData) end,
-
----函数名：OnPointerEnter<p>
----@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerEnter = function(self,eventData) end,
-
----函数名：OnPointerExit<p>
----@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerExit = function(self,eventData) end,
-
----函数名：OnSelect<p>
----@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnSelect = function(self,eventData) end,
-
----函数名：OnDeselect<p>
----@param self UnityEngine.UI.Button
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnDeselect = function(self,eventData) end,
-
----函数名：Select<p>
----@param self UnityEngine.UI.Button
-Select = function(self) end,
-
----函数名：IsActive<p>
----@param self UnityEngine.UI.Button
----@return System.Boolean
-IsActive = function(self) end,
-
----函数名：IsDestroyed<p>
----@param self UnityEngine.UI.Button
----@return System.Boolean
-IsDestroyed = function(self) end,
-
----函数名：IsInvoking<p>
----@param self UnityEngine.UI.Button
----@return System.Boolean
-IsInvoking = function(self) end,
-
----函数名：CancelInvoke<p>
----@param self UnityEngine.UI.Button
-CancelInvoke = function(self) end,
+---@return System.Type
+GetType = function(self) end,
 
 ---函数名：Invoke<p>
 ---@param self UnityEngine.UI.Button
@@ -153,35 +201,69 @@ Invoke = function(self,methodName,time) end,
 ---@param repeatRate System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
----函数名：CancelInvoke<p>
+---函数名：IsActive<p>
 ---@param self UnityEngine.UI.Button
----@param methodName System.String
-CancelInvoke = function(self,methodName) end,
-
----函数名：IsInvoking<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
 ---@return System.Boolean
-IsInvoking = function(self,methodName) end,
+IsActive = function(self) end,
 
----函数名：StartCoroutine<p>
+---函数名：IsDestroyed<p>
 ---@param self UnityEngine.UI.Button
----@param methodName System.String
----@return UnityEngine.Coroutine
-StartCoroutine = function(self,methodName) end,
+---@return System.Boolean
+IsDestroyed = function(self) end,
 
----函数名：StartCoroutine<p>
+---函数名：IsInteractable<p>
 ---@param self UnityEngine.UI.Button
----@param methodName System.String
----@param value System.Object
----@return UnityEngine.Coroutine
-StartCoroutine = function(self,methodName,value) end,
+---@return System.Boolean
+IsInteractable = function(self) end,
 
----函数名：StartCoroutine<p>
+---函数名：OnDeselect<p>
 ---@param self UnityEngine.UI.Button
----@param routine System.Collections.IEnumerator
----@return UnityEngine.Coroutine
-StartCoroutine = function(self,routine) end,
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnDeselect = function(self,eventData) end,
+
+---函数名：OnMove<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.AxisEventData
+OnMove = function(self,eventData) end,
+
+---函数名：OnPointerClick<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerClick = function(self,eventData) end,
+
+---函数名：OnPointerDown<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerDown = function(self,eventData) end,
+
+---函数名：OnPointerEnter<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerEnter = function(self,eventData) end,
+
+---函数名：OnPointerExit<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerExit = function(self,eventData) end,
+
+---函数名：OnPointerUp<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerUp = function(self,eventData) end,
+
+---函数名：OnSelect<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnSelect = function(self,eventData) end,
+
+---函数名：OnSubmit<p>
+---@param self UnityEngine.UI.Button
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnSubmit = function(self,eventData) end,
+
+---函数名：Select<p>
+---@param self UnityEngine.UI.Button
+Select = function(self) end,
 
 ---函数名：StartCoroutine_Auto<p>
 ---@param self UnityEngine.UI.Button
@@ -189,326 +271,34 @@ StartCoroutine = function(self,routine) end,
 ---@return UnityEngine.Coroutine
 StartCoroutine_Auto = function(self,routine) end,
 
----函数名：StopCoroutine<p>
----@param self UnityEngine.UI.Button
----@param routine System.Collections.IEnumerator
-StopCoroutine = function(self,routine) end,
-
----函数名：StopCoroutine<p>
----@param self UnityEngine.UI.Button
----@param routine UnityEngine.Coroutine
-StopCoroutine = function(self,routine) end,
-
----函数名：StopCoroutine<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
-StopCoroutine = function(self,methodName) end,
-
 ---函数名：StopAllCoroutines<p>
 ---@param self UnityEngine.UI.Button
 StopAllCoroutines = function(self) end,
 
----字段名：get_useGUILayout<p>
----@type System.Boolean
-useGUILayout = nil,
-
----字段名：get_runInEditMode<p>
----@type System.Boolean
-runInEditMode = nil,
-
----字段名：get_enabled<p>
----@type System.Boolean
-enabled = nil,
-
----字段名：get_isActiveAndEnabled<p>
----@type System.Boolean
-isActiveAndEnabled = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
-
----字段名：get_gameObject<p>
----@type UnityEngine.GameObject
-gameObject = nil,
-
----函数名：GetComponent<p>
+---函数名：ToString<p>
 ---@param self UnityEngine.UI.Button
----@param type System.Type
----@return UnityEngine.Component
-GetComponent = function(self,type) end,
-
----函数名：GetComponent<p>
----@param self UnityEngine.UI.Button
----@return 
-GetComponent = function(self) end,
-
----函数名：TryGetComponent<p>
----@param self UnityEngine.UI.Button
----@param type System.Type
----@param component UnityEngine.Component&
----@return System.Boolean
-TryGetComponent = function(self,type,component) end,
-
----函数名：TryGetComponent<p>
----@param self UnityEngine.UI.Button
----@return System.Boolean
-TryGetComponent = function(self) end,
-
----函数名：GetComponent<p>
----@param self UnityEngine.UI.Button
----@param type System.String
----@return UnityEngine.Component
-GetComponent = function(self,type) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component
-GetComponentInChildren = function(self,t,includeInactive) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@return UnityEngine.Component
-GetComponentInChildren = function(self,t) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.UI.Button
----@param includeInactive System.Boolean
----@return 
-GetComponentInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.UI.Button
----@return 
-GetComponentInChildren = function(self) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component[]
-GetComponentsInChildren = function(self,t,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@return UnityEngine.Component[]
-GetComponentsInChildren = function(self,t) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.UI.Button
----@param includeInactive System.Boolean
----@return T[]
-GetComponentsInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.UI.Button
----@param includeInactive System.Boolean
-GetComponentsInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.UI.Button
----@return T[]
-GetComponentsInChildren = function(self) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.UI.Button
-GetComponentsInChildren = function(self) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component
-GetComponentInParent = function(self,t,includeInactive) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@return UnityEngine.Component
-GetComponentInParent = function(self,t) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.UI.Button
----@param includeInactive System.Boolean
----@return 
-GetComponentInParent = function(self,includeInactive) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.UI.Button
----@return 
-GetComponentInParent = function(self) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component[]
-GetComponentsInParent = function(self,t,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.UI.Button
----@param t System.Type
----@return UnityEngine.Component[]
-GetComponentsInParent = function(self,t) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.UI.Button
----@param includeInactive System.Boolean
----@return T[]
-GetComponentsInParent = function(self,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.UI.Button
----@param includeInactive System.Boolean
-GetComponentsInParent = function(self,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.UI.Button
----@return T[]
-GetComponentsInParent = function(self) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.UI.Button
----@param type System.Type
----@return UnityEngine.Component[]
-GetComponents = function(self,type) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.UI.Button
----@param type System.Type
----@param results System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
-GetComponents = function(self,type,results) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.UI.Button
-GetComponents = function(self) end,
-
----字段名：get_tag<p>
----@type System.String
-tag = nil,
-
----函数名：GetComponents<p>
----@param self UnityEngine.UI.Button
----@return T[]
-GetComponents = function(self) end,
-
----函数名：CompareTag<p>
----@param self UnityEngine.UI.Button
----@param tag System.String
----@return System.Boolean
-CompareTag = function(self,tag) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param value System.Object
----@param options UnityEngine.SendMessageOptions
-SendMessageUpwards = function(self,methodName,value,options) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param value System.Object
-SendMessageUpwards = function(self,methodName,value) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
-SendMessageUpwards = function(self,methodName) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-SendMessageUpwards = function(self,methodName,options) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param value System.Object
-SendMessage = function(self,methodName,value) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
-SendMessage = function(self,methodName) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param value System.Object
----@param options UnityEngine.SendMessageOptions
-SendMessage = function(self,methodName,value,options) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-SendMessage = function(self,methodName,options) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param parameter System.Object
----@param options UnityEngine.SendMessageOptions
-BroadcastMessage = function(self,methodName,parameter,options) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param parameter System.Object
-BroadcastMessage = function(self,methodName,parameter) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
-BroadcastMessage = function(self,methodName) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.UI.Button
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-BroadcastMessage = function(self,methodName,options) end,
-
----字段名：get_rigidbody<p>
----@type UnityEngine.Component
-rigidbody = nil,
-
----字段名：get_rigidbody2D<p>
----@type UnityEngine.Component
-rigidbody2D = nil,
-
----字段名：get_camera<p>
----@type UnityEngine.Component
-camera = nil,
-
----字段名：get_light<p>
----@type UnityEngine.Component
-light = nil,
+---@return System.String
+ToString = function(self) end,
 
 ---字段名：get_animation<p>
 ---@type UnityEngine.Component
 animation = nil,
 
----字段名：get_constantForce<p>
----@type UnityEngine.Component
-constantForce = nil,
+---字段名：get_animationTriggers<p>
+---@type UnityEngine.UI.AnimationTriggers
+animationTriggers = nil,
 
----字段名：get_renderer<p>
----@type UnityEngine.Component
-renderer = nil,
+---字段名：get_animator<p>
+---@type UnityEngine.Animator
+animator = nil,
 
 ---字段名：get_audio<p>
 ---@type UnityEngine.Component
 audio = nil,
 
----字段名：get_networkView<p>
+---字段名：get_camera<p>
 ---@type UnityEngine.Component
-networkView = nil,
+camera = nil,
 
 ---字段名：get_collider<p>
 ---@type UnityEngine.Component
@@ -518,46 +308,104 @@ collider = nil,
 ---@type UnityEngine.Component
 collider2D = nil,
 
----字段名：get_hingeJoint<p>
+---字段名：get_colors<p>
+---@type UnityEngine.UI.ColorBlock
+colors = nil,
+
+---字段名：get_constantForce<p>
 ---@type UnityEngine.Component
-hingeJoint = nil,
+constantForce = nil,
 
----字段名：get_particleSystem<p>
----@type UnityEngine.Component
-particleSystem = nil,
+---字段名：get_enabled<p>
+---@type System.Boolean
+enabled = nil,
 
----函数名：GetInstanceID<p>
----@param self UnityEngine.UI.Button
----@return System.Int32
-GetInstanceID = function(self) end,
-
----函数名：GetHashCode<p>
----@param self UnityEngine.UI.Button
----@return System.Int32
-GetHashCode = function(self) end,
-
----函数名：Equals<p>
----@param self UnityEngine.UI.Button
----@param other System.Object
----@return System.Boolean
-Equals = function(self,other) end,
-
----字段名：get_name<p>
----@type System.String
-name = nil,
+---字段名：get_gameObject<p>
+---@type UnityEngine.GameObject
+gameObject = nil,
 
 ---字段名：get_hideFlags<p>
 ---@type UnityEngine.HideFlags
 hideFlags = nil,
 
----函数名：ToString<p>
----@param self UnityEngine.UI.Button
----@return System.String
-ToString = function(self) end,
+---字段名：get_hingeJoint<p>
+---@type UnityEngine.Component
+hingeJoint = nil,
 
----函数名：GetType<p>
----@param self UnityEngine.UI.Button
----@return System.Type
-GetType = function(self) end,
+---字段名：get_image<p>
+---@type UnityEngine.UI.Image
+image = nil,
+
+---字段名：get_interactable<p>
+---@type System.Boolean
+interactable = nil,
+
+---字段名：get_isActiveAndEnabled<p>
+---@type System.Boolean
+isActiveAndEnabled = nil,
+
+---字段名：get_light<p>
+---@type UnityEngine.Component
+light = nil,
+
+---字段名：get_name<p>
+---@type System.String
+name = nil,
+
+---字段名：get_navigation<p>
+---@type UnityEngine.UI.Navigation
+navigation = nil,
+
+---字段名：get_networkView<p>
+---@type UnityEngine.Component
+networkView = nil,
+
+---字段名：get_onClick<p>
+---@type UnityEngine.UI.Button.ButtonClickedEvent
+onClick = nil,
+
+---字段名：get_particleSystem<p>
+---@type UnityEngine.Component
+particleSystem = nil,
+
+---字段名：get_renderer<p>
+---@type UnityEngine.Component
+renderer = nil,
+
+---字段名：get_rigidbody<p>
+---@type UnityEngine.Component
+rigidbody = nil,
+
+---字段名：get_rigidbody2D<p>
+---@type UnityEngine.Component
+rigidbody2D = nil,
+
+---字段名：get_runInEditMode<p>
+---@type System.Boolean
+runInEditMode = nil,
+
+---字段名：get_spriteState<p>
+---@type UnityEngine.UI.SpriteState
+spriteState = nil,
+
+---字段名：get_tag<p>
+---@type System.String
+tag = nil,
+
+---字段名：get_targetGraphic<p>
+---@type UnityEngine.UI.Graphic
+targetGraphic = nil,
+
+---字段名：get_transform<p>
+---@type UnityEngine.Transform
+transform = nil,
+
+---字段名：get_transition<p>
+---@type UnityEngine.UI.Selectable.Transition
+transition = nil,
+
+---字段名：get_useGUILayout<p>
+---@type System.Boolean
+useGUILayout = nil,
 
 }

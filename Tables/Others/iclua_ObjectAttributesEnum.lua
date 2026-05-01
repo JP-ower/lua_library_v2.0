@@ -1,10 +1,6 @@
 ---@meta
 ---@class ObjectAttributesEnum
 ObjectAttributesEnum = {
----函数名：GetValueArray<p>
----@param self ObjectAttributesEnum
----@return System.String[]
-GetValueArray = function(self) end,
 
 ---函数名：Equals<p>
 ---@param self ObjectAttributesEnum
@@ -22,17 +18,22 @@ GetHashCode = function(self) end,
 ---@return System.Type
 GetType = function(self) end,
 
+---函数名：GetValueArray<p>
+---@param self ObjectAttributesEnum
+---@return System.String[]
+GetValueArray = function(self) end,
+
 ---函数名：ToString<p>
 ---@param self ObjectAttributesEnum
 ---@return System.String
 ToString = function(self) end,
 
----字段名：valueArray<p>
----@type System.String[]
-valueArray = nil,
-
 ---字段名：value<p>
 ---@type System.String
 value = nil,
+
+---字段名：valueArray<p>
+---@type System.String[]
+valueArray = nil,
 
 }

@@ -1,13 +1,6 @@
 ---@meta
 ---@class TMPro.TMP_Dropdown.OptionData
 TMPro.TMP_Dropdown.OptionData = {
----字段名：get_text<p>
----@type System.String
-text = nil,
-
----字段名：get_image<p>
----@type UnityEngine.Sprite
-image = nil,
 
 ---函数名：Equals<p>
 ---@param self TMPro.TMP_Dropdown.OptionData
@@ -29,5 +22,13 @@ GetType = function(self) end,
 ---@param self TMPro.TMP_Dropdown.OptionData
 ---@return System.String
 ToString = function(self) end,
+
+---字段名：get_image<p>
+---@type UnityEngine.Sprite
+image = nil,
+
+---字段名：get_text<p>
+---@type System.String
+text = nil,
 
 }

@@ -1,9 +1,6 @@
 ---@meta
 ---@class UnityEngine.SkinQuality
 UnityEngine.SkinQuality = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
 
 ---枚举值：Auto<p>
 ---@type UnityEngine.SkinQuality
@@ -20,5 +17,9 @@ Bone2 = nil,
 ---枚举值：Bone4<p>
 ---@type UnityEngine.SkinQuality
 Bone4 = nil,
+
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

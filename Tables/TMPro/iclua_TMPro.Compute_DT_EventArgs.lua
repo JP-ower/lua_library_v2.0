@@ -1,6 +1,7 @@
 ---@meta
 ---@class TMPro.Compute_DT_EventArgs
 TMPro.Compute_DT_EventArgs = {
+
 ---函数名：Equals<p>
 ---@param self TMPro.Compute_DT_EventArgs
 ---@param obj System.Object
@@ -22,6 +23,10 @@ GetType = function(self) end,
 ---@return System.String
 ToString = function(self) end,
 
+---字段名：Colors<p>
+---@type UnityEngine.Color[]
+Colors = nil,
+
 ---字段名：EventType<p>
 ---@type TMPro.Compute_DistanceTransform_EventTypes
 EventType = nil,
@@ -29,9 +34,5 @@ EventType = nil,
 ---字段名：ProgressPercentage<p>
 ---@type System.Single
 ProgressPercentage = nil,
-
----字段名：Colors<p>
----@type UnityEngine.Color[]
-Colors = nil,
 
 }

@@ -1,9 +1,6 @@
 ---@meta
 ---@class UnityEngine.Rendering.UVChannelFlags
 UnityEngine.Rendering.UVChannelFlags = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
 
 ---枚举值：UV0<p>
 ---@type UnityEngine.Rendering.UVChannelFlags
@@ -20,5 +17,9 @@ UV2 = nil,
 ---枚举值：UV3<p>
 ---@type UnityEngine.Rendering.UVChannelFlags
 UV3 = nil,
+
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

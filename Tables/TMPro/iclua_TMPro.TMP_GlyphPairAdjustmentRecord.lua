@@ -1,17 +1,6 @@
 ---@meta
 ---@class TMPro.TMP_GlyphPairAdjustmentRecord
 TMPro.TMP_GlyphPairAdjustmentRecord = {
----字段名：get_firstAdjustmentRecord<p>
----@type TMPro.TMP_GlyphAdjustmentRecord
-firstAdjustmentRecord = nil,
-
----字段名：get_secondAdjustmentRecord<p>
----@type TMPro.TMP_GlyphAdjustmentRecord
-secondAdjustmentRecord = nil,
-
----字段名：get_featureLookupFlags<p>
----@type TMPro.FontFeatureLookupFlags
-featureLookupFlags = nil,
 
 ---函数名：Equals<p>
 ---@param self TMPro.TMP_GlyphPairAdjustmentRecord
@@ -33,5 +22,17 @@ GetType = function(self) end,
 ---@param self TMPro.TMP_GlyphPairAdjustmentRecord
 ---@return System.String
 ToString = function(self) end,
+
+---字段名：get_featureLookupFlags<p>
+---@type TMPro.FontFeatureLookupFlags
+featureLookupFlags = nil,
+
+---字段名：get_firstAdjustmentRecord<p>
+---@type TMPro.TMP_GlyphAdjustmentRecord
+firstAdjustmentRecord = nil,
+
+---字段名：get_secondAdjustmentRecord<p>
+---@type TMPro.TMP_GlyphAdjustmentRecord
+secondAdjustmentRecord = nil,
 
 }

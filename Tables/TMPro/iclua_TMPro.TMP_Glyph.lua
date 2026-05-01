@@ -1,6 +1,7 @@
 ---@meta
 ---@class TMPro.TMP_Glyph
 TMPro.TMP_Glyph = {
+
 ---函数名：Clone<p>
 ---@param source TMPro.TMP_Glyph
 ---@return TMPro.TMP_Glyph
@@ -27,40 +28,40 @@ GetType = function(self) end,
 ---@return System.String
 ToString = function(self) end,
 
+---字段名：height<p>
+---@type System.Single
+height = nil,
+
 ---字段名：id<p>
 ---@type System.Int32
 id = nil,
 
----字段名：x<p>
+---字段名：scale<p>
 ---@type System.Single
-x = nil,
-
----字段名：y<p>
----@type System.Single
-y = nil,
+scale = nil,
 
 ---字段名：width<p>
 ---@type System.Single
 width = nil,
 
----字段名：height<p>
+---字段名：x<p>
 ---@type System.Single
-height = nil,
-
----字段名：xOffset<p>
----@type System.Single
-xOffset = nil,
-
----字段名：yOffset<p>
----@type System.Single
-yOffset = nil,
+x = nil,
 
 ---字段名：xAdvance<p>
 ---@type System.Single
 xAdvance = nil,
 
----字段名：scale<p>
+---字段名：xOffset<p>
 ---@type System.Single
-scale = nil,
+xOffset = nil,
+
+---字段名：y<p>
+---@type System.Single
+y = nil,
+
+---字段名：yOffset<p>
+---@type System.Single
+yOffset = nil,
 
 }

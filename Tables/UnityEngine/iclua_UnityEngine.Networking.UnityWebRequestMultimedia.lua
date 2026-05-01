@@ -1,27 +1,18 @@
 ---@meta
 ---@class UnityEngine.Networking.UnityWebRequestMultimedia
 UnityEngine.Networking.UnityWebRequestMultimedia = {
----函数名：GetAudioClip<p>
----@param uri System.String
----@param audioType UnityEngine.AudioType
----@return UnityEngine.Networking.UnityWebRequest
-GetAudioClip = function(uri,audioType) end,
 
 ---函数名：GetAudioClip<p>
----@param uri System.Uri
----@param audioType UnityEngine.AudioType
----@return UnityEngine.Networking.UnityWebRequest
-GetAudioClip = function(uri,audioType) end,
+---函数名：GetAudioClip<p>
+---@overload fun(uri: System.String, audioType: UnityEngine.AudioType):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.Uri, audioType: UnityEngine.AudioType):UnityEngine.Networking.UnityWebRequest
+GetAudioClip = function(...) end,
 
 ---函数名：GetMovieTexture<p>
----@param uri System.String
----@return UnityEngine.Networking.UnityWebRequest
-GetMovieTexture = function(uri) end,
-
 ---函数名：GetMovieTexture<p>
----@param uri System.Uri
----@return UnityEngine.Networking.UnityWebRequest
-GetMovieTexture = function(uri) end,
+---@overload fun(uri: System.String):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.Uri):UnityEngine.Networking.UnityWebRequest
+GetMovieTexture = function(...) end,
 
 ---函数名：Equals<p>
 ---@param self UnityEngine.Networking.UnityWebRequestMultimedia

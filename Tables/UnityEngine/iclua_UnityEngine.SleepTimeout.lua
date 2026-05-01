@@ -1,6 +1,7 @@
 ---@meta
 ---@class UnityEngine.SleepTimeout
 UnityEngine.SleepTimeout = {
+
 ---函数名：Equals<p>
 ---@param self UnityEngine.SleepTimeout
 ---@param obj System.Object

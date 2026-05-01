@@ -1,9 +1,6 @@
 ---@meta
 ---@class TMPro.TMP_Dropdown.OptionDataList
 TMPro.TMP_Dropdown.OptionDataList = {
----字段名：get_options<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_Dropdown.OptionData, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
-options = nil,
 
 ---函数名：Equals<p>
 ---@param self TMPro.TMP_Dropdown.OptionDataList
@@ -25,5 +22,9 @@ GetType = function(self) end,
 ---@param self TMPro.TMP_Dropdown.OptionDataList
 ---@return System.String
 ToString = function(self) end,
+
+---字段名：get_options<p>
+---@type System.Collections.Generic.List`1[[TMPro.TMP_Dropdown.OptionData, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+options = nil,
 
 }

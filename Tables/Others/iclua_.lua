@@ -1,9 +1,6 @@
 ---@meta
 ---@class System.StringComparison
 System.StringComparison = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
 
 ---枚举值：CurrentCulture<p>
 ---@type System.StringComparison
@@ -28,5 +25,9 @@ Ordinal = nil,
 ---枚举值：OrdinalIgnoreCase<p>
 ---@type System.StringComparison
 OrdinalIgnoreCase = nil,
+
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

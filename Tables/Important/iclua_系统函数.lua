@@ -1,9 +1,28 @@
 ---@meta
 ---@class SystemFunction
 SystemFunction = {
+
 ---函数名：为所有玩家创建角色<p>
 ---介绍：这是一个系统函数，请不要多次调用！<p>
 CreatePlayerUnit = function() end,
+
+---函数名：操作系统屏幕大小<p>
+---描述：操作系统的屏幕大小<p>
+---更新版本：2.781<p>
+---@return UnityEngine.Vector2
+GetCurrentResolutionSize = function() end,
+
+---函数名：窗口位置<p>
+---描述：窗口的位置<p>
+---更新版本：2.781<p>
+---@return UnityEngine.Vector2
+GetWindowPos = function() end,
+
+---函数名：游戏窗口大小<p>
+---描述：游戏窗口的大小<p>
+---更新版本：2.781<p>
+---@return UnityEngine.Vector2
+GetWindowSize = function() end,
 
 ---函数名：打开网站<p>
 ---描述：打开网站<code>url</code>，网站名字<code>label</code><p>
@@ -22,24 +41,6 @@ SetWindowName = function(name) end,
 ---更新版本：2.781<p>
 ---@param v UnityEngine.Vector2
 SetWindowPos = function(v) end,
-
----函数名：窗口位置<p>
----描述：窗口的位置<p>
----更新版本：2.781<p>
----@return UnityEngine.Vector2
-GetWindowPos = function() end,
-
----函数名：游戏窗口大小<p>
----描述：游戏窗口的大小<p>
----更新版本：2.781<p>
----@return UnityEngine.Vector2
-GetWindowSize = function() end,
-
----函数名：操作系统屏幕大小<p>
----描述：操作系统的屏幕大小<p>
----更新版本：2.781<p>
----@return UnityEngine.Vector2
-GetCurrentResolutionSize = function() end,
 
 ---函数名：解锁成就<p>
 ---描述：解锁<code>id</code>成就<p>

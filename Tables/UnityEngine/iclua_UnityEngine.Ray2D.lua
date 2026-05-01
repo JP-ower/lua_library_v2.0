@@ -1,37 +1,14 @@
 ---@meta
 ---@class UnityEngine.Ray2D
 UnityEngine.Ray2D = {
----字段名：get_origin<p>
----@type UnityEngine.Vector2
-origin = nil,
-
----字段名：get_direction<p>
----@type UnityEngine.Vector2
-direction = nil,
-
----函数名：GetPoint<p>
----@param self UnityEngine.Ray2D
----@param distance System.Single
----@return UnityEngine.Vector2
-GetPoint = function(self,distance) end,
 
 ---函数名：ToString<p>
----@param self UnityEngine.Ray2D
----@return System.String
-ToString = function(self) end,
-
 ---函数名：ToString<p>
----@param self UnityEngine.Ray2D
----@param format System.String
----@return System.String
-ToString = function(self,format) end,
-
 ---函数名：ToString<p>
----@param self UnityEngine.Ray2D
----@param format System.String
----@param formatProvider System.IFormatProvider
----@return System.String
-ToString = function(self,format,formatProvider) end,
+---@overload fun(self: UnityEngine.Ray2D):System.String
+---@overload fun(self: UnityEngine.Ray2D, format: System.String):System.String
+---@overload fun(self: UnityEngine.Ray2D, format: System.String, formatProvider: System.IFormatProvider):System.String
+ToString = function(...) end,
 
 ---函数名：Equals<p>
 ---@param self UnityEngine.Ray2D
@@ -44,9 +21,23 @@ Equals = function(self,obj) end,
 ---@return System.Int32
 GetHashCode = function(self) end,
 
+---函数名：GetPoint<p>
+---@param self UnityEngine.Ray2D
+---@param distance System.Single
+---@return UnityEngine.Vector2
+GetPoint = function(self,distance) end,
+
 ---函数名：GetType<p>
 ---@param self UnityEngine.Ray2D
 ---@return System.Type
 GetType = function(self) end,
+
+---字段名：get_direction<p>
+---@type UnityEngine.Vector2
+direction = nil,
+
+---字段名：get_origin<p>
+---@type UnityEngine.Vector2
+origin = nil,
 
 }

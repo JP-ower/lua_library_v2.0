@@ -1,13 +1,6 @@
 ---@meta
 ---@class UnityEngine.AudioType
 UnityEngine.AudioType = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
-
----枚举值：UNKNOWN<p>
----@type UnityEngine.AudioType
-UNKNOWN = nil,
 
 ---枚举值：ACC<p>
 ---@type UnityEngine.AudioType
@@ -16,6 +9,10 @@ ACC = nil,
 ---枚举值：AIFF<p>
 ---@type UnityEngine.AudioType
 AIFF = nil,
+
+---枚举值：AUDIOQUEUE<p>
+---@type UnityEngine.AudioType
+AUDIOQUEUE = nil,
 
 ---枚举值：IT<p>
 ---@type UnityEngine.AudioType
@@ -37,6 +34,14 @@ OGGVORBIS = nil,
 ---@type UnityEngine.AudioType
 S3M = nil,
 
+---枚举值：UNKNOWN<p>
+---@type UnityEngine.AudioType
+UNKNOWN = nil,
+
+---枚举值：VAG<p>
+---@type UnityEngine.AudioType
+VAG = nil,
+
 ---枚举值：WAV<p>
 ---@type UnityEngine.AudioType
 WAV = nil,
@@ -49,12 +54,8 @@ XM = nil,
 ---@type UnityEngine.AudioType
 XMA = nil,
 
----枚举值：VAG<p>
----@type UnityEngine.AudioType
-VAG = nil,
-
----枚举值：AUDIOQUEUE<p>
----@type UnityEngine.AudioType
-AUDIOQUEUE = nil,
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

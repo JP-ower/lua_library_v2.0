@@ -1,6 +1,7 @@
 ---@meta
 ---@class ObjectFunction
 ObjectFunction = {
+
 ---函数名：对象是否为空<p>
 ---描述：<code>obj</code><code>co</code>空的<p>
 ---@param obj System.Object

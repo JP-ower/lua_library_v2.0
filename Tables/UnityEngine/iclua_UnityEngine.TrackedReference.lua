@@ -1,13 +1,6 @@
 ---@meta
 ---@class UnityEngine.TrackedReference
 UnityEngine.TrackedReference = {
----字段名：op_Equality<p>
----@type System.Boolean
-op_Equality = nil,
-
----字段名：op_Inequality<p>
----@type System.Boolean
-op_Inequality = nil,
 
 ---函数名：Equals<p>
 ---@param self UnityEngine.TrackedReference
@@ -20,10 +13,6 @@ Equals = function(self,o) end,
 ---@return System.Int32
 GetHashCode = function(self) end,
 
----字段名：op_Implicit<p>
----@type System.Boolean
-op_Implicit = nil,
-
 ---函数名：GetType<p>
 ---@param self UnityEngine.TrackedReference
 ---@return System.Type
@@ -33,5 +22,17 @@ GetType = function(self) end,
 ---@param self UnityEngine.TrackedReference
 ---@return System.String
 ToString = function(self) end,
+
+---字段名：op_Equality<p>
+---@type System.Boolean
+op_Equality = nil,
+
+---字段名：op_Implicit<p>
+---@type System.Boolean
+op_Implicit = nil,
+
+---字段名：op_Inequality<p>
+---@type System.Boolean
+op_Inequality = nil,
 
 }

@@ -1,107 +1,166 @@
 ---@meta
 ---@class UnityEngine.EventSystems.EventTrigger
 UnityEngine.EventSystems.EventTrigger = {
----字段名：get_delegates<p>
----@type System.Collections.Generic.List`1[[UnityEngine.EventSystems.EventTrigger.Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
-delegates = nil,
 
----字段名：get_triggers<p>
----@type System.Collections.Generic.List`1[[UnityEngine.EventSystems.EventTrigger.Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
-triggers = nil,
-
----函数名：OnPointerEnter<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerEnter = function(self,eventData) end,
-
----函数名：OnPointerExit<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerExit = function(self,eventData) end,
-
----函数名：OnDrag<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnDrag = function(self,eventData) end,
-
----函数名：OnDrop<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnDrop = function(self,eventData) end,
-
----函数名：OnPointerDown<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerDown = function(self,eventData) end,
-
----函数名：OnPointerUp<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerUp = function(self,eventData) end,
-
----函数名：OnPointerClick<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnPointerClick = function(self,eventData) end,
-
----函数名：OnSelect<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnSelect = function(self,eventData) end,
-
----函数名：OnDeselect<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnDeselect = function(self,eventData) end,
-
----函数名：OnScroll<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnScroll = function(self,eventData) end,
-
----函数名：OnMove<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.AxisEventData
-OnMove = function(self,eventData) end,
-
----函数名：OnUpdateSelected<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnUpdateSelected = function(self,eventData) end,
-
----函数名：OnInitializePotentialDrag<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnInitializePotentialDrag = function(self,eventData) end,
-
----函数名：OnBeginDrag<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnBeginDrag = function(self,eventData) end,
-
----函数名：OnEndDrag<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.PointerEventData
-OnEndDrag = function(self,eventData) end,
-
----函数名：OnSubmit<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnSubmit = function(self,eventData) end,
-
----函数名：OnCancel<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param eventData UnityEngine.EventSystems.BaseEventData
-OnCancel = function(self,eventData) end,
-
----函数名：IsInvoking<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return System.Boolean
-IsInvoking = function(self) end,
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---函数名：BroadcastMessage<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, parameter: System.Object)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, parameter: System.Object, options: UnityEngine.SendMessageOptions)
+BroadcastMessage = function(...) end,
 
 ---函数名：CancelInvoke<p>
+---函数名：CancelInvoke<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger)
+CancelInvoke = function(...) end,
+
+---函数名：GetComponent<p>
+---函数名：GetComponent<p>
+---函数名：GetComponent<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, type: System.String):UnityEngine.Component
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger):any
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, type: System.Type):UnityEngine.Component
+GetComponent = function(...) end,
+
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---函数名：GetComponentInChildren<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, includeInactive: System.Boolean):any
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger):any
+GetComponentInChildren = function(...) end,
+
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---函数名：GetComponentInParent<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type):UnityEngine.Component
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, includeInactive: System.Boolean):any
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger):any
+GetComponentInParent = function(...) end,
+
+---函数名：GetComponents<p>
+----@return any
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+---函数名：GetComponents<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, type: System.Type):UnityEngine.Component[]
+GetComponents = function(...) end,
+
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+----@return any
+---函数名：GetComponentsInChildren<p>
+---函数名：GetComponentsInChildren<p>
+----@return any
+---函数名：GetComponentsInChildren<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger)
+GetComponentsInChildren = function(...) end,
+
+---函数名：GetComponentsInParent<p>
+----@return any
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+----@return any
+---函数名：GetComponentsInParent<p>
+---函数名：GetComponentsInParent<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, includeInactive: System.Boolean)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type):UnityEngine.Component[]
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, t: System.Type, includeInactive: System.Boolean):UnityEngine.Component[]
+GetComponentsInParent = function(...) end,
+
+---函数名：IsInvoking<p>
+---函数名：IsInvoking<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String):System.Boolean
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger):System.Boolean
+IsInvoking = function(...) end,
+
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---函数名：SendMessage<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, value: System.Object)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, value: System.Object, options: UnityEngine.SendMessageOptions)
+SendMessage = function(...) end,
+
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---函数名：SendMessageUpwards<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, value: System.Object, options: UnityEngine.SendMessageOptions)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, value: System.Object)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, options: UnityEngine.SendMessageOptions)
+SendMessageUpwards = function(...) end,
+
+---函数名：StartCoroutine<p>
+---函数名：StartCoroutine<p>
+---函数名：StartCoroutine<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String):UnityEngine.Coroutine
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, routine: System.Collections.IEnumerator):UnityEngine.Coroutine
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String, value: System.Object):UnityEngine.Coroutine
+StartCoroutine = function(...) end,
+
+---函数名：StopCoroutine<p>
+---函数名：StopCoroutine<p>
+---函数名：StopCoroutine<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, routine: System.Collections.IEnumerator)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, routine: UnityEngine.Coroutine)
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, methodName: System.String)
+StopCoroutine = function(...) end,
+
+---函数名：TryGetComponent<p>
+---函数名：TryGetComponent<p>
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.EventSystems.EventTrigger):System.Boolean
+TryGetComponent = function(...) end,
+
+---函数名：CompareTag<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
-CancelInvoke = function(self) end,
+---@param tag System.String
+---@return System.Boolean
+CompareTag = function(self,tag) end,
+
+---函数名：Equals<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param other System.Object
+---@return System.Boolean
+Equals = function(self,other) end,
+
+---函数名：GetHashCode<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@return System.Int32
+GetHashCode = function(self) end,
+
+---函数名：GetInstanceID<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@return System.Int32
+GetInstanceID = function(self) end,
+
+---函数名：GetType<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@return System.Type
+GetType = function(self) end,
 
 ---函数名：Invoke<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
@@ -116,35 +175,90 @@ Invoke = function(self,methodName,time) end,
 ---@param repeatRate System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
----函数名：CancelInvoke<p>
+---函数名：OnBeginDrag<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
-CancelInvoke = function(self,methodName) end,
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnBeginDrag = function(self,eventData) end,
 
----函数名：IsInvoking<p>
+---函数名：OnCancel<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@return System.Boolean
-IsInvoking = function(self,methodName) end,
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnCancel = function(self,eventData) end,
 
----函数名：StartCoroutine<p>
+---函数名：OnDeselect<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@return UnityEngine.Coroutine
-StartCoroutine = function(self,methodName) end,
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnDeselect = function(self,eventData) end,
 
----函数名：StartCoroutine<p>
+---函数名：OnDrag<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param value System.Object
----@return UnityEngine.Coroutine
-StartCoroutine = function(self,methodName,value) end,
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnDrag = function(self,eventData) end,
 
----函数名：StartCoroutine<p>
+---函数名：OnDrop<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
----@param routine System.Collections.IEnumerator
----@return UnityEngine.Coroutine
-StartCoroutine = function(self,routine) end,
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnDrop = function(self,eventData) end,
+
+---函数名：OnEndDrag<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnEndDrag = function(self,eventData) end,
+
+---函数名：OnInitializePotentialDrag<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnInitializePotentialDrag = function(self,eventData) end,
+
+---函数名：OnMove<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.AxisEventData
+OnMove = function(self,eventData) end,
+
+---函数名：OnPointerClick<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerClick = function(self,eventData) end,
+
+---函数名：OnPointerDown<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerDown = function(self,eventData) end,
+
+---函数名：OnPointerEnter<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerEnter = function(self,eventData) end,
+
+---函数名：OnPointerExit<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerExit = function(self,eventData) end,
+
+---函数名：OnPointerUp<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnPointerUp = function(self,eventData) end,
+
+---函数名：OnScroll<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.PointerEventData
+OnScroll = function(self,eventData) end,
+
+---函数名：OnSelect<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnSelect = function(self,eventData) end,
+
+---函数名：OnSubmit<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnSubmit = function(self,eventData) end,
+
+---函数名：OnUpdateSelected<p>
+---@param self UnityEngine.EventSystems.EventTrigger
+---@param eventData UnityEngine.EventSystems.BaseEventData
+OnUpdateSelected = function(self,eventData) end,
 
 ---函数名：StartCoroutine_Auto<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
@@ -152,326 +266,26 @@ StartCoroutine = function(self,routine) end,
 ---@return UnityEngine.Coroutine
 StartCoroutine_Auto = function(self,routine) end,
 
----函数名：StopCoroutine<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param routine System.Collections.IEnumerator
-StopCoroutine = function(self,routine) end,
-
----函数名：StopCoroutine<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param routine UnityEngine.Coroutine
-StopCoroutine = function(self,routine) end,
-
----函数名：StopCoroutine<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
-StopCoroutine = function(self,methodName) end,
-
 ---函数名：StopAllCoroutines<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
 StopAllCoroutines = function(self) end,
 
----字段名：get_useGUILayout<p>
----@type System.Boolean
-useGUILayout = nil,
-
----字段名：get_runInEditMode<p>
----@type System.Boolean
-runInEditMode = nil,
-
----字段名：get_enabled<p>
----@type System.Boolean
-enabled = nil,
-
----字段名：get_isActiveAndEnabled<p>
----@type System.Boolean
-isActiveAndEnabled = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
-
----字段名：get_gameObject<p>
----@type UnityEngine.GameObject
-gameObject = nil,
-
----函数名：GetComponent<p>
+---函数名：ToString<p>
 ---@param self UnityEngine.EventSystems.EventTrigger
----@param type System.Type
----@return UnityEngine.Component
-GetComponent = function(self,type) end,
-
----函数名：GetComponent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return 
-GetComponent = function(self) end,
-
----函数名：TryGetComponent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param type System.Type
----@param component UnityEngine.Component&
----@return System.Boolean
-TryGetComponent = function(self,type,component) end,
-
----函数名：TryGetComponent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return System.Boolean
-TryGetComponent = function(self) end,
-
----函数名：GetComponent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param type System.String
----@return UnityEngine.Component
-GetComponent = function(self,type) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component
-GetComponentInChildren = function(self,t,includeInactive) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@return UnityEngine.Component
-GetComponentInChildren = function(self,t) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param includeInactive System.Boolean
----@return 
-GetComponentInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return 
-GetComponentInChildren = function(self) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component[]
-GetComponentsInChildren = function(self,t,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@return UnityEngine.Component[]
-GetComponentsInChildren = function(self,t) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param includeInactive System.Boolean
----@return T[]
-GetComponentsInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param includeInactive System.Boolean
-GetComponentsInChildren = function(self,includeInactive) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return T[]
-GetComponentsInChildren = function(self) end,
-
----函数名：GetComponentsInChildren<p>
----@param self UnityEngine.EventSystems.EventTrigger
-GetComponentsInChildren = function(self) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component
-GetComponentInParent = function(self,t,includeInactive) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@return UnityEngine.Component
-GetComponentInParent = function(self,t) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param includeInactive System.Boolean
----@return 
-GetComponentInParent = function(self,includeInactive) end,
-
----函数名：GetComponentInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return 
-GetComponentInParent = function(self) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@param includeInactive System.Boolean
----@return UnityEngine.Component[]
-GetComponentsInParent = function(self,t,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param t System.Type
----@return UnityEngine.Component[]
-GetComponentsInParent = function(self,t) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param includeInactive System.Boolean
----@return T[]
-GetComponentsInParent = function(self,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param includeInactive System.Boolean
-GetComponentsInParent = function(self,includeInactive) end,
-
----函数名：GetComponentsInParent<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return T[]
-GetComponentsInParent = function(self) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param type System.Type
----@return UnityEngine.Component[]
-GetComponents = function(self,type) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param type System.Type
----@param results System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
-GetComponents = function(self,type,results) end,
-
----函数名：GetComponents<p>
----@param self UnityEngine.EventSystems.EventTrigger
-GetComponents = function(self) end,
-
----字段名：get_tag<p>
----@type System.String
-tag = nil,
-
----函数名：GetComponents<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return T[]
-GetComponents = function(self) end,
-
----函数名：CompareTag<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param tag System.String
----@return System.Boolean
-CompareTag = function(self,tag) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param value System.Object
----@param options UnityEngine.SendMessageOptions
-SendMessageUpwards = function(self,methodName,value,options) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param value System.Object
-SendMessageUpwards = function(self,methodName,value) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
-SendMessageUpwards = function(self,methodName) end,
-
----函数名：SendMessageUpwards<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-SendMessageUpwards = function(self,methodName,options) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param value System.Object
-SendMessage = function(self,methodName,value) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
-SendMessage = function(self,methodName) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param value System.Object
----@param options UnityEngine.SendMessageOptions
-SendMessage = function(self,methodName,value,options) end,
-
----函数名：SendMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-SendMessage = function(self,methodName,options) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param parameter System.Object
----@param options UnityEngine.SendMessageOptions
-BroadcastMessage = function(self,methodName,parameter,options) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param parameter System.Object
-BroadcastMessage = function(self,methodName,parameter) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
-BroadcastMessage = function(self,methodName) end,
-
----函数名：BroadcastMessage<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param methodName System.String
----@param options UnityEngine.SendMessageOptions
-BroadcastMessage = function(self,methodName,options) end,
-
----字段名：get_rigidbody<p>
----@type UnityEngine.Component
-rigidbody = nil,
-
----字段名：get_rigidbody2D<p>
----@type UnityEngine.Component
-rigidbody2D = nil,
-
----字段名：get_camera<p>
----@type UnityEngine.Component
-camera = nil,
-
----字段名：get_light<p>
----@type UnityEngine.Component
-light = nil,
+---@return System.String
+ToString = function(self) end,
 
 ---字段名：get_animation<p>
 ---@type UnityEngine.Component
 animation = nil,
 
----字段名：get_constantForce<p>
----@type UnityEngine.Component
-constantForce = nil,
-
----字段名：get_renderer<p>
----@type UnityEngine.Component
-renderer = nil,
-
 ---字段名：get_audio<p>
 ---@type UnityEngine.Component
 audio = nil,
 
----字段名：get_networkView<p>
+---字段名：get_camera<p>
 ---@type UnityEngine.Component
-networkView = nil,
+camera = nil,
 
 ---字段名：get_collider<p>
 ---@type UnityEngine.Component
@@ -481,46 +295,80 @@ collider = nil,
 ---@type UnityEngine.Component
 collider2D = nil,
 
----字段名：get_hingeJoint<p>
+---字段名：get_constantForce<p>
 ---@type UnityEngine.Component
-hingeJoint = nil,
+constantForce = nil,
 
----字段名：get_particleSystem<p>
----@type UnityEngine.Component
-particleSystem = nil,
+---字段名：get_delegates<p>
+---@type System.Collections.Generic.List`1[[UnityEngine.EventSystems.EventTrigger.Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+delegates = nil,
 
----函数名：GetInstanceID<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return System.Int32
-GetInstanceID = function(self) end,
+---字段名：get_enabled<p>
+---@type System.Boolean
+enabled = nil,
 
----函数名：GetHashCode<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return System.Int32
-GetHashCode = function(self) end,
-
----函数名：Equals<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@param other System.Object
----@return System.Boolean
-Equals = function(self,other) end,
-
----字段名：get_name<p>
----@type System.String
-name = nil,
+---字段名：get_gameObject<p>
+---@type UnityEngine.GameObject
+gameObject = nil,
 
 ---字段名：get_hideFlags<p>
 ---@type UnityEngine.HideFlags
 hideFlags = nil,
 
----函数名：ToString<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return System.String
-ToString = function(self) end,
+---字段名：get_hingeJoint<p>
+---@type UnityEngine.Component
+hingeJoint = nil,
 
----函数名：GetType<p>
----@param self UnityEngine.EventSystems.EventTrigger
----@return System.Type
-GetType = function(self) end,
+---字段名：get_isActiveAndEnabled<p>
+---@type System.Boolean
+isActiveAndEnabled = nil,
+
+---字段名：get_light<p>
+---@type UnityEngine.Component
+light = nil,
+
+---字段名：get_name<p>
+---@type System.String
+name = nil,
+
+---字段名：get_networkView<p>
+---@type UnityEngine.Component
+networkView = nil,
+
+---字段名：get_particleSystem<p>
+---@type UnityEngine.Component
+particleSystem = nil,
+
+---字段名：get_renderer<p>
+---@type UnityEngine.Component
+renderer = nil,
+
+---字段名：get_rigidbody<p>
+---@type UnityEngine.Component
+rigidbody = nil,
+
+---字段名：get_rigidbody2D<p>
+---@type UnityEngine.Component
+rigidbody2D = nil,
+
+---字段名：get_runInEditMode<p>
+---@type System.Boolean
+runInEditMode = nil,
+
+---字段名：get_tag<p>
+---@type System.String
+tag = nil,
+
+---字段名：get_transform<p>
+---@type UnityEngine.Transform
+transform = nil,
+
+---字段名：get_triggers<p>
+---@type System.Collections.Generic.List`1[[UnityEngine.EventSystems.EventTrigger.Entry, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+triggers = nil,
+
+---字段名：get_useGUILayout<p>
+---@type System.Boolean
+useGUILayout = nil,
 
 }

@@ -1,20 +1,21 @@
 ---@meta
 ---@class UnityEngine.AudioRolloffMode
 UnityEngine.AudioRolloffMode = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
 
----枚举值：Logarithmic<p>
+---枚举值：Custom<p>
 ---@type UnityEngine.AudioRolloffMode
-Logarithmic = nil,
+Custom = nil,
 
 ---枚举值：Linear<p>
 ---@type UnityEngine.AudioRolloffMode
 Linear = nil,
 
----枚举值：Custom<p>
+---枚举值：Logarithmic<p>
 ---@type UnityEngine.AudioRolloffMode
-Custom = nil,
+Logarithmic = nil,
+
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

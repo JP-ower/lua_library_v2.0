@@ -1,13 +1,6 @@
 ---@meta
 ---@class UnityEngine.LightmapBakeType
 UnityEngine.LightmapBakeType = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
-
----枚举值：Realtime<p>
----@type UnityEngine.LightmapBakeType
-Realtime = nil,
 
 ---枚举值：Baked<p>
 ---@type UnityEngine.LightmapBakeType
@@ -16,5 +9,13 @@ Baked = nil,
 ---枚举值：Mixed<p>
 ---@type UnityEngine.LightmapBakeType
 Mixed = nil,
+
+---枚举值：Realtime<p>
+---@type UnityEngine.LightmapBakeType
+Realtime = nil,
+
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

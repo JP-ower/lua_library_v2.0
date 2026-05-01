@@ -1,17 +1,14 @@
 ---@meta
 ---@class UnityEngine.FFTWindow
 UnityEngine.FFTWindow = {
----枚举值：value__<p>
----@type System.Int32
-value__ = nil,
 
----枚举值：Rectangular<p>
+---枚举值：Blackman<p>
 ---@type UnityEngine.FFTWindow
-Rectangular = nil,
+Blackman = nil,
 
----枚举值：Triangle<p>
+---枚举值：BlackmanHarris<p>
 ---@type UnityEngine.FFTWindow
-Triangle = nil,
+BlackmanHarris = nil,
 
 ---枚举值：Hamming<p>
 ---@type UnityEngine.FFTWindow
@@ -21,12 +18,16 @@ Hamming = nil,
 ---@type UnityEngine.FFTWindow
 Hanning = nil,
 
----枚举值：Blackman<p>
+---枚举值：Rectangular<p>
 ---@type UnityEngine.FFTWindow
-Blackman = nil,
+Rectangular = nil,
 
----枚举值：BlackmanHarris<p>
+---枚举值：Triangle<p>
 ---@type UnityEngine.FFTWindow
-BlackmanHarris = nil,
+Triangle = nil,
+
+---枚举值：value__<p>
+---@type System.Int32
+value__ = nil,
 
 }

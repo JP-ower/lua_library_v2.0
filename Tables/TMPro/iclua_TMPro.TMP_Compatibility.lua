@@ -1,6 +1,7 @@
 ---@meta
 ---@class TMPro.TMP_Compatibility
 TMPro.TMP_Compatibility = {
+
 ---函数名：ConvertTextAlignmentEnumValues<p>
 ---@param oldValue TMPro.TextAlignmentOptions
 ---@return TMPro.TextAlignmentOptions

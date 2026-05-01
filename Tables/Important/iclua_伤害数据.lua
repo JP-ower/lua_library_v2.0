@@ -1,6 +1,13 @@
 ---@meta
 ---@class DamageData
 DamageData = {
+
+---函数名：伤害值<p>
+---描述：<code>self</code>的伤害值<p>
+---@param self DamageData
+---@return System.Single
+GetDamageValue = function(self) end,
+
 ---函数名：最后造成的伤害<p>
 ---@return DamageData
 LastDamage = function() end,
@@ -10,11 +17,5 @@ LastDamage = function() end,
 ---@param self DamageData
 ---@param value System.Single
 SetDamageValue = function(self,value) end,
-
----函数名：伤害值<p>
----描述：<code>self</code>的伤害值<p>
----@param self DamageData
----@return System.Single
-GetDamageValue = function(self) end,
 
 }

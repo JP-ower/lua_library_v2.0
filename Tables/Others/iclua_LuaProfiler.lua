@@ -1,17 +1,13 @@
 ---@meta
 ---@class LuaProfiler
 LuaProfiler = {
----函数名：Clear<p>
-Clear = function() end,
-
----函数名：GetID<p>
----@param name System.String
----@return System.Int32
-GetID = function(name) end,
 
 ---函数名：BeginSample<p>
 ---@param id System.Int32
 BeginSample = function(id) end,
+
+---函数名：Clear<p>
+Clear = function() end,
 
 ---函数名：EndSample<p>
 EndSample = function() end,
@@ -26,6 +22,11 @@ Equals = function(self,obj) end,
 ---@param self LuaProfiler
 ---@return System.Int32
 GetHashCode = function(self) end,
+
+---函数名：GetID<p>
+---@param name System.String
+---@return System.Int32
+GetID = function(name) end,
 
 ---函数名：GetType<p>
 ---@param self LuaProfiler
