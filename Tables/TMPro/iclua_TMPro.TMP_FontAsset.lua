@@ -1,16 +1,21 @@
 ---@meta
+---@class UnityEngine.TextCore.LowLevel.GlyphRenderMode
+---@class TMPro.AtlasPopulationMode
+---@class TMPro.FontAssetCreationSettings
+---@class UnityEngine.TextCore.FaceInfo
+---@class TMPro.TMP_FontWeightPair
 ---@class TMPro.TMP_FontAsset
 TMPro.TMP_FontAsset = {
 
 ---函数名：CreateFontAsset<p>
 ---函数名：CreateFontAsset<p>
----@overload fun(font: UnityEngine.Font, samplingPointSize: System.Int32, atlasPadding: System.Int32, renderMode: UnityEngine.TextCore.LowLevel.GlyphRenderMode, atlasWidth: System.Int32, atlasHeight: System.Int32, atlasPopulationMode?: TMPro.AtlasPopulationMode default:Dynamic, enableMultiAtlasSupport?: System.Boolean default:True):TMPro.TMP_FontAsset
+---@overload fun(font: UnityEngine.Font, samplingPointSize: System.Int32, atlasPadding: System.Int32, renderMode: UnityEngine.TextCore.LowLevel.GlyphRenderMode, atlasWidth: System.Int32, atlasHeight: System.Int32, atlasPopulationMode?: TMPro.AtlasPopulationMode, enableMultiAtlasSupport?: System.Boolean):TMPro.TMP_FontAsset
 ---@overload fun(font: UnityEngine.Font):TMPro.TMP_FontAsset
 CreateFontAsset = function(...) end,
 
 ---函数名：HasCharacter<p>
 ---函数名：HasCharacter<p>
----@overload fun(self: TMPro.TMP_FontAsset, character: System.Char, searchFallbacks?: System.Boolean default:False, tryAddCharacter?: System.Boolean default:False):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, character: System.Char, searchFallbacks?: System.Boolean, tryAddCharacter?: System.Boolean):System.Boolean
 ---@overload fun(self: TMPro.TMP_FontAsset, character: System.Int32):System.Boolean
 HasCharacter = function(...) end,
 
@@ -18,23 +23,23 @@ HasCharacter = function(...) end,
 ---函数名：HasCharacters<p>
 ---函数名：HasCharacters<p>
 ---@overload fun(self: TMPro.TMP_FontAsset, text: System.String):System.Boolean
----@overload fun(self: TMPro.TMP_FontAsset, text: System.String, missingCharacters: System.UInt32[]&, searchFallbacks?: System.Boolean default:False, tryAddCharacter?: System.Boolean default:False):System.Boolean
----@overload fun(self: TMPro.TMP_FontAsset, text: System.String, missingCharacters: System.Collections.Generic.List`1[[System.Char, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]&):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, text: System.String, missingCharacters: System.UInt32[], searchFallbacks?: System.Boolean, tryAddCharacter?: System.Boolean):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, text: System.String, missingCharacters: System.Collections.Generic.List):System.Boolean
 HasCharacters = function(...) end,
 
 ---函数名：TryAddCharacters<p>
 ---函数名：TryAddCharacters<p>
 ---函数名：TryAddCharacters<p>
 ---函数名：TryAddCharacters<p>
----@overload fun(self: TMPro.TMP_FontAsset, unicodes: System.UInt32[], includeFontFeatures?: System.Boolean default:False):System.Boolean
----@overload fun(self: TMPro.TMP_FontAsset, unicodes: System.UInt32[], missingUnicodes: System.UInt32[]&, includeFontFeatures?: System.Boolean default:False):System.Boolean
----@overload fun(self: TMPro.TMP_FontAsset, characters: System.String, includeFontFeatures?: System.Boolean default:False):System.Boolean
----@overload fun(self: TMPro.TMP_FontAsset, characters: System.String, missingCharacters: System.String&, includeFontFeatures?: System.Boolean default:False):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, unicodes: System.UInt32[], includeFontFeatures?: System.Boolean):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, unicodes: System.UInt32[], missingUnicodes: System.UInt32[], includeFontFeatures?: System.Boolean):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, characters: System.String, includeFontFeatures?: System.Boolean):System.Boolean
+---@overload fun(self: TMPro.TMP_FontAsset, characters: System.String, missingCharacters: System.String, includeFontFeatures?: System.Boolean):System.Boolean
 TryAddCharacters = function(...) end,
 
 ---函数名：ClearFontAssetData<p>
 ---@param self TMPro.TMP_FontAsset
----@param setAtlasSizeToZero? System.Boolean default:False
+---@param setAtlasSizeToZero? System.Boolean
 ClearFontAssetData = function(self,setAtlasSizeToZero) end,
 
 ---函数名：Equals<p>
@@ -126,11 +131,11 @@ boldSpacing = nil,
 boldStyle = nil,
 
 ---字段名：get_characterLookupTable<p>
----@type System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[TMPro.TMP_Character, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.Dictionary
 characterLookupTable = nil,
 
 ---字段名：get_characterTable<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_Character, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 characterTable = nil,
 
 ---字段名：get_creationSettings<p>
@@ -142,7 +147,7 @@ creationSettings = nil,
 faceInfo = nil,
 
 ---字段名：get_fallbackFontAssetTable<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 fallbackFontAssetTable = nil,
 
 ---字段名：get_fontFeatureTable<p>
@@ -158,11 +163,11 @@ fontInfo = nil,
 fontWeightTable = nil,
 
 ---字段名：get_glyphLookupTable<p>
----@type System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.Dictionary
 glyphLookupTable = nil,
 
 ---字段名：get_glyphTable<p>
----@type System.Collections.Generic.List`1[[UnityEngine.TextCore.Glyph, UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 glyphTable = nil,
 
 ---字段名：hashCode<p>

@@ -19,29 +19,37 @@ DeleteStrFromSharedGameData = function(dirName,name) end,
 ---介绍：可以判断玩家是否下载了指定ID的游戏关卡<p>
 ---更新版本：2.7593<p>
 ---@param id System.String
----@return System.Boolean
 GameFileIsExists = function(id) end,
 
 ---函数名：字符串文件是存在的<p>
 ---描述：文件名为<code>name</code>的字符串文件是存在的<p>
+---@param name System.String
+---@return System.Boolean
+GameStrFileIsExists = function(name) end,
+
 ---函数名：共享游戏数据中的字符串文件是存在的<p>
 ---描述：共享游戏数据中文件夹名为<code>dirName</code>文件名为<code>name</code>的字符串文件是存在的<p>
 ---更新版本：2.777<p>
----@overload fun(name: System.String):System.Boolean
----@overload fun(dirName: System.String,name: System.String):System.Boolean
-GameStrFileIsExists = function(...) end,
+---@param dirName System.String
+---@param name System.String
+---@return System.Boolean
+SharedGameStrFileIsExists = function(dirName,name) end,
 
 ---函数名：获取文件MD5值<p>
 ---描述：获取文件路径为<code>file</code>的MD5值<p>
 ---更新版本：2.7599<p>
 ---@param file System.String
----@return System.String
 GetMD5HashFromFile = function(file) end,
+
+---函数名：获取游戏文件保存路径<p>
+---描述：获取当前游戏文件目录下<code>fileDirName</code>的完整路径（默认 File）<p>
+---@param fileDirName? System.String
+---@return System.String
+GetGameFileSavePath = function(fileDirName) end,
 
 ---函数名：从游戏文件中加载字符串<p>
 ---描述：从游戏文件中加载字符串，文件名为<code>name</code><p>
 ---@param name System.String
----@return System.String
 LoadStrFromGameFile = function(name) end,
 
 ---函数名：从游戏文件中加载字符串(跨关卡)<p>

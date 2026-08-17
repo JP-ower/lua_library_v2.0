@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.UI.ICanvasElement
 ---@class TMPro.TMP_UpdateRegistry
 TMPro.TMP_UpdateRegistry = {
 

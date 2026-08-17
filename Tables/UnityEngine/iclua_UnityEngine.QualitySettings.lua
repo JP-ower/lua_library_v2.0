@@ -1,4 +1,7 @@
 ---@meta
+---@class UnityEngine.ColorSpace
+---@class UnityEngine.BlendWeights
+---@class UnityEngine.Rendering.RenderPipelineAsset
 ---@class UnityEngine.QualitySettings
 UnityEngine.QualitySettings = {
 

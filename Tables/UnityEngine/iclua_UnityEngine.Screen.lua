@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.Resolution
 ---@class UnityEngine.Screen
 UnityEngine.Screen = {
 

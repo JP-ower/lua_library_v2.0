@@ -4,7 +4,6 @@ ComparisonOperator = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return ComparisonOperator
 Create = function(value) end,
 
 ---函数名：Equals<p>

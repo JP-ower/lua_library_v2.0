@@ -5,7 +5,7 @@ UnityEngine.Collision2D = {
 ---函数名：GetContacts<p>
 ---函数名：GetContacts<p>
 ---@overload fun(self: UnityEngine.Collision2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
----@overload fun(self: UnityEngine.Collision2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.Collision2D, contacts: System.Collections.Generic.List):System.Int32
 GetContacts = function(...) end,
 
 ---函数名：Equals<p>

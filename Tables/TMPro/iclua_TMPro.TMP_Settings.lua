@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.TextAsset
 ---@class TMPro.TMP_Settings
 TMPro.TMP_Settings = {
 
@@ -132,7 +133,7 @@ enableTintAllSprites = nil,
 enableWordWrapping = nil,
 
 ---字段名：get_fallbackFontAssets<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 fallbackFontAssets = nil,
 
 ---字段名：get_followingCharacters<p>

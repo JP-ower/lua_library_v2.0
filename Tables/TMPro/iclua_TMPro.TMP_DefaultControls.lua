@@ -1,4 +1,5 @@
 ---@meta
+---@class TMPro.TMP_DefaultControls.Resources
 ---@class TMPro.TMP_DefaultControls
 TMPro.TMP_DefaultControls = {
 

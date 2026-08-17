@@ -6,7 +6,7 @@ UI_InfoPanel = {
 ---描述：为信息面板添加<code>info</code>,显示<code>showTime</code>秒<p>
 ---介绍：显示时间 = 0 表示永久， < 0 表示自动<p>
 ---@param info System.String
----@param showTime? System.Single default:-1
+---@param showTime any
 ---@return UI_InfoPanel.UI_TextInfo
 AddInfo = function(info,showTime) end,
 
@@ -15,7 +15,7 @@ AddInfo = function(info,showTime) end,
 ---介绍：显示时间 = 0 表示永久， < 0 表示自动<p>
 ---更新版本：2.7599<p>
 ---@param info System.Single
----@param showTime? System.Single default:-1
+---@param showTime? System.Single
 ---@return UI_InfoPanel.UI_TextInfo
 AddInfo_Float = function(info,showTime) end,
 
@@ -24,7 +24,7 @@ AddInfo_Float = function(info,showTime) end,
 ---介绍：显示时间 = 0 表示永久， < 0 表示自动<p>
 ---更新版本：2.7599<p>
 ---@param info System.Int32
----@param showTime? System.Single default:-1
+---@param showTime? System.Single
 ---@return UI_InfoPanel.UI_TextInfo
 AddInfo_Int = function(info,showTime) end,
 
@@ -32,7 +32,7 @@ AddInfo_Int = function(info,showTime) end,
 ---描述：清除当前信息面板并且添加<code>info</code>,显示<code>showTime</code>秒<p>
 ---介绍：显示时间 =0 表示永久， <0 表示自动<p>
 ---@param info System.String
----@param showTime? System.Single default:-1
+---@param showTime any
 ---@return UI_InfoPanel.UI_TextInfo
 ClearAndAddInfo = function(info,showTime) end,
 

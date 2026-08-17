@@ -6,7 +6,7 @@ SK_ItemControl = {
 ---描述：为<code>self</code>添加<code>id</code>是否自动选择新物品<code>autoSelect</code><p>
 ---@param self SK_ItemControl
 ---@param id ItemData
----@param autoSelect? System.Boolean default:True
+---@param autoSelect? System.Boolean
 ---@return ItemData
 Add = function(self,id,autoSelect) end,
 

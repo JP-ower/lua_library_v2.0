@@ -1,4 +1,5 @@
 ---@meta
+---@class TMPro.ColorMode
 ---@class TMPro.TMP_ColorGradient
 TMPro.TMP_ColorGradient = {
 

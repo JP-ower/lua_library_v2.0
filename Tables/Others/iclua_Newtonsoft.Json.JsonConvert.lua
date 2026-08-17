@@ -1,4 +1,11 @@
 ---@meta
+---@class Newtonsoft.Json.JsonSerializerSettings
+---@class Newtonsoft.Json.JsonConverter
+---@class System.DateTime
+---@class System.DateTimeOffset
+---@class System.Enum
+---@class System.Guid
+---@class System.TimeSpan
 ---@class Newtonsoft.Json.JsonConvert
 Newtonsoft.Json.JsonConvert = {
 
@@ -121,7 +128,7 @@ GetHashCode = function(self) end,
 GetType = function(self) end,
 
 ---字段名：get_DefaultSettings<p>
----@type System.Func`1[[Newtonsoft.Json.JsonSerializerSettings, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Func
 DefaultSettings = nil,
 
 ---字段名：False<p>

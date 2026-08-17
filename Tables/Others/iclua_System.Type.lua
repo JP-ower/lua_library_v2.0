@@ -1,4 +1,28 @@
 ---@meta
+---@class System.Array
+---@class System.Globalization.CultureInfo
+---@class System.Reflection.Assembly
+---@class System.Reflection.Binder
+---@class System.Reflection.BindingFlags
+---@class System.Reflection.CallingConventions
+---@class System.Reflection.ConstructorInfo
+---@class System.Reflection.EventInfo
+---@class System.Reflection.FieldInfo
+---@class System.Reflection.GenericParameterAttributes
+---@class System.Reflection.InterfaceMapping
+---@class System.Reflection.MemberFilter
+---@class System.Reflection.MemberInfo
+---@class System.Reflection.MemberTypes
+---@class System.Reflection.MethodBase
+---@class System.Reflection.MethodInfo
+---@class System.Reflection.Module
+---@class System.Reflection.ParameterModifier
+---@class System.Reflection.PropertyInfo
+---@class System.Reflection.TypeAttributes
+---@class System.Reflection.TypeFilter
+---@class System.Runtime.InteropServices.StructLayoutAttribute
+---@class System.RuntimeTypeHandle
+---@class System.TypeCode
 ---@class System.Type
 System.Type = {
 
@@ -139,9 +163,9 @@ GetProperty = function(...) end,
 ---@overload fun(typeName: System.String):System.Type
 ---@overload fun(typeName: System.String, throwOnError: System.Boolean):System.Type
 ---@overload fun(typeName: System.String, throwOnError: System.Boolean, ignoreCase: System.Boolean):System.Type
----@overload fun(typeName: System.String, assemblyResolver: System.Func`2[[System.Reflection.AssemblyName, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], typeResolver: System.Func`4[[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]):System.Type
----@overload fun(typeName: System.String, assemblyResolver: System.Func`2[[System.Reflection.AssemblyName, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], typeResolver: System.Func`4[[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], throwOnError: System.Boolean):System.Type
----@overload fun(typeName: System.String, assemblyResolver: System.Func`2[[System.Reflection.AssemblyName, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], typeResolver: System.Func`4[[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], throwOnError: System.Boolean, ignoreCase: System.Boolean):System.Type
+---@overload fun(typeName: System.String, assemblyResolver: System.Func, typeResolver: System.Func):System.Type
+---@overload fun(typeName: System.String, assemblyResolver: System.Func, typeResolver: System.Func, throwOnError: System.Boolean):System.Type
+---@overload fun(typeName: System.String, assemblyResolver: System.Func, typeResolver: System.Func, throwOnError: System.Boolean, ignoreCase: System.Boolean):System.Type
 GetType = function(...) end,
 
 ---函数名：GetTypeFromCLSID<p>
@@ -201,7 +225,7 @@ GetArrayRank = function(self) end,
 
 ---函数名：GetCustomAttributesData<p>
 ---@param self System.Type
----@return System.Collections.Generic.IList`1[[System.Reflection.CustomAttributeData, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@return System.Collections.Generic.IList
 GetCustomAttributesData = function(self) end,
 
 ---函数名：GetDefaultMembers<p>
@@ -341,8 +365,8 @@ MakePointerType = function(self) end,
 
 ---函数名：ReflectionOnlyGetType<p>
 ---@param typeName System.String
----@param throwIfNotFound System.Boolean
 ---@param ignoreCase System.Boolean
+---@param throwIfNotFound any
 ---@return System.Type
 ReflectionOnlyGetType = function(typeName,throwIfNotFound,ignoreCase) end,
 
@@ -372,7 +396,7 @@ BaseType = nil,
 ContainsGenericParameters = nil,
 
 ---字段名：get_CustomAttributes<p>
----@type System.Collections.Generic.IEnumerable`1[[System.Reflection.CustomAttributeData, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type System.Collections.Generic.IEnumerable
 CustomAttributes = nil,
 
 ---字段名：get_DeclaringMethod<p>

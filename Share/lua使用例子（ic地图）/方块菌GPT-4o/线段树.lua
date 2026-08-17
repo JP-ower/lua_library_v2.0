@@ -1,6 +1,6 @@
 --学习1：https://oi-wiki.org/ds/seg/
 --学习2：https://blog.csdn.net/weixin_45697774/article/details/104274713
-
+--注：这个线段树实现了单点查询和区间赋值功能
 AdvancedSegmentTree = {}
 AdvancedSegmentTree.__index = AdvancedSegmentTree
 

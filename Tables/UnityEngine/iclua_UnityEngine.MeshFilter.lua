@@ -46,7 +46,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: UnityEngine.MeshFilter)
----@overload fun(self: UnityEngine.MeshFilter, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.MeshFilter, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.MeshFilter, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: UnityEngine.MeshFilter)
 GetComponents = function(...) end,
@@ -104,13 +104,12 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.MeshFilter):System.Boolean
----@overload fun(self: UnityEngine.MeshFilter, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.MeshFilter, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.MeshFilter
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>

@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.CollisionFlags
 ---@class UnityEngine.CharacterController
 UnityEngine.CharacterController = {
 
@@ -47,7 +48,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---@overload fun(self: UnityEngine.CharacterController)
 ---@overload fun(self: UnityEngine.CharacterController)
----@overload fun(self: UnityEngine.CharacterController, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.CharacterController, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.CharacterController, type: System.Type):UnityEngine.Component[]
 GetComponents = function(...) end,
 
@@ -104,7 +105,7 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.CharacterController):System.Boolean
----@overload fun(self: UnityEngine.CharacterController, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.CharacterController, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：ClosestPoint<p>
@@ -122,7 +123,6 @@ ClosestPointOnBounds = function(self,position) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.CharacterController
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -155,7 +155,7 @@ Move = function(self,motion) end,
 ---函数名：Raycast<p>
 ---@param self UnityEngine.CharacterController
 ---@param ray UnityEngine.Ray
----@param hitInfo UnityEngine.RaycastHit&
+---@param hitInfo UnityEngine.RaycastHit
 ---@param maxDistance System.Single
 ---@return System.Boolean
 Raycast = function(self,ray,hitInfo,maxDistance) end,

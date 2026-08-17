@@ -46,7 +46,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: UnityEngine.SurfaceEffector2D)
----@overload fun(self: UnityEngine.SurfaceEffector2D, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.SurfaceEffector2D, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.SurfaceEffector2D, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: UnityEngine.SurfaceEffector2D)
 GetComponents = function(...) end,
@@ -104,13 +104,12 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.SurfaceEffector2D):System.Boolean
----@overload fun(self: UnityEngine.SurfaceEffector2D, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.SurfaceEffector2D, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.SurfaceEffector2D
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>

@@ -1,4 +1,5 @@
 ---@meta
+---@class System.Action
 ---@class TMPro.FastAction
 TMPro.FastAction = {
 

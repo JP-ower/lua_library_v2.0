@@ -36,7 +36,6 @@ GetCanUseCount = function(self) end,
 ---描述：获取ID为<code>id</code>的物品数据<p>
 ---更新版本：2.7592<p>
 ---@param id System.String
----@return ItemData
 GetItemData = function(id) end,
 
 ---函数名：名字<p>

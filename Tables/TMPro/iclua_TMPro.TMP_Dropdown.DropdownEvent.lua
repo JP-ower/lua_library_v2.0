@@ -1,10 +1,11 @@
 ---@meta
+---@class UnityEngine.Events.UnityEventCallState
 ---@class TMPro.TMP_Dropdown.DropdownEvent
 TMPro.TMP_Dropdown.DropdownEvent = {
 
 ---函数名：AddListener<p>
 ---@param self TMPro.TMP_Dropdown.DropdownEvent
----@param call UnityEngine.Events.UnityAction`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param call UnityEngine.Events.UnityAction
 AddListener = function(self,call) end,
 
 ---函数名：Equals<p>
@@ -51,7 +52,7 @@ RemoveAllListeners = function(self) end,
 
 ---函数名：RemoveListener<p>
 ---@param self TMPro.TMP_Dropdown.DropdownEvent
----@param call UnityEngine.Events.UnityAction`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param call UnityEngine.Events.UnityAction
 RemoveListener = function(self,call) end,
 
 ---函数名：SetPersistentListenerState<p>

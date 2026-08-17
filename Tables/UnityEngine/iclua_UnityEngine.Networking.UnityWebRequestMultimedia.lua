@@ -1,4 +1,5 @@
 ---@meta
+---@class System.Uri
 ---@class UnityEngine.Networking.UnityWebRequestMultimedia
 UnityEngine.Networking.UnityWebRequestMultimedia = {
 

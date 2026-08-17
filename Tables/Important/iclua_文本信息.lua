@@ -17,14 +17,14 @@ GetTime = function(self) end,
 ---函数名：删除<p>
 ---描述：删除<code>self</code>，不使用透明度渐变<code>unChange</code><p>
 ---@param self UI_InfoPanel.UI_TextInfo
----@param unChange? System.Boolean default:False
+---@param unChange? System.Boolean
 Remove = function(self,unChange) end,
 
 ---函数名：设置<p>
 ---描述：设置<code>self</code>的文本信息为<code>text</code>，显示时间为<code>time</code><p>
 ---@param self UI_InfoPanel.UI_TextInfo
 ---@param text System.String
----@param time? System.Single default:-1
+---@param time System.Single
 Set = function(self,text,time) end,
 
 ---函数名：设置文本信息<p>

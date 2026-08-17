@@ -4,8 +4,8 @@ UnityEngine.CanvasRenderer = {
 
 ---函数名：AddUIVertexStream<p>
 ---函数名：AddUIVertexStream<p>
----@overload fun(verts: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], positions: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv0S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv1S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv2S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv3S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], normals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], tangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(verts: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], positions: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv0S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv1S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], normals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], tangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(verts: System.Collections.Generic.List, positions: System.Collections.Generic.List, colors: System.Collections.Generic.List, uv0S: System.Collections.Generic.List, uv1S: System.Collections.Generic.List, uv2S: System.Collections.Generic.List, uv3S: System.Collections.Generic.List, normals: System.Collections.Generic.List, tangents: System.Collections.Generic.List)
+---@overload fun(verts: System.Collections.Generic.List, positions: System.Collections.Generic.List, colors: System.Collections.Generic.List, uv0S: System.Collections.Generic.List, uv1S: System.Collections.Generic.List, normals: System.Collections.Generic.List, tangents: System.Collections.Generic.List)
 AddUIVertexStream = function(...) end,
 
 ---函数名：BroadcastMessage<p>
@@ -20,8 +20,8 @@ BroadcastMessage = function(...) end,
 
 ---函数名：CreateUIVertexStream<p>
 ---函数名：CreateUIVertexStream<p>
----@overload fun(verts: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], positions: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv0S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv1S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], normals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], tangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
----@overload fun(verts: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], positions: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv0S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv1S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv2S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv3S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], normals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], tangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(verts: System.Collections.Generic.List, positions: System.Collections.Generic.List, colors: System.Collections.Generic.List, uv0S: System.Collections.Generic.List, uv1S: System.Collections.Generic.List, normals: System.Collections.Generic.List, tangents: System.Collections.Generic.List, indices: System.Collections.Generic.List)
+---@overload fun(verts: System.Collections.Generic.List, positions: System.Collections.Generic.List, colors: System.Collections.Generic.List, uv0S: System.Collections.Generic.List, uv1S: System.Collections.Generic.List, uv2S: System.Collections.Generic.List, uv3S: System.Collections.Generic.List, normals: System.Collections.Generic.List, tangents: System.Collections.Generic.List, indices: System.Collections.Generic.List)
 CreateUIVertexStream = function(...) end,
 
 ---函数名：GetComponent<p>
@@ -58,7 +58,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: UnityEngine.CanvasRenderer, type: System.Type):UnityEngine.Component[]
----@overload fun(self: UnityEngine.CanvasRenderer, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.CanvasRenderer, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.CanvasRenderer)
 ---@overload fun(self: UnityEngine.CanvasRenderer)
 GetComponents = function(...) end,
@@ -127,19 +127,19 @@ SetMaterial = function(...) end,
 
 ---函数名：SetVertices<p>
 ---函数名：SetVertices<p>
----@overload fun(self: UnityEngine.CanvasRenderer, vertices: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.CanvasRenderer, vertices: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.CanvasRenderer, vertices: UnityEngine.UIVertex[], size: System.Int32)
 SetVertices = function(...) end,
 
 ---函数名：SplitUIVertexStreams<p>
 ---函数名：SplitUIVertexStreams<p>
----@overload fun(verts: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], positions: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv0S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv1S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv2S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv3S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], normals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], tangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
----@overload fun(verts: System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], positions: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv0S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], uv1S: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], normals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], tangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(verts: System.Collections.Generic.List, positions: System.Collections.Generic.List, colors: System.Collections.Generic.List, uv0S: System.Collections.Generic.List, uv1S: System.Collections.Generic.List, uv2S: System.Collections.Generic.List, uv3S: System.Collections.Generic.List, normals: System.Collections.Generic.List, tangents: System.Collections.Generic.List, indices: System.Collections.Generic.List)
+---@overload fun(verts: System.Collections.Generic.List, positions: System.Collections.Generic.List, colors: System.Collections.Generic.List, uv0S: System.Collections.Generic.List, uv1S: System.Collections.Generic.List, normals: System.Collections.Generic.List, tangents: System.Collections.Generic.List, indices: System.Collections.Generic.List)
 SplitUIVertexStreams = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: UnityEngine.CanvasRenderer, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.CanvasRenderer, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: UnityEngine.CanvasRenderer):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -150,7 +150,6 @@ Clear = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.CanvasRenderer
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：DisableRectClipping<p>

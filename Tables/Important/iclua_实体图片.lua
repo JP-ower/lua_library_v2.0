@@ -20,7 +20,7 @@ AddPlay_Force = function(self,name) end,
 ---描述：创建一个精灵为<code>sp</code>的图片在<code>pos</code>,显示模式为<code>sdm</code><p>
 ---@param sp UnityEngine.Sprite
 ---@param pos UnityEngine.Vector2
----@param sdm? UnityEngine.SpriteDrawMode default:Simple
+---@param sdm? UnityEngine.SpriteDrawMode
 ---@return EntitySprite
 Create = function(sp,pos,sdm) end,
 
@@ -190,9 +190,9 @@ GetSpriteMaskInteraction = function(self) end,
 ---描述：获取<code>self</code>的<code>tt</code>的<code>a</code>轴，使用空间<code>s</code>的值<p>
 ---更新版本：2.7599<p>
 ---@param self EntitySprite
----@param tt? Unit.TransformType default:Pos
----@param a? Unit.Vector3Axis default:X
----@param s? UnityEngine.Space default:World
+---@param tt? Unit.TransformType
+---@param a? Unit.Vector3Axis
+---@param s? UnityEngine.Space
 ---@return System.Single
 GetTransformValue = function(self,tt,a,s) end,
 
@@ -356,8 +356,8 @@ SetPosOffset = function(self,v) end,
 ---@param self EntitySprite
 ---@param axis Unit.Vector3Axis
 ---@param v System.Single
----@param s? UnityEngine.Space default:Self
----@param useOffset? System.Boolean default:True
+---@param s? UnityEngine.Space
+---@param useOffset? System.Boolean
 SetRotate_New = function(self,axis,v,s,useOffset) end,
 
 ---函数名：设置缩放<p>

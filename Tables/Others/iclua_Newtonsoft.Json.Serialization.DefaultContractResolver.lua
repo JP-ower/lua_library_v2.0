@@ -1,4 +1,6 @@
 ---@meta
+---@class Newtonsoft.Json.Serialization.JsonContract
+---@class Newtonsoft.Json.Serialization.NamingStrategy
 ---@class Newtonsoft.Json.Serialization.DefaultContractResolver
 Newtonsoft.Json.Serialization.DefaultContractResolver = {
 
@@ -16,7 +18,6 @@ GetHashCode = function(self) end,
 ---函数名：GetResolvedPropertyName<p>
 ---@param self Newtonsoft.Json.Serialization.DefaultContractResolver
 ---@param propertyName System.String
----@return System.String
 GetResolvedPropertyName = function(self,propertyName) end,
 
 ---函数名：GetType<p>

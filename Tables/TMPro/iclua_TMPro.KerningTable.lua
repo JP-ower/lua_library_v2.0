@@ -1,4 +1,5 @@
 ---@meta
+---@class TMPro.GlyphValueRecord_Legacy
 ---@class TMPro.KerningTable
 TMPro.KerningTable = {
 
@@ -49,7 +50,7 @@ SortKerningPairs = function(self) end,
 ToString = function(self) end,
 
 ---字段名：kerningPairs<p>
----@type System.Collections.Generic.List`1[[TMPro.KerningPair, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 kerningPairs = nil,
 
 }

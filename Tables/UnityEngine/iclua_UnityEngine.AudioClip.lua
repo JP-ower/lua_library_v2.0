@@ -1,4 +1,8 @@
 ---@meta
+---@class UnityEngine.AudioClip.PCMReaderCallback
+---@class UnityEngine.AudioClip.PCMSetPositionCallback
+---@class UnityEngine.AudioDataLoadState
+---@class UnityEngine.AudioClipLoadType
 ---@class UnityEngine.AudioClip
 UnityEngine.AudioClip = {
 

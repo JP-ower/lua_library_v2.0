@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.CharacterInfo
+---@class UnityEngine.Font.FontTextureRebuildCallback
 ---@class UnityEngine.Font
 UnityEngine.Font = {
 
@@ -11,9 +13,9 @@ CreateDynamicFontFromOSFont = function(...) end,
 ---函数名：GetCharacterInfo<p>
 ---函数名：GetCharacterInfo<p>
 ---函数名：GetCharacterInfo<p>
----@overload fun(self: UnityEngine.Font, ch: System.Char, info: UnityEngine.CharacterInfo&):System.Boolean
----@overload fun(self: UnityEngine.Font, ch: System.Char, info: UnityEngine.CharacterInfo&, size: System.Int32):System.Boolean
----@overload fun(self: UnityEngine.Font, ch: System.Char, info: UnityEngine.CharacterInfo&, size: System.Int32, style: UnityEngine.FontStyle):System.Boolean
+---@overload fun(self: UnityEngine.Font, ch: System.Char, info: UnityEngine.CharacterInfo):System.Boolean
+---@overload fun(self: UnityEngine.Font, ch: System.Char, info: UnityEngine.CharacterInfo, size: System.Int32):System.Boolean
+---@overload fun(self: UnityEngine.Font, ch: System.Char, info: UnityEngine.CharacterInfo, size: System.Int32, style: UnityEngine.FontStyle):System.Boolean
 GetCharacterInfo = function(...) end,
 
 ---函数名：RequestCharactersInTexture<p>
@@ -42,7 +44,6 @@ GetInstanceID = function(self) end,
 
 ---函数名：GetMaxVertsForString<p>
 ---@param str System.String
----@return System.Int32
 GetMaxVertsForString = function(str) end,
 
 ---函数名：GetOSInstalledFontNames<p>

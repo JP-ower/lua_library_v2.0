@@ -51,7 +51,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---函数名：GetComponents<p>
 ----@return any
----@overload fun(self: UnityEngine.UI.Button, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.UI.Button, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.UI.Button, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: UnityEngine.UI.Button)
 ---@overload fun(self: UnityEngine.UI.Button)
@@ -132,13 +132,12 @@ StopCoroutine = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.UI.Button):System.Boolean
----@overload fun(self: UnityEngine.UI.Button, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.UI.Button, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.UI.Button
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -197,8 +196,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self UnityEngine.UI.Button
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>

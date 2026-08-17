@@ -4,7 +4,6 @@ VariableType = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return VariableType
 Create = function(value) end,
 
 ---函数名：CreateType<p>
@@ -35,7 +34,6 @@ GetValueArray = function(self) end,
 
 ---函数名：NameToType<p>
 ---@param type System.String
----@return System.Type
 NameToType = function(type) end,
 
 ---函数名：ToString<p>
@@ -62,11 +60,11 @@ value = nil,
 valueArray = nil,
 
 ---字段名：variableTypeDic<p>
----@type System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type System.Collections.Generic.Dictionary
 variableTypeDic = nil,
 
 ---字段名：variableTypeDic_Extra<p>
----@type System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type System.Collections.Generic.Dictionary
 variableTypeDic_Extra = nil,
 
 }

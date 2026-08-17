@@ -26,15 +26,23 @@ AddDTCallback = function(self,a,ia) end,
 ---@param ia ActionDataArray
 AddDTCallback_End = function(self,a,ia) end,
 
+---函数名：[变化] - 添加变化回调(全部结束时)<p>
+---描述：为<code>self</code>添加变化回调(全部结束时)<code>a</code><code>ia</code><p>
+---介绍：当变化全部结束时会运行该函数组(只对变化生效)<p>
+---@param self ObjectControl
+---@param a ActionDataArray
+---@param ia ActionDataArray
+AddDTCallback_AllEnd = function(self,a,ia) end,
+
 ---函数名：添加变化(自定义值)<p>
 ---描述：使<code>self</code>的自定义值由<code>iv</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，延迟<code>delay</code><p>
 ---@param self ObjectControl
 ---@param iv System.Single
 ---@param v System.Single
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param delay? System.Single default:0
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param delay? System.Single
 AddDTCusValue = function(self,iv,v,sm,smv,ease,delay) end,
 
 ---函数名：添加变化(冲击)<p>
@@ -42,76 +50,76 @@ AddDTCusValue = function(self,iv,v,sm,smv,ease,delay) end,
 ---@param self ObjectControl
 ---@param cm ObjectControl.ControlMode_Vec
 ---@param punch UnityEngine.Vector3
----@param time? System.Single default:2
----@param vibrato? System.Int32 default:10
----@param elascity? System.Single default:1
----@param delay? System.Single default:0
+---@param time? System.Single
+---@param vibrato? System.Int32
+---@param elascity? System.Single
+---@param delay? System.Single
 AddDTPunch = function(self,cm,punch,time,vibrato,elascity,delay) end,
 
 ---函数名：添加变化(震动)<p>
 ---描述：使<code>self</code>的<code>cm</code>进行震动变化，强度<code>strength</code>，持续时间<code>time</code>，震动次数<code>vibrato</code>，随机性<code>randomness</code>，延迟<code>delay</code>秒<p>
 ---@param self ObjectControl
 ---@param cm ObjectControl.ControlMode_Vec
----@param strength? System.Single default:1
----@param time? System.Single default:2
----@param vibrato? System.Int32 default:10
----@param randomness? System.Single default:90
----@param delay? System.Single default:0
+---@param strength? System.Single
+---@param time? System.Single
+---@param vibrato? System.Int32
+---@param randomness? System.Single
+---@param delay? System.Single
 AddDTShake = function(self,cm,strength,time,vibrato,randomness,delay) end,
 
 ---函数名：添加变化(值)<p>
 ---描述：使<code>self</code>的<code>cm</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---@param self ObjectControl
----@param cm? ObjectControl.ControlMode default:PosX
----@param v? System.Single default:0
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? ObjectControl.ControlMode
+---@param v? System.Single
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
 AddDTValue = function(self,cm,v,sm,smv,ease,tm,delay) end,
 
 ---函数名：添加变化(向量)<p>
 ---描述：使<code>self</code>的<code>cm</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---@param self ObjectControl
----@param cm? ObjectControl.ControlMode_Vec default:Pos
----@param v? UnityEngine.Vector2 default:
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? ObjectControl.ControlMode_Vec
+---@param v? UnityEngine.Vector2
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
 AddDTVec = function(self,cm,v,sm,smv,ease,tm,delay) end,
 
 ---函数名：添加控制_颜色<p>
 ---描述：为<code>self</code>追加一个颜色使用<code>sm</code><code>v</code>到达<code>c</code>，延迟<code>delay</code>秒<p>
 ---@param self ObjectControl
----@param sm? ObjectControl.SetMode default:Time
----@param v? System.Single default:1
----@param c? UnityEngine.Color default:
----@param delay? System.Single default:0
+---@param sm? ObjectControl.SetMode
+---@param v? System.Single
+---@param c? UnityEngine.Color
+---@param delay? System.Single
 Add_Color = function(self,sm,v,c,delay) end,
 
 ---函数名：添加控制_值<p>
 ---描述：为<code>self</code>追加一个<code>cm</code>使用<code>sm</code><code>v</code>到达<code>tv</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---@param self ObjectControl
----@param cm? ObjectControl.ControlMode default:PosX
----@param sm? ObjectControl.SetMode default:Time
----@param v? System.Single default:1
----@param tv? System.Single default:1
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? ObjectControl.ControlMode
+---@param sm? ObjectControl.SetMode
+---@param v? System.Single
+---@param tv? System.Single
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
 Add_Value = function(self,cm,sm,v,tv,tm,delay) end,
 
 ---函数名：添加控制_向量<p>
 ---描述：为<code>self</code>添加一个<code>cm</code>使用<code>sm</code><code>v</code>到达<code>tv</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---@param self ObjectControl
----@param cm? ObjectControl.ControlMode_Vec default:Pos
----@param sm? ObjectControl.SetMode default:Time
----@param v? System.Single default:1
----@param tv? UnityEngine.Vector2 default:
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? ObjectControl.ControlMode_Vec
+---@param sm? ObjectControl.SetMode
+---@param v? System.Single
+---@param tv? UnityEngine.Vector2
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
 Add_Vec = function(self,cm,sm,v,tv,tm,delay) end,
 
 ---函数名：清空<p>
@@ -203,7 +211,7 @@ DeleteAll = function(obj) end,
 ---描述：删除<code>self</code>上其余的物体控制，是否只删除相同类型<code>sameType</code><p>
 ---介绍：如果给物体添加了多个物体控制，可以使用这个函数来删除之前添加的<p>
 ---@param self ObjectControl
----@param sameType? System.Boolean default:False
+---@param sameType? System.Boolean
 DeleteOtherOC = function(self,sameType) end,
 
 ---函数名：[变化] - 最后应用的物体控制自定义值<p>
@@ -307,7 +315,7 @@ Next = function(self) end,
 
 ---函数名：对象控制是空的<p>
 ---描述：<code>oc</code>是空的<p>
----@param oc ObjectControl
+---@param oc ObjectControl|nil
 ---@return System.Boolean
 ObjectControlIsNull = function(oc) end,
 
@@ -330,15 +338,15 @@ SetContinuous = function(self,be) end,
 ---介绍：只对添加变化生效，对添加控制无效<p>
 ---更新版本：2.774<p>
 ---@param self ObjectControl
----@param be? System.Boolean default:True
+---@param be? System.Boolean
 SetDTIgnorePause = function(self,be) end,
 
 ---函数名：[变化] - 设置曲线参数<p>
 ---描述：设置<code>self</code>的曲线振幅为<code>v</code>，周期为<code>v2</code><p>
 ---介绍：注意：只对Flash, InFlash, OutFlash, InOutFlash曲线起作用<p>
 ---@param self ObjectControl
----@param v? System.Single default:1
----@param v2? System.Single default:1
+---@param v? System.Single
+---@param v2? System.Single
 SetDTPosition = function(self,v,v2) end,
 
 ---函数名：[变化] - 设置时间<p>

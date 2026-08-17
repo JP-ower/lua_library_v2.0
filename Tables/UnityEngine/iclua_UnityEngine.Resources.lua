@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.ResourceRequest
 ---@class UnityEngine.Resources
 UnityEngine.Resources = {
 
@@ -68,8 +69,8 @@ GetType = function(self) end,
 InstanceIDToObject = function(instanceID) end,
 
 ---函数名：InstanceIDToObjectList<p>
----@param instanceIDs Unity.Collections.NativeArray`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
----@param objects System.Collections.Generic.List`1[[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param instanceIDs Unity.Collections.NativeArray
+---@param objects System.Collections.Generic.List
 InstanceIDToObjectList = function(instanceIDs,objects) end,
 
 ---函数名：ToString<p>

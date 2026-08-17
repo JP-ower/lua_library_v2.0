@@ -51,25 +51,25 @@ ToString = function(self) end,
 
 ---函数名：TryGetColorGradientPreset<p>
 ---@param hashCode System.Int32
----@param gradientPreset TMPro.TMP_ColorGradient&
+---@param gradientPreset TMPro.TMP_ColorGradient
 ---@return System.Boolean
 TryGetColorGradientPreset = function(hashCode,gradientPreset) end,
 
 ---函数名：TryGetFontAsset<p>
 ---@param hashCode System.Int32
----@param fontAsset TMPro.TMP_FontAsset&
+---@param fontAsset TMPro.TMP_FontAsset
 ---@return System.Boolean
 TryGetFontAsset = function(hashCode,fontAsset) end,
 
 ---函数名：TryGetMaterial<p>
 ---@param hashCode System.Int32
----@param material UnityEngine.Material&
+---@param material UnityEngine.Material
 ---@return System.Boolean
 TryGetMaterial = function(hashCode,material) end,
 
 ---函数名：TryGetSpriteAsset<p>
 ---@param hashCode System.Int32
----@param spriteAsset TMPro.TMP_SpriteAsset&
+---@param spriteAsset TMPro.TMP_SpriteAsset
 ---@return System.Boolean
 TryGetSpriteAsset = function(hashCode,spriteAsset) end,
 

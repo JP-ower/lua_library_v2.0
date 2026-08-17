@@ -76,7 +76,7 @@ IsCloseControlInput = function() end,
 ---描述：按键<code>kc</code>处于<code>state</code>状态<p>
 ---介绍：状态0为按下开始，1为按下中，2为按下结束<p>
 ---@param kc UnityEngine.KeyCode
----@param state? System.Int32 default:0
+---@param state? System.Int32
 ---@return System.Boolean
 IsPressKey = function(kc,state) end,
 
@@ -84,7 +84,6 @@ IsPressKey = function(kc,state) end,
 ---描述：触发的按键<code>co</code><code>name</code><p>
 ---@param co ComparisonOperator2
 ---@param name System.String
----@return System.Boolean
 KeyCompare = function(co,name) end,
 
 ---函数名：按键比较2<p>
@@ -93,6 +92,11 @@ KeyCompare = function(co,name) end,
 ---@param kc UnityEngine.KeyCode
 ---@return System.Boolean
 KeyCompare2 = function(co,kc) end,
+
+---函数名：按键名字转为按键枚举<p>
+---描述：将按键名<code>name</code>转为按键枚举<p>
+---@param name System.String
+KeyNameToKeyCode = function(name) end,
 
 ---函数名：开启玩家控制输入<p>
 ---介绍：开启后玩家控制输入关闭次数-1，只有当玩家控制输入关闭次数为0时才允许操控玩家角色<p>
@@ -103,7 +107,7 @@ OpenControlInput = function() end,
 ---介绍：按键状态0为按下，1为按住，2为弹起<p>
 ---@param kc UnityEngine.KeyCode
 ---@param state System.Int32
----@param autoUpTime? System.Single default:0
+---@param autoUpTime? System.Single
 SendKeys = function(kc,state,autoUpTime) end,
 
 ---函数名：模拟按键(控制键)<p>
@@ -111,7 +115,7 @@ SendKeys = function(kc,state,autoUpTime) end,
 ---介绍：按键状态0为按下，1为按住，2为弹起<p>
 ---@param kc ControlKey
 ---@param state System.Int32
----@param autoUpTime? System.Single default:0
+---@param autoUpTime? System.Single
 SendKeys_ControlKey = function(kc,state,autoUpTime) end,
 
 ---函数名：设置鼠标锁定状态<p>

@@ -47,7 +47,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---@overload fun(self: UnityEngine.MeshRenderer)
 ---@overload fun(self: UnityEngine.MeshRenderer)
----@overload fun(self: UnityEngine.MeshRenderer, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.MeshRenderer, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.MeshRenderer, type: System.Type):UnityEngine.Component[]
 GetComponents = function(...) end,
 
@@ -116,13 +116,12 @@ SetPropertyBlock = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.MeshRenderer):System.Boolean
----@overload fun(self: UnityEngine.MeshRenderer, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.MeshRenderer, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.MeshRenderer
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -133,7 +132,7 @@ Equals = function(self,other) end,
 
 ---函数名：GetClosestReflectionProbes<p>
 ---@param self UnityEngine.MeshRenderer
----@param result System.Collections.Generic.List`1[[UnityEngine.Rendering.ReflectionProbeBlendInfo, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param result System.Collections.Generic.List
 GetClosestReflectionProbes = function(self,result) end,
 
 ---函数名：GetHashCode<p>
@@ -148,12 +147,12 @@ GetInstanceID = function(self) end,
 
 ---函数名：GetMaterials<p>
 ---@param self UnityEngine.MeshRenderer
----@param m System.Collections.Generic.List`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param m System.Collections.Generic.List
 GetMaterials = function(self,m) end,
 
 ---函数名：GetSharedMaterials<p>
 ---@param self UnityEngine.MeshRenderer
----@param m System.Collections.Generic.List`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param m System.Collections.Generic.List
 GetSharedMaterials = function(self,m) end,
 
 ---函数名：GetType<p>

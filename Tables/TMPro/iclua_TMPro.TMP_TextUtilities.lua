@@ -1,11 +1,12 @@
 ---@meta
+---@class TMPro.CaretPosition
 ---@class TMPro.TMP_TextUtilities
 TMPro.TMP_TextUtilities = {
 
 ---函数名：GetCursorIndexFromPosition<p>
 ---函数名：GetCursorIndexFromPosition<p>
 ---@overload fun(textComponent: TMPro.TMP_Text, position: UnityEngine.Vector3, camera: UnityEngine.Camera):System.Int32
----@overload fun(textComponent: TMPro.TMP_Text, position: UnityEngine.Vector3, camera: UnityEngine.Camera, cursor: TMPro.CaretPosition&):System.Int32
+---@overload fun(textComponent: TMPro.TMP_Text, position: UnityEngine.Vector3, camera: UnityEngine.Camera, cursor: TMPro.CaretPosition):System.Int32
 GetCursorIndexFromPosition = function(...) end,
 
 ---函数名：GetHashCode<p>
@@ -96,12 +97,10 @@ FindNearestWord = function(text,position,camera) end,
 
 ---函数名：GetSimpleHashCode<p>
 ---@param s System.String
----@return System.Int32
 GetSimpleHashCode = function(s) end,
 
 ---函数名：GetSimpleHashCodeLowercase<p>
 ---@param s System.String
----@return System.UInt32
 GetSimpleHashCodeLowercase = function(s) end,
 
 ---函数名：GetType<p>
@@ -125,13 +124,12 @@ IsIntersectingRectTransform = function(rectTransform,position,camera) end,
 ---@param transform UnityEngine.Transform
 ---@param screenPoint UnityEngine.Vector2
 ---@param cam UnityEngine.Camera
----@param worldPoint UnityEngine.Vector3&
+---@param worldPoint UnityEngine.Vector3
 ---@return System.Boolean
 ScreenPointToWorldPointInRectangle = function(transform,screenPoint,cam,worldPoint) end,
 
 ---函数名：StringHexToInt<p>
 ---@param s System.String
----@return System.Int32
 StringHexToInt = function(s) end,
 
 ---函数名：ToLowerFast<p>

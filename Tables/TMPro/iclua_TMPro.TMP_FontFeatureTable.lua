@@ -28,7 +28,7 @@ SortGlyphPairAdjustmentRecords = function(self) end,
 ToString = function(self) end,
 
 ---字段名：get_glyphPairAdjustmentRecords<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_GlyphPairAdjustmentRecord, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 glyphPairAdjustmentRecords = nil,
 
 }

@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.PhysicsScene
 ---@class UnityEngine.Physics
 UnityEngine.Physics = {
 
@@ -12,13 +13,13 @@ UnityEngine.Physics = {
 ---函数名：BoxCast<p>
 ---函数名：BoxCast<p>
 ---函数名：BoxCast<p>
----@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, orientation: UnityEngine.Quaternion, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
----@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&):System.Boolean
----@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, orientation: UnityEngine.Quaternion):System.Boolean
----@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, orientation: UnityEngine.Quaternion, maxDistance: System.Single):System.Boolean
+---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, orientation: UnityEngine.Quaternion, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
+---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit):System.Boolean
+---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, orientation: UnityEngine.Quaternion):System.Boolean
+---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, orientation: UnityEngine.Quaternion, maxDistance: System.Single):System.Boolean
 ---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, orientation: UnityEngine.Quaternion, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
 ---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, orientation: UnityEngine.Quaternion, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
----@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, orientation: UnityEngine.Quaternion, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, orientation: UnityEngine.Quaternion, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
 ---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3):System.Boolean
 ---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, orientation: UnityEngine.Quaternion):System.Boolean
 ---@overload fun(center: UnityEngine.Vector3, halfExtents: UnityEngine.Vector3, direction: UnityEngine.Vector3, orientation: UnityEngine.Quaternion, maxDistance: System.Single):System.Boolean
@@ -56,14 +57,14 @@ BoxCastNonAlloc = function(...) end,
 ---函数名：CapsuleCast<p>
 ---函数名：CapsuleCast<p>
 ---函数名：CapsuleCast<p>
----@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
----@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
+---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
 ---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3):System.Boolean
 ---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, maxDistance: System.Single):System.Boolean
 ---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
 ---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single):System.Boolean
----@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&):System.Boolean
+---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single):System.Boolean
+---@overload fun(point1: UnityEngine.Vector3, point2: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit):System.Boolean
 CapsuleCast = function(...) end,
 
 ---函数名：CapsuleCastAll<p>
@@ -131,9 +132,9 @@ IgnoreLayerCollision = function(...) end,
 ---函数名：Linecast<p>
 ---函数名：Linecast<p>
 ---@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&):System.Boolean
----@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, layerMask: System.Int32):System.Boolean
----@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit):System.Boolean
+---@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, layerMask: System.Int32):System.Boolean
+---@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
 ---@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3):System.Boolean
 ---@overload fun(start: UnityEngine.Vector3, _end: UnityEngine.Vector3, layerMask: System.Int32):System.Boolean
 Linecast = function(...) end,
@@ -209,18 +210,18 @@ OverlapSphereNonAlloc = function(...) end,
 ---@overload fun(ray: UnityEngine.Ray, maxDistance: System.Single):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
----@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray):System.Boolean
----@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit&):System.Boolean
----@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single):System.Boolean
 ---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit):System.Boolean
 ---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, maxDistance: System.Single):System.Boolean
 ---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single):System.Boolean
 ---@overload fun(origin: UnityEngine.Vector3, direction: UnityEngine.Vector3, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
 Raycast = function(...) end,
 
@@ -272,18 +273,18 @@ RaycastNonAlloc = function(...) end,
 ---函数名：SphereCast<p>
 ---函数名：SphereCast<p>
 ---函数名：SphereCast<p>
----@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single):System.Boolean
----@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit&):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray, radius: System.Single, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
----@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
+---@overload fun(origin: UnityEngine.Vector3, radius: System.Single, direction: UnityEngine.Vector3, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray, radius: System.Single, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray, radius: System.Single, maxDistance: System.Single):System.Boolean
 ---@overload fun(ray: UnityEngine.Ray, radius: System.Single):System.Boolean
----@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
----@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit&, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32, queryTriggerInteraction: UnityEngine.QueryTriggerInteraction):System.Boolean
+---@overload fun(ray: UnityEngine.Ray, radius: System.Single, hitInfo: UnityEngine.RaycastHit, maxDistance: System.Single, layerMask: System.Int32):System.Boolean
 SphereCast = function(...) end,
 
 ---函数名：SphereCastAll<p>
@@ -342,8 +343,8 @@ ClosestPoint = function(point,collider,position,rotation) end,
 ---@param colliderB UnityEngine.Collider
 ---@param positionB UnityEngine.Vector3
 ---@param rotationB UnityEngine.Quaternion
----@param direction UnityEngine.Vector3&
----@param distance System.Single&
+---@param direction UnityEngine.Vector3
+---@param distance System.Single
 ---@return System.Boolean
 ComputePenetration = function(colliderA,positionA,rotationA,colliderB,positionB,rotationB,direction,distance) end,
 

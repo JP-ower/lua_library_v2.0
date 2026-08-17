@@ -26,7 +26,6 @@ SetDKState = function(be) end,
 ---介绍：不能在游戏开始时使用<p>
 ---更新版本：2.7571<p>
 ---@param key System.String
----@return UI_XImage
 TGetKeyXImage = function(key) end,
 
 ---函数名：获取按键的UI组件<p>
@@ -34,7 +33,6 @@ TGetKeyXImage = function(key) end,
 ---介绍：不能在游戏开始时使用<p>
 ---更新版本：2.7571<p>
 ---@param key System.String
----@return UI_XRT
 TGetKeyXRT = function(key) end,
 
 ---函数名：获取按键的UI文本<p>
@@ -42,7 +40,6 @@ TGetKeyXRT = function(key) end,
 ---介绍：不能在游戏开始时使用<p>
 ---更新版本：2.7571<p>
 ---@param key System.String
----@return UI_XText
 TGetKeyXText = function(key) end,
 
 ---函数名：隐藏<p>
@@ -65,7 +62,7 @@ THideMoveControl = function() end,
 ---描述：设置按键<code>key</code>的虚拟按键为<code>kc</code><p>
 ---介绍：不能在游戏开始时使用<p>
 ---@param key System.String
----@param kc UnityEngine.KeyCode
+---@param kc any
 TSetKey = function(key,kc) end,
 
 ---函数名：显示<p>

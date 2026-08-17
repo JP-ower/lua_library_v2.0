@@ -78,23 +78,23 @@ ON_TMP_SETTINGS_CHANGED = function() end,
 ToString = function(self) end,
 
 ---字段名：COLOR_GRADIENT_PROPERTY_EVENT<p>
----@type TMPro.FastAction`1[[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 COLOR_GRADIENT_PROPERTY_EVENT = nil,
 
 ---字段名：COMPUTE_DT_EVENT<p>
----@type TMPro.FastAction`2[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[TMPro.Compute_DT_EventArgs, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 COMPUTE_DT_EVENT = nil,
 
 ---字段名：DRAG_AND_DROP_MATERIAL_EVENT<p>
----@type TMPro.FastAction`3[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 DRAG_AND_DROP_MATERIAL_EVENT = nil,
 
 ---字段名：FONT_PROPERTY_EVENT<p>
----@type TMPro.FastAction`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 FONT_PROPERTY_EVENT = nil,
 
 ---字段名：MATERIAL_PROPERTY_EVENT<p>
----@type TMPro.FastAction`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 MATERIAL_PROPERTY_EVENT = nil,
 
 ---字段名：RESOURCE_LOAD_EVENT<p>
@@ -102,23 +102,23 @@ MATERIAL_PROPERTY_EVENT = nil,
 RESOURCE_LOAD_EVENT = nil,
 
 ---字段名：SPRITE_ASSET_PROPERTY_EVENT<p>
----@type TMPro.FastAction`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 SPRITE_ASSET_PROPERTY_EVENT = nil,
 
 ---字段名：TEXTMESHPRO_PROPERTY_EVENT<p>
----@type TMPro.FastAction`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 TEXTMESHPRO_PROPERTY_EVENT = nil,
 
 ---字段名：TEXTMESHPRO_UGUI_PROPERTY_EVENT<p>
----@type TMPro.FastAction`2[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 TEXTMESHPRO_UGUI_PROPERTY_EVENT = nil,
 
 ---字段名：TEXT_CHANGED_EVENT<p>
----@type TMPro.FastAction`1[[UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type TMPro.FastAction
 TEXT_CHANGED_EVENT = nil,
 
 ---字段名：TEXT_STYLE_PROPERTY_EVENT<p>
----@type TMPro.FastAction`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type TMPro.FastAction
 TEXT_STYLE_PROPERTY_EVENT = nil,
 
 ---字段名：TMP_SETTINGS_PROPERTY_EVENT<p>

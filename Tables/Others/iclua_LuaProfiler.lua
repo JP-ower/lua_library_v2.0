@@ -25,7 +25,6 @@ GetHashCode = function(self) end,
 
 ---函数名：GetID<p>
 ---@param name System.String
----@return System.Int32
 GetID = function(name) end,
 
 ---函数名：GetType<p>
@@ -39,7 +38,7 @@ GetType = function(self) end,
 ToString = function(self) end,
 
 ---字段名：list<p>
----@type System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type System.Collections.Generic.List
 list = nil,
 
 }

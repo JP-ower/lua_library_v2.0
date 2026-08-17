@@ -94,15 +94,15 @@ SetAccX = function(self,accX) end,
 
 ---函数名：关闭/显示抛物线报错<p>
 ---描述：是否显示所有曲线运动报错:<code>set</code><p>
----@param set? System.Boolean default:False
+---@param set? System.Boolean
 SetDisplayError = function(set) end,
 
 ---函数名：设置对象跟随曲线旋转<p>
 ---描述：设置<code>self</code>的对象旋转跟随曲线:<code>followDirect</code>，对象初始角度:<code>initialDirect</code><p>
 ---介绍：角度0为右,逆时针为正方向<p>
 ---@param self JFY_CurvilinearMotion
----@param followDirect? System.Boolean default:True
----@param initialDirect? System.Single default:0
+---@param followDirect? System.Boolean
+---@param initialDirect? System.Single
 SetFollowDirect = function(self,followDirect,initialDirect) end,
 
 ---函数名：设置曲线运动的Y轴加速度<p>
@@ -117,8 +117,8 @@ SetGravity = function(self,g) end,
 ---@param self JFY_CurvilinearMotion
 ---@param speedY System.Single
 ---@param g System.Single
----@param parabolaMode? JFY_CurvilinearMotion.ParabolaMode default:UpMode
----@param targetPos? UnityEngine.Vector2 default:
+---@param parabolaMode? JFY_CurvilinearMotion.ParabolaMode
+---@param targetPos? UnityEngine.Vector2
 SetParabolaTargetPos = function(self,speedY,g,parabolaMode,targetPos) end,
 
 ---函数名：设置为加速度为X轴的抛物线并使其经过目标点<p>
@@ -127,8 +127,8 @@ SetParabolaTargetPos = function(self,speedY,g,parabolaMode,targetPos) end,
 ---@param self JFY_CurvilinearMotion
 ---@param speedX System.Single
 ---@param accX System.Single
----@param parabolaMode? JFY_CurvilinearMotion.ParabolaMode default:UpMode
----@param targetPos? UnityEngine.Vector2 default:
+---@param parabolaMode? JFY_CurvilinearMotion.ParabolaMode
+---@param targetPos? UnityEngine.Vector2
 SetParabolaTargetPosX = function(self,speedX,accX,parabolaMode,targetPos) end,
 
 ---函数名：设置曲线运动所有属性<p>

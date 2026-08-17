@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.RenderTextureDescriptor
 ---@class UnityEngine.RenderTexture
 UnityEngine.RenderTexture = {
 
@@ -47,7 +48,7 @@ ResolveAntiAliasedSurface = function(...) end,
 ---函数名：ConvertToEquirect<p>
 ---@param self UnityEngine.RenderTexture
 ---@param equirect UnityEngine.RenderTexture
----@param eye? UnityEngine.Camera.MonoOrStereoscopicEye default:Mono
+---@param eye? UnityEngine.Camera.MonoOrStereoscopicEye
 ConvertToEquirect = function(self,equirect,eye) end,
 
 ---函数名：Create<p>
@@ -200,10 +201,6 @@ format = nil,
 ---字段名：get_generateMips<p>
 ---@type System.Boolean
 generateMips = nil,
-
----字段名：get_graphicsFormat<p>
----@type UnityEngine.Experimental.Rendering.GraphicsFormat
-graphicsFormat = nil,
 
 ---字段名：get_graphicsFormat<p>
 ---@type UnityEngine.Experimental.Rendering.GraphicsFormat

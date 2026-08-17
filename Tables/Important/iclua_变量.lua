@@ -5,24 +5,24 @@ VarManager = {
 ---函数名：局部变量是否存在<p>
 ---描述：局部变量<code>name</code><code>co</code>存在的<p>
 ---@param name System.String
----@param co ComparisonOperator2
+---@param co any
 ---@return System.Boolean
 ContainsLocalVariable = function(name,co) end,
 
 ---函数名：局部变量是否存在(数组)<p>
 ---描述：局部变量<code>name</code>下标<code>index</code><code>co</code>存在的<p>
 ---@param name System.String
----@param index System.Int32
 ---@param co ComparisonOperator2
+---@param index System.Int32
 ---@return System.Boolean
 ContainsLocalVariable_Array = function(name,index,co) end,
 
 ---函数名：局部变量是否存在(二维数组)<p>
 ---描述：局部变量<code>name</code>下标<code>index</code>,<code>index2</code><code>co</code>存在的<p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
 ---@param co ComparisonOperator2
+---@param index System.Int32
 ---@return System.Boolean
 ContainsLocalVariable_DyadicArray = function(name,index,index2,co) end,
 
@@ -30,7 +30,7 @@ ContainsLocalVariable_DyadicArray = function(name,index,index2,co) end,
 ---描述：单位<code>unit</code>中变量<code>name</code><code>co</code>存在的<p>
 ---@param unit Unit
 ---@param name System.String
----@param co ComparisonOperator2
+---@param co any
 ---@return System.Boolean
 ContainsUnitVariable = function(unit,name,co) end,
 
@@ -38,8 +38,8 @@ ContainsUnitVariable = function(unit,name,co) end,
 ---描述：单位<code>unit</code>中变量<code>name</code>下标<code>index</code><code>co</code>存在的<p>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param co ComparisonOperator2
+---@param index System.Int32
 ---@return System.Boolean
 ContainsUnitVariable_Array = function(unit,name,index,co) end,
 
@@ -47,33 +47,33 @@ ContainsUnitVariable_Array = function(unit,name,index,co) end,
 ---描述：单位<code>unit</code>中变量<code>name</code>下标<code>index</code>,<code>index2</code><code>co</code>存在的<p>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
 ---@param co ComparisonOperator2
+---@param index System.Int32
 ---@return System.Boolean
 ContainsUnitVariable_DyadicArray = function(unit,name,index,index2,co) end,
 
 ---函数名：变量是否存在<p>
 ---描述：变量<code>name</code><code>co</code>存在的<p>
 ---@param name System.String
----@param co ComparisonOperator2
+---@param co any
 ---@return System.Boolean
 ContainsVariable = function(name,co) end,
 
 ---函数名：变量是否存在(数组)<p>
 ---描述：变量<code>name</code>下标<code>index</code><code>co</code>存在的<p>
 ---@param name System.String
----@param index System.Int32
 ---@param co ComparisonOperator2
+---@param index System.Int32
 ---@return System.Boolean
 ContainsVariable_Array = function(name,index,co) end,
 
 ---函数名：变量是否存在(二维数组)<p>
 ---描述：变量<code>name</code>下标<code>index</code>,<code>index2</code><code>co</code>存在的<p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
 ---@param co ComparisonOperator2
+---@param index System.Int32
 ---@return System.Boolean
 ContainsVariable_DyadicArray = function(name,index,index2,co) end,
 
@@ -97,8 +97,8 @@ DeleteUnitVar_Array = function(unit,name,index) end,
 ---介绍：将单位变量从存档中删除<p>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 DeleteUnitVar_DyadicArray = function(unit,name,index,index2) end,
 
 ---函数名：删除存档中变量<p>
@@ -118,14 +118,13 @@ DeleteVar_Array = function(name,index) end,
 ---描述：从存档中删除变量<code>name</code>下标<code>index</code>,<code>index2</code><p>
 ---介绍：将变量从存档中删除<p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 DeleteVar_DyadicArray = function(name,index,index2) end,
 
 ---函数名：从局部变量中获取<p>
 ---描述：局部变量:<code>name</code><p>
 ---@param name System.String
----@return System.Object
 GetLocalVariableValue = function(name) end,
 
 ---函数名：从局部变量中获取(数组)<p>
@@ -138,8 +137,8 @@ GetLocalVariableValue_Array = function(name,index) end,
 ---函数名：从局部变量中获取(二维数组)<p>
 ---描述：局部变量:<code>name</code>下标<code>index</code>,<code>index2</code><p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 ---@return System.Object
 GetLocalVariableValue_DyadicArray = function(name,index,index2) end,
 
@@ -155,14 +154,12 @@ GetSpecTypeObj = function(type,value) end,
 ---描述：获取单位为<code>unit</code>变量名为<code>name</code>的单位变量名字<p>
 ---@param unit Unit
 ---@param name System.String
----@return System.String
 GetUnitVarKey = function(unit,name) end,
 
 ---函数名：从单位变量中获取<p>
 ---描述：单位<code>unit</code>中变量:<code>name</code><p>
 ---@param unit Unit
 ---@param name System.String
----@return System.Object
 GetUnitVariableValue = function(unit,name) end,
 
 ---函数名：从单位变量中获取(数组)<p>
@@ -177,8 +174,8 @@ GetUnitVariableValue_Array = function(unit,name,index) end,
 ---描述：单位<code>unit</code>中变量:<code>name</code>下标<code>index</code>,<code>index2</code><p>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 ---@return System.Object
 GetUnitVariableValue_DyadicArray = function(unit,name,index,index2) end,
 
@@ -198,15 +195,14 @@ GetVarArrayLength = function(name) end,
 ---函数名：获取二维变量数组名字<p>
 ---描述：获取变量名为<code>name</code>下标为<code>index</code>和<code>index2</code>的二维数组名字<p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 ---@return System.String
 GetVarDyadicArrayKey = function(name,index,index2) end,
 
 ---函数名：从变量中获取<p>
 ---描述：变量:<code>name</code><p>
 ---@param name System.String
----@return System.Object
 GetVariableValue = function(name) end,
 
 ---函数名：从变量中获取(数组)<p>
@@ -219,8 +215,8 @@ GetVariableValue_Array = function(name,index) end,
 ---函数名：从变量中获取(二维数组)<p>
 ---描述：变量:<code>name</code>下标<code>index</code>,<code>index2</code><p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 ---@return System.Object
 GetVariableValue_DyadicArray = function(name,index,index2) end,
 
@@ -229,21 +225,18 @@ GetVariableValue_DyadicArray = function(name,index,index2) end,
 ---更新版本：2.777<p>
 ---@param type VariableType
 ---@param json System.String
----@return System.Object
 JsonToObject = function(type,json) end,
 
 ---函数名：将Json转为变量<p>
 ---描述：将<code>json</code>转为变量<p>
 ---更新版本：2.777<p>
 ---@param json System.String
----@return VarData
 JsonToVarData = function(json) end,
 
 ---函数名：将Json转为变量对象<p>
 ---描述：将<code>json</code>转为变量对象<p>
 ---更新版本：2.777<p>
 ---@param json System.String
----@return System.Object
 JsonToVarDataValue = function(json) end,
 
 ---函数名：从存档中加载变量<p>
@@ -260,8 +253,8 @@ LoadVar_Array = function(name,index) end,
 ---函数名：从存档中加载变量[二维数组]<p>
 ---描述：从存档中加载变量<code>name</code>下标<code>index</code>,<code>index2</code><p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 LoadVar_DyadicArray = function(name,index,index2) end,
 
 ---函数名：从存档中加载变量[单位]<p>
@@ -281,8 +274,8 @@ LoadVar_Unit_Array = function(unit,name,index) end,
 ---描述：从存档中加载<code>unit</code>身上的<code>name</code>变量，下标<code>index</code>,<code>index2</code><p>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 LoadVar_Unit_DyadicArray = function(unit,name,index,index2) end,
 
 ---函数名：将对象转为Json<p>
@@ -310,8 +303,8 @@ RemoveUnitVariable_Array = function(unit,name,index) end,
 ---描述：删除单位变量<code>unit</code>下标<code>name</code>,<code>index</code><p><code>index2</code>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 RemoveUnitVariable_DyadicArray = function(unit,name,index,index2) end,
 
 ---函数名：删除全局变量<p>
@@ -328,8 +321,8 @@ RemoveVariable_Array = function(name,index) end,
 ---函数名：删除全局变量(二维数组)<p>
 ---描述：删除全局变量<code>name</code>下标<code>index</code>,<code>index2</code><p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 RemoveVariable_DyadicArray = function(name,index,index2) end,
 
 ---函数名：保存变量到存档<p>
@@ -349,8 +342,8 @@ SaveVar_Array = function(name,index) end,
 ---描述：保存变量<code>name</code>下标<code>index</code>,<code>index2</code>到存档中<p>
 ---介绍：将数组变量保存到存档中<p>
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 SaveVar_DyadicArray = function(name,index,index2) end,
 
 ---函数名：保存变量到存档[单位]<p>
@@ -373,8 +366,8 @@ SaveVar_Unit_Array = function(unit,name,index) end,
 ---介绍：将单位变量保存到存档中<p>
 ---@param unit Unit
 ---@param name System.String
----@param index System.Int32
 ---@param index2 System.Int32
+---@param index System.Int32
 SaveVar_Unit_DyadicArray = function(unit,name,index,index2) end,
 
 ---函数名：设置局部变量<p>
@@ -489,7 +482,6 @@ SetVariable_New = function(name,value) end,
 ---函数名：将字符串转为变量名<p>
 ---描述：将<code>str</code>转为变量名<p>
 ---@param str System.String
----@return VariableName
 StringToVariableName = function(str) end,
 
 ---函数名：将变量转为Json<p>

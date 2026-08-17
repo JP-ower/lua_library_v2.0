@@ -1,5 +1,5 @@
 ---@meta
----@class UnityEngine.Texture2D
+---@class UnityEngine.Texture2D : UnityEngine.Texture
 UnityEngine.Texture2D = {
 
 ---函数名：Apply<p>
@@ -82,8 +82,9 @@ SetPixel = function(...) end,
 
 ---函数名：SetPixelData<p>
 ---函数名：SetPixelData<p>
----@overload fun(self: UnityEngine.Texture2D, mipLevel: System.Int32, sourceDataStartIndex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Texture2D, data: T[], mipLevel: System.Int32, sourceDataStartIndex?: System.Int32 default:0)
+---@overload fun(self: UnityEngine.Texture2D, mipLevel: System.Int32, sourceDataStartIndex?: System.Int32)
+---@generic T
+---@overload fun(self: UnityEngine.Texture2D, data: T[], mipLevel: System.Int32, sourceDataStartIndex?: System.Int32)
 SetPixelData = function(...) end,
 
 ---函数名：SetPixels<p>
@@ -139,7 +140,7 @@ Equals = function(self,other) end,
 ---@param sizes UnityEngine.Vector2[]
 ---@param padding System.Int32
 ---@param atlasSize System.Int32
----@param results System.Collections.Generic.List`1[[UnityEngine.Rect, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param results System.Collections.Generic.List
 ---@return System.Boolean
 GenerateAtlas = function(sizes,padding,atlasSize,results) end,
 

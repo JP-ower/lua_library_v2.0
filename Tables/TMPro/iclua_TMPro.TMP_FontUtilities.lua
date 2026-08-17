@@ -4,8 +4,8 @@ TMPro.TMP_FontUtilities = {
 
 ---函数名：SearchForCharacter<p>
 ---函数名：SearchForCharacter<p>
----@overload fun(font: TMPro.TMP_FontAsset, unicode: System.UInt32, character: TMPro.TMP_Character&):TMPro.TMP_FontAsset
----@overload fun(fonts: System.Collections.Generic.List`1[[TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], unicode: System.UInt32, character: TMPro.TMP_Character&):TMPro.TMP_FontAsset
+---@overload fun(font: TMPro.TMP_FontAsset, unicode: System.UInt32, character: TMPro.TMP_Character):TMPro.TMP_FontAsset
+---@overload fun(fonts: System.Collections.Generic.List, unicode: System.UInt32, character: TMPro.TMP_Character):TMPro.TMP_FontAsset
 SearchForCharacter = function(...) end,
 
 ---函数名：Equals<p>

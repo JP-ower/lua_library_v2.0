@@ -5,15 +5,15 @@ UnityEngine.TrailRenderer = {
 ---函数名：AddPositions<p>
 ---函数名：AddPositions<p>
 ---函数名：AddPositions<p>
----@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeSlice`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeSlice)
 ---@overload fun(self: UnityEngine.TrailRenderer, positions: UnityEngine.Vector3[])
----@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeArray)
 AddPositions = function(...) end,
 
 ---函数名：BakeMesh<p>
 ---函数名：BakeMesh<p>
----@overload fun(self: UnityEngine.TrailRenderer, mesh: UnityEngine.Mesh, useTransform?: System.Boolean default:False)
----@overload fun(self: UnityEngine.TrailRenderer, mesh: UnityEngine.Mesh, camera: UnityEngine.Camera, useTransform?: System.Boolean default:False)
+---@overload fun(self: UnityEngine.TrailRenderer, mesh: UnityEngine.Mesh, useTransform?: System.Boolean)
+---@overload fun(self: UnityEngine.TrailRenderer, mesh: UnityEngine.Mesh, camera: UnityEngine.Camera, useTransform?: System.Boolean)
 BakeMesh = function(...) end,
 
 ---函数名：BroadcastMessage<p>
@@ -60,7 +60,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: UnityEngine.TrailRenderer, type: System.Type):UnityEngine.Component[]
----@overload fun(self: UnityEngine.TrailRenderer, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.TrailRenderer, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.TrailRenderer)
 ---@overload fun(self: UnityEngine.TrailRenderer)
 GetComponents = function(...) end,
@@ -99,8 +99,8 @@ GetComponentsInParent = function(...) end,
 ---函数名：GetPositions<p>
 ---函数名：GetPositions<p>
 ---@overload fun(self: UnityEngine.TrailRenderer, positions: UnityEngine.Vector3[]):System.Int32
----@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeSlice`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeArray):System.Int32
+---@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeSlice):System.Int32
 GetPositions = function(...) end,
 
 ---函数名：GetPropertyBlock<p>
@@ -132,8 +132,8 @@ SendMessageUpwards = function(...) end,
 ---函数名：SetPositions<p>
 ---函数名：SetPositions<p>
 ---函数名：SetPositions<p>
----@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeSlice`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeSlice)
+---@overload fun(self: UnityEngine.TrailRenderer, positions: Unity.Collections.NativeArray)
 ---@overload fun(self: UnityEngine.TrailRenderer, positions: UnityEngine.Vector3[])
 SetPositions = function(...) end,
 
@@ -146,7 +146,7 @@ SetPropertyBlock = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.TrailRenderer):System.Boolean
----@overload fun(self: UnityEngine.TrailRenderer, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.TrailRenderer, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：AddPosition<p>
@@ -161,7 +161,6 @@ Clear = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.TrailRenderer
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -172,7 +171,7 @@ Equals = function(self,other) end,
 
 ---函数名：GetClosestReflectionProbes<p>
 ---@param self UnityEngine.TrailRenderer
----@param result System.Collections.Generic.List`1[[UnityEngine.Rendering.ReflectionProbeBlendInfo, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param result System.Collections.Generic.List
 GetClosestReflectionProbes = function(self,result) end,
 
 ---函数名：GetHashCode<p>
@@ -187,7 +186,7 @@ GetInstanceID = function(self) end,
 
 ---函数名：GetMaterials<p>
 ---@param self UnityEngine.TrailRenderer
----@param m System.Collections.Generic.List`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param m System.Collections.Generic.List
 GetMaterials = function(self,m) end,
 
 ---函数名：GetPosition<p>
@@ -198,7 +197,7 @@ GetPosition = function(self,index) end,
 
 ---函数名：GetSharedMaterials<p>
 ---@param self UnityEngine.TrailRenderer
----@param m System.Collections.Generic.List`1[[UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param m System.Collections.Generic.List
 GetSharedMaterials = function(self,m) end,
 
 ---函数名：GetType<p>

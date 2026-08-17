@@ -1,10 +1,11 @@
 ---@meta
+---@class UnityEngine.TouchScreenKeyboard.Status
 ---@class TMPro.TMP_InputField.TouchScreenKeyboardEvent
 TMPro.TMP_InputField.TouchScreenKeyboardEvent = {
 
 ---函数名：AddListener<p>
 ---@param self TMPro.TMP_InputField.TouchScreenKeyboardEvent
----@param call UnityEngine.Events.UnityAction`1[[UnityEngine.TouchScreenKeyboard.Status, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param call UnityEngine.Events.UnityAction
 AddListener = function(self,call) end,
 
 ---函数名：Equals<p>
@@ -51,7 +52,7 @@ RemoveAllListeners = function(self) end,
 
 ---函数名：RemoveListener<p>
 ---@param self TMPro.TMP_InputField.TouchScreenKeyboardEvent
----@param call UnityEngine.Events.UnityAction`1[[UnityEngine.TouchScreenKeyboard.Status, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param call UnityEngine.Events.UnityAction
 RemoveListener = function(self,call) end,
 
 ---函数名：SetPersistentListenerState<p>

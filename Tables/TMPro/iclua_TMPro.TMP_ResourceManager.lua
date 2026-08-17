@@ -29,7 +29,7 @@ ToString = function(self) end,
 
 ---函数名：TryGetFontAsset<p>
 ---@param hashcode System.Int32
----@param fontAsset TMPro.TMP_FontAsset&
+---@param fontAsset TMPro.TMP_FontAsset
 ---@return System.Boolean
 TryGetFontAsset = function(hashcode,fontAsset) end,
 

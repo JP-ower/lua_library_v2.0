@@ -5,9 +5,9 @@ UnityEngine.UI.Dropdown = {
 ---函数名：AddOptions<p>
 ---函数名：AddOptions<p>
 ---函数名：AddOptions<p>
----@overload fun(self: UnityEngine.UI.Dropdown, options: System.Collections.Generic.List`1[[UnityEngine.UI.Dropdown.OptionData, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.UI.Dropdown, options: System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
----@overload fun(self: UnityEngine.UI.Dropdown, options: System.Collections.Generic.List`1[[UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.UI.Dropdown, options: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.UI.Dropdown, options: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.UI.Dropdown, options: System.Collections.Generic.List)
 AddOptions = function(...) end,
 
 ---函数名：BroadcastMessage<p>
@@ -61,7 +61,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---@overload fun(self: UnityEngine.UI.Dropdown)
 ---@overload fun(self: UnityEngine.UI.Dropdown)
----@overload fun(self: UnityEngine.UI.Dropdown, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.UI.Dropdown, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.UI.Dropdown, type: System.Type):UnityEngine.Component[]
 GetComponents = function(...) end,
 
@@ -139,7 +139,7 @@ StopCoroutine = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: UnityEngine.UI.Dropdown, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.UI.Dropdown, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: UnityEngine.UI.Dropdown):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -150,7 +150,6 @@ ClearOptions = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.UI.Dropdown
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -213,8 +212,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self UnityEngine.UI.Dropdown
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>
@@ -419,7 +418,7 @@ networkView = nil,
 onValueChanged = nil,
 
 ---字段名：get_options<p>
----@type System.Collections.Generic.List`1[[UnityEngine.UI.Dropdown.OptionData, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 options = nil,
 
 ---字段名：get_particleSystem<p>

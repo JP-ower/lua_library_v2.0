@@ -10,7 +10,7 @@ Close = function() end,
 ---介绍：使用&符号可以拆分成多段对话，比如：你好呀&我是XXX<p>
 ---@param sp UnityEngine.Sprite
 ---@param name System.String
----@param content System.String
+---@param content any
 ---@return UI_DialogBox
 Create = function(sp,name,content) end,
 
@@ -18,7 +18,6 @@ Create = function(sp,name,content) end,
 ---描述：创建一个对话框，内容为<code>content</code><p>
 ---介绍：使用&符号可以拆分成多段对话，比如：你好呀&我是XXX<p>
 ---@param content System.String
----@return UI_DialogBox
 Create_Content = function(content) end,
 
 ---函数名：创建对话框(使用图片、文本)<p>
@@ -26,7 +25,6 @@ Create_Content = function(content) end,
 ---介绍：使用&符号可以拆分成多段对话，比如：你好呀&我是XXX<p>
 ---@param sp UnityEngine.Sprite
 ---@param content System.String
----@return UI_DialogBox
 Create_Text = function(sp,content) end,
 
 ---函数名：创建对话框(使用单位)<p>
@@ -34,7 +32,6 @@ Create_Text = function(sp,content) end,
 ---介绍：使用&符号可以拆分成多段对话，比如：你好呀&我是XXX<p>
 ---@param unit Unit
 ---@param content System.String
----@return UI_DialogBox
 Create_Unit = function(unit,content) end,
 
 ---函数名：文字单个显示时间<p>
@@ -331,7 +328,7 @@ TSetTextColor = function(c) end,
 ---函数名：设置内容<p>
 ---描述：设置内容为<code>content</code><p>
 ---@param content System.String
-TSetTextContent = function(content) end,
+SetContent = function(content) end,
 
 ---函数名：设置阶段文本内容<p>
 ---描述：设置对话框<code>index</code>阶段的文本内容为<code>content</code><p>
@@ -347,7 +344,7 @@ TSetTextFontSize = function(font) end,
 ---函数名：设置名字<p>
 ---描述：设置名字为<code>name</code><p>
 ---@param name System.String
-TSetTextName = function(name) end,
+SetName = function(name) end,
 
 ---函数名：设置宽度偏移<p>
 ---描述：设置宽度偏移为<code>offset</code><p>

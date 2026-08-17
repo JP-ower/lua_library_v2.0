@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.PhysicsScene2D
+---@class UnityEngine.PhysicsJobOptions2D
 ---@class UnityEngine.Physics2D
 UnityEngine.Physics2D = {
 
@@ -17,7 +19,7 @@ UnityEngine.Physics2D = {
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, direction: UnityEngine.Vector2, distance: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[]):System.Int32
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[], distance: System.Single):System.Int32
----@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], distance?: System.Single default:Infinity):System.Int32
+---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List, distance?: System.Single):System.Int32
 BoxCast = function(...) end,
 
 ---函数名：BoxCastAll<p>
@@ -56,7 +58,7 @@ BoxCastNonAlloc = function(...) end,
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, distance: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[]):System.Int32
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[], distance: System.Single):System.Int32
----@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], distance?: System.Single default:Infinity):System.Int32
+---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List, distance?: System.Single):System.Int32
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, distance: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, size: UnityEngine.Vector2, capsuleDirection: UnityEngine.CapsuleDirection2D, angle: System.Single, direction: UnityEngine.Vector2, distance: System.Single, layerMask: System.Int32):UnityEngine.RaycastHit2D
@@ -94,7 +96,7 @@ CapsuleCastNonAlloc = function(...) end,
 ---函数名：CircleCast<p>
 ---函数名：CircleCast<p>
 ---函数名：CircleCast<p>
----@overload fun(origin: UnityEngine.Vector2, radius: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], distance?: System.Single default:Infinity):System.Int32
+---@overload fun(origin: UnityEngine.Vector2, radius: System.Single, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List, distance?: System.Single):System.Int32
 ---@overload fun(origin: UnityEngine.Vector2, radius: System.Single, direction: UnityEngine.Vector2):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, radius: System.Single, direction: UnityEngine.Vector2, distance: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, radius: System.Single, direction: UnityEngine.Vector2, distance: System.Single, layerMask: System.Int32):UnityEngine.RaycastHit2D
@@ -152,21 +154,21 @@ ClosestPoint = function(...) end,
 ---函数名：GetContacts<p>
 ---函数名：GetContacts<p>
 ---函数名：GetContacts<p>
----@overload fun(rigidbody: UnityEngine.Rigidbody2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(collider1: UnityEngine.Collider2D, collider2: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(rigidbody: UnityEngine.Rigidbody2D, contactFilter: UnityEngine.ContactFilter2D, colliders: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(rigidbody: UnityEngine.Rigidbody2D, colliders: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(rigidbody: UnityEngine.Rigidbody2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List):System.Int32
+---@overload fun(collider1: UnityEngine.Collider2D, collider2: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List):System.Int32
+---@overload fun(rigidbody: UnityEngine.Rigidbody2D, contactFilter: UnityEngine.ContactFilter2D, colliders: System.Collections.Generic.List):System.Int32
+---@overload fun(rigidbody: UnityEngine.Rigidbody2D, colliders: System.Collections.Generic.List):System.Int32
 ---@overload fun(rigidbody: UnityEngine.Rigidbody2D, contactFilter: UnityEngine.ContactFilter2D, colliders: UnityEngine.Collider2D[]):System.Int32
 ---@overload fun(rigidbody: UnityEngine.Rigidbody2D, colliders: UnityEngine.Collider2D[]):System.Int32
 ---@overload fun(rigidbody: UnityEngine.Rigidbody2D, contactFilter: UnityEngine.ContactFilter2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
 ---@overload fun(rigidbody: UnityEngine.Rigidbody2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
 ---@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, colliders: UnityEngine.Collider2D[]):System.Int32
 ---@overload fun(collider: UnityEngine.Collider2D, colliders: UnityEngine.Collider2D[]):System.Int32
----@overload fun(rigidbody: UnityEngine.Rigidbody2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, colliders: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(collider: UnityEngine.Collider2D, colliders: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(collider: UnityEngine.Collider2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(rigidbody: UnityEngine.Rigidbody2D, contacts: System.Collections.Generic.List):System.Int32
+---@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, colliders: System.Collections.Generic.List):System.Int32
+---@overload fun(collider: UnityEngine.Collider2D, colliders: System.Collections.Generic.List):System.Int32
+---@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List):System.Int32
+---@overload fun(collider: UnityEngine.Collider2D, contacts: System.Collections.Generic.List):System.Int32
 ---@overload fun(collider1: UnityEngine.Collider2D, collider2: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
 ---@overload fun(collider: UnityEngine.Collider2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
 ---@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
@@ -233,7 +235,7 @@ IsTouchingLayers = function(...) end,
 ---@overload fun(start: UnityEngine.Vector2, _end: UnityEngine.Vector2, layerMask: System.Int32, minDepth: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(start: UnityEngine.Vector2, _end: UnityEngine.Vector2, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(start: UnityEngine.Vector2, _end: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[]):System.Int32
----@overload fun(start: UnityEngine.Vector2, _end: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(start: UnityEngine.Vector2, _end: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 Linecast = function(...) end,
 
 ---函数名：LinecastAll<p>
@@ -267,7 +269,7 @@ LinecastNonAlloc = function(...) end,
 ---@overload fun(pointA: UnityEngine.Vector2, pointB: UnityEngine.Vector2, layerMask: System.Int32, minDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(pointA: UnityEngine.Vector2, pointB: UnityEngine.Vector2, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(pointA: UnityEngine.Vector2, pointB: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
----@overload fun(pointA: UnityEngine.Vector2, pointB: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(pointA: UnityEngine.Vector2, pointB: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 OverlapArea = function(...) end,
 
 ---函数名：OverlapAreaAll<p>
@@ -296,7 +298,7 @@ OverlapAreaNonAlloc = function(...) end,
 ---函数名：OverlapBox<p>
 ---函数名：OverlapBox<p>
 ---函数名：OverlapBox<p>
----@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 ---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
 ---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, angle: System.Single, layerMask: System.Int32, minDepth: System.Single):UnityEngine.Collider2D
@@ -335,7 +337,7 @@ OverlapBoxNonAlloc = function(...) end,
 ---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, direction: UnityEngine.CapsuleDirection2D, angle: System.Single, layerMask: System.Int32, minDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, direction: UnityEngine.CapsuleDirection2D, angle: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, direction: UnityEngine.CapsuleDirection2D, angle: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
----@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, direction: UnityEngine.CapsuleDirection2D, angle: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(point: UnityEngine.Vector2, size: UnityEngine.Vector2, direction: UnityEngine.CapsuleDirection2D, angle: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 OverlapCapsule = function(...) end,
 
 ---函数名：OverlapCapsuleAll<p>
@@ -368,7 +370,7 @@ OverlapCapsuleNonAlloc = function(...) end,
 ---@overload fun(point: UnityEngine.Vector2, radius: System.Single, layerMask: System.Int32):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, radius: System.Single, layerMask: System.Int32, minDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, radius: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.Collider2D
----@overload fun(point: UnityEngine.Vector2, radius: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(point: UnityEngine.Vector2, radius: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 ---@overload fun(point: UnityEngine.Vector2, radius: System.Single, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
 OverlapCircle = function(...) end,
 
@@ -395,7 +397,7 @@ OverlapCircleNonAlloc = function(...) end,
 ---函数名：OverlapCollider<p>
 ---函数名：OverlapCollider<p>
 ---@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
----@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(collider: UnityEngine.Collider2D, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 OverlapCollider = function(...) end,
 
 ---函数名：OverlapPoint<p>
@@ -408,7 +410,7 @@ OverlapCollider = function(...) end,
 ---@overload fun(point: UnityEngine.Vector2, layerMask: System.Int32, minDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.Collider2D
 ---@overload fun(point: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
----@overload fun(point: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(point: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 ---@overload fun(point: UnityEngine.Vector2):UnityEngine.Collider2D
 OverlapPoint = function(...) end,
 
@@ -443,7 +445,7 @@ OverlapPointNonAlloc = function(...) end,
 ---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[]):System.Int32
 ---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, distance: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[], distance: System.Single):System.Int32
----@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], distance?: System.Single default:Infinity):System.Int32
+---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List, distance?: System.Single):System.Int32
 ---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, distance: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2, distance: System.Single, layerMask: System.Int32, minDepth: System.Single):UnityEngine.RaycastHit2D
 ---@overload fun(origin: UnityEngine.Vector2, direction: UnityEngine.Vector2):UnityEngine.RaycastHit2D

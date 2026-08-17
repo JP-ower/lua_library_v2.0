@@ -3,11 +3,7 @@
 CharacterUnit = {
 
 ---函数名：添加力<p>
----描述：为<code>self</code>添加一个大小为<code>f</code>类型为<code>fm</code>的力<p>
----介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
----函数名：添加力<p>
----@overload fun(self: CharacterUnit, f: UnityEngine.Vector2, fm?: UnityEngine.ForceMode2D default:Force)
----@overload fun(self: CharacterUnit, f: UnityEngine.Vector2, fm?: UnityEngine.ForceMode2D default:Force)
+---@overload fun(self: CharacterUnit, f: UnityEngine.Vector2, fm: UnityEngine.ForceMode2D)
 AddForce = function(...) end,
 
 ---函数名：AddSkill<p>
@@ -33,24 +29,15 @@ BroadcastMessage = function(...) end,
 CancelInvoke = function(...) end,
 
 ---函数名：清除力<p>
----描述：清除<code>self</code>的所有力<p>
----介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
----函数名：清除力<p>
 ---@overload fun(self: CharacterUnit)
 ---@overload fun(self: CharacterUnit)
 ClearForce = function(...) end,
 
 ---函数名：清除力(x轴)<p>
----描述：清除<code>self</code>的x轴力<p>
----介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
----函数名：清除力(x轴)<p>
 ---@overload fun(self: CharacterUnit)
 ---@overload fun(self: CharacterUnit)
 ClearForce_X = function(...) end,
 
----函数名：清除力(y轴)<p>
----描述：清除<code>self</code>的y轴力<p>
----介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
 ---函数名：清除力(y轴)<p>
 ---@overload fun(self: CharacterUnit)
 ---@overload fun(self: CharacterUnit)
@@ -91,7 +78,7 @@ GetComponentInParent = function(...) end,
 ----@return any
 ---@overload fun(self: CharacterUnit)
 ---@overload fun(self: CharacterUnit, type: System.Type):UnityEngine.Component[]
----@overload fun(self: CharacterUnit, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: CharacterUnit, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: CharacterUnit)
 GetComponents = function(...) end,
 
@@ -128,6 +115,8 @@ GetComponentsInParent = function(...) end,
 ---函数名：重力缩放<p>
 ---描述：<code>self</code>的重力缩放<p>
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
+TGetGravityScale = function() end,
+
 ---函数名：GetGravityScale<p>
 ---@overload fun(self: CharacterUnit):System.Single
 ---@overload fun(self: CharacterUnit):System.Single
@@ -142,21 +131,15 @@ GetGravityScale = function(...) end,
 GetSkill = function(...) end,
 
 ---函数名：速率<p>
----描述：<code>self</code>的运动速率<p>
----函数名：速率<p>
 ---@overload fun(self: CharacterUnit):UnityEngine.Vector2
 ---@overload fun(self: CharacterUnit):UnityEngine.Vector2
 GetVelocity = function(...) end,
 
 ---函数名：速率(x轴)<p>
----描述：<code>self</code>的X轴运动速率<p>
----函数名：速率(x轴)<p>
 ---@overload fun(self: CharacterUnit):System.Single
 ---@overload fun(self: CharacterUnit):System.Single
 GetVelocity_X = function(...) end,
 
----函数名：速率(y轴)<p>
----描述：<code>self</code>的Y轴运动速率<p>
 ---函数名：速率(y轴)<p>
 ---@overload fun(self: CharacterUnit):System.Single
 ---@overload fun(self: CharacterUnit):System.Single
@@ -203,22 +186,15 @@ SendMessageUpwards = function(...) end,
 SetGravityScale = function(...) end,
 
 ---函数名：设置速率<p>
----描述：设置<code>self</code>的速率为<code>v</code><p>
----介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
----函数名：设置速率<p>
 ---@overload fun(self: CharacterUnit, v: UnityEngine.Vector2)
 ---@overload fun(self: CharacterUnit, v: UnityEngine.Vector2)
 SetVelocity = function(...) end,
 
 ---函数名：设置速率(x轴)<p>
----描述：设置<code>self</code>的X轴速率为<code>v</code><p>
----介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
----函数名：设置速率(x轴)<p>
 ---@overload fun(self: CharacterUnit, v: System.Single)
 ---@overload fun(self: CharacterUnit, v: System.Single)
 SetVelocity_X = function(...) end,
 
----函数名：设置速率(y轴)<p>
 ---函数名：设置速率(y轴)<p>
 ---描述：设置<code>self</code>的Y轴速率为<code>v</code><p>
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
@@ -244,7 +220,7 @@ StopCoroutine = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: CharacterUnit, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: CharacterUnit, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: CharacterUnit):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -257,61 +233,61 @@ UpdatePos = function(...) end,
 ---函数名：AddArchiveData<p>
 ---@param self CharacterUnit
 ---@param key System.String
----@param obj System.Object
+---@param obj any
 AddArchiveData = function(self,key,obj) end,
 
 ---函数名：添加运动(类型2)<p>
 ---描述：使<code>self</code>的<code>cm</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---介绍：效果同物体控制，可以使用最后创建的物体控制来获取<p>
 ---@param self CharacterUnit
----@param cm? Unit.ControlMode default:PosX
----@param v? System.Single default:0
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? Unit.ControlMode
+---@param v? System.Single
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
 AddDTValue = function(self,cm,v,sm,smv,ease,tm,delay) end,
 
 ---函数名：重新添加运动(类型2)<p>
 ---描述：使<code>self</code>的<code>cm</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒，只删除同类型的其余运动<code>deleteSameType</code><p>
 ---介绍：效果同物体控制，可以使用最后创建的物体控制来获取，会删除之前添加的运动<p>
 ---@param self CharacterUnit
----@param cm? Unit.ControlMode default:PosX
----@param v? System.Single default:0
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
----@param deleteSameType? System.Boolean default:True
+---@param cm? Unit.ControlMode
+---@param v? System.Single
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
+---@param deleteSameType? System.Boolean
 AddDTValueAndDeleteOtherOC = function(self,cm,v,sm,smv,ease,tm,delay,deleteSameType) end,
 
 ---函数名：添加运动(类型1)<p>
 ---描述：使<code>self</code>的<code>cm</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---介绍：效果同物体控制，可以使用最后创建的物体控制来获取<p>
 ---@param self CharacterUnit
----@param cm? Unit.ControlMode_Vec default:Pos
----@param v? UnityEngine.Vector2 default:
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? Unit.ControlMode_Vec
+---@param v? UnityEngine.Vector2
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
 AddDTVec = function(self,cm,v,sm,smv,ease,tm,delay) end,
 
 ---函数名：重新添加运动(类型1)<p>
 ---描述：使<code>self</code>的<code>cm</code>变化到<code>v</code>，使用<code>sm</code><code>smv</code>，曲线<code>ease</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒，只删除同类型的其余运动<code>deleteSameType</code><p>
 ---介绍：效果同物体控制，可以使用最后创建的物体控制来获取，会删除之前添加的运动<p>
 ---@param self CharacterUnit
----@param cm? Unit.ControlMode_Vec default:Pos
----@param v? UnityEngine.Vector2 default:
----@param sm? ObjectControl.SetMode default:Time
----@param smv? System.Single default:2
----@param ease? ObjectControl.Ease default:OutBounce
----@param tm? ObjectControl.TargerMode default:Fixed
----@param delay? System.Single default:0
----@param deleteSameType? System.Boolean default:True
+---@param cm? Unit.ControlMode_Vec
+---@param v? UnityEngine.Vector2
+---@param sm? ObjectControl.SetMode
+---@param smv? System.Single
+---@param ease? ObjectControl.Ease
+---@param tm? ObjectControl.TargerMode
+---@param delay? System.Single
+---@param deleteSameType? System.Boolean
 AddDTVecAndDeleteOtherOC = function(self,cm,v,sm,smv,ease,tm,delay,deleteSameType) end,
 
 ---函数名：添加力(指定位置)<p>
@@ -319,8 +295,8 @@ AddDTVecAndDeleteOtherOC = function(self,cm,v,sm,smv,ease,tm,delay,deleteSameTyp
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
 ---@param self CharacterUnit
 ---@param f UnityEngine.Vector2
----@param fm? UnityEngine.ForceMode2D default:Force
----@param pos? UnityEngine.Vector2 default:
+---@param fm? UnityEngine.ForceMode2D
+---@param pos? UnityEngine.Vector2
 AddForceAtPosition = function(self,f,fm,pos) end,
 
 ---函数名：添加播放动作<p>
@@ -340,7 +316,7 @@ AddPlay_Force = function(self,name) end,
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
 ---@param self CharacterUnit
 ---@param f UnityEngine.Vector2
----@param fm? UnityEngine.ForceMode2D default:Force
+---@param fm? UnityEngine.ForceMode2D
 AddRelativeForce = function(self,f,fm) end,
 
 ---函数名：添加技能<p>
@@ -438,7 +414,6 @@ ColliderTypeCompare = function(self,co,ct) end,
 ---更新版本：2.7593<p>
 ---@param self CharacterUnit
 ---@param targetType System.String
----@return System.Boolean
 CollisionTargetType = function(self,targetType) end,
 
 ---函数名：两个单位处于碰撞状态<p>
@@ -459,13 +434,11 @@ CollisionUnitData = function(self,ud) end,
 ---函数名：CompareTag<p>
 ---@param self CharacterUnit
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：ContainsArchiveData<p>
 ---@param self CharacterUnit
 ---@param key System.String
----@return System.Boolean
 ContainsArchiveData = function(self,key) end,
 
 ---函数名：ContainsState<p>
@@ -485,7 +458,6 @@ ContainsUnit = function(self,unit) end,
 ---函数名：ContainsValue<p>
 ---@param self CharacterUnit
 ---@param key System.String
----@return System.Boolean
 ContainsValue = function(self,key) end,
 
 ---函数名：向量在单位内<p>
@@ -564,7 +536,7 @@ GetActive = function(self) end,
 ---函数名：所有子单位<p>
 ---描述：<code>self</code>的所有子单位，是否包含自己<code>addOneself</code><p>
 ---@param self CharacterUnit
----@param addOneself? System.Boolean default:False
+---@param addOneself? System.Boolean
 ---@return UnitGroup
 GetAllChild = function(self,addOneself) end,
 
@@ -601,7 +573,6 @@ GetAngularVelocity = function(self) end,
 ---函数名：GetArchiveData<p>
 ---@param self CharacterUnit
 ---@param key System.String
----@return any
 GetArchiveData = function(self,key) end,
 
 ---函数名：GetAssUnit<p>
@@ -843,7 +814,7 @@ GetPlayer = function(self) end,
 ---函数名：单位坐标<p>
 ---描述：<code>self</code>的坐标，使用模式<code>mode</code><p>
 ---@param self CharacterUnit
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 ---@return UnityEngine.Vector2
 GetPos = function(self,mode) end,
 
@@ -851,8 +822,8 @@ GetPos = function(self,mode) end,
 ---描述：<code>self</code>的<code>pivot</code>坐标,是否计算旋转<code>cr</code>，使用模式<code>mode</code><p>
 ---@param self CharacterUnit
 ---@param pivot UnityEngine.Vector2
----@param cr? System.Boolean default:True
----@param mode? System.Int32 default:0
+---@param cr? System.Boolean
+---@param mode? System.Int32
 ---@return UnityEngine.Vector2
 GetPos_Pivot = function(self,pivot,cr,mode) end,
 
@@ -916,7 +887,7 @@ GetSimulated = function(self) end,
 ---函数名：单位大小<p>
 ---描述：<code>self</code>的大小,是否计算旋转<code>cr</code><p>
 ---@param self CharacterUnit
----@param cr? System.Boolean default:False
+---@param cr? System.Boolean
 ---@return UnityEngine.Vector2
 GetSize = function(self,cr) end,
 
@@ -924,7 +895,7 @@ GetSize = function(self,cr) end,
 ---描述：<code>self</code>使用比例<code>scale</code>缩放后的大小,是否计算旋转<code>cr</code><p>
 ---@param self CharacterUnit
 ---@param scale UnityEngine.Vector2
----@param cr? System.Boolean default:True
+---@param cr? System.Boolean
 ---@return UnityEngine.Vector2
 GetSize_Scale = function(self,scale,cr) end,
 
@@ -936,7 +907,6 @@ GetSkillCount = function(self) end,
 ---函数名：GetSkill_CN<p>
 ---@param self CharacterUnit
 ---@param name System.String
----@return Skill
 GetSkill_CN = function(self,name) end,
 
 ---函数名：GetSkills<p>
@@ -1029,9 +999,9 @@ GetTimerTime = function(self) end,
 ---描述：获取<code>self</code>的<code>tt</code>的<code>a</code>轴，使用空间<code>s</code>的值<p>
 ---更新版本：2.7599<p>
 ---@param self CharacterUnit
----@param tt? Unit.TransformType default:Pos
----@param a? Unit.Vector3Axis default:X
----@param s? UnityEngine.Space default:World
+---@param tt? Unit.TransformType
+---@param a? Unit.Vector3Axis
+---@param s? UnityEngine.Space
 ---@return System.Single
 GetTransformValue = function(self,tt,a,s) end,
 
@@ -1066,7 +1036,6 @@ GetUnitData = function(self) end,
 ---函数名：GetValue<p>
 ---@param self CharacterUnit
 ---@param key System.String
----@return any
 GetValue = function(self,key) end,
 
 ---函数名：X轴方向<p>
@@ -1078,7 +1047,7 @@ GetXDir = function(self) end,
 ---函数名：单位X坐标<p>
 ---描述：<code>self</code>的X坐标，使用模式<code>mode</code><p>
 ---@param self CharacterUnit
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 ---@return System.Single
 GetXPos = function(self,mode) end,
 
@@ -1097,7 +1066,7 @@ GetXScale = function(self) end,
 ---函数名：单位X大小<p>
 ---描述：<code>self</code>的X大小,是否计算旋转<code>cr</code><p>
 ---@param self CharacterUnit
----@param cr? System.Boolean default:False
+---@param cr? System.Boolean
 ---@return System.Single
 GetXSize = function(self,cr) end,
 
@@ -1110,7 +1079,7 @@ GetYDir = function(self) end,
 ---函数名：单位Y坐标<p>
 ---描述：<code>self</code>的Y坐标，使用模式<code>mode</code><p>
 ---@param self CharacterUnit
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 ---@return System.Single
 GetYPos = function(self,mode) end,
 
@@ -1129,7 +1098,7 @@ GetYScale = function(self) end,
 ---函数名：单位Y大小<p>
 ---描述：<code>self</code>的Y大小,是否计算旋转<code>cr</code><p>
 ---@param self CharacterUnit
----@param cr? System.Boolean default:False
+---@param cr? System.Boolean
 ---@return System.Single
 GetYSize = function(self,cr) end,
 
@@ -1137,7 +1106,7 @@ GetYSize = function(self,cr) end,
 ---描述：设置<code>self</code>忽视与<code>unit</code>的碰撞<code>ig</code><p>
 ---@param self CharacterUnit
 ---@param unit Unit
----@param ig? System.Boolean default:True
+---@param ig? System.Boolean
 IgnoreCollision = function(self,unit,ig) end,
 
 ---函数名：InitSkill<p>
@@ -1153,8 +1122,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self CharacterUnit
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：碰撞下方<p>
@@ -1244,7 +1213,7 @@ Kill_I = function(self,time) end,
 ---@param self CharacterUnit
 ---@param speed System.Single
 ---@param angle System.Single
----@param maxDis? System.Single default:0
+---@param maxDis? System.Single
 LastsMove_SpeedAngle = function(self,speed,angle,maxDis) end,
 
 ---函数名：持续移动(指定速度、目标点)<p>
@@ -1253,7 +1222,7 @@ LastsMove_SpeedAngle = function(self,speed,angle,maxDis) end,
 ---@param self CharacterUnit
 ---@param speed System.Single
 ---@param pos UnityEngine.Vector2
----@param maxDis? System.Single default:0
+---@param maxDis? System.Single
 LastsMove_SpeedDir = function(self,speed,pos,maxDis) end,
 
 ---函数名：锁定屏幕坐标<p>
@@ -1273,14 +1242,14 @@ LockToScreenPos = function(self,pos) end,
 ---描述：使<code>self</code>面向<code>target</code>，使用偏移<code>offset</code><p>
 ---@param self CharacterUnit
 ---@param target Unit
----@param offset? System.Single default:0
+---@param offset? System.Single
 LookAt = function(self,target,offset) end,
 
 ---函数名：面向坐标<p>
 ---描述：使<code>self</code>面向<code>pos</code>，使用偏移<code>offset</code><p>
 ---@param self CharacterUnit
 ---@param pos UnityEngine.Vector2
----@param offset? System.Single default:0
+---@param offset? System.Single
 LookAt_Pos = function(self,pos,offset) end,
 
 ---函数名：移动(立即)<p>
@@ -1288,7 +1257,7 @@ LookAt_Pos = function(self,pos,offset) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param pos UnityEngine.Vector2
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 Move = function(self,pos,mode) end,
 
 ---函数名：移动(立即、偏移)<p>
@@ -1296,7 +1265,7 @@ Move = function(self,pos,mode) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param offset UnityEngine.Vector2
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 Move_Offset = function(self,offset,mode) end,
 
 ---函数名：移动(指定速度、位置)<p>
@@ -1497,7 +1466,7 @@ SetActive = function(self,be) end,
 ---描述：设置<code>self</code>的透明度为<code>a</code>是否按照比例设置<code>useRatio</code><p>
 ---@param self CharacterUnit
 ---@param a System.Single
----@param useRatio? System.Boolean default:False
+---@param useRatio? System.Boolean
 SetAlpha = function(self,a,useRatio) end,
 
 ---函数名：设置角阻力<p>
@@ -1609,7 +1578,7 @@ SetCollisionSizeOffset = function(self,offset) end,
 ---描述：设置<code>self</code>的颜色为<code>color</code>是否按照比例设置<code>useRatio</code><p>
 ---@param self CharacterUnit
 ---@param color UnityEngine.Color
----@param useRatio? System.Boolean default:False
+---@param useRatio? System.Boolean
 SetColor = function(self,color,useRatio) end,
 
 ---函数名：设置单位颜色(不改变透明度)<p>
@@ -1617,7 +1586,7 @@ SetColor = function(self,color,useRatio) end,
 ---更新版本：2.7571<p>
 ---@param self CharacterUnit
 ---@param color UnityEngine.Color
----@param useRatio? System.Boolean default:False
+---@param useRatio? System.Boolean
 SetColor_NCA = function(self,color,useRatio) end,
 
 ---函数名：SetDeathVanishTime<p>
@@ -1686,7 +1655,7 @@ SetLevel = function(self,level) end,
 ---描述：设置<code>self</code>的质量为<code>mass</code><p>
 ---介绍：只对单位类型为 [物理单位] 或者 [角色单位] 的单位生效<p>
 ---@param self CharacterUnit
----@param mass? System.Single default:1
+---@param mass? System.Single
 SetMass = function(self,mass) end,
 
 ---函数名：设置最大移动距离<p>
@@ -1732,14 +1701,14 @@ SetParent = function(self,unit) end,
 ---介绍：中心点(-1,-1)代表左下角，(1,1)则代表右上角<p>
 ---@param self CharacterUnit
 ---@param pivot UnityEngine.Vector2
----@param updatePos? System.Boolean default:False
+---@param updatePos? System.Boolean
 SetPivot = function(self,pivot,updatePos) end,
 
 ---函数名：设置像素碰撞透明度截止频率<p>
 ---描述：设置<code>self</code>的像素碰撞透明度截止频率为<code>v</code><p>
 ---介绍：只对Pixel类型的碰撞生效(范围是0-1)<p>
 ---@param self CharacterUnit
----@param v? System.Single default:0.5
+---@param v? System.Single
 SetPixelColliderAlphaCutoff = function(self,v) end,
 
 ---函数名：设置动画帧数<p>
@@ -1765,7 +1734,7 @@ SetPlayer = function(self,p) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param pos UnityEngine.Vector2
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetPos = function(self,pos,mode) end,
 
 ---函数名：SetPosAndClearForce<p>
@@ -1778,7 +1747,7 @@ SetPosAndClearForce = function(self,pos) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param pos UnityEngine.Vector2
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetPosOffset = function(self,pos,mode) end,
 
 ---函数名：设置坐标偏移(指定中心点)<p>
@@ -1787,7 +1756,7 @@ SetPosOffset = function(self,pos,mode) end,
 ---@param self CharacterUnit
 ---@param pos UnityEngine.Vector2
 ---@param pivot UnityEngine.Vector2
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetPosOffset_Pivot = function(self,pos,pivot,mode) end,
 
 ---函数名：设置坐标(指定中心点)<p>
@@ -1796,7 +1765,7 @@ SetPosOffset_Pivot = function(self,pos,pivot,mode) end,
 ---@param self CharacterUnit
 ---@param pos UnityEngine.Vector2
 ---@param pivot UnityEngine.Vector2
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetPos_Pivot = function(self,pos,pivot,mode) end,
 
 ---函数名：设置坐标(物理模式)<p>
@@ -1856,8 +1825,8 @@ SetRotate_EulerAngles = function(self,ea) end,
 ---@param self CharacterUnit
 ---@param axis Unit.Vector3Axis
 ---@param v System.Single
----@param s? UnityEngine.Space default:Self
----@param useOffset? System.Boolean default:True
+---@param s? UnityEngine.Space
+---@param useOffset? System.Boolean
 SetRotate_New = function(self,axis,v,s,useOffset) end,
 
 ---函数名：设置旋转(指定中心点)<p>
@@ -1942,7 +1911,7 @@ SetSortingOrder = function(self,order) end,
 ---介绍：若单位设置过动画则会优先显示动画的精灵图片<p>
 ---@param self CharacterUnit
 ---@param sp UnityEngine.Sprite
----@param holdSize? System.Boolean default:True
+---@param holdSize? System.Boolean
 SetSprite = function(self,sp,holdSize) end,
 
 ---函数名：设置材质<p>
@@ -1967,7 +1936,7 @@ SetSpriteMaskInteraction = function(self,smi) end,
 ---描述：设置<code>self</code>的精灵图片为<code>id</code>，是否保持当前大小<code>holdSize</code><p>
 ---@param self CharacterUnit
 ---@param id System.String
----@param holdSize? System.Boolean default:True
+---@param holdSize any
 SetSprite_ID = function(self,id,holdSize) end,
 
 ---函数名：SetTag<p>
@@ -1995,7 +1964,7 @@ SetUnitAnimation = function(self,ad) end,
 ---函数名：SetUnitData<p>
 ---@param self CharacterUnit
 ---@param ud UnitData
----@param copy? System.Boolean default:True
+---@param copy? System.Boolean
 SetUnitData = function(self,ud,copy) end,
 
 ---函数名：设置X坐标<p>
@@ -2003,7 +1972,7 @@ SetUnitData = function(self,ud,copy) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param x System.Single
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetXPos = function(self,x,mode) end,
 
 ---函数名：设置X坐标偏移<p>
@@ -2011,7 +1980,7 @@ SetXPos = function(self,x,mode) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param x System.Single
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetXPosOffset = function(self,x,mode) end,
 
 ---函数名：设置X缩放倍率<p>
@@ -2043,7 +2012,7 @@ SetXSizeOffset = function(self,xOffset) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param y System.Single
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetYPos = function(self,y,mode) end,
 
 ---函数名：设置Y坐标偏移<p>
@@ -2051,7 +2020,7 @@ SetYPos = function(self,y,mode) end,
 ---介绍：模式：0为世界坐标，1为局部坐标<p>
 ---@param self CharacterUnit
 ---@param y System.Single
----@param mode? System.Int32 default:0
+---@param mode? System.Int32
 SetYPosOffset = function(self,y,mode) end,
 
 ---函数名：设置Y缩放倍率<p>
@@ -2207,12 +2176,11 @@ UnitDataComparison = function(self,co2,ud) end,
 ---@param self CharacterUnit
 ---@param co2 ComparisonOperator2
 ---@param type System.String
----@return System.Boolean
 UnitTypeComparison = function(self,co2,type) end,
 
 ---函数名：UpdatePivot<p>
 ---@param self CharacterUnit
----@param updatePos? System.Boolean default:False
+---@param updatePos? System.Boolean
 UpdatePivot = function(self,updatePos) end,
 
 ---函数名：UpdateSpriteData<p>
@@ -2291,7 +2259,7 @@ SDD = nil,
 UD = nil,
 
 ---字段名：get_VarDataDic<p>
----@type System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type System.Collections.Generic.Dictionary
 VarDataDic = nil,
 
 ---字段名：add_E_AxisMotion<p>
@@ -2475,10 +2443,6 @@ runInEditMode = nil,
 ---字段名：get_tag<p>
 ---@type System.String
 tag = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
 
 ---字段名：triggetCU<p>
 ---@type CharacterUnit

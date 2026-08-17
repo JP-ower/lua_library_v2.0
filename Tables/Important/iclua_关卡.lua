@@ -25,7 +25,6 @@ GetCurrentLevel = function() end,
 ---函数名：通过名字获取关卡<p>
 ---描述：获取名字为<code>name</code>的关卡<p>
 ---@param name System.String
----@return Level
 GetLevel = function(name) end,
 
 ---函数名：关卡中心<p>
@@ -104,15 +103,15 @@ LevelComparison = function(level,co,level2) end,
 ---描述：重置<code>self</code>关卡，是否重置全部单位<code>reAll</code><p>
 ---介绍：相当于死亡重置物体<p>
 ---@param self Level
----@param reAll? System.Boolean default:False
+---@param reAll? System.Boolean
 ReLevel = function(self,reAll) end,
 
 ---函数名：重置关卡(指定单位区域)<p>
 ---描述：重置<code>self</code>关卡，是否重置全部单位<code>reAll</code>，指定单位区域<code>unitRect</code><p>
 ---介绍：相当于死亡重置物体<p>
 ---@param self Level
----@param reAll? System.Boolean default:False
----@param unitRect? Unit default:
+---@param reAll? System.Boolean
+---@param unitRect? Unit
 ReLevel_UnitRect = function(self,reAll,unitRect) end,
 
 ---函数名：重置单位<p>

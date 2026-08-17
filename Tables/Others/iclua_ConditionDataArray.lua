@@ -39,10 +39,10 @@ AllBreakFromParent = function(self) end,
 ---函数名：终止运行<p>
 ---描述：终止<code>self</code>的函数运行<code>breakFDA</code>计时器运行<code>breakTimer</code>等待运行<code>breakWait</code>终止整个函数组<code>breakAll</code><p>
 ---@param self ConditionDataArray
----@param breakFDA? System.Boolean default:True
----@param breakTimer? System.Boolean default:True
----@param breakWait? System.Boolean default:True
----@param breakAll? System.Boolean default:True
+---@param breakFDA? System.Boolean
+---@param breakTimer? System.Boolean
+---@param breakWait? System.Boolean
+---@param breakAll? System.Boolean
 BreakRun = function(self,breakFDA,breakTimer,breakWait,breakAll) end,
 
 ---函数名：CheckingCondition<p>
@@ -75,7 +75,7 @@ CreateTempFDA = function(self,runIndex) end,
 
 ---函数名：Delete<p>
 ---@param self ConditionDataArray
----@param forceDelete? System.Boolean default:False
+---@param forceDelete? System.Boolean
 Delete = function(self,forceDelete) end,
 
 ---函数名：DeleteAllWaitTimer<p>
@@ -88,7 +88,7 @@ DeleteAllWaitTimerFromParent = function(self) end,
 
 ---函数名：DeleteWaitTimer<p>
 ---@param self ConditionDataArray
----@param forceDelete? System.Boolean default:False
+---@param forceDelete? System.Boolean
 DeleteWaitTimer = function(self,forceDelete) end,
 
 ---函数名：Delete_EventCallback<p>
@@ -164,12 +164,12 @@ MCallback = function(self,nci) end,
 
 ---函数名：OnFunctionArrayRunEnd<p>
 ---@param self ConditionDataArray
----@param useGlobalFDA? System.Boolean default:False
+---@param useGlobalFDA? System.Boolean
 OnFunctionArrayRunEnd = function(self,useGlobalFDA) end,
 
 ---函数名：OnFunctionArrayRunStart<p>
 ---@param self ConditionDataArray
----@param useGlobalFDA? System.Boolean default:False
+---@param useGlobalFDA? System.Boolean
 OnFunctionArrayRunStart = function(self,useGlobalFDA) end,
 
 ---函数名：RemoveCallback<p>
@@ -189,7 +189,7 @@ RemoveWaitTimer = function(self,timer) end,
 
 ---函数名：Run<p>
 ---@param self ConditionDataArray
----@param td? TriggerData default:
+---@param td? TriggerData
 Run = function(self,td) end,
 
 ---函数名：Set<p>
@@ -278,7 +278,7 @@ De_OnInit = nil,
 PlayerReviveDelete = nil,
 
 ---字段名：get_VarDataDic<p>
----@type System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@type System.Collections.Generic.Dictionary
 VarDataDic = nil,
 
 ---字段名：autoClearVarDataDic<p>

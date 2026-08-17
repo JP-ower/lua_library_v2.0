@@ -19,7 +19,7 @@ BroadcastMessage = function(...) end,
 ---函数名：Cast<p>
 ---函数名：Cast<p>
 ---函数名：Cast<p>
----@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], distance?: System.Single default:Infinity, ignoreSiblingColliders?: System.Boolean default:True):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List, distance?: System.Single, ignoreSiblingColliders?: System.Boolean):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[], distance: System.Single, ignoreSiblingColliders: System.Boolean):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[], distance: System.Single):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[]):System.Int32
@@ -61,7 +61,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---函数名：GetComponents<p>
----@overload fun(self: UnityEngine.EdgeCollider2D, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.EdgeCollider2D, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.EdgeCollider2D)
 ---@overload fun(self: UnityEngine.EdgeCollider2D)
 ---@overload fun(self: UnityEngine.EdgeCollider2D, type: System.Type):UnityEngine.Component[]
@@ -107,12 +107,12 @@ GetComponentsInParent = function(...) end,
 ---函数名：GetContacts<p>
 ---@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, contacts: UnityEngine.ContactPoint2D[]):System.Int32
----@overload fun(self: UnityEngine.EdgeCollider2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, colliders: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, contacts: System.Collections.Generic.List):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, colliders: System.Collections.Generic.List):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, colliders: UnityEngine.Collider2D[]):System.Int32
----@overload fun(self: UnityEngine.EdgeCollider2D, colliders: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, colliders: System.Collections.Generic.List):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, colliders: UnityEngine.Collider2D[]):System.Int32
----@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List`1[[UnityEngine.ContactPoint2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, contacts: System.Collections.Generic.List):System.Int32
 GetContacts = function(...) end,
 
 ---函数名：IsTouching<p>
@@ -131,7 +131,7 @@ IsTouchingLayers = function(...) end,
 
 ---函数名：OverlapCollider<p>
 ---函数名：OverlapCollider<p>
----@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.Collider2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.Collider2D[]):System.Int32
 OverlapCollider = function(...) end,
 
@@ -150,7 +150,7 @@ OverlapCollider = function(...) end,
 ---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, results: UnityEngine.RaycastHit2D[], distance: System.Single, layerMask: System.Int32, minDepth: System.Single, maxDepth: System.Single):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[]):System.Int32
 ---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: UnityEngine.RaycastHit2D[], distance: System.Single):System.Int32
----@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List`1[[UnityEngine.RaycastHit2D, UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], distance?: System.Single default:Infinity):System.Int32
+---@overload fun(self: UnityEngine.EdgeCollider2D, direction: UnityEngine.Vector2, contactFilter: UnityEngine.ContactFilter2D, results: System.Collections.Generic.List, distance?: System.Single):System.Int32
 Raycast = function(...) end,
 
 ---函数名：SendMessage<p>
@@ -176,7 +176,7 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.EdgeCollider2D):System.Boolean
----@overload fun(self: UnityEngine.EdgeCollider2D, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.EdgeCollider2D, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：ClosestPoint<p>
@@ -188,7 +188,6 @@ ClosestPoint = function(self,position) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.EdgeCollider2D
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：CreateMesh<p>
@@ -222,7 +221,7 @@ GetInstanceID = function(self) end,
 
 ---函数名：GetPoints<p>
 ---@param self UnityEngine.EdgeCollider2D
----@param points System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param points System.Collections.Generic.List
 ---@return System.Int32
 GetPoints = function(self,points) end,
 
@@ -248,7 +247,7 @@ Reset = function(self) end,
 
 ---函数名：SetPoints<p>
 ---@param self UnityEngine.EdgeCollider2D
----@param points System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param points System.Collections.Generic.List
 ---@return System.Boolean
 SetPoints = function(self,points) end,
 

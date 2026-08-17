@@ -1,11 +1,19 @@
 ---@meta
+---@class TMPro.TMP_MeshInfo
+---@class TMPro.TMP_CharacterInfo
+---@class TMPro.TMP_LineInfo
+---@class TMPro.TMP_LinkInfo
+---@class TMPro.TMP_PageInfo
+---@class TMPro.TMP_WordInfo
+---@class TMPro.MaterialReference
 ---@class TMPro.TMP_TextInfo
 TMPro.TMP_TextInfo = {
 
 ---函数名：Resize<p>
 ---函数名：Resize<p>
----@overload fun(array: T[]&, size: System.Int32)
----@overload fun(array: T[]&, size: System.Int32, isBlockAllocated: System.Boolean)
+---@generic T
+---@overload fun(array: T[], size: System.Int32)
+---@overload fun(array: T[], size: System.Int32, isBlockAllocated: System.Boolean)
 Resize = function(...) end,
 
 ---函数名：Clear<p>

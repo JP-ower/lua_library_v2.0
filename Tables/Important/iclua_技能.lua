@@ -21,7 +21,6 @@ GetSkillEnable = function(unit,sk) end,
 ---@param unit Unit
 ---@param sd SkillData
 ---@param name System.String
----@return System.Object
 GetSkillValue = function(unit,sd,name) end,
 
 ---函数名：运行技能<p>
@@ -45,7 +44,7 @@ SetSkillEnable = function(unit,sk,be) end,
 ---@param unit Unit
 ---@param sd SkillData
 ---@param name System.String
----@param v System.Object
+---@param v any
 SetSkillValue = function(unit,sd,name,v) end,
 
 ---字段名：技能使用成功<p>

@@ -6,22 +6,21 @@ ActionFunction = {
 ---描述：——————<code>value</code>——————<p>
 ---介绍：你可以输入一段文本用于注释,不会执行任何操作<p>
 ---@param value System.String
-Comment = function(value) end,
+Comment_Event = function(value) end,
 
 ---函数名：注释<p>
 ---描述：——————<code>value</code>——————<p>
 ---介绍：你可以输入一段文本用于注释,不会执行任何操作<p>
 ---更新版本：2.7565<p>
 ---@param value System.String
----@return System.Boolean
 Comment_Condition = function(value) end,
 
 ---函数名：循环整数做动作<p>
 ---描述：For循环(使用变量<code>varName</code>从下标<code>startIndex</code>开始到下标<code>endIndex</code>)<p><code>a</code>
 ---@param varName System.String
----@param startIndex System.Int32
 ---@param endIndex System.Int32
 ---@param a ActionDataArray
+---@param startIndex any
 For = function(varName,startIndex,endIndex,a) end,
 
 ---函数名：如果条件成立则运行Then否则运行Else<p><code>c</code><code>t</code><code>e</code>
@@ -83,20 +82,20 @@ S_DeleteWaitTimer = function() end,
 ---函数名：等待<p>
 ---描述：等待<code>t</code>秒<p>
 ---介绍：注意：不能在循环中使用(如循环整数做动作、While循环、选取XX组内所有XX做动作)<p>
----@param t? System.Single default:2
+---@param t? System.Single
 S_Wait = function(t) end,
 
 ---函数名：等待(帧数)<p>
 ---描述：等待<code>frame</code>帧<p>
 ---介绍：注意：不能在循环中使用(如循环整数做动作、While循环、选取XX组内所有XX做动作)<p>
----@param frame? System.Int32 default:1
+---@param frame? System.Int32
 S_WaitFrame = function(frame) end,
 
 ---函数名：等待(不受暂停影响)<p>
 ---描述：等待<code>t</code>秒(不受暂停影响)<p>
 ---介绍：注意：不能在循环中使用(如循环整数做动作、While循环、选取XX组内所有XX做动作)<p>
 ---更新版本：2.7571<p>
----@param t? System.Single default:2
+---@param t? System.Single
 S_Wait_US = function(t) end,
 
 ---函数名：终止循环(Break)<p>

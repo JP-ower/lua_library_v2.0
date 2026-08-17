@@ -2,6 +2,12 @@
 ---@class UnityEngine.Transform
 UnityEngine.Transform = {
 
+---函数名：Instantiate<p>
+---描述：克隆<code>self</code>（ToLua 实例调用：transform:Instantiate()）<p>
+---@param self UnityEngine.Transform
+---@return UnityEngine.Transform
+Instantiate = function(self) end,
+
 ---函数名：BroadcastMessage<p>
 ---函数名：BroadcastMessage<p>
 ---函数名：BroadcastMessage<p>
@@ -48,7 +54,7 @@ GetComponentInParent = function(...) end,
 ---@overload fun(self: UnityEngine.Transform)
 ---@overload fun(self: UnityEngine.Transform)
 ---@overload fun(self: UnityEngine.Transform, type: System.Type):UnityEngine.Component[]
----@overload fun(self: UnityEngine.Transform, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Transform, type: System.Type, results: System.Collections.Generic.List)
 GetComponents = function(...) end,
 
 ---函数名：GetComponentsInChildren<p>
@@ -190,13 +196,12 @@ Translate = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.Transform):System.Boolean
----@overload fun(self: UnityEngine.Transform, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.Transform, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.Transform
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：DetachChildren<p>
@@ -212,13 +217,11 @@ Equals = function(self,other) end,
 ---函数名：Find<p>
 ---@param self UnityEngine.Transform
 ---@param n System.String
----@return UnityEngine.Transform
 Find = function(self,n) end,
 
 ---函数名：FindChild<p>
 ---@param self UnityEngine.Transform
 ---@param n System.String
----@return UnityEngine.Transform
 FindChild = function(self,n) end,
 
 ---函数名：GetChild<p>

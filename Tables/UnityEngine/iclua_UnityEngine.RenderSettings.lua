@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.Rendering.SphericalHarmonicsL2
 ---@class UnityEngine.RenderSettings
 UnityEngine.RenderSettings = {
 

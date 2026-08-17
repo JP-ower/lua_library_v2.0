@@ -34,9 +34,9 @@ ToString = function(self) end,
 
 ---函数名：Validate<p>
 ---@param self TMPro.TMP_InputValidator
----@param text System.String&
----@param pos System.Int32&
+---@param text System.String
 ---@param ch System.Char
+---@param pos any
 ---@return System.Char
 Validate = function(self,text,pos,ch) end,
 

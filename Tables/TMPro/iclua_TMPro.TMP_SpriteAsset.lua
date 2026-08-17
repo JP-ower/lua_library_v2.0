@@ -27,7 +27,6 @@ GetSpriteIndexFromHashcode = function(self,hashCode) end,
 ---函数名：GetSpriteIndexFromName<p>
 ---@param self TMPro.TMP_SpriteAsset
 ---@param name System.String
----@return System.Int32
 GetSpriteIndexFromName = function(self,name) end,
 
 ---函数名：GetSpriteIndexFromUnicode<p>
@@ -45,7 +44,7 @@ GetType = function(self) end,
 ---@param spriteAsset TMPro.TMP_SpriteAsset
 ---@param hashCode System.Int32
 ---@param includeFallbacks System.Boolean
----@param spriteIndex System.Int32&
+---@param spriteIndex System.Int32
 ---@return TMPro.TMP_SpriteAsset
 SearchForSpriteByHashCode = function(spriteAsset,hashCode,includeFallbacks,spriteIndex) end,
 
@@ -53,7 +52,7 @@ SearchForSpriteByHashCode = function(spriteAsset,hashCode,includeFallbacks,sprit
 ---@param spriteAsset TMPro.TMP_SpriteAsset
 ---@param unicode System.UInt32
 ---@param includeFallbacks System.Boolean
----@param spriteIndex System.Int32&
+---@param spriteIndex System.Int32
 ---@return TMPro.TMP_SpriteAsset
 SearchForSpriteByUnicode = function(spriteAsset,unicode,includeFallbacks,spriteIndex) end,
 
@@ -79,7 +78,7 @@ UpdateLookupTables = function(self) end,
 faceInfo = nil,
 
 ---字段名：fallbackSpriteAssets<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_SpriteAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 fallbackSpriteAssets = nil,
 
 ---字段名：hashCode<p>
@@ -107,19 +106,19 @@ materialHashCode = nil,
 name = nil,
 
 ---字段名：get_spriteCharacterLookupTable<p>
----@type System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[TMPro.TMP_SpriteCharacter, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.Dictionary
 spriteCharacterLookupTable = nil,
 
 ---字段名：get_spriteCharacterTable<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_SpriteCharacter, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 spriteCharacterTable = nil,
 
 ---字段名：get_spriteGlyphTable<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_SpriteGlyph, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 spriteGlyphTable = nil,
 
 ---字段名：spriteInfoList<p>
----@type System.Collections.Generic.List`1[[TMPro.TMP_Sprite, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 spriteInfoList = nil,
 
 ---字段名：spriteSheet<p>

@@ -5,13 +5,13 @@ MusicManager = {
 ---函数名：添加背景音乐<p>
 ---描述：添加背景音乐<code>ac</code>，是否循环<code>loop</code><p>
 ---@param ac UnityEngine.AudioClip
----@param loop? System.Boolean default:True
+---@param loop? System.Boolean
 AddBGMusic = function(ac,loop) end,
 
 ---函数名：添加背景音乐(使用关卡)<p>
 ---描述：通过关卡<code>level</code>添加背景音乐，是否循环<code>loop</code><p>
 ---@param level Level
----@param loop? System.Boolean default:True
+---@param loop? System.Boolean
 AddBGMusic_Level = function(level,loop) end,
 
 ---函数名：设置声音在玩家重生后自动删除<p>
@@ -22,20 +22,20 @@ AddToPRDList = function(aus) end,
 ---函数名：播放音乐<p>
 ---描述：播放<code>ac</code>音乐，是否循环<code>loop</code><p>
 ---@param ac UnityEngine.AudioClip
----@param loop? System.Boolean default:True
+---@param loop? System.Boolean
 CreateMusic = function(ac,loop) end,
 
 ---函数名：播放音效<p>
 ---描述：播放<code>ac</code>音效，是否循环<code>loop</code><p>
 ---@param ac UnityEngine.AudioClip
----@param loop? System.Boolean default:False
+---@param loop? System.Boolean
 CreateSound = function(ac,loop) end,
 
 ---函数名：删除所有声音<p>
 ---描述：删除所有音乐<code>music</code>所有音效<code>sound</code><p>
 ---更新版本：2.7596<p>
----@param music? System.Boolean default:False
----@param sound? System.Boolean default:True
+---@param music? System.Boolean
+---@param sound? System.Boolean
 DeleteAllAudio = function(music,sound) end,
 
 ---函数名：声音长度<p>
@@ -120,8 +120,8 @@ PlayingIsStop = function(audioSource) end,
 ---函数名：重置所有声音<p>
 ---描述：重置所有音乐<code>music</code>所有音效<code>sound</code><p>
 ---更新版本：2.7596<p>
----@param music? System.Boolean default:True
----@param sound? System.Boolean default:False
+---@param music? System.Boolean
+---@param sound? System.Boolean
 ReAllAudio = function(music,sound) end,
 
 ---函数名：删除背景音乐<p>
@@ -142,26 +142,26 @@ SetActive = function(be) end,
 ---函数名：设置循环状态<p>
 ---描述：设置<code>audioSource</code>的循环状态为<code>isLoop</code><p>
 ---@param audioSource UnityEngine.AudioSource
----@param isLoop? System.Boolean default:True
+---@param isLoop? System.Boolean
 SetLoopState = function(audioSource,isLoop) end,
 
 ---函数名：设置左右声道平衡<p>
 ---描述：设置<code>audioSource</code>的左右声道平衡为<code>volume</code><p>
 ---介绍：小于0时声音将向左声道偏移，大于0时声音将向右声道偏移，范围在-1到1之间<p>
 ---@param audioSource UnityEngine.AudioSource
----@param volume? System.Single default:0
+---@param volume? System.Single
 SetPanStereo = function(audioSource,volume) end,
 
 ---函数名：设置播放速度<p>
 ---描述：设置<code>audioSource</code>的播放速度为<code>playSpeed</code><p>
 ---@param audioSource UnityEngine.AudioSource
----@param playSpeed? System.Single default:1
+---@param playSpeed? System.Single
 SetPlaySpeed = function(audioSource,playSpeed) end,
 
 ---函数名：设置播放音量<p>
 ---描述：设置<code>audioSource</code>的播放音量为<code>volume</code><p>
 ---@param audioSource UnityEngine.AudioSource
----@param volume? System.Single default:1
+---@param volume? System.Single
 SetPlayVolume = function(audioSource,volume) end,
 
 ---函数名：设置播放进度<p>

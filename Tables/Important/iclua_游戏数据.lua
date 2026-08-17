@@ -11,7 +11,6 @@ GetCurrentGameFileFullPath = function() end,
 ---介绍：比如Sprite表示存放图片的文件夹，Audio表示存放音乐的文件夹<p>
 ---更新版本：2.7597<p>
 ---@param dirName System.String
----@return System.String
 GetCurrentGameFileFullPath_Dir = function(dirName) end,
 
 ---函数名：获取游戏UI分辨率<p>

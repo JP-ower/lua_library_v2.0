@@ -20,16 +20,16 @@ AddClearanceTitle = function(tag) end,
 ---描述：添加名字为<code>name</code>的<code>vt</code><code>vd</code>进入数据<p>
 ---介绍：对应切换游戏函数<p>
 ---@param name System.String
----@param vt VariableType
 ---@param vd VarData
+---@param vt VariableType
 AddGameEnterData = function(name,vt,vd) end,
 
 ---函数名：添加游戏返回数据<p>
 ---描述：添加名字为<code>name</code>的<code>vt</code><code>vd</code>返回数据<p>
 ---介绍：对应切换游戏函数<p>
 ---@param name System.String
----@param vt VariableType
 ---@param vd VarData
+---@param vt VariableType
 AddGameReturnData = function(name,vt,vd) end,
 
 ---函数名：增加游戏时间<p>
@@ -101,6 +101,11 @@ GetFixedDeltaTime = function() end,
 ---函数名：物理帧数间隔时间(无视暂停)<p>
 ---描述：物理帧数间隔时间(无视暂停)<p>
 ---@return System.Single
+GetFixedUnscaledDeltaTime = function() end,
+
+---函数名：经过的物理时间(无视暂停)<p>
+---描述：经过的物理时间(无视暂停)<p>
+---@return System.Single
 GetFixedUnscaledTime = function() end,
 
 ---函数名：游戏作者名<p>
@@ -117,7 +122,6 @@ GetGameDescribe = function() end,
 ---描述：获取名字为<code>name</code>的进入数据<p>
 ---介绍：请在当游戏进入事件下使用<p>
 ---@param name System.String
----@return System.Object
 GetGameEnterData = function(name) end,
 
 ---函数名：游戏名字<p>
@@ -129,7 +133,6 @@ GetGameName = function() end,
 ---描述：获取名字为<code>name</code>的返回数据<p>
 ---介绍：请在当游戏返回事件下使用<p>
 ---@param name System.String
----@return System.Object
 GetGameReturnData = function(name) end,
 
 ---函数名：获取游戏返回数据(作者名字)<p>
@@ -159,8 +162,7 @@ GetGameReturnData_Name = function() end,
 ---函数名：获取游戏返回数据(资源)<p>
 ---描述：获取上一个关卡的<code>name</code>资源数量<p>
 ---介绍：请在当游戏返回事件下使用<p>
----@param name? System.String default:Time
----@return System.Single
+---@param name? System.String
 GetGameReturnData_ResourceData = function(name) end,
 
 ---函数名：获取出口返回信息<p>
@@ -253,8 +255,8 @@ IsTestMode = function() end,
 ---描述：移动所有玩家单位到<code>level</code>关卡的<code>pos</code>位置,过度时间<code>time</code>,存档<code>save</code><p>
 ---@param level Level
 ---@param pos UnityEngine.Vector2
----@param time? System.Single default:1
----@param save? System.Boolean default:True
+---@param time? System.Single
+---@param save? System.Boolean
 MovePlayerUnitToLevel = function(level,pos,time,save) end,
 
 ---函数名：打开或关闭游戏菜单<p>
@@ -278,6 +280,11 @@ Quit = function() end,
 ---介绍：注意：此函数只有在导出为独立游戏后才有效<p>
 ---更新版本：2.781<p>
 QuitToDesktop = function() end,
+
+---函数名：退出游戏到编辑器<p>
+---介绍：效果等同于从暂停菜单中选择返回到编辑器<br>注意：需要从编辑器中进入游戏时才有效<p>
+---更新版本：2.7834<p>
+QuitToEditor = function() end,
 
 ---函数名：重新载入游戏<p>
 ---介绍：同 [死亡重新载入] 时的效果<p>
@@ -329,7 +336,7 @@ SetClearanceTitle = function(tag) end,
 
 ---函数名：设置游戏速度<p>
 ---描述：设置游戏速度为<code>timeScale</code><p>
----@param timeScale? System.Single default:1
+---@param timeScale? System.Single
 SetGameSpeed = function(timeScale) end,
 
 ---函数名：设置游戏时间<p>
@@ -362,7 +369,7 @@ SetPauseFunctionState = function(be) end,
 
 ---函数名：设置暂停时游戏速度<p>
 ---描述：设置暂停时游戏速度为<code>timeScale</code><p>
----@param timeScale? System.Single default:1
+---@param timeScale? System.Single
 SetPauseGameSpeed = function(timeScale) end,
 
 ---函数名：设置切换游戏资源叠加状态<p>

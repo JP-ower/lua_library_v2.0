@@ -54,7 +54,7 @@ Create = function() end,
 ---函数名：获取单位(随机)<p>
 ---描述：从<code>self</code>中随机获取一个单位，获取后移除<code>remove</code><p>
 ---@param self UnitGroup
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return Unit
 GetRandomUnit = function(self,remove) end,
 
@@ -62,7 +62,7 @@ GetRandomUnit = function(self,remove) end,
 ---描述：从<code>self</code>中获取下标为<code>index</code>的单位，获取后移除<code>remove</code><p>
 ---@param self UnitGroup
 ---@param index System.Int32
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return Unit
 GetUnit = function(self,index,remove) end,
 
@@ -82,14 +82,14 @@ GetUnitIndex = function(self,unit) end,
 ---函数名：获取单位(第一个)<p>
 ---描述：从<code>self</code>中获取第一个单位，获取后移除<code>remove</code><p>
 ---@param self UnitGroup
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return Unit
 GetUnit_First = function(self,remove) end,
 
 ---函数名：获取单位(最后一个)<p>
 ---描述：从<code>self</code>中获取最后一个单位，获取后移除<code>remove</code><p>
 ---@param self UnitGroup
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return Unit
 GetUnit_Last = function(self,remove) end,
 

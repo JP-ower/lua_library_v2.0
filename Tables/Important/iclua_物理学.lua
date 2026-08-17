@@ -18,8 +18,8 @@ GetFixedDeltaTime = function() end,
 ---介绍：如果宽度小于或等于0.03时性能会更高<p>
 ---@param origin UnityEngine.Vector2
 ---@param dir UnityEngine.Vector2
----@param width? System.Single default:0
----@param dis? System.Single default:10
+---@param width? System.Single
+---@param dis? System.Single
 ---@return GamePhysics.RaycastHitInfo
 RaycastAll = function(origin,dir,width,dis) end,
 
@@ -28,8 +28,8 @@ RaycastAll = function(origin,dir,width,dis) end,
 ---介绍：如果宽度小于或等于0.03时性能会更高<p>
 ---@param origin UnityEngine.Vector2
 ---@param angle System.Single
----@param width? System.Single default:0
----@param dis? System.Single default:10
+---@param width? System.Single
+---@param dis? System.Single
 ---@return GamePhysics.RaycastHitInfo
 RaycastAll_Angle = function(origin,angle,width,dis) end,
 
@@ -38,8 +38,8 @@ RaycastAll_Angle = function(origin,angle,width,dis) end,
 ---介绍：如果宽度小于或等于0.03时性能会更高<p>
 ---@param origin UnityEngine.Vector2
 ---@param tp UnityEngine.Vector2
----@param width? System.Single default:0
----@param dis? System.Single default:10
+---@param width? System.Single
+---@param dis? System.Single
 ---@return GamePhysics.RaycastHitInfo
 RaycastAll_TargetPos = function(origin,tp,width,dis) end,
 
@@ -49,7 +49,7 @@ ReFixedDeltaTime = function() end,
 
 ---函数名：设置物理刷新率<p>
 ---描述：设置物理刷新率为<code>v</code><p>
----@param v? System.Single default:0.02
+---@param v? System.Single
 SetFixedDeltaTime = function(v) end,
 
 ---函数名：设置射线检测辅助实体图片<p>

@@ -62,7 +62,7 @@ Atan = function(value) end,
 ---描述：将字符串<code>str</code>由<code>fromBase</code>进制转为十进制<p>
 ---更新版本：2.7563<p>
 ---@param str System.String
----@param fromBase System.Int32
+---@param fromBase any
 ---@return System.Int32
 BaseToDecimal = function(str,fromBase) end,
 
@@ -70,16 +70,14 @@ BaseToDecimal = function(str,fromBase) end,
 ---描述：<code>v</code><code>ao</code><code>v2</code><p>
 ---更新版本：2.7553<p>
 ---@param v System.String
----@param ao ArithmeticOperator_Binary
 ---@param v2 System.String
----@return System.String
+---@param ao any
 BinaryComputation = function(v,ao,v2) end,
 
 ---函数名：二进制字符串转为整数<p>
 ---描述：将二进制字符串<code>str</code>转为整数<p>
 ---更新版本：2.7553<p>
 ---@param str System.String
----@return System.Int32
 BinaryToDecimal = function(str) end,
 
 ---函数名：上限值<p>
@@ -518,15 +516,15 @@ Rad2Deg = function() end,
 
 ---函数名：随机实数<p>
 ---描述：随机<code>min</code>到<code>max</code>范围的实数<p>
----@param min? System.Single default:0
----@param max? System.Single default:100
+---@param min? System.Single
+---@param max? System.Single
 ---@return System.Single
 RandomFloat = function(min,max) end,
 
 ---函数名：随机整数<p>
 ---描述：随机<code>min</code>到<code>max</code>范围的整数<p>
----@param min? System.Int32 default:0
----@param max? System.Int32 default:100
+---@param min? System.Int32
+---@param max? System.Int32
 ---@return System.Int32
 RandomInt = function(min,max) end,
 
@@ -589,7 +587,7 @@ RoundToSignificantFigures = function(value,significantFigures) end,
 
 ---函数名：设置随机数种子<p>
 ---描述：设置随机数种子为<code>v</code><p>
----@param v? System.Int32 default:0
+---@param v? System.Int32
 SetRandomSeed = function(v) end,
 
 ---函数名：符号<p>

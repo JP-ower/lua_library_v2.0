@@ -8,10 +8,10 @@ ColorData = {
 ---@param c UnityEngine.Color
 ---@param co ComparisonOperator2
 ---@param c2 UnityEngine.Color
----@param ignoreR? System.Boolean default:False
----@param ignoreG? System.Boolean default:False
----@param ignoreB? System.Boolean default:False
----@param ignoreA? System.Boolean default:False
+---@param ignoreR? System.Boolean
+---@param ignoreG? System.Boolean
+---@param ignoreB? System.Boolean
+---@param ignoreA? System.Boolean
 ---@return System.Boolean
 ColorComparison = function(c,co,c2,ignoreR,ignoreG,ignoreB,ignoreA) end,
 
@@ -24,25 +24,24 @@ ColorToHex = function(color) end,
 
 ---函数名：创建颜色<p>
 ---描述：创建一个<code>r</code>,<code>g</code>,<code>b</code>,<code>a</code>的颜色<p>
----@param r? System.Int32 default:255
----@param g? System.Int32 default:255
----@param b? System.Int32 default:255
----@param a? System.Int32 default:255
+---@param r? System.Int32
+---@param g? System.Int32
+---@param b? System.Int32
+---@param a? System.Int32
 ---@return UnityEngine.Color
 CreateColor = function(r,g,b,a) end,
 
 ---函数名：创建颜色(十六进制)<p>
 ---描述：创建一个十六进制颜色代码为<code>code</code>的颜色<p>
 ---@param code System.String
----@return UnityEngine.Color
 CreateColor_HexCode = function(code) end,
 
 ---函数名：创建颜色(比例)<p>
 ---描述：创建一个比例为<code>r</code>,<code>g</code>,<code>b</code>,<code>a</code>的颜色<p>
----@param r? System.Single default:1
----@param g? System.Single default:1
----@param b? System.Single default:1
----@param a? System.Single default:1
+---@param r? System.Single
+---@param g? System.Single
+---@param b? System.Single
+---@param a? System.Single
 ---@return UnityEngine.Color
 CreateColor_Ratio = function(r,g,b,a) end,
 

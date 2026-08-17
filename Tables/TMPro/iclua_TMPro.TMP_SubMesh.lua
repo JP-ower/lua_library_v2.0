@@ -1,4 +1,6 @@
 ---@meta
+---@class TMPro.MaterialReference
+---@class UnityEngine.Renderer
 ---@class TMPro.TMP_SubMesh
 TMPro.TMP_SubMesh = {
 
@@ -52,7 +54,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: TMPro.TMP_SubMesh, type: System.Type):UnityEngine.Component[]
----@overload fun(self: TMPro.TMP_SubMesh, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: TMPro.TMP_SubMesh, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: TMPro.TMP_SubMesh)
 ---@overload fun(self: TMPro.TMP_SubMesh)
 GetComponents = function(...) end,
@@ -131,7 +133,7 @@ StopCoroutine = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: TMPro.TMP_SubMesh, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: TMPro.TMP_SubMesh, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: TMPro.TMP_SubMesh):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -144,7 +146,6 @@ AddSubTextObject = function(textComponent,materialReference) end,
 ---函数名：CompareTag<p>
 ---@param self TMPro.TMP_SubMesh
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：DestroySelf<p>
@@ -186,8 +187,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self TMPro.TMP_SubMesh
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：SetMaterialDirty<p>
@@ -313,10 +314,6 @@ particleSystem = nil,
 
 ---字段名：get_renderer<p>
 ---@type UnityEngine.Renderer
-renderer = nil,
-
----字段名：get_renderer<p>
----@type UnityEngine.Component
 renderer = nil,
 
 ---字段名：get_rigidbody<p>

@@ -1,5 +1,6 @@
 ---@meta
----@class UI_FloatingText
+---@class UI_FloatingText : UnityEngine.MonoBehaviour
+---@field gameObject UnityEngine.GameObject
 UI_FloatingText = {
 
 ---函数名：取消锁定屏幕坐标<p>
@@ -246,7 +247,7 @@ SetLockShowState = function(self,be) end,
 ---介绍：绑定单位无效<p>
 ---@param self UI_FloatingText
 ---@param angle System.Single
----@param dic? System.Single default:2
+---@param dic? System.Single
 SetMove = function(self,angle,dic) end,
 
 ---函数名：设置偏移<p>
@@ -358,25 +359,25 @@ SetYScale = function(self,scale) end,
 ---函数名：创建漂浮文字<p>
 ---描述：创建一个内容为<code>text</code>，大小为<code>size</code>的漂浮文字，在<code>pos</code>，覆盖同位置同内容的漂浮文字<code>overlay</code><p>
 ---@param text System.String
----@param size? System.Int32 default:14
----@param pos? UnityEngine.Vector2 default:
----@param overlay? System.Boolean default:True
+---@param pos? UnityEngine.Vector2
+---@param overlay? System.Boolean
+---@param size any
 ---@return UI_FloatingText
 TCreate = function(text,size,pos,overlay) end,
 
 ---函数名：创建漂浮文字(屏幕)<p>
 ---描述：创建一个内容为<code>text</code>，大小为<code>size</code>的漂浮文字，显示在屏幕<code>pos</code>位置<p>
 ---@param text System.String
----@param size? System.Int32 default:14
----@param pos? UnityEngine.Vector2 default:
+---@param pos? UnityEngine.Vector2
+---@param size any
 ---@return UI_FloatingText
 TCreate_Screen = function(text,size,pos) end,
 
 ---函数名：创建漂浮文字(绑定单位)<p>
 ---描述：创建一个内容为<code>text</code>，大小为<code>size</code>的漂浮文字，绑定<code>unit</code><p>
 ---@param text System.String
----@param size? System.Int32 default:14
----@param unit? Unit default:
+---@param unit? Unit
+---@param size any
 ---@return UI_FloatingText
 TCreate_Unit = function(text,size,unit) end,
 

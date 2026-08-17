@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.RectTransform
 ---@class TMPro.TMP_Text
 TMPro.TMP_Text = {
 
@@ -64,7 +65,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: TMPro.TMP_Text, type: System.Type):UnityEngine.Component[]
----@overload fun(self: TMPro.TMP_Text, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: TMPro.TMP_Text, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: TMPro.TMP_Text)
 ---@overload fun(self: TMPro.TMP_Text)
 GetComponents = function(...) end,
@@ -159,7 +160,7 @@ SetCharArray = function(...) end,
 ---函数名：SetText<p>
 ---函数名：SetText<p>
 ---函数名：SetText<p>
----@overload fun(self: TMPro.TMP_Text, sourceText: System.String, syncTextInputBox?: System.Boolean default:True)
+---@overload fun(self: TMPro.TMP_Text, sourceText: System.String, syncTextInputBox?: System.Boolean)
 ---@overload fun(self: TMPro.TMP_Text, sourceText: System.String, arg0: System.Single)
 ---@overload fun(self: TMPro.TMP_Text, sourceText: System.String, arg0: System.Single, arg1: System.Single)
 ---@overload fun(self: TMPro.TMP_Text, sourceText: System.String, arg0: System.Single, arg1: System.Single, arg2: System.Single)
@@ -191,7 +192,7 @@ StopCoroutine = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: TMPro.TMP_Text, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: TMPro.TMP_Text, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: TMPro.TMP_Text):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -204,7 +205,6 @@ UpdateVertexData = function(...) end,
 ---函数名：CompareTag<p>
 ---@param self TMPro.TMP_Text
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：ComputeMarginSize<p>
@@ -232,8 +232,8 @@ Equals = function(self,other) end,
 
 ---函数名：ForceMeshUpdate<p>
 ---@param self TMPro.TMP_Text
----@param ignoreActiveState? System.Boolean default:False
----@param forceTextReparsing? System.Boolean default:False
+---@param ignoreActiveState? System.Boolean
+---@param forceTextReparsing? System.Boolean
 ForceMeshUpdate = function(self,ignoreActiveState,forceTextReparsing) end,
 
 ---函数名：GetHashCode<p>
@@ -265,7 +265,6 @@ GetPixelAdjustedRect = function(self) end,
 ---函数名：GetTextInfo<p>
 ---@param self TMPro.TMP_Text
 ---@param text System.String
----@return TMPro.TMP_TextInfo
 GetTextInfo = function(self,text) end,
 
 ---函数名：GetType<p>
@@ -286,8 +285,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self TMPro.TMP_Text
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>
@@ -830,10 +829,6 @@ raycastTarget = nil,
 ---@type UnityEngine.RectTransform
 rectTransform = nil,
 
----字段名：get_rectTransform<p>
----@type UnityEngine.RectTransform
-rectTransform = nil,
-
 ---字段名：remove_OnFontAssetRequest<p>
 remove_OnFontAssetRequest = nil,
 
@@ -910,10 +905,6 @@ textStyle = nil,
 ---字段名：get_tintAllSprites<p>
 ---@type System.Boolean
 tintAllSprites = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
 
 ---字段名：get_transform<p>
 ---@type UnityEngine.Transform

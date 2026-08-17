@@ -1,14 +1,22 @@
--- 优势：可以打印表、单个字符串、多个字符串
-function print(...)
-    for ind,val in pairs({...}) do
-        if type(val) == "table" then
-            for ind,val in pairs(val) do
-                print(val)
-            end
-        else
-            UI_InfoPanel.AddInfo(val,-1)
+-- 打印函数优化，支持嵌套表的打印
+local function formatValue(val)
+    if type(val) == "table" then
+        local items = {}
+        for _, v in pairs(val) do
+            table.insert(items, formatValue(v))
         end
+        return "{" .. table.concat(items, ", ") .. "}"
+    else
+        return tostring(val)
     end
+end
+function print(...)
+    local args = {...}
+    local parts = {}
+    for _, val in ipairs(args) do
+        table.insert(parts, formatValue(val))
+    end
+    UI_InfoPanel.AddInfo(table.concat(parts, ", "), -1)
 end
 
 -- 使用例：

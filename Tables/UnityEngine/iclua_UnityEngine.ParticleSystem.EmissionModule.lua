@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.ParticleSystem.Burst
+---@class UnityEngine.ParticleSystem.MinMaxCurve
 ---@class UnityEngine.ParticleSystem.EmissionModule
 UnityEngine.ParticleSystem.EmissionModule = {
 

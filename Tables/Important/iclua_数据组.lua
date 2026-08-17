@@ -79,7 +79,7 @@ DataGroupToVecDataArray = function(self) end,
 ---描述：从<code>self</code>中获取下标为<code>index</code>的数据，获取后移除<code>remove</code><p>
 ---@param self DataGroup
 ---@param index System.Int32
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return System.Object
 GetData = function(self,index,remove) end,
 
@@ -99,14 +99,14 @@ GetDataIndex = function(self,data) end,
 ---函数名：获取数据(第一个)<p>
 ---描述：从<code>self</code>中获取第一个数据，获取后移除<code>remove</code><p>
 ---@param self DataGroup
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return System.Object
 GetData_First = function(self,remove) end,
 
 ---函数名：获取数据(最后一个)<p>
 ---描述：从<code>self</code>中获取最后一个数据，获取后移除<code>remove</code><p>
 ---@param self DataGroup
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return System.Object
 GetData_Last = function(self,remove) end,
 
@@ -127,7 +127,7 @@ GetInt = function(self,om) end,
 ---函数名：获取数据(随机)<p>
 ---描述：从<code>self</code>中随机获取一个数据，获取后移除<code>remove</code><p>
 ---@param self DataGroup
----@param remove? System.Boolean default:False
+---@param remove? System.Boolean
 ---@return System.Object
 GetRandomData = function(self,remove) end,
 

@@ -52,7 +52,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: SK_Shader_Twist, type: System.Type):UnityEngine.Component[]
----@overload fun(self: SK_Shader_Twist, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: SK_Shader_Twist, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: SK_Shader_Twist)
 ---@overload fun(self: SK_Shader_Twist)
 GetComponents = function(...) end,
@@ -137,7 +137,7 @@ TargetDetection = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: SK_Shader_Twist, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: SK_Shader_Twist, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: SK_Shader_Twist):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -163,7 +163,6 @@ AxisMotion_IgnoreCondition = function(self,axis) end,
 ---函数名：CompareTag<p>
 ---@param self SK_Shader_Twist
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：ControlKeyDetection<p>
@@ -188,14 +187,12 @@ Equals = function(self,other) end,
 ---描述：<code>self</code>着色器的<code>name</code>属性的值<p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@return System.Boolean
 GetBoolean = function(self,name) end,
 
 ---函数名：获取实数<p>
 ---描述：<code>self</code>着色器的<code>name</code>属性的值<p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@return UnityEngine.Color
 GetColor = function(self,name) end,
 
 ---函数名：GetCopyParameterDataArray<p>
@@ -213,7 +210,6 @@ GetEnabled = function(self) end,
 ---描述：<code>self</code>着色器的<code>name</code>属性的值<p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@return System.Single
 GetFloat = function(self,name) end,
 
 ---函数名：GetHashCode<p>
@@ -230,13 +226,11 @@ GetInstanceID = function(self) end,
 ---描述：<code>self</code>着色器的<code>name</code>属性的值<p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@return System.Single
 GetInt = function(self,name) end,
 
 ---函数名：GetSkillKey<p>
 ---@param self SK_Shader_Twist
----@param key? System.String default:
----@return System.String
+---@param key? System.String
 GetSkillKey = function(self,key) end,
 
 ---函数名：GetType<p>
@@ -257,8 +251,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self SK_Shader_Twist
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsOverride<p>
@@ -421,14 +415,14 @@ Run = function(self) end,
 ---描述：设置<code>self</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@param v System.Boolean
+---@param v any
 SetBoolean = function(self,name,v) end,
 
 ---函数名：设置颜色<p>
 ---描述：设置<code>self</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@param v UnityEngine.Color
+---@param v any
 SetColor = function(self,name,v) end,
 
 ---函数名：SetEnabled<p>
@@ -440,14 +434,14 @@ SetEnabled = function(self,be) end,
 ---描述：设置<code>self</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@param v System.Single
+---@param v any
 SetFloat = function(self,name,v) end,
 
 ---函数名：设置整数<p>
 ---描述：设置<code>self</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param self SK_Shader_Twist
 ---@param name System.String
----@param v System.Int32
+---@param v any
 SetInt = function(self,name,v) end,
 
 ---函数名：SetSkillData<p>
@@ -637,10 +631,6 @@ sd = nil,
 ---字段名：get_tag<p>
 ---@type System.String
 tag = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
 
 ---字段名：transform<p>
 ---@type UnityEngine.Transform

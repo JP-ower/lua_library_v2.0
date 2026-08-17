@@ -52,7 +52,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: UnityEngine.UI.ToggleGroup, type: System.Type):UnityEngine.Component[]
----@overload fun(self: UnityEngine.UI.ToggleGroup, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.UI.ToggleGroup, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.UI.ToggleGroup)
 ---@overload fun(self: UnityEngine.UI.ToggleGroup)
 GetComponents = function(...) end,
@@ -132,12 +132,12 @@ StopCoroutine = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.UI.ToggleGroup):System.Boolean
----@overload fun(self: UnityEngine.UI.ToggleGroup, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.UI.ToggleGroup, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：ActiveToggles<p>
 ---@param self UnityEngine.UI.ToggleGroup
----@return System.Collections.Generic.IEnumerable`1[[UnityEngine.UI.Toggle, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 ActiveToggles = function(self) end,
 
 ---函数名：AnyTogglesOn<p>
@@ -148,7 +148,6 @@ AnyTogglesOn = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.UI.ToggleGroup
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：EnsureValidState<p>
@@ -190,8 +189,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self UnityEngine.UI.ToggleGroup
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>
@@ -207,7 +206,7 @@ IsDestroyed = function(self) end,
 ---函数名：NotifyToggleOn<p>
 ---@param self UnityEngine.UI.ToggleGroup
 ---@param toggle UnityEngine.UI.Toggle
----@param sendCallback? System.Boolean default:True
+---@param sendCallback? System.Boolean
 NotifyToggleOn = function(self,toggle,sendCallback) end,
 
 ---函数名：RegisterToggle<p>
@@ -217,7 +216,7 @@ RegisterToggle = function(self,toggle) end,
 
 ---函数名：SetAllTogglesOff<p>
 ---@param self UnityEngine.UI.ToggleGroup
----@param sendCallback? System.Boolean default:True
+---@param sendCallback? System.Boolean
 SetAllTogglesOff = function(self,sendCallback) end,
 
 ---函数名：StartCoroutine_Auto<p>

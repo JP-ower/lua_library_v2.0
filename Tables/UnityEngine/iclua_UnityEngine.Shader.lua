@@ -1,4 +1,8 @@
 ---@meta
+---@class UnityEngine.Rendering.ShaderTagId
+---@class UnityEngine.Rendering.ShaderHardwareTier
+---@class UnityEngine.Rendering.ShaderPropertyFlags
+---@class UnityEngine.Rendering.ShaderPropertyType
 ---@class UnityEngine.Shader
 UnityEngine.Shader = {
 
@@ -18,10 +22,10 @@ GetGlobalFloat = function(...) end,
 ---函数名：GetGlobalFloatArray<p>
 ---函数名：GetGlobalFloatArray<p>
 ---函数名：GetGlobalFloatArray<p>
----@overload fun(nameID: System.Int32, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(nameID: System.Int32, values: System.Collections.Generic.List)
 ---@overload fun(name: System.String):System.Single[]
 ---@overload fun(nameID: System.Int32):System.Single[]
----@overload fun(name: System.String, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(name: System.String, values: System.Collections.Generic.List)
 GetGlobalFloatArray = function(...) end,
 
 ---函数名：GetGlobalInt<p>
@@ -42,8 +46,8 @@ GetGlobalMatrix = function(...) end,
 ---函数名：GetGlobalMatrixArray<p>
 ---@overload fun(name: System.String):UnityEngine.Matrix4x4[]
 ---@overload fun(nameID: System.Int32):UnityEngine.Matrix4x4[]
----@overload fun(nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(nameID: System.Int32, values: System.Collections.Generic.List)
+---@overload fun(name: System.String, values: System.Collections.Generic.List)
 GetGlobalMatrixArray = function(...) end,
 
 ---函数名：GetGlobalTexture<p>
@@ -63,8 +67,8 @@ GetGlobalVector = function(...) end,
 ---函数名：GetGlobalVectorArray<p>
 ---函数名：GetGlobalVectorArray<p>
 ---@overload fun(nameID: System.Int32):UnityEngine.Vector4[]
----@overload fun(nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(nameID: System.Int32, values: System.Collections.Generic.List)
+---@overload fun(name: System.String, values: System.Collections.Generic.List)
 ---@overload fun(name: System.String):UnityEngine.Vector4[]
 GetGlobalVectorArray = function(...) end,
 
@@ -105,8 +109,8 @@ SetGlobalFloat = function(...) end,
 ---函数名：SetGlobalFloatArray<p>
 ---函数名：SetGlobalFloatArray<p>
 ---@overload fun(name: System.String, values: System.Single[])
----@overload fun(name: System.String, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
----@overload fun(nameID: System.Int32, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(name: System.String, values: System.Collections.Generic.List)
+---@overload fun(nameID: System.Int32, values: System.Collections.Generic.List)
 ---@overload fun(nameID: System.Int32, values: System.Single[])
 SetGlobalFloatArray = function(...) end,
 
@@ -128,8 +132,8 @@ SetGlobalMatrix = function(...) end,
 ---函数名：SetGlobalMatrixArray<p>
 ---@overload fun(nameID: System.Int32, values: UnityEngine.Matrix4x4[])
 ---@overload fun(name: System.String, values: UnityEngine.Matrix4x4[])
----@overload fun(nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(nameID: System.Int32, values: System.Collections.Generic.List)
+---@overload fun(name: System.String, values: System.Collections.Generic.List)
 SetGlobalMatrixArray = function(...) end,
 
 ---函数名：SetGlobalTexture<p>
@@ -152,8 +156,8 @@ SetGlobalVector = function(...) end,
 ---函数名：SetGlobalVectorArray<p>
 ---函数名：SetGlobalVectorArray<p>
 ---函数名：SetGlobalVectorArray<p>
----@overload fun(name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(name: System.String, values: System.Collections.Generic.List)
+---@overload fun(nameID: System.Int32, values: System.Collections.Generic.List)
 ---@overload fun(name: System.String, values: UnityEngine.Vector4[])
 ---@overload fun(nameID: System.Int32, values: UnityEngine.Vector4[])
 SetGlobalVectorArray = function(...) end,
@@ -174,7 +178,6 @@ Equals = function(self,other) end,
 
 ---函数名：Find<p>
 ---@param name System.String
----@return UnityEngine.Shader
 Find = function(name) end,
 
 ---函数名：FindPassTagValue<p>
@@ -187,21 +190,19 @@ FindPassTagValue = function(self,passIndex,tagName) end,
 ---函数名：FindPropertyIndex<p>
 ---@param self UnityEngine.Shader
 ---@param propertyName System.String
----@return System.Int32
 FindPropertyIndex = function(self,propertyName) end,
 
 ---函数名：FindTextureStack<p>
 ---@param self UnityEngine.Shader
 ---@param propertyIndex System.Int32
----@param stackName System.String&
----@param layerIndex System.Int32&
+---@param stackName System.String
+---@param layerIndex any
 ---@return System.Boolean
 FindTextureStack = function(self,propertyIndex,stackName,layerIndex) end,
 
 ---函数名：GetDependency<p>
 ---@param self UnityEngine.Shader
 ---@param name System.String
----@return UnityEngine.Shader
 GetDependency = function(self,name) end,
 
 ---函数名：GetHashCode<p>
@@ -292,22 +293,20 @@ GetType = function(self) end,
 
 ---函数名：IsKeywordEnabled<p>
 ---@param keyword System.String
----@return System.Boolean
 IsKeywordEnabled = function(keyword) end,
 
 ---函数名：PropertyToID<p>
 ---@param name System.String
----@return System.Int32
 PropertyToID = function(name) end,
 
 ---函数名：SetGlobalTexGenMode<p>
 ---@param propertyName System.String
----@param mode UnityEngine.TexGenMode
+---@param mode any
 SetGlobalTexGenMode = function(propertyName,mode) end,
 
 ---函数名：SetGlobalTextureMatrixName<p>
 ---@param propertyName System.String
----@param matrixName System.String
+---@param matrixName any
 SetGlobalTextureMatrixName = function(propertyName,matrixName) end,
 
 ---函数名：ToString<p>

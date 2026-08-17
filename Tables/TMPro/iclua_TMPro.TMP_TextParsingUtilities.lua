@@ -28,7 +28,6 @@ Equals = function(self,obj) end,
 
 ---函数名：GetHashCodeCaseSensitive<p>
 ---@param s System.String
----@return System.Int32
 GetHashCodeCaseSensitive = function(s) end,
 
 ---函数名：GetType<p>

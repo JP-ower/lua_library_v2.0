@@ -4,7 +4,6 @@ EnumValue = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return EnumValue
 Create = function(value) end,
 
 ---函数名：Equals<p>

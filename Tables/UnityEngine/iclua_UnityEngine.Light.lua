@@ -1,4 +1,10 @@
 ---@meta
+---@class UnityEngine.Rendering.CommandBuffer
+---@class UnityEngine.Rendering.LightEvent
+---@class UnityEngine.LightBakingOutput
+---@class UnityEngine.Flare
+---@class UnityEngine.LightmappingMode
+---@class UnityEngine.Matrix4x4
 ---@class UnityEngine.Light
 UnityEngine.Light = {
 
@@ -59,7 +65,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---@overload fun(self: UnityEngine.Light)
 ---@overload fun(self: UnityEngine.Light)
----@overload fun(self: UnityEngine.Light, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Light, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Light, type: System.Type):UnityEngine.Component[]
 GetComponents = function(...) end,
 
@@ -116,13 +122,12 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.Light):System.Boolean
----@overload fun(self: UnityEngine.Light, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.Light, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.Light
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>

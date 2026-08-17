@@ -69,7 +69,6 @@ Multiply = function(c1,c2) end,
 
 ---函数名：ToIntArray<p>
 ---@param text System.String
----@return System.Int32[]
 ToIntArray = function(text) end,
 
 ---函数名：ToString<p>

@@ -1,4 +1,12 @@
 ---@meta
+---@class UnityEngine.CachedAssetBundle
+---@class UnityEngine.Hash128
+---@class UnityEngine.WWWForm
+---@class UnityEngine.Networking.CertificateHandler
+---@class UnityEngine.Networking.UnityWebRequest.Result
+---@class UnityEngine.Networking.UploadHandler
+---@class UnityEngine.Networking.UnityWebRequestAsyncOperation
+---@class System.Text.Encoding
 ---@class UnityEngine.Networking.UnityWebRequest
 UnityEngine.Networking.UnityWebRequest = {
 
@@ -64,12 +72,12 @@ Head = function(...) end,
 ---@overload fun(uri: System.Uri, postData: System.String):UnityEngine.Networking.UnityWebRequest
 ---@overload fun(uri: System.String, formData: UnityEngine.WWWForm):UnityEngine.Networking.UnityWebRequest
 ---@overload fun(uri: System.Uri, formData: UnityEngine.WWWForm):UnityEngine.Networking.UnityWebRequest
----@overload fun(uri: System.String, multipartFormSections: System.Collections.Generic.List`1[[UnityEngine.Networking.IMultipartFormSection, UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):UnityEngine.Networking.UnityWebRequest
----@overload fun(uri: System.Uri, multipartFormSections: System.Collections.Generic.List`1[[UnityEngine.Networking.IMultipartFormSection, UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):UnityEngine.Networking.UnityWebRequest
----@overload fun(uri: System.String, multipartFormSections: System.Collections.Generic.List`1[[UnityEngine.Networking.IMultipartFormSection, UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], boundary: System.Byte[]):UnityEngine.Networking.UnityWebRequest
----@overload fun(uri: System.Uri, multipartFormSections: System.Collections.Generic.List`1[[UnityEngine.Networking.IMultipartFormSection, UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], boundary: System.Byte[]):UnityEngine.Networking.UnityWebRequest
----@overload fun(uri: System.String, formFields: System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]):UnityEngine.Networking.UnityWebRequest
----@overload fun(uri: System.Uri, formFields: System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.String, multipartFormSections: System.Collections.Generic.List):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.Uri, multipartFormSections: System.Collections.Generic.List):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.String, multipartFormSections: System.Collections.Generic.List, boundary: System.Byte[]):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.Uri, multipartFormSections: System.Collections.Generic.List, boundary: System.Byte[]):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.String, formFields: System.Collections.Generic.Dictionary):UnityEngine.Networking.UnityWebRequest
+---@overload fun(uri: System.Uri, formFields: System.Collections.Generic.Dictionary):UnityEngine.Networking.UnityWebRequest
 Post = function(...) end,
 
 ---函数名：Put<p>
@@ -108,7 +116,7 @@ GenerateBoundary = function() end,
 
 ---函数名：GetAudioClip<p>
 ---@param uri System.String
----@param audioType UnityEngine.AudioType
+---@param audioType any
 ---@return UnityEngine.Networking.UnityWebRequest
 GetAudioClip = function(uri,audioType) end,
 
@@ -120,18 +128,16 @@ GetHashCode = function(self) end,
 ---函数名：GetRequestHeader<p>
 ---@param self UnityEngine.Networking.UnityWebRequest
 ---@param name System.String
----@return System.String
 GetRequestHeader = function(self,name) end,
 
 ---函数名：GetResponseHeader<p>
 ---@param self UnityEngine.Networking.UnityWebRequest
 ---@param name System.String
----@return System.String
 GetResponseHeader = function(self,name) end,
 
 ---函数名：GetResponseHeaders<p>
 ---@param self UnityEngine.Networking.UnityWebRequest
----@return System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@return System.Collections.Generic.Dictionary
 GetResponseHeaders = function(self) end,
 
 ---函数名：GetType<p>
@@ -150,20 +156,20 @@ Send = function(self) end,
 SendWebRequest = function(self) end,
 
 ---函数名：SerializeFormSections<p>
----@param multipartFormSections System.Collections.Generic.List`1[[UnityEngine.Networking.IMultipartFormSection, UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param multipartFormSections System.Collections.Generic.List
 ---@param boundary System.Byte[]
 ---@return System.Byte[]
 SerializeFormSections = function(multipartFormSections,boundary) end,
 
 ---函数名：SerializeSimpleForm<p>
----@param formFields System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param formFields System.Collections.Generic.Dictionary
 ---@return System.Byte[]
 SerializeSimpleForm = function(formFields) end,
 
 ---函数名：SetRequestHeader<p>
 ---@param self UnityEngine.Networking.UnityWebRequest
 ---@param name System.String
----@param value System.String
+---@param value System.Object
 SetRequestHeader = function(self,name,value) end,
 
 ---函数名：ToString<p>

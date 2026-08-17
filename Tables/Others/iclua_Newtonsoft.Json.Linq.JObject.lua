@@ -1,4 +1,15 @@
 ---@meta
+---@class Newtonsoft.Json.JsonSerializer
+---@class Newtonsoft.Json.JsonReader
+---@class Newtonsoft.Json.JsonWriter
+---@class Newtonsoft.Json.JsonConverter
+---@class Newtonsoft.Json.Linq.JToken
+---@class Newtonsoft.Json.Linq.JContainer
+---@class Newtonsoft.Json.Linq.JTokenType
+---@class Newtonsoft.Json.Linq.JProperty
+---@class Newtonsoft.Json.Linq.JsonLoadSettings
+---@class Newtonsoft.Json.Linq.JsonMergeSettings
+---@class System.StringComparison
 ---@class Newtonsoft.Json.Linq.JObject
 Newtonsoft.Json.Linq.JObject = {
 
@@ -17,13 +28,13 @@ Annotation = function(...) end,
 ---函数名：Annotations<p>
 ---函数名：Annotations<p>
 ---@overload fun(self: Newtonsoft.Json.Linq.JObject):any
----@overload fun(self: Newtonsoft.Json.Linq.JObject, type: System.Type):System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@overload fun(self: Newtonsoft.Json.Linq.JObject, type: System.Type):System.Collections.Generic.IEnumerable
 Annotations = function(...) end,
 
 ---函数名：Children<p>
 ---函数名：Children<p>
 ---@overload fun(self: Newtonsoft.Json.Linq.JObject):any
----@overload fun(self: Newtonsoft.Json.Linq.JObject):Newtonsoft.Json.Linq.JEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@overload fun(self: Newtonsoft.Json.Linq.JObject):Newtonsoft.Json.Linq.JEnumerable
 Children = function(...) end,
 
 ---函数名：FromObject<p>
@@ -76,8 +87,8 @@ SelectToken = function(...) end,
 
 ---函数名：SelectTokens<p>
 ---函数名：SelectTokens<p>
----@overload fun(self: Newtonsoft.Json.Linq.JObject, path: System.String):System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
----@overload fun(self: Newtonsoft.Json.Linq.JObject, path: System.String, errorWhenNoMatch: System.Boolean):System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@overload fun(self: Newtonsoft.Json.Linq.JObject, path: System.String):System.Collections.Generic.IEnumerable
+---@overload fun(self: Newtonsoft.Json.Linq.JObject, path: System.String, errorWhenNoMatch: System.Boolean):System.Collections.Generic.IEnumerable
 SelectTokens = function(...) end,
 
 ---函数名：ToObject<p>
@@ -98,8 +109,8 @@ ToString = function(...) end,
 
 ---函数名：TryGetValue<p>
 ---函数名：TryGetValue<p>
----@overload fun(self: Newtonsoft.Json.Linq.JObject, propertyName: System.String, value: Newtonsoft.Json.Linq.JToken&):System.Boolean
----@overload fun(self: Newtonsoft.Json.Linq.JObject, propertyName: System.String, comparison: System.StringComparison, value: Newtonsoft.Json.Linq.JToken&):System.Boolean
+---@overload fun(self: Newtonsoft.Json.Linq.JObject, propertyName: System.String, value: Newtonsoft.Json.Linq.JToken):System.Boolean
+---@overload fun(self: Newtonsoft.Json.Linq.JObject, propertyName: System.String, comparison: System.StringComparison, value: Newtonsoft.Json.Linq.JToken):System.Boolean
 TryGetValue = function(...) end,
 
 ---函数名：AddAfterSelf<p>
@@ -124,22 +135,22 @@ AddFirst = function(self,content) end,
 
 ---函数名：AfterSelf<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 AfterSelf = function(self) end,
 
 ---函数名：Ancestors<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 Ancestors = function(self) end,
 
 ---函数名：AncestorsAndSelf<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 AncestorsAndSelf = function(self) end,
 
 ---函数名：BeforeSelf<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 BeforeSelf = function(self) end,
 
 ---函数名：CreateReader<p>
@@ -159,12 +170,12 @@ DeepClone = function(self) end,
 
 ---函数名：Descendants<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 Descendants = function(self) end,
 
 ---函数名：DescendantsAndSelf<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 DescendantsAndSelf = function(self) end,
 
 ---函数名：Equals<p>
@@ -175,7 +186,7 @@ Equals = function(self,obj) end,
 
 ---函数名：GetEnumerator<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerator`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@return System.Collections.Generic.IEnumerator
 GetEnumerator = function(self) end,
 
 ---函数名：GetHashCode<p>
@@ -190,18 +201,17 @@ GetType = function(self) end,
 
 ---函数名：Properties<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return System.Collections.Generic.IEnumerable`1[[Newtonsoft.Json.Linq.JProperty, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 Properties = function(self) end,
 
 ---函数名：Property<p>
 ---@param self Newtonsoft.Json.Linq.JObject
 ---@param name System.String
----@return Newtonsoft.Json.Linq.JProperty
 Property = function(self,name) end,
 
 ---函数名：PropertyValues<p>
 ---@param self Newtonsoft.Json.Linq.JObject
----@return Newtonsoft.Json.Linq.JEnumerable`1[[Newtonsoft.Json.Linq.JToken, Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return Newtonsoft.Json.Linq.JEnumerable
 PropertyValues = function(self) end,
 
 ---函数名：RemoveAll<p>
@@ -246,10 +256,6 @@ First = nil,
 ---字段名：get_HasValues<p>
 ---@type System.Boolean
 HasValues = nil,
-
----字段名：get_Item<p>
----@type Newtonsoft.Json.Linq.JToken
-Item = nil,
 
 ---字段名：get_Item<p>
 ---@type Newtonsoft.Json.Linq.JToken

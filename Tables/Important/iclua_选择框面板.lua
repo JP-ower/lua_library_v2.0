@@ -6,7 +6,6 @@ UI_SelectBoxPanel = {
 ---描述：为<code>self</code>添加一个内容为<code>str</code>的选择框<p>
 ---@param self UI_SelectBoxPanel
 ---@param str System.String
----@return UI_SelectBox
 Add = function(self,str) end,
 
 ---函数名：添加取消按钮<p>
@@ -18,8 +17,8 @@ AddCanacel = function(self) end,
 ---描述：为<code>self</code>添加一个内容为<code>str</code>的选择框，点击后执行动作<p><code>a</code><code>ia</code>
 ---@param self UI_SelectBoxPanel
 ---@param str System.String
----@param a ActionDataArray
 ---@param ia ActionDataArray
+---@param a any
 ---@return UI_SelectBox
 Add_SetFDA = function(self,str,a,ia) end,
 
@@ -31,7 +30,6 @@ Close = function(self) end,
 ---函数名：创建<p>
 ---描述：创建一个选择框面板，标题为<code>label</code><p>
 ---@param label System.String
----@return UI_SelectBoxPanel
 Create = function(label) end,
 
 ---函数名：标题<p>

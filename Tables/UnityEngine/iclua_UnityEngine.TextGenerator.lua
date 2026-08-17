@@ -1,4 +1,7 @@
 ---@meta
+---@class UnityEngine.UICharInfo
+---@class UnityEngine.UILineInfo
+---@class UnityEngine.UIVertex
 ---@class UnityEngine.TextGenerator
 UnityEngine.TextGenerator = {
 
@@ -10,7 +13,7 @@ Equals = function(self,obj) end,
 
 ---函数名：GetCharacters<p>
 ---@param self UnityEngine.TextGenerator
----@param characters System.Collections.Generic.List`1[[UnityEngine.UICharInfo, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param characters System.Collections.Generic.List
 GetCharacters = function(self,characters) end,
 
 ---函数名：GetCharactersArray<p>
@@ -25,7 +28,7 @@ GetHashCode = function(self) end,
 
 ---函数名：GetLines<p>
 ---@param self UnityEngine.TextGenerator
----@param lines System.Collections.Generic.List`1[[UnityEngine.UILineInfo, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param lines System.Collections.Generic.List
 GetLines = function(self,lines) end,
 
 ---函数名：GetLinesArray<p>
@@ -36,14 +39,14 @@ GetLinesArray = function(self) end,
 ---函数名：GetPreferredHeight<p>
 ---@param self UnityEngine.TextGenerator
 ---@param str System.String
----@param settings UnityEngine.TextGenerationSettings
+---@param settings any
 ---@return System.Single
 GetPreferredHeight = function(self,str,settings) end,
 
 ---函数名：GetPreferredWidth<p>
 ---@param self UnityEngine.TextGenerator
 ---@param str System.String
----@param settings UnityEngine.TextGenerationSettings
+---@param settings any
 ---@return System.Single
 GetPreferredWidth = function(self,str,settings) end,
 
@@ -54,7 +57,7 @@ GetType = function(self) end,
 
 ---函数名：GetVertices<p>
 ---@param self UnityEngine.TextGenerator
----@param vertices System.Collections.Generic.List`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param vertices System.Collections.Generic.List
 GetVertices = function(self,vertices) end,
 
 ---函数名：GetVerticesArray<p>
@@ -69,15 +72,15 @@ Invalidate = function(self) end,
 ---函数名：Populate<p>
 ---@param self UnityEngine.TextGenerator
 ---@param str System.String
----@param settings UnityEngine.TextGenerationSettings
+---@param settings any
 ---@return System.Boolean
 Populate = function(self,str,settings) end,
 
 ---函数名：PopulateWithErrors<p>
 ---@param self UnityEngine.TextGenerator
 ---@param str System.String
----@param settings UnityEngine.TextGenerationSettings
 ---@param context UnityEngine.GameObject
+---@param settings any
 ---@return System.Boolean
 PopulateWithErrors = function(self,str,settings,context) end,
 
@@ -95,7 +98,7 @@ characterCount = nil,
 characterCountVisible = nil,
 
 ---字段名：get_characters<p>
----@type System.Collections.Generic.IList`1[[UnityEngine.UICharInfo, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.IList
 characters = nil,
 
 ---字段名：get_fontSizeUsedForBestFit<p>
@@ -107,7 +110,7 @@ fontSizeUsedForBestFit = nil,
 lineCount = nil,
 
 ---字段名：get_lines<p>
----@type System.Collections.Generic.IList`1[[UnityEngine.UILineInfo, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.IList
 lines = nil,
 
 ---字段名：get_rectExtents<p>
@@ -119,7 +122,7 @@ rectExtents = nil,
 vertexCount = nil,
 
 ---字段名：get_verts<p>
----@type System.Collections.Generic.IList`1[[UnityEngine.UIVertex, UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.IList
 verts = nil,
 
 }

@@ -1,5 +1,5 @@
 ---@meta
----@class UI_XEventCallback
+---@class UI_XEventCallback : UnityEngine.MonoBehaviour
 UI_XEventCallback = {
 
 ---函数名：UI本地坐标<p>

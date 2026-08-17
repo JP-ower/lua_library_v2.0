@@ -7,8 +7,8 @@ ServerData = {
 ---介绍：从服务器上删除数据<p>
 ---更新版本：2.7581<p>
 ---@param key System.String
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param ia? ActionDataArray
+---@param a any
 DeleteCusLevelDataFromServer_T = function(key,a,ia) end,
 
 ---函数名：从服务器上加载数据<p>
@@ -16,16 +16,16 @@ DeleteCusLevelDataFromServer_T = function(key,a,ia) end,
 ---介绍：从服务器上加载数据<p>
 ---更新版本：2.7581<p>
 ---@param key System.String
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param ia? ActionDataArray
+---@param a any
 LoadCusLevelDataFromServer_T = function(key,a,ia) end,
 
 ---函数名：从服务器上获取数据信息<p><code>a</code><code>ia</code>
 ---描述：从服务器上获取数据信息<p><code>a</code><code>ia</code>
 ---介绍：使用服务器返回的信息来查看(如果该函数无作用则表示服务器还没同步更新，需要等服务器更新后才能使用)<p>
 ---更新版本：2.7582<p>
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param a? ActionDataArray
+---@param ia? ActionDataArray
 LoadCusLevelDataInfoFromServer_T = function(a,ia) end,
 
 ---函数名：获取网络时间<p>
@@ -39,9 +39,9 @@ LoadNetworkTime = function(ada) end,
 ---介绍：可以将数据保存到服务器中，但是并非所有类型都能保存(可以保存的类型有：整数、实数、字符串)<p>
 ---更新版本：2.7581<p>
 ---@param key System.String
----@param data System.Object
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param a? ActionDataArray
+---@param ia? ActionDataArray
+---@param data any
 SaveCusLevelDataToServer_T = function(key,data,a,ia) end,
 
 ---函数名：服务器返回了错误的信息<p>

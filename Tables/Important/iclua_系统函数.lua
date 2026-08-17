@@ -27,8 +27,8 @@ GetWindowSize = function() end,
 ---函数名：打开网站<p>
 ---描述：打开网站<code>url</code>，网站名字<code>label</code><p>
 ---介绍：请不要干坏事哦！<p>
----@param url? System.String default:https://www.xxxxxx.com/
----@param label? System.String default:
+---@param url? System.String://www.xxxxxx.com/
+---@param label? System.String
 OpenUrl = function(url,label) end,
 
 ---函数名：修改窗口名字<p>
@@ -46,6 +46,6 @@ SetWindowPos = function(v) end,
 ---描述：解锁<code>id</code>成就<p>
 ---介绍：目前仅对官方关卡有效<p>
 ---@param id System.String
-Unlock_Official = function(id) end,
+SetAchievementInfoValueToMax = function(id) end,
 
 }

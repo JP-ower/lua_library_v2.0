@@ -1,5 +1,5 @@
 ---@meta
----@class UI_XUI
+---@class UI_XUI : UnityEngine.MonoBehaviour
 UI_XUI = {
 
 ---函数名：创建UI<p>
@@ -9,11 +9,24 @@ UI_XUI = {
 ---@return UI_XRT
 Create = function(uid) end,
 
+---函数名：通过ID获取UI数据<p>
+---描述：获取ID为<code>id</code>的UI数据<p>
+---更新版本：2.7833<p>
+---@param id System.String
+---@return UIData
+GetUIData = function(id) end,
+
+---函数名：通过名字获取UI数据<p>
+---描述：获取名字为<code>name</code>的UI数据<p>
+---更新版本：2.7834<p>
+---@param name System.String
+---@return UIData
+GetUIData_UseName = function(name) end,
+
 ---函数名：查找UI图片<p>
 ---描述：从<code>self</code>上查找名字为<code>name</code>的UI图片<p>
 ---@param self UI_XUI
 ---@param name System.String
----@return UI_XImage
 FindXImage = function(self,name) end,
 
 ---函数名：查找UI图片(标签)<p>
@@ -21,7 +34,6 @@ FindXImage = function(self,name) end,
 ---更新版本：2.7597<p>
 ---@param self UI_XUI
 ---@param tag System.String
----@return UI_XImage
 FindXImage_Tag = function(self,tag) end,
 
 ---函数名：查找UI组件<p>

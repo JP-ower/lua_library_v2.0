@@ -194,7 +194,7 @@ SetTime = function(self,time) end,
 ---函数名：设置时间速率<p>
 ---描述：设置<code>self</code>的时间速率为<code>scale</code><p>
 ---@param self Timer
----@param scale? System.Single default:1
+---@param scale? System.Single
 SetTimeScale = function(self,scale) end,
 
 ---函数名：设置计时器是否不受暂停影响<p>
@@ -206,39 +206,39 @@ SetUnscaled = function(self,be) end,
 
 ---函数名：创建计时器<p>
 ---描述：创建一个计时器，每隔<code>time</code>秒运行一次，是否循环<code>loop</code><p>
----@param time? System.Single default:1
----@param loop? System.Boolean default:False
+---@param time? System.Single
+---@param loop? System.Boolean
 ---@return Timer
 TCreate = function(time,loop) end,
 
 ---函数名：创建计时器(设置动作)<p>
 ---描述：创建一个计时器，每隔<code>time</code>秒运行一次，是否循环<code>loop</code><p><code>a</code><code>ia</code>
----@param time? System.Single default:1
----@param loop? System.Boolean default:False
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param time? System.Single
+---@param loop? System.Boolean
+---@param a? ActionDataArray
+---@param ia? ActionDataArray
 TCreate_SetFDA = function(time,loop,a,ia) end,
 
 ---函数名：创建计时器(设置模式和动作)<p>
 ---描述：创建一个计时器，每隔<code>value</code><code>rm</code>运行一次，共运行<code>runCount</code>次<p><code>a</code><code>ia</code>
 ---介绍：运行次数为负数时代表无限<p>
----@param value? System.Single default:1
----@param rm? Timer.RunMode default:Time
----@param runCount? System.Int32 default:-1
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param value? System.Single
+---@param rm? Timer.RunMode
+---@param runCount? System.Int32
+---@param a? ActionDataArray
+---@param ia? ActionDataArray
 TCreate_SetModeAndFDA = function(value,rm,runCount,a,ia) end,
 
 ---函数名：创建计时器并运行(设置模式和动作)<p>
 ---描述：创建一个计时器，每隔<code>value</code><code>rm</code>运行一次，共运行<code>runCount</code>次，初始运行<code>initRunCount</code>次<p><code>a</code><code>ia</code>
 ---介绍：运行次数为负数时代表无限<p>
 ---更新版本：2.773<p>
----@param value? System.Single default:1
----@param rm? Timer.RunMode default:Time
----@param runCount? System.Int32 default:-1
----@param initRunCount? System.Int32 default:1
----@param a? ActionDataArray default:
----@param ia? ActionDataArray default:
+---@param value? System.Single
+---@param rm? Timer.RunMode
+---@param runCount? System.Int32
+---@param initRunCount? System.Int32
+---@param a? ActionDataArray
+---@param ia? ActionDataArray
 TCreate_SetModeAndFDA_InitRun = function(value,rm,runCount,initRunCount,a,ia) end,
 
 ---函数名：计时器比较<p>

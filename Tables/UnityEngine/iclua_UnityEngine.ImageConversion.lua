@@ -25,8 +25,8 @@ LoadImage = function(...) end,
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
----@param flags? UnityEngine.Texture2D.EXRFlags default:None
+---@param rowBytes? System.UInt32
+---@param flags? UnityEngine.Texture2D.EXRFlags
 ---@return System.Byte[]
 EncodeArrayToEXR = function(array,format,width,height,rowBytes,flags) end,
 
@@ -35,8 +35,8 @@ EncodeArrayToEXR = function(array,format,width,height,rowBytes,flags) end,
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
----@param quality? System.Int32 default:75
+---@param rowBytes? System.UInt32
+---@param quality? System.Int32
 ---@return System.Byte[]
 EncodeArrayToJPG = function(array,format,width,height,rowBytes,quality) end,
 
@@ -45,7 +45,7 @@ EncodeArrayToJPG = function(array,format,width,height,rowBytes,quality) end,
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
+---@param rowBytes? System.UInt32
 ---@return System.Byte[]
 EncodeArrayToPNG = function(array,format,width,height,rowBytes) end,
 
@@ -54,7 +54,7 @@ EncodeArrayToPNG = function(array,format,width,height,rowBytes) end,
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
+---@param rowBytes? System.UInt32
 ---@return System.Byte[]
 EncodeArrayToTGA = function(array,format,width,height,rowBytes) end,
 
@@ -62,34 +62,34 @@ EncodeArrayToTGA = function(array,format,width,height,rowBytes) end,
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
----@param flags? UnityEngine.Texture2D.EXRFlags default:None
----@return Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param rowBytes? System.UInt32
+---@param flags? UnityEngine.Texture2D.EXRFlags
+---@return Unity.Collections.NativeArray
 EncodeNativeArrayToEXR = function(format,width,height,rowBytes,flags) end,
 
 ---函数名：EncodeNativeArrayToJPG<p>
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
----@param quality? System.Int32 default:75
----@return Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param rowBytes? System.UInt32
+---@param quality? System.Int32
+---@return Unity.Collections.NativeArray
 EncodeNativeArrayToJPG = function(format,width,height,rowBytes,quality) end,
 
 ---函数名：EncodeNativeArrayToPNG<p>
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
----@return Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param rowBytes? System.UInt32
+---@return Unity.Collections.NativeArray
 EncodeNativeArrayToPNG = function(format,width,height,rowBytes) end,
 
 ---函数名：EncodeNativeArrayToTGA<p>
 ---@param format UnityEngine.Experimental.Rendering.GraphicsFormat
 ---@param width System.UInt32
 ---@param height System.UInt32
----@param rowBytes? System.UInt32 default:0
----@return Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param rowBytes? System.UInt32
+---@return Unity.Collections.NativeArray
 EncodeNativeArrayToTGA = function(format,width,height,rowBytes) end,
 
 ---函数名：EncodeToPNG<p>

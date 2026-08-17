@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.EventSystems.BaseInputModule
+---@class UnityEngine.EventSystems.RaycastResult
 ---@class UnityEngine.EventSystems.PointerEventData
 UnityEngine.EventSystems.PointerEventData = {
 
@@ -74,7 +76,7 @@ eligibleForClick = nil,
 enterEventCamera = nil,
 
 ---字段名：hovered<p>
----@type System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 hovered = nil,
 
 ---字段名：get_lastPress<p>

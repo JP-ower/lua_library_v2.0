@@ -4,7 +4,6 @@ ColliderData.ColliderType = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return ColliderData.ColliderType
 Create = function(value) end,
 
 ---函数名：Equals<p>

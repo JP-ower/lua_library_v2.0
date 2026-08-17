@@ -1,5 +1,5 @@
 ---@meta
----@class UI_XRT
+---@class UI_XRT : UnityEngine.MonoBehaviour
 UI_XRT = {
 
 ---函数名：创建UI组件<p>
@@ -202,9 +202,9 @@ GetSortingOrder = function(self) end,
 ---描述：获取<code>self</code>的<code>tt</code>的<code>a</code>轴，使用空间<code>s</code>的值<p>
 ---更新版本：2.7599<p>
 ---@param self UI_XRT
----@param tt? Unit.TransformType default:Pos
----@param a? Unit.Vector3Axis default:X
----@param s? UnityEngine.Space default:World
+---@param tt? Unit.TransformType
+---@param a? Unit.Vector3Axis
+---@param s? UnityEngine.Space
 ---@return System.Single
 GetTransformValue = function(self,tt,a,s) end,
 
@@ -491,8 +491,8 @@ SetRightOffset = function(self,v) end,
 ---@param self UI_XRT
 ---@param axis Unit.Vector3Axis
 ---@param v System.Single
----@param s? UnityEngine.Space default:Self
----@param useOffset? System.Boolean default:True
+---@param s? UnityEngine.Space
+---@param useOffset? System.Boolean
 SetRotate_New = function(self,axis,v,s,useOffset) end,
 
 ---函数名：设置缩放<p>

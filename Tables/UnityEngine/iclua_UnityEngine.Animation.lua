@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.AnimationClip
 ---@class UnityEngine.Animation
 UnityEngine.Animation = {
 
@@ -82,7 +83,7 @@ GetComponentInParent = function(...) end,
 ---@overload fun(self: UnityEngine.Animation, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: UnityEngine.Animation)
 ---@overload fun(self: UnityEngine.Animation)
----@overload fun(self: UnityEngine.Animation, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Animation, type: System.Type, results: System.Collections.Generic.List)
 GetComponents = function(...) end,
 
 ---函数名：GetComponentsInChildren<p>
@@ -177,14 +178,13 @@ Stop = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: UnityEngine.Animation, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.Animation, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: UnityEngine.Animation):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.Animation
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -196,7 +196,6 @@ Equals = function(self,other) end,
 ---函数名：GetClip<p>
 ---@param self UnityEngine.Animation
 ---@param name System.String
----@return UnityEngine.AnimationClip
 GetClip = function(self,name) end,
 
 ---函数名：GetClipCount<p>
@@ -227,7 +226,6 @@ GetType = function(self) end,
 ---函数名：IsPlaying<p>
 ---@param self UnityEngine.Animation
 ---@param name System.String
----@return System.Boolean
 IsPlaying = function(self,name) end,
 
 ---函数名：Sample<p>

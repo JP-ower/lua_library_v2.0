@@ -16,8 +16,8 @@ Normalize = function(...) end,
 
 ---函数名：OrthoNormalize<p>
 ---函数名：OrthoNormalize<p>
----@overload fun(normal: UnityEngine.Vector3&, tangent: UnityEngine.Vector3&)
----@overload fun(normal: UnityEngine.Vector3&, tangent: UnityEngine.Vector3&, binormal: UnityEngine.Vector3&)
+---@overload fun(normal: UnityEngine.Vector3, tangent: UnityEngine.Vector3)
+---@overload fun(normal: UnityEngine.Vector3, tangent: UnityEngine.Vector3, binormal: UnityEngine.Vector3)
 OrthoNormalize = function(...) end,
 
 ---函数名：Scale<p>
@@ -29,9 +29,9 @@ Scale = function(...) end,
 ---函数名：SmoothDamp<p>
 ---函数名：SmoothDamp<p>
 ---函数名：SmoothDamp<p>
----@overload fun(current: UnityEngine.Vector3, target: UnityEngine.Vector3, currentVelocity: UnityEngine.Vector3&, smoothTime: System.Single, maxSpeed: System.Single):UnityEngine.Vector3
----@overload fun(current: UnityEngine.Vector3, target: UnityEngine.Vector3, currentVelocity: UnityEngine.Vector3&, smoothTime: System.Single):UnityEngine.Vector3
----@overload fun(current: UnityEngine.Vector3, target: UnityEngine.Vector3, currentVelocity: UnityEngine.Vector3&, smoothTime: System.Single, maxSpeed: System.Single, deltaTime: System.Single):UnityEngine.Vector3
+---@overload fun(current: UnityEngine.Vector3, target: UnityEngine.Vector3, currentVelocity: UnityEngine.Vector3, smoothTime: System.Single, maxSpeed: System.Single):UnityEngine.Vector3
+---@overload fun(current: UnityEngine.Vector3, target: UnityEngine.Vector3, currentVelocity: UnityEngine.Vector3, smoothTime: System.Single):UnityEngine.Vector3
+---@overload fun(current: UnityEngine.Vector3, target: UnityEngine.Vector3, currentVelocity: UnityEngine.Vector3, smoothTime: System.Single, maxSpeed: System.Single, deltaTime: System.Single):UnityEngine.Vector3
 SmoothDamp = function(...) end,
 
 ---函数名：ToString<p>
@@ -254,10 +254,6 @@ op_Equality = nil,
 ---字段名：op_Inequality<p>
 ---@type System.Boolean
 op_Inequality = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Vector3
-op_Multiply = nil,
 
 ---字段名：op_Multiply<p>
 ---@type UnityEngine.Vector3

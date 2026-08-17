@@ -1,5 +1,9 @@
 ---@meta
 ---@class TriggerData
+---@field Close fun(self: TriggerData)
+---@field Open fun(self: TriggerData)
+---@field IsOpen fun(self: TriggerData): System.Boolean
+---@field GetTriggerData fun(id: System.String): TriggerData
 TriggerData = {
 
 ---函数名：关闭触发器<p>
@@ -70,7 +74,7 @@ Open = function(self) end,
 ---@param e EventDataArray
 ---@param c ConditionDataArray
 ---@param a ActionDataArray
----@param ia? ActionDataArray default:
+---@param ia? ActionDataArray
 ---@return TriggerData
 RegisterTrigger = function(e,c,a,ia) end,
 
@@ -79,7 +83,7 @@ RegisterTrigger = function(e,c,a,ia) end,
 ---@param e EventDataArray
 ---@param c ConditionDataArray
 ---@param a ActionDataArray
----@param ia? ActionDataArray default:
+---@param ia? ActionDataArray
 ---@return TriggerData
 RegisterTrigger_Disposable = function(e,c,a,ia) end,
 
@@ -91,7 +95,7 @@ RegisterTrigger_Disposable = function(e,c,a,ia) end,
 ---@param a ActionDataArray
 ---@param de EventDataArray
 ---@param dc ConditionDataArray
----@param ia? ActionDataArray default:
+---@param ia? ActionDataArray
 ---@return TriggerData
 RegisterTrigger_EventDisposable = function(e,c,a,de,dc,ia) end,
 
@@ -123,8 +127,8 @@ Run_IgnoreCondition = function(self) end,
 ---函数名：运行触发器(指定参数)<p>
 ---描述：运行<code>self</code>无视关闭<code>ignoreClose</code>无视条件<code>ignoreCondition</code><p>
 ---@param self TriggerData
----@param ignoreClose? System.Boolean default:True
----@param ignoreCondition? System.Boolean default:False
+---@param ignoreClose? System.Boolean
+---@param ignoreCondition? System.Boolean
 Run_SpecifyParameter = function(self,ignoreClose,ignoreCondition) end,
 
 ---函数名：全局设置玩家死亡后的函数中断模式<p>

@@ -4,7 +4,6 @@ ArithmeticOperator_Binary = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return ArithmeticOperator_Binary
 Create = function(value) end,
 
 ---函数名：Equals<p>
@@ -16,7 +15,7 @@ Equals = function(self,obj) end,
 ---函数名：GetBinary<p>
 ---@param self ArithmeticOperator_Binary
 ---@param vs System.String
----@param vs2 System.String
+---@param vs2 any
 ---@return System.String
 GetBinary = function(self,vs,vs2) end,
 

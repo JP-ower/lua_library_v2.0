@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.ParticleSystem.MinMaxCurve
+---@class UnityEngine.ParticleSystem.MinMaxGradient
 ---@class UnityEngine.ParticleSystem.MainModule
 UnityEngine.ParticleSystem.MainModule = {
 

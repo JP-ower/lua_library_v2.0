@@ -4,7 +4,7 @@ TMPro.TMP_InputField.TextSelectionEvent = {
 
 ---函数名：AddListener<p>
 ---@param self TMPro.TMP_InputField.TextSelectionEvent
----@param call UnityEngine.Events.UnityAction`3[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param call UnityEngine.Events.UnityAction
 AddListener = function(self,call) end,
 
 ---函数名：Equals<p>
@@ -43,8 +43,8 @@ GetType = function(self) end,
 ---函数名：Invoke<p>
 ---@param self TMPro.TMP_InputField.TextSelectionEvent
 ---@param arg0 System.String
----@param arg1 System.Int32
 ---@param arg2 System.Int32
+---@param arg1 any
 Invoke = function(self,arg0,arg1,arg2) end,
 
 ---函数名：RemoveAllListeners<p>
@@ -53,7 +53,7 @@ RemoveAllListeners = function(self) end,
 
 ---函数名：RemoveListener<p>
 ---@param self TMPro.TMP_InputField.TextSelectionEvent
----@param call UnityEngine.Events.UnityAction`3[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@param call UnityEngine.Events.UnityAction
 RemoveListener = function(self,call) end,
 
 ---函数名：SetPersistentListenerState<p>

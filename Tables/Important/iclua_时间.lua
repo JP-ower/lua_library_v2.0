@@ -6,49 +6,42 @@ TimeManager = {
 ---描述：<code>str</code>的天数<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringDay = function(str) end,
 
 ---函数名：指定时间的小时<p>
 ---描述：<code>str</code>的小时<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringHour = function(str) end,
 
 ---函数名：指定时间的毫秒数<p>
 ---描述：<code>str</code>的毫秒数<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringMillisecond = function(str) end,
 
 ---函数名：指定时间的分钟<p>
 ---描述：<code>str</code>的分钟<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringMinute = function(str) end,
 
 ---函数名：指定时间的月份<p>
 ---描述：<code>str</code>的月份<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringMonth = function(str) end,
 
 ---函数名：指定时间的秒数<p>
 ---描述：<code>str</code>的秒数<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringSecond = function(str) end,
 
 ---函数名：指定时间的年份<p>
 ---描述：<code>str</code>的年份<p>
 ---更新版本：2.7584<p>
 ---@param str System.String
----@return System.Int32
 GetDateTimeStringYear = function(str) end,
 
 ---函数名：当前天数<p>
@@ -77,7 +70,7 @@ GetNowSecond = function() end,
 
 ---函数名：转换当前时间为字符串<p>
 ---描述：转换当前时间为字符串，使用格式<code>format</code><p>
----@param format? System.String default:yyyy-MM-dd HH:mm
+---@param format? System.String
 ---@return System.String
 GetNowToString = function(format) end,
 

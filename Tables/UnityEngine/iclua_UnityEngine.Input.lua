@@ -1,4 +1,10 @@
 ---@meta
+---@class UnityEngine.AccelerationEvent
+---@class UnityEngine.Touch
+---@class UnityEngine.Compass
+---@class UnityEngine.DeviceOrientation
+---@class UnityEngine.Gyroscope
+---@class UnityEngine.LocationService
 ---@class UnityEngine.Input
 UnityEngine.Input = {
 
@@ -33,27 +39,22 @@ GetAccelerationEvent = function(index) end,
 
 ---函数名：GetAxis<p>
 ---@param axisName System.String
----@return System.Single
 GetAxis = function(axisName) end,
 
 ---函数名：GetAxisRaw<p>
 ---@param axisName System.String
----@return System.Single
 GetAxisRaw = function(axisName) end,
 
 ---函数名：GetButton<p>
 ---@param buttonName System.String
----@return System.Boolean
 GetButton = function(buttonName) end,
 
 ---函数名：GetButtonDown<p>
 ---@param buttonName System.String
----@return System.Boolean
 GetButtonDown = function(buttonName) end,
 
 ---函数名：GetButtonUp<p>
 ---@param buttonName System.String
----@return System.Boolean
 GetButtonUp = function(buttonName) end,
 
 ---函数名：GetHashCode<p>
@@ -92,7 +93,6 @@ GetType = function(self) end,
 
 ---函数名：IsJoystickPreconfigured<p>
 ---@param joystickName System.String
----@return System.Boolean
 IsJoystickPreconfigured = function(joystickName) end,
 
 ---函数名：ResetInputAxes<p>

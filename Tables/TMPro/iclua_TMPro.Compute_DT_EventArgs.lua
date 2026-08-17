@@ -1,4 +1,5 @@
 ---@meta
+---@class TMPro.Compute_DistanceTransform_EventTypes
 ---@class TMPro.Compute_DT_EventArgs
 TMPro.Compute_DT_EventArgs = {
 

@@ -1,5 +1,5 @@
 ---@meta
----@class UI_XText
+---@class UI_XText : UI_XRT
 UI_XText = {
 
 ---函数名：创建UI文本<p>
@@ -169,6 +169,12 @@ GetOffsetMax = function(self) end,
 ---@return UnityEngine.Vector2
 GetOffsetMin = function(self) end,
 
+---函数名：水平溢出模式<p>
+---更新版本：2.783<p>
+---@param self UI_XText
+---@return UnityEngine.HorizontalWrapMode
+GetHorizontalOverflow = function(self) end,
+
 ---函数名：描边颜色<p>
 ---描述：<code>self</code>的描边颜色<p>
 ---更新版本：2.7563<p>
@@ -270,13 +276,19 @@ GetSupportRichText = function(self) end,
 ---@return System.String
 GetText = function(self) end,
 
+---函数名：垂直溢出模式<p>
+---更新版本：2.783<p>
+---@param self UI_XText
+---@return UnityEngine.VerticalWrapMode
+GetVerticalOverflow = function(self) end,
+
 ---函数名：获取坐标、缩放、旋转值<p>
 ---描述：获取<code>self</code>的<code>tt</code>的<code>a</code>轴，使用空间<code>s</code>的值<p>
 ---更新版本：2.7599<p>
 ---@param self UI_XText
----@param tt? Unit.TransformType default:Pos
----@param a? Unit.Vector3Axis default:X
----@param s? UnityEngine.Space default:World
+---@param tt? Unit.TransformType
+---@param a? Unit.Vector3Axis
+---@param s? UnityEngine.Space
 ---@return System.Single
 GetTransformValue = function(self,tt,a,s) end,
 
@@ -576,6 +588,13 @@ SetOffsetMax = function(self,v) end,
 ---@param v UnityEngine.Vector2
 SetOffsetMin = function(self,v) end,
 
+---函数名：设置水平溢出模式<p>
+---描述：设置<code>self</code>的水平溢出模式为<code>hwm</code><p>
+---更新版本：2.783<p>
+---@param self UI_XText
+---@param hwm UnityEngine.HorizontalWrapMode
+SetHorizontalOverflow = function(self,hwm) end,
+
 ---函数名：设置描边颜色<p>
 ---描述：设置<code>self</code>的描边颜色为<code>c</code><p>
 ---更新版本：2.7563<p>
@@ -628,8 +647,8 @@ SetRightOffset = function(self,v) end,
 ---@param self UI_XText
 ---@param axis Unit.Vector3Axis
 ---@param v System.Single
----@param s? UnityEngine.Space default:Self
----@param useOffset? System.Boolean default:True
+---@param s? UnityEngine.Space
+---@param useOffset? System.Boolean
 SetRotate_New = function(self,axis,v,s,useOffset) end,
 
 ---函数名：设置缩放<p>
@@ -695,6 +714,13 @@ SetText = function(self,text) end,
 ---@param self UI_XText
 ---@param v System.Single
 SetUpOffset = function(self,v) end,
+
+---函数名：设置垂直溢出模式<p>
+---描述：设置<code>self</code>的垂直溢出模式为<code>vwm</code><p>
+---更新版本：2.783<p>
+---@param self UI_XText
+---@param vwm UnityEngine.VerticalWrapMode
+SetVerticalOverflow = function(self,vwm) end,
 
 ---函数名：设置世界坐标<p>
 ---描述：设置<code>self</code>的世界坐标为<code>v</code><p>

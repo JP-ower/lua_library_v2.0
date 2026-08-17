@@ -85,7 +85,6 @@ GetTimeLineNode_Index = function(self,index) end,
 ---介绍：提示：如果标签不正确可能会导致游戏出错<p>
 ---@param self TimeLineData
 ---@param tag System.String
----@return TimeLineNodeData
 GetTimeLineNode_Tag = function(self,tag) end,
 
 ---函数名：时间速率<p>
@@ -132,7 +131,7 @@ SetNodeBeatPos = function(tld,node,beatPos) end,
 ---描述：设置<code>node</code>节点的标签为<code>tag</code><p>
 ---@param node TimeLineNodeData
 ---@param tag System.String
-SetNodeTag = function(node,tag) end,
+SetTag = function(node,tag) end,
 
 ---函数名：设置节点时间<p>
 ---描述：设置<code>tld</code>中<code>node</code>节点的时间为<code>time</code><p>
@@ -151,7 +150,7 @@ SetTime = function(self,time) end,
 ---描述：设置<code>self</code>的时间速率为<code>scale</code><p>
 ---介绍：表示以几倍速率计算时间<p>
 ---@param self TimeLineData
----@param scale? System.Single default:1
+---@param scale? System.Single
 SetTimeScale = function(self,scale) end,
 
 ---函数名：设置时间轴时间(使用小节数和节拍位置)<p>

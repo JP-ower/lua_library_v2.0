@@ -20,7 +20,7 @@ AnyBooleanComparison = function(v,v2) end,
 ---描述：<code>v</code><code>co</code><code>v2</code><p>
 ---@param v System.Boolean
 ---@param co ComparisonOperator2
----@param v2? System.Boolean default:True
+---@param v2? System.Boolean
 ---@return System.Boolean
 BooleanComparison = function(v,co,v2) end,
 

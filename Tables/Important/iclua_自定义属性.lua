@@ -7,7 +7,6 @@ CAManager = {
 ---@param keyType VariableType
 ---@param key VarData
 ---@param name System.String
----@return System.Boolean
 ContainsCustomAttribute = function(keyType,key,name) end,
 
 ---函数名：运算自定义属性 - 实数<p>
@@ -15,8 +14,8 @@ ContainsCustomAttribute = function(keyType,key,name) end,
 ---@param keyType VariableType
 ---@param key VarData
 ---@param name System.String
----@param ao ArithmeticOperator
 ---@param value System.Single
+---@param ao any
 CustomAttributeSO_Float = function(keyType,key,name,ao,value) end,
 
 ---函数名：运算自定义属性 - 整数<p>
@@ -24,8 +23,8 @@ CustomAttributeSO_Float = function(keyType,key,name,ao,value) end,
 ---@param keyType VariableType
 ---@param key VarData
 ---@param name System.String
----@param ao ArithmeticOperator
 ---@param value System.Int32
+---@param ao any
 CustomAttributeSO_Int = function(keyType,key,name,ao,value) end,
 
 ---函数名：删除自定义属性<p>
@@ -46,7 +45,6 @@ DeleteCustomAttribute_All = function(keyType,key) end,
 ---@param keyType VariableType
 ---@param key VarData
 ---@param name System.String
----@return System.Object
 GetCustomAttribute = function(keyType,key,name) end,
 
 ---函数名：设置自定义属性<p>
@@ -54,8 +52,8 @@ GetCustomAttribute = function(keyType,key,name) end,
 ---@param keyType VariableType
 ---@param key VarData
 ---@param name System.String
----@param valueType VariableType
 ---@param value VarData
+---@param valueType any
 SetCustomAttribute = function(keyType,key,name,valueType,value) end,
 
 }

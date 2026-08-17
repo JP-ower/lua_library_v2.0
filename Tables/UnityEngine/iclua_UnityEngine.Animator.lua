@@ -1,4 +1,16 @@
 ---@meta
+---@class UnityEngine.StateMachineBehaviour
+---@class UnityEngine.Avatar
+---@class UnityEngine.Quaternion
+---@class UnityEngine.Playables.PlayableGraph
+---@class UnityEngine.AnimatorRecorderMode
+---@class UnityEngine.RuntimeAnimatorController
+---@class UnityEngine.AnimatorTransitionInfo
+---@class UnityEngine.AnimatorStateInfo
+---@class UnityEngine.AnimatorControllerParameter
+---@class UnityEngine.AnimationInfo
+---@class UnityEngine.AnimatorClipInfo
+---@class UnityEngine.MatchTargetWeightMask
 ---@class UnityEngine.Animator
 UnityEngine.Animator = {
 
@@ -96,7 +108,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---@overload fun(self: UnityEngine.Animator)
 ---@overload fun(self: UnityEngine.Animator)
----@overload fun(self: UnityEngine.Animator, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Animator, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Animator, type: System.Type):UnityEngine.Component[]
 GetComponents = function(...) end,
 
@@ -132,7 +144,7 @@ GetComponentsInParent = function(...) end,
 
 ---函数名：GetCurrentAnimatorClipInfo<p>
 ---函数名：GetCurrentAnimatorClipInfo<p>
----@overload fun(self: UnityEngine.Animator, layerIndex: System.Int32, clips: System.Collections.Generic.List`1[[UnityEngine.AnimatorClipInfo, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Animator, layerIndex: System.Int32, clips: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Animator, layerIndex: System.Int32):UnityEngine.AnimatorClipInfo[]
 GetCurrentAnimatorClipInfo = function(...) end,
 
@@ -151,7 +163,7 @@ GetInteger = function(...) end,
 ---函数名：GetNextAnimatorClipInfo<p>
 ---函数名：GetNextAnimatorClipInfo<p>
 ---@overload fun(self: UnityEngine.Animator, layerIndex: System.Int32):UnityEngine.AnimatorClipInfo[]
----@overload fun(self: UnityEngine.Animator, layerIndex: System.Int32, clips: System.Collections.Generic.List`1[[UnityEngine.AnimatorClipInfo, UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Animator, layerIndex: System.Int32, clips: System.Collections.Generic.List)
 GetNextAnimatorClipInfo = function(...) end,
 
 ---函数名：GetQuaternion<p>
@@ -295,7 +307,7 @@ SetVector = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.Animator):System.Boolean
----@overload fun(self: UnityEngine.Animator, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.Animator, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：ApplyBuiltinRootMotion<p>
@@ -305,7 +317,6 @@ ApplyBuiltinRootMotion = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.Animator
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -403,7 +414,6 @@ GetInstanceID = function(self) end,
 ---函数名：GetLayerIndex<p>
 ---@param self UnityEngine.Animator
 ---@param layerName System.String
----@return System.Int32
 GetLayerIndex = function(self,layerName) end,
 
 ---函数名：GetLayerName<p>
@@ -552,7 +562,6 @@ StopRecording = function(self) end,
 
 ---函数名：StringToHash<p>
 ---@param name System.String
----@return System.Int32
 StringToHash = function(name) end,
 
 ---函数名：ToString<p>

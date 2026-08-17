@@ -1,5 +1,6 @@
 ---@meta
----@class UI_XImage
+---@class UI_XImage : UI_XRT
+---@field gameObject UnityEngine.GameObject
 UI_XImage = {
 
 ---函数名：添加播放动作<p>
@@ -60,7 +61,6 @@ EndPlayCurrent_Force = function(self) end,
 ---描述：从<code>xrt</code>上查找名字为<code>name</code>的UI图片<p>
 ---@param xrt UI_XRT
 ---@param name System.String
----@return UI_XImage
 FindXImage = function(xrt,name) end,
 
 ---函数名：从UI组件上查找UI图片(标签)<p>
@@ -68,7 +68,6 @@ FindXImage = function(xrt,name) end,
 ---更新版本：2.7597<p>
 ---@param xrt UI_XRT
 ---@param tag System.String
----@return UI_XImage
 FindXImage_Tag = function(xrt,tag) end,
 
 ---函数名：是显示的<p>
@@ -292,9 +291,9 @@ GetSprite = function(self,sp) end,
 ---描述：获取<code>self</code>的<code>tt</code>的<code>a</code>轴，使用空间<code>s</code>的值<p>
 ---更新版本：2.7599<p>
 ---@param self UI_XImage
----@param tt? Unit.TransformType default:Pos
----@param a? Unit.Vector3Axis default:X
----@param s? UnityEngine.Space default:World
+---@param tt? Unit.TransformType
+---@param a? Unit.Vector3Axis
+---@param s? UnityEngine.Space
 ---@return System.Single
 GetTransformValue = function(self,tt,a,s) end,
 
@@ -632,8 +631,8 @@ SetRightOffset = function(self,v) end,
 ---@param self UI_XImage
 ---@param axis Unit.Vector3Axis
 ---@param v System.Single
----@param s? UnityEngine.Space default:Self
----@param useOffset? System.Boolean default:True
+---@param s? UnityEngine.Space
+---@param useOffset? System.Boolean
 SetRotate_New = function(self,axis,v,s,useOffset) end,
 
 ---函数名：设置缩放<p>

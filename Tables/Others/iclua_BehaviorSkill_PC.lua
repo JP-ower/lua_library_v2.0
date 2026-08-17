@@ -52,7 +52,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: BehaviorSkill_PC, type: System.Type):UnityEngine.Component[]
----@overload fun(self: BehaviorSkill_PC, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: BehaviorSkill_PC, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: BehaviorSkill_PC)
 ---@overload fun(self: BehaviorSkill_PC)
 GetComponents = function(...) end,
@@ -137,7 +137,7 @@ TargetDetection = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: BehaviorSkill_PC, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: BehaviorSkill_PC, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: BehaviorSkill_PC):System.Boolean
 TryGetComponent = function(...) end,
 
@@ -164,7 +164,6 @@ AxisMotion_IgnoreCondition = function(self,axis) end,
 ---函数名：CompareTag<p>
 ---@param self BehaviorSkill_PC
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：ContinueMove<p>
@@ -226,8 +225,7 @@ GetMoveValue = function(self) end,
 
 ---函数名：GetSkillKey<p>
 ---@param self BehaviorSkill_PC
----@param key? System.String default:
----@return System.String
+---@param key? System.String
 GetSkillKey = function(self,key) end,
 
 ---函数名：GetType<p>
@@ -248,8 +246,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self BehaviorSkill_PC
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsOverride<p>
@@ -604,11 +602,7 @@ sd = nil,
 ---@type System.String
 tag = nil,
 
----字段名：transform<p>
----@type UnityEngine.Transform
-transform = nil,
-
----字段名：get_transform<p>
+---字段名：transform
 ---@type UnityEngine.Transform
 transform = nil,
 

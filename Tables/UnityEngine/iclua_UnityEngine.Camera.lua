@@ -1,4 +1,12 @@
 ---@meta
+---@class UnityEngine.Cubemap
+---@class UnityEngine.Matrix4x4
+---@class UnityEngine.Camera.CameraCallback
+---@class UnityEngine.Camera.GateFitParameters
+---@class UnityEngine.SceneManagement.Scene
+---@class UnityEngine.Rendering.CommandBuffer
+---@class UnityEngine.RenderBuffer
+---@class UnityEngine.Rendering.ScriptableCullingParameters
 ---@class UnityEngine.Camera
 UnityEngine.Camera = {
 
@@ -45,7 +53,7 @@ GetComponentInParent = function(...) end,
 ----@return any
 ---函数名：GetComponents<p>
 ---函数名：GetComponents<p>
----@overload fun(self: UnityEngine.Camera, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Camera, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Camera)
 ---@overload fun(self: UnityEngine.Camera)
 ---@overload fun(self: UnityEngine.Camera, type: System.Type):UnityEngine.Component[]
@@ -133,14 +141,14 @@ SetTargetBuffers = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
----@overload fun(self: UnityEngine.Camera, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.Camera, type: System.Type, component: UnityEngine.Component):System.Boolean
 ---@overload fun(self: UnityEngine.Camera):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：TryGetCullingParameters<p>
 ---函数名：TryGetCullingParameters<p>
----@overload fun(self: UnityEngine.Camera, stereoAware: System.Boolean, cullingParameters: UnityEngine.Rendering.ScriptableCullingParameters&):System.Boolean
----@overload fun(self: UnityEngine.Camera, cullingParameters: UnityEngine.Rendering.ScriptableCullingParameters&):System.Boolean
+---@overload fun(self: UnityEngine.Camera, stereoAware: System.Boolean, cullingParameters: UnityEngine.Rendering.ScriptableCullingParameters):System.Boolean
+---@overload fun(self: UnityEngine.Camera, cullingParameters: UnityEngine.Rendering.ScriptableCullingParameters):System.Boolean
 TryGetCullingParameters = function(...) end,
 
 ---函数名：ViewportPointToRay<p>
@@ -195,19 +203,18 @@ CalculateFrustumCorners = function(self,viewport,z,eye,outCorners) end,
 CalculateObliqueMatrix = function(self,clipPlane) end,
 
 ---函数名：CalculateProjectionMatrixFromPhysicalProperties<p>
----@param output UnityEngine.Matrix4x4&
+---@param output UnityEngine.Matrix4x4
 ---@param focalLength System.Single
 ---@param sensorSize UnityEngine.Vector2
 ---@param lensShift UnityEngine.Vector2
 ---@param nearClip System.Single
 ---@param farClip System.Single
----@param gateFitParameters? UnityEngine.Camera.GateFitParameters default:
+---@param gateFitParameters? UnityEngine.Camera.GateFitParameters
 CalculateProjectionMatrixFromPhysicalProperties = function(output,focalLength,sensorSize,lensShift,nearClip,farClip,gateFitParameters) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.Camera
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：CopyFrom<p>
@@ -433,7 +440,7 @@ SetupCurrent = function(cur) end,
 
 ---函数名：SubmitRenderRequests<p>
 ---@param self UnityEngine.Camera
----@param renderRequests System.Collections.Generic.List`1[[UnityEngine.Camera.RenderRequest, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param renderRequests System.Collections.Generic.List
 SubmitRenderRequests = function(self,renderRequests) end,
 
 ---函数名：ToString<p>

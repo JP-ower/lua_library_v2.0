@@ -1,4 +1,5 @@
 ---@meta
+---@class LuaInterface.LuaFunction
 ---@class LuaInterface.LuaInjectionStation
 LuaInterface.LuaInjectionStation = {
 

@@ -1,5 +1,7 @@
 ---@meta
----@class UnityEngine.Sprite
+---@class UnityEngine.SpritePackingMode
+---@class UnityEngine.SpritePackingRotation
+---@class UnityEngine.Sprite : UnityEngine.Object
 UnityEngine.Sprite = {
 
 ---函数名：Create<p>
@@ -35,7 +37,7 @@ GetInstanceID = function(self) end,
 ---函数名：GetPhysicsShape<p>
 ---@param self UnityEngine.Sprite
 ---@param shapeIdx System.Int32
----@param physicsShape System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param physicsShape System.Collections.Generic.List
 ---@return System.Int32
 GetPhysicsShape = function(self,shapeIdx,physicsShape) end,
 
@@ -63,7 +65,7 @@ OverrideGeometry = function(self,vertices,triangles) end,
 
 ---函数名：OverridePhysicsShape<p>
 ---@param self UnityEngine.Sprite
----@param physicsShapes System.Collections.Generic.IList`1[[UnityEngine.Vector2[], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param physicsShapes System.Collections.Generic.IList
 OverridePhysicsShape = function(self,physicsShapes) end,
 
 ---函数名：ToString<p>

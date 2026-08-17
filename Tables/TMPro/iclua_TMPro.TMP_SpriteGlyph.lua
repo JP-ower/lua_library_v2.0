@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.TextCore.GlyphRect
+---@class UnityEngine.TextCore.GlyphMetrics
 ---@class TMPro.TMP_SpriteGlyph
 TMPro.TMP_SpriteGlyph = {
 

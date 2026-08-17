@@ -48,9 +48,9 @@ LerpUnclamped = function(a,b,t) end,
 
 ---函数名：RGBToHSV<p>
 ---@param rgbColor UnityEngine.Color
----@param H System.Single&
----@param S System.Single&
----@param V System.Single&
+---@param H System.Single
+---@param S System.Single
+---@param V System.Single
 RGBToHSV = function(rgbColor,H,S,V) end,
 
 ---字段名：get_Item<p>
@@ -133,21 +133,9 @@ op_Equality = nil,
 ---@type UnityEngine.Vector4
 op_Implicit = nil,
 
----字段名：op_Implicit<p>
----@type UnityEngine.Color
-op_Implicit = nil,
-
 ---字段名：op_Inequality<p>
 ---@type System.Boolean
 op_Inequality = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Color
-op_Multiply = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Color
-op_Multiply = nil,
 
 ---字段名：op_Multiply<p>
 ---@type UnityEngine.Color

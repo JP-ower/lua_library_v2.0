@@ -1,4 +1,6 @@
 ---@meta
+---@class UnityEngine.ComputeBuffer
+---@class UnityEngine.GraphicsBuffer
 ---@class UnityEngine.Material
 UnityEngine.Material = {
 
@@ -14,8 +16,8 @@ GetColor = function(...) end,
 ---函数名：GetColorArray<p>
 ---@overload fun(self: UnityEngine.Material, name: System.String):UnityEngine.Color[]
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32):UnityEngine.Color[]
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
 GetColorArray = function(...) end,
 
 ---函数名：GetFloat<p>
@@ -30,8 +32,8 @@ GetFloat = function(...) end,
 ---函数名：GetFloatArray<p>
 ---@overload fun(self: UnityEngine.Material, name: System.String):System.Single[]
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32):System.Single[]
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
 GetFloatArray = function(...) end,
 
 ---函数名：GetInt<p>
@@ -52,8 +54,8 @@ GetMatrix = function(...) end,
 ---函数名：GetMatrixArray<p>
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32):UnityEngine.Matrix4x4[]
 ---@overload fun(self: UnityEngine.Material, name: System.String):UnityEngine.Matrix4x4[]
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
 GetMatrixArray = function(...) end,
 
 ---函数名：GetTag<p>
@@ -76,13 +78,13 @@ GetTextureOffset = function(...) end,
 
 ---函数名：GetTexturePropertyNameIDs<p>
 ---函数名：GetTexturePropertyNameIDs<p>
----@overload fun(self: UnityEngine.Material, outNames: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(self: UnityEngine.Material, outNames: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Material):System.Int32[]
 GetTexturePropertyNameIDs = function(...) end,
 
 ---函数名：GetTexturePropertyNames<p>
 ---函数名：GetTexturePropertyNames<p>
----@overload fun(self: UnityEngine.Material, outNames: System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(self: UnityEngine.Material, outNames: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Material):System.String[]
 GetTexturePropertyNames = function(...) end,
 
@@ -104,8 +106,8 @@ GetVector = function(...) end,
 ---函数名：GetVectorArray<p>
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32):UnityEngine.Vector4[]
 ---@overload fun(self: UnityEngine.Material, name: System.String):UnityEngine.Vector4[]
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
 GetVectorArray = function(...) end,
 
 ---函数名：HasProperty<p>
@@ -136,8 +138,8 @@ SetColor = function(...) end,
 ---函数名：SetColorArray<p>
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: UnityEngine.Color[])
 ---@overload fun(self: UnityEngine.Material, name: System.String, values: UnityEngine.Color[])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
 SetColorArray = function(...) end,
 
 ---函数名：SetConstantBuffer<p>
@@ -160,8 +162,8 @@ SetFloat = function(...) end,
 ---函数名：SetFloatArray<p>
 ---函数名：SetFloatArray<p>
 ---函数名：SetFloatArray<p>
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]])
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Single[])
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Single[])
 SetFloatArray = function(...) end,
@@ -182,8 +184,8 @@ SetMatrix = function(...) end,
 ---函数名：SetMatrixArray<p>
 ---函数名：SetMatrixArray<p>
 ---函数名：SetMatrixArray<p>
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Material, name: System.String, values: UnityEngine.Matrix4x4[])
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: UnityEngine.Matrix4x4[])
 SetMatrixArray = function(...) end,
@@ -220,10 +222,10 @@ SetVector = function(...) end,
 ---函数名：SetVectorArray<p>
 ---函数名：SetVectorArray<p>
 ---函数名：SetVectorArray<p>
----@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, name: System.String, values: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: UnityEngine.Vector4[])
 ---@overload fun(self: UnityEngine.Material, name: System.String, values: UnityEngine.Vector4[])
----@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Material, nameID: System.Int32, values: System.Collections.Generic.List)
 SetVectorArray = function(...) end,
 
 ---函数名：ComputeCRC<p>
@@ -238,7 +240,6 @@ CopyPropertiesFromMaterial = function(self,mat) end,
 
 ---函数名：Create<p>
 ---@param scriptContents System.String
----@return UnityEngine.Material
 Create = function(scriptContents) end,
 
 ---函数名：DisableKeyword<p>
@@ -260,7 +261,6 @@ Equals = function(self,other) end,
 ---函数名：FindPass<p>
 ---@param self UnityEngine.Material
 ---@param passName System.String
----@return System.Int32
 FindPass = function(self,passName) end,
 
 ---函数名：GetHashCode<p>
@@ -282,7 +282,6 @@ GetPassName = function(self,pass) end,
 ---函数名：GetShaderPassEnabled<p>
 ---@param self UnityEngine.Material
 ---@param passName System.String
----@return System.Boolean
 GetShaderPassEnabled = function(self,passName) end,
 
 ---函数名：GetType<p>
@@ -293,7 +292,6 @@ GetType = function(self) end,
 ---函数名：IsKeywordEnabled<p>
 ---@param self UnityEngine.Material
 ---@param keyword System.String
----@return System.Boolean
 IsKeywordEnabled = function(self,keyword) end,
 
 ---函数名：Lerp<p>
@@ -306,7 +304,7 @@ Lerp = function(self,start,_end,t) end,
 ---函数名：SetOverrideTag<p>
 ---@param self UnityEngine.Material
 ---@param tag System.String
----@param val System.String
+---@param val any
 SetOverrideTag = function(self,tag,val) end,
 
 ---函数名：SetPass<p>
@@ -318,7 +316,7 @@ SetPass = function(self,pass) end,
 ---函数名：SetShaderPassEnabled<p>
 ---@param self UnityEngine.Material
 ---@param passName System.String
----@param enabled System.Boolean
+---@param enabled any
 SetShaderPassEnabled = function(self,passName,enabled) end,
 
 ---函数名：ToString<p>

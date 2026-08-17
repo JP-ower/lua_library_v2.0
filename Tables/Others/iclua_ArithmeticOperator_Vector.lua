@@ -4,7 +4,6 @@ ArithmeticOperator_Vector = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return ArithmeticOperator_Vector
 Create = function(value) end,
 
 ---函数名：Equals<p>

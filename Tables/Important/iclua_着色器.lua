@@ -13,28 +13,24 @@ AddTextureOffset = function(self,mat,v) end,
 ---描述：<code>mat</code>着色器的<code>name</code>属性的值<p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@return System.Boolean
 GetBoolean = function(mat,name) end,
 
 ---函数名：获取颜色<p>
 ---描述：<code>mat</code>着色器的<code>name</code>属性的值<p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@return UnityEngine.Color
 GetColor = function(mat,name) end,
 
 ---函数名：获取实数<p>
 ---描述：<code>mat</code>着色器的<code>name</code>属性的值<p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@return System.Single
 GetFloat = function(mat,name) end,
 
 ---函数名：获取整数<p>
 ---描述：<code>mat</code>着色器的<code>name</code>属性的值<p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@return System.Int32
 GetInt = function(mat,name) end,
 
 ---函数名：从背景图片上获取<p>
@@ -66,28 +62,28 @@ GetTextureOffset = function(self,mat) end,
 ---描述：设置<code>mat</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@param v System.Boolean
+---@param v any
 SetBoolean = function(mat,name,v) end,
 
 ---函数名：设置颜色<p>
 ---描述：设置<code>mat</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@param v UnityEngine.Color
+---@param v any
 SetColor = function(mat,name,v) end,
 
 ---函数名：设置实数<p>
 ---描述：设置<code>mat</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@param v System.Single
+---@param v any
 SetFloat = function(mat,name,v) end,
 
 ---函数名：设置整数<p>
 ---描述：设置<code>mat</code>着色器的<code>name</code>属性的值为<code>v</code><p>
 ---@param mat UnityEngine.Material
 ---@param name System.String
----@param v System.Int32
+---@param v any
 SetInt = function(mat,name,v) end,
 
 ---函数名：设置纹理偏移<p>

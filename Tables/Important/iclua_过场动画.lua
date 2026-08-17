@@ -49,23 +49,23 @@ CFS_Tag = function() end,
 ---函数名：创建过场动画<p>
 ---描述：创建过场动画的进入效果为<code>transEffectIn</code>时间为<code>inTime</code>，离开效果为<code>transEffectOut</code>时间为<code>outTime</code>，中间间隔<code>intervalTime</code><p>
 ---@param transEffectIn JFY_TransitionEffect.TransEffectIn
----@param inTime? System.Single default:1
----@param transEffectOut? JFY_TransitionEffect.TransEffectOut default:FadeOut
----@param outTime? System.Single default:1
----@param intervalTime? System.Single default:0.2
+---@param inTime? System.Single
+---@param transEffectOut? JFY_TransitionEffect.TransEffectOut
+---@param outTime? System.Single
+---@param intervalTime? System.Single
 CreateTransEffect = function(transEffectIn,inTime,transEffectOut,outTime,intervalTime) end,
 
 ---函数名：创建过场动画(进入)<p>
 ---描述：创建过场动画的进入效果为<code>transEffectIn</code>时间为<code>inTime</code><p>
 ---@param transEffectIn JFY_TransitionEffect.TransEffectIn
----@param inTime? System.Single default:1
+---@param inTime? System.Single
 CreateTransEffectIn = function(transEffectIn,inTime) end,
 
 ---函数名：运行过场动画(离开)<p>
 ---描述：设置<code>self</code>的离开效果为<code>transEffectOut</code>时间为<code>outTime</code><p>
 ---@param self JFY_TransitionEffect
 ---@param transEffectOut JFY_TransitionEffect.TransEffectOut
----@param outTime? System.Single default:1
+---@param outTime? System.Single
 CreateTransEffectOut = function(self,transEffectOut,outTime) end,
 
 ---函数名：########## 密集图形缩放 ##########<p>
@@ -160,16 +160,16 @@ SetCFS_Color = function(self,color) end,
 ---描述：设置(遮罩图形缩放)<code>self</code>的遮罩缩放曲线：进入为<code>cFSIn_Curve</code>，离开为<code>cFSOut_Curve</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param cFSIn_Curve? JFY_TransitionEffect.DOTweenEase default:OutQuad
----@param cFSOut_Curve? JFY_TransitionEffect.DOTweenEase default:OutQuad
+---@param cFSIn_Curve? JFY_TransitionEffect.DOTweenEase
+---@param cFSOut_Curve? JFY_TransitionEffect.DOTweenEase
 SetCFS_Curve = function(self,cFSIn_Curve,cFSOut_Curve) end,
 
 ---函数名：设置遮罩最大缩放倍率<p>
 ---描述：设置(遮罩图形缩放)<code>self</code>的遮罩最大缩放倍率：进入为<code>cFSIn_MaxScale</code>，离开为<code>cFSOut_MaxScale</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param cFSIn_MaxScale? System.Single default:1
----@param cFSOut_MaxScale? System.Single default:1
+---@param cFSIn_MaxScale? System.Single
+---@param cFSOut_MaxScale? System.Single
 SetCFS_MaxScale = function(self,cFSIn_MaxScale,cFSOut_MaxScale) end,
 
 ---函数名：设置遮罩图片位置<p>
@@ -200,16 +200,16 @@ SetColor = function(self,color) end,
 ---描述：设置(密集图形缩放)<code>self</code>(进入)的图片为<code>sprite</code>，最终缩放倍率为<code>scale</code>，旋转角度为<code>theta</code><p>
 ---@param self JFY_TransitionEffect
 ---@param sprite UnityEngine.Sprite
----@param scale? System.Single default:1
----@param theta? System.Single default:0
+---@param scale? System.Single
+---@param theta? System.Single
 SetDFIn_Sprite = function(self,sprite,scale,theta) end,
 
 ---函数名：自定义图片、大小与角度(离开)<p>
 ---描述：设置(密集图形缩放)<code>self</code>(离开)的图片为<code>sprite</code>，最终缩放倍率为<code>scale</code>，旋转角度为<code>theta</code><p>
 ---@param self JFY_TransitionEffect
 ---@param sprite UnityEngine.Sprite
----@param scale? System.Single default:1
----@param theta? System.Single default:0
+---@param scale? System.Single
+---@param theta? System.Single
 SetDFOut_Sprite = function(self,sprite,scale,theta) end,
 
 ---函数名：设置颜色<p>
@@ -222,7 +222,7 @@ SetDF_Color = function(self,color) end,
 ---描述：设置(密集图形缩放)<code>self</code>的密度(X轴创建的图形数量)为<code>densityX</code><p>
 ---介绍：密度不推荐超过30<p>
 ---@param self JFY_TransitionEffect
----@param densityX? System.Single default:20
+---@param densityX? System.Single
 SetDF_Density = function(self,densityX) end,
 
 ---函数名：设置方向<p>
@@ -237,22 +237,22 @@ SetDF_Direct = function(self,dFIn_Direct,dFOut_Direct) end,
 ---描述：设置(密集图形缩放)<code>self</code>的预设图片：进入为<code>dFIn_Prefab</code>，离开为<code>dFOut_Prefab</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param dFIn_Prefab? JFY_TransitionEffect.DF_Prefab default:Null
----@param dFOut_Prefab? JFY_TransitionEffect.DF_Prefab default:Null
+---@param dFIn_Prefab? JFY_TransitionEffect.DF_Prefab
+---@param dFOut_Prefab? JFY_TransitionEffect.DF_Prefab
 SetDF_PrefabSprite = function(self,dFIn_Prefab,dFOut_Prefab) end,
 
 ---函数名：设置缩放时间占比<p>
 ---描述：设置(密集图形缩放)<code>self</code>UI从0缩放到最终大小所需的时间占总时长的比例：进入为<code>in_ScaleTimeRatio</code>，离开为<code>out_ScaleTimeRatio</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param in_ScaleTimeRatio? System.Single default:0.5
----@param out_ScaleTimeRatio? System.Single default:0.5
+---@param in_ScaleTimeRatio? System.Single
+---@param out_ScaleTimeRatio? System.Single
 SetDF_ScaleTimeRatio = function(self,in_ScaleTimeRatio,out_ScaleTimeRatio) end,
 
 ---函数名：设置默认层级深度<p>
 ---描述：设置过场动画UI的默认层级深度为<code>defaultSortingOrder</code><p>
 ---介绍：会对所有没有指定层级深度的过场动画起作用<p>
----@param defaultSortingOrder? System.Int32 default:-1
+---@param defaultSortingOrder? System.Int32
 SetDefaultSortingOrder = function(defaultSortingOrder) end,
 
 ---函数名：设置颜色<p>
@@ -273,15 +273,15 @@ SetE_Direct = function(self,eIn_Direct,eOut_Direct) end,
 ---描述：设置(擦除)<code>self</code>擦除部分的长度：进入为<code>eIn_GradientLength</code>，离开为<code>eOut_GradientLength</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param eIn_GradientLength? System.Single default:400
----@param eOut_GradientLength? System.Single default:400
+---@param eIn_GradientLength? System.Single
+---@param eOut_GradientLength? System.Single
 SetE_GradientLength = function(self,eIn_GradientLength,eOut_GradientLength) end,
 
 ---函数名：设置为预设的图片<p>
 ---描述：设置(图形缩放)<code>self</code>的预设图片：进入为<code>fSIn_Prefab</code>，离开为<code>fSOut_Prefab</code><p>
 ---@param self JFY_TransitionEffect
----@param fSIn_Prefab? JFY_TransitionEffect.FS_Prefab default:Null
----@param fSOut_Prefab? JFY_TransitionEffect.FS_Prefab default:Null
+---@param fSIn_Prefab? JFY_TransitionEffect.FS_Prefab
+---@param fSOut_Prefab? JFY_TransitionEffect.FS_Prefab
 SetFSAll_PrefabSprite = function(self,fSIn_Prefab,fSOut_Prefab) end,
 
 ---函数名：自定义图片、大小与角度(进入)<p>
@@ -289,8 +289,8 @@ SetFSAll_PrefabSprite = function(self,fSIn_Prefab,fSOut_Prefab) end,
 ---介绍："最终缩放倍率=1"等价于"图片大小=以屏幕较长轴(通常是X轴)为边长的正方形大小"，另外，使用非不透明图片效果可能会不好。<p>
 ---@param self JFY_TransitionEffect
 ---@param sprite UnityEngine.Sprite
----@param scale? System.Single default:1
----@param theta? System.Single default:0
+---@param scale? System.Single
+---@param theta? System.Single
 SetFSIn_Sprite = function(self,sprite,scale,theta) end,
 
 ---函数名：自定义图片、大小与角度(离开)<p>
@@ -298,8 +298,8 @@ SetFSIn_Sprite = function(self,sprite,scale,theta) end,
 ---介绍："最终缩放倍率=1"等价于"图片大小=以屏幕较长轴(通常是X轴)为边长的正方形大小"，另外，使用非不透明图片效果可能会不好。<p>
 ---@param self JFY_TransitionEffect
 ---@param sprite UnityEngine.Sprite
----@param scale? System.Single default:1
----@param theta? System.Single default:0
+---@param scale? System.Single
+---@param theta? System.Single
 SetFSOut_Sprite = function(self,sprite,scale,theta) end,
 
 ---函数名：设置颜色<p>
@@ -324,24 +324,24 @@ SetMWS_Color = function(self,color) end,
 ---描述：设置(百叶窗移动)<code>self</code>的曲线：进入为<code>mWSIn_Curve</code>，离开为<code>mWSOut_Curve</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param mWSIn_Curve? JFY_TransitionEffect.DOTweenEase default:OutQuad
----@param mWSOut_Curve? JFY_TransitionEffect.DOTweenEase default:OutQuad
+---@param mWSIn_Curve? JFY_TransitionEffect.DOTweenEase
+---@param mWSOut_Curve? JFY_TransitionEffect.DOTweenEase
 SetMWS_Curve = function(self,mWSIn_Curve,mWSOut_Curve) end,
 
 ---函数名：设置密度<p>
 ---描述：设置(百叶窗移动)<code>self</code>的密度(创建的图形数量)：进入为<code>inDensity</code>，离开为<code>outDensity</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param inDensity? System.Single default:10
----@param outDensity? System.Single default:10
+---@param inDensity? System.Single
+---@param outDensity? System.Single
 SetMWS_Density = function(self,inDensity,outDensity) end,
 
 ---函数名：设置创建方向(并非移动方向)<p>
 ---描述：设置(百叶窗移动)<code>self</code>的创建方向：进入为<code>mWSIn_Direct</code>，离开为<code>mWSOut_Direct</code><p>
 ---介绍：创建方向并非移动方向<p>
 ---@param self JFY_TransitionEffect
----@param mWSIn_Direct? JFY_TransitionEffect.MWS_Direct default:Down
----@param mWSOut_Direct? JFY_TransitionEffect.MWS_Direct default:Down
+---@param mWSIn_Direct? JFY_TransitionEffect.MWS_Direct
+---@param mWSOut_Direct? JFY_TransitionEffect.MWS_Direct
 SetMWS_Direct = function(self,mWSIn_Direct,mWSOut_Direct) end,
 
 ---函数名：设置是否为交错移动的<p>
@@ -364,8 +364,8 @@ SetMWS_IsReverseMove = function(self,mWSIn_IsInverted,mWSOut_IsInverted) end,
 ---描述：设置(百叶窗移动)<code>self</code>UI移动的时间占总时长的比例：进入为<code>mWSIn_MoveTimeRatio</code>，离开为<code>mWSOut_MoveTimeRatio</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param mWSIn_MoveTimeRatio? System.Single default:0.4
----@param mWSOut_MoveTimeRatio? System.Single default:0.4
+---@param mWSIn_MoveTimeRatio? System.Single
+---@param mWSOut_MoveTimeRatio? System.Single
 SetMWS_MoveTimeRatio = function(self,mWSIn_MoveTimeRatio,mWSOut_MoveTimeRatio) end,
 
 ---函数名：设置过渡时是否游戏暂停<p>
@@ -396,24 +396,24 @@ SetWS_Color = function(self,color) end,
 ---描述：设置(百叶窗)<code>self</code>的密度(创建的图形数量)：进入为<code>inDensity</code>，离开为<code>outDensity</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param inDensity? System.Single default:25
----@param outDensity? System.Single default:25
+---@param inDensity? System.Single
+---@param outDensity? System.Single
 SetWS_Density = function(self,inDensity,outDensity) end,
 
 ---函数名：设置方向<p>
 ---描述：设置(百叶窗)<code>self</code>的方向：进入为<code>wSIn_Direct</code>，离开为<code>wSOut_Direct</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param wSIn_Direct? JFY_TransitionEffect.WS_Direct default:Right
----@param wSOut_Direct? JFY_TransitionEffect.WS_Direct default:Right
+---@param wSIn_Direct? JFY_TransitionEffect.WS_Direct
+---@param wSOut_Direct? JFY_TransitionEffect.WS_Direct
 SetWS_Direct = function(self,wSIn_Direct,wSOut_Direct) end,
 
 ---函数名：设置缩放时间占比<p>
 ---描述：设置(百叶窗)<code>self</code>UI从0缩放到最终大小所需的时间占总时长的比例：进入为<code>scaleInTimeRatio</code>，离开为<code>scaleOutTimeRatio</code><p>
 ---介绍：如果不需要对进入和离开都设置,只需要填写需要的即可<p>
 ---@param self JFY_TransitionEffect
----@param scaleInTimeRatio? System.Single default:0.25
----@param scaleOutTimeRatio? System.Single default:0.25
+---@param scaleInTimeRatio? System.Single
+---@param scaleOutTimeRatio? System.Single
 SetWS_ScaleTimeRatio = function(self,scaleInTimeRatio,scaleOutTimeRatio) end,
 
 ---函数名：###########  Debug 函数  ###########<p>
@@ -422,7 +422,7 @@ SetWS_ScaleTimeRatio = function(self,scaleInTimeRatio,scaleOutTimeRatio) end,
 ---更新版本：2.759<p>
 ---@param self JFY_TransitionEffect
 ---@param varName System.String
-TE_Debug = function(self,varName) end,
+TE_Debug = function(self, varName) end,
 
 ---函数名：###########   随机设置   ###########<p>
 ---描述：随机设置标签，无任何效果<p><code>self</code>

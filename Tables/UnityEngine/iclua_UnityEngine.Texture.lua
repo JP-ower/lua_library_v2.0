@@ -1,5 +1,5 @@
 ---@meta
----@class UnityEngine.Texture
+---@class UnityEngine.Texture : UnityEngine.Object
 UnityEngine.Texture = {
 
 ---函数名：Equals<p>

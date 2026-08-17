@@ -14,18 +14,18 @@ Equals = function(self,obj) end,
 ---@param includeFallbacks System.Boolean
 ---@param fontStyle TMPro.FontStyles
 ---@param fontWeight TMPro.FontWeight
----@param isAlternativeTypeface System.Boolean&
+---@param isAlternativeTypeface System.Boolean
 ---@return TMPro.TMP_Character
 GetCharacterFromFontAsset = function(unicode,sourceFontAsset,includeFallbacks,fontStyle,fontWeight,isAlternativeTypeface) end,
 
 ---函数名：GetCharacterFromFontAssets<p>
 ---@param unicode System.UInt32
 ---@param sourceFontAsset TMPro.TMP_FontAsset
----@param fontAssets System.Collections.Generic.List`1[[TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param fontAssets System.Collections.Generic.List
 ---@param includeFallbacks System.Boolean
 ---@param fontStyle TMPro.FontStyles
 ---@param fontWeight TMPro.FontWeight
----@param isAlternativeTypeface System.Boolean&
+---@param isAlternativeTypeface System.Boolean
 ---@return TMPro.TMP_Character
 GetCharacterFromFontAssets = function(unicode,sourceFontAsset,fontAssets,includeFallbacks,fontStyle,fontWeight,isAlternativeTypeface) end,
 

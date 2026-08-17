@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.Touch
 ---@class UnityEngine.EventSystems.BaseInput
 UnityEngine.EventSystems.BaseInput = {
 
@@ -53,7 +54,7 @@ GetComponentInParent = function(...) end,
 ----@return any
 ---@overload fun(self: UnityEngine.EventSystems.BaseInput)
 ---@overload fun(self: UnityEngine.EventSystems.BaseInput, type: System.Type):UnityEngine.Component[]
----@overload fun(self: UnityEngine.EventSystems.BaseInput, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.EventSystems.BaseInput, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.EventSystems.BaseInput)
 GetComponents = function(...) end,
 
@@ -132,13 +133,12 @@ StopCoroutine = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.EventSystems.BaseInput):System.Boolean
----@overload fun(self: UnityEngine.EventSystems.BaseInput, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.EventSystems.BaseInput, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.EventSystems.BaseInput
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -150,13 +150,11 @@ Equals = function(self,other) end,
 ---函数名：GetAxisRaw<p>
 ---@param self UnityEngine.EventSystems.BaseInput
 ---@param axisName System.String
----@return System.Single
 GetAxisRaw = function(self,axisName) end,
 
 ---函数名：GetButtonDown<p>
 ---@param self UnityEngine.EventSystems.BaseInput
 ---@param buttonName System.String
----@return System.Boolean
 GetButtonDown = function(self,buttonName) end,
 
 ---函数名：GetHashCode<p>
@@ -207,8 +205,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self UnityEngine.EventSystems.BaseInput
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>

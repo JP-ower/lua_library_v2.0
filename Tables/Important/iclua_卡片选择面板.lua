@@ -35,17 +35,16 @@ Close = function(self) end,
 ---描述：创建卡片选择面板,标题为<code>title</code><p>
 ---更新版本：2.774<p>
 ---@param title System.String
----@return UI_JFY_CardSelectPanel
 Create = function(title) end,
 
 ---函数名：创建卡片<p>
 ---描述：为<code>self</code>面板创建卡片,设置标题为<code>title</code>,内容为<code>description</code>,图标为<code>icon</code><code>a</code><code>ia</code><p>
 ---@param self UI_JFY_CardSelectPanel
 ---@param title System.String
----@param description System.String
 ---@param icon UnityEngine.Sprite
 ---@param a ActionDataArray
 ---@param ia ActionDataArray
+---@param description any
 ---@return UI_JFY_CardSelectCard
 CreateCard = function(self,title,description,icon,a,ia) end,
 
@@ -344,7 +343,7 @@ SetCardTitle = function(self,card,title) end,
 ---描述：设置<code>self</code>点击卡片时直接确认<p><code>clickCardConfirm</code>
 ---介绍：启用后只能单选<p>
 ---@param self UI_JFY_CardSelectPanel
----@param clickCardConfirm? System.Boolean default:True
+---@param clickCardConfirm? System.Boolean
 SetClickCardConfirm = function(self,clickCardConfirm) end,
 
 ---函数名：设置面板的关闭回调<p>
@@ -454,7 +453,7 @@ SetTitleColor = function(self,color) end,
 ---描述：使<code>self</code>面板显示提示文字，文本为<code>text</code>，显示时间为<code>time</code>秒<p>
 ---@param self UI_JFY_CardSelectPanel
 ---@param text System.String
----@param time? System.Single default:3
+---@param time System.Single
 ShowHintText = function(self,text,time) end,
 
 ---字段名：最后创建的卡片<p>

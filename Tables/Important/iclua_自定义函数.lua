@@ -13,7 +13,7 @@ GetReturnValue = function() end,
 ---介绍：此函数请使用Lua调用<p>
 ---更新版本：2.771<p>
 ---@param id System.String
----@param values System.Object[]
+---@param values any
 RunCustomFunction = function(id,values) end,
 
 ---函数名：运行自定义函数_带返回值(Lua调用)<p>
@@ -21,7 +21,7 @@ RunCustomFunction = function(id,values) end,
 ---介绍：此函数请使用Lua调用<p>
 ---更新版本：2.775<p>
 ---@param id System.String
----@param values System.Object[]
+---@param values any
 ---@return System.Object
 RunCustomFunction_Return = function(id,values) end,
 

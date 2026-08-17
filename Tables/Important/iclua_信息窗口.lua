@@ -15,7 +15,7 @@ Close_CancelCallback = function(self) end,
 ---函数名：创建<p>
 ---描述：创建一个信息框，标题为<code>label</code>，内容为<code>content</code><p>
 ---@param label System.String
----@param content System.String
+---@param content any
 ---@return UI_InfoBox
 Create = function(label,content) end,
 

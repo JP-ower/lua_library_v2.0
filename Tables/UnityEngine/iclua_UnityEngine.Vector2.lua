@@ -17,9 +17,9 @@ Scale = function(...) end,
 ---函数名：SmoothDamp<p>
 ---函数名：SmoothDamp<p>
 ---函数名：SmoothDamp<p>
----@overload fun(current: UnityEngine.Vector2, target: UnityEngine.Vector2, currentVelocity: UnityEngine.Vector2&, smoothTime: System.Single, maxSpeed: System.Single):UnityEngine.Vector2
----@overload fun(current: UnityEngine.Vector2, target: UnityEngine.Vector2, currentVelocity: UnityEngine.Vector2&, smoothTime: System.Single):UnityEngine.Vector2
----@overload fun(current: UnityEngine.Vector2, target: UnityEngine.Vector2, currentVelocity: UnityEngine.Vector2&, smoothTime: System.Single, maxSpeed: System.Single, deltaTime: System.Single):UnityEngine.Vector2
+---@overload fun(current: UnityEngine.Vector2, target: UnityEngine.Vector2, currentVelocity: UnityEngine.Vector2, smoothTime: System.Single, maxSpeed: System.Single):UnityEngine.Vector2
+---@overload fun(current: UnityEngine.Vector2, target: UnityEngine.Vector2, currentVelocity: UnityEngine.Vector2, smoothTime: System.Single):UnityEngine.Vector2
+---@overload fun(current: UnityEngine.Vector2, target: UnityEngine.Vector2, currentVelocity: UnityEngine.Vector2, smoothTime: System.Single, maxSpeed: System.Single, deltaTime: System.Single):UnityEngine.Vector2
 SmoothDamp = function(...) end,
 
 ---函数名：SqrMagnitude<p>
@@ -174,10 +174,6 @@ op_Addition = nil,
 ---@type UnityEngine.Vector2
 op_Division = nil,
 
----字段名：op_Division<p>
----@type UnityEngine.Vector2
-op_Division = nil,
-
 ---字段名：op_Equality<p>
 ---@type System.Boolean
 op_Equality = nil,
@@ -186,21 +182,9 @@ op_Equality = nil,
 ---@type UnityEngine.Vector2
 op_Implicit = nil,
 
----字段名：op_Implicit<p>
----@type UnityEngine.Vector3
-op_Implicit = nil,
-
 ---字段名：op_Inequality<p>
 ---@type System.Boolean
 op_Inequality = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Vector2
-op_Multiply = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Vector2
-op_Multiply = nil,
 
 ---字段名：op_Multiply<p>
 ---@type UnityEngine.Vector2

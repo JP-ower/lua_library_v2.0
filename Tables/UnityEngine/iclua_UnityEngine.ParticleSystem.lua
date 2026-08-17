@@ -1,4 +1,31 @@
 ---@meta
+---@class UnityEngine.ParticleSystem.CollisionModule
+---@class UnityEngine.ParticleSystem.ColorBySpeedModule
+---@class UnityEngine.ParticleSystem.ColorOverLifetimeModule
+---@class UnityEngine.ParticleSystem.CustomDataModule
+---@class UnityEngine.ParticleSystem.EmissionModule
+---@class UnityEngine.ParticleSystem.EmitParams
+---@class UnityEngine.ParticleSystem.ExternalForcesModule
+---@class UnityEngine.ParticleSystem.ForceOverLifetimeModule
+---@class UnityEngine.ParticleSystem.InheritVelocityModule
+---@class UnityEngine.ParticleSystem.LifetimeByEmitterSpeedModule
+---@class UnityEngine.ParticleSystem.LightsModule
+---@class UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule
+---@class UnityEngine.ParticleSystem.MainModule
+---@class UnityEngine.ParticleSystem.NoiseModule
+---@class UnityEngine.ParticleSystem.Particle
+---@class UnityEngine.ParticleSystem.PlaybackState
+---@class UnityEngine.ParticleSystem.RotationBySpeedModule
+---@class UnityEngine.ParticleSystem.RotationOverLifetimeModule
+---@class UnityEngine.ParticleSystem.ShapeModule
+---@class UnityEngine.ParticleSystem.SizeBySpeedModule
+---@class UnityEngine.ParticleSystem.SizeOverLifetimeModule
+---@class UnityEngine.ParticleSystem.SubEmittersModule
+---@class UnityEngine.ParticleSystem.TextureSheetAnimationModule
+---@class UnityEngine.ParticleSystem.TrailModule
+---@class UnityEngine.ParticleSystem.Trails
+---@class UnityEngine.ParticleSystem.TriggerModule
+---@class UnityEngine.ParticleSystem.VelocityOverLifetimeModule
 ---@class UnityEngine.ParticleSystem
 UnityEngine.ParticleSystem = {
 
@@ -63,7 +90,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ---@overload fun(self: UnityEngine.ParticleSystem)
 ---@overload fun(self: UnityEngine.ParticleSystem)
----@overload fun(self: UnityEngine.ParticleSystem, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.ParticleSystem, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.ParticleSystem, type: System.Type):UnityEngine.Component[]
 GetComponents = function(...) end,
 
@@ -103,9 +130,9 @@ GetComponentsInParent = function(...) end,
 ---函数名：GetParticles<p>
 ---函数名：GetParticles<p>
 ---函数名：GetParticles<p>
----@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
----@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], size: System.Int32):System.Int32
----@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], size: System.Int32, offset: System.Int32):System.Int32
+---@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray):System.Int32
+---@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray, size: System.Int32):System.Int32
+---@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray, size: System.Int32, offset: System.Int32):System.Int32
 ---@overload fun(self: UnityEngine.ParticleSystem, particles: UnityEngine.ParticleSystem.Particle[]):System.Int32
 ---@overload fun(self: UnityEngine.ParticleSystem, particles: UnityEngine.ParticleSystem.Particle[], size: System.Int32):System.Int32
 ---@overload fun(self: UnityEngine.ParticleSystem, particles: UnityEngine.ParticleSystem.Particle[], size: System.Int32, offset: System.Int32):System.Int32
@@ -113,7 +140,7 @@ GetParticles = function(...) end,
 
 ---函数名：GetTrails<p>
 ---函数名：GetTrails<p>
----@overload fun(self: UnityEngine.ParticleSystem, trailData: UnityEngine.ParticleSystem.Trails&):System.Int32
+---@overload fun(self: UnityEngine.ParticleSystem, trailData: UnityEngine.ParticleSystem.Trails):System.Int32
 ---@overload fun(self: UnityEngine.ParticleSystem):UnityEngine.ParticleSystem.Trails
 GetTrails = function(...) end,
 
@@ -161,12 +188,12 @@ SendMessageUpwards = function(...) end,
 ---函数名：SetParticles<p>
 ---函数名：SetParticles<p>
 ---函数名：SetParticles<p>
----@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], size: System.Int32, offset: System.Int32)
+---@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray, size: System.Int32, offset: System.Int32)
 ---@overload fun(self: UnityEngine.ParticleSystem, particles: UnityEngine.ParticleSystem.Particle[])
 ---@overload fun(self: UnityEngine.ParticleSystem, particles: UnityEngine.ParticleSystem.Particle[], size: System.Int32)
----@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], size: System.Int32)
+---@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray, size: System.Int32)
 ---@overload fun(self: UnityEngine.ParticleSystem, particles: UnityEngine.ParticleSystem.Particle[], size: System.Int32, offset: System.Int32)
----@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.ParticleSystem, particles: Unity.Collections.NativeArray)
 SetParticles = function(...) end,
 
 ---函数名：Simulate<p>
@@ -191,14 +218,14 @@ Stop = function(...) end,
 ---函数名：TriggerSubEmitter<p>
 ---函数名：TriggerSubEmitter<p>
 ---@overload fun(self: UnityEngine.ParticleSystem, subEmitterIndex: System.Int32)
----@overload fun(self: UnityEngine.ParticleSystem, subEmitterIndex: System.Int32, particle: UnityEngine.ParticleSystem.Particle&)
----@overload fun(self: UnityEngine.ParticleSystem, subEmitterIndex: System.Int32, particles: System.Collections.Generic.List`1[[UnityEngine.ParticleSystem.Particle, UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.ParticleSystem, subEmitterIndex: System.Int32, particle: UnityEngine.ParticleSystem.Particle)
+---@overload fun(self: UnityEngine.ParticleSystem, subEmitterIndex: System.Int32, particles: System.Collections.Generic.List)
 TriggerSubEmitter = function(...) end,
 
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.ParticleSystem):System.Boolean
----@overload fun(self: UnityEngine.ParticleSystem, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.ParticleSystem, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：AllocateAxisOfRotationAttribute<p>
@@ -217,7 +244,6 @@ AllocateMeshIndexAttribute = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.ParticleSystem
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>
@@ -228,7 +254,7 @@ Equals = function(self,other) end,
 
 ---函数名：GetCustomParticleData<p>
 ---@param self UnityEngine.ParticleSystem
----@param customData System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param customData System.Collections.Generic.List
 ---@param streamIndex UnityEngine.ParticleSystemCustomData
 ---@return System.Int32
 GetCustomParticleData = function(self,customData,streamIndex) end,
@@ -258,7 +284,7 @@ ResetPreMappedBufferMemory = function() end,
 
 ---函数名：SetCustomParticleData<p>
 ---@param self UnityEngine.ParticleSystem
----@param customData System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param customData System.Collections.Generic.List
 ---@param streamIndex UnityEngine.ParticleSystemCustomData
 SetCustomParticleData = function(self,customData,streamIndex) end,
 

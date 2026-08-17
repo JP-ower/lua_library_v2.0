@@ -24,7 +24,7 @@ GetLastFunctionReturnValue_DG = function() end,
 ---函数名：最后运行函数的返回值(对象)<p>
 ---描述：最后运行函数下标<code>index</code>的返回值(对象)<p>
 ---介绍：当你使用触发器运行Lua函数时，获取其对象返回值<p>
----@param index? System.Int32 default:0
+---@param index? System.Int32
 ---@return System.Object
 GetLastFunctionReturnValue_Object = function(index) end,
 
@@ -202,7 +202,7 @@ RunLuaFunction_Return = function(name) end,
 ---函数名：运行一段Lua脚本(指定模块名字)<p>
 ---描述：运行一段Lua脚本<code>lua</code>指定模块名字为<code>name</code><p>
 ---@param lua System.String
----@param name? System.String default:LuaState.cs
+---@param name? System.String
 Run_Chunk = function(lua,name) end,
 
 }

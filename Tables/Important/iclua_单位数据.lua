@@ -48,7 +48,6 @@ GetTargetType = function(self) end,
 ---描述：获取ID为<code>id</code>的单位数据<p>
 ---更新版本：2.7592<p>
 ---@param id System.String
----@return UnitData
 GetUnitData = function(id) end,
 
 }

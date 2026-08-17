@@ -125,14 +125,6 @@ op_Inequality = nil,
 ---@type UnityEngine.Vector2Int
 op_Multiply = nil,
 
----字段名：op_Multiply<p>
----@type UnityEngine.Vector2Int
-op_Multiply = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Vector2Int
-op_Multiply = nil,
-
 ---字段名：op_Subtraction<p>
 ---@type UnityEngine.Vector2Int
 op_Subtraction = nil,

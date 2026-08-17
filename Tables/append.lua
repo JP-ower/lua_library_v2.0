@@ -1,9 +1,20 @@
+---@meta
 ---1.Important
 ---@alias System.Int32 number
 ---@alias System.Single number
 ---@alias System.String string
 ---@alias System.Object any
 ---@alias System.Boolean boolean
+---@alias System.Byte number
+---@alias System.SByte number
+---@alias System.Int16 number
+---@alias System.UInt16 number
+---@alias System.UInt32 number
+---@alias System.Int64 number
+---@alias System.UInt64 number
+---@alias System.Double number
+---@alias System.Decimal number
+---@alias System.Char string
 ---@alias EventDataArray nil x-x
 ---@alias FunctionBreakMode nil x-x
 ---@alias SpriteDisplayData nil x-x
@@ -17,3 +28,271 @@
 
 ---2.Other
 ---@alias Data.D_Void function
+
+---3.EmmyLua 补丁：CLR 导出桩缺类型 / 非法泛型写法
+---@alias UnityEngine.Coroutine any
+---@alias System.Collections.IEnumerator any
+---@alias System.Collections.Generic.List any
+---@alias System.Collections.Generic.IList any
+---@alias System.Collections.Generic.IEnumerable any
+---@alias System.Collections.Generic.IEnumerator any
+---@alias System.Func any
+---@alias Unity.Collections.NativeArray any
+---@alias Unity.Collections.NativeSlice any
+---@alias UnityEngine.EventSystems.ExecuteEvents.EventFunction any
+---@alias Newtonsoft.Json.Linq.JEnumerable any
+---@alias System.Collections.Generic.Dictionary any
+---@alias Data.D_Boolean fun():boolean
+---@alias FunctionData any
+---@alias FunctionDataArray any
+---@alias FunctionDataArray.D_GetRootFDACondition any
+---@alias BehaviorSkill.BehaviorInfo any
+---@alias UnitSprite any
+---@alias CharacterAttribute any
+---@alias PlaceUnitData any
+---@alias UnitAnimation any
+---@alias NetCallbackInfo any
+---@alias Unit.DeathMode any
+---@alias Unit.D_Callback function
+---@alias UnitManager.CallbackInfo any
+---@alias UnityEngine.Bounds any
+
+---4.缺失类型（---@class，供库内交叉引用）
+---@class UnityEngine.AnimationClip
+---@class UnityEngine.AsyncOperation
+---@class UnityEngine.AssetBundleRequest
+---@class UnityEngine.AssetBundleCreateRequest
+---@class UnityEngine.AssetBundleRecompressOperation
+---@class UnityEngine.BuildCompression
+---@class UnityEngine.AudioClip.PCMReaderCallback
+---@class UnityEngine.AudioClip.PCMSetPositionCallback
+---@class UnityEngine.AudioDataLoadState
+---@class UnityEngine.AudioClipLoadType
+---@class UnityEngine.UI.IClippable
+---@class UnityEngine.UI.Slider.SliderEvent
+---@class UnityEngine.ColorSpace
+---@class UnityEngine.BlendWeights
+---@class UnityEngine.Rendering.RenderPipelineAsset
+---@class UnityEngine.ApplicationInstallMode
+---@class UnityEngine.NetworkReachability
+---@class UnityEngine.RuntimePlatform
+---@class UnityEngine.ApplicationSandboxType
+---@class UnityEngine.SystemLanguage
+---@class UnityEngine.Application.LogCallback
+---@class UnityEngine.Application.AdvertisingIdentifierCallback
+---@class System.Uri
+---@class System.IO.Stream
+---@class System.Text.StringBuilder
+---@class TMPro.Compute_DistanceTransform_EventTypes
+---@class TMPro.GlyphValueRecord_Legacy
+---@class TMPro.VertexGradient
+---@class TMPro.ITextPreprocessor
+---@class LuaInterface.LuaFunction
+---@class Newtonsoft.Json.JsonSerializerSettings
+---@class Newtonsoft.Json.JsonConverter
+---@class Newtonsoft.Json.JsonSerializer
+---@class Newtonsoft.Json.JsonReader
+---@class Newtonsoft.Json.JsonWriter
+---@class Newtonsoft.Json.Linq.JToken
+---@class Newtonsoft.Json.Linq.JContainer
+---@class Newtonsoft.Json.Linq.JTokenType
+---@class Newtonsoft.Json.Linq.JProperty
+---@class Newtonsoft.Json.Linq.JsonLoadSettings
+---@class Newtonsoft.Json.Linq.JsonMergeSettings
+---@class Newtonsoft.Json.Serialization.JsonContract
+---@class Newtonsoft.Json.Serialization.NamingStrategy
+---@class System.DateTime
+---@class System.DateTimeOffset
+---@class System.Enum
+---@class System.Guid
+---@class System.TimeSpan
+---@class System.StringComparison
+---@class RoleUnit.CollideInfo
+---@class RoleUnitBehavior
+---@class SK_AI_Patrol.CheckGroundDir
+---@class CustomPassingData
+---@class GameResourceData
+---@class TradeSkill.TradeInfo
+---@class System.Array
+---@class System.Globalization.CultureInfo
+---@class System.Reflection.Assembly
+---@class System.Reflection.Binder
+---@class System.Reflection.BindingFlags
+---@class System.Reflection.CallingConventions
+---@class System.Reflection.ConstructorInfo
+---@class System.Reflection.EventInfo
+---@class System.Reflection.FieldInfo
+---@class System.Reflection.GenericParameterAttributes
+---@class System.Reflection.InterfaceMapping
+---@class System.Reflection.MemberFilter
+---@class System.Reflection.MemberInfo
+---@class System.Reflection.MemberTypes
+---@class System.Reflection.MethodBase
+---@class System.Reflection.MethodInfo
+---@class System.Reflection.Module
+---@class System.Reflection.ParameterModifier
+---@class System.Reflection.PropertyInfo
+---@class System.Reflection.TypeAttributes
+---@class System.Reflection.TypeFilter
+---@class System.Runtime.InteropServices.StructLayoutAttribute
+---@class System.RuntimeTypeHandle
+---@class System.TypeCode
+---@class CollisionSensorInfo
+---@class Level
+---@class GameInfoData
+---@class GameArchiveData.ClearanceData
+---@class SKObjectControlData
+---@class UnityEngine.StateMachineBehaviour
+---@class UnityEngine.ArticulationBody
+---@class UnityEngine.Cubemap
+---@class UnityEngine.EventSystems.BaseInputModule
+---@class UnityEngine.CharacterInfo
+---@class UnityEngine.SceneManagement.Scene
+---@class UnityEngine.Rendering.CommandBuffer
+---@class UnityEngine.Rendering.LightEvent
+---@class UnityEngine.Mesh.MeshDataArray
+---@class UnityEngine.PhysicMaterial
+---@class UnityEngine.Avatar
+---@class UnityEngine.Quaternion
+---@class UnityEngine.Playables.PlayableGraph
+---@class UnityEngine.AnimatorRecorderMode
+---@class UnityEngine.RuntimeAnimatorController
+---@class UnityEngine.AnimatorTransitionInfo
+---@class UnityEngine.AnimatorStateInfo
+---@class UnityEngine.AnimatorControllerParameter
+---@class UnityEngine.AnimationInfo
+---@class UnityEngine.AnimatorClipInfo
+---@class UnityEngine.MatchTargetWeightMask
+---@class UnityEngine.Matrix4x4
+---@class UnityEngine.Camera.CameraCallback
+---@class UnityEngine.Camera.GateFitParameters
+---@class UnityEngine.RenderBuffer
+---@class UnityEngine.Rendering.ScriptableCullingParameters
+---@class UnityEngine.EventSystems.RaycastResult
+---@class UnityEngine.Font.FontTextureRebuildCallback
+---@class UnityEngine.LightBakingOutput
+---@class UnityEngine.Flare
+---@class UnityEngine.LightmappingMode
+---@class UnityEngine.Rendering.IndexFormat
+---@class UnityEngine.Rendering.SubMeshDescriptor
+---@class UnityEngine.MeshTopology
+---@class UnityEngine.Rendering.VertexAttributeDescriptor
+---@class UnityEngine.Rendering.VertexAttribute
+---@class UnityEngine.Rendering.VertexAttributeFormat
+---@class UnityEngine.Rendering.MeshUpdateFlags
+---@class UnityEngine.BoneWeight
+---@class UnityEngine.CombineInstance
+---@class System.IntPtr
+---@class System.Action
+---@class TMPro.TextContainerAnchors
+---@class TMPro.TextElementType
+---@class UnityEngine.TextCore.Glyph
+---@class TMPro.ColorMode
+---@class TMPro.TMP_DefaultControls.Resources
+---@class SK_RunSkill.RunCondition
+---@class GameArchiveData.SpawnPointData
+---@class UnityEngine.UI.VertexHelper
+---@class UnityEngine.ParticleSystem.MinMaxCurve
+---@class UnityEngine.ParticleSystem.MinMaxGradient
+---@class UnityEngine.CanvasRenderer
+---@class UnityEngine.LayerMask
+---@class UnityEngine.EventSystems.BaseRaycaster
+---@class UnityEngine.UI.InputField.SubmitEvent
+---@class UnityEngine.UI.InputField.OnValidateInput
+---@class UnityEngine.UI.InputField.OnChangeEvent
+---@class UnityEngine.TouchScreenKeyboard
+---@class UnityEngine.UI.Scrollbar.ScrollEvent
+---@class UnityEngine.Event
+---@class UnityEngine.Events.UnityEventCallState
+---@class UnityEngine.TextCore.LowLevel.GlyphRenderMode
+---@class TMPro.AtlasPopulationMode
+---@class TMPro.FontAssetCreationSettings
+---@class UnityEngine.TextCore.FaceInfo
+---@class TMPro.TMP_FontWeightPair
+---@class TMPro.FontFeatureLookupFlags
+---@class TMPro.TMP_GlyphAdjustmentRecord
+---@class TMPro.TMP_InputField.OnValidateInput
+---@class UnityEngine.CollisionFlags
+---@class UnityEngine.Touch
+---@class UnityEngine.EventSystems.StandaloneInputModule.InputMode
+---@class UnityEngine.AccelerationEvent
+---@class UnityEngine.Compass
+---@class UnityEngine.DeviceOrientation
+---@class UnityEngine.Gyroscope
+---@class UnityEngine.LocationService
+---@class UnityEngine.TouchScreenKeyboard.Status
+---@class UnityEngine.UI.MaskableGraphic
+---@class UnityEngine.TextAsset
+---@class UnityEngine.TextCore.GlyphRect
+---@class UnityEngine.TextCore.GlyphMetrics
+---@class TMPro.MaterialReference
+---@class UnityEngine.Renderer
+---@class UnityEngine.JointLimitState2D
+---@class UnityEngine.JointAngleLimits2D
+---@class UnityEngine.MaterialPropertyBlock
+---@class UnityEngine.Gradient
+---@class UnityEngine.AnimationCurve
+---@class TMPro.TMP_MeshInfo
+---@class TMPro.TMP_CharacterInfo
+---@class TMPro.TMP_LineInfo
+---@class TMPro.TMP_LinkInfo
+---@class TMPro.TMP_PageInfo
+---@class TMPro.TMP_WordInfo
+---@class UnityEngine.GraphicsBuffer
+---@class UnityEngine.ComputeBuffer
+---@class UnityEngine.CachedAssetBundle
+---@class UnityEngine.Hash128
+---@class UnityEngine.WWWForm
+---@class UnityEngine.Networking.CertificateHandler
+---@class UnityEngine.Networking.UnityWebRequest.Result
+---@class UnityEngine.Networking.UploadHandler
+---@class UnityEngine.Networking.UnityWebRequestAsyncOperation
+---@class System.Text.Encoding
+---@class UnityEngine.ParticleSystem.Burst
+---@class UnityEngine.ParticleSystem.CollisionModule
+---@class UnityEngine.ParticleSystem.ColorBySpeedModule
+---@class UnityEngine.ParticleSystem.ColorOverLifetimeModule
+---@class UnityEngine.ParticleSystem.CustomDataModule
+---@class UnityEngine.ParticleSystem.EmissionModule
+---@class UnityEngine.ParticleSystem.EmitParams
+---@class UnityEngine.ParticleSystem.ExternalForcesModule
+---@class UnityEngine.ParticleSystem.ForceOverLifetimeModule
+---@class UnityEngine.ParticleSystem.InheritVelocityModule
+---@class UnityEngine.ParticleSystem.LifetimeByEmitterSpeedModule
+---@class UnityEngine.ParticleSystem.LightsModule
+---@class UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule
+---@class UnityEngine.ParticleSystem.MainModule
+---@class UnityEngine.ParticleSystem.NoiseModule
+---@class UnityEngine.ParticleSystem.Particle
+---@class UnityEngine.ParticleSystem.PlaybackState
+---@class UnityEngine.ParticleSystem.RotationBySpeedModule
+---@class UnityEngine.ParticleSystem.RotationOverLifetimeModule
+---@class UnityEngine.ParticleSystem.ShapeModule
+---@class UnityEngine.ParticleSystem.SizeBySpeedModule
+---@class UnityEngine.ParticleSystem.SizeOverLifetimeModule
+---@class UnityEngine.ParticleSystem.SubEmittersModule
+---@class UnityEngine.ParticleSystem.TextureSheetAnimationModule
+---@class UnityEngine.ParticleSystem.TrailModule
+---@class UnityEngine.ParticleSystem.Trails
+---@class UnityEngine.ParticleSystem.TriggerModule
+---@class UnityEngine.ParticleSystem.VelocityOverLifetimeModule
+---@class TMPro.CaretPosition
+---@class UnityEngine.UI.ICanvasElement
+---@class UnityEngine.PhysicsScene
+---@class UnityEngine.PhysicsScene2D
+---@class UnityEngine.PhysicsJobOptions2D
+---@class UnityEngine.RectTransform
+---@class UnityEngine.RenderTextureDescriptor
+---@class UnityEngine.ResourceRequest
+---@class UnityEngine.Resolution
+---@class UnityEngine.Rendering.ShaderTagId
+---@class UnityEngine.JointTranslationLimits2D
+---@class UnityEngine.SpritePackingMode
+---@class UnityEngine.SpritePackingRotation
+---@class UnityEngine.UICharInfo
+---@class UnityEngine.UILineInfo
+---@class UnityEngine.UIVertex
+---@class UnityEngine.Rendering.ShaderHardwareTier
+---@class UnityEngine.Rendering.ShaderPropertyFlags
+---@class UnityEngine.Rendering.ShaderPropertyType
+---@class UnityEngine.Rendering.SphericalHarmonicsL2

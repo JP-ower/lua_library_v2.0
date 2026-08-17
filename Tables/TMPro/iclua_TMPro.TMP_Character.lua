@@ -1,4 +1,6 @@
 ---@meta
+---@class TMPro.TextElementType
+---@class UnityEngine.TextCore.Glyph
 ---@class TMPro.TMP_Character
 TMPro.TMP_Character = {
 

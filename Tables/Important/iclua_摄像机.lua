@@ -147,14 +147,12 @@ S_GetSaturation = function() end,
 ---描述：摄像机的<code>cs</code>特效模式的<code>name</code>值<p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@return System.Boolean
 S_GetShaderBoolean = function(cs,name) end,
 
 ---函数名：特效模式数值(颜色)<p>
 ---描述：摄像机的<code>cs</code>特效模式的<code>name</code>值<p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@return UnityEngine.Color
 S_GetShaderColor = function(cs,name) end,
 
 ---函数名：特效模式开启状态<p>
@@ -167,14 +165,12 @@ S_GetShaderEnable = function(cs) end,
 ---描述：摄像机的<code>cs</code>特效模式的<code>name</code>值<p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@return System.Single
 S_GetShaderFloat = function(cs,name) end,
 
 ---函数名：特效模式数值(整数)<p>
 ---描述：摄像机的<code>cs</code>特效模式的<code>name</code>值<p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@return System.Int32
 S_GetShaderInt = function(cs,name) end,
 
 ---函数名：亮度<p>
@@ -203,14 +199,14 @@ S_SetSaturation = function(v) end,
 ---描述：设置摄像机的<code>cs</code>特效模式的<code>name</code>值为<code>v</code><p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@param v System.Boolean
+---@param v any
 S_SetShaderBoolean = function(cs,name,v) end,
 
 ---函数名：设置特效模式数值(颜色)<p>
 ---描述：设置摄像机的<code>cs</code>特效模式的<code>name</code>值为<code>v</code><p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@param v UnityEngine.Color
+---@param v any
 S_SetShaderColor = function(cs,name,v) end,
 
 ---函数名：设置特效模式开启状态<p>
@@ -223,14 +219,14 @@ S_SetShaderEnable = function(cs,be) end,
 ---描述：设置摄像机的<code>cs</code>特效模式的<code>name</code>值为<code>v</code><p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@param v System.Single
+---@param v any
 S_SetShaderFloat = function(cs,name,v) end,
 
 ---函数名：设置特效模式数值(整数)<p>
 ---描述：设置摄像机的<code>cs</code>特效模式的<code>name</code>值为<code>v</code><p>
 ---@param cs GameCamera.CameraShader
 ---@param name System.String
----@param v System.Int32
+---@param v any
 S_SetShaderInt = function(cs,name,v) end,
 
 ---函数名：设置亮度<p>
@@ -289,12 +285,12 @@ SetBoundary_Unit = function(unit) end,
 
 ---函数名：设置摄像机最小显示范围<p>
 ---描述：设置摄像机最小显示范围为<code>size</code><p>
----@param size? System.Single default:1
+---@param size? System.Single
 SetCameraMinOrthographicSize = function(size) end,
 
 ---函数名：设置摄像机显示范围<p>
 ---描述：设置摄像机显示范围为<code>size</code><p>
----@param size? System.Single default:4
+---@param size? System.Single
 SetCameraOrthographicSize = function(size) end,
 
 ---函数名：设置视野缩放大小<p>
@@ -353,7 +349,7 @@ SetRotate = function(z) end,
 ---函数名：设置平滑过渡速度<p>
 ---描述：设置平滑过渡速度为<code>time</code><p>
 ---介绍：只对[锁定单位]模式有效，速度越小摄像机跟随的越慢。若速度大于1则摄像机不再平滑移动<p>
----@param time? System.Single default:0.1
+---@param time? System.Single
 SetSmoothTransitionSpeed = function(time) end,
 
 ---函数名：设置禁止缩放视野状态<p>

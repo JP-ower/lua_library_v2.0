@@ -1,4 +1,15 @@
 ---@meta
+---@class UnityEngine.AsyncOperation
+---@class UnityEngine.ApplicationInstallMode
+---@class UnityEngine.NetworkReachability
+---@class UnityEngine.RuntimePlatform
+---@class UnityEngine.ApplicationSandboxType
+---@class UnityEngine.SystemLanguage
+--- ToLua 委托构造：UnityEngine.Application.LogCallback(function(condition, stackTrace, type) ... end)
+---@class UnityEngine.Application.LogCallback
+---@overload fun(func: fun(condition: System.String, stackTrace: System.String, type: UnityEngine.LogType)):UnityEngine.Application.LogCallback
+---@overload fun(func: fun(condition: System.String, stackTrace: System.String, type: UnityEngine.LogType), self: table):UnityEngine.Application.LogCallback
+---@class UnityEngine.Application.AdvertisingIdentifierCallback
 ---@class UnityEngine.Application
 UnityEngine.Application = {
 
@@ -71,7 +82,7 @@ Equals = function(self,obj) end,
 
 ---函数名：ExternalCall<p>
 ---@param functionName System.String
----@param args System.Object[]
+---@param args any
 ExternalCall = function(functionName,args) end,
 
 ---函数名：ExternalEval<p>
@@ -169,6 +180,19 @@ add_logMessageReceived = nil,
 
 ---字段名：add_logMessageReceivedThreaded<p>
 add_logMessageReceivedThreaded = nil,
+
+--- ToLua：Application.LogCallback(luaFunc) → 委托实例
+---@type fun(func: fun(condition: System.String, stackTrace: System.String, type: UnityEngine.LogType), self?: table):UnityEngine.Application.LogCallback
+LogCallback = nil,
+
+---字段名：logMessageReceived<p>
+--- ToLua 事件：Application.logMessageReceived = Application.logMessageReceived + callback
+---@type UnityEngine.Application.LogCallback
+logMessageReceived = nil,
+
+---字段名：logMessageReceivedThreaded<p>
+---@type UnityEngine.Application.LogCallback
+logMessageReceivedThreaded = nil,
 
 ---字段名：add_lowMemory<p>
 add_lowMemory = nil,

@@ -58,7 +58,7 @@ GetComponentInParent = function(...) end,
 ----@return any
 ---函数名：GetComponents<p>
 ---@overload fun(self: TMPro.TMP_SelectionCaret, type: System.Type):UnityEngine.Component[]
----@overload fun(self: TMPro.TMP_SelectionCaret, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: TMPro.TMP_SelectionCaret, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: TMPro.TMP_SelectionCaret)
 ---@overload fun(self: TMPro.TMP_SelectionCaret)
 GetComponents = function(...) end,
@@ -138,13 +138,12 @@ StopCoroutine = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: TMPro.TMP_SelectionCaret):System.Boolean
----@overload fun(self: TMPro.TMP_SelectionCaret, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: TMPro.TMP_SelectionCaret, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self TMPro.TMP_SelectionCaret
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：CrossFadeAlpha<p>
@@ -205,8 +204,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self TMPro.TMP_SelectionCaret
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>

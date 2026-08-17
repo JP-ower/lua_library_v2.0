@@ -1,4 +1,7 @@
 ---@meta
+---@class System.Text.StringBuilder
+---@class TMPro.VertexGradient
+---@class TMPro.ITextPreprocessor
 ---@class TMPro.TextMeshPro
 TMPro.TextMeshPro = {
 
@@ -66,7 +69,7 @@ GetComponentInParent = function(...) end,
 ---@overload fun(self: TMPro.TextMeshPro)
 ---@overload fun(self: TMPro.TextMeshPro)
 ---@overload fun(self: TMPro.TextMeshPro, type: System.Type):UnityEngine.Component[]
----@overload fun(self: TMPro.TextMeshPro, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: TMPro.TextMeshPro, type: System.Type, results: System.Collections.Generic.List)
 GetComponents = function(...) end,
 
 ---函数名：GetComponentsInChildren<p>
@@ -166,7 +169,7 @@ SetMask = function(...) end,
 ---函数名：SetText<p>
 ---函数名：SetText<p>
 ---@overload fun(self: TMPro.TextMeshPro, sourceText: System.String, arg0: System.Single, arg1: System.Single, arg2: System.Single, arg3: System.Single, arg4: System.Single)
----@overload fun(self: TMPro.TextMeshPro, sourceText: System.String, syncTextInputBox?: System.Boolean default:True)
+---@overload fun(self: TMPro.TextMeshPro, sourceText: System.String, syncTextInputBox?: System.Boolean)
 ---@overload fun(self: TMPro.TextMeshPro, sourceText: System.String, arg0: System.Single)
 ---@overload fun(self: TMPro.TextMeshPro, sourceText: System.String, arg0: System.Single, arg1: System.Single)
 ---@overload fun(self: TMPro.TextMeshPro, sourceText: System.String, arg0: System.Single, arg1: System.Single, arg2: System.Single)
@@ -198,7 +201,7 @@ StopCoroutine = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: TMPro.TextMeshPro):System.Boolean
----@overload fun(self: TMPro.TextMeshPro, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: TMPro.TextMeshPro, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：UpdateVertexData<p>
@@ -218,7 +221,6 @@ CalculateLayoutInputVertical = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self TMPro.TextMeshPro
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：ComputeMarginSize<p>
@@ -246,8 +248,8 @@ Equals = function(self,other) end,
 
 ---函数名：ForceMeshUpdate<p>
 ---@param self TMPro.TextMeshPro
----@param ignoreActiveState? System.Boolean default:False
----@param forceTextReparsing? System.Boolean default:False
+---@param ignoreActiveState? System.Boolean
+---@param forceTextReparsing? System.Boolean
 ForceMeshUpdate = function(self,ignoreActiveState,forceTextReparsing) end,
 
 ---函数名：GetHashCode<p>
@@ -279,7 +281,6 @@ GetPixelAdjustedRect = function(self) end,
 ---函数名：GetTextInfo<p>
 ---@param self TMPro.TextMeshPro
 ---@param text System.String
----@return TMPro.TMP_TextInfo
 GetTextInfo = function(self,text) end,
 
 ---函数名：GetType<p>
@@ -300,8 +301,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self TMPro.TextMeshPro
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>
@@ -850,10 +851,6 @@ raycastTarget = nil,
 ---@type UnityEngine.RectTransform
 rectTransform = nil,
 
----字段名：get_rectTransform<p>
----@type UnityEngine.RectTransform
-rectTransform = nil,
-
 ---字段名：remove_OnPreRenderText<p>
 remove_OnPreRenderText = nil,
 
@@ -868,10 +865,6 @@ renderedHeight = nil,
 ---字段名：get_renderedWidth<p>
 ---@type System.Single
 renderedWidth = nil,
-
----字段名：get_renderer<p>
----@type UnityEngine.Component
-renderer = nil,
 
 ---字段名：get_renderer<p>
 ---@type UnityEngine.Renderer
@@ -940,18 +933,6 @@ textStyle = nil,
 ---字段名：get_tintAllSprites<p>
 ---@type System.Boolean
 tintAllSprites = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
 
 ---字段名：get_useGUILayout<p>
 ---@type System.Boolean

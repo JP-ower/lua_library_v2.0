@@ -4,7 +4,6 @@ AO_String = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return AO_String
 Create = function(value) end,
 
 ---函数名：Equals<p>

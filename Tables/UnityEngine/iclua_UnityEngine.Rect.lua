@@ -1,0 +1,16 @@
+---@meta
+---@class UnityEngine.Rect
+---@field x System.Single
+---@field y System.Single
+---@field width System.Single
+---@field height System.Single
+---@field xMin System.Single
+---@field xMax System.Single
+---@field yMin System.Single
+---@field yMax System.Single
+---@field position UnityEngine.Vector2
+---@field size UnityEngine.Vector2
+---@field center UnityEngine.Vector2
+---@field min UnityEngine.Vector2
+---@field max UnityEngine.Vector2
+UnityEngine.Rect = {}

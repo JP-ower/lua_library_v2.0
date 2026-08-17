@@ -1,4 +1,9 @@
 ---@meta
+---@class UnityEngine.AssetBundleRequest
+---@class UnityEngine.AssetBundleCreateRequest
+---@class UnityEngine.AssetBundleRecompressOperation
+---@class UnityEngine.BuildCompression
+---@class System.IO.Stream
 ---@class UnityEngine.AssetBundle
 UnityEngine.AssetBundle = {
 
@@ -117,12 +122,10 @@ AllAssetNames = function(self) end,
 ---函数名：Contains<p>
 ---@param self UnityEngine.AssetBundle
 ---@param name System.String
----@return System.Boolean
 Contains = function(self,name) end,
 
 ---函数名：CreateFromFile<p>
 ---@param path System.String
----@return UnityEngine.AssetBundle
 CreateFromFile = function(path) end,
 
 ---函数名：CreateFromMemory<p>
@@ -147,7 +150,7 @@ Equals = function(self,other) end,
 GetAllAssetNames = function(self) end,
 
 ---函数名：GetAllLoadedAssetBundles<p>
----@return System.Collections.Generic.IEnumerable`1[[UnityEngine.AssetBundle, UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return System.Collections.Generic.IEnumerable
 GetAllLoadedAssetBundles = function() end,
 
 ---函数名：GetAllScenePaths<p>
@@ -172,10 +175,10 @@ GetType = function(self) end,
 
 ---函数名：RecompressAssetBundleAsync<p>
 ---@param inputPath System.String
----@param outputPath System.String
 ---@param method UnityEngine.BuildCompression
----@param expectedCRC? System.UInt32 default:0
----@param priority? UnityEngine.ThreadPriority default:Low
+---@param expectedCRC? System.UInt32
+---@param priority? UnityEngine.ThreadPriority
+---@param outputPath any
 ---@return UnityEngine.AssetBundleRecompressOperation
 RecompressAssetBundleAsync = function(inputPath,outputPath,method,expectedCRC,priority) end,
 

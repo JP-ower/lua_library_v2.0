@@ -1,4 +1,6 @@
 ---@meta
+---@class TMPro.FontFeatureLookupFlags
+---@class TMPro.TMP_GlyphAdjustmentRecord
 ---@class TMPro.TMP_GlyphPairAdjustmentRecord
 TMPro.TMP_GlyphPairAdjustmentRecord = {
 

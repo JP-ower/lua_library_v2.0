@@ -1,5 +1,6 @@
 ---@meta
----@class UnityEngine.GameObject
+---@class UnityEngine.SceneManagement.Scene
+---@class UnityEngine.GameObject : UnityEngine.Object
 UnityEngine.GameObject = {
 
 ---函数名：AddComponent<p>
@@ -25,7 +26,7 @@ BroadcastMessage = function(...) end,
 ---函数名：GetComponent<p>
 ---@overload fun(self: UnityEngine.GameObject):any
 ---@overload fun(self: UnityEngine.GameObject, type: System.Type):UnityEngine.Component
----@overload fun(self: UnityEngine.GameObject, type: System.String):UnityEngine.Component
+---@overload fun(self: UnityEngine.GameObject, type: System.String):any
 GetComponent = function(...) end,
 
 ---函数名：GetComponentInChildren<p>
@@ -56,7 +57,7 @@ GetComponentInParent = function(...) end,
 ---@overload fun(self: UnityEngine.GameObject)
 ---@overload fun(self: UnityEngine.GameObject, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: UnityEngine.GameObject)
----@overload fun(self: UnityEngine.GameObject, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.GameObject, type: System.Type, results: System.Collections.Generic.List)
 GetComponents = function(...) end,
 
 ---函数名：GetComponentsInChildren<p>
@@ -112,13 +113,12 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.GameObject):System.Boolean
----@overload fun(self: UnityEngine.GameObject, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.GameObject, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.GameObject
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：CreatePrimitive<p>
@@ -134,22 +134,18 @@ Equals = function(self,other) end,
 
 ---函数名：Find<p>
 ---@param name System.String
----@return UnityEngine.GameObject
 Find = function(name) end,
 
 ---函数名：FindGameObjectWithTag<p>
 ---@param tag System.String
----@return UnityEngine.GameObject
 FindGameObjectWithTag = function(tag) end,
 
 ---函数名：FindGameObjectsWithTag<p>
 ---@param tag System.String
----@return UnityEngine.GameObject[]
 FindGameObjectsWithTag = function(tag) end,
 
 ---函数名：FindWithTag<p>
 ---@param tag System.String
----@return UnityEngine.GameObject
 FindWithTag = function(tag) end,
 
 ---函数名：GetHashCode<p>

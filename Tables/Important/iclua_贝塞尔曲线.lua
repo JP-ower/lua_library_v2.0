@@ -24,7 +24,7 @@ DeleteBezierCurve = function(ID) end,
 ---函数名：绘制曲线<p>
 ---描述：绘制ID为<code>id</code>的贝塞尔曲线，精度<code>precision</code><p>
 ---@param id System.Int32
----@param precision? System.Int32 default:100
+---@param precision? System.Int32
 DrawBezierCurve = function(id,precision) end,
 
 ---函数名：获取ID为·的贝塞尔曲线在t=·的点<p>

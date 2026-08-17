@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.UI.MaskableGraphic
 ---@class TMPro.TMP_MaterialManager
 TMPro.TMP_MaterialManager = {
 

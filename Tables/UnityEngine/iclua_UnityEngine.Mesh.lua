@@ -1,4 +1,16 @@
 ---@meta
+---@class UnityEngine.Mesh.MeshDataArray
+---@class UnityEngine.Rendering.IndexFormat
+---@class UnityEngine.Rendering.SubMeshDescriptor
+---@class UnityEngine.MeshTopology
+---@class UnityEngine.Rendering.VertexAttributeDescriptor
+---@class UnityEngine.Rendering.VertexAttribute
+---@class UnityEngine.Rendering.VertexAttributeFormat
+---@class UnityEngine.Rendering.MeshUpdateFlags
+---@class UnityEngine.Matrix4x4
+---@class UnityEngine.BoneWeight
+---@class UnityEngine.CombineInstance
+---@class System.IntPtr
 ---@class UnityEngine.Mesh
 UnityEngine.Mesh = {
 
@@ -7,15 +19,15 @@ UnityEngine.Mesh = {
 ---函数名：AcquireReadOnlyMeshData<p>
 ---@overload fun(mesh: UnityEngine.Mesh):UnityEngine.Mesh.MeshDataArray
 ---@overload fun(meshes: UnityEngine.Mesh[]):UnityEngine.Mesh.MeshDataArray
----@overload fun(meshes: System.Collections.Generic.List`1[[UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):UnityEngine.Mesh.MeshDataArray
+---@overload fun(meshes: System.Collections.Generic.List):UnityEngine.Mesh.MeshDataArray
 AcquireReadOnlyMeshData = function(...) end,
 
 ---函数名：ApplyAndDisposeWritableMeshData<p>
 ---函数名：ApplyAndDisposeWritableMeshData<p>
 ---函数名：ApplyAndDisposeWritableMeshData<p>
----@overload fun(data: UnityEngine.Mesh.MeshDataArray, mesh: UnityEngine.Mesh, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(data: UnityEngine.Mesh.MeshDataArray, meshes: UnityEngine.Mesh[], flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(data: UnityEngine.Mesh.MeshDataArray, meshes: System.Collections.Generic.List`1[[UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
+---@overload fun(data: UnityEngine.Mesh.MeshDataArray, mesh: UnityEngine.Mesh, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(data: UnityEngine.Mesh.MeshDataArray, meshes: UnityEngine.Mesh[], flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(data: UnityEngine.Mesh.MeshDataArray, meshes: System.Collections.Generic.List, flags?: UnityEngine.Rendering.MeshUpdateFlags)
 ApplyAndDisposeWritableMeshData = function(...) end,
 
 ---函数名：Clear<p>
@@ -36,8 +48,8 @@ CombineMeshes = function(...) end,
 
 ---函数名：GetColors<p>
 ---函数名：GetColors<p>
----@overload fun(self: UnityEngine.Mesh, colors: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, colors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Mesh, colors: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, colors: System.Collections.Generic.List)
 GetColors = function(...) end,
 
 ---函数名：GetIndices<p>
@@ -45,9 +57,9 @@ GetColors = function(...) end,
 ---函数名：GetIndices<p>
 ---函数名：GetIndices<p>
 ---函数名：GetIndices<p>
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.UInt16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, applyBaseVertex?: System.Boolean default:True)
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, applyBaseVertex: System.Boolean)
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, submesh: System.Int32, applyBaseVertex?: System.Boolean)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, submesh: System.Int32, applyBaseVertex: System.Boolean)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, submesh: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, submesh: System.Int32, applyBaseVertex: System.Boolean):System.Int32[]
 ---@overload fun(self: UnityEngine.Mesh, submesh: System.Int32):System.Int32[]
 GetIndices = function(...) end,
@@ -59,17 +71,17 @@ GetIndices = function(...) end,
 ---函数名：GetTriangles<p>
 ---@overload fun(self: UnityEngine.Mesh, submesh: System.Int32):System.Int32[]
 ---@overload fun(self: UnityEngine.Mesh, submesh: System.Int32, applyBaseVertex: System.Boolean):System.Int32[]
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, applyBaseVertex: System.Boolean)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.UInt16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, applyBaseVertex?: System.Boolean default:True)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32, applyBaseVertex: System.Boolean)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32, applyBaseVertex?: System.Boolean)
 GetTriangles = function(...) end,
 
 ---函数名：GetUVs<p>
 ---函数名：GetUVs<p>
 ---函数名：GetUVs<p>
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List)
 GetUVs = function(...) end,
 
 ---函数名：GetVertexAttributes<p>
@@ -77,7 +89,7 @@ GetUVs = function(...) end,
 ---函数名：GetVertexAttributes<p>
 ---@overload fun(self: UnityEngine.Mesh):UnityEngine.Rendering.VertexAttributeDescriptor[]
 ---@overload fun(self: UnityEngine.Mesh, attributes: UnityEngine.Rendering.VertexAttributeDescriptor[]):System.Int32
----@overload fun(self: UnityEngine.Mesh, attributes: System.Collections.Generic.List`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]):System.Int32
+---@overload fun(self: UnityEngine.Mesh, attributes: System.Collections.Generic.List):System.Int32
 GetVertexAttributes = function(...) end,
 
 ---函数名：RecalculateBounds<p>
@@ -113,18 +125,18 @@ RecalculateTangents = function(...) end,
 ---函数名：SetColors<p>
 ---函数名：SetColors<p>
 ---函数名：SetColors<p>
----@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
----@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh)
 ---@overload fun(self: UnityEngine.Mesh, inColors: UnityEngine.Color32[], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, inColors: UnityEngine.Color32[], start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, inColors: UnityEngine.Color32[])
----@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
----@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
----@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, inColors: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Mesh, inColors: UnityEngine.Color[], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, inColors: UnityEngine.Color[], start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, inColors: UnityEngine.Color[])
@@ -133,9 +145,10 @@ SetColors = function(...) end,
 ---函数名：SetIndexBufferData<p>
 ---函数名：SetIndexBufferData<p>
 ---函数名：SetIndexBufferData<p>
----@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, data: T[], dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
+---@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@generic T
+---@overload fun(self: UnityEngine.Mesh, data: T[], dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
 SetIndexBufferData = function(...) end,
 
 ---函数名：SetIndices<p>
@@ -150,18 +163,18 @@ SetIndexBufferData = function(...) end,
 ---函数名：SetIndices<p>
 ---函数名：SetIndices<p>
 ---函数名：SetIndices<p>
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, indices: System.UInt16[], indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, indices: System.UInt16[], topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.UInt16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List`1[[System.UInt16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indices: System.UInt16[], indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indices: System.UInt16[], topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Collections.Generic.List, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, indices: System.Int32[], topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds: System.Boolean, baseVertex: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, indices: System.Int32[], topology: UnityEngine.MeshTopology, submesh: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, indices: System.Int32[], topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds: System.Boolean)
----@overload fun(self: UnityEngine.Mesh, indices: System.Int32[], indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
+---@overload fun(self: UnityEngine.Mesh, indices: System.Int32[], indicesStart: System.Int32, indicesLength: System.Int32, topology: UnityEngine.MeshTopology, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
 SetIndices = function(...) end,
 
 ---函数名：SetNormals<p>
@@ -174,9 +187,9 @@ SetIndices = function(...) end,
 ---函数名：SetNormals<p>
 ---函数名：SetNormals<p>
 ---@overload fun(self: UnityEngine.Mesh, inNormals: UnityEngine.Vector3[])
----@overload fun(self: UnityEngine.Mesh, inNormals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, inNormals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
----@overload fun(self: UnityEngine.Mesh, inNormals: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, inNormals: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, inNormals: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, inNormals: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, inNormals: UnityEngine.Vector3[], start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, inNormals: UnityEngine.Vector3[], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh)
@@ -190,12 +203,12 @@ SetNormals = function(...) end,
 ---函数名：SetSubMeshes<p>
 ---函数名：SetSubMeshes<p>
 ---函数名：SetSubMeshes<p>
----@overload fun(self: UnityEngine.Mesh, desc: System.Collections.Generic.List`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, desc: UnityEngine.Rendering.SubMeshDescriptor[], start: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, start: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, desc: System.Collections.Generic.List`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, desc: UnityEngine.Rendering.SubMeshDescriptor[], flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
+---@overload fun(self: UnityEngine.Mesh, desc: System.Collections.Generic.List, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, desc: UnityEngine.Rendering.SubMeshDescriptor[], start: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, start: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, desc: System.Collections.Generic.List, start: System.Int32, count: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, desc: UnityEngine.Rendering.SubMeshDescriptor[], flags?: UnityEngine.Rendering.MeshUpdateFlags)
 SetSubMeshes = function(...) end,
 
 ---函数名：SetTangents<p>
@@ -207,9 +220,9 @@ SetSubMeshes = function(...) end,
 ---函数名：SetTangents<p>
 ---函数名：SetTangents<p>
 ---函数名：SetTangents<p>
----@overload fun(self: UnityEngine.Mesh, inTangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
----@overload fun(self: UnityEngine.Mesh, inTangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, inTangents: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, inTangents: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, inTangents: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, inTangents: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, inTangents: UnityEngine.Vector4[])
 ---@overload fun(self: UnityEngine.Mesh, inTangents: UnityEngine.Vector4[], start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, inTangents: UnityEngine.Vector4[], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
@@ -230,18 +243,18 @@ SetTangents = function(...) end,
 ---函数名：SetTriangles<p>
 ---函数名：SetTriangles<p>
 ---函数名：SetTriangles<p>
----@overload fun(self: UnityEngine.Mesh, triangles: System.UInt16[], trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.UInt16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.UInt16[], trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, triangles: System.Int32[], submesh: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, triangles: System.Int32[], submesh: System.Int32, calculateBounds: System.Boolean)
 ---@overload fun(self: UnityEngine.Mesh, triangles: System.Int32[], submesh: System.Int32, calculateBounds: System.Boolean, baseVertex: System.Int32)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Int32[], trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, triangles: System.UInt16[], submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.UInt16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, calculateBounds?: System.Boolean default:True, baseVertex?: System.Int32 default:0)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, calculateBounds: System.Boolean)
----@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], submesh: System.Int32, calculateBounds: System.Boolean, baseVertex: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Int32[], trianglesStart: System.Int32, trianglesLength: System.Int32, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.UInt16[], submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32, calculateBounds?: System.Boolean, baseVertex?: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32, calculateBounds: System.Boolean)
+---@overload fun(self: UnityEngine.Mesh, triangles: System.Collections.Generic.List, submesh: System.Int32, calculateBounds: System.Boolean, baseVertex: System.Int32)
 SetTriangles = function(...) end,
 
 ---函数名：SetUVs<p>
@@ -265,12 +278,12 @@ SetTriangles = function(...) end,
 ---函数名：SetUVs<p>
 ---函数名：SetUVs<p>
 ---函数名：SetUVs<p>
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: UnityEngine.Vector2[])
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32)
@@ -282,24 +295,25 @@ SetTriangles = function(...) end,
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: UnityEngine.Vector2[], start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: UnityEngine.Vector4[])
 ---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: UnityEngine.Vector3[])
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
----@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List)
+---@overload fun(self: UnityEngine.Mesh, channel: System.Int32, uvs: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 SetUVs = function(...) end,
 
 ---函数名：SetVertexBufferData<p>
 ---函数名：SetVertexBufferData<p>
 ---函数名：SetVertexBufferData<p>
----@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, stream?: System.Int32 default:0, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, stream?: System.Int32 default:0, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
----@overload fun(self: UnityEngine.Mesh, data: T[], dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, stream?: System.Int32 default:0, flags?: UnityEngine.Rendering.MeshUpdateFlags default:Default)
+---@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, stream?: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, stream?: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
+---@generic T
+---@overload fun(self: UnityEngine.Mesh, data: T[], dataStart: System.Int32, meshBufferStart: System.Int32, count: System.Int32, stream?: System.Int32, flags?: UnityEngine.Rendering.MeshUpdateFlags)
 SetVertexBufferData = function(...) end,
 
 ---函数名：SetVertexBufferParams<p>
 ---函数名：SetVertexBufferParams<p>
 ---@overload fun(self: UnityEngine.Mesh, vertexCount: System.Int32, attributes: UnityEngine.Rendering.VertexAttributeDescriptor[])
----@overload fun(self: UnityEngine.Mesh, vertexCount: System.Int32, attributes: Unity.Collections.NativeArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Mesh, vertexCount: System.Int32, attributes: Unity.Collections.NativeArray)
 SetVertexBufferParams = function(...) end,
 
 ---函数名：SetVertices<p>
@@ -312,23 +326,23 @@ SetVertexBufferParams = function(...) end,
 ---函数名：SetVertices<p>
 ---函数名：SetVertices<p>
 ---@overload fun(self: UnityEngine.Mesh, inVertices: UnityEngine.Vector3[], start: System.Int32, length: System.Int32)
----@overload fun(self: UnityEngine.Mesh, inVertices: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Mesh, inVertices: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Mesh, inVertices: UnityEngine.Vector3[])
----@overload fun(self: UnityEngine.Mesh, inVertices: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
+---@overload fun(self: UnityEngine.Mesh, inVertices: System.Collections.Generic.List, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
 ---@overload fun(self: UnityEngine.Mesh, start: System.Int32, length: System.Int32)
 ---@overload fun(self: UnityEngine.Mesh)
 ---@overload fun(self: UnityEngine.Mesh, inVertices: UnityEngine.Vector3[], start: System.Int32, length: System.Int32, flags: UnityEngine.Rendering.MeshUpdateFlags)
----@overload fun(self: UnityEngine.Mesh, inVertices: System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], start: System.Int32, length: System.Int32)
+---@overload fun(self: UnityEngine.Mesh, inVertices: System.Collections.Generic.List, start: System.Int32, length: System.Int32)
 SetVertices = function(...) end,
 
 ---函数名：AddBlendShapeFrame<p>
 ---@param self UnityEngine.Mesh
 ---@param shapeName System.String
----@param frameWeight System.Single
 ---@param deltaVertices UnityEngine.Vector3[]
 ---@param deltaNormals UnityEngine.Vector3[]
 ---@param deltaTangents UnityEngine.Vector3[]
+---@param frameWeight any
 AddBlendShapeFrame = function(self,shapeName,frameWeight,deltaVertices,deltaNormals,deltaTangents) end,
 
 ---函数名：AllocateWritableMeshData<p>
@@ -348,7 +362,7 @@ Equals = function(self,other) end,
 
 ---函数名：GetAllBoneWeights<p>
 ---@param self UnityEngine.Mesh
----@return Unity.Collections.NativeArray`1[[UnityEngine.BoneWeight1, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@return Unity.Collections.NativeArray
 GetAllBoneWeights = function(self) end,
 
 ---函数名：GetBaseVertex<p>
@@ -359,7 +373,7 @@ GetBaseVertex = function(self,submesh) end,
 
 ---函数名：GetBindposes<p>
 ---@param self UnityEngine.Mesh
----@param bindposes System.Collections.Generic.List`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param bindposes System.Collections.Generic.List
 GetBindposes = function(self,bindposes) end,
 
 ---函数名：GetBlendShapeFrameCount<p>
@@ -387,7 +401,6 @@ GetBlendShapeFrameWeight = function(self,shapeIndex,frameIndex) end,
 ---函数名：GetBlendShapeIndex<p>
 ---@param self UnityEngine.Mesh
 ---@param blendShapeName System.String
----@return System.Int32
 GetBlendShapeIndex = function(self,blendShapeName) end,
 
 ---函数名：GetBlendShapeName<p>
@@ -398,12 +411,12 @@ GetBlendShapeName = function(self,shapeIndex) end,
 
 ---函数名：GetBoneWeights<p>
 ---@param self UnityEngine.Mesh
----@param boneWeights System.Collections.Generic.List`1[[UnityEngine.BoneWeight, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param boneWeights System.Collections.Generic.List
 GetBoneWeights = function(self,boneWeights) end,
 
 ---函数名：GetBonesPerVertex<p>
 ---@param self UnityEngine.Mesh
----@return Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
+---@return Unity.Collections.NativeArray
 GetBonesPerVertex = function(self) end,
 
 ---函数名：GetHashCode<p>
@@ -441,7 +454,7 @@ GetNativeVertexBufferPtr = function(self,index) end,
 
 ---函数名：GetNormals<p>
 ---@param self UnityEngine.Mesh
----@param normals System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param normals System.Collections.Generic.List
 GetNormals = function(self,normals) end,
 
 ---函数名：GetSubMesh<p>
@@ -452,7 +465,7 @@ GetSubMesh = function(self,index) end,
 
 ---函数名：GetTangents<p>
 ---@param self UnityEngine.Mesh
----@param tangents System.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param tangents System.Collections.Generic.List
 GetTangents = function(self,tangents) end,
 
 ---函数名：GetTopology<p>
@@ -492,7 +505,7 @@ GetVertexAttributeFormat = function(self,attr) end,
 
 ---函数名：GetVertices<p>
 ---@param self UnityEngine.Mesh
----@param vertices System.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param vertices System.Collections.Generic.List
 GetVertices = function(self,vertices) end,
 
 ---函数名：HasVertexAttribute<p>
@@ -524,18 +537,18 @@ OptimizeReorderVertexBuffer = function(self) end,
 ---函数名：RecalculateUVDistributionMetric<p>
 ---@param self UnityEngine.Mesh
 ---@param uvSetIndex System.Int32
----@param uvAreaThreshold? System.Single default:1E-09
+---@param uvAreaThreshold? System.Single
 RecalculateUVDistributionMetric = function(self,uvSetIndex,uvAreaThreshold) end,
 
 ---函数名：RecalculateUVDistributionMetrics<p>
 ---@param self UnityEngine.Mesh
----@param uvAreaThreshold? System.Single default:1E-09
+---@param uvAreaThreshold? System.Single
 RecalculateUVDistributionMetrics = function(self,uvAreaThreshold) end,
 
 ---函数名：SetBoneWeights<p>
 ---@param self UnityEngine.Mesh
----@param bonesPerVertex Unity.Collections.NativeArray`1[[System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
----@param weights Unity.Collections.NativeArray`1[[UnityEngine.BoneWeight1, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@param bonesPerVertex Unity.Collections.NativeArray
+---@param weights Unity.Collections.NativeArray
 SetBoneWeights = function(self,bonesPerVertex,weights) end,
 
 ---函数名：SetIndexBufferParams<p>
@@ -548,7 +561,7 @@ SetIndexBufferParams = function(self,indexCount,format) end,
 ---@param self UnityEngine.Mesh
 ---@param index System.Int32
 ---@param desc UnityEngine.Rendering.SubMeshDescriptor
----@param flags? UnityEngine.Rendering.MeshUpdateFlags default:Default
+---@param flags? UnityEngine.Rendering.MeshUpdateFlags
 SetSubMesh = function(self,index,desc,flags) end,
 
 ---函数名：ToString<p>

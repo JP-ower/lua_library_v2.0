@@ -60,10 +60,6 @@ g = nil,
 ---@type UnityEngine.Color32
 op_Implicit = nil,
 
----字段名：op_Implicit<p>
----@type UnityEngine.Color
-op_Implicit = nil,
-
 ---字段名：r<p>
 ---@type System.Byte
 r = nil,

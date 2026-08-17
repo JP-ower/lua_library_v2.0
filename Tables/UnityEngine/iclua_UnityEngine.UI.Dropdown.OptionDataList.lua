@@ -24,7 +24,7 @@ GetType = function(self) end,
 ToString = function(self) end,
 
 ---字段名：get_options<p>
----@type System.Collections.Generic.List`1[[UnityEngine.UI.Dropdown.OptionData, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+---@type System.Collections.Generic.List
 options = nil,
 
 }

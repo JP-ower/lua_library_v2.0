@@ -1,5 +1,7 @@
 ---@meta
----@class UnityEngine.Component
+---@class UnityEngine.Component : UnityEngine.Object
+---@field gameObject UnityEngine.GameObject
+---@field transform UnityEngine.Transform
 UnityEngine.Component = {
 
 ---函数名：BroadcastMessage<p>
@@ -17,7 +19,7 @@ BroadcastMessage = function(...) end,
 ---函数名：GetComponent<p>
 ---@overload fun(self: UnityEngine.Component):any
 ---@overload fun(self: UnityEngine.Component, type: System.Type):UnityEngine.Component
----@overload fun(self: UnityEngine.Component, type: System.String):UnityEngine.Component
+---@overload fun(self: UnityEngine.Component, type: System.String):any
 GetComponent = function(...) end,
 
 ---函数名：GetComponentInChildren<p>
@@ -46,7 +48,7 @@ GetComponentInParent = function(...) end,
 ---函数名：GetComponents<p>
 ----@return any
 ---@overload fun(self: UnityEngine.Component)
----@overload fun(self: UnityEngine.Component, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: UnityEngine.Component, type: System.Type, results: System.Collections.Generic.List)
 ---@overload fun(self: UnityEngine.Component, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: UnityEngine.Component)
 GetComponents = function(...) end,
@@ -104,13 +106,12 @@ SendMessageUpwards = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: UnityEngine.Component):System.Boolean
----@overload fun(self: UnityEngine.Component, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: UnityEngine.Component, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：CompareTag<p>
 ---@param self UnityEngine.Component
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：Equals<p>

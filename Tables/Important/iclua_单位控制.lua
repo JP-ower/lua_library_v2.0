@@ -5,30 +5,30 @@ UnitControl = {
 ---函数名：追加控制_时间_值<p>
 ---描述：为<code>self</code>追加一个<code>cm</code>在<code>time</code>秒内到达<code>value</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---@param self UnitControl
----@param cm? UnitControl.ControlMode default:PosX
----@param time? System.Single default:1
----@param value? System.Single default:1
----@param tm? UnitControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? UnitControl.ControlMode
+---@param time? System.Single
+---@param value? System.Single
+---@param tm? UnitControl.TargerMode
+---@param delay? System.Single
 Add_Value = function(self,cm,time,value,tm,delay) end,
 
 ---函数名：追加控制_时间_向量<p>
 ---描述：为<code>self</code>追加一个<code>cm</code>在<code>time</code>秒内到达<code>value</code>，变化模式<code>tm</code>，延迟<code>delay</code>秒<p>
 ---@param self UnitControl
----@param cm? UnitControl.ControlMode_Vec default:Pos
----@param time? System.Single default:1
----@param value? UnityEngine.Vector2 default:
----@param tm? UnitControl.TargerMode default:Fixed
----@param delay? System.Single default:0
+---@param cm? UnitControl.ControlMode_Vec
+---@param time? System.Single
+---@param value? UnityEngine.Vector2
+---@param tm? UnitControl.TargerMode
+---@param delay? System.Single
 Add_Vec = function(self,cm,time,value,tm,delay) end,
 
 ---函数名：创建单位控制_时间_值<p>
 ---描述：使<code>unit</code>的<code>cm</code>在<code>time</code>秒内到达<code>value</code>，变化模式<code>tm</code><p>
 ---@param unit Unit
 ---@param cm UnitControl.ControlMode
----@param time? System.Single default:1
----@param value? System.Single default:1
----@param tm? UnitControl.TargerMode default:Fixed
+---@param time? System.Single
+---@param value? System.Single
+---@param tm? UnitControl.TargerMode
 ---@return UnitControl
 Create_Value = function(unit,cm,time,value,tm) end,
 
@@ -36,9 +36,9 @@ Create_Value = function(unit,cm,time,value,tm) end,
 ---描述：使<code>unit</code>的<code>cm</code>在<code>time</code>秒内到达<code>value</code>，变化模式<code>tm</code><p>
 ---@param unit Unit
 ---@param cm UnitControl.ControlMode_Vec
----@param time? System.Single default:1
----@param value? UnityEngine.Vector2 default:
----@param tm? UnitControl.TargerMode default:Fixed
+---@param time? System.Single
+---@param value? UnityEngine.Vector2
+---@param tm? UnitControl.TargerMode
 ---@return UnitControl
 Create_Vec = function(unit,cm,time,value,tm) end,
 

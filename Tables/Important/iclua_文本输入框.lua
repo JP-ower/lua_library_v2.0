@@ -4,12 +4,12 @@ UI_TextInputBox = {
 
 ---函数名：创建<p>
 ---描述：创建一个文本输入框，标题为<code>label</code>内容为<code>text</code>输入方式为<code>ct</code>可以取消<code>canCancel</code>暂停游戏<code>pauseGame</code><p><code>ada</code>
----@param label? System.String default:文本输入框
----@param text? System.String default:请输入一段文本
----@param ct? UnityEngine.UI.InputField.ContentType default:Standard
----@param canCancel? System.Boolean default:False
----@param pauseGame? System.Boolean default:True
----@param ada? ActionDataArray default:
+---@param label? System.String
+---@param ct? UnityEngine.UI.InputField.ContentType
+---@param canCancel? System.Boolean
+---@param pauseGame? System.Boolean
+---@param ada? ActionDataArray
+---@param text System.String
 ---@return UI_TextInputBox
 Create_T = function(label,text,ct,canCancel,pauseGame,ada) end,
 

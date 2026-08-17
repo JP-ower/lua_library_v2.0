@@ -134,14 +134,6 @@ op_Inequality = nil,
 ---@type UnityEngine.Vector3Int
 op_Multiply = nil,
 
----字段名：op_Multiply<p>
----@type UnityEngine.Vector3Int
-op_Multiply = nil,
-
----字段名：op_Multiply<p>
----@type UnityEngine.Vector3Int
-op_Multiply = nil,
-
 ---字段名：op_Subtraction<p>
 ---@type UnityEngine.Vector3Int
 op_Subtraction = nil,

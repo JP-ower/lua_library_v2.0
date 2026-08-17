@@ -1,4 +1,5 @@
 ---@meta
+---@class UnityEngine.CanvasRenderer
 ---@class TMPro.TextMeshProUGUI
 TMPro.TextMeshProUGUI = {
 
@@ -66,7 +67,7 @@ GetComponentInParent = function(...) end,
 ---@overload fun(self: TMPro.TextMeshProUGUI, type: System.Type):UnityEngine.Component[]
 ---@overload fun(self: TMPro.TextMeshProUGUI)
 ---@overload fun(self: TMPro.TextMeshProUGUI)
----@overload fun(self: TMPro.TextMeshProUGUI, type: System.Type, results: System.Collections.Generic.List`1[[UnityEngine.Component, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]])
+---@overload fun(self: TMPro.TextMeshProUGUI, type: System.Type, results: System.Collections.Generic.List)
 GetComponents = function(...) end,
 
 ---函数名：GetComponentsInChildren<p>
@@ -169,7 +170,7 @@ SetCharArray = function(...) end,
 ---@overload fun(self: TMPro.TextMeshProUGUI, sourceText: System.String, arg0: System.Single, arg1: System.Single, arg2: System.Single)
 ---@overload fun(self: TMPro.TextMeshProUGUI, sourceText: System.String, arg0: System.Single, arg1: System.Single)
 ---@overload fun(self: TMPro.TextMeshProUGUI, sourceText: System.String, arg0: System.Single)
----@overload fun(self: TMPro.TextMeshProUGUI, sourceText: System.String, syncTextInputBox?: System.Boolean default:True)
+---@overload fun(self: TMPro.TextMeshProUGUI, sourceText: System.String, syncTextInputBox?: System.Boolean)
 ---@overload fun(self: TMPro.TextMeshProUGUI, sourceText: System.Char[], start: System.Int32, length: System.Int32)
 SetText = function(...) end,
 
@@ -192,7 +193,7 @@ StopCoroutine = function(...) end,
 ---函数名：TryGetComponent<p>
 ---函数名：TryGetComponent<p>
 ---@overload fun(self: TMPro.TextMeshProUGUI):System.Boolean
----@overload fun(self: TMPro.TextMeshProUGUI, type: System.Type, component: UnityEngine.Component&):System.Boolean
+---@overload fun(self: TMPro.TextMeshProUGUI, type: System.Type, component: UnityEngine.Component):System.Boolean
 TryGetComponent = function(...) end,
 
 ---函数名：UpdateVertexData<p>
@@ -212,7 +213,6 @@ CalculateLayoutInputVertical = function(self) end,
 ---函数名：CompareTag<p>
 ---@param self TMPro.TextMeshProUGUI
 ---@param tag System.String
----@return System.Boolean
 CompareTag = function(self,tag) end,
 
 ---函数名：ComputeMarginSize<p>
@@ -240,8 +240,8 @@ Equals = function(self,other) end,
 
 ---函数名：ForceMeshUpdate<p>
 ---@param self TMPro.TextMeshProUGUI
----@param ignoreActiveState? System.Boolean default:False
----@param forceTextReparsing? System.Boolean default:False
+---@param ignoreActiveState? System.Boolean
+---@param forceTextReparsing? System.Boolean
 ForceMeshUpdate = function(self,ignoreActiveState,forceTextReparsing) end,
 
 ---函数名：GetHashCode<p>
@@ -273,7 +273,6 @@ GetPixelAdjustedRect = function(self) end,
 ---函数名：GetTextInfo<p>
 ---@param self TMPro.TextMeshProUGUI
 ---@param text System.String
----@return TMPro.TMP_TextInfo
 GetTextInfo = function(self,text) end,
 
 ---函数名：GetType<p>
@@ -294,8 +293,8 @@ Invoke = function(self,methodName,time) end,
 ---函数名：InvokeRepeating<p>
 ---@param self TMPro.TextMeshProUGUI
 ---@param methodName System.String
----@param time System.Single
 ---@param repeatRate System.Single
+---@param time System.Single
 InvokeRepeating = function(self,methodName,time,repeatRate) end,
 
 ---函数名：IsActive<p>
@@ -483,10 +482,6 @@ camera = nil,
 ---字段名：get_canvas<p>
 ---@type UnityEngine.Canvas
 canvas = nil,
-
----字段名：get_canvasRenderer<p>
----@type UnityEngine.CanvasRenderer
-canvasRenderer = nil,
 
 ---字段名：get_canvasRenderer<p>
 ---@type UnityEngine.CanvasRenderer
@@ -844,10 +839,6 @@ raycastTarget = nil,
 ---@type UnityEngine.RectTransform
 rectTransform = nil,
 
----字段名：get_rectTransform<p>
----@type UnityEngine.RectTransform
-rectTransform = nil,
-
 ---字段名：remove_OnPreRenderText<p>
 remove_OnPreRenderText = nil,
 
@@ -918,10 +909,6 @@ textStyle = nil,
 ---字段名：get_tintAllSprites<p>
 ---@type System.Boolean
 tintAllSprites = nil,
-
----字段名：get_transform<p>
----@type UnityEngine.Transform
-transform = nil,
 
 ---字段名：get_transform<p>
 ---@type UnityEngine.Transform

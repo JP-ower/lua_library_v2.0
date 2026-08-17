@@ -4,7 +4,6 @@ ArithmeticOperator = {
 
 ---函数名：Create<p>
 ---@param value System.String
----@return ArithmeticOperator
 Create = function(value) end,
 
 ---函数名：Equals<p>
